@@ -25,7 +25,6 @@ body {
 }
 p {
     margin: 0 auto;
-    width: 96%;
     text-align: center;
     all: center;
     font-size: 16px;
@@ -140,4 +139,10 @@ ul li a:hover {
   .card-wide {
     grid-column: span 3 / auto;
   }
+}
+
+video {
+  /* override other styles to make responsive */
+  width: 60%    !important;
+  height: auto   !important;
 }
