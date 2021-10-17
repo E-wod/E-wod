@@ -1,38 +1,115 @@
 * {
-  margin: inherit;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-div.container {    /* to center the container */
-  width: 40%;
+.logo {    /* to center the container */
+  width: 30%;
   max-width: auto;
-  margin: 0 auto; 
+  margin: 0 40px;
+  padding: 0;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: flex;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #DEC9B6;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 25px;
+}
+
+.nav-link{
+    font-size: 24px;
+    color: #DEC9B6;
+}
+
+.nav-link:hover{
+    color: #5B1313;
+    font-size: 26px;
+}
+
+.nav-logo {
+    font-size: 24px;
+    color: #DEC9B6;
+}
+
+.nav-logo:hover{
+    color: #5B1313;
+    font-size: 26px;
+}
+
+img {
+    max-width: 33%;
+    padding: 0;
+}
+
+
+
+video {
+    object-fit: cover;
+    border-radius: 100%;
+    width: auto;
+    position: relative;
+    margin-left: auto;
+    margin-top: 50px;
+    max-width: 600px;
+    height: 600px;
+    box-shadow: 1px 12px 50px 8px red;
+}
 
 body { 
     background-color: #2F2E2B; 
     background-image: url("https://imagizer.imageshack.com/img924/9940/FQSfhW.jpg"); 
-    background-repeat: no-repeat; 
+    background-repeat: repeat; 
     align-items: center ; 
     background-size: cover; 
 }
+
 p {
     margin: 0 auto;
     text-align: center;
+    align-items: center;
     all: center;
-    font-size: 16px;
+    font-size: 20px;
     font-family:"Open Sans", "sans-serif";
-    color: #FFFFFF;
-    padding: 0;
     align-items: center;
     overflow-x: inherit;
+    color: #958E78;
+    padding: 0;
 }
 
 h1 {
-    mix-blend-mode: color-burn;
-    opacity: 60%;
+    margin: 0;
+    text-align: center;
+    mix-blend-mode: overlay;
+    font-size: 75px;
+    color: #FFFFFF;
+    font-family:Script, Lobster, 'Kristen ITC';
+    padding: 0;
     margin: 0;
     float: center;
     align-content: center;
@@ -40,16 +117,15 @@ h1 {
 }  
 
 h2 {
-   font-size: 16px;
-   font-family:"Open Sans", "sans-serif";
-   color: #FFFFFF;
+   font-size: 35px;
+   font-family:Script, Lobster, "Kristen ITC";
+   color: #958E78;
    padding: 0;
-   max-width: 400px;
-   align-items: center;
+   text-align: center;
 }
 
 h3 {
-   font-size: 16px;
+   font-size: 75px;
    font-family:"Open Sans", "sans-serif";
    color: #FFFFFF;
    padding: 0;
@@ -57,14 +133,48 @@ h3 {
    max-width: 400px;
 }
 
+h4 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 75px;
+    font-family:"Open Sans", "sans-serif";
+    color: #FFFFFF;
+    padding: 0;
+    float:inherit;
+    max-width: 400px;
+}
+
+
+
+blockquote{
+    border: 2px solid #591917;  
+    background-color: #1B1614; 
+    width: 600px;
+    height: auto;
+    color: #958E78;
+    font-size: 16px;
+    font-family:"Open Sans", "sans-serif";
+    text-align: center;  
+    margin:0 auto;
+    text-decoration: none;
+    padding: 22px;
+    position: absolute;
+    left: 5px;
+    top: 45px;
+    right: 5px;
+    
+}
+
+
 .wrapper{
     margin: 0;
     width: inherit;
-    height: 4px;
+    height: 12px;
     background-color: transparent;
     background-image: linear-gradient(180deg,rgba(23,18,17,1.00) 20%,rgba(207,202,178,1.00) 220%);
     
 }
+
 nav {
   width: 100%;
   height: 35px;
@@ -73,7 +183,12 @@ nav {
   background-image: linear-gradient(90deg,rgba(23,18,17,1.00) 15%,rgba(100,90,73,1.00) 70%);
   margin: 0;
   float: left;
+  overflow: hidden;
+  
 }
+
+
+
 
 ul li {
 
@@ -92,55 +207,112 @@ ul li a {
   font-size: 22px;
   font-family:Script, Lobster, "Kristen ITC";
   color: #958E78; 
-  padding: 0 20px;
+  padding: 5 10px;
   height: auto;
 }
 ul li a:hover {
   color: #651616; 
+  font-size: 21px;
 }
 
-.image-mosaic {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat (auto-fit, minmax(240px, 1fr));
-  grid-auto-rows: 240px;
+html {
+    font-family: Script, Lobster, "Kristen ITC";
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  font-size: 3rem;
-  color: #fff;
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-  height: 100%;
-  width: 100%;
-  border-radius: 4px;
-  transition: all 500ms;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 0;
-  margin: 0;
+li {
+    list-style: none;
 }
 
-@media screen and (min-width: 320px) {
-  .card-tall {
-    grid-row: span 2 / auto;
-  }
-
-  .card-wide {
-    grid-column: span 3 / auto;
-  }
+a {
+    text-decoration: none;
 }
 
+@media only screen and (max-width : 768px ){
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #645A49;
+        width: 20%;
+        max-height: 70%;
+        border-radius: 10px;
+        text-align: inherit;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;  
+    }
+    .nav-item {
+        margin: 0 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+   
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
 
-video {
-  display: block;
-  padding: auto;
-  width: 100%;
-  height: 100%;
+    }
+    
+    
+    img {
+    max-width: 32%;
+    height: auto;
+    padding: 0;
+    }
+    
+    video {
+    object-fit: cover;
+    border-radius: 100%;
+    width: auto;
+    position: relative;
+    margin-left: auto;
+    margin-top: 50px;
+    max-width: 320px;
+    height: 320px;
+    box-shadow: 1px 12px 20px 8px red;
+    }
+    
+    blockquote{
+    border: 2px solid #591917;  
+    background-color: #1B1614; 
+    width: 320px;
+    height: auto;
+    color: #958E78;
+    font-size: 10px;
+    font-family:"Open Sans", "sans-serif";
+    text-align: center;  
+    margin:0 auto;
+    text-decoration: none;
+    padding: 22px;
+    position: absolute;
+    left: 5px;
+    top: 45px;
+    right: 5px;
+    
+    }
+    p {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    all: center;
+    font-size: 14px;
+    font-family:"Open Sans", "sans-serif";
+    align-items: center;
+    overflow-x: inherit;
+    color: #958E78;
+    padding: 0;
+}
 }
