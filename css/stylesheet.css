@@ -47,13 +47,11 @@
 }
 
 .nav-link{
-    font-size: 24px;
     color: #DEC9B6;
 }
 
 .nav-link:hover{
     color: #5B1313;
-    font-size: 26px;
 }
 
 .nav-logo {
@@ -61,17 +59,10 @@
     color: #DEC9B6;
 }
 
-.nav-logo:hover{
-    color: #5B1313;
-    font-size: 26px;
-}
-
 img {
     max-width: 33%;
     padding: 0;
 }
-
-
 
 video {
     object-fit: cover;
@@ -148,9 +139,7 @@ h4 {
     max-width: 400px;
 }
 
-
-
-blockquote{
+blockquote {
     border: 2px solid #591917;  
     background-color: #1B1614; 
     width: 90%;
@@ -167,10 +156,8 @@ blockquote{
     left: 5px;
     top: 45px;
     right: 5px;
-    border-radius: 10px;
-    
+    border-radius: 10px
 }
-
 
 .wrapper{
     margin: 0;
@@ -178,7 +165,6 @@ blockquote{
     height: 12px;
     background-color: transparent;
     background-image: linear-gradient(180deg,rgba(23,18,17,1.00) 20%,rgba(207,202,178,1.00) 220%);
-    
 }
 
 nav {
@@ -193,18 +179,13 @@ nav {
   
 }
 
-
-
-
 ul li {
-
   display: inline-block;
   line-height: 35px;
   text-decoration: none;
   font-size-adjust: auto;
   font-family:Script, Lobster, "Kristen ITC";
   color: #958E78; 
-  
 }
 
 ul li a {
@@ -216,6 +197,7 @@ ul li a {
   padding: 5 10px;
   height: auto;
 }
+
 ul li a:hover {
   color: #651616; 
   font-size: 21px;
@@ -252,9 +234,7 @@ a {
     .nav-menu.active {
         right: 10px;
     }
-    .nav-menu:hover {
-        color: #5B1313;
-    }
+  
     .nav-item {
         margin: 0 0;
         padding: 2px;
