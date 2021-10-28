@@ -251,7 +251,7 @@ a {
         margin: 0 0;
     }
     .hamburger {
-        display: block;
+        display: flex;
         cursor: pointer;
     }
    
