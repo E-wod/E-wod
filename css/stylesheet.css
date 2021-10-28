@@ -233,7 +233,7 @@ a {
     .nav-menu {
         position: fixed;
         display: flex;
-        right: -100%;
+        right: 100%;
         top: 5rem;
         flex-direction: column;
         background-color: #645A49;
