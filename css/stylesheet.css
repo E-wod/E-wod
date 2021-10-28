@@ -249,11 +249,11 @@ a {
     }
     .nav-menu.active {
         right: 10px;
-        float: right;
+        
     }
     .nav-item {
         margin: 0 0;
-        float: right;
+        padding: 2px;
     }
     .hamburger {
         display: block;
