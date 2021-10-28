@@ -234,8 +234,8 @@ a {
     .nav-menu {
         position: fixed;
         display: block;
-        right: -100%;
-        top: 10px;
+        right: 10px;
+        top: -100%;
         float: right;
         flex-direction: column;
         background-color: #645A49;
@@ -249,11 +249,11 @@ a {
     }
     .nav-menu.active {
         right: 10px;
-        display: block;
+        float: right;
     }
     .nav-item {
         margin: 0 0;
-        display: block;
+        float: right;
     }
     .hamburger {
         display: block;
