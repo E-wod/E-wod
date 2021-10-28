@@ -231,11 +231,12 @@ a {
 
 @media only screen and (max-width : 768px ){
     .nav-menu {
-        position: flex;
+        position: fixed;
         left: -100%;
         top: 5rem;
         flex-direction: column;
         background-color: #645A49;
+        background-size: cover;
         width: 40%;
         max-height: 70%;
         border-radius: 10px;
