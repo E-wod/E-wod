@@ -246,7 +246,7 @@ a {
     }
     .nav-menu.active {
         left: 0;
-        display: flex;
+        display: cover;
     }
     .nav-item {
         margin: 0 0;
