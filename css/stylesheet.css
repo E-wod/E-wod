@@ -246,10 +246,10 @@ a {
     }
     .nav-menu.active {
         left: 0;
-        display: cover;
     }
     .nav-item {
         margin: 0 0;
+        display: flex;
     }
     .hamburger {
         display: block;
