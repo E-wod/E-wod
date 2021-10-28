@@ -248,9 +248,11 @@ a {
     }
     .nav-menu.active {
         right: 10px;
+        display: block;
     }
     .nav-item {
         margin: 0 0;
+        display: block;
     }
     .hamburger {
         display: block;
