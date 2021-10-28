@@ -34,9 +34,7 @@
     background-color: #DEC9B6;
 }
 
-.hamburger:hover{
-    color: #5B1313;
-}
+
 
 .nav-menu {
     display: flex;
@@ -262,6 +260,9 @@ a {
     .hamburger {
         display: block;
         cursor: pointer;
+    }
+    .hamburger:hover{
+    color: #5B1313;
     }
    
     .hamburger.active .bar:nth-child(2) {
