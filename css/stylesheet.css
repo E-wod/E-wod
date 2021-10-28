@@ -76,7 +76,7 @@ video {
     position: relative;
     margin-left: auto;
     margin-top: 50px;
-    max-width: 600px;
+    
     height: 600px;
     box-shadow: 1px 12px 50px 8px red;
 }
