@@ -23,6 +23,9 @@
     display: none;
 }
 
+.hamburger:hover{
+    color: #5B1313;
+}
 .bar {
     display: flex;
     width: 25px;
@@ -33,6 +36,9 @@
     background-color: #DEC9B6;
 }
 
+.bar:hover{
+    color: #5B1313;
+}
 .nav-menu {
     display: flex;
     justify-content: space-between;
