@@ -233,7 +233,6 @@ a {
 @media only screen and (max-width : 768px ){
     .nav-menu {
         position: fixed;
-        display: block;
         right: 10px;
         top: -100%;
         float: top;
