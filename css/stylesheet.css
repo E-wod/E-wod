@@ -236,7 +236,7 @@ a {
         display: block;
         right: 10px;
         top: -100%;
-        float: right;
+        float: top;
         flex-direction: column;
         background-color: #645A49;
         width: 30%;
