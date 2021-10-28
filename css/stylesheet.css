@@ -73,10 +73,10 @@ video {
     object-fit: cover;
     border-radius: 100%;
     width: auto;
-    position: relative;
+    position: inherit;
     margin-left: auto;
     margin-top: 50px;
-    
+    max-width: 600px;
     height: 600px;
     box-shadow: 1px 12px 50px 8px red;
 }
