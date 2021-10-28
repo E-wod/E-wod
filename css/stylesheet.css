@@ -150,6 +150,7 @@ blockquote{
     border: 2px solid #591917;  
     background-color: #1B1614; 
     width: 90%;
+    max-width: 800px;
     height: auto;
     color: #958E78;
     font-size: 16px;
