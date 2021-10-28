@@ -233,6 +233,7 @@ a {
 @media only screen and (max-width : 768px ){
     .nav-menu {
         position: fixed;
+        display: inline-block
         left: -100%;
         top: 5rem;
         flex-direction: column;
