@@ -164,6 +164,7 @@ blockquote{
     left: 5px;
     top: 45px;
     right: 5px;
+    border-radius: 10px;
     
 }
 
@@ -232,12 +233,10 @@ a {
 @media only screen and (max-width : 768px ){
     .nav-menu {
         position: fixed;
-        z-index: -1;
         left: -100%;
         top: 5rem;
         flex-direction: column;
         background-color: #645A49;
-        background-size: cover;
         width: 40%;
         max-height: 70%;
         border-radius: 10px;
@@ -305,6 +304,7 @@ a {
     left: 5px;
     top: 45px;
     right: 5px;
+    border-radius: 10px;
     
     }
     p {
