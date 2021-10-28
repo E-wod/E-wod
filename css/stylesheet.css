@@ -233,8 +233,8 @@ a {
 @media only screen and (max-width : 768px ){
     .nav-menu {
         position: fixed;
-        right: 10px;
-        top: -100%;
+        right: -100%;
+        top: 10px;
         float: top;
         flex-direction: column;
         background-color: #645A49;
