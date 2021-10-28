@@ -245,11 +245,10 @@ a {
             0 10px 27px rgba(0, 0, 0, 0.05);
     }
     .nav-menu.active {
-        left: 0;
+        left: 10px;
     }
     .nav-item {
         margin: 0 0;
-        display: flex;
     }
     .hamburger {
         display: block;
