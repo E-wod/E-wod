@@ -231,8 +231,7 @@ a {
 
 @media only screen and (max-width : 768px ){
     .nav-menu {
-        position: fixed;
-        display: cover;
+        position: flex;
         left: -100%;
         top: 5rem;
         flex-direction: column;
