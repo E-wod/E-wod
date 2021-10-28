@@ -245,13 +245,14 @@ a {
             0 10px 27px rgba(0, 0, 0, 0.05);
     }
     .nav-menu.active {
-        left: 0;  
+        right: 0;
+        display: flex;
     }
     .nav-item {
         margin: 0 0;
     }
     .hamburger {
-        display: flex;
+        display: block;
         cursor: pointer;
     }
    
