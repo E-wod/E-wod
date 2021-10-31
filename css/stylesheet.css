@@ -58,6 +58,9 @@
     font-size: 24px;
     color: #DEC9B6;
 }
+.nav-logo:hover{
+    color: #5B1313;
+}
 
 img {
     max-width: 33%;
