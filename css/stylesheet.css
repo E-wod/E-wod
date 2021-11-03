@@ -156,7 +156,8 @@ blockquote {
     text-decoration: none;
     padding: 22px;
     position: absolute;
-    left: 0;
+    left: 10px;
+    top: 25px;
     border-radius: 10px
 }
 
