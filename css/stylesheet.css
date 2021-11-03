@@ -145,7 +145,6 @@ h4 {
 blockquote {
     border: 2px solid #591917;  
     background-color: #1B1614; 
-    align: left;
     width: 90%;
     max-width: 1400px;
     height: auto;
@@ -157,9 +156,7 @@ blockquote {
     text-decoration: none;
     padding: 22px;
     position: absolute;
-    left: 5px;
-    top: 45px;
-    right: 5px;
+    left: 0;
     border-radius: 10px
 }
 
