@@ -64,14 +64,14 @@
 
 .container img {
     position: inherit;
-    width: 800px;
-    height: 800px;
+    width: 700px;
+    height: 700px;
 }
        
 .container {
     position: absolute;
-    width: 1200px;
-    height: 1200px;
+    width: 1400px;
+    height: 1400px;
     object-fit: cover; 
 }
 
