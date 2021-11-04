@@ -266,8 +266,9 @@ a {
     }
     
     video {
-    max-width: 46%;
-    object-fit: cover;
+    float: center;
+    max-width: 32%;
+    object-fit: fill;
     border-radius: 100%;
     position: inherit;
     margin-left: auto;
