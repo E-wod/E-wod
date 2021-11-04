@@ -35,7 +35,6 @@
 }
 
 
-
 .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -58,16 +57,13 @@
     font-size: 24px;
     color: #DEC9B6;
 }
+
 .nav-logo:hover{
     color: #5B1313;
 }
 
 .container img {
-    width: 100%;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    
-    
+    width: 320px;
 }
        
 .container {
@@ -105,9 +101,6 @@ img {
     overflow-y: hidden;
     overflow-x: hidden;
 }
-
-
-
 
 video {
     object-fit: cover;
@@ -220,7 +213,6 @@ nav {
   margin: 0;
   float: left;
   overflow: hidden;
-  
 }
 
 ul li {
