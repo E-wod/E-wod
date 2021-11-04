@@ -70,11 +70,12 @@
        
 .container {
     position: absolute;
-    
+    width: 600px;
+    height: 600px;
 }
 
 .overlay {
-    position: absolute;
+    position: inherit;
     transition: all 1.3s ease;
     opacity: -10;
     background-color: transparent;
