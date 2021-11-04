@@ -71,7 +71,7 @@
 }
        
 .container {
-    position: absolute;
+    position: inherit;
     width: 600px;
     height: auto;
 }
