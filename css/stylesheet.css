@@ -270,10 +270,10 @@ a {
     object-fit: cover;
     border-radius: 100%;
     width: auto;
-    position: relative;
+    position: absolute;
     margin-left: auto;
     margin-top: 50px;
-    max-width: 320px;
+    max-width: 10%;
     height: 320px;
     box-shadow: 1px 12px 20px 8px red;
     }
