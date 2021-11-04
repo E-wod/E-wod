@@ -97,7 +97,7 @@
 
 img {
     width: 100%;
-    position: absolute;
+    position: inherit;
     padding: 0;
     margin: 10px;
     margin-top: 45px;
