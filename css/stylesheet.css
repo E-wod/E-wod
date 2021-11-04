@@ -300,23 +300,63 @@ a {
     }
     
     
-    img {
-    max-width: 45%;
-    height: auto;
+.container img {
+    position: inherit;
     padding: 0;
-    }
-    
-    video {
+    width: 320px;
+    height: 320px;
+}
+       
+.container {
+    position: absolute;
+    padding: 0;
+    width: 600px;
+    height: 600px;
+    object-fit: contain; 
+}
+
+.overlay {
+    position: inherit;
+    transition: all 1.3s ease;
+    opacity: -10;
+    background-color: transparent;
+}
+          
+.container:hover .overlay {
+    opacity: 5;
+}
+          
+.overlayFade {
+    height: 600px;
+    width: 600px;
+    top: 45px;
+    left: 10px;
+    opacity: 0;
+}
+
+img {
+    object-fit: contain;
+    width: 320px;
+    position: inherit;
+    padding: 0;
+    margin: 10px;
+    margin-top: 45px;
+    align-items: center; 
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+video {
     object-fit: cover;
     border-radius: 100%;
     width: auto;
     position: inherit;
     margin-left: auto;
-    margin-top: 45px;
-    max-width: 200px;
-    height: 200px;
+    margin-top: 50px;
+    max-width: 600px;
+    height: 600px;
     box-shadow: 1px 12px 50px 8px red;
-    }
+}
     
     blockquote{
     border: 2px solid #591917;  
