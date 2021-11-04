@@ -219,6 +219,7 @@ a {
 
 @media only screen and (max-width : 768px ){
     .nav-menu {
+        z-index: 99999;
         object-fit: cover;
         position: fixed;
         right: -100%;
@@ -266,9 +267,8 @@ a {
     }
     
     video {
-    float: center;
     max-width: 32%;
-    object-fit: fill;
+    object-fit: cover;
     border-radius: 100%;
     position: inherit;
     margin-left: auto;
