@@ -263,19 +263,18 @@ a {
     padding: 0;
     }
     
-    video {
-    object-fit: cover;
-    border-radius: 100%;
-    width: auto;
-    position: absolute;
-    margin-left: auto;
-    margin-top: 50px;
-    max-width: 20%;
-    height: 20%;
-    box-shadow: 1px 12px 20px 8px red;
-    }
+    
     
     blockquote{
+           video {
+           max-width: 32%;
+           object-fit: cover;
+           border-radius: 100%;
+           position: inherit;
+           margin-left: auto;
+           margin-top: 50px;
+           box-shadow: 1px 12px 20px 8px red;
+    }
     border: 2px solid #591917;  
     background-color: #1B1614; 
     width: 40%;
