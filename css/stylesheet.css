@@ -267,13 +267,15 @@ a {
     }
     
     video {
-    max-width: 32%;
     object-fit: cover;
     border-radius: 100%;
+    width: auto;
     position: inherit;
     margin-left: auto;
     margin-top: 50px;
-    box-shadow: 1px 12px 20px 8px red;
+    max-width: 200px;
+    height: 200px;
+    box-shadow: 1px 12px 50px 8px red;
     }
     
     blockquote{
