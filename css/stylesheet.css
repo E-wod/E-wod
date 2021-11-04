@@ -64,12 +64,14 @@
 
 .container img {
     position: inherit;
+    padding: 0;
     width: 700px;
     height: 700px;
 }
        
 .container {
     position: absolute;
+    padding: 0;
     width: 1400px;
     height: 1400px;
     object-fit: contain; 
