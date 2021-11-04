@@ -62,10 +62,50 @@
     color: #5B1313;
 }
 
-img {
-    max-width: 33%;
-    padding: 0;
+.container img {
+    width: 300%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+    
 }
+       
+.container {
+    position: absolute;
+    width: 400px;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    transition: all 1.3s ease;
+    opacity: -10;
+    background-color: transparent;
+}
+          
+.container:hover .overlay {
+    opacity: 5;
+}
+          
+.overlayFade {
+    height: 1400px;
+    width: 1400px;
+    top: 45px;
+    left: 10px;
+    opacity: 0;
+}
+
+img {
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 10px;
+    margin-top: 45px;
+    align-items: center; 
+}
+
+
+
 
 video {
     object-fit: cover;
