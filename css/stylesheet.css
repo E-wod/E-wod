@@ -219,6 +219,7 @@ a {
 
 @media only screen and (max-width : 768px ){
     .nav-menu {
+        object-fit: cover;
         position: fixed;
         right: -100%;
         top: 10px;
@@ -234,7 +235,8 @@ a {
             0 10px 27px rgba(0, 0, 0, 0.05);
     }
     .nav-menu.active {
-        right: 10px;
+         object-fit: cover;
+         right: 10px;
     }
     .nav-item {
         margin: 0 0;
