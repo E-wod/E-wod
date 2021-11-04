@@ -236,7 +236,6 @@ a {
     .nav-menu.active {
         right: 10px;
     }
-  
     .nav-item {
         margin: 0 0;
         padding: 2px;
@@ -245,7 +244,6 @@ a {
         display: block;
         cursor: pointer;
     }
-   
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -256,7 +254,6 @@ a {
     .hamburger.active .bar:nth-child(3) {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
-
     }
     
     
@@ -273,8 +270,8 @@ a {
     position: absolute;
     margin-left: auto;
     margin-top: 50px;
-    max-width: 10%;
-    height: 320px;
+    max-width: 20%;
+    height: auto;
     box-shadow: 1px 12px 20px 8px red;
     }
     
