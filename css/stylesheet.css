@@ -64,14 +64,14 @@
 
 .container img {
     position: inherit;
-    width: 1200px;
-    height: 1200px;
+    width: 600px;
+    height: 600px;
 }
        
 .container {
     position: absolute;
-    width: 600px;
-    height: 600px;
+    width: 1200px;
+    height: 1200px;
 }
 
 .overlay {
