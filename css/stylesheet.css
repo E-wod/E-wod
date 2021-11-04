@@ -64,13 +64,12 @@
 
 .container img {
     width: 600px;
-    height: auto;
+    height: 600px;
 }
        
 .container {
     position: absolute;
-    width: 600px;
-    height: auto;
+    
 }
 
 .overlay {
