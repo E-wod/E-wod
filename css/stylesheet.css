@@ -301,7 +301,7 @@ a {
     
     
     img {
-    max-width: 32%;
+    max-width: 45%;
     height: auto;
     padding: 0;
     }
@@ -312,7 +312,7 @@ a {
     width: auto;
     position: inherit;
     margin-left: auto;
-    margin-top: 50px;
+    margin-top: 45px;
     max-width: 200px;
     height: 200px;
     box-shadow: 1px 12px 50px 8px red;
