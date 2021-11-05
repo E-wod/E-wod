@@ -247,6 +247,7 @@ a {
     }
     .nav-item {
         margin: 0 0;
+        z-index: 99998;
         padding: 2px;
     }
     .hamburger {
