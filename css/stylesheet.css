@@ -293,6 +293,7 @@ video {
     blockquote{
     border: 2px solid #591917;  
     background-color: #1B1614; 
+    z-index: 99997;
     width: 90%;
     height: auto;
     color: #958E78;
