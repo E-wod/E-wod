@@ -150,6 +150,7 @@ h4 {
 }
 
 blockquote{
+    z-index: 99991;
     border: 2px solid #591917;  
     background-color: #1B1614; 
     width: 90%;
@@ -292,6 +293,7 @@ video {
 }
     
     blockquote{
+    z-index: 99991;
     border: 2px solid #591917;  
     background-color: #1B1614; 
     z-index: 99997;
