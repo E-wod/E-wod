@@ -67,7 +67,7 @@ img {
     width: 1000px;
     position: inherit;
     padding: 0;
-    margin: 10px;
+    margin-left: 10px;
     margin-top: 25px;
     align-items: center; 
     overflow-y: hidden;
@@ -271,7 +271,7 @@ img {
     width: 100%;
     position: inherit;
     padding: 0;
-    margin: 10px;
+    margin-left: 10px;
     margin-top: 25px;
     align-items: center; 
     overflow-y: hidden;
