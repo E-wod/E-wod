@@ -159,12 +159,11 @@ blockquote{
     font-size: 10px;
     font-family:"Open Sans", "sans-serif";
     text-align: center;  
-    margin:0 auto;
+    margin-top: 35px;
     text-decoration: none;
     padding: 22px;
     position: inherit;
-    left: 10px;
-    top: 45px;
+    margin-left: 10px;
     border-radius: 10px;
     }
 
@@ -292,25 +291,23 @@ video {
     box-shadow: 1px 12px 50px 8px red;
 }
     
-    blockquote{
+blockquote{
     z-index: 99991;
     border: 2px solid #591917;  
     background-color: #1B1614; 
-    z-index: 99997;
     width: 90%;
     height: auto;
     color: #958E78;
     font-size: 10px;
     font-family:"Open Sans", "sans-serif";
     text-align: center;  
-    margin:0 auto;
+    margin-top: 35px;
     text-decoration: none;
     padding: 22px;
     position: inherit;
-    left: 10px;
-    top: 45px;
+    margin-left: 10px;
     border-radius: 10px;
-    }
+  }
   
     p {
     margin: 0 auto;
