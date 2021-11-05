@@ -159,7 +159,7 @@ blockquote{
     font-size: 10px;
     font-family:"Open Sans", "sans-serif";
     text-align: center;  
-    margin-top: 35px;
+    margin: 0 auto;
     text-decoration: none;
     padding: 22px;
     position: inherit;
@@ -301,13 +301,13 @@ blockquote{
     font-size: 10px;
     font-family:"Open Sans", "sans-serif";
     text-align: center;  
-    margin-top: 35px;
+    margin: 0 auto;
     text-decoration: none;
     padding: 22px;
     position: inherit;
     margin-left: 10px;
     border-radius: 10px;
-  }
+    }
   
     p {
     margin: 0 auto;
