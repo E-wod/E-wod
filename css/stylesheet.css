@@ -162,7 +162,7 @@ blockquote{
     margin:0 auto;
     text-decoration: none;
     padding: 22px;
-    position: absolute;
+    position: inherit;
     left: 10px;
     top: 45px;
     border-radius: 10px;
@@ -306,7 +306,7 @@ video {
     margin:0 auto;
     text-decoration: none;
     padding: 22px;
-    position: absolute;
+    position: inherit;
     left: 10px;
     top: 45px;
     border-radius: 10px;
