@@ -242,6 +242,7 @@ a {
     }
     .nav-menu.active {
          object-fit: cover;
+         z-index: 99998;
          right: 10px;
     }
     .nav-item {
@@ -319,6 +320,7 @@ video {
     color: #958E78;
     padding: 0;
     }
+  
     h1 {
     margin: 0;
     text-align: center;
