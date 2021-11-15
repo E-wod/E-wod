@@ -88,8 +88,6 @@ video {
 
 body { 
     background-color: #2F2E2B; 
-    background-image: url("https://imagizer.imageshack.com/img924/9940/FQSfhW.jpg"); 
-    background-repeat: repeat; 
     align-items: center ; 
     background-size: cover; 
 }
@@ -268,6 +266,9 @@ a {
         margin: 0 0;
         z-index: 99998;
         padding: 2px;
+    }
+    .nav-logo {
+    font-size: 16px;
     }
     .hamburger {
         z-index: 99999;
