@@ -138,6 +138,7 @@ h3 {
    max-width: 400px;
 }
 
+
 h4 {
     margin: 0 auto;
     text-align: center;
@@ -150,20 +151,15 @@ h4 {
 }
 
 blockquote{
-    z-index: 99991;
+    z-index: -99991;
     border: 2px solid #591917;  
-    background-color: #1B1614; 
-    width: 70%;
-    height: auto;
-    color: #958E78;
+    color: transparent;
     font-size: 10px;
     font-family:"Open Sans", "sans-serif"; 
-    margin: 0 auto;
     text-decoration: none;
     padding: 22px;
-    margin-left: 10px;
     border-radius: 10px;
-}
+    }
 
 .wrapper{
     margin: 0;
@@ -312,19 +308,13 @@ video {
 }
     
 blockquote{
-    z-index: 99991;
-    border: 2px solid #591917;  
-    background-color: #1B1614; 
-    width: 55%;
-    height: auto;
-    color: #958E78;
+    z-index: -99991;
+    border: 2px solid #591917;
+    color: transparent;
     font-size: 10px;
-    font-family:"Open Sans", "sans-serif";
-    text-align: center;  
-    margin: 0 auto;
+    font-family:"Open Sans", "sans-serif"; 
     text-decoration: none;
     padding: 22px;
-    margin-left: 10px;
     border-radius: 10px;
 }
   
