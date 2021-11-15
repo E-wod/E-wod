@@ -89,6 +89,7 @@ video {
 body { 
     background-color: #2F2E2B; 
     align-items: center ; 
+    background-repeat: no-repeat;
     background-size: cover; 
     background-image: url(https://imagizer.imageshack.com/img922/9883/1DjaG7.jpg);
 }
@@ -123,7 +124,7 @@ h1 {
 h2 {
    font-size: 35px;
    font-family:Script, Lobster, "Kristen ITC";
-   color: #958E78;
+   color: #000000;
    padding: 0;
    text-align: center;
 }
