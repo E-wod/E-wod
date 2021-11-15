@@ -148,7 +148,7 @@ h4 {
     float:inherit;
     max-width: 400px;
 }
- 
+
 blockquote{
     z-index: 99991;
     border: 2px solid #591917;  
@@ -337,7 +337,7 @@ blockquote{
     font-family:"Open Sans", "sans-serif";
     align-items: center;
     overflow-x: inherit;
-    color: #958E78;
+    color: #000000;
     padding: 0;
     }
   
