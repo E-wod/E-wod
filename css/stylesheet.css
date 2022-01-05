@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
+  
 }
 
 .logo {    /* to center the container */
@@ -69,6 +70,14 @@
     margin: 10px;
 }
 
+body { 
+    align-items: center ; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(89,25,23,1) 50%, rgba(0,0,0,1) 100%);
+}
+
 img {
     object-fit: contain;
     width: 100%;
@@ -89,14 +98,6 @@ video {
     max-width: 600px;
     height: 600px;
     box-shadow: 1px 12px 50px 8px red;
-}
-
-body { 
-    background-color: #2F2E2B; 
-    align-items: center ; 
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-image: url(https://imageshack.com/i/pod0Ye8bp);
 }
 
 p {
