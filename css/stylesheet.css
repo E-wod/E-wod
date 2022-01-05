@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  
   max-width: 100%;
 }
 
@@ -96,6 +96,7 @@ body {
     align-items: center ; 
     background-repeat: no-repeat;
     background-size: cover; 
+    background-image: url(https://imageshack.com/i/pod0Ye8bp);
 }
 
 p {
