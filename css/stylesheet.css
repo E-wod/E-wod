@@ -73,7 +73,7 @@
 body { 
     align-items: center ; 
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background: rgb(0,0,0);
     background-image: url('https://imagizer.imageshack.com/img924/8202/3rvAU5.png');
 }
