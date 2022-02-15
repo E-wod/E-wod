@@ -123,7 +123,7 @@ p {
 h1 {
     margin: 0;
     text-align: center;
-    mix-blend-mode: overlay;
+    mix-blend-mode: normal;
     font-size: 75px;
     color: #FFFFFF;
     font-family:Script, Lobster, 'Kristen ITC';
