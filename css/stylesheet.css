@@ -367,7 +367,13 @@ a {
           padding: 0 4px;
         }
 
-        /* Create four equal columns that sits next to each other */
+        html {
+          background: url(https://imagizer.imageshack.com/img924/8793/tlHlV2.png) no-repeat center center fixed;
+          background-size: cover;
+          height: 100%;
+          overflow: scroll;
+          font-family: Script, Lobster, "Kristen ITC";
+        }
         .column {
           flex: 25%;
           max-width: 25%;
