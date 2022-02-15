@@ -370,9 +370,10 @@ a {
         html {
           background: url(https://imagizer.imageshack.com/img924/8793/tlHlV2.png) no-repeat center center fixed;
           background-size: flex;
-          height: 100%;
+          width: 100%;
           overflow: scroll;
           font-family: Script, Lobster, "Kristen ITC";
+          background-repeat: repeat;
         }
         .column {
           flex: 25%;
