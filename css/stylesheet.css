@@ -352,7 +352,7 @@ a {
         text-align: center;
         mix-blend-mode: normal;
         text-shadow: 2px 2px #5B1313;
-        font-size: 25px;
+        font-size: 15px;
         color: #DEC9B6;
         font-family:Script, Lobster, 'Kristen ITC';
         padding: 0;
@@ -368,7 +368,7 @@ a {
         }
 
         html {
-          background: url(https://imagizer.imageshack.com/img924/8793/tlHlV2.png) no-repeat center center fixed;
+          background: url(https://imageshack.com/i/pm1DjaG7j) no-repeat center center fixed;
           background-size: flex;
           width: 100%;
           overflow: scroll;
