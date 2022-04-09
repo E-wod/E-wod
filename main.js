@@ -77,9 +77,5 @@ function magnify(imgID, zoom) {
     y = y - window.pageYOffset;
     return {x : x, y : y};
   }
-<script>
-/* Execute the magnify function: */
-magnify("myimage", 3);
-/* Specify the id of the image, and the strength of the magnifier glass: */
-</script>
+
 }
