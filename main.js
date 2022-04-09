@@ -15,6 +15,9 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+
+
+
 function magnify(imgID, zoom) {
   var img, glass, w, h, bw;
   img = document.getElementById(imgID);
@@ -74,4 +77,9 @@ function magnify(imgID, zoom) {
     y = y - window.pageYOffset;
     return {x : x, y : y};
   }
+<script>
+/* Execute the magnify function: */
+magnify("myimage", 3);
+/* Specify the id of the image, and the strength of the magnifier glass: */
+</script>
 }
