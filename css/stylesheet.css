@@ -82,6 +82,7 @@ html {
 
 .img-magnifier-container {
   position: relative;
+  box-sizing: border-box;
 }
 
 .img-magnifier-glass {
