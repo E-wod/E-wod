@@ -81,6 +81,8 @@ html {
 
 .zoom {
   background-color: opaque;
+  box-sizing: border-box;
+  display: flex;
   transition: transform .2s; /* Animation */
   width: auto;
   height: auto;
