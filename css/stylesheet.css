@@ -83,8 +83,8 @@ html {
   padding: 0px;
   background-color: black;
   transition: transform .2s; /* Animation */
-  width: 180px;
-  height: 180px;
+  width: auto;
+  height: auto;
   margin: 0 auto;
 }
 
