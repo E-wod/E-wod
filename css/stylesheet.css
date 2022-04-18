@@ -81,13 +81,16 @@ html {
 
 .zoom {
   background-color: opaque;
-  transition: transform .1s; /* Animation */
+  transition: transform .5s; /* Animation */
 }
 
 .zoom:hover {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   display: flex;
   justify-content: space-between;
+  max-width: auto;
+  background-size: cover;
+  background: fixed;
 }
 
 
