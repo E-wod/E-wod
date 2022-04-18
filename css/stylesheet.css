@@ -80,12 +80,10 @@ html {
 
 
 .zoom {
-  padding: 0px;
   background-color: black;
   transition: transform .2s; /* Animation */
   width: auto;
   height: auto;
-  margin: 0 auto;
 }
 
 .zoom:hover {
