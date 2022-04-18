@@ -81,7 +81,7 @@ html {
 
 .zoom {
   background-color: opaque;
-  transition: transform .5s; /* Animation */
+  transition: transform .2s; /* Animation */
 }
 
 .zoom:hover {
@@ -89,8 +89,8 @@ html {
   display: flex;
   justify-content: space-between;
   max-width: auto;
-  background-size: cover;
-  background: fixed;
+  image-size: cover;
+  margin: auto;
 }
 
 
