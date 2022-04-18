@@ -86,10 +86,22 @@ html {
   height: auto;
   align: center;
   object-fit: contain;
+  box-sizing: border-box;
+  float: center;
+  align-content: center;
+  width: 100%;
 }
 
 .zoom:hover {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  width: auto;
+  height: auto;
+  align-items: center;
+  object-fit: contain;
+  box-sizing: border-box;
+  float: center;
+  align-content: center;
+  width: 100%;
 }
 
 
