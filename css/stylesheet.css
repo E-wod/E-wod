@@ -81,10 +81,10 @@ html {
 
 .zoom {
   padding: 50px;
-  background-color: green;
+  background-color: transparent;
   transition: transform .2s; /* Animation */
-  width: 600px;
-  height: 600px;
+  width: 180px;
+  height: 180px;
   margin: 0 auto;
 }
 
