@@ -82,9 +82,10 @@ html {
 .zoom {
   background-color: opaque;
   transition: transform .2s; /* Animation */
-  object-fit: contain;
-  float: center;
-  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .zoom:hover {
