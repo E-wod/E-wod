@@ -268,13 +268,13 @@ a {
 .column {
   flex: 25%;
   max-width: 25%;
-  padding: 0 4px;
+  padding: 0 1px;
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 1px;
   vertical-align: middle;
-  width: 100%;
+  
 }
 
 @media only screen and (max-width : 768px ){
@@ -411,13 +411,13 @@ a {
         .column {
           flex: 25%;
           max-width: 25%;
-          padding: 0 4px;
+          padding: 0 1px;
         }
 
         .column img {
-          margin-top: 8px;
+          margin-top: 1px;
           vertical-align: middle;
-          width: 100%;
+          
         }
 
 }
