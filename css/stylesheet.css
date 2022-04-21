@@ -120,7 +120,7 @@ body {
 }
 
 img {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     position: inherit;
     padding: 0;
@@ -260,7 +260,7 @@ a {
 
 .row {
   display: flex;
-  
+  flex-wrap: wrap;
   padding: 0 1px;
 }
 
