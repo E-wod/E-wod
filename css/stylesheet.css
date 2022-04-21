@@ -266,8 +266,8 @@ a {
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 40%;
-  max-width: 40%;
+  flex: 25%;
+  max-width: 25%;
   padding: 0 1px;
 }
 
@@ -337,8 +337,8 @@ a {
         width: 100%;
         position: inherit;
         padding: 0;
-        margin-left: 10px;
-        margin-top: 25px;
+        margin-left: 1px;
+        margin-top: 1px;
         align-items: center; 
         overflow-y: hidden;
         overflow-x: hidden;
@@ -350,7 +350,7 @@ a {
         width: auto;
         position: inherit;
         margin-left: auto;
-        margin-top: 50px;
+        margin-top: 1px;
         max-width: 600px;
         height: 600px;
         box-shadow: 1px 12px 50px 8px red;
@@ -397,17 +397,10 @@ a {
         .row {
           display: flex;
           flex-wrap: wrap;
-          padding: 0 4px;
+          padding: 0 1px;
         }
 
-        html {
-          background: url(https://imageshack.com/i/pm9lLU3Nj) no-repeat center center fixed;
-          background-size: 100%;
-          width: 100%;
-          overflow: scroll;
-          font-family: Script, Lobster, "Kristen ITC";
-          background-repeat: repeat;
-        }
+        
         .column {
           flex: 25%;
           max-width: 25%;
@@ -416,8 +409,16 @@ a {
 
         .column img {
           margin-top: 1px;
-          vertical-align: middle;
+          vertical-align: left;
           
         }
-
+  
+        html {
+          background: url(https://imageshack.com/i/pm9lLU3Nj) no-repeat center center fixed;
+          background-size: 100%;
+          width: 100%;
+          overflow: scroll;
+          font-family: Script, Lobster, "Kristen ITC";
+          background-repeat: repeat;
+        }
 }
