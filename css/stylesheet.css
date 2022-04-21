@@ -85,18 +85,14 @@ html {
 }
 
 .zoom:hover {
-  object-fit: contain;
   height: 100%;
   position: inherit;
   padding: 0;
   margin-left: 1px;
   margin-top: 1px;
   align-items: center;
-  display: flex;
-  justify-content: space-between;
   max-width: 1200px;
   image-size: cover;
-  margin: auto;
 }
 
 
