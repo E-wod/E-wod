@@ -260,7 +260,7 @@ a {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  
   padding: 0 1px;
 }
 
@@ -269,7 +269,6 @@ a {
   flex: 25%;
   max-width: 25%;
   padding: 0 1px;
-  flex-wrap: wrap;
 }
 
 .column img {
