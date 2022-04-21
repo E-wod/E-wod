@@ -91,7 +91,7 @@ html {
   align-items: center;
   max-width: 1200px;
   float: inherit;
-  transform: scale(3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
