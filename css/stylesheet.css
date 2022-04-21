@@ -259,15 +259,15 @@ a {
 }
 
 .row {
-  display: inline;
+  display: flex;
   flex-wrap: wrap;
   padding: 0 1px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
+  flex: 10%;
+  max-width: 10%;
   padding: 0 1px;
 }
 
