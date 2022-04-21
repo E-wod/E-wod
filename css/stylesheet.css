@@ -259,7 +259,7 @@ a {
 }
 
 .row {
-  display: block;
+  display: inline;
   flex-wrap: wrap;
   padding: 0 1px;
 }
