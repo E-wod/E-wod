@@ -84,12 +84,13 @@ html {
 }
 
 .zoom:hover {
-  margin: auto;
   transform: scale(1.8); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   display: flex;
-  justify-content: center;
+  float: center;
   height: 800px;
-  
+  height: 100%;
+  margin-left: 50%;
+  margin-right: 50%;
 }
 
 
@@ -260,18 +261,18 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 1px;
+  padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 25%;
-  padding: 0 1px;
+  padding: 0 4px;
 }
 
 .column img {
-  margin-top: 1px;
+  margin-top: 4px;
   vertical-align: left;
   
 }
@@ -396,18 +397,18 @@ a {
         .row {
           display: flex;
           flex-wrap: wrap;
-          padding: 0 1px;
+          padding: 0 4px;
         }
 
         
         .column {
           flex: 25%;
           max-width: 25%;
-          padding: 0 1px;
+          padding: 0 4px;
         }
 
         .column img {
-          margin-top: 1px;
+          margin-top: 4px;
           vertical-align: left;
           
         }
