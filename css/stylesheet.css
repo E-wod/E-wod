@@ -266,8 +266,8 @@ a {
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 10%;
-  max-width: 10%;
+  flex: 40%;
+  max-width: 40%;
   padding: 0 1px;
 }
 
