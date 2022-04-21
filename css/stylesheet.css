@@ -78,6 +78,10 @@ html {
   font-family: Script, Lobster, "Kristen ITC";
 }
 
+div {
+  display: flex;
+  justify-content: center;
+}
 
 .zoom {
   background-color: opaque;
@@ -85,8 +89,6 @@ html {
 }
 
 .zoom:hover {
-  display: flex;
-  justify-content: center;
   margin: auto;
   transform: scale(1.8); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
