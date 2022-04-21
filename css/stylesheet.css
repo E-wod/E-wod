@@ -135,7 +135,7 @@ video {
     width: auto;
     position: inherit;
     margin-left: auto;
-    margin-top: 50px;
+    margin-top: 1px;
     max-width: 600px;
     height: 600px;
     box-shadow: 1px 12px 50px 8px red;
@@ -269,6 +269,7 @@ a {
   flex: 25%;
   max-width: 25%;
   padding: 0 1px;
+  flex-wrap: wrap;
 }
 
 .column img {
