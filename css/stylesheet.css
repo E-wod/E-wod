@@ -6,6 +6,12 @@
   
 }
 
+.myDiv {
+  border: 5px outset red;
+  background-color: black;
+  text-align: center;
+}
+
 .logo {    /* to center the container */
   width: 30%;
   max-width: auto;
