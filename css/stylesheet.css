@@ -36,7 +36,7 @@
 /* Title */
 
 .image-list-small .details h3 {
-  display: block;
+  display: inline-block;
   font-size: 12px;
   margin: 0 0 3px 0;
   white-space: nowrap;
@@ -47,16 +47,14 @@
 .image-list-small .details h3 a {
   color: #DEC9B6;
   text-decoration: none;
-  box-shadow: 1px 2px 3px 1px red;
 }
 
 .image-list-small .details .image-author {
-  display: block;
+  display: inline-block;
   color: #DEC9B6;
   font-size: 11px;
   font-weight: normal;
   margin: 0;
-  box-shadow: 1px 2px 3px 1px red;
 }
 
 
