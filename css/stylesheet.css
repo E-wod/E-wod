@@ -161,7 +161,7 @@ h1 {
     text-align: center;
     mix-blend-mode: normal;
     text-shadow: 2px 2px #5B1313;
-    font-size: 35px;
+    font-size: 28px;
     color: #DEC9B6;
     font-family:Script, Lobster, 'Kristen ITC';
     padding: 0;
@@ -174,9 +174,9 @@ h2 {
     margin: 0;
     text-align: center;
     mix-blend-mode: normal;
-    text-shadow: 2px 2px #5B1313;
+    text-shadow: 1px 1px #5B1313;
     font-size: 12px;
-    color: #FFFFFF;
+    color: #DEC9B6;
     font-family:Script, Lobster, 'Kristen ITC';
     padding: 0;
     float: center;
