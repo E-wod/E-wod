@@ -25,7 +25,7 @@
   padding: 0;
   border: 4px solid #5B1313;
   outline: 1px solid #5B1313;
-  box-shadow: 1px 12px 25px 8px red;
+  box-shadow: 1px 4px 12px 2px red;
 }
 
 .image-list-small .details {
