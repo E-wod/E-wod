@@ -1,5 +1,5 @@
 .image-list-small {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Script, Lobster, "Kristen ITC";
   margin: 0 auto;
   text-align: center;
   max-width: 1200px;
@@ -23,8 +23,8 @@
   height: 210px;
   margin: 0;
   padding: 0;
-  border: 4px solid #ffffff;
-  outline: 1px solid #d0d0d0;
+  border: 4px solid #DEC9B6;
+  outline: 1px solid #5B1313;
   box-shadow: 0 2px 1px #DDD;
 }
 
@@ -45,13 +45,13 @@
 }
 
 .image-list-small .details h3 a {
-  color: #303030;
+  color: #DEC9B6;
   text-decoration: none;
 }
 
 .image-list-small .details .image-author {
   display: block;
-  color: #717171;
+  color: #5B1313;
   font-size: 11px;
   font-weight: normal;
   margin: 0;
