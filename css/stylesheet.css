@@ -45,16 +45,18 @@
 }
 
 .image-list-small .details h3 a {
-  color: #5B1313;
+  color: #DEC9B6;
   text-decoration: none;
+  box-shadow: 1px 2px 3px 1px red;
 }
 
 .image-list-small .details .image-author {
   display: block;
-  color: #5B1313;
+  color: #DEC9B6;
   font-size: 11px;
   font-weight: normal;
   margin: 0;
+  box-shadow: 1px 2px 3px 1px red;
 }
 
 
