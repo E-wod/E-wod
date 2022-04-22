@@ -7,7 +7,7 @@
 }
 
 .myDiv {
-  border: 5px outset red;
+  border: 5px outset #DEC9B6;
   background-color: black;
   text-align: center;
 }
