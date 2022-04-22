@@ -7,8 +7,8 @@
 }
 
 .myDiv {
-  border: 4px outset #5B1313;
-  background-color: opaque;
+  border: 4px outset #DEC9B6;
+  background-color: #5B1313;
   text-align: center;
 }
 
@@ -171,12 +171,17 @@ h1 {
 }  
 
 h2 {
-   font-size: 35px;
-   font-family:Script, Lobster, "Kristen ITC";
-   color: #000000;
-   padding: 0;
-   text-align: center;
-   
+    margin: 0;
+    text-align: center;
+    mix-blend-mode: normal;
+    text-shadow: 2px 2px #5B1313;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-family:Script, Lobster, 'Kristen ITC';
+    padding: 0;
+    float: center;
+    align-content: center;
+    width: 100%;
 }
 
 h3 {
