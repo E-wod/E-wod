@@ -8,7 +8,7 @@
 
 .myDiv {
   border: 4px outset #5B1313;
-  background-color: black;
+  background-color: opaque;
   text-align: center;
 }
 
