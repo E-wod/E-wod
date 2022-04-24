@@ -11,6 +11,7 @@
   background-color: #000000;
   margin: auto;
   padding: 4px;
+  align-items: center;
   display: inline-flex;
 }
 
