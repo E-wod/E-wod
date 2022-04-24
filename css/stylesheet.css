@@ -23,7 +23,7 @@
   margin-bottom: 4px;
   padding: 0;
   align-items: center;
-  display: flex;
+  display: inline-block;
   float: center;
 }
 
