@@ -133,6 +133,7 @@ video {
     width: auto;
     position: inherit;
     margin-left: auto;
+    margin-right: auto;
     margin-top: 4px;
     max-width: 30%;
     height: 30%;
@@ -265,6 +266,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  object-fit: contain;
+    max-width: 100%;
+    position: inherit;
+    padding: 4px;
+    margin-left: 4px;
+    margin-top: 4px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -272,12 +279,23 @@ a {
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
+  object-fit: contain;
+    max-width: 100%;
+    position: inherit;
+    padding: 4px;
+    margin-left: 4px;
+    margin-top: 4px;
 }
 
 .column img {
   margin-top: 4px;
   vertical-align: left;
-  
+  object-fit: contain;
+    max-width: 100%;
+    position: inherit;
+    padding: 4px;
+    margin-left: 4px;
+    margin-top: 4px;
 }
 
 @media only screen and (max-width : 768px ){
