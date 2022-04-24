@@ -263,36 +263,36 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 1px;
   object-fit: contain;
   max-width: 100%;
-  margin-left: 4px;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-left: 1px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 25%;
-  padding: 0 4px;
+  padding: 0 1px;
   object-fit: contain;
   max-width: 100%;
-  margin-left: 4px;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-left: 1px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .column img {
-  margin-top: 4px;
+  margin-top: 1px;
   vertical-align: left;
   object-fit: contain;
   max-width: 100%;
   position: inherit;
   padding: 0;
-  margin-left: 4px;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-left: 1px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 @media only screen and (max-width : 768px ){
@@ -415,11 +415,11 @@ a {
         .row {
           display: flex;
           flex-wrap: wrap;
-          padding: 0 4px;
+          padding: 0 1px;
           position: inherit;
-          margin-left: 4px;
-          margin-top: 4px;
-          margin-bottom: 4px;
+          margin-left: 1px;
+          margin-top: 1px;
+          margin-bottom: 1px;
         }
 
         
@@ -427,22 +427,22 @@ a {
           flex: 25%;
           max-width: 25%;
           position: inherit;
-          padding: 4px;
-          margin-left: 4px;
-          margin-top: 4px;
-          margin-bottom: 4px;
+          padding: 1px;
+          margin-left: 1px;
+          margin-top: 1px;
+          margin-bottom: 1px;
         }
 
         .column img {
-          margin-top: 4px;
+          margin-top: 1px;
           vertical-align: left;
           flex: 25%;
           max-width: 25%;
           position: inherit;
-          padding: 4px;
-          margin-left: 4px;
-          margin-top: 4px;
-          margin-bottom: 4px;
+          padding: 1px;
+          margin-left: 1px;
+          margin-top: 1px;
+          margin-bottom: 1px;
         }
   
         html {
