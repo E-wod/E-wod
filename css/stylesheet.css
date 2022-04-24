@@ -13,10 +13,9 @@
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  float: center;
   align-content: center;
   width: 100%;
-  z-index: 999999;
+  z-index: -1;
 }
 
 /* Add some content at the bottom of the video/page */
@@ -30,7 +29,7 @@
   float: center;
   align-content: center;
   width: 100%;
-  z-index: 999999;
+  z-index: -1;
 }
 
 /* Style the button used to pause/play the video */
@@ -42,13 +41,13 @@
   background: #000;
   color: #fff;
   cursor: pointer;
-  z-index: 999999;
+  z-index: -1;
 }
 
 #myBtn:hover {
   background: #ddd;
   color: black;
-  z-index: 999999;
+  z-index: -1;
 }
 
 .contactDiv {
