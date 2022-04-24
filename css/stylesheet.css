@@ -9,9 +9,8 @@
 .contactDiv {
   border: 4px outset #DEC9B6;
   background-color: #000000;
-  margin-right: 50%;
-  margin-left: 50%;
-  padding: 0;
+  margin: auto;
+  padding: 4px;
   float: center;
   display: inline-flex;
 }
