@@ -11,7 +11,7 @@
   background-color: #000000;
   margin: auto;
   padding: 4px;
-  float: center;
+  float: inherit;
   display: inline-flex;
 }
 
