@@ -270,7 +270,7 @@ a {
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
+  flex-wrap: wrap;
   max-width: 25%;
   padding: 0 1px;
 }
