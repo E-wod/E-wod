@@ -8,8 +8,9 @@
 
 .contactDiv {
   border: 5px outset red;
-  background-color: lightblue;
-  text-align: center;
+  background-color: #DEC9B6;
+  display: flex;
+  justify-content: space-between;
 }
 
 .myDiv {
