@@ -6,22 +6,7 @@
   
 }
 
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  align-content: center;
-  width: 100%;
-  z-index: -1;
-  object-fit: contain;
-    width: 100%;
-    position: inherit;
-    padding: 0;
-    margin-left: 1px;
-    margin-top: 1px;
-    align-items: center; 
-}
+
 
 .contactDiv {
   border: 4px outset #DEC9B6;
@@ -145,7 +130,17 @@ img {
     align-items: center; 
 }
 
-
+video {
+    object-fit: cover;
+    border-radius: 100%;
+    width: auto;
+    position: inherit;
+    margin-left: auto;
+    margin-top: 1px;
+    max-width: 600px;
+    height: 600px;
+    box-shadow: 1px 12px 50px 8px red;
+}
 
 p {
     margin: 0 auto;
