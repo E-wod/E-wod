@@ -10,7 +10,11 @@
   border: 4px outset #DEC9B6;
   background-color: #000000;
   margin: 4px;
-  
+  justify-content: space-between;
+  object-fit: contain;
+  position: inherit;
+  padding: 0;
+  align-items: center;
 }
 
 .myDiv {
