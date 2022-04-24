@@ -7,10 +7,10 @@
 }
 
 .contactDiv {
-  border: 5px outset red;
-  background-color: #DEC9B6;
+  border: 5px outset #DEC9B6;
+  background-color: opaque;
   display: flex;
-  justify-content: space-between;
+  
 }
 
 .myDiv {
