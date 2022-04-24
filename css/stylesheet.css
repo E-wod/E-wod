@@ -155,7 +155,7 @@ video {
 }
 
 p {
-    margin: 0 auto;
+    margin: 1px auto;
     text-align: center;
     align-items: center;
     all: center;
@@ -167,28 +167,28 @@ p {
 }
 
 h1 {
-    margin: 0;
+    margin: 1px auto;
     text-align: center;
     mix-blend-mode: normal;
     text-shadow: 2px 2px #5B1313;
     font-size: 28px;
     color: #DEC9B6;
     font-family:Script, Lobster, 'Kristen ITC';
-    padding: 2px;
+    padding: 0;
     float: center;
     align-content: center;
     width: 100%;
 }  
 
 h2 {
-    margin: 0;
+    margin: 1px auto;
     text-align: center;
     mix-blend-mode: normal;
     text-shadow: 1px 1px #5B1313;
     font-size: 12px;
     color: #DEC9B6;
     font-family:Script, Lobster, 'Kristen ITC';
-    padding: 2px;
+    padding: 0;
     float: center;
     align-content: center;
     width: 100%;
@@ -198,18 +198,19 @@ h3 {
    font-size: 25px;
    font-family:"Open Sans", "sans-serif";
    color: #000000;
-   padding: 2px;
+   padding: 0;
    float:inherit;
    max-width: 400px;
+   margin: 1px auto;
 }
 
 h4 {
-    margin: 0 auto;
+    margin: 1px auto;
     text-align: center;
     font-size: 15px;
     font-family:"Open Sans", "sans-serif";
     color: #FFFFFF;
-    padding: 2px;
+    padding: 0;
     float:inherit;
     max-width: 400px;
 }
