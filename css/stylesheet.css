@@ -14,6 +14,19 @@
   display: inline-flex;
 }
 
+.counterDiv {
+  border: 4px outset #DEC9B6;
+  background-color: #000000;
+  margin-top: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 0;
+  align-items: center;
+  display: flex;
+}
+
+
 .myDiv {
   border: 4px outset #DEC9B6;
   background-color: #2C271B;
