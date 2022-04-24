@@ -122,11 +122,11 @@ body {
 
 img {
     object-fit: contain;
-    max-width: 100%;
+    max-width: 50%;
     position: inherit;
     padding: 0;
-    margin-left: 1px;
-    margin-top: 1px;
+    margin-left: 4px;
+    margin-top: 4px;
     align-items: center; 
 }
 
