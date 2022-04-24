@@ -122,7 +122,7 @@ body {
 
 img {
     object-fit: contain;
-    max-width: 50%;
+    max-width: 100%;
     position: inherit;
     padding: 0;
     margin-left: 4px;
