@@ -119,9 +119,11 @@ body {
 
 img {
     object-fit: contain;
-    max-width: 100%;
+    width: 100%;
+    position: inherit;
     padding: 0;
-    margin: auto;
+    margin-left: 1px;
+    margin-top: 1px;
     align-items: center; 
 }
 
