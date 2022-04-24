@@ -266,9 +266,6 @@ a {
   padding: 0 1px;
   object-fit: contain;
   max-width: 100%;
-  margin-left: 1px;
-  margin-top: 1px;
-  margin-bottom: 1px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -278,9 +275,6 @@ a {
   padding: 0 1px;
   object-fit: contain;
   max-width: 100%;
-  margin-left: 1px;
-  margin-top: 1px;
-  margin-bottom: 1px;
 }
 
 .column img {
@@ -290,9 +284,6 @@ a {
   max-width: 100%;
   position: inherit;
   padding: 0;
-  margin-left: 1px;
-  margin-top: 1px;
-  margin-bottom: 1px;
 }
 
 @media only screen and (max-width : 768px ){
@@ -354,9 +345,9 @@ a {
         object-fit: contain;
         width: 100%;
         position: inherit;
-        padding: 2px;
-        margin-left: 2px;
-        margin-top: 2px;
+        padding: 1px;
+        margin-left: 1px;
+        margin-top: 1px;
         align-items: center; 
         overflow-y: hidden;
         overflow-x: hidden;
@@ -417,9 +408,6 @@ a {
           flex-wrap: wrap;
           padding: 0 1px;
           position: inherit;
-          margin-left: 1px;
-          margin-top: 1px;
-          margin-bottom: 1px;
         }
 
         
@@ -427,10 +415,6 @@ a {
           flex: 25%;
           max-width: 25%;
           position: inherit;
-          padding: 1px;
-          margin-left: 1px;
-          margin-top: 1px;
-          margin-bottom: 1px;
         }
 
         .column img {
@@ -438,11 +422,6 @@ a {
           vertical-align: left;
           flex: 25%;
           max-width: 25%;
-          position: inherit;
-          padding: 1px;
-          margin-left: 1px;
-          margin-top: 1px;
-          margin-bottom: 1px;
         }
   
         html {
