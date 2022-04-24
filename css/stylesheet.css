@@ -265,18 +265,18 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 1px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 25%;
-  padding: 0 4px;
+  padding: 0 1px;
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 1px;
   vertical-align: middle;
   width: 100%;
 }
