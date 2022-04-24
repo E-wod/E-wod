@@ -263,27 +263,20 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 1px;
-  object-fit: contain;
-  max-width: 100%;
+  padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 25%;
-  padding: 0 1px;
-  object-fit: contain;
-  max-width: 100%;
+  padding: 0 4px;
 }
 
 .column img {
-  margin-top: 1px;
-  vertical-align: left;
-  object-fit: contain;
-  max-width: 100%;
-  position: inherit;
-  padding: 0;
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 @media only screen and (max-width : 768px ){
@@ -403,26 +396,6 @@ a {
         width: 100%;
         }
 
-        .row {
-          display: flex;
-          flex-wrap: wrap;
-          padding: 0 1px;
-          position: inherit;
-        }
-
-        
-        .column {
-          flex: 25%;
-          max-width: 25%;
-          position: inherit;
-        }
-
-        .column img {
-          margin-top: 1px;
-          vertical-align: left;
-          flex: 25%;
-          max-width: 25%;
-        }
   
         html {
           background: url(https://imagizer.imageshack.com/img923/6092/wkWOS8.jpg) no-repeat center center fixed;
