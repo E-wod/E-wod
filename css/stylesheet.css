@@ -3,10 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
-  
 }
-
-
 
 .contactDiv {
   border: 4px outset #DEC9B6;
@@ -124,7 +121,7 @@ img {
     object-fit: contain;
     max-width: 100%;
     position: inherit;
-    padding: 0;
+    padding: 4px;
     margin-left: 4px;
     margin-top: 4px;
     align-items: center; 
@@ -342,9 +339,9 @@ a {
         object-fit: contain;
         width: 100%;
         position: inherit;
-        padding: 0;
-        margin-left: 1px;
-        margin-top: 1px;
+        padding: 2px;
+        margin-left: 2px;
+        margin-top: 2px;
         align-items: center; 
         overflow-y: hidden;
         overflow-x: hidden;
