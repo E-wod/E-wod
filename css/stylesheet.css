@@ -13,6 +13,10 @@
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  float: center;
+  align-content: center;
+  width: 100%;
+  z-index: 1;
 }
 
 /* Add some content at the bottom of the video/page */
@@ -23,6 +27,9 @@
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
+  float: center;
+  align-content: center;
+  width: 100%;
 }
 
 /* Style the button used to pause/play the video */
