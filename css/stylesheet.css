@@ -16,7 +16,7 @@
   float: center;
   align-content: center;
   width: 100%;
-  z-index: 1;
+  z-index: 999999;
 }
 
 /* Add some content at the bottom of the video/page */
