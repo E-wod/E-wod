@@ -6,32 +6,6 @@
   
 }
 
-.zoom:hover .overlay {
-  transform: scale(1);
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  transform: scale(0);
-  transition: .3s ease;
-}
-
-.zoom {
-  position: relative;
-  width: 50%;
-}
-
-
-
-
-
 .contactDiv {
   border: 4px outset #DEC9B6;
   background-color: #000000;
