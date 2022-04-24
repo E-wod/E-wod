@@ -18,37 +18,6 @@
   z-index: -1;
 }
 
-/* Add some content at the bottom of the video/page */
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-  float: center;
-  align-content: center;
-  width: 100%;
-  z-index: -99991;;
-}
-
-/* Style the button used to pause/play the video */
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-  z-index: -99991;;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-
 .contactDiv {
   border: 4px outset #DEC9B6;
   background-color: #000000;
