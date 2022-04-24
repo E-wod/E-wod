@@ -280,14 +280,14 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 1px;
+  padding: 1px 1px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
   flex-wrap: wrap;
   max-width: 25%;
-  padding: 0 1px;
+  padding: 1px 1px;
 }
 
 .column img {
@@ -387,7 +387,7 @@ a {
     }
 
         p {
-        margin: 0 auto;
+        margin: 1px auto;
         text-align: center;
         align-items: center;
         all: center;
@@ -396,18 +396,18 @@ a {
         align-items: center;
         overflow-x: inherit;
         color: #FFFFFF;
-        padding: 0;
+        padding: 1px;
         }
 
         h1 {
-        margin: 0;
+        margin: 1px;
         text-align: center;
         mix-blend-mode: normal;
         text-shadow: 2px 2px #5B1313;
         font-size: 15px;
         color: #DEC9B6;
         font-family:Script, Lobster, 'Kristen ITC';
-        padding: 0;
+        padding: 1px;
         float: center;
         align-content: center;
         width: 100%;
