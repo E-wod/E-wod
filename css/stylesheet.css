@@ -268,8 +268,6 @@ a {
   padding: 0 4px;
   object-fit: contain;
   max-width: 100%;
-  position: inherit;
-  padding: 4px;
   margin-left: 4px;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -282,8 +280,6 @@ a {
   padding: 0 4px;
   object-fit: contain;
   max-width: 100%;
-  position: inherit;
-  padding: 4px;
   margin-left: 4px;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -295,7 +291,7 @@ a {
   object-fit: contain;
   max-width: 100%;
   position: inherit;
-  padding: 4px;
+  padding: 0;
   margin-left: 4px;
   margin-top: 4px;
   margin-bottom: 4px;
