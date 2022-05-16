@@ -119,7 +119,7 @@ html {
   }
   
   to {
-    text-shadow: 0 0 30px #DEC9B6, 0 0 30px #DEC9B6, 0 0 50px #DEC9B6, 0 0 70px #5B1313, 0 0 90px #DEC9B6, 0 0 100px #DEC9B6, 0 0 240px #5B1313;
+    text-shadow: 0 0 10px #DEC9B6, 0 0 20px #DEC9B6, 0 0 30px #DEC9B6, 0 0 40px #5B1313, 0 0 50px #DEC9B6, 0 0 100px #DEC9B6, 0 0 240px #5B1313;
   }
 }
 
