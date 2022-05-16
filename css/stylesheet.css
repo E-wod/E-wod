@@ -304,9 +304,8 @@ a {
          max-width: 100%;
       }
     #grad1 {
-        height: 55px;
-        background-color: red; /* For browsers that do not support gradients */
-        background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        background-color: #645A49;
+        background-image: linear-gradient(180deg,rgba(23,18,17,1.00) 20%,rgba(207,202,178,1.00) 220%);
       }
     .nav-menu {
         z-index: 99998;
