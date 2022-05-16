@@ -7,7 +7,7 @@
 
 .contactDiv {
   border: 4px outset #DEC9B6;
-  background-color: #000000;
+  background-color: #DEC9B6;
   margin: auto;
   padding: 4px;
   align-items: center;
@@ -99,6 +99,8 @@
 }
 
 html {
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red , yellow);
   height: 100%;
   overflow: scroll;
   font-family: Script, Lobster, "Kristen ITC";
