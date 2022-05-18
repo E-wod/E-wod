@@ -99,9 +99,8 @@
 }
 
 html {
-  background-color: #645a49;
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(100,90,73,0) 100%);
-  height: auto;
+  height: 100%;
   overflow: scroll;
   font-family: Script, Lobster, "Kristen ITC";
 }
@@ -415,9 +414,8 @@ a {
 
   
      html {
-          background-color: #645a49;
           background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(100,90,73,0) 100%);
-          height: auto;
+          height: 100%;
           overflow: scroll;
           font-family: Script, Lobster, "Kristen ITC";
           background-repeat: no repeat;
