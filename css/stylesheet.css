@@ -99,7 +99,7 @@
 }
 
 html {
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(100,90,73,0) 100%);
+  background-image: url('https://imagizer.imageshack.com/img922/2119/Y1Xo6F.jpg');
   height: 100%;
   overflow: scroll;
   font-family: Script, Lobster, "Kristen ITC";
@@ -414,7 +414,7 @@ a {
 
   
      html {
-          background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(100,90,73,0) 100%);
+          background-image: url('https://imagizer.imageshack.com/img922/2119/Y1Xo6F.jpg');
           height: 100%;
           overflow: scroll;
           font-family: Script, Lobster, "Kristen ITC";
