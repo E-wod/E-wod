@@ -102,7 +102,9 @@ html {
   background-image: url('https://imagizer.imageshack.com/img922/2119/Y1Xo6F.jpg');
   width: 100%;
   height: auto;
-  overflow: scroll;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: Script, Lobster, "Kristen ITC";
 }
 
@@ -418,8 +420,9 @@ a {
           background-image: url('https://imagizer.imageshack.com/img922/2119/Y1Xo6F.jpg');
           width: 100%;
           height: auto;
-          overflow: scroll;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
           font-family: Script, Lobster, "Kristen ITC";
-          background-repeat: no repeat;
      }
 }
