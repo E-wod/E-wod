@@ -243,8 +243,8 @@ blockquote{
   align-items: center;
   display: flex;
   float: center;
-  right: 50%;
-  left: 50%;
+  margin-right: 50%;
+  margin-left: 50%;
 }
 
 .words span {
