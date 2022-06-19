@@ -242,7 +242,7 @@ blockquote{
   line-height: .75;
   
   display: inline-flex;
-  float: center;
+  
   margin-right: 50%;
   margin-left: 50%;
 }
