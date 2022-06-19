@@ -240,14 +240,12 @@ blockquote{
   display: inline-flex
   text-shadow: 2px 2px #5B1313;
   line-height: .75;
- 
-  
+  align-items: center;
   margin-right: 50%;
   margin-left: 50%;
 }
 
 .words span {
-  font-size: 5rem;
   display: inline-block;
   animation: move 3s ease-in-out infinite;
 }
