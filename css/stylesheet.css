@@ -199,10 +199,13 @@ h2 {
 h3 {
    font-size: 25px;
    font-family:"Open Sans", "sans-serif";
-   color: #000000;
+   color: #591917;
+   text-align: center;
+   mix-blend-mode: normal;
+   text-shadow: 2px 2px #5B1313;
    padding: 1px;
-   float:inherit;
-   max-width: 400px;
+   float: center;
+   align-content: center;
    margin: 1px auto;
 }
 
