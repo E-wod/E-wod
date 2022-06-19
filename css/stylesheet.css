@@ -241,7 +241,7 @@ blockquote{
   text-shadow: 2px 2px #5B1313;
   line-height: 1.5;
   align-items: center;
-  display: flex;
+  display: inline-flex;
   float: center;
   margin-right: 50%;
   margin-left: 50%;
