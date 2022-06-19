@@ -234,10 +234,11 @@ blockquote{
   
 
 .words {
-  font-family: "Archivo Black", sans-serif;
-  color: #591917;
-  font-size: 0;
+  color: #DEC9B6;
+  font-family:Script, Lobster, 'Kristen ITC';
+  font-size: 30px;
   line-height: 1.5;
+  align: center;
 }
 
 .words span {
