@@ -221,14 +221,11 @@ h4 {
 }
 
 blockquote{
-    z-index: -99991;
-    border: 2px solid #591917;  
-    color: transparent;
+    
     font-size: 10px;
     font-family:"Open Sans", "sans-serif"; 
     text-decoration: none;
-    padding: 22px;
-    border-radius: 10px;
+    flex-direction: column;
 }
 
   
