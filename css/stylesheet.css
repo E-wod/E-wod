@@ -6,8 +6,8 @@
 }
 
 .contactDiv {
-  border: 4px outset #2f7dad;
-  background-color: #2f7dad;
+  border: 4px outset #dfe6eb;
+  background-color: #dfe6eb;
   margin: auto;
   padding: 4px;
   align-items: center;
@@ -15,7 +15,7 @@
 }
 
 .counterDiv {
-  border: 4px outset #2f7dad;
+  border: 4px outset #dfe6eb;
   background-color: #000000;
   margin-top: 4px;
   margin-left: 4px;
@@ -29,7 +29,7 @@
 
 
 .myDiv {
-  border: 4px outset #2f7dad;
+  border: 4px outset #dfe6eb;
   background-color: #2C271B;
   text-align: center;
 }
@@ -74,7 +74,7 @@
 }
 
 .nav-link{
-    color: #2f7dad;
+    color: #dfe6eb;
 }
 
 .nav-link:hover{
@@ -83,7 +83,7 @@
 
 .nav-logo {
     font-size: 24px;
-    color: #2f7dad;
+    color: #dfe6eb;
 }
 
 .nav-logo:hover{
@@ -109,8 +109,8 @@ html {
 }
 
 .glow {
-  font-size: 80px;
-  color: #000000;
+  font-size: 60px;
+  color: #dfe6eb;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
 }
@@ -174,7 +174,7 @@ h1 {
     mix-blend-mode: normal;
     text-shadow: 2px 2px #5B1313;
     font-size: 28px;
-    color: #2f7dad;
+    color: #dfe6eb;
     font-family:Script, Lobster, 'Kristen ITC';
     padding: 1px;
     float: center;
@@ -188,7 +188,7 @@ h2 {
     mix-blend-mode: normal;
     text-shadow: 1px 1px #5B1313;
     font-size: 12px;
-    color: #2f7dad;
+    color: #dfe6eb;
     font-family:Script, Lobster, 'Kristen ITC';
     padding: 1px;
     float: center;
@@ -199,7 +199,7 @@ h2 {
 h3 {
    font-size: 25px;
    font-family:"Open Sans", "sans-serif";
-   color: #2f7dad;
+   color: #dfe6eb;
    text-align: center;
    mix-blend-mode: normal;
    text-shadow: 2px 2px #5B1313;
@@ -406,7 +406,7 @@ a {
         mix-blend-mode: normal;
         text-shadow: 2px 2px #5B1313;
         font-size: 15px;
-        color: #2f7dad;
+        color: #dfe6eb;
         font-family:Script, Lobster, 'Kristen ITC';
         padding: 1px;
         float: center;
