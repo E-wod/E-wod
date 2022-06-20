@@ -136,7 +136,7 @@ video {
     object-fit: cover;
     border-radius: 7%;
     max-width: 100%;
-    max-height: auto;
+    max-height: 90%;
     position: inherit;
     margin-left: auto;
     margin-right: auto;
@@ -347,7 +347,7 @@ a {
          object-fit: cover;
          border-radius: 7%;
          max-width: 100%;
-         max-height: auto;
+         max-height: 90%;
          position: inherit;
          margin-left: auto;
          margin-right: auto;
