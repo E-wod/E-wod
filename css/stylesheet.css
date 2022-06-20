@@ -420,13 +420,13 @@ a {
       max-width: 400px;
     }
 
-.wrapper{
-    margin: 0;
-    width: inherit;
-    height: 12px;
-    background: linear-gradient(180deg, rgba(4,50,60,1) 10%, rgba(73,162,182,1) 91%);
+    .wrapper{
+        margin: 0;
+        width: inherit;
+        height: 12px;
+        background: linear-gradient(180deg, rgba(4,50,60,1) 10%, rgba(73,162,182,1) 91%);
 
-}
+    }
 
   
      html {
