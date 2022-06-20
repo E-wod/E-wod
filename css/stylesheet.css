@@ -86,7 +86,7 @@
 }
 
 html {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 3.2));
+  background: linear-gradient(180deg, rgba(83,144,158,1) 7%, rgba(0,0,0,1) 100%);
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -404,7 +404,7 @@ a {
 
   
      html {
-          background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 3.2));
+          background: linear-gradient(180deg, rgba(83,144,158,1) 7%, rgba(0,0,0,1) 100%);
           width: 100%;
           height: auto;
           background-repeat: no-repeat;
