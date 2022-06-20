@@ -12,7 +12,6 @@
   padding: 4px;
   align-items: center;
   display: inline-flex;
-  box-shadow: 1px 12px 80px 8px #dfe6eb;
 }
 
 
@@ -20,7 +19,6 @@
   border: 4px outset #dfe6eb;
   background-color: #30636e;
   text-align: center;
-  box-shadow: 1px 12px 80px 8px #dfe6eb;
 }
 
 .logo {    /* to center the container */
@@ -132,7 +130,6 @@ img {
     margin-left: 1px;
     margin-top: 1px;
     align-items: center; 
-    box-shadow: 1px 12px 80px 8px #dfe6eb;
 }
 
 video {
