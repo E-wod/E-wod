@@ -65,7 +65,7 @@
 }
 
 .nav-link:hover{
-    color: #5B1313;
+    color: #1e5c69;
 }
 
 .nav-logo {
@@ -74,7 +74,7 @@
 }
 
 .nav-logo:hover{
-    color: #5B1313;
+    color: #1e5c69;
 }
 
 .responsive{
@@ -97,6 +97,7 @@ html {
 }
 
 .glow {
+  padding: 20px;
   font-size: 60px;
   color: #dfe6eb;
   text-align: center;
@@ -208,18 +209,10 @@ h4 {
     max-width: 400px;
 }
 
-blockquote{
-    
-}
-
-
-
-
 .wrapper{
     margin: 0;
     width: inherit;
     height: 12px;
-    background: rgb(12,50,78);
     background: linear-gradient(180deg, rgba(4,50,60,1) 10%, rgba(73,162,182,1) 91%);
 
 }
@@ -227,10 +220,8 @@ blockquote{
 nav {
   width: 100%;
   height: 35px;
-  background-color: #2C271B;
   opacity: 90%;
   background: linear-gradient(180deg, rgba(4,50,60,1) 10%, rgba(73,162,182,1) 91%);
-
   margin: 0;
   float: left;
   overflow: hidden;
@@ -256,7 +247,7 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #651616; 
+  color: #1e5c69; 
   font-size: 21px;
 }
 
@@ -363,19 +354,9 @@ a {
         margin-top: 1px;
         max-width: 600px;
         height: 600px;
-        box-shadow: 1px 12px 50px 8px red;
+        box-shadow: 1px 12px 50px 8px #1e5c69;
     }
 
-    blockquote{
-        z-index: -99991;
-        border: 2px solid #591917;
-        color: transparent;
-        font-size: 10px;
-        font-family:"Open Sans", "sans-serif"; 
-        text-decoration: none;
-        padding: 22px;
-        border-radius: 10px;
-    }
 
     p {
         margin: 1px auto;
