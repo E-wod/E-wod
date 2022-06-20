@@ -65,7 +65,7 @@
 }
 
 .nav-link:hover{
-    color: #1e5c69;
+    color: #43db5e;
 }
 
 .nav-logo {
@@ -74,7 +74,7 @@
 }
 
 .nav-logo:hover{
-    color: #1e5c69;
+    color: #43db5e;
 }
 
 .responsive{
@@ -110,7 +110,7 @@ html {
   }
   
   to {
-    text-shadow: 0 0 2px #1e5c69, 0 0 4px #1e5c69, 0 0 6px #1e5c69, 0 0 8px #32a0b8, 0 0 10px #1e5c69, 0 0 12px #1e5c69, 0 0 14px #32a0b8;
+    text-shadow: 0 0 4px #1e5c69, 0 0 6px #1e5c69, 0 0 8px #1e5c69, 0 0 10px #32a0b8, 0 0 12px #1e5c69, 0 0 14px #1e5c69, 0 0 16px #32a0b8;
   }
 }
 
@@ -247,7 +247,7 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #1e5c69; 
+  color: #43db5e; 
   font-size: 21px;
 }
 
