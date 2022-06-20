@@ -97,9 +97,8 @@ html {
 }
 
 .glow {
-  padding: 20px;
-  margin: 20px;
-  font-size: 60px;
+  display: inline-block;
+  font-size: 40px;
   color: #dfe6eb;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
