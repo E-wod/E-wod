@@ -99,10 +99,11 @@
 }
 
 html {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://imagizer.imageshack.com/img922/7664/K1UR7O.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 3.2));
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
+  background-color: #dfe6eb;
   background-attachment: fixed;
   background-size: cover;
   font-family: Script, Lobster, "Kristen ITC";
