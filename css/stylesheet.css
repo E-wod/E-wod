@@ -98,7 +98,6 @@ html {
 
 .glow {
   font-size: 60px;
-  margin-top: 20px;
   color: #dfe6eb;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
