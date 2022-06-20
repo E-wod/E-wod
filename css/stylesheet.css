@@ -238,7 +238,6 @@ blockquote{
   font-family:Script, Lobster, 'Kristen ITC';
   font-size: 20px;
   display: flex;
-  flex-direction: column;
   text-shadow: 2px 2px #5B1313;
   line-height: .75;
   text-align: center;
