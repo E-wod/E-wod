@@ -132,6 +132,7 @@ img {
     margin-left: 1px;
     margin-top: 1px;
     align-items: center; 
+    box-shadow: 1px 12px 80px 8px #dfe6eb;
 }
 
 video {
