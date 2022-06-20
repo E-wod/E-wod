@@ -141,7 +141,7 @@ video {
     margin-left: auto;
     margin-right: auto;
     margin-top: 4px;
-    box-shadow: 1px 12px 60px 8px #dfe6eb;
+    box-shadow: 1px 12px 80px 8px #dfe6eb;
 }
 
 p {
@@ -352,7 +352,7 @@ a {
          margin-left: auto;
          margin-right: auto;
          margin-top: 4px;
-         box-shadow: 1px 12px 60px 8px #dfe6eb;
+         box-shadow: 1px 12px 80px 8px #dfe6eb;
      }
 
 
@@ -361,27 +361,72 @@ a {
         text-align: center;
         align-items: center;
         all: center;
-        font-size: 14px;
+        font-size: 15px;
         font-family:"Open Sans", "sans-serif";
-        align-items: center;
         overflow-x: inherit;
         color: #FFFFFF;
         padding: 1px;
-     }
+    }
 
-     h1 {
-        margin: 1px;
+    h1 {
+        margin: 1px auto;
         text-align: center;
         mix-blend-mode: normal;
-        text-shadow: 2px 2px #32a0b8;
-        font-size: 15px;
+        text-shadow: 1px 1px #32a0b8;
+        font-size: 14px;
         color: #dfe6eb;
         font-family:Script, Lobster, 'Kristen ITC';
         padding: 1px;
         float: center;
         align-content: center;
         width: 100%;
-     }
+    }  
+
+    h2 {
+        margin: 1px auto;
+        text-align: center;
+        mix-blend-mode: normal;
+        text-shadow: 1px 1px #32a0b8;
+        font-size: 6px;
+        color: #dfe6eb;
+        font-family:Script, Lobster, 'Kristen ITC';
+        padding: 1px;
+        float: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    h3 {
+       font-size: 14px;
+       font-family:"Open Sans", "sans-serif";
+       color: #dfe6eb;
+       text-align: center;
+       mix-blend-mode: normal;
+       text-shadow: 2px 2px #32a0b8;
+       padding: 1px;
+       float: center;
+       align-content: center;
+       margin: 1px auto;
+    }
+
+    h4 {
+        margin: 1px auto;
+        text-align: center;
+        font-size: 13px;
+        font-family:"Open Sans", "sans-serif";
+        color: #FFFFFF;
+        padding: 1px;
+        float:inherit;
+        max-width: 400px;
+    }
+
+.wrapper{
+    margin: 0;
+    width: inherit;
+    height: 12px;
+    background: linear-gradient(180deg, rgba(4,50,60,1) 10%, rgba(73,162,182,1) 91%);
+
+}
 
   
      html {
