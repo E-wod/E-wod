@@ -202,7 +202,8 @@ h4 {
     text-align: center;
     font-size: 15px;
     font-family:"Open Sans", "sans-serif";
-    color: #FFFFFF;
+    color: #dfe6eb;
+    text-shadow: 1px 1px #32a0b8;
     padding: 1px;
     float:inherit;
     max-width: 400px;
@@ -410,14 +411,15 @@ a {
     }
 
     h4 {
-        margin: 1px auto;
-        text-align: center;
-        font-size: 13px;
-        font-family:"Open Sans", "sans-serif";
-        color: #FFFFFF;
-        padding: 1px;
-        float:inherit;
-        max-width: 400px;
+      margin: 1px auto;
+      text-align: center;
+      font-size: 15px;
+      font-family:"Open Sans", "sans-serif";
+      color: #dfe6eb;
+      text-shadow: 1px 1px #32a0b8;
+      padding: 1px;
+      float:inherit;
+      max-width: 400px;
     }
 
 .wrapper{
