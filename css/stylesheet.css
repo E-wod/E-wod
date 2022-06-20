@@ -86,7 +86,7 @@
 }
 
 html {
-  background: linear-gradient(180deg, rgba(73,162,182,1) 0%, rgba(47,114,120,1) 34%, rgba(14,63,79,1) 67%, rgba(40,50,60,1) 100%);
+  background: linear-gradient(180deg, rgba(73,162,182,1) 10%, rgba(47,114,120,1) 34%, rgba(14,63,79,1) 67%, rgba(40,50,60,1) 100%);
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -291,8 +291,6 @@ a {
         border-radius: 10px;
         text-align: inherit;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
     }
     
     .nav-menu.active {
@@ -430,12 +428,13 @@ a {
 
   
      html {
-          background: linear-gradient(180deg, rgba(73,162,182,1) 0%, rgba(47,114,120,1) 34%, rgba(14,63,79,1) 67%, rgba(40,50,60,1) 100%);
-          width: 100%;
-          height: auto;
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: cover;
-          font-family: Script, Lobster, "Kristen ITC";
-     }
+        background: linear-gradient(180deg, rgba(73,162,182,1) 10%, rgba(47,114,120,1) 34%, rgba(14,63,79,1) 67%, rgba(40,50,60,1) 100%);
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-color: #dfe6eb;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: Script, Lobster, "Kristen ITC";
+      }
 }
