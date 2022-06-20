@@ -7,7 +7,7 @@
 
 .contactDiv {
   border: 4px outset #dfe6eb;
-  background-color: #dfe6eb;
+  background-color: #2C271B;
   margin: auto;
   padding: 4px;
   align-items: center;
@@ -98,6 +98,7 @@ html {
 
 .glow {
   padding: 20px;
+  margin: 20px;
   font-size: 60px;
   color: #dfe6eb;
   text-align: center;
