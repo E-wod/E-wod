@@ -134,15 +134,13 @@ img {
 
 video {
     object-fit: cover;
-    border-radius: 100%;
+    border-radius: 10%;
     width: auto;
     position: inherit;
     margin-left: auto;
     margin-right: auto;
     margin-top: 4px;
-    max-width: 30%;
-    height: 30%;
-    box-shadow: 1px 12px 50px 8px red;
+    box-shadow: 1px 12px 50px 8px #dfe6eb;
 }
 
 p {
@@ -345,15 +343,14 @@ a {
     }
 
     video {
-        object-fit: cover;
-        border-radius: 100%;
-        width: auto;
-        position: inherit;
-        margin-left: auto;
-        margin-top: 1px;
-        max-width: 600px;
-        height: 600px;
-        box-shadow: 1px 12px 50px 8px #1e5c69;
+    object-fit: cover;
+    border-radius: 10%;
+    width: auto;
+    position: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+    box-shadow: 1px 12px 50px 8px #dfe6eb;
     }
 
 
