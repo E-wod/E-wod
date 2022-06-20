@@ -86,7 +86,7 @@
 }
 
 html {
-  background: linear-gradient(180deg, rgba(83,144,158,1) 7%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(180deg, rgba(73,162,182,1) 7%, rgba(4,50,60,1) 79%);
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -98,6 +98,7 @@ html {
 
 .glow {
   font-size: 60px;
+  margin-top: 20px;
   color: #dfe6eb;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
@@ -220,7 +221,8 @@ blockquote{
     width: inherit;
     height: 12px;
     background: rgb(12,50,78);
-    background: linear-gradient(180deg, rgba(12,50,78,1) 29%, rgba(83,144,158,1) 100%);
+    background: linear-gradient(180deg, rgba(4,50,60,1) 10%, rgba(73,162,182,1) 91%);
+
 }
 
 nav {
@@ -228,7 +230,8 @@ nav {
   height: 35px;
   background-color: #2C271B;
   opacity: 90%;
-  background: linear-gradient(180deg, rgba(12,50,78,1) 29%, rgba(83,144,158,1) 100%);;
+  background: linear-gradient(180deg, rgba(4,50,60,1) 10%, rgba(73,162,182,1) 91%);
+
   margin: 0;
   float: left;
   overflow: hidden;
@@ -404,7 +407,7 @@ a {
 
   
      html {
-          background: linear-gradient(180deg, rgba(83,144,158,1) 7%, rgba(0,0,0,1) 100%);
+          background: linear-gradient(180deg, rgba(73,162,182,1) 7%, rgba(4,50,60,1) 79%);
           width: 100%;
           height: auto;
           background-repeat: no-repeat;
