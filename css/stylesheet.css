@@ -221,10 +221,6 @@ h4 {
 }
 
 blockquote{
-    
-    font-size: 10px;
-    font-family:"Open Sans", "sans-serif"; 
-    text-decoration: none;
     flex-direction: column;
 }
 
@@ -233,7 +229,7 @@ blockquote{
 .words {
   color: #DEC9B6;
   font-family:Script, Lobster, 'Kristen ITC';
-  font-size: 20px;
+  font-size: 45px;
   display: inline-flex;
   text-shadow: 2px 2px #5B1313;
   line-height: .75;
@@ -241,10 +237,11 @@ blockquote{
   align-items: center;
   margin-right: 50%;
   margin-left: 50%;
+  margin-top: 25px;
 }
 
 .words span {
-  font-size: 20px;
+  font-size: 45px;
   display: inline-block;
   animation: move 3s ease-in-out infinite;
 }
