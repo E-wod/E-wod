@@ -106,11 +106,11 @@ html {
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 2px #1e5c69, 0 0 4px #1e5c69, 0 0 12px #1e5c69, 0 0 16px #5B1313, 0 0 22px #1e5c69, 0 0 30px #1e5c69, 0 0 40px #5B1313;
+    text-shadow: 0 0 1px #1e5c69, 0 0 2px #1e5c69, 0 0 3px #1e5c69, 0 0 4px #5B1313, 0 0 5px #1e5c69, 0 0 6px #1e5c69, 0 0 7px #5B1313;
   }
   
   to {
-    text-shadow: 0 0 5px #1e5c69, 0 0 10px #1e5c69, 0 0 20px #1e5c69, 0 0 30px #5B1313, 0 0 40px #1e5c69, 0 0 50px #1e5c69, 0 0 60px #5B1313;
+    text-shadow: 0 0 2px #1e5c69, 0 0 3px #1e5c69, 0 0 4px #1e5c69, 0 0 5px #5B1313, 0 0 6px #1e5c69, 0 0 7px #1e5c69, 0 0 8px #5B1313;
   }
 }
 
