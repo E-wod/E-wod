@@ -175,7 +175,7 @@ h1 {
     mix-blend-mode: normal;
     text-shadow: 2px 2px #5B1313;
     font-size: 28px;
-    color: #dfe6eb;
+    color: #000000;
     font-family:Script, Lobster, 'Kristen ITC';
     padding: 1px;
     float: center;
@@ -189,7 +189,7 @@ h2 {
     mix-blend-mode: normal;
     text-shadow: 1px 1px #5B1313;
     font-size: 12px;
-    color: #dfe6eb;
+    color: #000000;
     font-family:Script, Lobster, 'Kristen ITC';
     padding: 1px;
     float: center;
@@ -200,7 +200,7 @@ h2 {
 h3 {
    font-size: 25px;
    font-family:"Open Sans", "sans-serif";
-   color: #dfe6eb;
+   color: #000000;
    text-align: center;
    mix-blend-mode: normal;
    text-shadow: 2px 2px #5B1313;
