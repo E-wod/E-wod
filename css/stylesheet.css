@@ -208,7 +208,11 @@ h4 {
 }
 
 blockquote {
+    margin: 1px auto;
     max-width: 40%;
+    align-items: center;
+    padding: 1px;
+    float:inherit;
 }
 
 .wrapper{
