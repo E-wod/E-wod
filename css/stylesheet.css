@@ -65,7 +65,7 @@
 }
 
 .nav-link:hover{
-    color: #43db5e;
+    color: #66b3ff;
 }
 
 .nav-logo {
@@ -74,7 +74,7 @@
 }
 
 .nav-logo:hover{
-    color: #43db5e;
+    color: #66b3ff;
 }
 
 .responsive{
@@ -253,7 +253,7 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #43db5e; 
+  color: #66b3ff; 
   font-size: 21px;
 }
 
