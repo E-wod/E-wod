@@ -86,7 +86,7 @@
 }
 
 html {
-  background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 43%, hsla(192, 12%, 52%, 1) 100%);
+  background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 74%, hsla(177, 29%, 41%, 1) 92%, hsla(192, 12%, 52%, 1) 100%);
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -427,7 +427,7 @@ a {
 
   
      html {
-        background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 43%, hsla(192, 12%, 52%, 1) 100%);
+        background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 74%, hsla(177, 29%, 41%, 1) 92%, hsla(192, 12%, 52%, 1) 100%);
         width: 100%;
         height: auto;
         background-repeat: no-repeat;
