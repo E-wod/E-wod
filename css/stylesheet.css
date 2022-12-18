@@ -7,7 +7,7 @@
 
 .contactDiv {
   border: 4px outset #dfe6eb;
-  background-color: #30636e;
+  background-color: hsla(178, 30%, 18%, 1);
   margin: auto;
   padding: 4px;
   align-items: center;
@@ -17,7 +17,7 @@
 
 .myDiv {
   border: 4px outset #dfe6eb;
-  background-color: #30636e;
+  background-color: hsla(178, 30%, 18%, 1);
   text-align: center;
 }
 
