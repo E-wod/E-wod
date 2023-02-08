@@ -424,7 +424,13 @@ a {
       float:inherit;
       max-width: 400px;
     }
-
+    .glow {
+     display: inline-block;
+     font-size: 20px;
+     color: #dfe6eb;
+     text-align: center;
+     animation: glow 1s ease-in-out infinite alternate;
+     }
   
      html {
         background: linear-gradient(180deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
