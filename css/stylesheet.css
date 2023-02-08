@@ -71,6 +71,7 @@
 .nav-logo {
     font-size: 24px;
     color: #dfe6eb;
+    font-family: Script, Lobster, "Kristen ITC";
 }
 
 .nav-logo:hover{
@@ -313,7 +314,9 @@ a {
     }
     
     .nav-logo {
-        font-size: 20px;
+    font-size: 20px;
+    color: #dfe6eb;
+    font-family: Script, Lobster, "Kristen ITC";
     }
     
     .hamburger {
