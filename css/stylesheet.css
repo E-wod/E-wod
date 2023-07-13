@@ -24,15 +24,11 @@ div {
   animation: mymove 5s infinite;
 }
 
-#div1 {animation-timing-function: linear;}
-#div2 {animation-timing-function: ease;}
-#div3 {animation-timing-function: ease-in;}
-#div4 {animation-timing-function: ease-out;}
-#div5 {animation-timing-function: ease-in-out;}
+#div1 {animation-timing-function: ease;}
 
 @keyframes mymove {
-  from {left: 0px;}
-  to {left: 300px;}
+  from {left: -100px;}
+  to {left: 1300px;}
 }
 
 
