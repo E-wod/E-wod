@@ -17,9 +17,9 @@
 div {
   width: 100px;
   height: 100px;
-  background: red;
+  background: transparent;
   position: relative;
-  animation-name: example;
+  animation-name: anim;
   animation-duration: 3s;
   animation-delay: 2s;
   animation-fill-mode: both;
