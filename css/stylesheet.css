@@ -12,6 +12,7 @@
   padding: 4px;
   align-items: center;
   display: inline-flex;
+  position: relative;
 }
 
 animdiv {
@@ -24,9 +25,11 @@ animdiv {
 }
 
 @keyframes anim {
-  0%   {opacity: 0.0;}
-  100% {opacity: 1.0;}
+  0%   {opacity: 0.0;
+  100% {opacity: 1.0;
   z-index: 99905;
+  position: relative;
+}
 
 }
 animdiv {animation-timing-function: ease-in-out;}
@@ -36,6 +39,8 @@ animdiv {animation-timing-function: ease-in-out;}
   border: 4px outset #dfe6eb;
   background-color: #325b63;
   text-align: center;
+  position: relative;
+}
 }
 
 .logo {    /* to center the container */
@@ -71,6 +76,7 @@ animdiv {animation-timing-function: ease-in-out;}
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .nav-item {
