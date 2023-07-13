@@ -312,7 +312,7 @@ a {
         max-height: 70%;
         border-radius: 10px;
         text-align: inherit;
-        transition: 1.0s;
+        transition: 0.1s;
     }
     
     .nav-menu.active {
