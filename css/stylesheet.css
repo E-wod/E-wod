@@ -23,7 +23,6 @@
     height: auto;
     top: 0;
     bottom: 0;
-
     filter: url(#threshold) blur(0.9px);
 }
 
@@ -36,7 +35,7 @@
     font-size: 60pt;
     animation-timing-function: ease-in-out;
     text-align: center;
-    color: #D27F15;
+    color: #D4480C;
     user-select: none;
 }
 
@@ -116,7 +115,7 @@ anim {animation-timing-function: ease-in-out;}
 
 .nav-logo {
     font-size: 24px;
-    color: #dfe6eb;
+    color: #D4480C;
     font-family: Script, Lobster, "Kristen ITC";
 }
 
@@ -145,7 +144,7 @@ html {
 .glow {
   display: inline-block;
   font-size: 28px;
-  color: #dfe6eb;
+  color: #D4480C;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
 }
@@ -207,7 +206,7 @@ h1 {
     mix-blend-mode: normal;
     text-shadow: 2px 2px #32a0b8;
     font-size: 28px;
-    color: #D27F15;
+    color: #D4480C;
     font-family:Script, Lobster, 'Kristen ITC';
     padding: 1px;
     float: center;
@@ -221,7 +220,7 @@ h2 {
     mix-blend-mode: normal;
     text-shadow: 2px 2px #32a0b8;
     font-size: 16px;
-    color: #dfe6eb;
+    color: #D4480C;
     font-family: 'Open Sans';
     padding: 1px;
     float: center;
@@ -232,7 +231,7 @@ h2 {
 h3 {
    font-size: 10px;
    font-family:"Open Sans", "sans-serif";
-   color: #dfe6eb;
+   color: #D4480C;
    text-align: center;
    mix-blend-mode: normal;
    text-shadow: 2px 2px #32a0b8;
@@ -247,7 +246,7 @@ h4 {
     text-align: center;
     font-size: 11px;
     font-family:"Open Sans", "sans-serif";
-    color: #D27F15;
+    color: #D4480C;
     text-shadow: 1px 1px #32a0b8;
     padding: 1px;
     float:inherit;
@@ -361,7 +360,7 @@ a {
     
     .nav-logo {
     font-size: 20px;
-    color: #dfe6eb;
+    color: #D4480C;
     font-family: Script, Lobster, "Kristen ITC";
     }
     
@@ -427,7 +426,7 @@ a {
         mix-blend-mode: normal;
         text-shadow: 1px 1px #32a0b8;
         font-size: 16px;
-        color: #dfe6eb;
+        color: #D4480C;
         font-family:Script, Lobster, 'Kristen ITC';
         padding: 1px;
         float: center;
@@ -441,7 +440,7 @@ a {
         mix-blend-mode: normal;
         text-shadow: 2px 2px #32a0b8;
         font-size: 10px;
-        color: #dfe6eb;
+        color: #D4480C;
         font-family: 'Open Sans';
         padding: 1px;
         float: center;
@@ -452,7 +451,7 @@ a {
     h3 {
        font-size: 10px;
        font-family:"Open Sans", "sans-serif";
-       color: #dfe6eb;
+       color: #D4480C;
        text-align: center;
        mix-blend-mode: normal;
        text-shadow: 2px 2px #32a0b8;
@@ -467,7 +466,7 @@ a {
       text-align: center;
       font-size: 10px;
       font-family:"Open Sans", "sans-serif";
-      color: #dfe6eb;
+      color: #D4480C;
       text-shadow: 1px 1px #32a0b8;
       padding: 1px;
       float:inherit;
@@ -476,7 +475,7 @@ a {
     .glow {
      display: inline-block;
      font-size: 18px;
-     color: #dfe6eb;
+     color: #D4480C;
      text-align: center;
      animation: glow 1s ease-in-out infinite alternate;
      }
