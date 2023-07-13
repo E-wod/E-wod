@@ -14,14 +14,15 @@
   display: inline-flex;
 }
 
-.animDiv {
+div {
   width: 100px;
   height: 100px;
-  background-color: transparent;
+  background: red;
   position: relative;
   animation-name: example;
-  animation-duration: 4s;
-  animation-delay: -2s;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
 }
 
 @keyframes anim {
