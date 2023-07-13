@@ -149,7 +149,7 @@ html {
 .glow {
   display: inline-block;
   font-size: 28px;
-  color: #dfe6eb;
+  color: #CD6B3F;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
 }
@@ -474,7 +474,7 @@ a {
     .glow {
      display: inline-block;
      font-size: 18px;
-     color: #dfe6eb; 
+     color: #CD6B3F; 
      text-align: center;
      animation: glow 1s ease-in-out infinite alternate;
      }
