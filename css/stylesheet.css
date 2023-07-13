@@ -22,7 +22,7 @@ animDiv {
   background-color: transparent;
   animation-name: anim;
   animation-duration: 4.75s;
-  
+  blending-mode: screen;
 }
 
 @keyframes anim {
@@ -30,7 +30,7 @@ animDiv {
   100%  {opacity:100%; width: 100%; blending-mode: screen;}
 }  
 
-anim {animation-timing-function: ease-in-out;}
+anim {animation-timing-function: ease-in-out; blending-mode: screen;}
 }
 
 
