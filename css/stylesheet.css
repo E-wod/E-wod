@@ -53,6 +53,7 @@ animdiv {animation-timing-function: ease-in-out;}
 
 .hamburger {
     display: none;
+    background-color: #325b63;
 }
 
 .bar {
@@ -312,7 +313,7 @@ a {
         max-height: 70%;
         border-radius: 10px;
         text-align: inherit;
-        transition: 0.3s;
+        transition: 1.0s;
     }
     
     .nav-menu.active {
