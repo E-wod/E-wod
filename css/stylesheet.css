@@ -20,12 +20,12 @@ animdiv {
   position: relative;
   background-color: transparent;
   animation-name: anim;
-  animation-duration: 4s;
+  animation-duration: 2.75s;
 }
 
 @keyframes anim {
-  0%   {opacity: 0.01;}
-  25%  {opacity: 0.25;}
+  0%   {opacity: 0.175;}
+  25%  {opacity: 0.275;}
   50%  {opacity: 0.5;}
   75%  {opacity: 0.75;}
   100% {opacity: 1.0;}
