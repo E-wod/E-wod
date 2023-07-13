@@ -14,7 +14,7 @@
   display: inline-flex;
 }
 
-div {
+animdiv {
   width: 100px;
   height: 100px;
   background-color: transparent;
@@ -24,7 +24,7 @@ div {
   animation-delay: -2s;
 }
 
-@keyframes example {
+@keyframes anim {
   0%   {position: 0px; top:0px;}
   25%  {position: 200px; top:0px;}
   50%  {position: 200px; top:200px;}
