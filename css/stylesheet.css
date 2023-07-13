@@ -24,7 +24,7 @@ animdiv {
   animation-duration: 4.75s;
 }
 
-@keyframes animDiv {
+@keyframes anim {
   0%   {background-color:red; left:0px; top:0px;}
   25%  {background-color:yellow; left:200px; top:0px;}
   50%  {background-color:blue; left:200px; top:200px;}
@@ -32,8 +32,11 @@ animdiv {
   100% {background-color:red; left:0px; top:0px;}
 }  
 
-animdiv {animation-timing-function: ease-in-out;}
+anim {animation-timing-function: ease-in-out;}
 }
+
+
+
 .myDiv {
   border: 4px outset #dfe6eb;
   background-color: #325b63;
