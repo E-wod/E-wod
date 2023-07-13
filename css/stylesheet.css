@@ -466,4 +466,11 @@ a {
         background-size: cover;
         font-family: Script, Lobster, "Kristen ITC";
       }
+     @keyframes anim {
+         0%   {opacity: 0.0;
+         100% {opacity: 1.0;
+         z-index: 99905;
+         position: relative;}
+     }
+     animdiv {animation-timing-function: ease-in-out;}
 }
