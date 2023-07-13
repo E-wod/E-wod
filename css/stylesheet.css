@@ -23,7 +23,7 @@
     height: auto;
     top: 0;
     bottom: 0;
-    filter: url(#threshold) blur(0.9px);
+    filter: url(#threshold) blur(0.3px);
 }
 
 #text1,
