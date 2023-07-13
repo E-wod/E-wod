@@ -18,7 +18,7 @@
 animdiv {
   width: 100%;
   height: auto;
-  position: absolute;
+  position: relative;
   background-color: transparent;
   animation-name: anim;
   animation-duration: 4.75s;
@@ -28,19 +28,17 @@ animdiv {
   0%   {opacity: 0.0;
   100% {opacity: 1.0;
   z-index: 99905;
-  position: absolute;
+  position: relative;
 }
 
 }
 animdiv {animation-timing-function: ease-in-out;}
-
 
 .myDiv {
   border: 4px outset #dfe6eb;
   background-color: #325b63;
   text-align: center;
   position: relative;
-}
 }
 
 .logo {    /* to center the container */
@@ -469,20 +467,26 @@ a {
      animdiv {
         width: 100%;
         height: auto;
-        position: absolute;
+        position: relative;
         background-color: transparent;
         animation-name: anim;
         animation-duration: 4.75s;
-        }
-        
-    @keyframes anim {
-          0%   {opacity: 0.0;
-          100% {opacity: 1.0;
-          z-index: 99905;
-          position: absolute;
-        }
-        
-        }
-        animdiv {animation-timing-function: ease-in-out;}
-
+      }
+      
+      @keyframes anim {
+        0%   {opacity: 0.0;
+        100% {opacity: 1.0;
+        z-index: 99905;
+        position: relative;
+      }
+      
+      }
+      animdiv {animation-timing-function: ease-in-out;}
+      
+      .myDiv {
+        border: 4px outset #dfe6eb;
+        background-color: #325b63;
+        text-align: center;
+        position: relative;
+      }
 }
