@@ -25,11 +25,11 @@ animDiv {
 }
 
 @keyframes anim {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
+  0%   {opacity:0; left:0px; top:0px;}
+  50%  {opacity:50; left:200px; top:0px;}
+  100%  {opacity:100; left:200px; top:200px;}
+  50%  {opacity:50; left:0px; top:200px;}
+  0% {opacity:0; left:0px; top:0px;}
 }  
 
 anim {animation-timing-function: ease-in-out;}
