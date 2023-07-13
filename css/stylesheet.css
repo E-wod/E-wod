@@ -504,6 +504,7 @@ a {
           display: inline-block;
           font-family: "Open Sans", light;
           font-size: 20pt;
+          font-weight: 50;
           animation-timing-function: ease-in-out;
           text-align: center;
           color: #dfe6eb;
