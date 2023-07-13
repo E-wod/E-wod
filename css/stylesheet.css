@@ -25,11 +25,8 @@ animDiv {
 }
 
 @keyframes anim {
-  0%   {opacity:0; left:0px; top:0px;}
-  50%  {opacity:50; left:200px; top:0px;}
-  100%  {opacity:100; left:200px; top:200px;}
-  50%  {opacity:50; left:0px; top:200px;}
-  0% {opacity:0; left:0px; top:0px;}
+  0%   {opacity:0%; width: 60%;}
+  100%  {opacity:100%; width: 100%;}
 }  
 
 anim {animation-timing-function: ease-in-out;}
