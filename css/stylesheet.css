@@ -14,6 +14,28 @@
   display: inline-flex;
 }
 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: -2s;
+}
+
+@keyframes example {
+  0%   {position: 0px; top:0px;}
+  25%  {position: 200px; top:0px;}
+  50%  {position: 200px; top:200px;}
+  75%  {position: 0px; top:200px;}
+  100% {position: 0px; top:0px;}
+}
+
+
+
+
+
 .myDiv {
   border: 4px outset #dfe6eb;
   background-color: #325b63;
