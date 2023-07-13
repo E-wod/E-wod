@@ -110,7 +110,7 @@ animdiv {animation-timing-function: ease-in-out;}
 }
 
 html {
-  background: linear-gradient(180deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%), filter: contrast(170%) brightness(1000%);
+  background: linear-gradient(180deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -458,7 +458,7 @@ a {
      }
   
      html {
-        background: linear-gradient(180deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%), filter: contrast(170%) brightness(1000%);
+        background: linear-gradient(180deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
         width: 100%;
         height: auto;
         background-repeat: no-repeat;
