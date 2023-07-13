@@ -36,7 +36,7 @@ const texts = [
 const morphTime = 2;
 const cooldownTime = 1.25;
 
-let textIndex = texts.length - 2;
+let textIndex = texts.length - 3;
 let time = new Date();
 let morph = 0;
 let cooldown = cooldownTime;
