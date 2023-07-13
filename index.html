@@ -33,7 +33,21 @@
 <body>
 
 <p><h2 class="glow"> Graphic Design - Photography -Director/Producer - Videography - Ad Campaign - 3D Modeling - Animation - Fine Art - Branding - Logo Designs - </h2> </p>
+<div id="container">
+    <span id="text1"></span>
+    <span id="text2"></span>
+</div>
 
+<svg id="filters">
+    <defs>
+        <filter id="threshold">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  0 0 0 255 -140" />
+        </filter>
+    </defs>
+</svg>
     
 <p>
 <animDiv class="animDiv" style= "blending-mode: screen">
