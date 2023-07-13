@@ -269,7 +269,7 @@ ul li a {
 
 ul li a:hover {
   color: #006666; 
-  font-size: 21px;
+  font-size: 22px;
 }
 
 li {
@@ -301,13 +301,13 @@ a {
 
 @media only screen and (max-width : 768px ){
     .nav-menu {
-        z-index: 99998;
+        z-index: 01;
         object-fit: cover;
         position: fixed;
         right: -100%;
         top: 10px;
         float: top;
-        flex-direction: row;
+        flex-direction: column;
         width: 30%;
         max-height: 70%;
         border-radius: 10px;
@@ -323,7 +323,7 @@ a {
     
     .nav-item {
         margin: 0 0;
-        z-index: 99998;
+        z-index: 01;
         padding: 2px;
     }
     
@@ -334,7 +334,7 @@ a {
     }
     
     .hamburger {
-        z-index: 99999;
+        z-index: 01;
         display: block;
         cursor: pointer;
     }
