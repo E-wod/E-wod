@@ -21,7 +21,7 @@ animdiv {
   position: relative;
   background-color: transparent;
   animation-name: anim;
-  animation-duration: 2.75s;
+  animation-duration: 4.75s;
 }
 
 @keyframes anim {
