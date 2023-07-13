@@ -63,6 +63,8 @@ animdiv {animation-timing-function: ease-in-out;}
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #dfe6eb;
+    opacity: 0%, 0.0;
+    opacity: 100%, 1.0;
 }
 
 .nav-menu {
@@ -123,7 +125,6 @@ html {
   from {
     text-shadow: 0 0 1px #1e5c69, 0 0 2px #1e5c69, 0 0 3px #1e5c69, 0 0 4px #32a0b8, 0 0 5px #1e5c69, 0 0 6px #1e5c69, 0 0 7px #32a0b8;
   }
-  
   to {
     text-shadow: 0 0 4px #1e5c69, 0 0 6px #1e5c69, 0 0 8px #1e5c69, 0 0 10px #32a0b8, 0 0 12px #1e5c69, 0 0 14px #1e5c69, 0 0 16px #32a0b8;
   }
