@@ -14,7 +14,7 @@
   display: inline-flex;
 }
 
-div {
+animdiv {
   width: 100%;
   height: auto;
   position: relative;
@@ -30,7 +30,7 @@ div {
   75%  {position: 50px; top:100px;}
   100% {position: 50px; top:200px;}
 }
-
+animdiv {animation-timing-function: ease-in-out;}
 
 
 
