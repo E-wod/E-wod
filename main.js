@@ -19,17 +19,18 @@ const elts = {
     text1: document.getElementById("text1"),
     text2: document.getElementById("text2")
 };
-
+ -  - -  -  -  -  -  -  -  
 const texts = [
-    "If",
-    "You",
-    "Like",
-    "It",
-    "Please",
-    "Give",
-    "a Love",
-    ":)",
-    "by @DotOnion"
+    "Graphic Design",
+    "Photography",
+    "Director/Producer",
+    "Cinematography/Videography",
+    "Ad Campaign",
+    "3D Modeling",
+    "Animation",
+    "Fine Art",
+    "Branding",
+    "Logo Designs"
 ];
 
 const morphTime = 1;
