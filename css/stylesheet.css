@@ -25,15 +25,14 @@ animdiv {
 }
 
 @keyframes anim {
-  0%   {opacity: 0.0;
-  100% {opacity: 1.0;
+   0%   {opacity:"0%";}
+  100%  {opacity:"100%";}
   z-index: 99905;
   position: relative;
 }
-
 }
 animdiv {animation-timing-function: ease-in-out;}
-
+}
 .myDiv {
   border: 4px outset #dfe6eb;
   background-color: #325b63;
@@ -464,29 +463,5 @@ a {
         background-size: cover;
         font-family: Script, Lobster, "Kristen ITC";
       }
-     animdiv {
-        width: 100%;
-        height: auto;
-        position: relative;
-        background-color: transparent;
-        animation-name: anim;
-        animation-duration: 4.75s;
-      }
-      
-      @keyframes anim {
-        0%   {opacity: 0.0;
-        100% {opacity: 1.0;
-        z-index: 99905;
-        position: relative;
-      }
-      
-      }
-      animdiv {animation-timing-function: ease-in-out;}
-      
-      .myDiv {
-        border: 4px outset #dfe6eb;
-        background-color: #325b63;
-        text-align: center;
-        position: relative;
-      }
+
 }
