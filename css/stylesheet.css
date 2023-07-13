@@ -24,13 +24,14 @@ animdiv {
   animation-duration: 4.75s;
 }
 
-@keyframes anim {
-   0%   {opacity:"0%";}
-  100%  {opacity:"100%";}
-  z-index: 99905;
-  position: relative;
-}
-}
+@keyframes animDiv {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}  
+
 animdiv {animation-timing-function: ease-in-out;}
 }
 .myDiv {
