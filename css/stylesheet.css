@@ -101,7 +101,7 @@ anim {animation-timing-function: ease-in-out;}
 }
 
 .responsive{
-    max-width: 70%;
+    max-width: 100%;
     height: 100%;
     margin-left: 50%;
     margin-right: 50%;
