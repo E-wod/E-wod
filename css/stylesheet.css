@@ -15,8 +15,8 @@
 }
 
 div {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: auto;
   position: relative;
   background-color: transparent;
   animation-name: anim;
@@ -25,10 +25,10 @@ div {
 
 @keyframes anim {
   0%   {position: 0px; top:0px;}
-  25%  {position: 200px; top:0px;}
-  50%  {position: 400px; top:200px;}
+  25%  {position: 200px; top:25px;}
+  50%  {position: 400px; top:50px;}
   75%  {position: 50px; top:100px;}
-  100% {position: 50px; top:0px;}
+  100% {position: 50px; top:200px;}
 }
 
 
