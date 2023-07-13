@@ -15,26 +15,24 @@
   position: relative;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
 #container {
-    position: absolute;
+    position: relative;
     margin: auto;
-    width: 100vw;
-    height: 80pt;
+    width: 100%;
+    height: auto;
     top: 0;
     bottom: 0;
 
-    filter: url(#threshold) blur(0.6px);
+    filter: url(#threshold) blur(0.9px);
 }
 
 #text1,
 #text2 {
-    position: absolute;
+    position: relative;
     width: 100%;
     display: inline-block;
-
-    font-family: "Raleway", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 80pt;
 
     text-align: center;
