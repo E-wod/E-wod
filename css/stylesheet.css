@@ -218,7 +218,6 @@ h2 {
     margin: 1px auto;
     text-align: center;
     mix-blend-mode: normal;
-    text-shadow: 2px 2px #32a0b8;
     font-size: 18px;
     color: #dfe6eb; 
     font-family: 'Open Sans';
@@ -234,7 +233,6 @@ h3 {
    color: #dfe6eb; 
    text-align: center;
    mix-blend-mode: normal;
-   text-shadow: 2px 2px #32a0b8;
    padding: 1px;
    float: center;
    align-content: center;
@@ -247,7 +245,6 @@ h4 {
     font-size: 13px;
     font-family:"Open Sans", "sans-serif";
     color: #dfe6eb; 
-    text-shadow: 1px 1px #32a0b8;
     padding: 1px;
     float:inherit;
     max-width: 400px;
