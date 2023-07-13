@@ -45,12 +45,15 @@ animDiv {
   position: relative;
   background-color: transparent;
   animation-name: anim;
-  animation-duration: 4.75s;
+  animation-duration: 8.75s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes anim {
-  0%   {opacity:0%; width: 0%;}
-  100%  {opacity:100%; width: 100%;}
+  0%   {opacity:0%;}
+  100%  {opacity:100%;}
+  0%  {opacity:0%;}
+  
 }  
 
 anim {animation-timing-function: ease-in-out;}
