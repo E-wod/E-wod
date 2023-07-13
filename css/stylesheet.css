@@ -26,6 +26,8 @@ animdiv {
 @keyframes anim {
   0%   {opacity: 0.0;}
   100% {opacity: 1.0;}
+  z-index: 99905;
+
 }
 animdiv {animation-timing-function: ease-in-out;}
 
