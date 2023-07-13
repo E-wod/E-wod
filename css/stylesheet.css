@@ -483,5 +483,26 @@ a {
         background-size: cover;
         font-family: Script, Lobster, "Kristen ITC";
       }
-
+      #container {
+          position: relative;
+          margin: auto;
+          width: 90%;
+          height: auto;
+          top: 0;
+          bottom: 0;
+          filter: url(#threshold) blur(0.3px);
+      }
+      
+      #text1,
+      #text2 {
+          position: absolute;
+          width: 100%;
+          display: inline-block;
+          font-family: "Open Sans", sans-serif;
+          font-size: 25pt;
+          animation-timing-function: ease-in-out;
+          text-align: center;
+          color: #dfe6eb;
+          user-select: none;
+      }
 }
