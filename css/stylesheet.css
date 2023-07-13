@@ -301,7 +301,7 @@ a {
 
 @media only screen and (max-width : 768px ){
     .nav-menu {
-        z-index: 01;
+        z-index: 99999;
         object-fit: cover;
         position: fixed;
         right: -100%;
@@ -317,13 +317,13 @@ a {
     
     .nav-menu.active {
          object-fit: cover;
-         z-index: 01;
+         z-index: 99999;
          right: 5px;
     }
     
     .nav-item {
         margin: 0 0;
-        z-index: 01;
+        z-index: 99999;
         padding: 2px;
     }
     
@@ -334,7 +334,7 @@ a {
     }
     
     .hamburger {
-        z-index: 01;
+        z-index: 99999;
         display: block;
         cursor: pointer;
     }
