@@ -22,6 +22,7 @@ animDiv {
   background-color: transparent;
   animation-name: anim;
   animation-duration: 4.75s;
+  blending-mode: dissolve;
 }
 
 @keyframes anim {
