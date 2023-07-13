@@ -307,18 +307,18 @@ a {
         right: -100%;
         top: 10px;
         float: top;
-        flex-direction: column;
+        flex-direction: row;
         width: 30%;
         max-height: 70%;
         border-radius: 10px;
         text-align: inherit;
-        transition: 0.1s;
+        transition: 0.75s;
     }
     
     .nav-menu.active {
          object-fit: cover;
-         z-index: 99998;
-         right: 10px;
+         z-index: 01;
+         right: 5px;
     }
     
     .nav-item {
