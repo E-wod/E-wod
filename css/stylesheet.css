@@ -34,7 +34,7 @@
     font-family: "Open Sans", light;
     font-size: 40pt;
     font-weight: 50;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease;
     text-align: center;
     color: #dfe6eb;
     user-select: none;
