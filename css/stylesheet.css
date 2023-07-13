@@ -27,8 +27,8 @@ div {
 #div1 {animation-timing-function: ease;}
 
 @keyframes mymove {
-  from {left: -1300px;}
-  to {left: 1300px;}
+  from {bottom: -1300px;}
+  to {top: 1300px;}
 }
 
 
