@@ -15,14 +15,12 @@
 }
 
 div {
-  width: 100px;
-  height: 100px;
-  background: transparent;
+  width: 400px;
+  height: 400px;
   position: relative;
+  background-color: transparent;
   animation-name: anim;
-  animation-duration: 3s;
-  animation-delay: 2s;
-  animation-fill-mode: both;
+  animation-duration: 4s;
 }
 
 @keyframes anim {
