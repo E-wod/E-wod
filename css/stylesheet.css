@@ -33,8 +33,8 @@
     width: 100%;
     display: inline-block;
     font-family: "Open Sans", sans-serif;
-    font-size: 80pt;
-
+    font-size: 30pt;
+    animation-timing-function: ease-in-out;
     text-align: center;
 
     user-select: none;
@@ -47,7 +47,6 @@ animDiv {
   background-color: transparent;
   animation-name: anim;
   animation-duration: 4.75s;
-  mix-blend-mode: luminosity;
 }
 
 @keyframes anim {
