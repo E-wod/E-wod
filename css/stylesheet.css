@@ -25,7 +25,11 @@
     bottom: 0;
     filter: url(#threshold) blur(0.3px);
 }
+@keyframes textanim {
+  0%: transform: scale(1);
+  100%: transform: scale(2);
 
+}  
 #text1,
 #text2 {
     position: absolute;
