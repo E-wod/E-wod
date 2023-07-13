@@ -15,23 +15,6 @@
   position: relative;
 }
 
-div {
-  width: 100%;
-  height: auto;
-  background-color: transparent;
-  font-weight: thin;
-  position: relative;
-  animation: mymove 10s infinite;
-}
-
-#div1 {animation-timing-function: ease;}
-
-@keyframes mymove {
-  from {bottom: -1300px;}
-  to {top: 1300px;}
-}
-
-
 
 
 #container {
