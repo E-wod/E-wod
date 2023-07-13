@@ -35,7 +35,7 @@
     font-size: 60pt;
     animation-timing-function: ease-in-out;
     text-align: center;
-    color: #958E78;
+    color: #dfe6eb;
     user-select: none;
 }
 
@@ -206,7 +206,7 @@ h1 {
     mix-blend-mode: normal;
     text-shadow: 2px 2px #32a0b8;
     font-size: 28px;
-    color: #958E78; 
+    color: #dfe6eb; 
     font-family:Script, Lobster, 'Kristen ITC';
     padding: 1px;
     float: center;
@@ -220,7 +220,7 @@ h2 {
     mix-blend-mode: normal;
     text-shadow: 2px 2px #32a0b8;
     font-size: 18px;
-    color: #958E78; 
+    color: #dfe6eb; 
     font-family: 'Open Sans';
     padding: 1px;
     float: center;
@@ -231,7 +231,7 @@ h2 {
 h3 {
    font-size: 16px;
    font-family:"Open Sans", "sans-serif";
-   color: #958E78; 
+   color: #dfe6eb; 
    text-align: center;
    mix-blend-mode: normal;
    text-shadow: 2px 2px #32a0b8;
@@ -246,7 +246,7 @@ h4 {
     text-align: center;
     font-size: 13px;
     font-family:"Open Sans", "sans-serif";
-    color: #958E78; 
+    color: #dfe6eb; 
     text-shadow: 1px 1px #32a0b8;
     padding: 1px;
     float:inherit;
@@ -438,9 +438,8 @@ a {
         margin: 1px auto;
         text-align: center;
         mix-blend-mode: normal;
-        text-shadow: 2px 2px #32a0b8;
         font-size: 14px;
-        color: #958E78; 
+        color: #dfe6eb; 
         font-family: 'Open Sans';
         padding: 1px;
         float: center;
@@ -451,10 +450,9 @@ a {
     h3 {
        font-size: 12px;
        font-family:"Open Sans", "sans-serif";
-       color: #958E78; 
+       color: #dfe6eb; 
        text-align: center;
        mix-blend-mode: normal;
-       text-shadow: 2px 2px #32a0b8;
        padding: 1px;
        float: center;
        align-content: center;
@@ -466,8 +464,7 @@ a {
       text-align: center;
       font-size: 11px;
       font-family:"Open Sans", "sans-serif";
-      color: #958E78; 
-      text-shadow: 1px 1px #32a0b8;
+      color: #dfe6eb; 
       padding: 1px;
       float:inherit;
       max-width: 400px;
@@ -475,7 +472,7 @@ a {
     .glow {
      display: inline-block;
      font-size: 18px;
-     color: #CD6B3F; 
+     color: #958E78; 
      text-align: center;
      animation: glow 1s ease-in-out infinite alternate;
      }
