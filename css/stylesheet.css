@@ -21,13 +21,13 @@ div {
   background-color: transparent;
   font-weight: thin;
   position: relative;
-  animation: mymove 5s infinite;
+  animation: mymove 10s infinite;
 }
 
 #div1 {animation-timing-function: ease;}
 
 @keyframes mymove {
-  from {left: -100px;}
+  from {left: -1300px;}
   to {left: 1300px;}
 }
 
