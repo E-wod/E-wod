@@ -24,10 +24,7 @@ animdiv {
 }
 
 @keyframes anim {
-  0%   {opacity: 0.175;}
-  25%  {opacity: 0.275;}
-  50%  {opacity: 0.5;}
-  75%  {opacity: 0.75;}
+  0%   {opacity: 0.0;}
   100% {opacity: 1.0;}
 }
 animdiv {animation-timing-function: ease-in-out;}
