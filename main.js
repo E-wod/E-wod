@@ -102,5 +102,4 @@ function animate() {
 }
 
 animate();
-}
-}
+
