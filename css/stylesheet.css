@@ -21,8 +21,8 @@
 	max-width: 1200px;
 	max-height: 1200px;
 	display: grid;
-	grid-template-columns: repeat(100px, 10px);
-	grid-template-rows: repeat(100px, 10px);
+	grid-template-columns: repeat(40px, 1px);
+	grid-template-rows: repeat(40px, 1px);
 	grid-gap: 1px;
 	justify-items: center;
 	align-items: center;
