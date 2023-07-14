@@ -27,7 +27,7 @@
 	justify-items: center;
 	align-items: center;
 }
-img:nth-child(7n + 1) {
+portImg:nth-child(7n + 1) {
 	grid-column: 2 / span 2;
 }
 
