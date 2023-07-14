@@ -14,41 +14,6 @@
   position: relative;
 }
 
-.portfolio {
-	position: relative;
-	flex-grow: 1;
-	margin: auto;
-	max-width: 1200px;
-	max-height: 1200px;
-	display: grid;
-	grid-template-columns: repeat(40px, 1px);
-	grid-template-rows: repeat(40px, 1px);
-	grid-gap: 1px;
-}
-.pyt:nth-child(7n + 1) {
-	grid-column: 24 / span 5;
-}
-
-.pyt:hover {
-	z-index: 3;
-	transform: scale(2);
-}
-
-.pyt {
-    position: inherit;
-    padding: 0;
-    margin-left: 1px;
-    margin-top: 1px;
-    align-items: center; 
-    z-index: 1;
-    grid-column: span 5;
-    width: 100%;
-    transform: scale(1);
-    transition: all .25s;
-}
-
-
-
 
 .fadeDiv {
   width: 100%;
