@@ -23,10 +23,6 @@ fadeDiv {
   animation-duration: 5.75s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
-  *:before,
-  *:after {
-  animation-play-state: paused !important;
-}
 }
 
 @keyframes fade {
