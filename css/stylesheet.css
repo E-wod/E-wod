@@ -31,12 +31,25 @@ img:nth-child(7n + 1) {
 	grid-column: 2 / span 2;
 }
 
-portfolio:hover {
+portImg:hover {
 	z-index: 2;
 	transform: scale(2);
 }
 
-
+portImg {
+    object-fit: contain;
+    width: 100%;
+    position: inherit;
+    padding: 0;
+    margin-left: 1px;
+    margin-top: 1px;
+    align-items: center; 
+    z-index: 1;
+    grid-column: span 2;
+    max-width: 100%;
+    transform: scale(1);
+    transition: all .25s;
+}
 
 
 
@@ -193,13 +206,8 @@ img {
     margin-left: 1px;
     margin-top: 1px;
     align-items: center; 
-
-  
     z-index: 1;
-    grid-column: span 2;
     max-width: 100%;
-    transform: scale(1);
-    transition: all .25s;
 }
 video {
     object-fit: cover;
