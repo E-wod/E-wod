@@ -4,7 +4,6 @@
   box-sizing: border-box;
   max-width: 100%;
 }
-
 .contactDiv {
   border: 4px outset #dfe6eb;
   background-color: #325b63;
@@ -14,8 +13,6 @@
   display: inline-flex;
   position: relative;
 }
-
-
 fadeDiv {
   width: 100%;
   height: auto;
@@ -24,14 +21,12 @@ fadeDiv {
   animation-name: fade;
   animation-duration: 5.75s;
   animation-iteration-count: 1;
-  animation-timing-function: ease;
+  animation-timing-function: ease-in-out;
 }
-
 @keyframes fade {
   0%   {opacity:0%;}
   100%  {opacity:100%;}
 }  
-
 #container {
     position: relative;
     margin: auto;
@@ -39,9 +34,8 @@ fadeDiv {
     height: auto;
     top: 0;
     bottom: 0;
-    filter: url(#threshold) blur(8.3px);
+    filter: url(#threshold) blur(0.3px);
 }
-
 #text1,
 #text2 {
     position: absolute;
@@ -54,6 +48,7 @@ fadeDiv {
     text-align: center;
     color: #dfe6eb;
     user-select: none;
+}
 
 animDiv {
   width: 100%;
@@ -63,22 +58,19 @@ animDiv {
   animation-name: anim;
   animation-duration: 8.75s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease;
+  animation-timing-function: ease-in-out;
 }
-
 @keyframes anim {
   0%   {opacity:0%;}
   50%  {opacity:100%;}
   100%  {opacity:0%;}
 }  
-
 .myDiv {
   border: 4px outset #dfe6eb;
   background-color: #325b63;
   text-align: center;
   position: relative;
 }
-
 .logo {    /* to center the container */
   width: 30%;
   max-width: auto;
@@ -86,18 +78,15 @@ animDiv {
   padding: 0;
   display: flex;
 }
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
 }
-
 .hamburger {
     display: none;
 }
-
 .bar {
     display: flex;
     width: 25px;
@@ -107,36 +96,29 @@ animDiv {
     transition: all 0.3s ease-in-out;
     background-color: #dfe6eb;
 }
-
 .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
-
 .nav-item {
     margin-left: 25px;
 }
-
 .nav-link{
     color: #dfe6eb;
 }
-
 .nav-link:hover{
     color: #006666;
 }
-
 .nav-logo {
     font-size: 24px;
     color: #CD6B3F;
     font-family: Script, Lobster, "Kristen ITC";
 }
-
 .nav-logo:hover{
     color: #006666;
 }
-
 .responsive{
     max-width: 100%;
     height: 100%;
@@ -144,9 +126,8 @@ animDiv {
     margin-right: 50%;
     margin: 10px;
 }
-
 html {
-  background: linear-gradient(180deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);  
+  background: linear-gradient(180deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -154,7 +135,6 @@ html {
   background-size: cover;
   font-family: Script, Lobster, "Kristen ITC";
 }
-
 .glow {
   display: inline-block;
   font-size: 28px;
@@ -162,7 +142,6 @@ html {
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
 }
-
 @-webkit-keyframes glow {
   from {
     text-shadow: 0 0 1px #1e5c69, 0 0 2px #1e5c69, 0 0 3px #1e5c69, 0 0 4px #32a0b8, 0 0 5px #1e5c69, 0 0 6px #1e5c69, 0 0 7px #32a0b8;
@@ -171,7 +150,6 @@ html {
     text-shadow: 0 0 4px #1e5c69, 0 0 6px #1e5c69, 0 0 8px #1e5c69, 0 0 10px #32a0b8, 0 0 12px #1e5c69, 0 0 14px #1e5c69, 0 0 16px #32a0b8;
   }
 }
-
 body { 
     align-items: center;
     background-repeat: repeat;
@@ -179,7 +157,6 @@ body {
     height: 100%;
     width: 100%;
 }
-
 img {
     object-fit: contain;
     width: 100%;
@@ -189,7 +166,6 @@ img {
     margin-top: 1px;
     align-items: center; 
 }
-
 video {
     object-fit: cover;
     border-radius: 7%;
@@ -200,7 +176,6 @@ video {
     margin-right: auto;
     margin-top: 4px;
 }
-
 p {
     margin: 1px auto;
     text-align: center;
@@ -213,7 +188,6 @@ p {
     padding: 1px;
     max-width: 100%;
 }
-
 h1 {
     margin: 1px auto;
     text-align: center;
@@ -226,8 +200,9 @@ h1 {
     float: center;
     align-content: center;
     width: 100%;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }  
-
 h2 {
     margin: 1px auto;
     text-align: center;
@@ -240,7 +215,6 @@ h2 {
     align-content: center;
     width: 100%;
 }
-
 h3 {
    font-size: 16px;
    font-family:"Open Sans", "sans-serif";
@@ -252,7 +226,6 @@ h3 {
    align-content: center;
    margin: 1px auto;
 }
-
 h4 {
     margin: 1px auto;
     text-align: center;
@@ -263,7 +236,6 @@ h4 {
     float:inherit;
     max-width: 400px;
 }
-
 blockquote {
     margin: 1px auto;
     max-width: 40%;
@@ -271,15 +243,12 @@ blockquote {
     padding: 1px;
     float:inherit;
 }
-
 .wrapper{
     margin: 0;
     width: inherit;
     height: 12px;
     background: linear-gradient(0deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
-
 }
-
 nav {
   width: 100%;
   height: 35px;
@@ -289,7 +258,6 @@ nav {
   float: left;
   overflow: hidden;
 }
-
 ul li {
   display: inline-block;
   line-height: 35px;
@@ -298,7 +266,6 @@ ul li {
   font-family:Script, Lobster, "Kristen ITC";
   color: #958E78; 
 }
-
 ul li a {
   display: block;
   text-decoration: none;
@@ -308,39 +275,32 @@ ul li a {
   padding: 5 10px;
   height: auto;
 }
-
 ul li a:hover {
   color: #006666; 
   font-size: 22px;
 }
-
 li {
     list-style: none;
 }
-
 a {
     text-decoration: none;
 }
-
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 1px 1px;
 }
-
 /* Create four equal columns that sits next to each other */
 .column {
   flex-wrap: wrap;
   max-width: 25%;
   padding: 1px 1px;
 }
-
 .column img {
   margin-top: 1px;
   vertical-align: middle;
   height: 100%;
 }
-
 @media only screen and (max-width : 768px ){
     .nav-menu {
         z-index: 1;
@@ -394,7 +354,6 @@ a {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
-
     img {
         object-fit: contain;
         width: 100%;
@@ -406,7 +365,6 @@ a {
         overflow-y: hidden;
         overflow-x: hidden;
     }
-
     video {
          object-fit: cover;
          border-radius: 7%;
@@ -417,8 +375,6 @@ a {
          margin-right: auto;
          margin-top: 4px;
      }
-
-
     p {
         margin: 1px auto;
         text-align: center;
@@ -430,7 +386,6 @@ a {
         color: #FFFFFF;
         padding: 1px;
     }
-
     h1 {
         margin: 1px auto;
         text-align: center;
@@ -444,7 +399,6 @@ a {
         align-content: center;
         width: 100%;
     }  
-
     h2 {
         margin: 1px auto;
         text-align: center;
@@ -457,7 +411,6 @@ a {
         align-content: center;
         width: 100%;
         }
-
     h3 {
        font-size: 12px;
        font-family:"Open Sans", "sans-serif";
@@ -469,7 +422,6 @@ a {
        align-content: center;
        margin: 1px auto;
     }
-
     h4 {
       margin: 1px auto;
       text-align: center;
