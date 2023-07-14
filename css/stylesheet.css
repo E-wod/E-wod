@@ -16,6 +16,27 @@
 }
 
 
+fadeDiv {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: transparent;
+  animation-name: fade;
+  animation-duration: 8.75s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade {
+  0%   {opacity:0%;}
+  100%  {opacity:100%;}
+  
+}  
+
+fade {animation-timing-function: ease-in-out;}
+}
+
+
+
 
 
 
