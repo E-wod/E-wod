@@ -59,6 +59,10 @@ fadeDiv {
     text-align: center;
     color: #dfe6eb;
     user-select: none;
+    -webkit-animation: blurFadeInOut 3s ease-in backwards;
+    -moz-animation: blurFadeInOut 3s ease-in backwards;
+    -ms-animation: blurFadeInOut 3s ease-in backwards;
+    animation: blurFadeInOut 3s ease-in backwards;
 }
 
 animDiv {
