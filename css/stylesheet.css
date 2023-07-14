@@ -51,7 +51,7 @@ fadeDiv {
     display: inline-block;
     font-family: "Open Sans", light;
     font-size: 40pt;
-    font-weight: 50;
+    font-weight: 100;
     animation-timing-function: ease;
     text-align: center;
     color: #dfe6eb;
@@ -71,8 +71,13 @@ animDiv {
 }
 @keyframes anim {
   0%   {opacity:0%;}
-  50%  {opacity:100%;}
-  100%  {opacity:0%;}
+  25%  {opacity:25%;}
+  50%  {opacity:50%;}
+  75%  {opacity:75%;}
+  100%  {opacity:100%;}
+  75%  {opacity:75%;}
+  50%  {opacity:50%;}
+  25%  {opacity:25%;}
 }  
 .myDiv {
   border: 4px outset #dfe6eb;
