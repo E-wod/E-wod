@@ -102,3 +102,8 @@ function animate() {
 }
 
 animate();
+
+
+
+
+$(document).ready(function(){$("img").click(function(){this.requestFullscreen()})});
