@@ -67,7 +67,7 @@ animDiv {
   background-color: transparent;
   animation-name: anim;
   animation-duration: 6.75s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
   animation-timing-function: ease-in-out;
 }
 @keyframes anim {
