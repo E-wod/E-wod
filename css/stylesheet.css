@@ -26,14 +26,7 @@
 }
 .myGallery img:hover {
   transform: scale(3);
-}
-
-.myGallery .item img {
-  vertical-align: middle;
-}
-
-.myGallery .item:hover .caption {
-  
+  z-index: 1;
 }
 
 .myGallery {
