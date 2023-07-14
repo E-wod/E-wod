@@ -66,20 +66,13 @@ animDiv {
   position: relative;
   background-color: transparent;
   animation-name: anim;
-  animation-duration: .75s;
+  animation-duration: 6.75s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 @keyframes anim {
   0%   {opacity:0%;}
   25%  {opacity:25%;}
-  50%  {opacity:50%;}
-  75%  {opacity:75%;}
-  100%  {opacity:100%;}
-  75%  {opacity:75%;}
-  50%  {opacity:50%;}
-  25%  {opacity:25%;}
-  0%  {opacity:0%;}
 }  
 .myDiv {
   border: 4px outset #dfe6eb;
