@@ -56,7 +56,7 @@ fadeDiv {
     text-align: center;
     color: #dfe6eb;
     user-select: none;
-    filter: blur(0%, 10.3px; 40%, 1.0px);
+    filter: blur(0%, 300%);
 }
 
 animDiv {
@@ -65,7 +65,7 @@ animDiv {
   position: relative;
   background-color: transparent;
   animation-name: anim;
-  animation-duration: 8.75s;
+  animation-duration: 4.75s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
