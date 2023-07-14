@@ -14,9 +14,7 @@
   position: relative;
 }
 
-
-
-.fadeDiv {
+fadeDiv {
   width: 100%;
   height: auto;
   position: relative;
@@ -26,6 +24,7 @@
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
 }
+
 @keyframes fade {
   0%   {opacity:0%;}
   100%  {opacity:100%;}
@@ -54,7 +53,7 @@
     
 }
 
-.animDiv {
+animDiv {
   width: 100%;
   height: auto;
   position: relative;
