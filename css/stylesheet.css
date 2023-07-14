@@ -43,7 +43,6 @@ fadeDiv {
     height: auto;
     top: 0;
     bottom: 0;
-    filter: blur(0%, 10.3px; 40%, 1.0px);
 }
 #text1,
 #text2 {
@@ -57,6 +56,7 @@ fadeDiv {
     text-align: center;
     color: #dfe6eb;
     user-select: none;
+    filter: blur(0%, 10.3px; 40%, 1.0px);
 }
 
 animDiv {
