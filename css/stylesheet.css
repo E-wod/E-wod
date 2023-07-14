@@ -16,27 +16,7 @@
 
 
 
-.gallery_container{
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 5px));
-  grid-auto-rows: 300px;  
-  padding: 10px;
-}
 
-.image_container img{
-  width: 100%;
-  height: 100%; 
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-  object-fit: cover;
-}
-.image-tall {
-  grid-row: span 2 / auto;
-}
-    
-.image-wide {
- grid-column: span 2 / auto;
-}
 
 
 
@@ -63,7 +43,7 @@ fadeDiv {
     height: auto;
     top: 0;
     bottom: 0;
-    filter: blur(0%, 10.3px; 100%, 1.0px);
+    filter: blur(0%, 10.3px; 40%, 1.0px);
 }
 #text1,
 #text2 {
