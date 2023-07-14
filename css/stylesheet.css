@@ -27,10 +27,16 @@
 .image_container img{
   width: 100%;
   height: 100%; 
-    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
   object-fit: cover;
 }
-
+.image-tall {
+  grid-row: span 2 / auto;
+}
+    
+.image-wide {
+ grid-column: span 2 / auto;
+}
 
 
 
@@ -496,11 +502,5 @@ a {
           user-select: none;
       }
 
-      .image-tall {
-        grid-row: span 2 / auto;
-      }
-    
-      .image-wide {
-        grid-column: span 2 / auto;
-      }
+      
 }
