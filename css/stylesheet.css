@@ -31,7 +31,7 @@ img:nth-child(7n + 1) {
 	grid-column: 2 / span 2;
 }
 
-img:hover {
+portfolio:hover {
 	z-index: 2;
 	transform: scale(2);
 }
