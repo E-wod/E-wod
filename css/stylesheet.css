@@ -15,23 +15,6 @@
 }
 
 
-.myGallery {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.myGallery img {
-  width: 100%;
-}
-
-.myGallery {
-  font-size: 16px;
-}
-
-
-
-
 
 .fadeDiv {
   width: 100%;
