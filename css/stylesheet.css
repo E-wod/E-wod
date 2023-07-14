@@ -27,16 +27,16 @@
 	justify-items: center;
 	align-items: center;
 }
-portImg:nth-child(7n + 1) {
+.pyt:nth-child(7n + 1) {
 	grid-column: 2 / span 2;
 }
 
-portImg:hover {
+.pyt:hover {
 	z-index: 2;
 	transform: scale(2);
 }
 
-portImg {
+.pyt {
     object-fit: contain;
     width: 100%;
     position: inherit;
@@ -54,7 +54,7 @@ portImg {
 
 
 
-fadeDiv {
+.fadeDiv {
   width: 100%;
   height: auto;
   position: relative;
@@ -92,7 +92,7 @@ fadeDiv {
     
 }
 
-animDiv {
+.animDiv {
   width: 100%;
   height: auto;
   position: relative;
