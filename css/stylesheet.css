@@ -60,13 +60,8 @@ fadeDiv {
     color: #dfe6eb;
     user-select: none;
     -webkit-animation: blurFadeInOut 3s ease-in backwards;
-    -moz-animation: blurFadeInOut 3s ease-in backwards;
-    -ms-animation: blurFadeInOut 3s ease-in backwards;
     animation: blurFadeInOut 3s ease-in backwards;
-    linear-gradient(180deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
-    background: linear-gradient(360deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
-    background: linear-gradient(180deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
-    background: linear-gradient(0deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
+  
 
 animDiv {
   width: 100%;
