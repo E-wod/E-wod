@@ -34,7 +34,7 @@ fadeDiv {
     height: auto;
     top: 0;
     bottom: 0;
-    filter: url(#threshold) blur(0.3px);
+    filter: url(#threshold) blur(10.3px);
 }
 #text1,
 #text2 {
