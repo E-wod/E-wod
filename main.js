@@ -33,7 +33,7 @@ const texts = [
     "Logo Designs"
 ];
 
-const morphTime = 1;
+const morphTime = 3;
 const cooldownTime = .05;
 
 let textIndex = texts.length - 5;
