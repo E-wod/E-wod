@@ -32,7 +32,7 @@ fadeDiv {
 #container {
     position: relative;
     margin: auto;
-    width: 90%;
+    width: 100%;
     height: auto;
     top: 0;
     bottom: 0;
@@ -456,7 +456,7 @@ a {
       #container {
           position: relative;
           margin: auto;
-          width: 90%;
+          width: 100%;
           height: auto;
           top: 0;
           bottom: 0;
