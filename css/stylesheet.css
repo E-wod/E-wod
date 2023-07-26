@@ -44,17 +44,24 @@ fadeDiv {
 }
 #text1,
 #text2 {
-    position: relative;
+    position: absolute;
     width: 100%;
     display: inline-block;
-    
-    font-size: 40pt;
-    font-weight: 100;
+    font-size: 80pt;
+    font-weight: 80;
     animation-timing-function: ease;
     text-align: center;
     user-select: none;
     font-family:Script, Lobster, 'Kristen ITC';
     float: center;
+    object-fit: cover;
+    border-radius: 7%;
+    max-width: 100%;
+    max-height: auto;
+    position: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
 }
 
 animDiv {
