@@ -72,7 +72,9 @@ animDiv {
 @keyframes anim {
   0%   {opacity:0%;}
   100%  {opacity:100%;}
-}  
+  0%   {color: #dfe6eb;}
+  100%  {color: #006666}
+}
 
 
 
