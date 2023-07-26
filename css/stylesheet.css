@@ -27,6 +27,7 @@ fadeDiv {
   text-align: center;
   align-items: center;
   all: center;
+  float: center;
 }
 @keyframes fade {
   0%   {opacity:0%;color: #dfe6eb;}
@@ -46,12 +47,14 @@ fadeDiv {
     position: relative;
     width: 100%;
     display: inline-block;
-    font-family: "Open Sans", light;
+    
     font-size: 40pt;
     font-weight: 100;
     animation-timing-function: ease;
     text-align: center;
     user-select: none;
+    font-family:Script, Lobster, 'Kristen ITC';
+    float: center;
 }
 
 animDiv {
