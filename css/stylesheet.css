@@ -58,7 +58,7 @@ fadeDiv {
 animDiv {
   width: 100%;
   height: auto;
-  position: relative;
+  position: absolute;
   background-color: transparent;
   animation-name: anim;
   animation-duration: 4.75s;
