@@ -13,28 +13,6 @@
   display: inline-flex;
   position: relative;
 }
-.newDiv {
-  z-index: 0;
-  background-color: #FFFFFF;
-  width: 100%;
-  height: 600px;
-  margin: 0px;
-  padding: 0px;
-  animation-name: new;
-  align-items: center;
-  display: inline-flex;
-  position: relative;
-  margin: 1px auto;
-  text-align: center;
-  align-items: center;
-  all: center;
-  overflow-x: inherit;
-  color: #FFFFFF;
-  padding: 1px;
-  max-width: 100%;
-}
-
-
 
 fadeDiv {
   width: 100%;
@@ -46,7 +24,6 @@ fadeDiv {
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
 }
-
 @keyframes fade {
   0%   {opacity:0%;}
   100%  {opacity:100%;}
@@ -72,7 +49,6 @@ fadeDiv {
     text-align: center;
     color: #dfe6eb;
     user-select: none;
-    
 }
 
 animDiv {
@@ -81,7 +57,7 @@ animDiv {
   position: relative;
   background-color: transparent;
   animation-name: anim;
-  animation-duration: 2.75s;
+  animation-duration: 4.75s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
 }
@@ -89,6 +65,9 @@ animDiv {
   0%   {opacity:0%;}
   100%  {opacity:100%;}
 }  
+
+
+
 .myDiv {
   border: 4px outset #dfe6eb;
   background-color: #325b63;
