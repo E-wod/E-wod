@@ -24,6 +24,14 @@
   align-items: center;
   display: inline-flex;
   position: relative;
+  margin: 1px auto;
+  text-align: center;
+  align-items: center;
+  all: center;
+  overflow-x: inherit;
+  color: #FFFFFF;
+  padding: 1px;
+  max-width: 100%;
 }
 
 
