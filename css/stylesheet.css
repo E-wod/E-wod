@@ -39,7 +39,12 @@ fadeDiv {
 }
 #text1,
 #text2 {
+    justify-content: space-between;
     all: center;
+    margin: auto;
+    height: auto;
+    top: 0;
+    bottom: 0;
     display: inline-block;
     width: 100%;
     font-size: 60pt;
