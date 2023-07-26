@@ -51,7 +51,6 @@ fadeDiv {
     font-weight: 100;
     animation-timing-function: ease;
     text-align: center;
-    color: #dfe6eb;
     user-select: none;
 }
 
@@ -208,13 +207,13 @@ h1 {
     text-shadow: 2px 2px #32a0b8;
     font-size: 28px;
     color: #dfe6eb; 
-    font-family:Script, Lobster, 'Kristen ITC';
     padding: 1px;
+    font-family:Script, Lobster, 'Kristen ITC';
     float: center;
     align-content: center;
     width: 100%;
     transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }  
 h2 {
     margin: 1px auto;
