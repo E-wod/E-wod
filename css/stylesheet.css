@@ -43,7 +43,7 @@ fadeDiv {
 }
 #text1,
 #text2 {
-    position: absolute;
+    position: relative;
     width: 100%;
     display: inline-block;
     font-family: "Open Sans", light;
