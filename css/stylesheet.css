@@ -23,11 +23,6 @@ fadeDiv {
   animation-duration: 3.75s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
-  margin: 1px auto;
-  text-align: center;
-  align-items: center;
-  all: center;
-  float: center;
 }
 @keyframes fade {
   0%   {opacity:0%;color: #dfe6eb;}
@@ -56,12 +51,6 @@ fadeDiv {
     float: center;
     object-fit: cover;
     border-radius: 7%;
-    max-width: 100%;
-    max-height: auto;
-    position: inherit;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4px;
 }
 
 animDiv {
