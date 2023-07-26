@@ -39,6 +39,7 @@ fadeDiv {
 }
 #text1,
 #text2 {
+    display: inline-flex;
     width: 100%;
     font-size: 60pt;
     font-weight: 80;
