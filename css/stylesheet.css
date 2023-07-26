@@ -39,16 +39,14 @@ fadeDiv {
 }
 #text1,
 #text2 {
-    position: relative;
     width: 100%;
-    display: inline;
+    display: inline-block;
     font-size: 60pt;
     font-weight: 80;
     animation-timing-function: ease;
     text-align: center;
     user-select: none;
     font-family:Script, Lobster, 'Kristen ITC';
-    float: center;
 }
 
 animDiv {
