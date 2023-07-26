@@ -17,7 +17,7 @@
 fadeDiv {
   width: 100%;
   height: auto;
-  position: relative;
+  position: absolute;
   background-color: transparent;
   animation-name: fade;
   animation-duration: 3.75s;
@@ -44,10 +44,10 @@ fadeDiv {
 }
 #text1,
 #text2 {
-    position: absolute;
+    position: relative;
     width: 100%;
     display: inline-block;
-    font-size: 80pt;
+    font-size: 60pt;
     font-weight: 80;
     animation-timing-function: ease;
     text-align: center;
