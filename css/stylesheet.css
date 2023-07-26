@@ -43,7 +43,7 @@ fadeDiv {
 }
 #text1,
 #text2 {
-    position: relative;
+    position: absolute;
     width: 100%;
     display: inline-block;
     font-family: "Open Sans", light;
@@ -58,7 +58,7 @@ fadeDiv {
 animDiv {
   width: 100%;
   height: auto;
-  position: absolute;
+  position: relative;
   background-color: transparent;
   animation-name: anim;
   animation-duration: 4.75s;
