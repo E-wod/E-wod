@@ -26,7 +26,8 @@ fadeDiv {
 }
 @keyframes fade {
   0%   {opacity:0%;color: #dfe6eb;}
-  100%  {opacity:100%;color: #006666}
+  100%  {opacity:100%;color: #006666;}
+  color: #dfe6eb;
 }  
 #container {
     position: relative;
