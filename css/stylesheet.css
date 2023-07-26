@@ -41,7 +41,7 @@ fadeDiv {
 #text2 {
     position: relative;
     width: 100%;
-    display: inline-block;
+    display: inline;
     font-size: 60pt;
     font-weight: 80;
     animation-timing-function: ease;
