@@ -44,12 +44,11 @@ fadeDiv {
 #text1,
 #text2 {
     position: relative;
+    align-items: center; 
     top: 0;
     bottom: 0;
     left: 50%;
     right: 50%;
-    margin: auto;
-    height: auto;
     display: inline-block;
     width: 100%;
     font-size: 60pt;
