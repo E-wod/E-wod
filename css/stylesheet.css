@@ -17,6 +17,8 @@
 
 fadeDiv {
   width: 100%;
+  left: 50%;
+  right: 50%;
   height: auto;
   position: relative;
   background-color: transparent;
@@ -34,8 +36,6 @@ fadeDiv {
 #text1,
 #text2 {
     position: relative; 
-    left: 50%;
-    right: 50%;
     display: inline-block;
     width: 100%;
     font-size: 60pt;
