@@ -374,7 +374,6 @@ a {
     video {
          object-fit: cover;
          border-radius: 7%;
-         max-width: 100%;
          max-height: auto;
          position: inherit;
          margin-left: auto;
@@ -448,7 +447,7 @@ a {
   
      html {
         background: linear-gradient(180deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
-        width: 100%;
+        width: 25%;
         height: auto;
         background-repeat: no-repeat;
         background-attachment: fixed;
