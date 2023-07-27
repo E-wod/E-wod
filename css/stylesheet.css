@@ -16,10 +16,10 @@
 
 
 fadeDiv {
+  max-width: 100%;
   align-items: center;
   margin: 0px;
   max-width: 100%;
-  height: auto;
   position: relative;
   background-color: transparent;
   animation-name: fade;
