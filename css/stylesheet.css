@@ -59,7 +59,7 @@ fadeDiv {
 animDiv {
   width: 100%;
   height: auto;
-  position: relative;
+  position: inherit;
   background-color: transparent;
   animation-name: anim;
   animation-duration: 4.75s;
@@ -68,7 +68,7 @@ animDiv {
   margin: 1px auto;
   text-align: center;
   align-items: center;
-  all: center;
+  
 }
 @keyframes anim {
   0%   {opacity:0%; color: #000000;}
