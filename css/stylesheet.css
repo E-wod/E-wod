@@ -455,11 +455,30 @@ a {
         background-size: cover;
         font-family: Script, Lobster, "Kristen ITC";
       }
+      fadeDiv {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        position: inherit;
+        background-color: transparent;
+        animation-name: fade;
+        animation-duration: 4.75s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        margin: 1px auto;
+        max-width: 100%;
+      }
+      @keyframes fade {
+        0%   {opacity:0%;}
+        100%  {opacity:100%;}
+      }  
+      
+      
       #text1,
       #text2 {
           align-items: center;
-          position: relative; 
-          display: inline-block;
+          position: inherit; 
+          display: block;
           max-width: 100%;
           font-size: 15pt;
           font-weight: 80;
@@ -467,6 +486,25 @@ a {
           user-select: none;
           font-family:Script, Lobster, 'Kristen ITC';
       }
-
+      
+      
+      
+      animDiv {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        position: inherit;
+        background-color: transparent;
+        animation-name: anim;
+        animation-duration: 4.75s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        margin: 1px auto;
+        max-width: 100%;
+      }
+      @keyframes anim {
+        0%   {opacity:0%;}
+        100%  {opacity:100%;}
+      }
       
 }
