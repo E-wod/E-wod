@@ -47,6 +47,8 @@ fadeDiv {
 #text1,
 #text2 {
     position: relative;
+    top: 0;
+    bottom: 0;
     margin: auto;
     height: auto;
     display: inline-block;
