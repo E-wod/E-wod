@@ -36,7 +36,7 @@ fadeDiv {
 #text2 {
     align-items: center;
     position: inherit; 
-    display: inline-block;
+    display: block;
     max-width: 100%;
     font-size: 40pt;
     font-weight: 80;
