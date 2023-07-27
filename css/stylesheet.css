@@ -38,7 +38,7 @@ fadeDiv {
     position: relative; 
     display: inline-block;
     max-width: 100%;
-    font-size: 60pt;
+    font-size: 40pt;
     font-weight: 80;
     animation-timing-function: ease;
     user-select: none;
@@ -452,19 +452,18 @@ a {
         background-size: cover;
         font-family: Script, Lobster, "Kristen ITC";
       }
-    #text1,
-    #text2 {
-        position: relative;
-        margin: auto;
-        height: auto;
-        display: inline-block;
-        width: 100%;
-        font-size: 25pt;
-        font-weight: 80;
-        animation-timing-function: ease;
-        user-select: none;
-        font-family:Script, Lobster, 'Kristen ITC';
-    }
+      #text1,
+      #text2 {
+          align-items: center;
+          position: relative; 
+          display: inline-block;
+          max-width: 100%;
+          font-size: 15pt;
+          font-weight: 80;
+          animation-timing-function: ease;
+          user-select: none;
+          font-family:Script, Lobster, 'Kristen ITC';
+      }
 
       
 }
