@@ -50,6 +50,7 @@ fadeDiv {
 animDiv {
   width: 100%;
   height: auto;
+  margin: 0px;
   position: inherit;
   background-color: transparent;
   animation-name: anim;
