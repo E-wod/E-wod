@@ -16,18 +16,17 @@
 
 
 fadeDiv {
-  max-width: 100%;
-  align-items: center;
-  max-width: 100%;
-  background-color: transparent;
-  animation-name: fade;
-  animation-duration: 3.75s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
   width: 100%;
   height: auto;
+  margin: 0px;
   position: inherit;
+  background-color: transparent;
+  animation-name: fade;
+  animation-duration: 4.75s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
   margin: 1px auto;
+  max-width: 100%;
 }
 @keyframes fade {
   0%   {opacity:0%;}
