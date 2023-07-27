@@ -36,9 +36,9 @@ fadeDiv {
     margin: auto;
     width: 100%;
     height: auto;
-    top: 0;
-    bottom: 0;
-    filter: id= "threshold" blur(0%, 1000%);
+    left: 50%;
+    right: 50%;
+    filter: id= "threshold" blur(0%, 100%);
 }
 #text1,
 #text2 {
