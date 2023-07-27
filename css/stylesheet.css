@@ -174,7 +174,7 @@ img {
 }
 video {
     object-fit: cover;
-    border-radius: 7%;
+    border-radius: 0%;
     max-width: 100%;
     max-height: auto;
     position: inherit;
