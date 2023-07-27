@@ -33,7 +33,7 @@ fadeDiv {
 
 
 #container {
-    position: inherit;
+    align-items: center;
     margin: auto;
     width: 100%;
     height: auto;
@@ -43,10 +43,7 @@ fadeDiv {
 
 #text1,
 #text2 {
-    position: relative;
-    align-items: center; 
-    top: 0;
-    bottom: 0;
+    position: relative; 
     left: 50%;
     right: 50%;
     display: inline-block;
