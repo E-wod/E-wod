@@ -38,6 +38,8 @@ fadeDiv {
     position: relative; 
     display: inline-block;
     width: 100%;
+    left: 50%;
+    right: 50%;
     font-size: 60pt;
     font-weight: 80;
     animation-timing-function: ease;
