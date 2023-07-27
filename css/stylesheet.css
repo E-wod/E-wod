@@ -25,22 +25,24 @@ fadeDiv {
   animation-timing-function: ease-in-out;
 }
 @keyframes fade {
-  0%   {opacity:0%; color: #dfe6eb;}
-  100%  {opacity:100%; color: #006666;}
+  0%   {opacity:0%;}
+  100%  {opacity:100%;}
 }  
+
+
 #container {
-    position: relative;
+    position: inherit;
+    all: center;
     margin: auto;
     width: 100%;
     height: auto;
     top: 0;
     bottom: 0;
-    filter: id= "threshold" blur(0%, 60%);
+    filter: id= "threshold" blur(0%, 1000%);
 }
 #text1,
 #text2 {
-    justify-content: space-between;
-    all: center;
+    position: relative;
     margin: auto;
     height: auto;
     top: 0;
