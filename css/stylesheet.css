@@ -16,7 +16,8 @@
 
 
 fadeDiv {
-  width: 100%;
+  align-items: center;
+  max-width: 100%;
   left: 50%;
   right: 50%;
   height: auto;
@@ -35,9 +36,10 @@ fadeDiv {
 
 #text1,
 #text2 {
+    align-items: center;
     position: relative; 
     display: inline-block;
-    width: 100%;
+    max-width: 100%;
     left: 50%;
     right: 50%;
     font-size: 60pt;
