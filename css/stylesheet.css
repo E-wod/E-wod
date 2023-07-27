@@ -31,16 +31,6 @@ fadeDiv {
 }  
 
 
-
-#container {
-    align-items: center;
-    margin: auto;
-    width: 100%;
-    height: auto;
-    padding: 1px 1px;
-    filter: id= "threshold" blur(0%, 100%);
-}
-
 #text1,
 #text2 {
     position: relative; 
