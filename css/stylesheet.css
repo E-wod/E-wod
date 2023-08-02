@@ -7,7 +7,7 @@
 
 
 .contactDiv {
-  z-index: 3;
+  z-index: 7;
   border: 4px outset #dfe6eb;
   background-color: #325b63;
   margin: auto;
@@ -17,7 +17,7 @@
   position: relative;
 }
 fadeDiv {
-  z-index: 3;
+  z-index: 7;
   width: 100%;
   height: auto;
   margin: 0px;
@@ -140,6 +140,7 @@ animDiv {
     margin: 10px;
 }
 html {
+  z-index: 7;
   background: linear-gradient(180deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
   width: 100%;
   height: auto;
@@ -486,7 +487,7 @@ a {
         font-family: Script, Lobster, "Kristen ITC";
       }
       fadeDiv {
-        z-index: 3;
+        z-index: 7;
         width: 100%;
         height: auto;
         margin: 0px;
@@ -507,7 +508,7 @@ a {
       
       #text1,
       #text2 {
-          z-index: 3;
+          z-index: 7;
           align-items: center;
           position: inherit; 
           display: block;
@@ -522,7 +523,7 @@ a {
       
       
       animDiv {
-        z-index: 3;
+        z-index: 7;
         width: 100%;
         height: auto;
         margin: 0px;
