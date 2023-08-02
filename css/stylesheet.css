@@ -140,7 +140,7 @@ animDiv {
     margin: 10px;
 }
 html {
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(125,35,27,1) 91%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(91,64,18,1) 51%, rgba(125,35,27,1) 100%);
   z-index: 100;
   width: 100%;
   height: auto;
