@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
-  background: linear-gradient(180deg, #012322) 0%, #A20A29);
 }
 
 
@@ -141,7 +140,8 @@ animDiv {
     margin: 10px;
 }
 html {
-  z-index: 7;
+  background: linear-gradient(180deg, #012322) 0%, #A20A29);
+  z-index: 100;
   background: opaque;
   width: 100%;
   height: auto;
