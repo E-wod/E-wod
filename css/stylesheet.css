@@ -142,7 +142,6 @@ animDiv {
 html {
   background: linear-gradient(180deg, #012322) 0%, #A20A29);
   z-index: 100;
-  background: opaque;
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -274,7 +273,7 @@ nav {
   height: 35px;
   opacity: 90%;
   z-index: 0;
-  background: linear-gradient(0deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
+  background: opaque;
   margin: 0;
   float: left;
   overflow: hidden;
