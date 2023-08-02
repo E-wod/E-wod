@@ -7,6 +7,7 @@
 
 
 .contactDiv {
+  z-index: 3;
   border: 4px outset #dfe6eb;
   background-color: #325b63;
   margin: auto;
@@ -16,6 +17,7 @@
   position: relative;
 }
 fadeDiv {
+  z-index: 3;
   width: 100%;
   height: auto;
   margin: 0px;
@@ -36,6 +38,7 @@ fadeDiv {
 
 #text1,
 #text2 {
+    z-index: 3;
     align-items: center;
     position: inherit; 
     display: block;
@@ -50,6 +53,7 @@ fadeDiv {
 
 
 animDiv {
+  z-index: 3;
   width: 100%;
   height: auto;
   margin: 0px;
@@ -70,6 +74,7 @@ animDiv {
 
 
 .myDiv {
+  z-index: 3;
   border: 4px outset #dfe6eb;
   background-color: #325b63;
   text-align: center;
@@ -256,7 +261,7 @@ blockquote {
 }
 .wrapper{
     margin: 0;
-    z-index: 9;
+    z-index: 0;
     width: inherit;
     height: 12px;
     background: linear-gradient(0deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
@@ -302,17 +307,20 @@ a {
     text-decoration: none;
 }
 .row {
+  z-index: 3;
   display: flex;
   flex-wrap: wrap;
   padding: 1px 1px;
 }
 /* Create four equal columns that sits next to each other */
 .column {
+  z-index: 3;
   flex-wrap: wrap;
   max-width: 25%;
   padding: 1px 1px;
 }
 .column img {
+  z-index: 3;
   margin-top: 1px;
   vertical-align: middle;
   height: 100%;
@@ -375,6 +383,7 @@ a {
         z-index: 0;
     }
     img {
+        z-index: 3;
         object-fit: contain;
         width: 100%;
         position: inherit;
@@ -386,6 +395,7 @@ a {
         overflow-x: hidden;
     }
     video {
+         z-index: 3;
          object-fit: cover;
          border-radius: 0%;
          max-height: auto;
@@ -395,6 +405,7 @@ a {
          margin-top: 4px;
      }
     p {
+        z-index: 3;
         margin: 1px auto;
         text-align: center;
         align-items: center;
@@ -406,6 +417,7 @@ a {
         padding: 1px;
     }
     h1 {
+        z-index: 3;
         margin: 1px auto;
         text-align: center;
         mix-blend-mode: normal;
@@ -419,6 +431,7 @@ a {
         width: 100%;
     }  
     h2 {
+        z-index: 3;
         margin: 1px auto;
         text-align: center;
         mix-blend-mode: normal;
@@ -431,6 +444,7 @@ a {
         width: 100%;
         }
     h3 {
+       z-index: 3;
        font-size: 12px;
        font-family:"Open Sans", "sans-serif";
        color: #dfe6eb; 
@@ -442,6 +456,7 @@ a {
        margin: 1px auto;
     }
     h4 {
+      z-index: 3;
       margin: 1px auto;
       text-align: center;
       font-size: 11px;
@@ -452,6 +467,7 @@ a {
       max-width: 400px;
     }
     .glow {
+     z-index: 3;
      display: inline-block;
      font-size: 18px;
      color: #CD6B3F; 
@@ -460,6 +476,7 @@ a {
      }
   
      html {
+        z-index: 3;
         background: linear-gradient(180deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
         width: 100%;
         height: auto;
@@ -469,6 +486,7 @@ a {
         font-family: Script, Lobster, "Kristen ITC";
       }
       fadeDiv {
+        z-index: 3;
         width: 100%;
         height: auto;
         margin: 0px;
@@ -489,6 +507,7 @@ a {
       
       #text1,
       #text2 {
+          z-index: 3;
           align-items: center;
           position: inherit; 
           display: block;
@@ -503,6 +522,7 @@ a {
       
       
       animDiv {
+        z-index: 3;
         width: 100%;
         height: auto;
         margin: 0px;
