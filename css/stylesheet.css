@@ -140,7 +140,7 @@ animDiv {
     margin: 10px;
 }
 html {
-  background: #000000;
+  background: linear-gradient(#000000, transparent) url("http://imageshack.com/f/pm1DjaG7j");;
   z-index: 100;
   width: 100%;
   height: auto;
