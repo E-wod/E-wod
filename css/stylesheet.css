@@ -76,6 +76,7 @@ animDiv {
   position: relative;
 }
 .logo {    /* to center the container */
+  z-index: 0;
   width: 30%;
   max-width: auto;
   margin: 0 40px;
@@ -83,6 +84,7 @@ animDiv {
   display: flex;
 }
 .navbar {
+    z-index: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,6 +94,7 @@ animDiv {
     display: none;
 }
 .bar {
+    z-index: 0;
     display: flex;
     width: 25px;
     height: 3px;
@@ -102,6 +105,7 @@ animDiv {
 }
 .nav-menu {
     display: flex;
+    z-index: 0;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -141,6 +145,7 @@ html {
 }
 .glow {
   display: inline-block;
+  z-index: 3;
   font-size: 28px;
   color: #CD6B3F;
   text-align: center;
@@ -169,7 +174,7 @@ img {
     margin-left: 1px;
     margin-top: 1px;
     align-items: center; 
-    z-index: 1;
+    z-index: 3;
     max-width: 100%;
 }
 video {
@@ -251,6 +256,7 @@ blockquote {
 }
 .wrapper{
     margin: 0;
+    z-index: 9;
     width: inherit;
     height: 12px;
     background: linear-gradient(0deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
@@ -259,12 +265,14 @@ nav {
   width: 100%;
   height: 35px;
   opacity: 90%;
+  z-index: 0;
   background: linear-gradient(0deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
   margin: 0;
   float: left;
   overflow: hidden;
 }
 ul li {
+  z-index: 1;
   display: inline-block;
   line-height: 35px;
   text-decoration: none;
@@ -273,6 +281,7 @@ ul li {
   color: #958E78; 
 }
 ul li a {
+  z-index: 1;
   display: block;
   text-decoration: none;
   font-size: 22px;
@@ -282,6 +291,7 @@ ul li a {
   height: auto;
 }
 ul li a:hover {
+  z-index: 1;
   color: #006666; 
   font-size: 22px;
 }
