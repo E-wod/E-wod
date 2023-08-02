@@ -126,7 +126,7 @@ animDiv {
 }
 .nav-logo {
     font-size: 24px;
-    color: #CD6B3F;
+    color: #dfe6eb;
     font-family: Script, Lobster, "Kristen ITC";
 }
 .nav-logo:hover{
@@ -140,7 +140,7 @@ animDiv {
     margin: 10px;
 }
 html {
-  background: linear-gradient(#000000, #A20A29);
+  background: linear-gradient(#000000, #821B12);
   z-index: 100;
   width: 100%;
   height: auto;
@@ -153,7 +153,7 @@ html {
   display: inline-block;
   z-index: 3;
   font-size: 28px;
-  color: #CD6B3F;
+  color: #dfe6eb;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
 }
@@ -357,7 +357,7 @@ a {
     
     .nav-logo {
     font-size: 20px;
-    color: #CD6B3F;
+    color: #dfe6eb;
     z-index: 0;
     font-family: Script, Lobster, "Kristen ITC";
     }
@@ -472,7 +472,7 @@ a {
      z-index: 3;
      display: inline-block;
      font-size: 18px;
-     color: #CD6B3F; 
+     color: #dfe6eb; 
      text-align: center;
      animation: glow 1s ease-in-out infinite alternate;
      }
