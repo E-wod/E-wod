@@ -272,7 +272,7 @@ nav {
   overflow: hidden;
 }
 ul li {
-  z-index: 1;
+  z-index: 0;
   display: inline-block;
   line-height: 35px;
   text-decoration: none;
@@ -281,7 +281,7 @@ ul li {
   color: #958E78; 
 }
 ul li a {
-  z-index: 1;
+  z-index: 0;
   display: block;
   text-decoration: none;
   font-size: 22px;
@@ -291,7 +291,7 @@ ul li a {
   height: auto;
 }
 ul li a:hover {
-  z-index: 1;
+  z-index: 0;
   color: #006666; 
   font-size: 22px;
 }
@@ -319,7 +319,7 @@ a {
 }
 @media only screen and (max-width : 768px ){
     .nav-menu {
-        z-index: 1;
+        z-index: 0;
         object-fit: cover;
         position: fixed;
         right: -100%;
@@ -335,40 +335,44 @@ a {
     
     .nav-menu.active {
          object-fit: cover;
-         z-index: 1;
+         z-index: 0;
          right: 5px;
     }
     
     .nav-item {
         margin: 0 0;
-        z-index: 1;
+        z-index: 0;
         padding: 2px;
     }
     
     .nav-logo {
     font-size: 20px;
     color: #CD6B3F;
+    z-index: 0;
     font-family: Script, Lobster, "Kristen ITC";
     }
     
     .hamburger {
-        z-index: 1;
+        z-index: 0;
         display: block;
         cursor: pointer;
     }
     
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
+        z-index: 0;
     }
     
     .hamburger.active .bar:nth-child(1) {
         -webkit-transform: translateY(8px) rotate(45deg);
         transform: translateY(8px) rotate(45deg);
+        z-index: 0;
     }
     
     .hamburger.active .bar:nth-child(3) {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
+        z-index: 0;
     }
     img {
         object-fit: contain;
