@@ -8,7 +8,7 @@
 	max-width: 100%;
 	max-height: 100%;
 	scale: 1;
-        background: transparent;
+    background: transparent;
 	background-position:left top, left bottom;
 	background-repeat:repeat-x;
 }
@@ -22,18 +22,18 @@ img{
 html{
 	scroll-behavior: smooth;
 	height:100%;
-        width:100%;
+    width:100%;
 	position: relative;
 	background: linear-gradient(105deg,#303030 39%,#000000 105%);
 }
 /*Body Attributes*/
 body{
-        height: 101%;
-        width: 101%;
-        max-height: 100%;
-        max-width: 100%;
+    height: 101%;
+    width: 101%;
+    max-height: 100%;
+    max-width: 100%;
 	z-index: 0;
-        object-fit: cover;
+    object-fit: cover;
 	background: linear-gradient(105deg,#303030 39%,#000000 105%);
 	background-attachment: fixed;
 	position: relative;
@@ -46,8 +46,8 @@ body{
 }
 /*Header Attributes*/
 .header {
-        max-height: 100%;
-        max-width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-top: 15px;
@@ -115,7 +115,7 @@ body{
 }
 
 .hamburger {
-        display: none;
+    display: none;
 }
 
 .hamburger a:hover,
@@ -142,17 +142,17 @@ body{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-        object-fit: cover;
+    object-fit: cover;
 	z-index: 3;
 	position: relative;
-        max-width: 100%;
+    max-width: 100%;
 	max-height: 100%;
 }
 /*Setting the content format for landing page*/
 .landing-content{
 	background-color: transparent;
 	position: absolute;
-        align-items: center;
+    align-items: center;
 	max-width: 100%;
 	max-height: 100%;
 	margin-left: 60px;
@@ -225,7 +225,7 @@ body{
 }
 
 .landing-content h3 span{
-        font-size: 43px;
+    font-size: 43px;
 	color: azure;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
@@ -238,7 +238,7 @@ body{
 /*Setting the landing page template for paragraph*/
 .landing-content p{
 	z-index: 1;
-        display: flex;
+    display: flex;
 	font-size: 20px;
 	color: azure;
 	font-family: sans-serif;
@@ -251,8 +251,10 @@ body{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	width: 100%;
+	width: 75%;
 	max-height: 400px;
+	max-width: 100%;
+	height: auto;
 	background: transparent;
 	object-fit: contain;
 	position: relative;
@@ -429,14 +431,14 @@ body{
 
 .harpoon{
 	float: inherit;
-        display: inline-blockx;
+    display: inline-blockx;
 	z-index: -13;
 	background: transparent;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 50px;
 	margin-bottom: 0px;
-        opacity: 90%;
+    opacity: 90%;
 	width: 40%;
 	padding: 0px 0px 0px;
 }
@@ -446,23 +448,15 @@ body{
 	background-blend-mode: normal;
 	right: 0;
 	align-items: center;
-        animation-duration: infinite;
+    animation-duration: infinite;
 	animation: harpAnim;
 	transition-timing-function: 3s ease-in-out; 
 
 }
 
-
-.grp {
-        justify-content: space-between;
-	align-items: center;
-	margin-left: 100px;
-	padding: 0 0 0;
-
-}
 /*background layout template*/
 .bkg{
-        width:100%;
+    width:100%;
 	max-width: 3840px;
 	height: 100%;
 	max-height: 2160px;
@@ -473,7 +467,7 @@ body{
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
-        opacity: 70%;
+    opacity: 70%;
 	position: relative;
 }
 
@@ -620,9 +614,9 @@ body{
 	overflow: hidden;
 	animation-timing-function: ease-in-out;
 	transition: .5s;
-        z-index: 7;
-        display: block;
-        cursor: pointer;
+    z-index: 7;
+    display: block;
+    cursor: pointer;
 	animation: menuAnim 1.5s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 	align-items: center;
@@ -635,17 +629,17 @@ body{
 }
     
 .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
+    opacity: 0;
 }
     
 .hamburger.active .bar:nth-child(1) {
-        -webkit-transform: translateY(8px) rotate(45deg);
-        transform: translateY(8px) rotate(45deg);
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
 }
     
 .hamburger.active .bar:nth-child(3) {
-        -webkit-transform: translateY(-8px) rotate(-45deg);
-        transform: translateY(-8px) rotate(-45deg);
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
 }
     
 .logo {
@@ -683,7 +677,9 @@ body{
 	margin-right: 29px;
 	margin-top: 65px;
 	margin-bottom: 0px;
-	display: block;
+	display: inline-block;
+	float: top;
+	height: 75%;
 }
 	
 	/*Setting the landing page template for H1 Heading*/
@@ -759,7 +755,7 @@ body{
 .landing-content p{
 	z-index: 1;
 	display: flex;
-	font-size: 15px;
+	font-size: 17px;
 	color: azure;
 	font-family: sans-serif;
 	font-weight: 100;
@@ -771,7 +767,7 @@ body{
 	margin-right: 0px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	width: 100%;
+	max-width: 75%;
 	max-height: 250px;
 	background: transparent;
 	object-fit: contain;
@@ -783,7 +779,8 @@ body{
 }
 
 .landing-content p{
-	width: 70%;
+	width: 100%;
+	height: 100%;
 }
 	
 .btnbox a {
@@ -810,17 +807,19 @@ body{
 	padding: 1px 1px 1px;
 }
 	
-.btnbox  {
-	width: 250px;
-	height: auto;
-	display: block;
-	position: absolute;
+.landing-content .btnbox  {
+	width: 80%;
+	height: 105px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
 	overflow: hidden;
 	animation-timing-function: ease-in-out;
 	transition: 3s;
 	z-index: 3;
-	padding: 100 0 0;
+	padding: 10 0 10;
+	margin-left: -293px;
+	align-items: center;
 }
-	
-	
+		
 }
