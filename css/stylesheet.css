@@ -558,6 +558,18 @@ body{
 
 /*-----------------------------------------------------------------------SMALL WINDOW------------------------------------------------------*/
 @media only screen and (max-width : 768px ){
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	max-width: 100%;
+	max-height: 100%;
+	scale: 1;
+	background-color: red;
+	background-position:left top, left bottom;
+	background-repeat:repeat-x;
+}
 .header {
 	max-height: 100%;
 	max-width: 100%;
