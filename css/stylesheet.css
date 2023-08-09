@@ -8,7 +8,7 @@
 	max-width: 100%;
 	max-height: 100%;
 	scale: 1;
-
+        background: linear-gradient(105deg,#303030 39%,#000000 105%);
 	background-position:left top, left bottom;
 	background-repeat:repeat-x;
 }
