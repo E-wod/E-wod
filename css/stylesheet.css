@@ -238,7 +238,7 @@ body{
 /*Setting the landing page template for paragraph*/
 .landing-content p{
 	z-index: 1;
-    display: flex;
+        display: flex;
 	font-size: 20px;
 	color: azure;
 	font-family: sans-serif;
@@ -251,7 +251,7 @@ body{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	width: 75%;
+	width: 85%;
 	max-height: 400px;
 	max-width: 100%;
 	height: auto;
