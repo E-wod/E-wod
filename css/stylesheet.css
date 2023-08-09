@@ -775,7 +775,7 @@ body{
 	margin-bottom: 0px;
 	width: 300px;
 	height: auto;
-	font-size: 18px;
+	font-size: 16px;
 	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
 	display: flex;
@@ -789,11 +789,11 @@ body{
 	overflow: hidden;
 	animation-timing-function: ease-in-out;
 	transition: 3s;
-	padding: 5px 5px 5px;
+	padding: 1px 1px 1px;
 }
 	
 .btnbox  {
-	width: 500px;
+	width: 250px;
 	height: auto;
 	display: block;
 	position: absolute;
