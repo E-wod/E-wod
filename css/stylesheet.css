@@ -429,31 +429,6 @@ body{
 	position: relative;
 }
 
-.harpoon{
-	float: inherit;
-    display: inline-blockx;
-	z-index: -13;
-	background: transparent;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 50px;
-	margin-bottom: 0px;
-    opacity: 90%;
-	width: 40%;
-	padding: 0px 0px 0px;
-}
-
-.harpoon a{
-	background: transparent;
-	background-blend-mode: normal;
-	right: 0;
-	align-items: center;
-    animation-duration: infinite;
-	animation: harpAnim;
-	transition-timing-function: 3s ease-in-out; 
-
-}
-
 /*background layout template*/
 .bkg{
     width:100%;
