@@ -1,545 +1,811 @@
+@charset "utf-8";
+/* CSS Document */
+/*Overall Attributes*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
+  max-height: 100%;
+  scale: 1;
+  background-image:url( src="https://i.ibb.co/gyh36tS/Photography-Oceanfront.png"), linear-gradient(0deg, #000000 0%, transparent 30%, #000000 85%);
+  background-position:left top, left bottom;
+  background-repeat:repeat-x;
 }
 
-
-.contactDiv {
-  z-index: 7;
-  border: 4px outset #dfe6eb;
-  background-color: #325b63;
-  margin: auto;
-  padding: 4px;
-  align-items: center;
-  display: inline-flex;
-  position: relative;
+img{
+	width: 100%;
+	height: 100%;
 }
-fadeDiv {
-  z-index: 7;
-  width: 100%;
-  height: auto;
-  margin: 0px;
-  position: inherit;
-  background-color: transparent;
-  animation-name: fade;
-  animation-duration: 4.75s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-  margin: 0px auto;
-  max-width: 100%;
+
+/*HTML Attributes*/
+html{
+	scroll-behavior: smooth;
+	height:100%;
+
+    width:100%;
+	position: relative;
 }
-@keyframes fade {
-  0%   {opacity:0%;}
-  100%  {opacity:100%;}
-}  
-
-
-#text1,
-#text2 {
-    z-index: 3;
-    align-items: center;
-    position: inherit; 
-    display: block;
+/*Body Attributes*/
+body{
+    height: 101%;
+    width: 101%;
+    max-height: 100%;
     max-width: 100%;
-    font-size: 40pt;
-    font-weight: 80;
-    animation-timing-function: ease;
-    user-select: none;
-    font-family:Script, Lobster, 'Kristen ITC';
+	z-index: 0;
+    object-fit: cover;
+	background: linear-gradient(105deg,#303030 39%,#000000 105%);
+	background-attachment: fixed;
+	position: relative;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-repeat: no-repeat;
+	overflow: inherit;
+}
+/*Header Attributes*/
+.header {
+    max-height: 100%;
+    max-width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0 0 0;
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 5;
+	text-decoration: none;
+	overflow: hidden;
+	transition: .9s;
+	transition-timing-function: ease; 
+	object-position: right;
+}
+/*Logo*/
+.logo {
+	margin-left: 46px;
+	margin-right: 0px;
+	margin-top: 17px;
+	font-size: 55px;
+	color: azure;
+	text-decoration: none;
+	font-weight: 400;
+	font-style: normal;
+	opacity: 0;
+	animation: logoAnim 2s ease forwards;
+	transition-timing-function: ease ease-in-out; 
 }
 
-
-
-animDiv {
-  z-index: 3;
-  width: 100%;
-  height: auto;
-  margin: 0px;
-  position: inherit;
-  background-color: transparent;
-  animation-name: anim;
-  animation-duration: 4.75s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-  margin: 0px auto;
-  max-width: 100%;
-}
-@keyframes anim {
-  0%   {opacity:0%;}
-  100%  {opacity:100%;}
-}
-
-
-
-.myDiv {
-  z-index: 3;
-  border: 4px outset #dfe6eb;
-  background-color: #325b63;
-  text-align: center;
-  position: relative;
-}
-.logo {    /* to center the container */
-  z-index: 0;
-  width: 30%;
-  max-width: auto;
-  margin: 0 40px;
-  padding: 0;
-  display: flex;
-}
+/*Nav Bar Attributes*/
 .navbar {
-    z-index: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
+	margin-left: 0px;
+	margin-right: 93px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
+/*Nav Bar Anchor Tag*/
+.navbar a {
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 22px;
+	color: azure;
+	text-decoration: none;
+	font-weight: 100;
+	font-style: normal;
+	opacity: 0;
+	animation: menuAnim .5s ease forwards;
+	animation-delay: calc(.3s * var(--i));
+	transition: .3s;
+	transition-timing-function: ease ease-in-out; 
+}
+/*Nav Bar Hover function*/
+.navbar a:hover,
+.navbar a.active {
+	color: #d22900;
+}
+
 .hamburger {
     display: none;
 }
+
+.hamburger a:hover,
+.hamburger a.active {
+	color: #d22900;
+}
 .bar {
-    z-index: 0;
     display: flex;
     width: 25px;
     height: 3px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #dfe6eb;
+    background: azure;
 }
-.nav-menu {
-    display: flex;
-    z-index: 0;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-.nav-item {
-    margin-left: 25px;
-}
-.nav-link{
-    color: #dfe6eb;
-}
-.nav-link:hover{
-    color: #006666;
-}
-.nav-logo {
-    font-size: 24px;
-    color: #dfe6eb;
-    font-family: Script, Lobster, "Kristen ITC";
-}
-.nav-logo:hover{
-    color: #006666;
-}
-.responsive{
-    max-width: 100%;
-    height: 100%;
-    margin-left: 50%;
-    margin-right: 50%;
-    margin: 10px;
-}
-html {
-  background: linear-gradient(180deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
-  z-index: 100;
-  width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  font-family: Script, Lobster, "Kristen ITC";
-}
-.glow {
-  display: inline-block;
-  z-index: 3;
-  font-size: 28px;
-  color: #dfe6eb;
-  text-align: center;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 1px #1e5c69, 0 0 2px #1e5c69, 0 0 3px #1e5c69, 0 0 4px #32a0b8, 0 0 5px #1e5c69, 0 0 6px #1e5c69, 0 0 7px #32a0b8;
-  }
-  to {
-    text-shadow: 0 0 4px #1e5c69, 0 0 6px #1e5c69, 0 0 8px #1e5c69, 0 0 10px #32a0b8, 0 0 12px #1e5c69, 0 0 14px #1e5c69, 0 0 16px #32a0b8;
-  }
-}
-body { 
-    align-items: center;
-    background-repeat: repeat;
-    background-size: auto;
-    height: 100%;
-    width: 100%;
-    
-}
-img {
-    object-fit: contain;
-    width: 100%;
-    position: inherit;
-    padding: 0;
-    margin-left: 1px;
-    margin-top: 1px;
-    align-items: center; 
-    z-index: 3;
-    max-width: 100%;
-}
-video {
+
+/*Setting the overall landing page template*/
+.landing {
+	height: 100%;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
     object-fit: cover;
-    border-radius: 0%;
+	z-index: 3;
+	position: relative;
     max-width: 100%;
-    max-height: auto;
-    position: inherit;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4px;
+	max-height: 100%;
 }
-p {
-    margin: 1px auto;
-    text-align: center;
+/*Setting the content format for landing page*/
+.landing-content{
+	background-color: transparent;
+	position: absolute;
     align-items: center;
-    all: center;
-    font-size: 20px;
-    font-family:"Open Sans", "sans-serif";
-    overflow-x: inherit;
-    color: #FFFFFF;
-    padding: 1px;
-    max-width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	margin-left: 60px;
+	margin-right: 67px;
+	margin-top: 70px;
+	margin-bottom: 0px;
+	display: block;
+	gap: 44px;
 }
-h1 {
-    margin: 1px auto;
-    text-align: center;
-    mix-blend-mode: normal;
-    text-shadow: 2px 2px #32a0b8;
-    font-size: 28px;
-    color: #dfe6eb; 
-    padding: 1px;
-    font-family:Script, Lobster, 'Kristen ITC';
-    float: center;
-    align-content: center;
-    width: 100%;
-    transform: scale(0.94);
-    animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1);
-}  
-h2 {
-    margin: 1px auto;
-    text-align: center;
-    mix-blend-mode: normal;
-    font-size: 18px;
-    color: #dfe6eb; 
-    font-family: 'Open Sans';
-    padding: 1px;
-    float: center;
-    align-content: center;
-    width: 100%;
+/*Setting the landing page template for H1 Heading*/
+.landing-content h1{
+	font-size: 40px;
+	color: azure;
+	font-family: "sofachrome", sans-serif;
+	font-weight: 100;
+	font-style: italic;
+	text-shadow: 0 0 15px #d22900;
+	line-height: .9;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	padding: 10px 0px 10px;
+	width: 100%;
+	max-width: 80%;
+	position: relative;
+	z-index: -3;
+	opacity: 0;
+	animation: h1Anim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
 }
-h3 {
-   font-size: 16px;
-   font-family:"Open Sans", "sans-serif";
-   color: #dfe6eb; 
-   text-align: center;
-   mix-blend-mode: normal;
-   padding: 1px;
-   float: center;
-   align-content: center;
-   margin: 1px auto;
+/*Setting the landing page template for H3*/
+
+.landing-content h3 grp a{
+	width: 50%;
 }
-h4 {
-    margin: 1px auto;
-    text-align: center;
-    font-size: 13px;
-    font-family: "Open Sans", "sans-serif";
-    color: #dfe6eb; 
-    padding: 1px;
-    float: inherit;
-    max-width: 400px;
+
+.landing-content h3 grp {
+	z-index: 1;
+	background: transparent;
+	position: inherit;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px 0 0px;
+	width: 100%;
 }
-blockquote {
-    margin: 1px auto;
-    max-width: 40%;
-    align-items: center;
-    padding: 1px;
-    float: inherit;
+
+.landing-content h3{
+	font-size: 48px;
+	color: #d22900;
+	font-family:Script, Lobster, 'Kristen ITC';
+	font-weight: 100;
+	text-decoration: none;
+	text-shadow: 0 3px 7px azure;
+	z-index: 10;
+	padding: 0px 0 0px;
+	align-items: center;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	background: transparent;
+	opacity: 0;
+	animation: h3Anim 1s ease forwards;
+	animation-delay: .7s;
+	transition-timing-function: ease ease-in-out; 
+	max-width: 100%;
 }
-.wrapper{
-    margin: 0;
-    z-index: 0;
-    width: inherit;
-    height: 12px;
-    background: linear-gradient(0deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
+
+.landing-content h3 span{
+    font-size: 48px;
+	color: azure;
+	font-family:Script, Lobster, 'Kristen ITC';
+	font-weight: 100;
+	text-decoration: none;
+	z-index: 1;
+
 }
-nav {
-  width: 100%;
-  height: 35px;
-  opacity: 90%;
-  z-index: 0;
-  background: opaque;
-  margin: 0;
-  float: left;
-  overflow: hidden;
+
+
+/*Setting the landing page template for paragraph*/
+.landing-content p{
+	z-index: 1;
+    display: flex;
+	font-size: 22px;
+	color: azure;
+	font-family: sans-serif;
+	font-weight: 100;
+	font-style: italic;
+	line-height: 1.2;
+	padding: 10px 0 10px;
+	align-items: center;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 100%;
+	max-height: 400px;
+	background: transparent;
+	object-fit: contain;
+	position: relative;
+	overflow:visible;
+	opacity: 0;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: ease ease-in-out; 
 }
-ul li {
-  z-index: 0;
-  display: inline-block;
-  line-height: 35px;
-  text-decoration: none;
-  font-size-adjust: auto;
-  font-family:Script, Lobster, "Kristen ITC";
-  color: #958E78; 
+
+.landing-content p{
+    width: 65%;
 }
-ul li a {
-  z-index: 0;
-  display: block;
-  text-decoration: none;
-  font-size: 22px;
-  font-family:Script, Lobster, "Kristen ITC";
-  color: #958E78; 
-  padding: 5 10px;
-  height: auto;
+
+
+/*Setting the landing page template for Question buttons*/
+
+
+
+.landing-content .btnbox {
+	width: 650px;
+	max-width: 100%;
+	max-height: 100%;
+	height: 70px;
+	display: flex;
+	position: relative;
+	text-decoration: none;
+	z-index: 0;
+	overflow: hidden;
+	left: 50%;
+	margin-top: 0px;
+	margin-bottom: 60px;
+	margin-right: 0px;
+	margin-left: -340px;
+	background: transparent;
+	align-content: center;
+	float: top;
+	padding: 10px 10px 10px;
+	animation: choiceAnim 1.5s ease forwards;
+	animation-timing-function: ease-in-out;
+	transition: 1s;
 }
-ul li a:hover {
-  z-index: 0;
-  color: #006666; 
-  font-size: 22px;
+
+/*Question Box Anchor Tag Button layout and function*/
+.btnbox a {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 300px;
+	height: auto;
+	font-size: 20px;
+	font-family:"Open Sans", "sans-serif";
+	text-decoration: none;
+	display: flex;
+	float: center;
+	justify-content: space-around;
+	letter-spacing: 1.5px;
+	border: 2px solid #d22900;
+	border-radius: 8px;
+	position: relative;
+	color: #d22900;
+	overflow: hidden;
+	animation-timing-function: ease-in-out;
+	transition: 3s;
+	animation: choiceAnim .5s ease forwards;
+	padding: 10px 10px 10px;
 }
-li {
-    list-style: none;
+/*Setting the attributes for each button*/
+.btnbox a:nth-child(1 2) {
+	background: transparent;
+	color: #d22900;
 }
-a {
-    text-decoration: none;
+/*Setting pre-animation attributes*/
+.btnbox a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	z-index: -1;
+	transition: .9s;
+	transition-timing-function: ease; 
 }
-.row {
-  z-index: 3;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1px 1px;
+/*Question box Animation Element*/
+.btnbox a:hover::before {
+	height: 100%;
+	background: linear-gradient(0deg,transparent 15%,#d22900 240%);
 }
-/* Create four equal columns that sits next to each other */
-.column {
-  z-index: 3;
-  flex-wrap: wrap;
-  max-width: 25%;
-  padding: 1px 1px;
+/*Question Box Hover Function*/
+.btnbox a:hover {
+	color: azure;
+	transition: .3s;
+	transition-timing-function: ease; 
 }
-.column img {
-  z-index: 3;
-  margin-top: 1px;
-  vertical-align: middle;
-  height: 100%;
+
+
+/*Setting the alignment and template for Social links*/
+.soc-lnk {
+	left: 50%;
+	max-width: inherit;
+	padding: -23px 0 0;
+	display: flex;
+	width: 225px;
+	text-decoration: none;
+	justify-content: space-around;
+	position: absolute;
+	background: transparent;
+	z-index: 0;
+	overflow: hidden;
+	margin: -129px;
+	margin-top: -60px;
+	margin-bottom: 0px;
+	animation: menuAnim ease forwards;
+	animation-delay: calc(.1s * var(--i));
+	opacity: 0;
+
 }
+/*Social Links Anchor Tag Button layout and function*/
+.soc-lnk a {
+	align-items: center;
+	font-size: 40px;
+	transition: 1.2s;
+	transition-timing-function: ease; 
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	border: 2px solid #d22900;
+	border-radius: 50%;
+	position: relative;
+	color: #d22900;
+	overflow: hidden;
+	width: 60px;
+	height: 60px;
+	background: transparent;
+	z-index: -3;
+	font-family:"Open Sans", "sans-serif";
+	animation: menuAnim .5s ease forwards;
+	animation-delay: calc(.3s * var(--i));
+	opacity: 0;
+
+}
+/*Setting the attributes for each button*/
+.soc-lnk a:nth-child(1 2 3) {
+	background: transparent;
+	color: #d22900;
+}
+/*Setting pre-animation attributes*/
+.soc-lnk a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	z-index: 3;
+	transition: .9s;
+	transition-timing-function: ease; 
+}
+/*Animation element*/
+.soc-lnk a:hover::before {    
+	height: 100%;
+	background: linear-gradient(0deg,transparent 35%,#d22900 240%);
+	z-index: 3;
+}
+/*Hover Function for Social Links*/
+.soc-lnk a:hover {
+	color: azure;
+	transition: .3s;
+	transition-timing-function: ease; 
+	z-index: 3;
+	position: relative;
+}
+
+.harpoon{
+	float: inherit;
+    display: inline-blockx;
+	z-index: -13;
+	background: transparent;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+    opacity: 90%;
+	width: 40%;
+	padding: 0px 0px 0px;
+}
+
+.harpoon a{
+	background: transparent;
+	background-blend-mode: normal;
+	right: 0;
+	align-items: center;
+    animation-duration: infinite;
+	animation: harpAnim;
+	transition-timing-function: 3s ease-in-out; 
+
+}
+
+/*background layout template*/
+.bkg{
+    width:100%;
+	max-width: 3840px;
+	height: 100%;
+	max-height: 2160px;
+	z-index: -31;
+/*	background: linear-gradient(0deg, #000000 0%, transparent 30%, #000000 85%);*/
+	
+	
+	background-image:url( src="https://i.ibb.co/gyh36tS/Photography-Oceanfront.png"), linear-gradient(0deg, #000000 0%, transparent 30%, #000000 85%);
+	background-position:left top, left bottom;
+	background-repeat:repeat-x;
+	align-items: center;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+    opacity: 70%;
+	position: relative;
+}
+
+
+@keyframes logoAnim {
+	0% {
+		transform: translateX(-500px);
+		opacity: 0;
+}
+	75% {
+		transform: translateX(75px);
+		opacity: 1;
+		color: azure;
+	}
+	87% {
+		transform: translateX(-35px);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+		color: #346F69;
+	}
+}
+
+@keyframes menuAnim {
+	0% {
+		transform: translateY(200px);
+		opacity: 0;
+}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes h1Anim {
+	0% {
+		transform: translateY(-200px);
+		opacity: 0;
+}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes h3Anim {
+	0% {
+		transform: translateX(-200px);
+		opacity: 0;
+}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+			
+			
+}
+
+
+@keyframes pAnim {
+	0% {
+		transform: scale(.01);
+		opacity: 0;
+}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes choiceAnim {
+	0% {
+		transform: translateY(80px);
+		opacity: 0;
+		
+}
+
+	100% {
+		transform: translateY(0px);;
+		opacity: 1;
+		
+	}
+}
+
+
+/*-----------------------------------------------------------------------SMALL WINDOW------------------------------------------------------*/
 @media only screen and (max-width : 768px ){
-    .nav-menu {
-        z-index: 0;
-        object-fit: cover;
-        position: fixed;
-        right: -100%;
-        top: 10px;
-        float: top;
-        flex-direction: column;
-        width: 30%;
-        max-height: 70%;
-        border-radius: 10px;
-        text-align: inherit;
-        transition: 0.75s;
-    }
+	.header {
+		max-height: 100%;
+		max-width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 0 0 0;
+		background: transparent;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 5;
+		text-decoration: none;
+		overflow: hidden;
+		transition: .9s;
+		transition-timing-function: ease; 
+	}
+	
+	 .hamburger:hover {
+		background-color: #d22900;
+		z-index: 3;
+
+	 }
     
-    .nav-menu.active {
-         object-fit: cover;
-         z-index: 0;
-         right: 5px;
-    }
-    
-    .nav-item {
-        margin: 0 0;
-        z-index: 0;
-        padding: 2px;
-    }
-    
-    .nav-logo {
-    font-size: 20px;
-    color: #dfe6eb;
-    z-index: 0;
-    font-family: Script, Lobster, "Kristen ITC";
-    }
-    
-    .hamburger {
-        z-index: 0;
+     .hamburger {
+		padding: 0 0 0;
+		margin-left: 10px;
+		margin-right: 34px;
+		margin-top: 40px;
+		margin-bottom: 10px;
+		text-decoration: none;
+		float: center;
+		justify-content: space-around;
+		letter-spacing: 1.5px;
+		border: 2px solid #d22900;
+		border-radius: 8px;
+		position: relative;
+		color: #d22900;
+		overflow: hidden;
+		animation-timing-function: ease-in-out;
+		transition: .5s;
+        z-index: 7;
         display: block;
         cursor: pointer;
+		animation: menuAnim 1.5s ease forwards;
+		transition-timing-function: ease ease-in-out; 
+		align-items: center;
+		width: 45px;
+		font-size: 29px;
+		font-family: "sofachrome", sans-serif;
+		font-weight: 100;
+		font-style: italic;
+		line-height: 1;
     }
     
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
-        z-index: 0;
     }
     
     .hamburger.active .bar:nth-child(1) {
         -webkit-transform: translateY(8px) rotate(45deg);
         transform: translateY(8px) rotate(45deg);
-        z-index: 0;
     }
     
     .hamburger.active .bar:nth-child(3) {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
-        z-index: 0;
     }
-    img {
-        z-index: 3;
-        object-fit: contain;
-        width: 100%;
-        position: inherit;
-        padding: 1px;
-        margin-left: 1px;
-        margin-top: 1px;
-        align-items: center; 
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
-    video {
-         z-index: 3;
-         object-fit: cover;
-         border-radius: 0%;
-         max-height: auto;
-         position: inherit;
-         margin-left: auto;
-         margin-right: auto;
-         margin-top: 4px;
-     }
-    p {
-        z-index: 3;
-        margin: 1px auto;
-        text-align: center;
-        align-items: center;
-        all: center;
-        font-size: 15px;
-        font-family:"Open Sans", "sans-serif";
-        overflow-x: inherit;
-        color: #FFFFFF;
-        padding: 1px;
-    }
-    h1 {
-        z-index: 3;
-        margin: 1px auto;
-        text-align: center;
-        mix-blend-mode: normal;
-        text-shadow: 1px 1px #32a0b8;
-        font-size: 18px;
-        color: #958E78; 
-        font-family:Script, Lobster, 'Kristen ITC';
-        padding: 1px;
-        float: center;
-        align-content: center;
-        width: 100%;
-    }  
-    h2 {
-        z-index: 3;
-        margin: 1px auto;
-        text-align: center;
-        mix-blend-mode: normal;
-        font-size: 14px;
-        color: #dfe6eb; 
-        font-family: 'Open Sans';
-        padding: 1px;
-        float: center;
-        align-content: center;
-        width: 100%;
-        }
-    h3 {
-       z-index: 3;
-       font-size: 12px;
-       font-family:"Open Sans", "sans-serif";
-       color: #dfe6eb; 
-       text-align: center;
-       mix-blend-mode: normal;
-       padding: 1px;
-       float: center;
-       align-content: center;
-       margin: 1px auto;
-    }
-    h4 {
-      z-index: 3;
-      margin: 1px auto;
-      text-align: center;
-      font-size: 11px;
-      font-family:"Open Sans", "sans-serif";
-      color: #dfe6eb; 
-      padding: 1px;
-      float:inherit;
-      max-width: 400px;
-    }
-    .glow {
-     z-index: 3;
-     display: inline-block;
-     font-size: 18px;
-     color: #dfe6eb; 
-     text-align: center;
-     animation: glow 1s ease-in-out infinite alternate;
-     }
-  
-     html {
-        z-index: 3;
-        background: linear-gradient(180deg, rgba(50,91,99,1) 0%, rgba(35,76,80,1) 49%, rgba(19,46,55,1) 78%, rgba(19,28,26,1) 100%);
-        width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        font-family: Script, Lobster, "Kristen ITC";
-      }
-      fadeDiv {
-        z-index: 7;
-        width: 100%;
-        height: auto;
-        margin: 0px;
-        position: inherit;
-        background-color: transparent;
-        animation-name: fade;
-        animation-duration: 4.75s;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in-out;
-        margin: 0px auto;
-        max-width: 100%;
-      }
-      @keyframes fade {
-        0%   {opacity:0%;}
-        100%  {opacity:100%;}
-      }  
-      
-      
-      #text1,
-      #text2 {
-          z-index: 7;
-          align-items: center;
-          position: inherit; 
-          display: block;
-          max-width: 100%;
-          font-size: 20pt;
-          font-weight: 80;
-          animation-timing-function: ease;
-          user-select: none;
-          font-family:Script, Lobster, 'Kristen ITC';
-      }
-      
-      
-      
-      animDiv {
-        z-index: 7;
-        width: 100%;
-        height: auto;
-        margin: 0px;
-        position: inherit;
-        background-color: transparent;
-        animation-name: anim;
-        animation-duration: 4.75s;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in-out;
-        margin: 0px auto;
-        max-width: 100%;
-      }
-      @keyframes anim {
-        0%   {opacity:0%;}
-        100%  {opacity:100%;}
-      }
-      
+    
+	.logo {
+		margin-left: 25px;
+		margin-right: 0px;
+		margin-top: 30px;
+		font-size: 45px;
+		color: azure;
+		text-decoration: none;
+		font-weight: 400;
+		font-style: normal;
+		opacity: 0;
+		animation: logoAnim 2s ease forwards;
+		transition-timing-function: ease ease-in-out; 
+	}
+	
+	/*Nav Bar Attributes*/
+	.navbar {
+		display: none;
+		color: transparent;
+
+	}
+	/*Nav Bar Anchor Tag*/
+	.navbar a {
+		display: none;
+		color: transparent;
+	}
+
+	.landing-content{
+		background-color: transparent;
+		position: absolute;
+		align-items: left;
+		max-width: 100%;
+		max-height: 100%;
+		margin-left: 23px;
+		margin-right: 29px;
+		margin-top: 65px;
+		margin-bottom: 0px;
+		display: block;
+	}
+	
+	/*Setting the landing page template for H1 Heading*/
+	.landing-content h1{
+		font-size: 29px;
+		color: azure;
+		font-family: "sofachrome", sans-serif;
+		font-weight: 100;
+		font-style: italic;
+		line-height: .9;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		margin-bottom: 5px;
+		padding: 10px 0px 10px;
+		width: 100%;
+		max-width: 80%;
+		position: relative;
+		z-index: -3;
+		opacity: 0;
+		animation: h1Anim 1s ease forwards;
+		transition-timing-function: ease ease-in-out; 
+	}
+	
+	.landing-content h3 grp a{
+		width: 50%;
+	}
+
+	.landing-content h3 grp {
+		z-index: 1;
+		background: transparent;
+		position: inherit;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding: 0px 0 0px;
+		width: 100%;
+	}
+
+	.landing-content h3{
+		font-size: 28px;
+		color: #d22900;
+		font-family:Script, Lobster, 'Kristen ITC';
+		font-weight: 100;
+		text-decoration: none;
+		z-index: 10;
+		padding: 0px 0 0px;
+		align-items: center;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		background: transparent;
+		opacity: 0;
+		animation: h3Anim 1s ease forwards;
+		transition-timing-function: ease ease-in-out; 
+		max-width: 100%;
+	}
+
+	.landing-content h3 span{
+		font-size: 34px;
+		color: azure;
+		font-family:Script, Lobster, 'Kristen ITC';
+		font-weight: 100;
+		text-decoration: none;
+		z-index: 1;
+
+	}
+
+
+	/*Setting the landing page template for paragraph*/
+	.landing-content p{
+		z-index: 1;
+		display: flex;
+		font-size: 20px;
+		color: azure;
+		font-family: sans-serif;
+		font-weight: 100;
+		font-style: italic;
+		line-height: 1.0;
+		padding: 30px 0 30px;
+		align-items: center;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		margin-bottom: 15px;
+		width: 100%;
+		max-height: 400px;
+		background: transparent;
+		object-fit: contain;
+		position: relative;
+		overflow:visible;
+		opacity: 0;
+		animation: pAnim 1s ease forwards;
+		transition-timing-function: 2s ease ease-in-out; 
+	}
+
+	.landing-content p{
+		width: 70%;
+	}
+	
+	.btnbox a {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		width: 300px;
+		height: auto;
+		font-size: 18px;
+		font-family:"Open Sans", "sans-serif";
+		text-decoration: none;
+		display: flex;
+		float: center;
+		justify-content: space-around;
+		letter-spacing: 1.5px;
+		border: 2px solid #d22900;
+		border-radius: 8px;
+		position: relative;
+		color: #d22900;
+		overflow: hidden;
+		animation-timing-function: ease-in-out;
+		transition: 3s;
+		padding: 10px 10px 10px;
+	}
+	
+	.btnbox  {
+		width: 500px;
+		height: auto;
+		display: block;
+		position: absolute;
+		overflow: hidden;
+		animation-timing-function: ease-in-out;
+		transition: 3s;
+		z-index: 3;
+	}
+	
+	
 }
