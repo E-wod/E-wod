@@ -456,6 +456,8 @@ body{
 .grp {
         justify-content: space-between;
 	align-items: center;
+	margin-left: 100px;
+	padding: 0 0 0;
 
 }
 /*background layout template*/
