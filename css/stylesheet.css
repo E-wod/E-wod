@@ -801,6 +801,7 @@ body{
 	animation-timing-function: ease-in-out;
 	transition: 3s;
 	z-index: 3;
+	padding: 20px 0 0;
 }
 	
 	
