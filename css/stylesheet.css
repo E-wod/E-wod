@@ -24,6 +24,7 @@ html{
 	height:100%;
         width:100%;
 	position: relative;
+	background: linear-gradient(105deg,#303030 39%,#000000 105%);
 }
 /*Body Attributes*/
 body{
