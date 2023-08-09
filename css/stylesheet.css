@@ -452,6 +452,12 @@ body{
 
 }
 
+
+.grp {
+        justify-content: space-between;
+	align-items: center;
+
+}
 /*background layout template*/
 .bkg{
         width:100%;
