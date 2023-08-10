@@ -166,7 +166,7 @@ body{
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
 	font-size: 40px;
-	color: azure;
+	color: #A87D0D;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: italic;
@@ -689,7 +689,7 @@ body{
 	/*Setting the landing page template for H1 Heading*/
 .landingContent h1{
 	font-size: 26px;
-	color: azure;
+	color: #A87D0D;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: italic;
