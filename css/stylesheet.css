@@ -70,8 +70,8 @@ body{
 	margin-left: 46px;
 	margin-right: 0px;
 	margin-top: 17px;
-	font-size: 61px;
-	color: azure;
+	font-size: 77px;
+	color: #93BDB7;
 	text-decoration: none;
 	font-weight: 400;
 	font-style: normal;
@@ -157,7 +157,7 @@ body{
 	max-height: 100%;
 	margin-left: 60px;
 	margin-right: 67px;
-	margin-top: 120px;
+	margin-top: 125px;
 	margin-bottom: 0px;
 	display: block;
 	gap: 44px;
@@ -165,7 +165,7 @@ body{
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
 	font-size: 40px;
-	color: #d22900;
+	color: #285247;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: italic;
@@ -204,7 +204,7 @@ body{
 
 .landingContent h3{
 	font-size: 43px;
-	color: #A87D0D;
+	color: #8B3421;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
 	text-decoration: none;
@@ -458,24 +458,24 @@ body{
 	0% {
 		transform: translateX(-500px);
 		opacity: 0;
-		text-shadow: 0 1px 2px azure;
+		text-shadow: 0 0 1px #93BDB7;
 }
 	75% {
 		transform: translateX(75px);
 		opacity: 1;
-		color: azure;
-		text-shadow: 0 1px 2px azure;
+		color: transparent;
+		text-shadow: 0 0 2px #93BDB7;
 	}
 	87% {
 		transform: translateX(-35px);
 		opacity: 1;
-		text-shadow: 0 1px 2px azure;
+		text-shadow: 0 1px 4px #93BDB7;
 	}
 	100% {
 		transform: translateX(0);
 		opacity: 1;
-		color: #346F69;
-		text-shadow: 0 1px 2px azure;
+		color: #194238;
+		text-shadow: 0 2px 6px #93BDB7;
 	}
 }
 
@@ -577,6 +577,7 @@ body{
 	transition: .9s;
 	transition-timing-function: ease; 
 }
+	
 
 body{
     height: 100%;
@@ -649,7 +650,7 @@ body{
 	margin-left: 25px;
 	margin-right: 0px;
 	margin-top: 30px;
-	font-size: 45px;
+	font-size: 75px;
 	color: azure;
 	text-decoration: none;
 	font-weight: 400;
@@ -688,10 +689,11 @@ body{
 	/*Setting the landing page template for H1 Heading*/
 .landingContent h1{
 	font-size: 26px;
-	color: #A87D0D;
+	color: #285247;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: italic;
+	text-shadow: 0 0 12px #000000;
 	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -725,11 +727,11 @@ body{
 
 .landingContent h3{
 	font-size: 16px;
-	color: #825639;
+	color: #8B3421;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
 	text-decoration: none;
-	text-shadow: 0 1px 2px azure;
+	text-shadow: 0 3px 7px #000000;
 	z-index: 10;
 	padding: 0px 0 0px;
 	align-items: center;
