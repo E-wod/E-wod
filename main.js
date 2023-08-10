@@ -14,3 +14,9 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+
+
+document.querySelector("btnBox").addEventListener("click", function(background: #FFFFFF){
+  document.querySelector("div").style.display = "block";
+});
