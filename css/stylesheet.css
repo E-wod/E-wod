@@ -573,7 +573,24 @@ body{
 	overflow: hidden;
 	transition: .9s;
 	transition-timing-function: ease; 
-	}
+}
+
+body{
+        height: 100%;
+        width: 100%;
+	z-index: 0;
+        object-fit: cover;
+	background: linear-gradient(105deg,#303030 39%,#000000 105%);
+	background-attachment: fixed;
+	position: relative;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-repeat: no-repeat;
+}
+
+
 	
 .hamburger:hover {
 	background-color: #d22900;
