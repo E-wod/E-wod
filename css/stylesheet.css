@@ -238,23 +238,24 @@ body{
 /*Setting the landing page template for paragraph*/
 .landingContent p{
 	z-index: 1;
-        display: flex;
+    display: flex;
 	font-size: 20px;
 	color: azure;
 	font-family: sans-serif;
 	font-weight: 100;
 	font-style: italic;
-	line-height: 1.2;
-	padding: 0px 0 5px;
+	line-height: 1.35;
+	padding: 0 0 0;
 	align-items: center;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	width: 85%;
-	max-height: 400px;
-	max-width: 100%;
+	width: auto;
 	height: auto;
+	max-height: 30%;
+	max-width: 80%;
+	justify-content: space-between;
 	background: transparent;
 	object-fit: contain;
 	position: relative;
@@ -271,26 +272,30 @@ body{
 
 /*Setting the landing page template for Question buttons*/
 
-
-
-.landingContent .btnBox {
-	width: 650px;
-	max-width: 100%;
-	max-height: 100%;
-	height: 70px;
-	display: flex;
-	position: relative;
-	text-decoration: none;
-	z-index: 0;
-	overflow: hidden;
-	left: 50%;
-	margin-top: 0px;
-	margin-bottom: 60px;
-	margin-right: 0px;
-	margin-left: -340px;
+.cntr {
 	background: transparent;
-	align-content: center;
-	float: top;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+    margin: auto;
+	position: relative;
+}
+
+.btnBox {
+	width: auto;
+	height: auto;
+	display: flex;
+	text-decoration: none;
+	z-index: 5;
+	overflow: hidden;
+	justify-content: center;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background: transparent;
 	padding: 10px 10px 10px;
 	animation: choiceAnim 1.5s ease forwards;
 	animation-timing-function: ease-in-out;
@@ -299,6 +304,7 @@ body{
 
 /*Question Box Anchor Tag Button layout and function*/
 .btnBox a {
+	background: transparent;
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-top: 0px;
@@ -348,26 +354,27 @@ body{
 .btnBox a:hover {
 	color: azure;
 	transition: .3s;
-	transition-timing-function: ease; 
+	transition-timing-function: ease;
+	background: transparent;
 }
 
 
 /*Setting the alignment and template for Social links*/
 .socLnk {
-	left: 50%;
-	max-width: inherit;
-	padding: -23px 0 0;
-	display: flex;
-	width: 225px;
-	text-decoration: none;
-	justify-content: space-around;
-	position: absolute;
-	background: transparent;
-	z-index: 0;
+	z-index: 5;
 	overflow: hidden;
-	margin: -129px;
-	margin-top: -60px;
-	margin-bottom: 0px;
+	justify-content: center;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background: transparent;
+	padding: 10px 10px 10px;
+	display: flex;
+	width: auto;
+	height: auto;
+	text-decoration: none;
 	animation: menuAnim ease forwards;
 	animation-delay: calc(.1s * var(--i));
 	opacity: 0;
@@ -659,7 +666,7 @@ body{
 	
 	/*Setting the landing page template for H1 Heading*/
 .landingContent h1{
-	font-size: 22px;
+	font-size: 26px;
 	color: azure;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
@@ -696,12 +703,12 @@ body{
 }
 
 .landingContent h3{
-	font-size: 20px;
+	font-size: 22px;
 	color: #d22900;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
 	text-decoration: none;
-	text-shadow: 0 1px 4px azure;
+	text-shadow: 0 1px 3px azure;
 	z-index: 10;
 	padding: 0px 0 0px;
 	align-items: center;
@@ -730,22 +737,22 @@ body{
 .landingContent p{
 	z-index: 1;
 	display: flex;
-	font-size: 17px;
+	font-size: 14px;
 	color: azure;
 	font-family: sans-serif;
 	font-weight: 100;
 	font-style: italic;
 	line-height: 1.0;
-	padding: 2px 0 2px;
+	padding: 0 0 0;
 	align-items: center;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	max-width: 75%;
-	max-height: 250px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	max-width: 80%;
+	max-height: 40%;
+	height: 190px;
 	background: transparent;
-	object-fit: contain;
 	position: relative;
 	overflow:visible;
 	opacity: 0;
@@ -757,15 +764,25 @@ body{
 	width: 100%;
 	height: 100%;
 }
-	
+
+.cntr {
+	background: transparent;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+    margin: auto;
+	position: relative;
+}
 .btnBox a {
+	background: transparent;
 	margin-left: 5px;
 	margin-right: 5px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	width: 300px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 250px;
 	height: auto;
-	font-size: 16px;
+	font-size: 11px;
 	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
 	display: flex;
@@ -779,22 +796,72 @@ body{
 	overflow: hidden;
 	animation-timing-function: ease-in-out;
 	transition: 3s;
-	padding: 1px 1px 1px;
+	animation: choiceAnim .5s ease forwards;
+	padding: 10px 10px 10px;
+}
+
+.btnBox {
+	width: auto;
+	height: auto;
+	display: flex;
+	text-decoration: none;
+	z-index: 5;
+	overflow: hidden;
+	justify-content: center;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background: transparent;
+	padding: 10px 10px 10px;
+	animation: choiceAnim 1.5s ease forwards;
+	animation-timing-function: ease-in-out;
+	transition: 1s;
+}
+
+	.socLnk a {
+	align-items: center;
+	font-size: 25px;
+	transition: 1.2s;
+	transition-timing-function: ease; 
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	border: 2px solid #d22900;
+	border-radius: 50%;
+	position: relative;
+	color: #d22900;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	z-index: -3;
+	font-family:"Open Sans", "sans-serif";
+	animation: menuAnim .5s ease forwards;
+	animation-delay: calc(.3s * var(--i));
+	opacity: 0;
+
 }
 	
-.landingContent .btnBox  {
-	width: 80%;
-	height: 105px;
-	display: flex;
-	justify-content: space-between;
-	position: relative;
+.socLnk {
+	z-index: 5;
 	overflow: hidden;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
-	z-index: 3;
-	padding: 10 0 10;
-	margin-left: -293px;
-	align-items: center;
-}
-		
+	justify-content: center;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background: transparent;
+	padding: 10px 10px 10px;
+	display: flex;
+	width: auto;
+	height: auto;
+	text-decoration: none;
+	animation: menuAnim ease forwards;
+	animation-delay: calc(.1s * var(--i));
+	opacity: 0;
+
+}		
 }
