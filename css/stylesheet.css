@@ -129,10 +129,10 @@ body{
 	margin: 5px auto;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-	color: azure;
+	background: azure;
 	animation-delay: calc(.1s * var(--i));
-	animation: menuAnim ease forwards;
-	max-width: 100%;
+	animation: navAnim;
+
 }
 
 /*Setting the overall landing page template*/
