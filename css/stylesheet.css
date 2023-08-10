@@ -22,18 +22,18 @@ img{
 html{
 	scroll-behavior: smooth;
 	height:100%;
-    width:100%;
+        width:100%;
 	position: relative;
 	background: linear-gradient(105deg,#303030 39%,#000000 105%);
 }
 /*Body Attributes*/
 body{
-    height: 101%;
-    width: 101%;
-    max-height: 100%;
-    max-width: 100%;
+        height: 101%;
+        width: 101%;
+        max-height: 100%;
+        max-width: 100%;
 	z-index: 0;
-    object-fit: cover;
+        object-fit: cover;
 	background: linear-gradient(105deg,#303030 39%,#000000 105%);
 	background-attachment: fixed;
 	position: relative;
@@ -46,8 +46,8 @@ body{
 }
 /*Header Attributes*/
 .header {
-    max-height: 100%;
-    max-width: 100%;
+        max-height: 100%;
+        max-width: 100%;
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-top: 15px;
@@ -84,14 +84,14 @@ body{
 }
 
 /*Nav Bar Attributes*/
-.navbar {
+.navBar {
 	margin-left: 0px;
 	margin-right: 93px;
 	margin-top: 2px;
 	margin-bottom: 2px;
 }
 /*Nav Bar Anchor Tag*/
-.navbar a {
+.navBar a {
 	display: inline-block;
 	margin-left: 20px;
 	margin-right: 0px;
@@ -109,8 +109,8 @@ body{
 	transition-timing-function: ease ease-in-out; 
 }
 /*Nav Bar Hover function*/
-.navbar a:hover,
-.navbar a.active {
+.navBar a:hover,
+.navBar a.active {
 	color: #d22900;
 }
 
@@ -142,17 +142,17 @@ body{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-    object-fit: cover;
+        object-fit: cover;
 	z-index: 3;
 	position: relative;
-    max-width: 100%;
+        max-width: 100%;
 	max-height: 100%;
 }
 /*Setting the content format for landing page*/
-.landing-content{
+.landingContent{
 	background-color: transparent;
 	position: absolute;
-    align-items: center;
+        align-items: center;
 	max-width: 100%;
 	max-height: 100%;
 	margin-left: 60px;
@@ -163,7 +163,7 @@ body{
 	gap: 44px;
 }
 /*Setting the landing page template for H1 Heading*/
-.landing-content h1{
+.landingContent h1{
 	font-size: 40px;
 	color: azure;
 	font-family: "sofachrome", sans-serif;
@@ -186,11 +186,11 @@ body{
 }
 /*Setting the landing page template for H3*/
 
-.landing-content h3 grp a{
+.landingContent h3 grp a{
 	width: 50%;
 }
 
-.landing-content h3 grp {
+.landingContent h3 grp {
 	z-index: 1;
 	background: transparent;
 	position: inherit;
@@ -202,7 +202,7 @@ body{
 	width: 100%;
 }
 
-.landing-content h3{
+.landingContent h3{
 	font-size: 43px;
 	color: #d22900;
 	font-family:Script, Lobster, 'Kristen ITC';
@@ -224,8 +224,8 @@ body{
 	max-width: 100%;
 }
 
-.landing-content h3 span{
-    font-size: 43px;
+.landingContent h3 span{
+        font-size: 43px;
 	color: azure;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
@@ -236,7 +236,7 @@ body{
 
 
 /*Setting the landing page template for paragraph*/
-.landing-content p{
+.landingContent p{
 	z-index: 1;
         display: flex;
 	font-size: 20px;
@@ -264,7 +264,7 @@ body{
 	transition-timing-function: ease ease-in-out; 
 }
 
-.landing-content p{
+.landingContent p{
         width: 65%;
 }
 
@@ -273,7 +273,7 @@ body{
 
 
 
-.landing-content .btnbox {
+.landingContent .btnBox {
 	width: 650px;
 	max-width: 100%;
 	max-height: 100%;
@@ -298,7 +298,7 @@ body{
 }
 
 /*Question Box Anchor Tag Button layout and function*/
-.btnbox a {
+.btnBox a {
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-top: 0px;
@@ -323,12 +323,12 @@ body{
 	padding: 10px 10px 10px;
 }
 /*Setting the attributes for each button*/
-.btnbox a:nth-child(1 2) {
+.btnBox a:nth-child(1 2) {
 	background: transparent;
 	color: #d22900;
 }
 /*Setting pre-animation attributes*/
-.btnbox a::before {
+.btnBox a::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -340,12 +340,12 @@ body{
 	transition-timing-function: ease; 
 }
 /*Question box Animation Element*/
-.btnbox a:hover::before {
+.btnBox a:hover::before {
 	height: 100%;
 	background: linear-gradient(0deg,transparent 15%,#d22900 240%);
 }
 /*Question Box Hover Function*/
-.btnbox a:hover {
+.btnBox a:hover {
 	color: azure;
 	transition: .3s;
 	transition-timing-function: ease; 
@@ -353,7 +353,7 @@ body{
 
 
 /*Setting the alignment and template for Social links*/
-.soc-lnk {
+.socLnk {
 	left: 50%;
 	max-width: inherit;
 	padding: -23px 0 0;
@@ -374,7 +374,7 @@ body{
 
 }
 /*Social Links Anchor Tag Button layout and function*/
-.soc-lnk a {
+.socLnk a {
 	align-items: center;
 	font-size: 40px;
 	transition: 1.2s;
@@ -398,12 +398,12 @@ body{
 
 }
 /*Setting the attributes for each button*/
-.soc-lnk a:nth-child(1 2 3) {
+.socLnk a:nth-child(1 2 3) {
 	background: transparent;
 	color: #d22900;
 }
 /*Setting pre-animation attributes*/
-.soc-lnk a::before {
+.socLnk a::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -415,13 +415,13 @@ body{
 	transition-timing-function: ease; 
 }
 /*Animation element*/
-.soc-lnk a:hover::before {    
+.socLnk a:hover::before {    
 	height: 100%;
 	background: linear-gradient(0deg,transparent 35%,#d22900 240%);
 	z-index: 3;
 }
 /*Hover Function for Social Links*/
-.soc-lnk a:hover {
+.socLnk a:hover {
 	color: azure;
 	transition: .3s;
 	transition-timing-function: ease; 
@@ -431,7 +431,7 @@ body{
 
 /*background layout template*/
 .bkg{
-    width:100%;
+        width:100%;
 	max-width: 3840px;
 	height: 100%;
 	max-height: 2160px;
@@ -442,7 +442,7 @@ body{
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
-    opacity: 70%;
+        opacity: 70%;
 	position: relative;
 }
 
@@ -589,9 +589,9 @@ body{
 	overflow: hidden;
 	animation-timing-function: ease-in-out;
 	transition: .5s;
-    z-index: 7;
-    display: block;
-    cursor: pointer;
+        z-index: 7;
+        display: block;
+        cursor: pointer;
 	animation: menuAnim 1.5s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 	align-items: center;
@@ -604,17 +604,17 @@ body{
 }
     
 .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
+        opacity: 0;
 }
     
 .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
-    transform: translateY(8px) rotate(45deg);
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
 }
     
 .hamburger.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-    transform: translateY(-8px) rotate(-45deg);
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
 }
     
 .logo {
@@ -632,17 +632,17 @@ body{
 }
 	
 	/*Nav Bar Attributes*/
-.navbar {
+.navBar {
 	display: none;
 	color: transparent;
 }
 	/*Nav Bar Anchor Tag*/
-.navbar a {
+.navBar a {
 	display: none;
 	color: transparent;
 }
 
-.landing-content{
+.landingContent{
 	background-color: transparent;
 	position: absolute;
 	align-items: left;
@@ -658,7 +658,7 @@ body{
 }
 	
 	/*Setting the landing page template for H1 Heading*/
-.landing-content h1{
+.landingContent h1{
 	font-size: 22px;
 	color: azure;
 	font-family: "sofachrome", sans-serif;
@@ -679,11 +679,11 @@ body{
 	transition-timing-function: ease ease-in-out; 
 }
 	
-.landing-content h3 grp a{
+.landingContent h3 grp a{
 	width: 50%;
 }
 
-.landing-content h3 grp {
+.landingContent h3 grp {
 	z-index: 1;
 	background: transparent;
 	position: inherit;
@@ -695,7 +695,7 @@ body{
 	width: 100%;
 }
 
-.landing-content h3{
+.landingContent h3{
 	font-size: 20px;
 	color: #d22900;
 	font-family:Script, Lobster, 'Kristen ITC';
@@ -716,7 +716,7 @@ body{
 	max-width: 100%;
 }
 
-.landing-content h3 span{
+.landingContent h3 span{
 	font-size: 20px;
 	color: azure;
 	font-family:Script, Lobster, 'Kristen ITC';
@@ -727,7 +727,7 @@ body{
 
 
 	/*Setting the landing page template for paragraph*/
-.landing-content p{
+.landingContent p{
 	z-index: 1;
 	display: flex;
 	font-size: 17px;
@@ -753,12 +753,12 @@ body{
 	transition-timing-function: 2s ease ease-in-out; 
 }
 
-.landing-content p{
+.landingContent p{
 	width: 100%;
 	height: 100%;
 }
 	
-.btnbox a {
+.btnBox a {
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-top: 0px;
@@ -782,7 +782,7 @@ body{
 	padding: 1px 1px 1px;
 }
 	
-.landing-content .btnbox  {
+.landingContent .btnBox  {
 	width: 80%;
 	height: 105px;
 	display: flex;
