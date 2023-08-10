@@ -239,7 +239,7 @@ body{
 /*Setting the landing page template for paragraph*/
 .landingContent p{
 	z-index: 1;
-    display: flex;
+        display: flex;
 	font-size: 20px;
 	color: azure;
 	font-family: sans-serif;
@@ -459,20 +459,24 @@ body{
 	0% {
 		transform: translateX(-500px);
 		opacity: 0;
+		text-shadow: 0 1px 2px azure;
 }
 	75% {
 		transform: translateX(75px);
 		opacity: 1;
 		color: azure;
+		text-shadow: 0 1px 2px azure;
 	}
 	87% {
 		transform: translateX(-35px);
 		opacity: 1;
+		text-shadow: 0 1px 2px azure;
 	}
 	100% {
 		transform: translateX(0);
 		opacity: 1;
 		color: #346F69;
+		text-shadow: 0 1px 2px azure;
 	}
 }
 
@@ -721,12 +725,12 @@ body{
 }
 
 .landingContent h3{
-	font-size: 18px;
+	font-size: 16px;
 	color: #d22900;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
 	text-decoration: none;
-	text-shadow: 0 1px 3px azure;
+	text-shadow: 0 1px 2px azure;
 	z-index: 10;
 	padding: 0px 0 0px;
 	align-items: center;
@@ -742,7 +746,7 @@ body{
 }
 
 .landingContent h3 span{
-	font-size: 18px;
+	font-size: 16px;
 	color: azure;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
