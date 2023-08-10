@@ -22,16 +22,16 @@ img{
 html{
 	scroll-behavior: smooth;
 	height:100%;
-        width:100%;
+    width:100%;
 	position: relative;
 	background: linear-gradient(105deg,#303030 39%,#000000 105%);
 }
 /*Body Attributes*/
 body{
-        height: 100%;
-        width: 100%;
+    height: 100%;
+    width: 100%;
 	z-index: 0;
-        object-fit: cover;
+    object-fit: cover;
 	background: linear-gradient(105deg,#303030 39%,#000000 105%);
 	background-attachment: fixed;
 	position: relative;
@@ -43,8 +43,8 @@ body{
 }
 /*Header Attributes*/
 .header {
-        max-height: 100%;
-        max-width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-top: 15px;
@@ -70,7 +70,7 @@ body{
 	margin-left: 46px;
 	margin-right: 0px;
 	margin-top: 17px;
-	font-size: 55px;
+	font-size: 61px;
 	color: azure;
 	text-decoration: none;
 	font-weight: 400;
@@ -129,7 +129,6 @@ body{
 	background: azure;
 	animation: menuAnim 1.75s ease forwards;
 	animation-delay: calc(.3s * var(--i));
-	transition: .3s;
 	transition-timing-function: ease ease-in-out; 
 }
 
@@ -143,22 +142,22 @@ body{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-        object-fit: cover;
+    object-fit: cover;
 	z-index: 3;
 	position: relative;
-        max-width: 100%;
+    max-width: 100%;
 	max-height: 100%;
 }
 /*Setting the content format for landing page*/
 .landingContent{
 	background-color: transparent;
 	position: absolute;
-        align-items: center;
+    align-items: center;
 	max-width: 100%;
 	max-height: 100%;
 	margin-left: 60px;
 	margin-right: 67px;
-	margin-top: 70px;
+	margin-top: 120px;
 	margin-bottom: 0px;
 	display: block;
 	gap: 44px;
@@ -166,11 +165,11 @@ body{
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
 	font-size: 40px;
-	color: #A87D0D;
+	color: #d22900;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: italic;
-	text-shadow: 0 0 15px #d22900;
+	text-shadow: 0 0 12px #000000;
 	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -205,11 +204,11 @@ body{
 
 .landingContent h3{
 	font-size: 43px;
-	color: #d22900;
+	color: #A87D0D;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
 	text-decoration: none;
-	text-shadow: 0 3px 7px azure;
+	text-shadow: 0 3px 7px #000000;
 	z-index: 10;
 	padding: 0px 0 0px;
 	align-items: center;
@@ -226,7 +225,7 @@ body{
 }
 
 .landingContent h3 span{
-        font-size: 43px;
+    font-size: 43px;
 	color: azure;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
@@ -239,7 +238,7 @@ body{
 /*Setting the landing page template for paragraph*/
 .landingContent p{
 	z-index: 1;
-        display: flex;
+    display: flex;
 	font-size: 20px;
 	color: azure;
 	font-family: sans-serif;
@@ -267,7 +266,7 @@ body{
 }
 
 .landingContent p{
-        width: 65%;
+    width: 65%;
 }
 
 
@@ -279,7 +278,7 @@ body{
 	width: 100%;
 	height: 100%;
 	display: inline-block;
-        margin: auto;
+    margin: auto;
 	position: relative;
 }
 
@@ -439,7 +438,7 @@ body{
 
 /*background layout template*/
 .bkg{
-        width:100%;
+    width:100%;
 	max-width: 3840px;
 	height: 100%;
 	max-height: 2160px;
@@ -450,7 +449,7 @@ body{
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
-        opacity: 70%;
+    opacity: 70%;
 	position: relative;
 }
 
@@ -580,10 +579,10 @@ body{
 }
 
 body{
-        height: 100%;
-        width: 100%;
+    height: 100%;
+    width: 100%;
 	z-index: 0;
-        object-fit: cover;
+    object-fit: cover;
 	background: linear-gradient(105deg,#303030 39%,#000000 105%);
 	background-attachment: fixed;
 	position: relative;
@@ -618,9 +617,9 @@ body{
 	overflow: hidden;
 	animation-timing-function: ease-in-out;
 	transition: .5s;
-        z-index: 7;
-        display: block;
-        cursor: pointer;
+    z-index: 7;
+    display: block;
+    cursor: pointer;
 	animation: menuAnim 1.5s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 	align-items: center;
@@ -633,17 +632,17 @@ body{
 }
     
 .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
+    opacity: 0;
 }
     
 .hamburger.active .bar:nth-child(1) {
-        -webkit-transform: translateY(8px) rotate(45deg);
-        transform: translateY(8px) rotate(45deg);
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
 }
     
 .hamburger.active .bar:nth-child(3) {
-        -webkit-transform: translateY(-8px) rotate(-45deg);
-        transform: translateY(-8px) rotate(-45deg);
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
 }
     
 .logo {
@@ -726,7 +725,7 @@ body{
 
 .landingContent h3{
 	font-size: 16px;
-	color: #d22900;
+	color: #825639;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
 	text-decoration: none;
