@@ -130,6 +130,11 @@ body{
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	background: azure;
+
+	animation: menuAnim 1s ease forwards;
+	animation-delay: .7s;
+	transition-timing-function: ease ease-in-out; 
+	max-width: 100%;
 }
 
 /*Setting the overall landing page template*/
