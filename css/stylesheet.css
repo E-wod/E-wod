@@ -8,7 +8,7 @@
 	max-width: 100%;
 	max-height: 100%;
 	scale: 1;
-    background: transparent;
+    	background: transparent;
 	background-position:left top, left bottom;
 	background-repeat:repeat-x;
 }
@@ -22,16 +22,16 @@ img{
 html{
 	scroll-behavior: smooth;
 	height:100%;
-    width:100%;
+    	width:100%;
 	position: relative;
 	background: linear-gradient(105deg,#303030 39%,#000000 105%);
 }
 /*Body Attributes*/
 body{
-    height: 100%;
-    width: 100%;
+    	height: 100%;
+    	width: 100%;
 	z-index: 0;
-    object-fit: cover;
+    	object-fit: cover;
 	background: linear-gradient(105deg,#303030 39%,#000000 105%);
 	background-attachment: fixed;
 	position: relative;
@@ -43,8 +43,8 @@ body{
 }
 /*Header Attributes*/
 .header {
-    max-height: 100%;
-    max-width: 100%;
+    	max-height: 100%;
+    	max-width: 100%;
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-top: 15px;
@@ -71,7 +71,7 @@ body{
 	margin-right: 0px;
 	margin-top: 17px;
 	font-size: 77px;
-	color: azure;
+	color: #8B3421;
 	text-decoration: none;
 	font-weight: 400;
 	font-style: normal;
@@ -112,7 +112,7 @@ body{
 }
 
 .hamburger {
-    display: none;
+    	display: none;
 }
 
 .hamburger a:hover,
@@ -151,7 +151,7 @@ body{
 .landingContent{
 	background-color: transparent;
 	position: absolute;
-    align-items: center;
+    	align-items: center;
 	max-width: 100%;
 	max-height: 100%;
 	margin-left: 60px;
@@ -224,7 +224,7 @@ body{
 }
 
 .landingContent h3 span{
-    font-size: 43px;
+    	font-size: 43px;
 	color: azure;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
@@ -237,7 +237,7 @@ body{
 /*Setting the landing page template for paragraph*/
 .landingContent p{
 	z-index: 1;
-    display: flex;
+    	display: flex;
 	font-size: 20px;
 	color: azure;
 	font-family: sans-serif;
@@ -265,7 +265,7 @@ body{
 }
 
 .landingContent p{
-    width: 65%;
+    	width: 65%;
 }
 
 
@@ -277,7 +277,7 @@ body{
 	width: 100%;
 	height: 100%;
 	display: inline-block;
-    margin: auto;
+    	margin: auto;
 	position: relative;
 }
 
@@ -437,7 +437,7 @@ body{
 
 /*background layout template*/
 .bkg{
-    width:100%;
+    	width:100%;
 	max-width: 3840px;
 	height: 100%;
 	max-height: 2160px;
@@ -448,7 +448,7 @@ body{
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
-    opacity: 70%;
+    	opacity: 70%;
 	position: relative;
 }
 
@@ -457,24 +457,26 @@ body{
 	0% {
 		transform: translateX(-500px);
 		opacity: 0;
-		text-shadow: 0 0 1px #93BDB7;
+		text-shadow: 0 2px 2px #8B3421;
+		scale: .35;
 }
 	75% {
-		transform: translateX(75px);
+		transform: translateX(70px);
 		opacity: 1;
 		color: transparent;
-		text-shadow: 0 0 2px #93BDB7;
+		text-shadow: 0 2px 2px #8B3421;
 	}
 	87% {
 		transform: translateX(-35px);
 		opacity: 1;
-		text-shadow: 0 1px 4px #93BDB7;
+		text-shadow: 0 2px 4px #8B3421;
 	}
 	100% {
 		transform: translateX(0);
 		opacity: 1;
-		color: azure;
-		text-shadow: 0 2px 6px #194238;
+		color: #8B3421;
+		text-shadow: 0 2px 6px azure;
+		scale: 1;
 	}
 }
 
@@ -579,10 +581,10 @@ body{
 	
 
 body{
-    height: 100%;
-    width: 100%;
+    	height: 100%;
+    	width: 100%;
 	z-index: 0;
-    object-fit: cover;
+    	object-fit: cover;
 	background: linear-gradient(105deg,#303030 39%,#000000 105%);
 	background-attachment: fixed;
 	position: relative;
@@ -617,9 +619,9 @@ body{
 	overflow: hidden;
 	animation-timing-function: ease-in-out;
 	transition: .5s;
-    z-index: 7;
-    display: block;
-    cursor: pointer;
+    	z-index: 7;
+    	display: block;
+    	cursor: pointer;
 	animation: menuAnim 1.5s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 	align-items: center;
@@ -632,17 +634,17 @@ body{
 }
     
 .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
+    	opacity: 0;
 }
     
 .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
-    transform: translateY(8px) rotate(45deg);
+    	-webkit-transform: translateY(8px) rotate(45deg);
+    	transform: translateY(8px) rotate(45deg);
 }
     
 .hamburger.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-    transform: translateY(-8px) rotate(-45deg);
+    	-webkit-transform: translateY(-8px) rotate(-45deg);
+    	transform: translateY(-8px) rotate(-45deg);
 }
     
 .logo {
@@ -650,7 +652,7 @@ body{
 	margin-right: 0px;
 	margin-top: 30px;
 	font-size: 75px;
-	color: azure;
+	color: #8B3421;
 	text-decoration: none;
 	font-weight: 400;
 	font-style: normal;
@@ -793,7 +795,7 @@ body{
 	width: 100%;
 	height: 100%;
 	display: inline-block;
-    margin: auto;
+    	margin: auto;
 	position: relative;
 }
 .btnBox a {
