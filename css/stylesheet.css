@@ -71,7 +71,7 @@ body{
 	margin-right: 0px;
 	margin-top: 17px;
 	font-size: 77px;
-	color: #93BDB7;
+	color: azure;
 	text-decoration: none;
 	font-weight: 400;
 	font-style: normal;
@@ -473,8 +473,8 @@ body{
 	100% {
 		transform: translateX(0);
 		opacity: 1;
-		color: #194238;
-		text-shadow: 0 2px 6px #93BDB7;
+		color: azure;
+		text-shadow: 0 2px 6px #194238;
 	}
 }
 
