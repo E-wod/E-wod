@@ -127,9 +127,9 @@ body{
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	background: azure;
-	animation: menuAnim 1.75s ease forwards;
+/* 	animation: menuAnim 1.75s ease forwards;
 	animation-delay: calc(.3s * var(--i));
-	transition-timing-function: ease ease-in-out; 
+	transition-timing-function: ease ease-in-out;  */
 }
 
 /*Setting the content format for landing page*/
