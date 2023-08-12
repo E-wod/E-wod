@@ -136,12 +136,12 @@ body{
 .landingContent{
 	background-color: transparent;
 	position: absolute;
-       align-items: center;
+        align-items: center;
 	justify-content: space-between;
 	width: auto;
 	height: auto;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
 	margin-top: 129px;
 	margin-bottom: 2px;
 	padding-top: 10px;
@@ -633,7 +633,8 @@ body{
 .logo {
 	margin-left: 25px;
 	margin-right: 0px;
-	margin-top: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	font-size: 75px;
 	color: #8B3421;
 	text-decoration: none;
@@ -663,7 +664,7 @@ body{
 	max-height: 100%;
 	margin-left: 23px;
 	margin-right: 29px;
-	margin-top: 110px;
+	margin-top: 100px;
 	margin-bottom: 0px;
 	display: inline-block;
 	float: top;
@@ -681,7 +682,7 @@ body{
 	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 15px;
+	margin-top: 5px;
 	margin-bottom: 5px;
 	padding: 10px 0px 5px;
 	width: 100%;
