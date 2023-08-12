@@ -70,7 +70,7 @@ body{
 	margin-left: 46px;
 	margin-right: 0px;
 	margin-top: 17px;
-	font-size: 77px;
+	font-size: 97px;
 	color: #8B3421;
 	text-decoration: none;
 	font-weight: 400;
@@ -133,6 +133,7 @@ body{
 }
 
 /*Setting the overall landing page template*/
+/*
 .landing {
 	background-position: center;
 	display: flex;
@@ -141,30 +142,38 @@ body{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-        object-fit: cover;
+    object-fit: cover;
 	z-index: 3;
 	position: relative;
-        width: 100%;
+    width: 100%;
 	height: 100%;
 }
+*/
 /*Setting the content format for landing page*/
 .landingContent{
-	background-color: transparent;
+	background-color: grey;
 	position: absolute;
-    	align-items: center;
-	max-width: 100%;
-	max-height: 100%;
-	margin-left: 60px;
-	margin-right: 67px;
-	margin-top: 125px;
-	margin-bottom: 0px;
+    align-items: center;
+	justify-content: space-between;
+	width: auto;
+	height: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 129px;
+	margin-bottom: 2px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	padding-right: 12px;
+	padding-left: 12px;
 	display: block;
-	gap: 44px;
+	gap: 5px;
 }
+
+
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
-	font-size: 40px;
-	color: #285247;
+	font-size: 42px;
+	color: #64673B;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: italic;
@@ -172,7 +181,7 @@ body{
 	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 30px;
+	margin-top: 15px;
 	margin-bottom: 5px;
 	padding: 10px 0px 5px;
 	width: 100%;
@@ -206,6 +215,7 @@ body{
 	color: #8B3421;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
+	line-height: 1.1;
 	text-decoration: none;
 	text-shadow: 0 3px 7px #000000;
 	z-index: 10;
@@ -237,35 +247,29 @@ body{
 /*Setting the landing page template for paragraph*/
 .landingContent p{
 	z-index: 1;
-    	display: flex;
+    display: flex;
 	font-size: 20px;
 	color: azure;
 	font-family: sans-serif;
 	font-weight: 100;
 	font-style: italic;
-	line-height: 1.35;
-	padding: 0 0 0;
-	align-items: center;
+	line-height: 1.1;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	width: auto;
-	height: auto;
-	max-height: 30%;
-	max-width: 80%;
-	justify-content: space-between;
+	margin-top: 5px;
+	margin-bottom: 5px;
+    max-width: 88%;
+	max-height: 15%;
 	background: transparent;
-	object-fit: contain;
 	position: relative;
-	overflow:visible;
+	overflow: hidden;
 	opacity: 0;
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: ease ease-in-out; 
-}
-
-.landingContent p{
-    	width: 65%;
 }
 
 
@@ -437,10 +441,8 @@ body{
 
 /*background layout template*/
 .bkg{
-    	width:100%;
-	max-width: 3840px;
+    width:100%;
 	height: 100%;
-	max-height: 2160px;
 	z-index: -31;
 	background-position:left top, left bottom;
 	background-repeat:repeat-x;
@@ -448,7 +450,7 @@ body{
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
-    	opacity: 70%;
+    opacity: 39%;
 	position: relative;
 }
 
@@ -673,24 +675,24 @@ body{
 }
 
 .landingContent{
-	background-color: transparent;
+	background-color: grey;
 	position: absolute;
 	align-items: left;
 	max-width: 100%;
 	max-height: 100%;
 	margin-left: 23px;
 	margin-right: 29px;
-	margin-top: 65px;
+	margin-top: 110px;
 	margin-bottom: 0px;
 	display: inline-block;
 	float: top;
 	height: 75%;
 }
 	
-	/*Setting the landing page template for H1 Heading*/
+/*Setting the landing page template for H1 Heading*/
 .landingContent h1{
 	font-size: 26px;
-	color: #285247;
+	color: #64673B;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: italic;
@@ -698,18 +700,19 @@ body{
 	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 2px;
-	padding: 5px 0px 5px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	padding: 10px 0px 5px;
 	width: 100%;
 	max-width: 80%;
 	position: relative;
 	z-index: -3;
 	opacity: 0;
 	animation: h1Anim 1s ease forwards;
-	transition-timing-function: ease ease-in-out; 
+	transition-timing-function: 1s ease ease-in-out; 
 }
-	
+/*Setting the landing page template for H3*/
+
 .landingContent h3 grp a{
 	width: 50%;
 }
@@ -727,10 +730,11 @@ body{
 }
 
 .landingContent h3{
-	font-size: 16px;
+	font-size: 22px;
 	color: #8B3421;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
+	line-height: 1.1;
 	text-decoration: none;
 	text-shadow: 0 3px 7px #000000;
 	z-index: 10;
@@ -739,54 +743,52 @@ body{
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 5px;
 	background: transparent;
 	opacity: 0;
 	animation: h3Anim 1s ease forwards;
+	animation-delay: .7s;
 	transition-timing-function: ease ease-in-out; 
 	max-width: 100%;
 }
 
 .landingContent h3 span{
-	font-size: 16px;
+    font-size: 22px;
 	color: azure;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
 	text-decoration: none;
 	z-index: 1;
+
 }
 
 
-	/*Setting the landing page template for paragraph*/
+/*Setting the landing page template for paragraph*/
 .landingContent p{
 	z-index: 1;
-	display: flex;
-	font-size: 14px;
+    display: flex;
+	font-size: 15px;
 	color: azure;
 	font-family: sans-serif;
 	font-weight: 100;
 	font-style: italic;
-	line-height: 1.0;
-	padding: 0 0 0;
-	align-items: center;
+	line-height: 1.1;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	max-width: 80%;
-	max-height: 40%;
-	height: 190px;
+	margin-top: 5px;
+	margin-bottom: 75px;
+    max-width: 88%;
+	max-height: 15%;
 	background: transparent;
 	position: relative;
-	overflow:visible;
+	overflow: inherit;
 	opacity: 0;
 	animation: pAnim 1s ease forwards;
-	transition-timing-function: 2s ease ease-in-out; 
-}
-
-.landingContent p{
-	width: 100%;
-	height: 100%;
+	transition-timing-function: ease ease-in-out; 
 }
 
 .cntr {
@@ -833,12 +835,12 @@ body{
 	overflow: hidden;
 	justify-content: center;
 	position: relative;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-right: 10px;
-	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
 	background: transparent;
-	padding: 10px 10px 10px;
+	padding: 5px 5px 5px;
 	animation: choiceAnim 1.5s ease forwards;
 	animation-timing-function: ease-in-out;
 	transition: 1s;
@@ -878,7 +880,7 @@ body{
 	margin-right: 10px;
 	margin-left: 10px;
 	background: transparent;
-	padding: 10px 10px 10px;
+	padding: 5px 5px 5px;
 	display: flex;
 	width: auto;
 	height: auto;
