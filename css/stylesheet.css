@@ -67,7 +67,7 @@ body{
 }
 /*Logo*/
 .logo {
-	margin-left: 46px;
+	margin-left: 41px;
 	margin-right: 0px;
 	margin-top: 17px;
 	font-size: 97px;
@@ -237,8 +237,8 @@ body{
 	font-weight: 100;
 	font-style: italic;
 	line-height: 1.1;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	margin-left: 0px;
