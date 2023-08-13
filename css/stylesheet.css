@@ -503,8 +503,8 @@ a {
 	align-self: center;
 	text-align: center;
 	align-content: center;
-	justify-content: space-around;
-	background: #64673B;
+	justify-content: center;
+	background: transparent;
 	opacity: 100%;
 	width: 10%;
 	height: 10%;
@@ -989,8 +989,8 @@ body{
 	align-self: center;
 	text-align: center;
 	align-content: center;
-	justify-content: space-around;
-	background: #64673B;
+	justify-content: center;
+	background: transparent;
 	opacity: 100%;
 	width: 20%;
 	height: 20%;
