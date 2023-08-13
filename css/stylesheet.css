@@ -263,6 +263,7 @@ body{
 	font-family: sans-serif;
 	font-weight: 100;
 	text-shadow: 2px 3px 6px #000000;
+	text-decoration: none;
 	font-style: italic;
 	line-height: 1.1;
 	padding-left: 15px;
@@ -486,6 +487,33 @@ body{
     box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
 }
 
+.contPage {
+	background: #000000;
+	opacity: 100%;
+	width: 100%;
+	max-width: auto;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	justify-content: space-between;
+	text-decoration: none;
+	align-content: center;
+	align-items: center;
+	margin-top: 70px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 30px 30px 240px;
+	z-index: 3;
+	scale: .7;
+	overflow: hidden;
+	object-fit: contain;
+	-webkit-box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
+    -moz-box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
+    box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
+	border-radius: 8px;
+	
+}
 
 
 @keyframes logoAnim {
@@ -807,7 +835,7 @@ body{
 		font-family: sans-serif;
 		font-weight: 100;
 		font-style: italic;
-		line-height: 1;
+		line-height: 1.1;
 		padding-left: 5px;
 		padding-right: 5px;
 		padding-top: 5px;
