@@ -509,7 +509,7 @@ a {
 	width: 10%;
 	height: 10%;
 	max-height: 100%;
-	display: inline;
+	display: inline-block;
 	text-decoration: none;
 	margin-top: -175px;
 	margin-bottom: 2px;
@@ -995,7 +995,7 @@ body{
 	width: 20%;
 	height: 20%;
 	max-height: 100%;
-	display: inline;
+	display: inline-block;
 	text-decoration: none;
 	margin-top: -65px;
 	margin-bottom: 2px;
