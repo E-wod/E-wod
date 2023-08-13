@@ -506,7 +506,6 @@ a {
 	max-width: 400px;
 	height: 400px;
 	display: flex;
-	position: absolute;
 	justify-content: center;
 	text-decoration: none;
 	align-content: center;
