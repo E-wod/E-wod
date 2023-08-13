@@ -41,6 +41,18 @@ body{
 	margin-bottom: 0px;
 	background-repeat: no-repeat;
 }
+a {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	max-width: 100%;
+	max-height: 100%;
+	scale: 1;
+    background: transparent;
+	background-position:left top, left bottom;
+	background-repeat:repeat-x;
+	
+}
 /*Header Attributes*/
 .header {
     max-height: 100%;
@@ -490,27 +502,22 @@ body{
 .contPage {
 	background: #000000;
 	opacity: 100%;
-	width: 100%;
-	max-width: auto;
+	width: auto;
+	max-width: 100%;
 	height: 100%;
 	display: inline-block;
 	position: absolute;
-	justify-content: space-between;
+	justify-content: center;
 	text-decoration: none;
 	align-content: center;
 	align-items: center;
-	margin-top: 70px;
+	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-right: 10px;
 	margin-left: 10px;
-	padding: 30px 30px 240px;
+	padding: 10px 10px 10px;
 	z-index: 3;
 	scale: .7;
-	overflow: hidden;
-	object-fit: contain;
-	-webkit-box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
-    -moz-box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
-    box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
 	border-radius: 8px;
 	
 }
@@ -973,5 +980,6 @@ body{
     -moz-box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
     box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
 }
+	
 	
 }
