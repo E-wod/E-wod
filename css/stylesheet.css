@@ -505,7 +505,7 @@ a {
 	width: auto;
 	max-width: 400px;
 	height: 400px;
-	display: block;
+	display: inline;
 	position: absolute;
 	justify-content: center;
 	text-decoration: none;
