@@ -560,7 +560,7 @@ a {
 
 .beePic {
 	background: transparent;
-	opacity: 40%;
+	opacity: 60%;
 	width: 100%;
 	max-width: auto;
 	height: auto;
@@ -576,8 +576,8 @@ a {
 	overflow: hidden;
 	object-fit: contain;
 	-webkit-box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
-    -moz-box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
-    box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
+        -moz-box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
+        box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
 }
 
 .contPage {
@@ -1118,7 +1118,7 @@ a {
 		opacity: 0;
 }
 	
-.carPic {
+.beePic {
 	background: transparent;
 	opacity: 40%;
 	width: 100%;
@@ -1136,8 +1136,8 @@ a {
 	overflow: hidden;
 	object-fit: contain;
 	-webkit-box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
-    -moz-box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
-    box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
+        -moz-box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
+        box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
 }
 
 .contPage {
