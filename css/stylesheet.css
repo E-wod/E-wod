@@ -732,14 +732,14 @@ a {
 	height: 100px;
 	width: 100%;
 	margin-left: 10px;
-	margin-right: 45px;
+	margin-right: 75px;
 	margin-top: 45px;
 	margin-bottom: 45px;
     position: absolute;
 	float: center;
 	top: 0;
 	left: 0;
-	padding: 10px 10px 10px;
+	padding: 0px 0px 0px;
 	background: transparent;
 	display: flex;
 	z-index: 5;
@@ -803,7 +803,7 @@ a {
 	opacity: 0;
 	animation: logoAnim 2s ease forwards;
 	transition-timing-function: ease ease-in-out; 
-	background: blue;
+	background: transparent;
 	border-radius: 70%;
 	align-items: center;
 	display: flex;
@@ -824,8 +824,8 @@ a {
 	overflow: visible;
 	z-index: 3;
 	font-color: #d22900;
-	margin-left: 0px;
-	margin-right: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
 	margin-top: 0px;
 	margin-bottom: 0px;
     padding: 0;
@@ -857,57 +857,6 @@ a {
 	box-shadow: 0 0px 0px azure;
 	overflow: visible;
 }
-
-.hamburger {
-	padding: 2px 2px 2px;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	border: 2px solid #d22900;
-	border-radius: 8px;
-	position: relative;
-	color: #d22900;
-	cursor: pointer;
-	height: auto;
-    z-index: 1;
-    display: block;
-	width: 45px;
-    animation: h3Anim 2s ease forwards;
-	animation-delay: calc(.3s * var(--i));
-}
-	
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}   
-	
-.hamburger:hover,
-.hamburger .active {
-	color: azure;
-	z-index: 12;
-	text-decoration: none;
-	box-shadow: 0 2px 7px azure;
-	overflow: visible;
-	transition-timing-function: ease ease-in-out;
-}
-    
-.bar {
-	display: flex;
-	width: 25px;
-	height: 3px;
-	margin: 5px auto;
-	transition: all 0.3s ease-in-out;
-	background: azure;
-}
-	
 /*Nav Bar Attributes*/
 .navBar {
 	background: transparent;
@@ -918,11 +867,11 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	float: right;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 30px 30px 30px;
 	max-width: auto;
 	max-height: auto;
 	animation: choiceAnim .5s ease forwards;
@@ -946,8 +895,59 @@ a {
 	transition: .3s;
 	transition-timing-function: ease ease-in-out; 
 }
-/*Nav Bar Hover function*/
+
+.bar {
+	display: flex;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	transition: all 0.3s ease-in-out;
+	background: azure;
+}
 	
+	
+.hamburger {
+	padding: 2px 2px 2px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	border: 2px solid #d22900;
+	border-radius: 8px;
+	position: relative;
+	color: #d22900;
+	cursor: pointer;
+	height: auto;
+    z-index: 1;
+    display: block;
+	width: 45px;
+    animation: h3Anim 2s ease forwards;
+	animation-delay: calc(.3s * var(--i));
+	background: transparent;
+}
+	
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}   
+	
+.hamburger:hover,
+.hamburger .active {
+	color: azure;
+	z-index: 12;
+	text-decoration: none;
+	box-shadow: 0 2px 7px azure;
+	overflow: visible;
+	transition-timing-function: ease ease-in-out;
+}	
+
 .landingContent{
 	background-color: transparent;
 	position: absolute;
