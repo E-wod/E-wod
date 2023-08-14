@@ -147,10 +147,11 @@ a {
 	margin-top: 35px;
 	margin-bottom: 35px;
 	width: auto;
-	animation: pAnim .5s ease forwards;
+	animation: pAnim 1.5s ease forwards;
 	transition: .3s;
 	transition-timing-function: ease ease-in-out; 
 	border-radius: 8px;
+	opacity: 50%;
 }
 /*Nav Bar Anchor Tag*/
 .navBar a {
