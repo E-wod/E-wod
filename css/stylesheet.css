@@ -119,6 +119,7 @@ a {
     font-size: 20px;
     font-weight: 400;
     color: #8B3421;
+    display: none;
 }
 
 
@@ -180,7 +181,7 @@ a {
 
 .hamburger {
     display: none;
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .hamburger a:hover,
@@ -809,7 +810,7 @@ a {
 		cursor: pointer;
 	        height: auto;
                 z-index: 1;
-                display: flex;
+                display: block;
 	        flex-direction: column;
 	        width: 45px;
 }
