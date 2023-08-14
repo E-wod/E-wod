@@ -228,7 +228,7 @@ a {
 .landingContent{
 	background-color: transparent;
 	position: absolute;
-    align-items: center;
+        align-items: center;
 	justify-content: space-between;
 	width: auto;
 	height: auto;
@@ -683,7 +683,7 @@ a {
 		align-self: center;
 		max-height: 96%;
 		max-width: 96%;
-	    height: 150px;
+	        height: 100px;
 		margin-left: 10px;
 		margin-right: 15px;
 		margin-top: 45px;
@@ -694,7 +694,7 @@ a {
 		width: 100%;
 		padding: 0 0 0;
 		background: grey;
-		display: flex;
+		display: inline;
 		justify-content: space-between;
 		align-content: center;
 		z-index: 5;
