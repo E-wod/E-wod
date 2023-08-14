@@ -731,7 +731,7 @@ a {
 	
 .nav-menu {
 	position: fixed;
-        left: -600%;
+        right: -100%;
         top: 0px;
 	display: table;
         flex-direction: column;
@@ -810,16 +810,16 @@ a {
 }
     
 .bar {
-		display: flex;
-		width: 25px;
-		height: 3px;
-		margin: 5px auto;
-		-webkit-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
-		background: azure;
-		animation: menuAnim 1.75s ease forwards;
-		animation-delay: calc(.3s * var(--i));
-		transition-timing-function: ease ease-in-out; 
+	display: flex;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background: azure;
+	animation: menuAnim 1.75s ease forwards;
+/* 	animation-delay: calc(.3s * var(--i));
+	transition-timing-function: ease ease-in-out;  */
 }
 	
 /*Nav Bar Attributes*/
@@ -836,8 +836,6 @@ a {
 	width: auto;
 	animation: choiceAnim .5s ease forwards;
 	animation-delay: calc(.3s * var(--i));
-	transition: .3s;
-	transition-timing-function: ease ease-in-out; 
 	border-radius: 8px;
 }
 /*Nav Bar Anchor Tag*/
@@ -852,8 +850,6 @@ a {
 	font-size: 22px;
 	color: azure;
 	opacity: 0;
-	animation: menuAnim .5s ease forwards;
-	animation-delay: calc(.3s * var(--i));
 	transition: .3s;
 	transition-timing-function: ease ease-in-out; 
 }
