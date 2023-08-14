@@ -40,11 +40,12 @@ body{
 	background-repeat: no-repeat;
 }
 a {
-    margin: 0;
+        margin: 0;
 	padding: 0;
 	max-width: 100%;
 	max-height: 100%;
 	scale: 1;
+	text-decorations: none;
 }
 /*Header Attributes*/
 .header {
@@ -148,10 +149,11 @@ a {
 	margin-bottom: 35px;
 	opacity: 0;
 	width: auto;
-	animation: choiceAnim .5s ease forwards;
+	color: azure;
+/* 	animation: choiceAnim .5s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	transition: .3s;
-	transition-timing-function: ease ease-in-out; 
+	transition-timing-function: ease ease-in-out;  */
 	border-radius: 8px;
 }
 /*Nav Bar Anchor Tag*/
@@ -164,14 +166,13 @@ a {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-size: 22px;
-	color: azure;
-	opacity: 0;
+	color: azure; */
 	animation: menuAnim .5s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	transition: .3s;
 	transition-timing-function: ease ease-in-out; 
 }
-/*Nav Bar Hover function*/
+/* Nav Bar Hover function */
 .navBar a:hover,
 .navBar a.active {
 	color: #d22900;
@@ -197,11 +198,9 @@ a {
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	background: azure;
-/*
-	animation: menuAnim 1.75s ease forwards;
+ 	animation: menuAnim 1.75s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	transition-timing-function: ease ease-in-out; 
-*/
 }
 
     .hamburger.active .bar:nth-child(2) {
@@ -224,11 +223,11 @@ a {
     text-decoration: none;
 }
 
-/*Setting the content format for landing page*/
+/*Setting the content format for landing page */
 .landingContent{
 	background-color: transparent;
 	position: absolute;
-    align-items: center;
+        align-items: center;
 	justify-content: space-between;
 	width: auto;
 	height: auto;
