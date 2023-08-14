@@ -20,7 +20,7 @@ img{
 html{
 	scroll-behavior: smooth;
 	height:100%;
-    width:100%;
+        width:100%;
 	position: relative;
 	background: linear-gradient(105deg,#303030 39%,#000000 105%);
 }
@@ -150,10 +150,10 @@ a {
 	opacity: 0;
 	width: auto;
 	color: azure;
-/* 	animation: choiceAnim .5s ease forwards;
+	animation: choiceAnim .5s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	transition: .3s;
-	transition-timing-function: ease ease-in-out;  */
+	transition-timing-function: ease ease-in-out; 
 	border-radius: 8px;
 }
 /*Nav Bar Anchor Tag*/
@@ -730,13 +730,13 @@ a {
 }
 	
 .nav-menu {
-        position: fiixed;
+	position: fixed;
         left: -200%;
         top: 0px;
 	display: block;
         flex-direction: column;
         background-color: yellowgreen;
-        width: auto;
+        width: 100%;
 	height: auto;
         border-radius: 10px;
         transition: 0.3s;
@@ -751,20 +751,12 @@ a {
 }
 	
 .nav-menu.active {
-	align-items: center; 
-	z-index: 1;
 	left: 0;
-	background-color: orange;
-
 }
 
 .nav-item {
 	margin: 0 0 0;
 	align-items: center; 
-	z-index: 1;
-	right: 0;
-	left: 0;
-	background-color: grey;
 }
 	
 .nav-logo {
