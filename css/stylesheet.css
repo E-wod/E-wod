@@ -147,8 +147,7 @@ a {
 	margin-top: 35px;
 	margin-bottom: 35px;
 	width: auto;
-	animation: choiceAnim .5s ease forwards;
-	animation-delay: calc(.3s * var(--i));
+	animation: pAnim .5s ease forwards;
 	transition: .3s;
 	transition-timing-function: ease ease-in-out; 
 	border-radius: 8px;
