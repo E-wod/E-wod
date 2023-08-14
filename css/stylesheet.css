@@ -780,7 +780,7 @@ a {
 	display: flex;
         flex-direction: column;
         background-color: violet;
-        width: auto;
+        width: 600px;
 	height: 100%;
         border-radius: 10px;
         transition: 0.3s;
