@@ -220,8 +220,7 @@ a {
 	background: linear-gradient(0deg,transparent 15%,#d22900 240%);
 }
 /*Hover Function*/
-.navBar a:hover,
-.navBar .active {
+.navBar a:hover{
 	color: azure;
 	transition: .3s;
 	transition-timing-function: ease;
@@ -234,14 +233,6 @@ a {
 .hamburger {
     display: none;
     text-decoration: none;
-}
-
-.hamburger a:hover,
-.hamburger a.active {
-	color: #d22900;
-	text-decoration: none;
-	box-shadow: 0 0px 0px azure;
-	overflow: visible;
 }
 
 .bar {
