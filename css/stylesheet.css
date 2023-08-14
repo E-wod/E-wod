@@ -240,6 +240,8 @@ a {
 .hamburger a.active {
 	color: #d22900;
 	text-decoration: none;
+	box-shadow: 0 0px 0px azure;
+	overflow: visible;
 }
 
 .bar {
@@ -896,6 +898,16 @@ a {
 	transition-timing-function: ease ease-in-out; 
 }
 
+.navBar a:hover {
+	color: azure;
+	transition: .3s;
+	transition-timing-function: ease;
+	background: transparent;
+	text-decoration: none;
+	box-shadow: 0 2px 7px azure;
+	overflow: visible;
+}
+	
 .bar {
 	display: flex;
 	width: 25px;
@@ -938,8 +950,7 @@ a {
     transform: translateY(-8px) rotate(-45deg);
 }   
 	
-.hamburger:hover,
-.hamburger .active {
+.hamburger:hover {
 	color: azure;
 	z-index: 12;
 	text-decoration: none;
