@@ -780,8 +780,8 @@ a {
 	display: block;
         flex-direction: column;
         background-color: yellowgreen;
-        width: 100%;
-	height: auto;
+        width: auto;
+	height: 100%;
         border-radius: 10px;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
@@ -808,7 +808,7 @@ a {
 	    margin-right: 20px;
 	    margin-top: 20px;
 	    margin-bottom: 20px;
-	    font-size: 35px;
+	    font-size: 16px;
 	    color: #8B3421;
 	    text-decoration: none;
 	    font-weight: 400;
@@ -891,7 +891,7 @@ a {
 	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	font-size: 22px;
+	font-size: 16px;
 	color: azure;
 	opacity: 0;
 	transition: .3s;
