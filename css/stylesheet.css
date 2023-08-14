@@ -139,11 +139,11 @@ a {
 	position: relative;
 	width: 140px;
 	height: 85px;
-	display: inline-block;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
+	display: flex;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	overflow: visible;
 }
 /*Nav Bar Attributes*/
@@ -775,10 +775,10 @@ a {
 
 .logSz {
 	justify-content: space-between;
-	align-self: stretch;
+	align-self: center;
 	position: relative;
-	width: 100px;
-	height: 65px;
+	width: 130px;
+	height: 75px;
 	display: inline-block;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -788,6 +788,28 @@ a {
 	background: transparent;
 }
 
+.nav-logo {
+	position: relative;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding: 0;
+	font-size: 12px;
+	font-color: #8B3421;
+	text-decoration: none;
+	font-weight: 400;
+	font-style: normal;
+	opacity: 0;
+	animation: logoAnim 2s ease forwards;
+	transition-timing-function: ease ease-in-out; 
+	background: transparent;
+	border-radius: 70%;
+	align-items: center;
+	display: flex;
+	float: inherit;
+}
+	
 .nav-menu {
 	position: inherit;
     left: 300%;
@@ -831,23 +853,8 @@ a {
 .nav-item .hover {
 	color: azure;
 	text-decoration: none;
-	box-shadow: 0 1px 1px azure;
+	box-shadow: 0 0px 0px azure;
 	overflow: visible;
-}
-	
-.nav-logo {
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	font-size: 12px;
-	font-color: #8B3421;
-	text-decoration: none;
-	font-weight: 400;
-	font-style: normal;
-	opacity: 0;
-	animation: logoAnim 2s ease forwards;
-	transition-timing-function: ease ease-in-out; 
 }
 
 .hamburger {
@@ -910,15 +917,16 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	float: right;
-	margin-left: 2px;
-	margin-right: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
 	margin-top: 2px;
 	margin-bottom: 2px;
-	max-width: 700px;
-	max-height: 700px;
+	max-width: 600px;
+	max-height: 600px;
 	animation: choiceAnim .5s ease forwards;
 	border-radius: 8px;
 	z-index: 3;
+	padding: 0;
 }
 	
 /*Nav Bar Anchor Tag*/
@@ -926,10 +934,11 @@ a {
 	justify-content: center;
 	display: inline-flex;
 	text-decoration: none;
-	margin-left: 2px;
-	margin-right: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
 	margin-top: 2px;
 	margin-bottom: 2px;
+	padding: 0;
 	font-size: 12px;
 	color: azure;
 	opacity: 0;
@@ -1036,14 +1045,14 @@ a {
 	font-family: sans-serif;
 	font-weight: 100;
 	font-style: italic;
-	line-height: 1.1;
+	line-height: 1.2;
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 120px;
+	margin-top: 260px;
 	margin-bottom: 75px;
 	max-width: 95%;
 	max-height: auto;
@@ -1105,15 +1114,24 @@ a {
 	margin-left: 5px;
 	background: transparent;
 	padding: 5px 5px 5px;
-	animation: choiceAnim 1.5s ease forwards;
+	animation: choiceAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	transition: 1s;
 }
 
+.btnBox a:hover,
+.btnBox .active{
+	color: azure;
+	text-decoration: none;
+	box-shadow: 0 2px 7px azure;
+	overflow: hidden;
+	transition-timing-function: 1s ease;
+}
+	
 .socLnk a {
 	align-items: center;
 	font-size: 25px;
-	transition: 1.2s;
+	transition: 1s;
 	transition-timing-function: ease; 
 	text-decoration: none;
 	display: flex;
@@ -1152,7 +1170,14 @@ a {
 	animation-delay: calc(.1s * var(--i));
 	opacity: 0;
 }
-	
+.socLnk a:hover,
+.socLnk .active{
+	color: azure;
+	text-decoration: none;
+	box-shadow: 0 2px 7px azure;
+	overflow: hidden;
+	transition-timing-function: 1s ease ease-in-out;
+}	
 .beePic {
 	background: transparent;
 	opacity: 60%;
@@ -1161,7 +1186,7 @@ a {
 	height: auto;
 	display: flex;
 	position: absolute;
-	margin-top: 10px;
+	margin-top: 160px;
 	margin-bottom: 10px;
 	margin-right: 10px;
 	margin-left: 10px;
