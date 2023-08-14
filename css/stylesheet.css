@@ -810,7 +810,6 @@ a {
 	        height: auto;
                 z-index: 1;
                 display: block;
-	        flex-direction: column;
 	        width: 45px;
 }
     
@@ -871,22 +870,21 @@ a {
 .navBar a.active {
 	color: #d22900;
 	text-decoration: none;
-	display: contents;
 }
 	
 .landingContent{
-	    background-color: transparent;
-	    position: absolute;
-	    align-items: left;
-	    max-width: 100%;
-	    max-height: 100%;
-	    margin-left: 23px;
-	 	margin-right: 29px;
-		margin-top: 100px;
-		margin-bottom: 0px;
-		display: inline-block;
-		float: top;
-		height: 75%;
+	background-color: transparent;
+	position: absolute;
+	align-items: left;
+	max-width: 100%;
+	max-height: 100%;
+	margin-left: 23px;
+	margin-right: 29px;
+	margin-top: 100px;
+	margin-bottom: 0px;
+	display: inline-block;
+	float: top;
+	height: 75%;
 }
 	
 /*Setting the landing page template for H1 Heading*/
