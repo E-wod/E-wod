@@ -148,9 +148,9 @@ a {
 	margin-bottom: 35px;
 	color: red;
 	width: auto;
-	animation: pAnim 1s ease forwards;
+	animation: pAnim .3s ease forwards;
 	transition-timing-function: ease ease-in-out; 
-	border-radius: 120px;
+	border-radius: 170px;
 }
 /*Nav Bar Anchor Tag*/
 .navBar a {
@@ -163,8 +163,8 @@ a {
 	margin-bottom: 5px;
 	font-size: 22px;
 	color: azure;
-	animation: menuAnim 2.5s ease forwards;
-	animation-delay: calc(.3s * var(--i));
+	animation: menuAnim .7s ease forwards;
+	animation-delay: calc(.2s * var(--i));
 	transition-timing-function: ease ease-in-out; 
 }
 /* Nav Bar Hover function */
@@ -193,9 +193,7 @@ a {
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	background: azure;
- 	animation: menuAnim 1.75s ease forwards;
-	animation-delay: calc(.3s * var(--i));
-	transition-timing-function: ease ease-in-out; 
+ 	transition-timing-function: 1s ease ease-in-out;
 }
 
     .hamburger.active .bar:nth-child(2) {
