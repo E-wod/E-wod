@@ -809,7 +809,7 @@ a {
 		cursor: pointer;
 	        height: auto;
                 z-index: 1;
-                display: contents;
+                display: flex;
 	        flex-direction: column;
 	        width: 45px;
 }
