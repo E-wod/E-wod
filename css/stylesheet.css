@@ -733,7 +733,7 @@ a {
 	position: fixed;
         left: -200%;
         top: 0px;
-	display: block;
+	display: inline-flex;
         flex-direction: column;
         background-color: yellowgreen;
         width: 100%;
