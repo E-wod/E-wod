@@ -13,6 +13,7 @@
 img{
 	width: 100%;
 	height: 100%;
+	scale: 1;
 }
 
 /*HTML Attributes*/
@@ -44,8 +45,6 @@ a {
 	max-width: 100%;
 	max-height: 100%;
 	scale: 1;
-
-	
 }
 /*Header Attributes*/
 .header {
@@ -70,7 +69,7 @@ a {
 	overflow: inherit;
 	transition: .9s;
 	transition-timing-function: ease; 
-	object-position: right;
+	object-position: center;
 }
 /*Logo*/
 
@@ -681,25 +680,30 @@ a {
 		background-repeat:repeat-x;
 }
 .header {
-		max-width: 100%;
-		margin-left: 2px;
-		margin-right: 2px;
-		margin-top: 2px;
-		margin-bottom: 2px;
+		align-self: center;
+		max-height: 96%;
+		max-width: 96%;
+	    height: 150px;
+		margin-left: 10px;
+		margin-right: 15px;
+		margin-top: 45px;
+		margin-bottom: 45px;
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
-		padding: 2px 2px 2px;
-		background: transparent;
+		padding: 0 0 0;
+		background: grey;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-content: center;
 		z-index: 5;
+	    font-size: 16px;
 		text-decoration: none;
-		overflow: hidden;
+		overflow: inherit;
 		transition: .9s;
 		transition-timing-function: ease; 
+		object-position: center;
 }
 	
 
@@ -718,7 +722,14 @@ body{
 		background-repeat: no-repeat;
 }
 	
-
+a {
+    margin: 0;
+	padding: 0;
+	max-width: 100%;
+	max-height: 100%;
+	scale: 1;
+}
+	
 .nav-menu {
         position: relative;
         left: 200%;
@@ -820,25 +831,29 @@ body{
 		transition-timing-function: ease ease-in-out; 
 */
 }
+/*Nav Bar Attributes*/
 .navBar {
-	background: transparent;
+	background: #64673B;
 	text-decoration: none;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	margin-left: 5px;
-	margin-right: 35px;
-	margin-top: 45px;
-	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-top: 35px;
+	margin-bottom: 35px;
 	opacity: 0;
+	width: auto;
 	animation: choiceAnim .5s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	transition: .3s;
 	transition-timing-function: ease ease-in-out; 
 	border-radius: 8px;
+	right: 200%;
 }
 /*Nav Bar Anchor Tag*/
 .navBar a {
+	justify-content: center;
 	display: block;
 	text-decoration: none;
 	margin-left: 5px;
@@ -860,10 +875,6 @@ body{
 	text-decoration: none;
 }
 	
-
-	
-	
-
 .landingContent{
 	    background-color: transparent;
 	    position: absolute;
