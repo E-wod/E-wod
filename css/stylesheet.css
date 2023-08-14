@@ -165,7 +165,7 @@ a {
 	color: azure;
 	animation: menuAnim 2.5s ease forwards;
 	animation-delay: calc(.3s * var(--i));
-	transition: .3s;
+	animation-delay: .5s;
 	transition-timing-function: ease ease-in-out; 
 }
 /* Nav Bar Hover function */
