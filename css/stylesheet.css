@@ -49,8 +49,8 @@ a {
 /*Header Attributes*/
 .header {
 	align-self: center;
-    max-height: 96%;
-    max-width: 96%;
+    	max-height: 96%;
+    	max-width: 96%;
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-top: 45px;
@@ -71,8 +71,8 @@ a {
 	transition-timing-function: ease; 
 	object-position: center;
 }
-/*Logo*/
 
+/*Logo*/
 .logSz {
 	justify-content: space-between;
 	position: relative;
@@ -734,7 +734,6 @@ a {
         position: fiixed;
         left: -200%;
         top: 0px;
-	float: right;
 	display: block;
         flex-direction: column;
         background-color: transparent;
@@ -745,7 +744,6 @@ a {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 	overflow: visible;
 	z-index: 1;
-	display: block; 
 	margin-left: 2px;
 	margin-right: 2px;
 	margin-top: 2px;
@@ -843,16 +841,14 @@ a {
 	align-items: center;
 	margin-left: 5px;
 	margin-right: 5px;
-	margin-top: 35px;
-	margin-bottom: 35px;
-	opacity: 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	width: auto;
 	animation: choiceAnim .5s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	transition: .3s;
 	transition-timing-function: ease ease-in-out; 
 	border-radius: 8px;
-	right: 200%;
 }
 /*Nav Bar Anchor Tag*/
 .navBar a {
