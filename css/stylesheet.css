@@ -153,18 +153,27 @@ a {
 }
 /*Nav Bar Anchor Tag*/
 .navBar a {
-	justify-content: center;
 	display: block;
-	text-decoration: none;
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-size: 22px;
-	font-color: azure;
-	animation: menuAnim .7s ease forwards;
-	animation-delay: calc(.2s * var(--i));
-	transition-timing-function: ease ease-in-out; 
+        background: transparent;
+	font-family:"Open Sans", "sans-serif";
+	text-decoration: none;
+	float: center;
+	justify-content: space-around;
+	letter-spacing: 1.5px;
+	border: 2px solid #d22900;
+	border-radius: 8px;
+	position: relative;
+	color: #d22900;
+	overflow: hidden;
+	animation-timing-function: ease-in-out;
+	transition: 3s;
+	animation: choiceAnim .5s ease forwards;
+	padding: 5px 5px 5px;
 }
 /* Nav Bar Hover function */
 .navBar a:hover,
