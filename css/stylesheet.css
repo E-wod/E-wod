@@ -561,7 +561,7 @@ a {
 .beePic {
 	background: transparent;
 	opacity: 60%;
-	width: 100%;
+	width: auto;
 	max-width: auto;
 	height: auto;
 	display: flex;
@@ -571,7 +571,7 @@ a {
 	margin-right: 10px;
 	margin-left: 10px;
 	padding: 0px 0px 0px;
-	z-index: -99;
+	z-index: -9;
 	scale: .7;
 	overflow: hidden;
 	object-fit: contain;
