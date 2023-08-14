@@ -879,17 +879,16 @@ a {
 	margin-right: 2px;
 	margin-top: 2px;
 	margin-bottom: 2px;
-	width: 700px;
-	height: 700px;
+	max-width: 700px;
+	max-height: 700px;
 	animation: choiceAnim .5s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	border-radius: 8px;
-	float: right;
 }
 /*Nav Bar Anchor Tag*/
 .navBar a {
 	justify-content: center;
-	display: flex;
+	display: inline-flex;
 	text-decoration: none;
 	margin-left: 2px;
 	margin-right: 2px;
