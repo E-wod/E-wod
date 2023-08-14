@@ -721,20 +721,19 @@ a {
 }
 .header {
 	align-self: center;
-	justify-content: space-around;
-	height: 9%;
+	height: auto;
 	float: center;
 	width: 95%;
-	margin-left: 10px;
+	margin-left: 12px;
 	margin-right: 95px;
-	margin-top: 45px;
+	margin-top: 35px;
 	margin-bottom: 45px;
-        position: absolute;
+    position: absolute;
 	top: 0;
 	left: 0;
 	padding: 0px 0px 0px;
 	background: transparent;
-	display: flex;
+	display: inline-flex;
 	z-index: 5;
 	font-size: 16px;
 	text-decoration: none;
@@ -761,9 +760,9 @@ body{
 a {
     margin: 0;
 	padding: 0;
-	max-width: 100%;
+	width: 100%;
 	max-height: 100%;
-	scale: .9;
+	scale: 1;
 }
 
 .logSz {
@@ -774,8 +773,8 @@ a {
 	height: 65px;
 	scale: .7;
 	display: inline-block;
-	margin-left: 10px;
-	margin-right: -10px;
+	margin-left: 0px;
+	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	overflow: visible;
@@ -783,11 +782,12 @@ a {
 }
 
 .nav-logo {
+	width: auto;
 	position: relative;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
+	margin-left: 20px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	padding: 0;
 	font-size: 12px;
 	font-color: #8B3421;
@@ -801,7 +801,7 @@ a {
 	border-radius: 70%;
 	align-items: center;
 	display: flex;
-	float: inherit;
+	float: left;
 }
 	
 .nav-menu {
@@ -809,7 +809,7 @@ a {
     left: 300%;
     top: 0px;
 	display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     background-color: transparent;
     width: auto;
 	height: auto;
@@ -862,11 +862,11 @@ a {
 	align-items: center;
 	float: right;
 	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-right: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	padding: 0px 0px 0px;
-	width: 100%;
+	width: auto;
 	max-height: auto;
 	animation: choiceAnim .5s ease forwards;
 	border-radius: 8px;
