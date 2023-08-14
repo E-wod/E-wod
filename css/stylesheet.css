@@ -804,7 +804,7 @@ a {
     
 	
 .hamburger:hover {
-	background-color: #d22900;
+	background-color: #445F61;
 	z-index: 3;
 }
     
@@ -817,8 +817,8 @@ a {
 	transition: all 0.3s ease-in-out;
 	background: azure;
 	animation: menuAnim 1.75s ease forwards;
-/* 	animation-delay: calc(.3s * var(--i));
-	transition-timing-function: ease ease-in-out;  */
+	animation-delay: calc(.3s * var(--i));
+	transition-timing-function: ease ease-in-out; 
 }
 	
 /*Nav Bar Attributes*/
@@ -836,6 +836,7 @@ a {
 	animation: choiceAnim .5s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	border-radius: 8px;
+	float: left;
 }
 /*Nav Bar Anchor Tag*/
 .navBar a {
