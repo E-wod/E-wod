@@ -731,7 +731,7 @@ a {
 	
 .nav-menu {
 	position: fixed;
-        right: -100%;
+        right: -300%;
         top: 0px;
 	display: table;
         flex-direction: column;
