@@ -787,10 +787,10 @@ a {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 	overflow: visible;
 	z-index: 1;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 	animation: logoAnim 2s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 
@@ -884,7 +884,7 @@ a {
 	animation: choiceAnim .5s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	border-radius: 8px;
-	float: left;
+	float: right;
 }
 /*Nav Bar Anchor Tag*/
 .navBar a {
