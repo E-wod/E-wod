@@ -101,7 +101,6 @@ a {
 	text-decoration: none;
 	font-weight: 400;
 	font-style: normal;
-	opacity: 0;
 	animation: logoAnim 2s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 }
@@ -617,6 +616,7 @@ a {
 		scale: .35;
 }
 	75% {
+		transform: translateX(-70px);
 		opacity: 1;
 		color: transparent;
 		text-shadow: 0 2px 2px #8B3421;
