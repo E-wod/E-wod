@@ -856,6 +856,7 @@ a {
 	box-shadow: 0 0px 0px azure;
 	overflow: visible;
 }
+	
 /*Nav Bar Attributes*/
 .navBar {
 	background: transparent;
@@ -870,7 +871,7 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding: 30px 30px 30px;
+	padding: 10px 10px 10px;
 	max-width: auto;
 	max-height: auto;
 	animation: choiceAnim .5s ease forwards;
@@ -1079,11 +1080,11 @@ a {
 	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	width: 250px;
-	height: auto;
 	font-size: 11px;
 	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
+	width: 225px;
+	height: auto;
 	display: flex;
 	float: center;
 	justify-content: space-around;
@@ -1103,7 +1104,6 @@ a {
 	width: auto;
 	height: auto;
 	display: flex;
-	text-decoration: none;
 	z-index: 5;
 	overflow: hidden;
 	justify-content: center;
