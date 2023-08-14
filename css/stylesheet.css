@@ -876,7 +876,8 @@ a {
 	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	width: auto;
+	width: 600px;
+	height: auto;
 	animation: choiceAnim .5s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	border-radius: 8px;
