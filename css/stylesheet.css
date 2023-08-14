@@ -8,7 +8,6 @@
 	max-width: 100%;
 	max-height: 100%;
 	scale: 1;
-
 }
 
 img{
@@ -42,7 +41,6 @@ body{
 a {
     margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 	max-width: 100%;
 	max-height: 100%;
 	scale: 1;
@@ -51,21 +49,22 @@ a {
 }
 /*Header Attributes*/
 .header {
-    max-height: 100%;
-    max-width: 100%;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 25px;
-	margin-bottom: 25px;
+	align-self: center;
+    max-height: 96%;
+    max-width: 96%;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 45px;
+	margin-bottom: 45px;
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 97%;
+	width: 100%;
 	padding: 0 0 0;
-	background: transparent;
+	background: grey;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-content: center;
 	z-index: 5;
 	text-decoration: none;
 	overflow: inherit;
@@ -74,13 +73,30 @@ a {
 	object-position: right;
 }
 /*Logo*/
+
+.logSz {
+	justify-content: space-between;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	scale: 1;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	overflow: visible;
+
+}
+
 .nav-logo {
 	display: flex;
-	margin-left: 35px;
-	margin-right: 15px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	font-size: 55px;
+	justify-content: center;
+	text-align: center;
+	margin-left: 45px;
+	margin-right: 45px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-size: 35px;
 	color: #8B3421;
 	text-decoration: none;
 	font-weight: 400;
@@ -97,13 +113,13 @@ a {
 }
 
 .nav-item {
-    margin-left: 5rem;
+    margin-left: 5px;
 }
 
 .nav-link{
-    font-size: 1.6rem;
+    font-size: 20px;
     font-weight: 400;
-    color: #475569;
+    color: #8B3421;
 }
 
 
@@ -127,10 +143,10 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 0px;
-	margin-right: 30px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 35px;
+	margin-bottom: 35px;
 	opacity: 0;
 	width: auto;
 	animation: choiceAnim .5s ease forwards;
@@ -241,7 +257,7 @@ a {
 	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 15px;
+	margin-top: 35px;
 	margin-bottom: 5px;
 	padding: 10px 0px 5px;
 	width: 100%;
@@ -905,7 +921,7 @@ body{
 }
 
 .landingContent h3{
-		font-size: 22px;
+		font-size: 20px;
 		color: #8B3421;
 		font-family:Script, Lobster, 'Kristen ITC';
 		font-weight: 100;
@@ -928,7 +944,7 @@ body{
 }
 
 .landingContent h3 span{
-		font-size: 22px;
+		font-size: 20px;
 		color: azure;
 		font-family:Script, Lobster, 'Kristen ITC';
 		font-weight: 100;
@@ -1062,7 +1078,7 @@ body{
 		opacity: 0;
 }
 	
-.beePic {
+.carPic {
 	background: transparent;
 	opacity: 40%;
 	width: 100%;
@@ -1110,8 +1126,9 @@ body{
 	justify-content: space-around;
 	background: transparent;
 	position: relative;
-	width: 50px;
-	height: 50px;
+	width: 100%;
+	height: 100%;
+	scale: .6;
 	display: inline-block;
 	margin-left: 2px;
 	margin-right: 2px;
