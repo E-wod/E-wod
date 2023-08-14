@@ -147,9 +147,22 @@ a {
 	margin-top: 35px;
 	margin-bottom: 35px;
 	width: auto;
-	animation: pAnim .3s ease forwards;
-	transition-timing-function: ease ease-in-out; 
-	border-radius: 170px;
+	font-size: 22px;
+        background: transparent;
+	font-family:"Open Sans", "sans-serif";
+	text-decoration: none;
+	float: center;
+	justify-content: space-around;
+	letter-spacing: 1.5px;
+	border: 2px solid #d22900;
+	border-radius: 8px;
+	position: relative;
+	color: #d22900;
+	overflow: hidden;
+	animation-timing-function: ease-in-out;
+	transition: 3s;
+	animation: choiceAnim .5s ease forwards;
+	padding: 5px 5px 5px;
 }
 /*Nav Bar Anchor Tag*/
 .navBar a {
@@ -166,7 +179,6 @@ a {
 	justify-content: space-around;
 	letter-spacing: 1.5px;
 	border: 2px solid #d22900;
-	border-radius: 8px;
 	position: relative;
 	color: #d22900;
 	overflow: hidden;
