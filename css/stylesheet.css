@@ -841,6 +841,7 @@ a {
 	margin-bottom: 35px;
 	opacity: 0;
 	width: auto;
+	height: 300px;
 	animation: choiceAnim .5s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	transition: .3s;
