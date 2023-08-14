@@ -758,7 +758,7 @@ a {
 	left: 0;
 	overflow: visible;
 	background-color: #8B3421;
-	display: contents;
+	
 
 }
 
@@ -832,7 +832,7 @@ a {
 .navBar {
 	background: #64673B;
 	text-decoration: none;
-	display: flex;
+	display: contents;
 	justify-content: center;
 	align-items: center;
 	margin-left: 5px;
