@@ -729,11 +729,11 @@ a {
 	margin-right: 95px;
 	margin-top: 45px;
 	margin-bottom: 45px;
-    position: absolute;
+        position: absolute;
 	top: 0;
 	left: 0;
 	padding: 0px 0px 0px;
-	background: grey;
+	background: transparent;
 	display: flex;
 	z-index: 5;
 	font-size: 16px;
