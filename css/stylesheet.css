@@ -734,34 +734,34 @@ a {
         position: relative;
         left: 200%;
         top: 0px;
-	    float: right;
+	float: right;
         flex-direction: column;
         background-color: transparent;
         width: auto;
-	    height: auto;
+	height: auto;
         border-radius: 10px;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-	    overflow: visible;
-	    z-index: 1;
-	    display: block; 
-		margin-left: 2px;
-	    margin-right: 2px;
-	    margin-top: 2px;
-	    margin-bottom: 2px;
+	overflow: visible;
+	z-index: 1;
+	display: block; 
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 
 }
 	
 .nav-menu.active {
-		align-items: center; 
-	    flex-direction: column;
-		z-index: 1;
-		right: 5px;
-	    left: 0;
-	    overflow: visible;
+	align-items: center; 
+	flex-direction: column;
+	z-index: 1;
+	right: 200%;
+	left: 0;
+	overflow: visible;
         width: 30%;
-	    height: auto;
-	    background-color: #8B3421;
+	height: auto;
+	background-color: #8B3421;
 
 }
 
