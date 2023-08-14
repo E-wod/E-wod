@@ -179,8 +179,8 @@ a {
 }
 
 .hamburger {
-    display: none;
-	text-decoration: none;
+       display: none;
+       text-decoration: none;
 }
 
 .hamburger a:hover,
@@ -731,8 +731,8 @@ a {
 }
 	
 .nav-menu {
-        position: relative;
-        left: 200%;
+        position: fiixed;
+        left: -200%;
         top: 0px;
 	float: right;
 	display: block;
@@ -755,27 +755,18 @@ a {
 	
 .nav-menu.active {
 	align-items: center; 
-	flex-direction: column;
 	z-index: 1;
-	right: 5px;
 	left: 0;
-	overflow: visible;
-        width: 30%;
-	height: auto;
 	background-color: #8B3421;
 
 }
 
 .nav-item {
-	display: block;
+	margin: 0 0 0;
 	align-items: center; 
-	flex-direction: column;
 	z-index: 1;
-	right: 5px;
+	right: 0;
 	left: 0;
-	overflow: visible;
-        width: 30%;
-	height: auto;
 	background-color: #8B3421;
 }
 	
@@ -792,6 +783,23 @@ a {
 	    opacity: 0;
 	    animation: logoAnim 2s ease forwards;
 	    transition-timing-function: ease ease-in-out; 
+}
+
+.hamburger {
+		padding: 2px 2px 2px;
+		margin-left: 2px;
+		margin-right: 2px;
+		margin-top: 2px;
+		margin-bottom: 2px;
+		border: 2px solid #d22900;
+		border-radius: 8px;
+		position: relative;
+		color: #d22900;
+		cursor: pointer;
+	        height: auto;
+                z-index: 1;
+                display: block;
+	        width: 45px;
 }
 	
 .hamburger.active .bar:nth-child(2) {
@@ -810,25 +818,6 @@ a {
 .hamburger:hover {
 	    background-color: #d22900;
 	    z-index: 3;
-}
-    
-.hamburger {
-		padding: 2px 2px 2px;
-		margin-left: 2px;
-		margin-right: 2px;
-		margin-top: 2px;
-		margin-bottom: 2px;
-		letter-spacing: 1.5px;
-		border: 2px solid #d22900;
-		border-radius: 8px;
-		position: relative;
-		color: #d22900;
-		cursor: pointer;
-	    height: auto;
-        z-index: 1;
-        display: block;
-	    flex-direction: column;
-	    width: 45px;
 }
     
 .bar {
@@ -850,7 +839,7 @@ a {
 	background: #64673B;
 	text-decoration: none;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	margin-left: 5px;
 	margin-right: 5px;
