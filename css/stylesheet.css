@@ -728,8 +728,7 @@ a {
 }
 .header {
 	align-self: center;
-	max-width: 97%;
-	height: 100px;
+	height: 97px;
 	width: 100%;
 	margin-left: 10px;
 	margin-right: 95px;
@@ -780,8 +779,8 @@ a {
 	width: 130px;
 	height: 75px;
 	display: inline-block;
-	margin-left: 0px;
-	margin-right: 0px;
+	margin-left: 10px;
+	margin-right: -10px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	overflow: visible;
