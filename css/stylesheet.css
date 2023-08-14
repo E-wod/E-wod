@@ -779,7 +779,7 @@ a {
         top: 0px;
 	display: flex;
         flex-direction: column;
-        background-color: violet;
+        background-color: transparent;
         width: 600px;
 	height: 100%;
         border-radius: 10px;
@@ -791,6 +791,8 @@ a {
 	margin-right: 2px;
 	margin-top: 2px;
 	margin-bottom: 2px;
+	animation: logoAnim 2s ease forwards;
+	transition-timing-function: ease ease-in-out; 
 
 }
 	
@@ -869,6 +871,7 @@ a {
 .navBar {
 	background: transparent;
 	text-decoration: none;
+	font-size: 14px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -886,13 +889,13 @@ a {
 /*Nav Bar Anchor Tag*/
 .navBar a {
 	justify-content: center;
-	display: block;
+	display: flex;
 	text-decoration: none;
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	font-size: 16px;
+	font-size: 14px;
 	color: azure;
 	opacity: 0;
 	transition: .3s;
