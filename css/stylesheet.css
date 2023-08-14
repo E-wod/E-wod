@@ -780,17 +780,17 @@ a {
 	display: flex;
         flex-direction: column;
         background-color: transparent;
-        width: 600px;
+        width: 700px;
 	height: 100%;
         border-radius: 10px;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 	overflow: visible;
 	z-index: 1;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
 	animation: logoAnim 2s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 
@@ -806,11 +806,11 @@ a {
 }
 	
 .nav-logo {
-	    margin-left: 20px;
-	    margin-right: 20px;
-	    margin-top: 20px;
-	    margin-bottom: 20px;
-	    font-size: 16px;
+	    margin-left: 2px;
+	    margin-right: 2px;
+	    margin-top: 2px;
+	    margin-bottom: 2px;
+	    font-size: 12px;
 	    color: #8B3421;
 	    text-decoration: none;
 	    font-weight: 400;
@@ -871,16 +871,16 @@ a {
 .navBar {
 	background: transparent;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 12px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	width: 600px;
-	height: 600px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	width: 700px;
+	height: 700px;
 	animation: choiceAnim .5s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	border-radius: 8px;
@@ -891,11 +891,11 @@ a {
 	justify-content: center;
 	display: flex;
 	text-decoration: none;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	font-size: 14px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-size: 12px;
 	color: azure;
 	opacity: 0;
 	transition: .3s;
