@@ -137,12 +137,12 @@ a {
 }
 /*Nav Bar Attributes*/
 .navBar {
-	background: #445F61;
+	background: transparent;
 	text-decoration: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 5px;
+	margin-left: 155px;
 	margin-right: 5px;
 	margin-top: 35px;
 	margin-bottom: 35px;
@@ -154,14 +154,10 @@ a {
 	float: center;
 	justify-content: space-around;
 	letter-spacing: 1.5px;
-	border: 2px solid #d22900;
-	border-radius: 8px;
 	position: relative;
 	color: #d22900;
 	overflow: hidden;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
-	animation: choiceAnim .5s ease forwards;
+
 	padding: 5px 5px 5px;
 }
 /*Nav Bar Anchor Tag*/
