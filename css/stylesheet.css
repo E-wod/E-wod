@@ -731,7 +731,7 @@ a {
 	
 .nav-menu {
 	position: fixed;
-        left: -200%;
+        left: -600%;
         top: 0px;
 	display: inline-flex;
         flex-direction: column;
@@ -791,11 +791,11 @@ a {
 	        width: 45px;
 }
 	
-.hamburger.active .bar:nth-child(2) {
+.hamburger.active .bar:nth-child(1) {
         opacity: 0;
 }
 
-.hamburger.active .bar:nth-child(1) {
+.hamburger.active .bar:nth-child(2) {
         transform: translateY(8px) rotate(45deg);
 }
 
@@ -805,8 +805,8 @@ a {
     
 	
 .hamburger:hover {
-	    background-color: #d22900;
-	    z-index: 3;
+	background-color: #d22900;
+	z-index: 3;
 }
     
 .bar {
@@ -817,15 +817,14 @@ a {
 		-webkit-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
 		background: azure;
-/*
 		animation: menuAnim 1.75s ease forwards;
 		animation-delay: calc(.3s * var(--i));
 		transition-timing-function: ease ease-in-out; 
-*/
 }
+	
 /*Nav Bar Attributes*/
 .navBar {
-	background: purple;
+	background: transparent;
 	text-decoration: none;
 	display: flex;
 	justify-content: space-between;
