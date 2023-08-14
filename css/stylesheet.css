@@ -137,44 +137,45 @@ a {
 }
 /*Nav Bar Attributes*/
 .navBar {
-	background: transparent;
-	text-decoration: none;
+	width: auto;
+	height: auto;
 	display: flex;
+	text-decoration: none;
+	z-index: 5;
+	overflow: hidden;
 	justify-content: center;
-	align-items: center;
+	position: relative;
 	margin-left: 155px;
 	margin-right: 5px;
 	margin-top: 35px;
 	margin-bottom: 35px;
 	width: auto;
 	font-size: 22px;
-        background: transparent;
-	font-family:"Open Sans", "sans-serif";
-	text-decoration: none;
-	float: center;
-	justify-content: space-around;
-	letter-spacing: 1.5px;
-	position: relative;
-	color: #d22900;
-	overflow: hidden;
-
+	background: transparent;
 	padding: 5px 5px 5px;
+	animation: choiceAnim 1.5s ease forwards;
+	animation-timing-function: ease-in-out;
+	transition: 1s;
 }
-/*Nav Bar Anchor Tag*/
+
+/*navBar Anchor Tag Button layout and function*/
 .navBar a {
-	display: block;
+	background: transparent;
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-size: 22px;
-        background: transparent;
+	width: 300px;
+	height: auto;
 	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
+	display: flex;
 	float: center;
 	justify-content: space-around;
 	letter-spacing: 1.5px;
 	border: 2px solid #d22900;
+	border-radius: 8px;
 	position: relative;
 	color: #d22900;
 	overflow: hidden;
@@ -183,13 +184,35 @@ a {
 	animation: choiceAnim .5s ease forwards;
 	padding: 5px 5px 5px;
 }
-/* Nav Bar Hover function */
-.navBar a:hover,
-.navBar a.active {
+/*Setting the attributes for button*/
+.navBar a:nth-child(1 2 3) {
+	background: transparent;
 	color: #d22900;
-	text-decoration: none;
 }
-
+/*Setting pre-animation attributes*/
+.navBar a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	z-index: -1;
+	transition: .9s;
+	transition-timing-function: ease; 
+}
+/*Animation Element*/
+.navBar a:hover::before {
+	height: 100%;
+	background: linear-gradient(0deg,transparent 15%,#d22900 240%);
+}
+/*Hover Function*/
+.navBar a:hover {
+	color: azure;
+	transition: .3s;
+	transition-timing-function: ease;
+	background: transparent;
+}
 .hamburger {
        display: none;
        text-decoration: none;
@@ -414,7 +437,7 @@ a {
 	padding: 5px 5px 5px;
 }
 /*Setting the attributes for each button*/
-.btnBox a:nth-child(1 2) {
+.btnBox a:nth-child(1) {
 	background: transparent;
 	color: #d22900;
 }
