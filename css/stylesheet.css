@@ -161,6 +161,7 @@ a {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-size: 22px;
+	font-color: azure;
 	animation: menuAnim .7s ease forwards;
 	animation-delay: calc(.2s * var(--i));
 	transition-timing-function: ease ease-in-out; 
@@ -188,10 +189,9 @@ a {
 	width: 25px;
 	height: 3px;
 	margin: 5px auto;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
 	background: azure;
- 	transition-timing-function: 1s ease ease-in-out;
 }
 
     .hamburger.active .bar:nth-child(2) {
