@@ -799,6 +799,8 @@ a {
                 z-index: 1;
                 display: block;
 	        width: 45px;
+		animation: menuAnim .5s ease forwards;
+	        animation-delay: calc(.3s * var(--i));
 }
 	
 .hamburger.active .bar:nth-child(1) {
