@@ -622,6 +622,55 @@ a {
 	position: relative;
 }
 
+/* -------------------------------------------------------------PARALLAX SETTINGS--------------------------------------------------------*/
+
+#parallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: 
+		url(https://i.ibb.co/Z6D3s7s/parallax13.png),
+        url(https://i.ibb.co/RNzDGXV/parallax11.png),
+		url(https://i.ibb.co/7W82h91/parallax10.png),
+		url(https://i.ibb.co/pPDMZmZ/parallax9.png),
+		url(https://i.ibb.co/2Z6DQdw/parallax8.png),
+		url(https://i.ibb.co/KsXQvG7/parallax7.png),
+		url(https://i.ibb.co/M8VJZqz/parallax6.png),
+		url(https://i.ibb.co/ry8db6Q/parallax5.png),
+		url(https://i.ibb.co/DrvW3TL/parallax4.png),
+		url(https://i.ibb.co/8PdXS42/parallax3.png),
+		url(https://i.ibb.co/DKshZhy/parallax2.png),
+		url(https://i.ibb.co/GJF1jDC/parallax1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+	background-origin: inherit;
+    background-position: 50% 50%;
+	background-color: #000000;
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+  
+}
+
+.vertBanner {
+	width: 100%;
+	height: 100%;
+	max-width: auto;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	align-self: center;
+	left: 0;
+	right: 0;
+	
+}
+
+/*-------------------------------------------------------------------------------------portfolio animation-------------------------------*/
+
+
+
+/*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes logoAnim {
 	0% {
 		transform: translateX(-500px);
