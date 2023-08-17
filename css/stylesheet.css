@@ -669,15 +669,17 @@ a {
 /*-------------------------------------------------------------------------------------portfolio animation-------------------------------*/
 
 .portfolio{
-	width: 40%;
+	width: 50%;
+	max-width: 100%;
 	height: auto;
-	display: grid;
+	display: flex;
 	align-items: center;
 	align-self: center;
 	justify-content: space-around;
 	left: 50%;
 	right: 50%;
-	max-width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
