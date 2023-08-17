@@ -652,22 +652,7 @@ a {
   
 }
 
-.vertBanner {
-	background: transparent;
-	justify-content: space-around;
-	width: 100%;
-	height: 100%;
-	display: inline-block;
-    	margin: auto;
-	position: relative;
-	overflow: hidden;
-	align-self: center;
-	left: 0;
-	right: 0;
-	background: transparent;
-	z-index: -4;
-	
-}
+
 
 /*-------------------------------------------------------------------------------------portfolio animation-------------------------------*/
 
