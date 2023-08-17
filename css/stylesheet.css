@@ -669,9 +669,11 @@ a {
 /*-------------------------------------------------------------------------------------portfolio animation-------------------------------*/
 
 .portfolio{
-	width: 400px;
-	height: 400px;
+	width: 40%;
+	height: auto;
 	display: grid;
+	align-items: center;
+	align-self: center;
 	justify-content: space-around;
 }
 
