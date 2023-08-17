@@ -573,6 +573,7 @@ a {
 	margin: 0;
     	opacity: 100%;
 	position: relative;
+	object-position: cover;
 }
 
 .beePic {
