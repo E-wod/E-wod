@@ -672,7 +672,7 @@ a {
 	width: 50%;
 	max-width: 100%;
 	height: auto;
-	display: flex;
+	display: table;
 	align-items: center;
 	align-self: center;
 	justify-content: space-around;
