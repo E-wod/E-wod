@@ -641,12 +641,12 @@ a {
 		url(https://i.ibb.co/8PdXS42/parallax3.png),
 		url(https://i.ibb.co/DKshZhy/parallax2.png),
 		url(https://i.ibb.co/GJF1jDC/parallax1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    	background-repeat: no-repeat;
+    	background-size: cover;
 	background-origin: inherit;
-    background-position: 50% 50%;
-	background-color: #000000;
-	overflow-x: hidden;
+    	background-position: 50% 50%;
+	background-color: transparent;
+	overflow: hidden;
 	padding: 0;
 	margin: 0;
   
