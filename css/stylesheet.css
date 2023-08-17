@@ -663,12 +663,12 @@ a {
 	background: blue;
 	justify-content: space-around;
 	display: block;
-	column-count: 40;
-	row-count: 4;
+	column-count: 4;
+	row-count: 14;
         margin: auto;
 	position: inherit;
 	width: 100%;
-	height: auto;
+	height: 2000px;
 	object-fit: contain;
 }
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
