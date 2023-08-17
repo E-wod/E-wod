@@ -12,8 +12,6 @@
 }
 
 img {
-	width: 100%;
-	height: 100%;
 	scale: 1;
 }
 
@@ -569,12 +567,10 @@ a {
     	width:100%;
 	height: 100%;
 	z-index: -31;
-	background-position:left top, left bottom;
+/* 	background-position:left top, left bottom; */
 	background-repeat:repeat-x;
 	align-items: center;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
+	margin: 0;
     	opacity: 100%;
 	position: relative;
 }
