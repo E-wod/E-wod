@@ -19,9 +19,12 @@ img {
 html {
 	scroll-behavior: smooth;
 	height:100%;
-    width:100%;
+        width:100%;
 	position: relative;
-	background: linear-gradient(105deg,#303030 39%,#000000 105%);
+/*	background: linear-gradient(105deg,#303030 39%,#000000 105%);*/
+	background-image: url("https://i.ibb.co/RhKgHm9/Mo-Organic-1527.jpg");
+	mix-blend-mode: normal;
+/*	<a href="https://ibb.co/vsWczGH"><img src="https://i.ibb.co/RhKgHm9/Mo-Organic-1527.jpg" alt="Mo-Organic-1527" border="0"></a>*/
 }
 
 /*Body Attributes*/
