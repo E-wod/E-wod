@@ -674,7 +674,8 @@ a {
 	height: auto;
 	margin: 10px 0 10px;
 	padding: 10px 0 10px;
-	background: #000000;
+	background: transparent;
+	z-index: 9;
 }
 
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
