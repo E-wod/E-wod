@@ -664,6 +664,7 @@ a {
 	justify-content: space-around;
 	display: block;
 	column-count: 4;
+	row-count: auto;
         margin: auto;
 	position: inherit;
 	width: 100%;
