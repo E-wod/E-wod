@@ -671,7 +671,6 @@ a {
 .portfolio{
 	width: 400px;
 	height: 400px;
-	overflow: hidden;
 	display: grid;
 	justify-content: space-around;
 }
