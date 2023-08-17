@@ -672,7 +672,7 @@ a {
 	width: 400px;
 	height: 400px;
 	overflow: hidden;
-	display: inline-grid;
+	display: grid;
 	justify-content: space-around;
 }
 
