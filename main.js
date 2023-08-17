@@ -33,8 +33,8 @@ function closeMenu() {
 	let _depth4 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.005}%`;
 	let _depth5 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.007}%`;
 	let _depth6 = `${50 - (_mouseX - _w) * 0.010}% ${50 - (_mouseY - _h) * 0.009}%`;
-	let _depth7 = `${50 - (_mouseX - _w) * 0.022}% ${50 - (_mouseY - _h) * 0.012}%`;
-	let _depth8 = `${50 - (_mouseX - _w) * 0.015}% ${50 - (_mouseY - _h) * 0.013}%`;
+	let _depth7 = `${50 - (_mouseX - _w) * 0.022}% ${50 - (_mouseY - _h) * 0.013}%`;
+	let _depth8 = `${50 - (_mouseX - _w) * 0.022}% ${50 - (_mouseY - _h) * 0.013}%`;
 	let _depth9 = `${50 - (_mouseX - _w) * 0.016}% ${50 - (_mouseY - _h) * 0.016}%`;
 	let _depth10 = `${50 - (_mouseX - _w) * 0.022}% ${50 - (_mouseY - _h) * 0.019}%`;
 	let _depth11 = `${50 - (_mouseX - _w) * 0.029}% ${50 - (_mouseY - _h) * 0.022}%`;
