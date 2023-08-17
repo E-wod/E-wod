@@ -675,6 +675,9 @@ a {
 	align-items: center;
 	align-self: center;
 	justify-content: space-around;
+	left: 50%;
+	right: 50%;
+	max-width: 100%;
 }
 
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
