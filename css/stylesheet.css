@@ -12,6 +12,8 @@
 }
 
 img {
+	width: 100%;
+	height: 100%;
 	scale: 1;
 }
 
@@ -639,12 +641,12 @@ a {
 		url(https://i.ibb.co/8PdXS42/parallax3.png),
 		url(https://i.ibb.co/DKshZhy/parallax2.png),
 		url(https://i.ibb.co/GJF1jDC/parallax1.png);
-    	background-repeat: no-repeat;
-    	background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
 	background-origin: inherit;
-    	background-position: 50% 50%;
-	background-color: transparent;
-	overflow: hidden;
+    background-position: 50% 50%;
+	background-color: #000000;
+	overflow-x: hidden;
 	padding: 0;
 	margin: 0;
   
@@ -660,7 +662,7 @@ a {
 	display: inline-block;
     	margin: auto;
 	position: relative;
-	scale: .4;
+	max-width: 50%;
 }
 
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
@@ -1211,6 +1213,7 @@ a {
 	width: auto;
 	height: auto;
 	text-decoration: none;
+
 	animation: menuAnim ease forwards;
 	animation-delay: calc(.1s * var(--i));
 	opacity: 0;
