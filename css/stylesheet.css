@@ -663,6 +663,8 @@ a {
 	align-self: center;
 	left: 0;
 	right: 0;
+	background: transparent;
+	z-index: -4;
 	
 }
 
