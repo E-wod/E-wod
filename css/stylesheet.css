@@ -658,14 +658,18 @@ a {
 
 /*-------------------------------------------------------------------------------------portfolio animation-------------------------------*/
 
-.portfolio {
-	background: transparent;
-	justify-content: space-around;
-	display: grid;
-    	margin: auto;
-	position: relative;
-}
 
+.portfolio {
+	background: blue;
+	justify-content: space-around;
+	display: block;
+	column-count: 4;
+        margin: auto;
+	position: inherit;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes logoAnim {
 	0% {
