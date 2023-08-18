@@ -19,7 +19,7 @@ img {
 html {
 	scroll-behavior: smooth;
 	height:100%;
-        width:100%;
+    width:100%;
 	padding: 0;
 	margin: 0;
 	position: relative;
@@ -612,6 +612,51 @@ a {
 	position: relative;
 }
 
+.picFrame h1{
+	font-size: 16px;
+	color: #494F52;
+	font-family: sans-serif;
+	font-style: italic;
+	text-shadow: 2px 0px 2px azure;
+	line-height: .9;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px 0px 0px;
+	width: 100%;
+	max-width: 80%;
+	position: relative;
+	background-color: transparent;
+	z-index: 3;
+	opacity: 0;
+	animation: h1Anim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
+}
+	
+.picFrame p{
+	z-index: 1;
+	display: flex;
+	font-size: 12px;
+	color: azure;
+	font-family: sans-serif;
+	font-style: italic;
+	line-height: 1.1;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px 0px 0px;
+	max-width: 95%;
+	max-height: auto;
+	background: transparent;
+	position: relative;
+	overflow: inherit;
+	opacity: 0;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: ease ease-in-out; 
+}
+
 /* -------------------------------------------------------------PARALLAX SETTINGS--------------------------------------------------------*/
 
 #parallax {
@@ -663,6 +708,7 @@ a {
 	margin-left: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	z-index: 5;
 }
 
 .picFrame {
@@ -677,8 +723,8 @@ a {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	padding: 5px 5px 5px;
-        z-index: 1;
-        display: block;
+    z-index: 1;
+    display: block;
 	font-size: 12px;
 	color: azure;
 	font-family: sans-serif;
@@ -791,11 +837,12 @@ a {
 html {
 	scroll-behavior: smooth;
 	height:100%;
-        width:100%;
+    width:100%;
 	padding: 0;
 	margin: 0;
 	position: relative;
 	background-image: url("https://i.ibb.co/S02jz7R/Mo-Organic-1559.png");
+	background-repeat: repeat;
 	mix-blend-mode: normal;
 }
 	
@@ -808,7 +855,7 @@ html {
 	margin-right: 95px;
 	margin-top: 35px;
 	margin-bottom: 45px;
-    	position: absolute;
+    position: absolute;
 	top: 0;
 	left: 0;
 	padding: 0px 0px 0px;
@@ -838,7 +885,7 @@ body{
 }
 	
 a {
-    	margin: 0;
+    margin: 0;
 	padding: 0;
 	width: 100%;
 	max-height: 100%;
@@ -886,15 +933,15 @@ a {
 	
 .nav-menu {
 	position: inherit;
-    	left: 300%;
-    	top: 0px;
+    left: 300%;
+    top: 0px;
 	display: flex;
-    	flex-direction: column-reverse;
-    	background-color: transparent;
-    	width: auto;
+    flex-direction: column-reverse;
+    background-color: transparent;
+    width: auto;
 	height: auto;
-    	border-radius: 10px;
-    	transition: 0.3s;
+    border-radius: 10px;
+    transition: 0.3s;
 	overflow: visible;
 	z-index: 3;
 	font-color: #d22900;
@@ -902,7 +949,7 @@ a {
 	margin-right: 5px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-    	padding: 0;
+    padding: 0;
 	animation: choiceAnim 1.5s ease forwards;
 	animation-timing-function: ease-in-out;
 }
@@ -1002,10 +1049,10 @@ a {
 	color: #d22900;
 	cursor: pointer;
 	height: auto;
-    	z-index: 1;
-    	display: block;
+    z-index: 1;
+    display: block;
 	width: 45px;
-    	animation: h3Anim 2s ease forwards;
+    animation: h3Anim 2s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	background: transparent;
 }
@@ -1048,7 +1095,7 @@ a {
 	
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
-	font-size: 17px;
+	font-size: 11px;
 	color: #494F52;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
@@ -1089,7 +1136,7 @@ a {
 }
 
 .landingContent h3{
-	font-size: 20px;
+	font-size: 12px;
 	color: #8B3421;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
@@ -1112,7 +1159,7 @@ a {
 }
 
 .landingContent h3 span{
-	font-size: 20px;
+	font-size: 12px;
 	color: azure;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
@@ -1124,7 +1171,7 @@ a {
 .landingContent p{
 	z-index: 1;
 	display: flex;
-	font-size: 12px;
+	font-size: 10px;
 	color: azure;
 	font-family: sans-serif;
 	font-weight: 100;
@@ -1149,7 +1196,7 @@ a {
 }
 
 .cntr {
-	background: transparent;
+	background: pink;
 	justify-content: space-around;
 	width: 100%;
 	height: 100%;
@@ -1316,35 +1363,71 @@ a {
 	position: inherit;
 	width: 100%;
 	height: auto;
-	padding: 1px 0 1px;
-	margin-right: 5px;
-	margin-left: 5px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	padding: 0px 0px 0px;
+	margin-right: 1px;
+	margin-left: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
 }
 
 .picFrame {
-	object-fit: contain;
+	object-fit: fill;
 	background-color: grey;
 	border-radius: 8px;
 	width: 100%;
 	height: auto;
 	justify-content: space-around;
-	margin-right: 2px;
-	margin-left: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding: 2px 2px 2px;
-        z-index: 1;
-        display: block;
-	font-size: 12px;
-/* 	font-color: azure; */
-	font-family: sans-serif;
-	font-weight: 100;
-	text-shadow: 2px 3px 6px #000000;
-	text-decoration: none;
-	font-style: italic;
-	line-height: 1.1;
+	margin-right: 1px;
+	margin-left: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding: 0px 0px 0px;
+    z-index: 1;
+    display: block;
 }
 	
+.picFrame h1{
+	font-size: 12px;
+	color: #494F52;
+	font-family: sans-serif;
+	font-style: italic;
+	text-shadow: 2px 0px 2px azure;
+	line-height: .9;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px 0px 0px;
+	width: 100%;
+	max-width: 80%;
+	position: relative;
+	background-color: transparent;
+	z-index: 3;
+	opacity: 0;
+	animation: h1Anim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
+}
+	
+.picFrame p{
+	z-index: 1;
+	display: flex;
+	font-size: 8px;
+	color: azure;
+	font-family: sans-serif;
+	font-style: italic;
+	line-height: 1.1;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px 0px 0px;
+	max-width: 95%;
+	max-height: auto;
+	background: transparent;
+	position: relative;
+	overflow: inherit;
+	opacity: 0;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: ease ease-in-out; 
+}
 }
