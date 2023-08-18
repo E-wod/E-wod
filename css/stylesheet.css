@@ -19,7 +19,7 @@ img {
 html {
 	scroll-behavior: smooth;
 	height:100%;
-    width:100%;
+        width:100%;
 	padding: 0;
 	margin: 0;
 	position: relative;
@@ -790,6 +790,23 @@ a {
 	background-position:left top, left bottom;
 	background-repeat:repeat-x;
 }
+
+/*HTML Attributes*/
+html {
+	scroll-behavior: smooth;
+	height:100%;
+        width:100%;
+	padding: 0;
+	margin: 0;
+	position: relative;
+/*	background: linear-gradient(105deg,#303030 39%,#000000 105%);*/
+	background-image: url("https://i.ibb.co/S02jz7R/Mo-Organic-1559.png");
+	mix-blend-mode: normal;
+/*	<a href="https://ibb.co/vsWczGH"><img src="https://i.ibb.co/RhKgHm9/Mo-Organic-1527.jpg" alt="Mo-Organic-1527" border="0"></a>*/
+/* <a href="https://ibb.co/Mpbvm5M"><img src="https://i.ibb.co/S02jz7R/Mo-Organic-1559.png" alt="Mo-Organic-1559" border="0"></a> */
+
+}
+	
 .header {
 	align-self: center;
 	height: auto;
@@ -1294,5 +1311,48 @@ a {
 	scale: .7;
 	border-radius: 30px;
 	position: relative;
-}	
+}
+
+.portfolio {
+	align-self: center;
+	align-contents: center;
+	background: transparent;
+	justify-content: space-around;
+	display: block;
+	column-count: 4;
+	row-count: 1;
+	position: inherit;
+	width: 100%;
+	height: auto;
+	padding: 1px 0 1px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.picFrame {
+	object-fit: contain;
+	background-color: grey;
+	border-radius: 8px;
+	width: 100%;
+	height: auto;
+	justify-content: space-around;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding: 2px 2px 2px;
+        z-index: 1;
+        display: block;
+	font-size: 12px;
+	color: azure;
+	font-family: sans-serif;
+	font-weight: 100;
+	text-shadow: 2px 3px 6px #000000;
+	text-decoration: none;
+	font-style: italic;
+	line-height: 1.1;
+}
+	
 }
