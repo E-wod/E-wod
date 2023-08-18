@@ -356,7 +356,7 @@ a {
 /*Setting the landing page template for paragraph*/
 .landingContent p{
 	z-index: 1;
-    	display: flex;
+    display: flex;
 	font-size: 20px;
 	color: azure;
 	font-family: sans-serif;
@@ -662,14 +662,32 @@ a {
 	height: auto;
 	object-fit: contain;
 	padding: 0 0 0;
-	margin: 5px 5px 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .picFrame {
-	background: grey;
+	background-color: grey;
 	width: auto;
 	height: auto;
 	justify-content: space-between;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 0;
+z-index: 1;
+    display: flex;
+	font-size: 12px;
+	color: azure;
+	font-family: sans-serif;
+	font-weight: 100;
+	text-shadow: 2px 3px 6px #000000;
+	text-decoration: none;
+	font-style: italic;
+	line-height: 1.1;
 }
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes logoAnim {
