@@ -659,8 +659,7 @@ a {
 	row-count: 1;
 	position: inherit;
 	width: 100%;
-	height: auto;
-	
+	height: 100%;
 	padding: 0 0 0;
 	margin-right: 10px;
 	margin-left: 10px;
@@ -673,15 +672,15 @@ a {
 	background-color: grey;
 	border-radius: 8px;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	justify-content: space-around;
 	margin-right: 5px;
 	margin-left: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	padding: 0px 0px 0px;
-z-index: 1;
-        display: table;
+        z-index: 1;
+        display: block;
 	font-size: 12px;
 	color: azure;
 	font-family: sans-serif;
