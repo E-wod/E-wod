@@ -652,6 +652,8 @@ a {
 
 
 .portfolio {
+	align-self: center;
+	align-contents: center;
 	background: transparent;
 	justify-content: space-around;
 	display: block;
