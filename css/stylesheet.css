@@ -1346,7 +1346,7 @@ a {
         z-index: 1;
         display: block;
 	font-size: 12px;
-	color: azure;
+	font-color: azure;
 	font-family: sans-serif;
 	font-weight: 100;
 	text-shadow: 2px 3px 6px #000000;
