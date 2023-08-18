@@ -662,15 +662,16 @@ a {
 	height: auto;
 	
 	padding: 0 0 0;
-	margin-right: 5px;
-	margin-left: 5px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
 
 .picFrame {
 	object-fit: contain;
 	background-color: grey;
+	border-radius: 8px;
 	width: 100%;
 	height: auto;
 	justify-content: space-around;
@@ -678,7 +679,7 @@ a {
 	margin-left: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	padding: 5px 0 5px;
+	padding: 0px 0px 0px;
 z-index: 1;
         display: table;
 	font-size: 12px;
