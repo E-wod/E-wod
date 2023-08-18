@@ -660,7 +660,7 @@ a {
 	position: inherit;
 	width: 100%;
 	height: auto;
-	object-fit: contain;
+	
 	padding: 0 0 0;
 	margin-right: 5px;
 	margin-left: 5px;
@@ -669,6 +669,7 @@ a {
 }
 
 .picFrame {
+	object-fit: contain;
 	background-color: grey;
 	width: 100%;
 	height: auto;
