@@ -680,7 +680,7 @@ a {
 	margin-bottom: 5px;
 	padding: 5px 0 5px;
 z-index: 1;
-    display: flex;
+        display: table;
 	font-size: 12px;
 	color: azure;
 	font-family: sans-serif;
