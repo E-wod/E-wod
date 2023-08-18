@@ -662,7 +662,7 @@ a {
 	position: inherit;
 	width: 100%;
 	height: auto;
-	padding: 0 0 0;
+	padding: 1px 0 1px;
 	margin-right: 10px;
 	margin-left: 10px;
 	margin-top: 10px;
