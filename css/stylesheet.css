@@ -797,7 +797,6 @@ html {
 	position: relative;
 	background-image: url("https://i.ibb.co/S02jz7R/Mo-Organic-1559.png");
 	mix-blend-mode: normal;
-
 }
 	
 .header {
@@ -1339,7 +1338,7 @@ a {
         z-index: 1;
         display: block;
 	font-size: 12px;
-	font-color: azure;
+/* 	font-color: azure; */
 	font-family: sans-serif;
 	font-weight: 100;
 	text-shadow: 2px 3px 6px #000000;
