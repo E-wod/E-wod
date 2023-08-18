@@ -20,6 +20,8 @@ html {
 	scroll-behavior: smooth;
 	height:100%;
         width:100%;
+	padding: 0;
+	margin: 0;
 	position: relative;
 /*	background: linear-gradient(105deg,#303030 39%,#000000 105%);*/
 	background-image: url("https://i.ibb.co/S02jz7R/Mo-Organic-1559.png");
@@ -31,10 +33,10 @@ html {
 
 /*Body Attributes*/
 body {
-    height: 100%;
-    width: 100%;
+    	height: 100%;
+    	width: 100%;
 	z-index: 0;
-    object-fit: cover;
+    	object-fit: cover;
 	background: linear-gradient(105deg,#303030 39%,#000000 105%);
 	background-attachment: fixed;
 	position: relative;
@@ -42,11 +44,12 @@ body {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	padding: 0;
 	background-repeat: no-repeat;
 }
 
 a {
-    margin: 0;
+    	margin: 0;
 	padding: 0;
 	max-width: 100%;
 	max-height: 100%;
@@ -82,15 +85,16 @@ a {
 
 /*Logo*/
 .logSz {
-	justify-content: space-between;
+	justify-content: space-around;
+	background: transparent;
 	position: relative;
-	width: 100%;
-	height: 100%;
-	scale: 1;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
+	width: 140px;
+	height: 85px;
+	display: flex;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	overflow: visible;
 }
 
@@ -136,19 +140,6 @@ a {
     	font-weight: 400;
 }
 
-.logSz {
-	justify-content: space-around;
-	background: transparent;
-	position: relative;
-	width: 140px;
-	height: 85px;
-	display: flex;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	overflow: visible;
-}
 /*Nav Bar Attributes*/
 .navBar {
 	width: auto;
@@ -661,7 +652,7 @@ a {
 
 .portfolio {
 	background: transparent;
-	justify-content: space-between;
+	justify-content: space-around;
 	display: block;
 	column-count: 4;
 	row-count: 1;
