@@ -670,7 +670,7 @@ a {
 	height: auto;
 	object-fit: contain;
 	padding: 0 0 0;
-	margin: 0 0 0;
+	margin: 5px 5px 5px;
 }
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes logoAnim {
