@@ -19,7 +19,7 @@ img {
 html {
 	scroll-behavior: smooth;
 	height:100%;
-    width:100%;
+        width:100%;
 	padding: 0;
 	margin: 0;
 	position: relative;
@@ -132,8 +132,8 @@ a {
 }
 
 .nav-link{
-    	font-size: 20px;
-    	font-weight: 400;
+    	font-size: auto;
+    	font-weight: 100;
 }
 
 /*Nav Bar Attributes*/
@@ -1386,7 +1386,7 @@ a {
         display: block;
 }
 	
-.picFrame h1{
+.picFrame .landingContent h1{
 	font-size: 8px;
 	color: #494F52;
 	font-family: sans-serif;
