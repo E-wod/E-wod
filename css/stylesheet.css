@@ -1382,8 +1382,8 @@ a {
 	margin-top: 1px;
 	margin-bottom: 1px;
 	padding: 0px 0px 0px;
-    z-index: 1;
-    display: block;
+        z-index: 1;
+        display: block;
 }
 	
 .picFrame h1{
@@ -1393,6 +1393,7 @@ a {
 	font-style: italic;
 	text-shadow: 2px 0px 2px azure;
 	line-height: .9;
+	text-decoration: none;
 	font-weight: 100;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -1417,6 +1418,7 @@ a {
 	font-family: sans-serif;
 	font-style: italic;
 	line-height: .9;
+	text-decoration: none;
 	font-weight: 100;
 	margin-left: 0px;
 	margin-right: 0px;
