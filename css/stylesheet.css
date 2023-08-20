@@ -298,6 +298,10 @@ a {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
+
+.h1 {
+	font-weight: 100;
+}
 /*Setting the landing page template for H3*/
 
 .landingContent h3 grp a{
@@ -337,6 +341,10 @@ a {
 	animation-delay: .7s;
 	transition-timing-function: ease ease-in-out; 
 	max-width: 100%;
+}
+
+.h3 {
+	font-weight: 100;
 }
 
 .landingContent h3 span{
@@ -379,6 +387,9 @@ a {
 	transition-timing-function: ease ease-in-out; 
 }
 
+.p {
+	font-weight: 100;
+}
 
 /*Setting the landing page template for Question buttons*/
 .cntr {
@@ -1386,7 +1397,7 @@ a {
         display: block;
 }
 	
-.picFrame .landingContent h1{
+.picFrame h1{
 	font-size: 8px;
 	color: #494F52;
 	font-family: sans-serif;
