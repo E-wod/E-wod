@@ -1387,12 +1387,13 @@ a {
 }
 	
 .picFrame h1{
-	font-size: 12px;
+	font-size: 8px;
 	color: #494F52;
 	font-family: sans-serif;
 	font-style: italic;
 	text-shadow: 2px 0px 2px azure;
 	line-height: .9;
+	font-weight: 100;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1411,11 +1412,12 @@ a {
 .picFrame p{
 	z-index: 1;
 	display: flex;
-	font-size: 8px;
+	font-size: 6px;
 	color: azure;
 	font-family: sans-serif;
 	font-style: italic;
-	line-height: 1.1;
+	line-height: .9;
+	font-weight: 100;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
