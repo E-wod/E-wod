@@ -602,9 +602,9 @@ a {
 .bioPic {
 	background: transparent;
 	opacity: 100%;
-	width: 3%;
-	height: 30%; 
-	display: flex;
+	width: 40%;
+	height: 40%; 
+	display: block;
 	position: relative;
 	align-all: center;
 	margin-top: 0px;
