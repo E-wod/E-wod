@@ -607,8 +607,6 @@ a {
 	height: 100%;
 	display: flex;
 	position: absolute;
-	left: 50%;
-	right: 50%;
 	align-content: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
