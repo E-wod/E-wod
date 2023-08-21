@@ -722,11 +722,11 @@ a {
 }
 
 .picFrame {
-	flex-direction: row;
+	flex-direction: reverse-row;
 	flex-wrap: wrap;
-        max-width: 25%;
+        max-width: 33%;
 	object-fit: contain;
-	float: left;
+	float: center;
 	vertical-align: middle;
 	background-color: transparent;
 	border-radius: 8px;
