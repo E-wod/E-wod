@@ -704,10 +704,11 @@ a {
 
 
 .portfolio {
+	display: flex;
+        flex-wrap: wrap;
 	align-self: center;
 	background: transparent;
 	justify-content: space-between;
-	display: flex;
 	position: inherit;
 	width: 100%;
 	height: 100%;
@@ -720,11 +721,14 @@ a {
 }
 
 .picFrame {
+	flex-wrap: wrap;
+        max-width: 25%;
 	object-fit: contain;
 	float: left;
+	vertical-align: middle;
 	background-color: grey;
 	border-radius: 8px;
-	width: 100%;
+/* 	width: 100%; */
 	height: 100%;
 	justify-content: space-around;
 	margin-right: 5px;
