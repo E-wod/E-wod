@@ -705,9 +705,8 @@ a {
 
 .portfolio {
 	align-self: center;
-	align-contents: center;
 	background: transparent;
-	justify-content: space-around;
+	justify-content: space-between;
 	display: flex;
 	position: inherit;
 	width: 100%;
@@ -725,8 +724,8 @@ a {
 	float: left;
 	background-color: grey;
 	border-radius: 8px;
-	width: 400px;
-	height: 200px;
+	width: 100%;
+	height: 100%;
 	justify-content: space-around;
 	margin-right: 5px;
 	margin-left: 5px;
