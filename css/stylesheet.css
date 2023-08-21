@@ -599,6 +599,26 @@ a {
 	box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
 }
 
+.bioPic {
+	background: transparent;
+	opacity: 60%;
+	width: auto;
+	max-width: 50%;
+	height: auto;
+	display: flex;
+	position: absolute;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 0px 0px 0px;
+	z-index: -19;
+	scale: .7;
+	overflow: hidden;
+	object-fit: contain;
+	box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
+}
+
 .contPage {
 	align-self: center;
 	text-align: center;
