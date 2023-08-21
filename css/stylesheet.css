@@ -704,6 +704,7 @@ a {
 
 
 .portfolio {
+	flex-direction: column;
 	display: flex;
         flex-wrap: wrap;
 	align-self: center;
@@ -721,6 +722,7 @@ a {
 }
 
 .picFrame {
+	flex-direction: row;
 	flex-wrap: wrap;
         max-width: 25%;
 	object-fit: contain;
