@@ -728,10 +728,10 @@ a {
 	object-fit: contain;
 	float: left;
 	vertical-align: middle;
-	background-color: grey;
+	background-color: transparent;
 	border-radius: 8px;
 /* 	width: 100%; */
-	height: 100%;
+	height: auto;
 	justify-content: space-around;
 	margin-right: 5px;
 	margin-left: 5px;
@@ -1362,36 +1362,43 @@ a {
 }
 
 .portfolio {
+	flex-direction: column;
+	display: flex;
+        flex-wrap: wrap;
 	align-self: center;
-	align-contents: center;
 	background: transparent;
-	justify-content: space-around;
-	display: block;
+	justify-content: space-between;
 	position: inherit;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	padding: 0px 0px 0px;
-	margin-right: 1px;
-	margin-left: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	z-index: 5;
 }
 
 .picFrame {
-	object-fit: fill;
-	background-color: grey;
+	flex-direction: row;
+	flex-wrap: wrap;
+        max-width: 25%;
+	object-fit: contain;
+	float: left;
+	vertical-align: middle;
+	background-color: transparent;
 	border-radius: 8px;
-	width: 100%;
+/* 	width: 100%; */
 	height: auto;
 	justify-content: space-around;
-	margin-right: 1px;
-	margin-left: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 	padding: 0px 0px 0px;
         z-index: 1;
         display: block;
-}
+	color: azure;
 	
 .picFrame h1{
 	font-size: 8px;
