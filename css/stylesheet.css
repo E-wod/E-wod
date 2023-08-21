@@ -607,12 +607,13 @@ a {
 	display: flex;
 	position: relative;
 	align-all: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-right: 10px;
-	margin-left: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
 	padding: 0px 0px 0px;
 	z-index: -19;
+	float: top;
 	scale: .7;
 	overflow: hidden;
 	object-fit: cover;
