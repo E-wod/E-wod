@@ -602,8 +602,8 @@ a {
 .bioPic {
 	background: transparent;
 	opacity: 100%;
-	width: 40%;
-	height: 40%; 
+	width: 80%;
+	height: 80%; 
 	display: block;
 	position: relative;
 	align-all: center;
@@ -613,8 +613,7 @@ a {
 	margin-left: 0px;
 	padding: 0px 0px 0px;
 	z-index: -19;
-	float: top;
-	scale: .7;
+	scale: 1;
 	overflow: hidden;
 	object-fit: cover;
 }
