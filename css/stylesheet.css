@@ -726,7 +726,6 @@ a {
 	flex-direction: column;
 	display: flex;
         flex-wrap: wrap;
-	align-self: center;
 	background: transparent;
 	justify-content: space-between;
 	position: inherit;
