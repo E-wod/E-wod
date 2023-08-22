@@ -33,7 +33,7 @@ body {
     	width: 100%;
 	z-index: 0;
     	object-fit: cover;
-	background: linear-gradient(105deg,#303030 39%,#000000 105%);
+	background: linear-gradient(180deg, rgba(181,181,181,1) 0%, rgba(143,143,143,1) 20%, rgba(50,16,7,1) 86%, rgba(0,0,0,1) 100%);
 	background-attachment: fixed;
 	position: relative;
 	margin-left: 0px;
