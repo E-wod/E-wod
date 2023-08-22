@@ -583,7 +583,7 @@ a {
 	background: transparent;
 	opacity: 60%;
 	width: auto;
-	max-width: auto;
+	max-width: 100%;
 	height: auto;
 	display: flex;
 	position: absolute;
