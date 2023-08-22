@@ -1360,15 +1360,15 @@ a {
 .bioPic {
 	background: transparent;
 	opacity: 100%;
-	width: 80%;
-	height: 80%; 
+	width: 100%;
+	height: 100%; 
 	display: block;
 	position: relative;
 	align-contents: center;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
-	margin-left: 10%;
+	margin-left: 20%;
 	padding: 0px 0px 0px;
 	z-index: -19;
 	scale: 1;
