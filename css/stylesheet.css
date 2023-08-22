@@ -1077,10 +1077,10 @@ a {
 	color: #d22900;
 	cursor: pointer;
 	height: auto;
-    z-index: 1;
-    display: block;
+        z-index: 1;
+        display: block;
 	width: 45px;
-    animation: h3Anim 2s ease forwards;
+        animation: h3Anim 2s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	background: transparent;
 }
@@ -1339,7 +1339,7 @@ a {
 }	
 .beePic {
 	background: transparent;
-	opacity: 100%;
+	opacity: 80%;
 	width: auto;
 	max-width: 100%;
 	height: auto;
