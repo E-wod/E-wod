@@ -606,7 +606,7 @@ a {
 	height: 80%; 
 	display: block;
 	position: relative;
-	align-all: center;
+	align-contents: center;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
@@ -615,7 +615,7 @@ a {
 	z-index: -19;
 	scale: 1;
 	overflow: hidden;
-	object-fit: cover;
+	object-fit: contain;
 }
 
 .contPage {
@@ -1341,11 +1341,11 @@ a {
 	background: transparent;
 	opacity: 100%;
 	width: auto;
-	max-width: auto;
+	max-width: 100%;
 	height: auto;
 	display: flex;
 	position: absolute;
-	margin-top: 160px;
+	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-right: 10px;
 	margin-left: 10px;
@@ -1355,6 +1355,25 @@ a {
 	overflow: hidden;
 	object-fit: contain;
 	box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
+}
+
+.bioPic {
+	background: transparent;
+	opacity: 100%;
+	width: 80%;
+	height: 80%; 
+	display: block;
+	position: relative;
+	align-contents: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding: 0px 0px 0px;
+	z-index: -19;
+	scale: 1;
+	overflow: hidden;
+	object-fit: contain;
 }
 
 .contPage {
