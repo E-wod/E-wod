@@ -33,7 +33,7 @@ body {
     	width: 100%;
 	z-index: 0;
     	object-fit: cover;
-	background: linear-gradient(180deg, rgba(181,181,181,1) 0%, rgba(143,143,143,1) 20%, rgba(50,16,7,1) 86%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(180deg, rgba(128,128,128,1) 0%, rgba(85,85,85,1) 35%, rgba(37,37,37,1) 72%, rgba(0,0,0,1) 100%);
 	background-attachment: fixed;
 	position: relative;
 	margin-left: 0px;
@@ -865,7 +865,7 @@ a {
 html {
 	scroll-behavior: smooth;
 	height:100%;
-    width:100%;
+        width:100%;
 	padding: 0;
 	margin: 0;
 	position: relative;
@@ -883,7 +883,7 @@ html {
 	margin-right: 95px;
 	margin-top: 35px;
 	margin-bottom: 45px;
-    position: absolute;
+        position: absolute;
 	top: 0;
 	left: 0;
 	padding: 0px 0px 0px;
@@ -902,7 +902,7 @@ body{
 	width: 100%;
 	z-index: 0;
 	object-fit: cover;
-	background: linear-gradient(105deg,#303030 39%,#000000 105%);
+	background: linear-gradient(180deg, rgba(128,128,128,1) 0%, rgba(85,85,85,1) 35%, rgba(37,37,37,1) 72%, rgba(0,0,0,1) 100%);
 	background-attachment: fixed;
 	position: relative;
 	margin-left: 0px;
