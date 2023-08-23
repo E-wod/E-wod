@@ -586,6 +586,7 @@ a {
 	background: transparent;
 	opacity: 70%;
 	height: auto;
+	max-width: auto;
 	display: flex;
 	position: absolute;
 	margin-top: 0px;
@@ -604,6 +605,7 @@ a {
 	background: transparent;
 	opacity: 100%;
 	width: 100%;
+	max-width: auto;
 	height: 100%; 
 	display: block;
 	position: relative;
