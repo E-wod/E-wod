@@ -260,18 +260,18 @@ a {
 .landingContent{
 	background-color: transparent;
 	position: absolute;
-    	align-items: center;
+    align-items: center;
 	justify-content: space-between;
-	width: auto;
-	height: auto;
-	margin-left: 40px;
-	margin-right: 40px;
-	margin-top: 150px;
-	margin-bottom: 2px;
-	padding-top: 10px;
-	padding-bottom: 0px;
-	padding-right: 12px;
-	padding-left: 12px;
+	width: 99%;
+	height: 98%;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 150px;
+	padding-bottom: 70px;
+	padding-right: 70px;
+	padding-left: 70px;
 	display: block;
 	gap: 5px;
 }
@@ -287,9 +287,9 @@ a {
 	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 20px;
-	margin-bottom: 5px;
-	padding: 10px 0px 5px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding: 0px 0px 0px;
 	width: 100%;
 	max-width: 80%;
 	position: relative;
@@ -348,7 +348,7 @@ a {
 }
 
 .landingContent h3 span{
-    	font-size: 43px;
+    font-size: 43px;
 	color: azure;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
@@ -360,7 +360,7 @@ a {
 /*Setting the landing page template for paragraph*/
 .landingContent p{
 	z-index: 1;
-        display: flex;
+    display: flex;
 	font-size: 20px;
 	color: azure;
 	font-family: sans-serif;
@@ -369,19 +369,19 @@ a {
 	text-decoration: none;
 	font-style: italic;
 	line-height: 1.1;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1%;
+	padding-bottom: 1%;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-    	max-width: 88%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+    max-width: 88%;
 	max-height: 15%;
 	background: transparent;
 	position: relative;
-	overflow: hidden;
+	overflow: visible;
 	opacity: 0;
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: ease ease-in-out; 
@@ -398,9 +398,8 @@ a {
 	width: 100%;
 	height: 100%;
 	display: inline-block;
-    	margin: auto;
+    margin: auto;
 	position: relative;
-	margin: 0;
 	padding: 0;
 }
 
@@ -409,16 +408,19 @@ a {
 	height: auto;
 	display: flex;
 	text-decoration: none;
-	z-index: 5;
+	z-index: 15;
 	overflow: hidden;
 	justify-content: center;
 	position: relative;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-right: 10px;
-	margin-left: 10px;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	margin-right: 5%;
+	margin-left: 5%;
 	background: transparent;
-	padding: 5px 5px 5px;
+	padding-top: 0%;
+	padding-bottom: 2%;
+	padding-right: 5%;
+	padding-left: 5%;
 	animation: choiceAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	transition: 1s;
@@ -433,6 +435,7 @@ a {
 	margin-bottom: 0px;
 	width: 300px;
 	height: auto;
+	z-index: 15;
 	font-size: 20px;
 	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
@@ -487,7 +490,7 @@ a {
 
 /*Setting the alignment and template for Social links*/
 .socLnk {
-	z-index: 5;
+	z-index: 15;
 	overflow: hidden;
 	justify-content: center;
 	position: relative;
@@ -523,7 +526,7 @@ a {
 	width: 60px;
 	height: 60px;
 	background: transparent;
-	z-index: -3;
+	z-index: 15;
 	font-family:"Open Sans", "sans-serif";
 	animation: menuAnim 1s ease forwards;
 	animation-delay: calc(.3s * var(--i));
@@ -568,29 +571,29 @@ a {
 
 /*background layout template*/
 .bkg {
-    	width:100%;
+    width:100%;
 	height: 100%;
 	z-index: -31;
 	background-repeat:repeat-x;
 	align-items: center;
 	margin: 0;
-    	opacity: 100%;
+    opacity: 100%;
 	position: relative;
 	object-position: cover;
 	padding: 0;
 }
 
 .beePic {
-	background: grey;
-	opacity: 70%;
+	background: transparent;
+	opacity: 60%;
 	height: auto;
-	max-width: 70%;
+	max-width: 60%;
 	display: flex;
 	position: absolute;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 0px;
+	margin-top: 5%;
+	margin-bottom: 0%;
+	margin-right: 15%x;
+	margin-left: 15%;
 	padding: 0px 0px 0px;
 	z-index: -19;
 	scale: 1;
@@ -601,45 +604,22 @@ a {
 
 .bioPic {
 	background: transparent;
-	opacity: 80%;
+	opacity: 70%;
 	width: 100%;
 	max-width: auto;
 	height: 100%; 
 	display: block;
 	position: relative;
 	align-contents: center;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 10%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-right: 5%;
+	margin-left: 5%;
 	padding: 0px 0px 0px;
 	z-index: -19;
 	scale: 1;
 	overflow: hidden;
 	object-fit: contain;
-}
-
-.contPage {
-	align-self: center;
-	text-align: center;
-	align-content: center;
-	justify-content: space-around;
-	background: #64673B;
-	opacity: 100%;
-	width: 15%;
-	height: 15%;
-	max-height: 100%;
-	display: inline-block;
-	text-decoration: none;
-	margin-top: -175px;
-	margin-bottom: 2px;
-	margin-right: 2px;
-	margin-left: 60px;
-	padding: 2px 2px 2px;
-	z-index: 3;
-	scale: .7;
-	border-radius: 30px;
-	position: relative;
 }
 
 .picFrame h1{
@@ -725,7 +705,7 @@ a {
 .portfolio {
 	flex-direction: column;
 	display: flex;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 	background: transparent;
 	justify-content: space-between;
 	position: inherit;
@@ -743,13 +723,12 @@ a {
 .picFrame {
 	flex-direction: reverse-row;
 	flex-wrap: wrap;
-        max-width: 30%;
+    max-width: 30%;
 	object-fit: contain;
 	float: center;
 	vertical-align: middle;
 	background-color: transparent;
 	border-radius: 8px;
-/* 	width: 100%; */
 	height: auto;
 	justify-content: space-around;
 	margin-right: 2px;
@@ -757,8 +736,8 @@ a {
 	margin-top: 2px;
 	margin-bottom: 2px;
 	padding: 0px 0px 0px;
-        z-index: 1;
-        display: block;
+    z-index: 1;
+    display: block;
 	color: azure;
 
 }
@@ -1123,18 +1102,18 @@ a {
 	
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
-	font-size: 11px;
+	font-size: 17px;
 	color: #494F52;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: italic;
 	text-shadow: 12px 12px 12px 12px azure;
 	line-height: .9;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 15px;
-	margin-bottom: 5px;
-	padding: 10px 0px 5px;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 15%;
+	margin-bottom: 15%;
+	padding: 0px 0px 0px;
 	width: 100%;
 	max-width: 80%;
 	position: relative;
@@ -1205,19 +1184,19 @@ a {
 	font-weight: 100;
 	font-style: italic;
 	line-height: 1.1;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 60px;
-	margin-bottom: 75px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-top: 10%;
+	margin-bottom: 10%;
 	max-width: 95%;
 	max-height: auto;
 	background: transparent;
 	position: relative;
-	overflow: inherit;
+	overflow: visible;
 	opacity: 0;
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: ease ease-in-out; 
@@ -1332,17 +1311,16 @@ a {
 .beePic {
 	background: transparent;
 	opacity: 70%;
-	width: auto;
-	max-width: 100%;
 	height: auto;
+	max-width: 70%;
 	display: flex;
 	position: absolute;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-right: 5px;
-	margin-left: 5px;
+	margin-top: 15%;
+	margin-bottom: 5%;
+	margin-right: 5%x;
+	margin-left: 5%;
 	padding: 0px 0px 0px;
-	z-index: -5;
+	z-index: -19;
 	scale: 1;
 	overflow: hidden;
 	object-fit: contain;
@@ -1351,16 +1329,17 @@ a {
 
 .bioPic {
 	background: transparent;
-	opacity: 100%;
+	opacity: 80%;
 	width: 100%;
+	max-width: auto;
 	height: 100%; 
 	display: block;
 	position: relative;
 	align-contents: center;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 10%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-right: 5%;
+	margin-left: 5%;
 	padding: 0px 0px 0px;
 	z-index: -19;
 	scale: 1;
@@ -1368,33 +1347,10 @@ a {
 	object-fit: contain;
 }
 
-.contPage {
-	align-self: center;
-	text-align: center;
-	align-content: center;
-	justify-content: space-around;
-	background: #64673B;
-	opacity: 100%;
-	width: 25%;
-	height: 25%;
-	max-height: 100%;
-	display: inline-block;
-	text-decoration: none;
-	margin-top: -75px;
-	margin-bottom: 2px;
-	margin-right: 2px;
-	margin-left: 60px;
-	padding: 2px 2px 2px;
-	z-index: 3;
-	scale: .7;
-	border-radius: 30px;
-	position: relative;
-}
-
 .portfolio {
 	flex-direction: column;
 	display: flex;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 	background: transparent;
 	justify-content: space-between;
 	position: inherit;
@@ -1412,13 +1368,12 @@ a {
 .picFrame {
 	flex-direction: reverse-row;
 	flex-wrap: wrap;
-        max-width: 30%;
+    max-width: 30%;
 	object-fit: contain;
 	float: center;
 	vertical-align: middle;
 	background-color: transparent;
 	border-radius: 8px;
-/* 	width: 100%; */
 	height: auto;
 	justify-content: space-around;
 	margin-right: 2px;
@@ -1426,8 +1381,8 @@ a {
 	margin-top: 2px;
 	margin-bottom: 2px;
 	padding: 0px 0px 0px;
-        z-index: 1;
-        display: block;
+    z-index: 1;
+    display: block;
 	color: azure;
 
 }
