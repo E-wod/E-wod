@@ -611,8 +611,8 @@ a {
 
 .bioPic {
 	background: transparent;
-	opacity: 70%;
-	height: 100%;
+	opacity: 100%;
+	height: auto;
 	max-width: 50%;
 	width: 50%;
 	display: flex;
