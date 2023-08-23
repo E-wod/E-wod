@@ -608,8 +608,8 @@ a {
 .bioPic {
 	background: transparent;
 	opacity: 70%;
-	width: 100%;
-	height: 100%; 
+	width: 60%;
+	height: 60%; 
 	display: block;
 	position: relative;
 	align-contents: center;
