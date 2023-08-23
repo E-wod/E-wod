@@ -578,6 +578,8 @@ a {
 	z-index: -31;
 	background-repeat: repeat-x;
 	align-items: center;
+	height: auto;
+	width: 100%;
 	margin: 0;
     	opacity: 100%;
 	position: relative;
@@ -588,7 +590,8 @@ a {
 .beePic {
 	background: transparent;
 	opacity: 60%;
-
+	height: auto;
+	width: 100%;
 	display: flex;
 	position: absolute;
 	margin-top: 5%;
@@ -606,8 +609,8 @@ a {
 .bioPic {
 	background: transparent;
 	opacity: 70%;
-
-	max-height: auto; 
+	height: auto;
+	width: 100%;
 	display: flex;
 	position: relative;
 	align-contents: center;
