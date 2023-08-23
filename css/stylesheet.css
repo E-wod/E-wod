@@ -608,7 +608,7 @@ a {
 .bioPic {
 	background: transparent;
 	opacity: 70%;
-	width: 60%;
+	width: 50%;
 	height: 100%;
 	max-height: auto; 
 	display: block;
@@ -1313,15 +1313,15 @@ a {
 
 .beePic {
 	background: transparent;
-	opacity: 70%;
+	opacity: 60%;
 	height: auto;
-	max-width: 70%;
+	max-width: 60%;
 	display: flex;
 	position: absolute;
-	margin-top: 15%;
-	margin-bottom: 5%;
-	margin-right: 5%x;
-	margin-left: 5%;
+	margin-top: 5%;
+	margin-bottom: 0%;
+	margin-right: 15%x;
+	margin-left: 15%;
 	padding: 0px 0px 0px;
 	z-index: -19;
 	scale: 1;
@@ -1332,10 +1332,10 @@ a {
 
 .bioPic {
 	background: transparent;
-	opacity: 80%;
-	width: 100%;
-	max-width: auto;
-	height: 100%; 
+	opacity: 70%;
+	width: 50%;
+	height: 100%;
+	max-height: auto; 
 	display: block;
 	position: relative;
 	align-contents: center;
@@ -1349,6 +1349,7 @@ a {
 	overflow: hidden;
 	object-fit: contain;
 }
+
 
 .portfolio {
 	flex-direction: column;
