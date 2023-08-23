@@ -578,7 +578,7 @@ a {
 	z-index: -31;
 	background-repeat: repeat-x;
 	align-items: center;
-	height: auto;
+	height: 100%;
 	max-width: 100%;
 	width: 100%;
 	margin: 0;
@@ -586,12 +586,13 @@ a {
 	position: relative;
 	object-position: cover;
 	padding: 0;
+	background-position: center;
 }
 
 .beePic {
 	background: transparent;
 	opacity: 60%;
-	height: auto;
+	height: 100%;
 	width: 100%;
 	max-width: 100%;
 	display: flex;
@@ -611,7 +612,7 @@ a {
 .bioPic {
 	background: transparent;
 	opacity: 70%;
-	height: auto;
+	height: 100%;
 	max-width: 100%;
 	width: 100%;
 	display: flex;
