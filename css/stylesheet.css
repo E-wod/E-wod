@@ -12,7 +12,8 @@
 }
 
 img {
-	scale: 1;
+    	height: 100%;
+    	width: 100%;
 }
 
 /*HTML Attributes*/
@@ -615,16 +616,15 @@ a {
 	display: flex;
 	position: relative;
 	align-contents: center;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	margin-right: 5%;
-	margin-left: 5%;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	padding-right: 5%;
-	padding-left: 5%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-right: 15%;
+	margin-left: 15%;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	padding-right: 0%;
+	padding-left: 0%;
 	z-index: -19;
-
 	overflow: hidden;
 	object-fit: contain;
 }
