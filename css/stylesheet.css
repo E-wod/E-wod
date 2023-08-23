@@ -401,6 +401,8 @@ a {
 	display: inline-block;
     	margin: auto;
 	position: relative;
+	margin: 0;
+	padding: 0;
 }
 
 .btnBox {
@@ -483,7 +485,6 @@ a {
 	overflow: hidden;
 	transition-timing-function: 1s ease ease-in-out;
 }
-
 
 /*Setting the alignment and template for Social links*/
 .socLnk {
@@ -577,6 +578,8 @@ a {
     	opacity: 100%;
 	position: relative;
 	object-position: cover;
+	margin: 0;
+	padding: 0;
 }
 
 .beePic {
@@ -585,10 +588,10 @@ a {
 	height: auto;
 	display: flex;
 	position: absolute;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-right: 5px;
-	margin-left: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
 	padding: 0px 0px 0px;
 	z-index: -5;
 	scale: 1;
@@ -958,15 +961,15 @@ a {
 	
 .nav-menu {
 	position: inherit;
-    left: 300%;
-    top: 0px;
+    	left: 300%;
+    	top: 0px;
 	display: flex;
-    flex-direction: column-reverse;
-    background-color: transparent;
-    width: auto;
+    	flex-direction: column-reverse;
+    	background-color: transparent;
+   	width: auto;
 	height: auto;
-    border-radius: 10px;
-    transition: 0.3s;
+    	border-radius: 10px;
+    	transition: 0.3s;
 	overflow: visible;
 	z-index: 3;
 	font-color: #d22900;
@@ -974,7 +977,7 @@ a {
 	margin-right: 5px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-    padding: 0;
+    	padding: 0;
 	animation: choiceAnim 1.5s ease forwards;
 	animation-timing-function: ease-in-out;
 }
