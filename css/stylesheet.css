@@ -609,7 +609,7 @@ a {
 	background: transparent;
 	opacity: 70%;
 	width: 60%;
-	height: auto; 
+	max-height: auto; 
 	display: block;
 	position: relative;
 	align-contents: center;
