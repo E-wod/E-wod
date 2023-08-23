@@ -577,12 +577,11 @@ a {
     	opacity: 100%;
 	position: relative;
 	object-position: cover;
-	margin: 0;
 	padding: 0;
 }
 
 .beePic {
-	background: transparent;
+	background: grey;
 	opacity: 70%;
 	height: auto;
 	max-width: 70%;
