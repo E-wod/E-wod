@@ -580,6 +580,7 @@ a {
 	align-items: center;
 	height: auto;
 	max-width: 100%;
+	width: 100%;
 	margin: 0;
     	opacity: 100%;
 	position: relative;
@@ -591,6 +592,7 @@ a {
 	background: transparent;
 	opacity: 60%;
 	height: auto;
+	width: 100%;
 	max-width: 100%;
 	display: flex;
 	position: absolute;
@@ -611,6 +613,7 @@ a {
 	opacity: 70%;
 	height: auto;
 	max-width: 100%;
+	width: 100%;
 	display: flex;
 	position: relative;
 	align-contents: center;
