@@ -169,7 +169,8 @@ a {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-size: 18px;
-	width: 100px;
+	width: auto;
+	max-width: 200px;
 	height: auto;
 	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
