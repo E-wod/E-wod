@@ -593,15 +593,15 @@ a {
 .beePic {
 	background: transparent;
 	opacity: 60%;
-	height: 60%;
-	width: 60%;
+	height: auto;
+	width: auto;
 	max-width: 100%;
 	display: flex;
 	position: absolute;
 	margin-top: 7%;
 	margin-bottom: 0%;
-	margin-right: 0%x;
-	margin-left: 0%;
+	margin-right: 15%;
+	margin-left: 20%;
 	padding: 0px 0px 0px;
 	z-index: -19;
 	scale: 1;
