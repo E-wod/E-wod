@@ -593,7 +593,7 @@ a {
 .beePic {
 	background: transparent;
 	opacity: 60%;
-	height: auto;
+	height: 60%;
 	width: 60%;
 	max-width: 100%;
 	display: flex;
