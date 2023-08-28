@@ -157,7 +157,7 @@ a {
 	animation: menuAnim 1s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	transition: 1s;
-	
+	opacity: 0;
 
 }
 
@@ -187,6 +187,7 @@ a {
 	animation: menuAnim 1s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	padding: 5px 5px 5px;
+	opacity: 0;
 }
 /*Setting the attributes for button*/
 .navBar a:nth-child(1 2 3) {
