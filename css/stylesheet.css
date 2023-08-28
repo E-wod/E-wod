@@ -156,8 +156,6 @@ a {
 	padding: 5px 5px 5px;
 	animation: menuAnim 1s ease forwards;
 	animation-delay: calc(.3s * var(--i));
-/* 	animation: pAnim 1.5s ease forwards; */
-	animation-timing-function: ease-in-out;
 	transition: 1s;
 	
 
@@ -186,11 +184,8 @@ a {
 	color: #d22900;
 	font-color: #d22900;
 	overflow: hidden;
-	animation-timing-function: ease-in-out;
 	animation: menuAnim 1s ease forwards;
 	animation-delay: calc(.3s * var(--i));
-/* 	transition: 3s;
-	animation: choiceAnim .5s ease forwards; */
 	padding: 5px 5px 5px;
 }
 /*Setting the attributes for button*/
