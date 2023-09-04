@@ -687,14 +687,13 @@ a {
 	z-index: 1;
 	scale: .5;
 } */
-.picFrame:hover,
-.picFrame .active{
+.picFrame:hover{
 	text-decoration: none;
 	overflow: inherit;
 	cursor: pointer;
 	scale: 1.75;
 	z-index: 8;
-	transition-timing-function: ease ease-in-out; 
+	animation: pAnim 1s ease forwards; 
 }
 
 .picFrame {
