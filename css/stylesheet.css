@@ -690,7 +690,7 @@ a {
 	transition-timing-function: 2s ease-in-out;
 	cursor: pointer;
 	scale: 2;
-	z-index: 20;
+	z-index: 8;
 }
 
 .picFrame {
