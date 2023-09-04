@@ -155,6 +155,7 @@ a {
 	background: transparent;
 	padding: 5px 5px 5px;
 	animation: menuAnim 1s ease forwards;
+	animation-timing-function: ease-in-out;
 	animation-delay: calc(.3s * var(--i));
 	transition: 1s;
 	opacity: 0;
@@ -185,6 +186,7 @@ a {
 	font-color: #d22900;
 	overflow: hidden;
 	animation: menuAnim 1s ease forwards;
+	animation-timing-function: ease-in-out;
 	animation-delay: calc(.3s * var(--i));
 	padding: 5px 5px 5px;
 	opacity: 0;
@@ -204,7 +206,7 @@ a {
 	height: 0%;
 	z-index: -1;
 	transition: .9s;
-	transition-timing-function: ease; 
+	transition-timing-function: ease-in-out; 
 }
 /*Animation Element*/
 .navBar a:hover::before {
@@ -215,7 +217,7 @@ a {
 .navBar a:hover{
 	color: azure;
 	transition: .3s;
-	transition-timing-function: ease;
+	transition-timing-function: ease-in-out;
 	background: transparent;
 	text-decoration: none;
 	box-shadow: 0 7px 17px azure;
@@ -518,8 +520,6 @@ a {
 .socLnk a {
 	align-items: center;
 	font-size: 40px;
-	transition: 1s;
-	transition-timing-function: ease; 
 	text-decoration: none;
 	display: flex;
 	justify-content: center;
@@ -533,6 +533,8 @@ a {
 	background: transparent;
 	z-index: 15;
 	font-family:"Open Sans", "sans-serif";
+	transition: 1s;
+	transition-timing-function: ease; 
 	animation: menuAnim 1s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	opacity: 0;
@@ -995,6 +997,7 @@ a {
 	text-decoration: none;
 	box-shadow: 0 0px 0px azure;
 	overflow: visible;
+	animation-timing-function: ease-in-out;
 }
 	
 /*Nav Bar Attributes*/
@@ -1032,13 +1035,13 @@ a {
 	color: azure;
 	opacity: 0;
 	transition: .3s;
-	transition-timing-function: ease ease-in-out; 
+	transition-timing-function: ease-in-out; 
 }
 
 .navBar a:hover {
 	color: azure;
 	transition: .3s;
-	transition-timing-function: ease;
+	transition-timing-function: ease-in-out;
 	background: transparent;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
