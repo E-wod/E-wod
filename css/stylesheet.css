@@ -489,7 +489,7 @@ a {
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	overflow: hidden;
-	transition-timing-function: 1s ease ease-in-out;
+	transition-timing-function: ease-out;
 }
 
 /*Setting the alignment and template for Social links*/
@@ -513,6 +513,7 @@ a {
 	text-decoration: none;
 	animation: menuAnim ease forwards;
 	animation-delay: calc(.1s * var(--i));
+	transition-timing-function: ease-in-out;
 	opacity: 0;
 }
 
@@ -573,7 +574,7 @@ a {
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	overflow: hidden;
-	transition-timing-function: 1s ease ease-in-out;
+	transition-timing-function: ease-out;
 }
 
 /*background layout template*/
@@ -982,7 +983,7 @@ a {
 	text-decoration: none;
 	box-shadow: 0 0px 0px azure;
 	overflow: visible;
-	transition-timing-function: ease ease-in-out;
+	transition-timing-function: ease-out;
 }
 
 .nav-item {
@@ -1267,7 +1268,7 @@ a {
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	overflow: hidden;
-	transition-timing-function: 1s ease;
+	transition-timing-function: ease-out;
 }
 	
 .socLnk a {
@@ -1319,7 +1320,7 @@ a {
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	overflow: hidden;
-	transition-timing-function: 1s ease ease-in-out;
+	transition-timing-function: ease-out;
 }	
 
 .beePic {
