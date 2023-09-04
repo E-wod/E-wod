@@ -694,7 +694,6 @@ a {
 	cursor: pointer;
 	scale: 1.75;
 	z-index: 8;
-	animation: pAnim 1s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 }
 
@@ -713,7 +712,7 @@ a {
 	margin-top: 2px;
 	margin-bottom: 2px;
 	padding: 0px 0px 0px;
-    	z-index: 1;
+    	z-index: -4;
     	display: block;
 	color: azure;
 
@@ -737,7 +736,7 @@ a {
 	padding-left: 0%;
 	display: block;
 	gap: 5px;
-	z-index: 5;
+	z-index: -2;
 }
 
 .showBox {
@@ -759,7 +758,7 @@ a {
 	object-fit: contain;
 	float: inherit;
 	justify-content: space-around;
-	z-index: 5;
+	z-index: -1;
 	
 }
 /* -------------------------------------------------------------PARALLAX SETTINGS--------------------------------------------------------*/
