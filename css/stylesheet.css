@@ -732,6 +732,7 @@ a {
 	padding-left: 0%;
 	display: block;
 	gap: 5px;
+	z-index: 5;
 }
 
 .showBox {
@@ -753,6 +754,7 @@ a {
 	object-fit: contain;
 	float: inherit;
 	justify-content: space-around;
+	z-index: 5;
 	
 }
 /* -------------------------------------------------------------PARALLAX SETTINGS--------------------------------------------------------*/
