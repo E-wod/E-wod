@@ -692,15 +692,11 @@ a {
 }
 
 .portfolio {
-	flex-direction: column;
 	display: flex;
     	flex-wrap: wrap;
 	background: transparent;
 	justify-content: space-between;
 	position: inherit;
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
 	padding: 0px 0px 0px;
 	margin-right: 2px;
 	margin-left: 2px;
