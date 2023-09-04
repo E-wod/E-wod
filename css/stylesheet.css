@@ -229,9 +229,9 @@ a {
     	text-decoration: none;
 }
 
-/* .bar {
+.bar {
 	text-decoration: none;
-	display: flex;
+	display: block;
 	width: 25px;
 	height: 3px;
 	margin: 5px auto;
@@ -240,7 +240,7 @@ a {
 	background: azure;
 }
 
-.hamburger.active .bar:nth-child(2) {
+/* .hamburger.active .bar:nth-child(2) {
     	opacity: 0;
 }
 
@@ -989,6 +989,11 @@ a {
 	margin: 0 0 0;
 	align-items: center; 
 }
+
+.nav-link{
+    	font-size: auto;
+    	font-weight: 100;
+}
 	
 .nav-item :active,	
 .nav-item .hover {
@@ -1045,7 +1050,7 @@ a {
 }
 	
 .bar {
-	display: flex;
+	display: block;
 	width: 25px;
 	height: 3px;
 	margin: 5px auto;
