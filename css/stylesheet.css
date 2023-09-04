@@ -691,9 +691,48 @@ a {
 	
 }
 
+/* .portfolio {
+	flex-direction: column;
+	display: flex;
+    	flex-wrap: wrap;
+	background: transparent;
+	justify-content: space-between;
+	position: inherit;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	padding: 0px 0px 0px;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	z-index: 5;
+} */
+
+.picFrame {
+	flex-direction: reverse-row;
+	flex-wrap: wrap;
+    	max-width: 30%;
+	object-fit: contain;
+	float: center;
+	vertical-align: middle;
+	background-color: transparent;
+	border-radius: 8px;
+	height: auto;
+	justify-content: space-around;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding: 0px 0px 0px;
+    	z-index: 1;
+    	display: block;
+	color: azure;
+
+}
 .obJects{
 	background-color: transparent;
-	position: absolute;
+	position: relative;
     	align-items: center;
 	justify-content: space-between;
 	width: 98%;
@@ -741,49 +780,6 @@ a {
 }
 
 
-
-/*-------------------------------------------------------------------------------------portfolio animation-------------------------------*/
-
-
-.portfolio {
-	flex-direction: column;
-	display: flex;
-    	flex-wrap: wrap;
-	background: transparent;
-	justify-content: space-between;
-	position: inherit;
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	padding: 0px 0px 0px;
-	margin-right: 2px;
-	margin-left: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	z-index: 5;
-}
-
-.picFrame {
-	flex-direction: reverse-row;
-	flex-wrap: wrap;
-    	max-width: 30%;
-	object-fit: contain;
-	float: center;
-	vertical-align: middle;
-	background-color: transparent;
-	border-radius: 8px;
-	height: auto;
-	justify-content: space-around;
-	margin-right: 2px;
-	margin-left: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding: 0px 0px 0px;
-    	z-index: 1;
-    	display: block;
-	color: azure;
-
-}
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes logoAnim {
 	0% {
