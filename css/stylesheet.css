@@ -217,7 +217,7 @@ a {
 .navBar a:hover{
 	color: azure;
 	transition: .3s;
-	transition-timing-function: ease-in-out;
+	transition-timing-function: ease-out;
 	background: transparent;
 	text-decoration: none;
 	box-shadow: 0 7px 17px azure;
@@ -1041,7 +1041,7 @@ a {
 .navBar a:hover {
 	color: azure;
 	transition: .3s;
-	transition-timing-function: ease-in-out;
+	transition-timing-function: ease-out;
 	background: transparent;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
