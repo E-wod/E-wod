@@ -229,7 +229,7 @@ a {
     	text-decoration: none;
 }
 
-.bar {
+/* .bar {
 	text-decoration: none;
 	display: flex;
 	width: 25px;
@@ -250,7 +250,7 @@ a {
 
 .hamburger.active .bar:nth-child(3) {
     	transform: translateY(-8px) rotate(-45deg);
-}
+} */
 
 li {
     	list-style: none;
@@ -987,14 +987,12 @@ a {
 
 .nav-item {
 	margin: 0 0 0;
-	z-index: 12;
 	align-items: center; 
 }
 	
 .nav-item :active,	
 .nav-item .hover {
 	color: azure;
-	z-index: 12;
 	text-decoration: none;
 	box-shadow: 0 0px 0px azure;
 	overflow: visible;
@@ -1019,7 +1017,6 @@ a {
 	max-height: auto;
 	animation: choiceAnim .5s ease forwards;
 	border-radius: 8px;
-	z-index: 12;
 }
 	
 /*Nav Bar Anchor Tag*/
@@ -1036,7 +1033,6 @@ a {
 	color: azure;
 	opacity: 0;
 	transition: .3s;
-	z-index: 12;
 }
 
 .navBar a:hover {
@@ -1046,7 +1042,6 @@ a {
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	overflow: visible;
-	z-index: 12;
 }
 	
 .bar {
@@ -1056,7 +1051,6 @@ a {
 	margin: 5px auto;
 	transition: all 0.3s ease-in-out;
 	background: azure;
-	z-index: 12;
 }
 	
 	
@@ -1098,7 +1092,6 @@ a {
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	overflow: visible;
-	transition-timing-function: ease-in-out;
 }	
 
 .landingContent{
