@@ -683,7 +683,7 @@ a {
 	z-index: 5;
 }
 
-.picFrame::before {
+.picFrame:hover::before {
 	z-index: 1;
 	scale: 1;
 }
