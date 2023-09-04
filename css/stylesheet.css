@@ -674,11 +674,11 @@ a {
 	display: flex;
 	margin-left: 1%;
 	margin-right: 1%;
-	margin-top: 0%;
+	margin-top: 50%;
 	margin-bottom: 0px;
 	padding-left: 0px;
 	padding-right: 0px;
-	padding-top: 50%;
+	padding-top: 0%;
 	padding-bottom: 0px;
 	max-width: 98%;
 	max-height: auto;
@@ -687,7 +687,7 @@ a {
 	overflow: inherit;
 	object-fit: contain;
 	float: inherit;
-	justify-content: space-between;
+	justify-content: space-around;
 	
 }
 
