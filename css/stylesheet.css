@@ -983,14 +983,12 @@ a {
 	text-decoration: none;
 	box-shadow: 0 0px 0px azure;
 	overflow: visible;
-	transition-timing-function: ease-out;
 }
 
 .nav-item {
 	margin: 0 0 0;
 	z-index: 12;
 	align-items: center; 
-	animation-timing-function: ease-in-out;
 }
 	
 .nav-item :active,	
@@ -1038,14 +1036,12 @@ a {
 	color: azure;
 	opacity: 0;
 	transition: .3s;
-	transition-timing-function: ease-in-out; 
 	z-index: 12;
 }
 
 .navBar a:hover {
 	color: azure;
 	transition: .3s;
-	transition-timing-function: ease-out;
 	background: transparent;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
