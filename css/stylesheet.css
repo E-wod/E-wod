@@ -714,7 +714,7 @@ a {
 	cursor: pointer;
 	scale: 1.05;
 	z-index: 999999;
-	animation: pAnim 1s ease forwards; 
+	transition-timing-function: ease ease-in-out; 
 }
 
 /* .picFrame:hover{
