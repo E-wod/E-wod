@@ -709,10 +709,20 @@ a {
 	z-index: 5;
 } */
 
+.picFrame:hover,
+.picFrame .active{
+	text-decoration: none;
+	overflow: hidden;
+	transition-timing-function: ease-out;
+	cursor: pointer;
+	scale: 3;
+}
+
 .picFrame {
 	flex-direction: reverse-row;
 	flex-wrap: wrap;
 	object-fit: contain;
+	row-count: 4;
 	float: center;
 	vertical-align: middle;
 	background-color: transparent;
@@ -1387,7 +1397,7 @@ a {
 }
 
 
-.portfolio {
+/* .portfolio {
 	flex-direction: column;
 	display: flex;
     	flex-wrap: wrap;
@@ -1403,9 +1413,9 @@ a {
 	margin-top: 2px;
 	margin-bottom: 2px;
 	z-index: 5;
-}
+} */
 
-.picFrame {
+/* .picFrame {
 	flex-direction: reverse-row;
 	flex-wrap: wrap;
     	max-width: 30%;
@@ -1425,7 +1435,7 @@ a {
     	display: block;
 	color: azure;
 
-}
+} */
 	
 .picFrame h1{
 	font-size: 8px;
