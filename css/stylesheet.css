@@ -683,18 +683,19 @@ a {
 	z-index: 5;
 } */
 
-.picFrame:hover::before {
+/* .picFrame:hover::before {
 	z-index: 1;
 	scale: .5;
-}
+} */
 .picFrame:hover,
 .picFrame .active{
 	text-decoration: none;
 	overflow: inherit;
-	transition-timing-function: 2s ease-in-out;
 	cursor: pointer;
 	scale: 1.75;
 	z-index: 8;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: ease ease-in-out; 
 }
 
 .picFrame {
