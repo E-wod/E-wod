@@ -646,7 +646,7 @@ a {
 	transition-timing-function: 1s ease ease-in-out; 
 }
 	
-.picFrame p{
+.picFrame h3{
 	z-index: 1;
 	display: flex;
 	font-size: 12px;
@@ -669,7 +669,7 @@ a {
 	transition-timing-function: ease ease-in-out; 
 }
 
-.portfolio {
+/* .portfolio {
 	display: flex;
     	flex-wrap: wrap;
 	background: transparent;
@@ -681,11 +681,11 @@ a {
 	margin-top: 2px;
 	margin-bottom: 2px;
 	z-index: 5;
-}
+} */
 
 .picFrame:hover::before {
 	z-index: 1;
-	scale: 1;
+	scale: .5;
 }
 .picFrame:hover,
 .picFrame .active{
