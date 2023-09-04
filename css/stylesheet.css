@@ -712,17 +712,18 @@ a {
 .picFrame:hover,
 .picFrame .active{
 	text-decoration: none;
-	overflow: hidden;
-	transition-timing-function: ease-out;
+	overflow: inherit;
+	transition-timing-function: 2s ease-in-out;
 	cursor: pointer;
-	scale: 3;
+	scale: 7;
+	z-index: 20;
 }
 
 .picFrame {
 	flex-direction: reverse-row;
 	flex-wrap: wrap;
 	object-fit: contain;
-	row-count: 4;
+	column-count: 4;
 	float: center;
 	vertical-align: middle;
 	background-color: transparent;
