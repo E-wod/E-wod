@@ -689,7 +689,7 @@ a {
 	overflow: inherit;
 	transition-timing-function: 2s ease-in-out;
 	cursor: pointer;
-	scale: 2;
+	scale: 1.75;
 	z-index: 8;
 }
 
