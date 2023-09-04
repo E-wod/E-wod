@@ -988,6 +988,7 @@ a {
 
 .nav-item {
 	margin: 0 0 0;
+	z-index: 12;
 	align-items: center; 
 	animation-timing-function: ease-in-out;
 }
@@ -995,6 +996,7 @@ a {
 .nav-item :active,	
 .nav-item .hover {
 	color: azure;
+	z-index: 12;
 	text-decoration: none;
 	box-shadow: 0 0px 0px azure;
 	overflow: visible;
@@ -1019,7 +1021,7 @@ a {
 	max-height: auto;
 	animation: choiceAnim .5s ease forwards;
 	border-radius: 8px;
-	z-index: 3;
+	z-index: 12;
 }
 	
 /*Nav Bar Anchor Tag*/
@@ -1037,6 +1039,7 @@ a {
 	opacity: 0;
 	transition: .3s;
 	transition-timing-function: ease-in-out; 
+	z-index: 12;
 }
 
 .navBar a:hover {
@@ -1047,6 +1050,7 @@ a {
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	overflow: visible;
+	z-index: 12;
 }
 	
 .bar {
@@ -1056,6 +1060,7 @@ a {
 	margin: 5px auto;
 	transition: all 0.3s ease-in-out;
 	background: azure;
+	z-index: 12;
 }
 	
 	
