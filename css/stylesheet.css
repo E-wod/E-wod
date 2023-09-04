@@ -689,7 +689,7 @@ a {
 } */
 
 
-picFrame a:hover::before {
+picFrame:hover::before {
 	flex-direction: reverse-row;
 	flex-wrap: wrap;
 	object-fit: contain;
@@ -708,7 +708,7 @@ picFrame a:hover::before {
     	display: block;
 	color: azure;
 }
-picFrame a:hover::after {
+picFrame:hover::after {
 	text-decoration: none;
 	overflow: inherit;
 	cursor: pointer;
