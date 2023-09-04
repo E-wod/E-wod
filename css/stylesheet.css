@@ -712,7 +712,6 @@ a {
 .picFrame {
 	flex-direction: reverse-row;
 	flex-wrap: wrap;
-    	max-width: 30%;
 	object-fit: contain;
 	float: center;
 	vertical-align: middle;
