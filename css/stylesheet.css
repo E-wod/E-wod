@@ -689,7 +689,7 @@ a {
 } */
 
 
-.picFrame:hover::before {
+.picFrame {
 	flex-direction: reverse-row;
 	flex-wrap: wrap;
 	object-fit: contain;
@@ -708,11 +708,11 @@ a {
     	display: block;
 	color: azure;
 }
-.picFrame:hover::after {
+.picFrame:hover{
 	text-decoration: none;
 	overflow: inherit;
 	cursor: pointer;
-	scale: 1.75;
+	scale: 1.05;
 	z-index: 999999;
 	animation: pAnim 1s ease forwards; 
 }
