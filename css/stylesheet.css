@@ -692,7 +692,7 @@ a {
 	overflow: inherit;
 	cursor: pointer;
 	scale: 1.75;
-	z-index: 8;
+	z-index: 999999;
 	animation: pAnim 1s ease forwards; 
 }
 
