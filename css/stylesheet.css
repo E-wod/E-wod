@@ -594,10 +594,10 @@ a {
 	margin-right: 0%;
 	margin-left: 0%;
 
-	padding-top: 15%;
-	padding-bottom: 15%;
-	padding-right: 15%;
-	padding-left: 15%;
+	padding-top: 5%;
+	padding-bottom: 0%;
+	padding-right: 5%;
+	padding-left: 5%;
 	z-index: -19;
 	scale: 1;
 	overflow: hidden;
