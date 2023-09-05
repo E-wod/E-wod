@@ -601,7 +601,7 @@ a {
 	scale: 1;
 	overflow: hidden;
 	object-fit: contain;
-	box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
+
 }
 
 .picFrame h1{
@@ -1390,7 +1390,6 @@ a {
 	scale: 1;
 	overflow: hidden;
 	object-fit: contain;
-	box-shadow: 35px 29px 90px 25px rgba(0,0,0,1);
 }
 	
 .picFrame h1{
