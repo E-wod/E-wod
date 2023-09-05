@@ -697,7 +697,8 @@ a {
 	vertical-align: middle;
 	background-color: transparent;
 	border-radius: 8px;
-	height: auto;
+	width: 100%;
+	height: 100%;
 	justify-content: space-around;
 	margin-right: 2px;
 	margin-left: 2px;
