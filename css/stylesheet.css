@@ -705,6 +705,7 @@ a {
 	scale: 1.05;
 	z-index: 999999;
 	transition-timing-function: ease ease-in-out; 
+	video: play;
 }
 
 /* .picFrame:hover{
