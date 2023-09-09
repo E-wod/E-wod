@@ -76,29 +76,18 @@ function closeMenu() {
 
 
 
-const video = document.querySelector(".video");
-let playState = null;
+   var figure = $(".picFrame:hover");
+    var vid = $("video");
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      video.pause();
-      playState = false;
-    } else {
-      video.play();
-      playState = true;
+    [].forEach.call(figure, function (item) {
+            item.addEventListener('mouseover', hoverVideo, false);
+            item.addEventListener('mouseout', hideVideo, false);
+    });
+    
+    function hoverVideo(e) {  
+            $('.thevideo')[0].play(); 
     }
-  });
-}, {});
 
-observer.observe(video);
-
-const onVisibilityChange = () => {
-  if (document.hidden || !playState) {
-    video.pause();
-  } else {
-    video.play();
-  }
-};
-
-document.addEventListener("visibilitychange", onVisibilityChange);
+    function hideVideo(e) {
+            $('.thevideo')[0].pause(); 
+    }
