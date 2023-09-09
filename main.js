@@ -76,7 +76,7 @@ function closeMenu() {
 
 
 
-const video = document.querySelector("video");
+const video = document.querySelector(".video");
 let playState = null;
 
 const observer = new IntersectionObserver((entries) => {
