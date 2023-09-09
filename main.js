@@ -1,32 +1,21 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-
 hamburger.addEventListener("click", mobileMenu);
-
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 }
-
 const navLink = document.querySelectorAll(".nav-link");
-
 navLink.forEach(n => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
-
-
-
-
-
-
+// Parallax 
 (function() {
-    // Add event listener
     document.addEventListener("mousemove", parallax);
     const elem = document.querySelector("#parallax");
-    // Magic happens here
     function parallax(e) {
         let _w = window.innerWidth/2;
         let _h = window.innerHeight/2;
@@ -44,10 +33,8 @@ function closeMenu() {
 	let _depth10 = `${50 - (_mouseX - _w) * 0.024}% ${50 - (_mouseY - _h) * 0.019}%`;
 	let _depth11 = `${50 - (_mouseX - _w) * 0.025}% ${50 - (_mouseY - _h) * 0.020}%`;
 	let _depth13 = `${50 - (_mouseX - _w) * 0.036}% ${50 - (_mouseY - _h) * 0.025}%`;
-		
         let x = `${_depth13}, ${_depth11}, ${_depth10}, ${_depth9}, ${_depth8}, ${_depth7}, ${_depth6}, ${_depth5}, ${_depth4}, ${_depth3}, ${_depth2}, ${_depth1}`;
         console.log(x);
         elem.style.backgroundPosition = x;
     }
-
 })();
