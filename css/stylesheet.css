@@ -695,7 +695,7 @@ a {
 	padding-top: 10px;
 	padding-bottom: 10px;
     	z-index: -4;
-    	display: block;
+    	display: none;
 	color: azure;
 }
 .picFrame:hover{
@@ -705,7 +705,7 @@ a {
 	scale: 1.05;
 	z-index: 999999;
 	transition-timing-function: ease ease-in-out; 
-	video: play;
+	display: inline;
 }
 
 /* .picFrame:hover{
