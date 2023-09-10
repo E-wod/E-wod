@@ -35,7 +35,7 @@ html {
 
 /*Body Attributes*/
 body {
-    	max-height: 700%;
+    	max-height: auto;
 	height: 100%;
     	width: 100%;
 	z-index: 0;
@@ -396,7 +396,7 @@ a {
 	display: inline-block;
     	margin: auto;
 	position: absolute;
-	float: bottom;
+	float: top;
 	margin-top: 40%;
 	margin-bottom: 0%;
 	margin-right: 0%;
