@@ -36,11 +36,10 @@ html {
 /*Body Attributes*/
 body {
     	max-height: 700%;
-	height: 150%;
+	height: 100%;
     	width: 100%;
 	z-index: 0;
     	object-fit: cover;
-/*         background: linear-gradient(180deg, rgba(221,221,221,1) 0%, rgba(170,170,170,1) 27%, rgba(100,107,107,1) 57%, rgba(30,60,60,1) 100%); */
 	background-attachment: fixed;
 	position: relative;
 	margin-left: 0px;
@@ -64,7 +63,9 @@ a {
 .header {
 	align-self: center;
         max-height: 296%;
+	height: 100%;
     	max-width: 96%;
+	width: 100%;
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-top: 45px;
@@ -72,7 +73,6 @@ a {
 	position: sticky;
 	top: 0;
 	left: 0;
-	width: 100%;
 	padding: 0 0 0;
 	background: transparent;
 	display: flex;
