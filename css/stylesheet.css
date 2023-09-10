@@ -603,12 +603,12 @@ a {
 	position: absolute;
 	margin-top: 7%;
 	margin-bottom: 7%;
-	margin-right: 7%;
-	margin-left: 7%;
+	margin-right: 0%;
+	margin-left: 0%;
 	padding-top: 0%;
 	padding-bottom: 0%;
-	padding-right: 7%;
-	padding-left: 7%;
+	padding-right: 15%;
+	padding-left: 15%;
 	z-index: -19;
 	scale: 1;
 	overflow: hidden;
