@@ -814,24 +814,11 @@ a {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes logoAnim {
 	0% {
-		transform: translateX(-500px);
 		opacity: 0;
 		text-shadow: 0 2px 1px #8B3421;
 		scale: .35;
     }
-	75% {
-		transform: translateX(70px);
-		opacity: .2;
-		color: transparent;
-		text-shadow: 0 2px 2px #8B3421;
-	}
-	87% {
-		transform: translateX(-35px);
-		opacity: .7;
-		text-shadow: 0 2px 3px #8B3421;
-	}
 	100% {
-		transform: translateX(0);
 		opacity: 1;
 		color: #8B3421;
 		text-shadow: 0 2px 4px azure;
