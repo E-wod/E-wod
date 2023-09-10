@@ -35,7 +35,8 @@ html {
 
 /*Body Attributes*/
 body {
-    	height: auto;
+    	max-height: auto;
+	height: 100%;
     	width: 100%;
 	z-index: 0;
     	object-fit: cover;
