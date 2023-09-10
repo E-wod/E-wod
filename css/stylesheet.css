@@ -397,7 +397,8 @@ a {
 	height: 100%;
 	display: inline-block;
     	margin: auto;
-	position: relative;
+	position: sticky;
+	float: bottom;
 	margin-top: 40%;
 	margin-bottom: 0%;
 	margin-right: 0%;
