@@ -400,7 +400,7 @@ a {
     	margin: auto;
 	position: absolute;
 	float: top;
-	margin-top: 40%;
+	margin-top: 10%;
 	margin-bottom: 0%;
 	margin-right: 0%;
 	margin-left: 0%;
@@ -907,19 +907,6 @@ a {
 	background-repeat:repeat-x;
 }
 
-/*HTML Attributes*/
-html {
-	scroll-behavior: smooth;
-	height:100%;
-        width:100%;
-	padding: 0;
-	margin: 0;
-	position: relative;
-	background-image: url("https://i.ibb.co/sgGmr71/organic2.jpg");
-	background-repeat: repeat;
-	mix-blend-mode: normal;
-}
-	
 .header {
 	align-self: center;
 	height: auto;
@@ -948,7 +935,6 @@ body{
 	width: 100%;
 	z-index: 0;
 	object-fit: cover;
-/* 	background: linear-gradient(180deg, rgba(221,221,221,1) 0%, rgba(170,170,170,1) 27%, rgba(100,107,107,1) 57%, rgba(30,60,60,1) 100%); */
 	background-attachment: fixed;
 	position: relative;
 	margin-left: 0px;
