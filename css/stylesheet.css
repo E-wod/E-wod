@@ -663,27 +663,6 @@ a {
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 }
-
-/* .portfolio {
-	display: flex;
-    	flex-wrap: wrap;
-	background: transparent;
-	justify-content: space-between;
-	position: inherit;
-	padding: 0px 0px 0px;
-	margin-right: 2px;
-	margin-left: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	z-index: 5;
-} */
-
-/* .picFrame:hover::before {
-	z-index: 1;
-	scale: .5;
-} */
-
-
 .picFrame {
 	flex-direction: reverse-row;
 	flex-wrap: wrap;
@@ -716,35 +695,6 @@ a {
 	z-index: 999999;
 	transition-timing-function: ease ease-in-out; 
 }
-
-/* .picFrame:hover{
-	text-decoration: none;
-	overflow: inherit;
-	cursor: pointer;
-	scale: 1.75;
-	z-index: 999999;
-	animation: pAnim 1s ease forwards; 
-} */
-
-/* .picFrame {
-	flex-direction: reverse-row;
-	flex-wrap: wrap;
-	object-fit: contain;
-	float: center;
-	vertical-align: middle;
-	background-color: transparent;
-	border-radius: 8px;
-	height: auto;
-	justify-content: space-around;
-	margin-right: 2px;
-	margin-left: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding: 0px 0px 0px;
-    	z-index: -4;
-    	display: block;
-	color: azure;
-} */
 
 .obJects{
 	flex-direction: reverse-row;
