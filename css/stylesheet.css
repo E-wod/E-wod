@@ -1108,7 +1108,7 @@ a {
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: italic;
-	text-shadow: 4px 4px 4px 4px azure;
+	text-shadow: 2px 2px 2px 2px azure;
 	line-height: .9;
 	margin-left: 15%;
 	margin-right: 15%;
@@ -1333,10 +1333,10 @@ a {
 	
 .picFrame h1{
 	font-size: 8px;
-	color: #494F52;
+	color: #d22900;
 	font-family: sans-serif;
 	font-style: italic;
-	text-shadow: 2px 0px 2px azure;
+	text-shadow: 1px 1px 1px azure;
 	line-height: .9;
 	text-decoration: none;
 	font-weight: 100;
