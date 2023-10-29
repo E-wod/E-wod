@@ -159,7 +159,7 @@ a {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-size: 22px;
-	background: transparent;
+	background: #000000;
 	padding: 5px 5px 5px;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
