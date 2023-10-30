@@ -223,7 +223,7 @@ a {
 /*Hover Function*/
 .navBar a:hover{
 	color: azure;
-	transition: .3s;
+	transition: .75s;
 	transition-timing-function: ease-out;
 	background: transparent;
 	text-decoration: none;
