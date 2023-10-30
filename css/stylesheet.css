@@ -28,7 +28,7 @@ html {
         width:100%;
 	padding: 0;
 	margin: 0;
-	position: fixed;
+	position: absolute;
 /* 	background-image: url("https://i.ibb.co/LPNzkVc/Mo-Organic-1597.jpg"); */
 	background: linear-gradient(180deg, rgba(71,3,3,1) 0%, rgba(0,0,0,1) 100%);
 	background-repeat: repeat;
