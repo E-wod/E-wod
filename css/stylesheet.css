@@ -93,7 +93,7 @@ a {
 	background: transparent;
 	position: relative;
 	width: 140px;
-	height: 100px;
+	height: 140px;
 	display: flex;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -110,15 +110,19 @@ a {
 	margin-right: 25px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-size: 35px;
-	color: #000000;
-	border: 2px solid #3d0ee8;
-	border-radius: 100%;
+/* 	border: 2px solid #3d0ee8;
+	border-radius: 50px; */
 	text-decoration: none;
 	font-weight: 400;
 	font-style: normal;
 	animation: logoAnim 2s ease forwards;
 	transition-timing-function: ease ease-in-out; 
+}
+
+.nav-logo a {
+	background-color: #000000;
+	border: 2px solid #3d0ee8;
+	border-radius: 50px;
 }
 
 .nav-logo :hover,
