@@ -30,7 +30,7 @@ html {
 	margin: 0;
 	position: relative;
 /* 	background-image: url("https://i.ibb.co/LPNzkVc/Mo-Organic-1597.jpg"); */
-	background: linear-gradient(180deg, rgba(71,3,3,1) 0%, rgba(0,0,0,1) 100%);
+	background-color: #052242;
 /* 	background-repeat: repeat; */
 	mix-blend-mode: normal;
 }
