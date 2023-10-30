@@ -28,7 +28,7 @@ html {
         width:100%;
 	padding: 0;
 	margin: 0;
-	position: relative;
+	position: fixed;
 /* 	background-image: url("https://i.ibb.co/LPNzkVc/Mo-Organic-1597.jpg"); */
 	background: linear-gradient(180deg, rgba(71,3,3,1) 0%, rgba(0,0,0,1) 100%);
 	background-repeat: repeat;
@@ -159,7 +159,7 @@ a {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-size: 22px;
-	background: #000000;
+	background: transparent;
 	padding: 5px 5px 5px;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
@@ -171,7 +171,7 @@ a {
 
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
-	background: transparent;
+	background: #000000;
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-top: 5px;
