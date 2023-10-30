@@ -93,7 +93,7 @@ a {
 	background: transparent;
 	position: relative;
 	width: 140px;
-	height: 85px;
+	height: 100px;
 	display: flex;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -112,7 +112,7 @@ a {
 	margin-bottom: 10px;
 	font-size: 35px;
 	color: #000000;
-	border: 2px solid #d22900;
+	border: 2px solid #3d0ee8;
 	border-radius: 100%;
 	text-decoration: none;
 	font-weight: 400;
@@ -188,7 +188,7 @@ a {
 	float: center;
 	justify-content: space-around;
 	letter-spacing: 1.5px;
-	border: 2px solid #d22900;
+	border: 2px solid #3d0ee8;
 	border-radius: 8px;
 	position: relative;
 	color: #3d0ee8;
