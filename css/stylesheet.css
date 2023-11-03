@@ -948,7 +948,7 @@ a {
 	margin-top: 0px;
 	margin-bottom: 0px;
     	padding: 0;
-	animation: hamAnim 1.5s ease forwards;
+	animation: choiceAnim 1.5s ease forwards;
 	animation-timing-function: ease-in-out;
 }
 	
@@ -996,7 +996,7 @@ a {
 	padding: 0px 0px 0px;
 	width: auto;
 	max-height: auto;
-	animation: hamAnim .5s ease forwards;
+	animation: choiceAnim .5s ease forwards;
 	border-radius: 8px;
 }
 	
