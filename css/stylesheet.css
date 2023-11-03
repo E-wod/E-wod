@@ -1116,7 +1116,7 @@ a {
 
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
-	font-size: 42px;
+	font-size: 32px;
 	color: #3d0ee8;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
@@ -1159,7 +1159,7 @@ a {
 }
 
 .landingContent h3{
-	font-size: 43px;
+	font-size: 20px;
 	color: #0775b1;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
@@ -1186,7 +1186,7 @@ a {
 }
 
 .landingContent h3 span{
-    	font-size: 43px;
+    	font-size: 20px;
 	color: azure;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
@@ -1199,7 +1199,7 @@ a {
 .landingContent p{
 	z-index: 1;
     	display: flex;
-	font-size: 20px;
+	font-size: 11px;
 	color: azure;
 	font-family: sans-serif;
 	font-weight: 100;
