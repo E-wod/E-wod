@@ -439,7 +439,7 @@ a {
 
 /*Question Box Anchor Tag Button layout and function*/
 .btnBox a {
-	background: transparent;
+	background: #000000;
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-top: 0px;
@@ -538,7 +538,7 @@ a {
 	overflow: hidden;
 	width: 60px;
 	height: 60px;
-	background: transparent;
+	background: #000000;
 	z-index: 15;
 	font-family:"Open Sans", "sans-serif";
 	transition: 1s;
@@ -1274,7 +1274,7 @@ a {
 
 /*Question Box Anchor Tag Button layout and function*/
 .btnBox a {
-	background: transparent;
+	background: #000000;
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-top: 0px;
@@ -1373,7 +1373,7 @@ a {
 	overflow: hidden;
 	width: 60px;
 	height: 60px;
-	background: transparent;
+	background: #000000;
 	z-index: 15;
 	font-family:"Open Sans", "sans-serif";
 	transition: 1s;
