@@ -67,7 +67,7 @@ a {
 /*Header Attributes*/
 .header {
 	align-self: center;
-    	max-width: 96%;
+    	max-width: 100%;
 	width: 100%;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -865,7 +865,7 @@ a {
 
 .header {
 	align-self: center;
-    	max-width: 96%;
+    	max-width: 100%;
 	width: 100%;
 	margin-left: 10px;
 	margin-right: 10px;
