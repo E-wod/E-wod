@@ -845,6 +845,18 @@ a {
 	}
 }
 
+@keyframes hamAnim {
+	0% {
+		transform: translateY(0px);
+		opacity: 0;
+    }
+
+	100% {
+		transform: translateY(80px);;
+		opacity: 1;
+	}
+}
+
 /*-----------------------------------------------------------------------SMALL WINDOW------------------------------------------------------*/
 @media only screen and (max-width : 768px ){
 
@@ -1031,7 +1043,7 @@ a {
 	height: auto;
         display: block;
 	width: 45px;
-        animation: h3Anim 2s ease forwards;
+        animation: hamAnim 2s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	background: transparent;
 }
