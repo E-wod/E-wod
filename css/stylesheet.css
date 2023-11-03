@@ -1049,7 +1049,7 @@ a {
 	height: auto;
         display: block;
 	width: 45px;
-        animation: hamAnim 2s ease forwards;
+        animation: h3Anim 2s ease forwards;
 	animation-delay: calc(.3s * var(--i));
 	background: transparent;
 }
