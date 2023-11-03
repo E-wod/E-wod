@@ -93,7 +93,7 @@ a {
 	background: transparent;
 	position: relative;
 	width: 140px;
-	height: 140px;
+	height: auto;
 	display: flex;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -847,206 +847,174 @@ a {
 /*-----------------------------------------------------------------------SMALL WINDOW------------------------------------------------------*/
 @media only screen and (max-width : 768px ){
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	max-width: 100%;
-	max-height: 100%;
-	scale: 1;
-	background-position:left top, left bottom;
-	background-repeat:repeat-x;
-}
 
 .header {
 	align-self: center;
-	height: auto;
-	float: center;
-	width: 95%;
-	margin-left: 12px;
-	margin-right: 95px;
-	margin-top: 35px;
-	margin-bottom: 45px;
-        position: absolute;
+    	max-width: 96%;
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	position: sticky;
+	float: top;
 	top: 0;
 	left: 0;
-	padding: 0px 0px 0px;
+	padding: 0 0 0;
 	background: transparent;
-	display: inline-flex;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
 	z-index: 5;
-	font-size: 16px;
 	text-decoration: none;
 	overflow: inherit;
 	transition: .9s;
 	transition-timing-function: ease; 
-}
-	
-body{
-	max-height: 100%;
-	width: 100%;
-	z-index: 0;
-	object-fit: cover;
-	background-attachment: fixed;
-	position: relative;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	background-repeat: no-repeat;
-}
-	
-a {
-    margin: 0;
-	padding: 0;
-	width: 100%;
-	max-height: 100%;
-	scale: 1;
+	object-position: center;
 }
 
+/*Logo*/
 .logSz {
-	justify-content: space-between;
-	align-self: center;
+	justify-content: space-around;
+	background: transparent;
 	position: relative;
-	width: 83px;
-	height: 65px;
-	scale: .7;
-	display: inline-block;
+	width: 140px;
+	height: auto;
+	display: flex;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	overflow: visible;
-	background: transparent;
 }
 
 .nav-logo {
-	width: auto;
-	position: relative;
-	margin-left: 20px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 0;
-	font-size: 12px;
-	font-color: #8B3421;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	text-decoration: none;
 	font-weight: 400;
 	font-style: normal;
-	opacity: 0;
+	background-color: transparent;
 	animation: logoAnim 2s ease forwards;
 	transition-timing-function: ease ease-in-out; 
-	background: transparent;
-	border-radius: 70%;
-	align-items: center;
-	display: flex;
-	float: left;
 }
-	
-.nav-menu {
-	position: inherit;
-    	left: 300%;
-    	top: 0px;
-	display: flex;
-    	flex-direction: column-reverse;
-    	background-color: transparent;
-   	width: auto;
-	height: auto;
-    	border-radius: 10px;
-    	transition: 0.3s;
-	overflow: visible;
-	z-index: 3;
-	font-color: #d22900;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-    	padding: 0;
-	animation: choiceAnim 1.5s ease forwards;
-	animation-timing-function: ease-in-out;
-}
-	
-.nav-menu:hover,	
-.nav-menu.active {
-	left: 0;
+
+.nav-logo :hover,
+.nav-logo .active {
 	color: azure;
+	transition: .3s;
+	transition-timing-function: ease;
+	background: transparent;
 	text-decoration: none;
-	box-shadow: 0 0px 0px azure;
 	overflow: visible;
+}
+
+.nav-menu {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
 }
 
 .nav-item {
-	margin: 0 0 0;
-	align-items: center; 
+    	margin-left: 5px;
 }
 
 .nav-link{
-    	font-size: 18px;
+    	font-size: auto;
     	font-weight: 100;
 }
-	
-.nav-item :active,	
-.nav-item .hover {
-	color: azure;
-	text-decoration: none;
-	box-shadow: 0 0px 0px azure;
-	overflow: visible;
-	animation-timing-function: ease-in-out;
-}
-	
+
 /*Nav Bar Attributes*/
 .navBar {
-	background: transparent;
-	text-decoration: none;
-	font-size: 11px;
-	font-color: #d22900;
+	width: auto;
+	height: auto;
 	display: flex;
-	align-items: center;
-	float: right;
-	margin-left: 0px;
-	margin-right: 20px;
+	text-decoration: none;
+	z-index: 5;
+	overflow: hidden;
+	justify-content: center;
+	position: relative;
+	margin-left: 5px;
+	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	padding: 0px 0px 0px;
-	width: auto;
-	max-height: auto;
-	animation: choiceAnim .5s ease forwards;
-	border-radius: 8px;
-}
-	
-/*Nav Bar Anchor Tag*/
-.navBar a {
-	justify-content: center;
-	display: inline-flex;
-	text-decoration: none;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding: 0;
-	font-size: 11px;
-	color: azure;
+	font-size: 22px;
+	background: transparent;
+	padding: 5px 5px 5px;
+	animation: menuAnim 1s ease forwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: calc(.3s * var(--i));
+	transition: 1s;
 	opacity: 0;
-	transition: .3s;
+
 }
 
-.navBar a:hover {
+/*navBar Anchor Tag Button layout and function*/
+.navBar a {
+	background: #000000;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 18px;
+	width: auto;
+	max-width: 250px;
+	height: auto;
+	font-family:"Open Sans", "sans-serif";
+	text-decoration: none;
+	display: flex;
+	float: center;
+	justify-content: space-around;
+	letter-spacing: 1.5px;
+	border: 2px solid #3d0ee8;
+	border-radius: 8px;
+	position: relative;
+	color: #3d0ee8;
+	font-color: #3d0ee8;
+	overflow: hidden;
+	animation: menuAnim 1s ease forwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: calc(.3s * var(--i));
+	padding: 5px 5px 5px;
+	opacity: 0;
+}
+/*Setting the attributes for button*/
+.navBar a:nth-child(1 2 3) {
+	background: transparent;
+	color: #3d0ee8;
+}
+/*Setting pre-animation attributes*/
+.navBar a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	z-index: -1;
+	transition: .9s;
+	transition-timing-function: ease-in-out; 
+}
+/*Animation Element*/
+.navBar a:hover::before {
+	height: 100%;
+	background: linear-gradient(0deg,transparent 15%,#3d0ee8 240%);
+}
+/*Hover Function*/
+.navBar a:hover{
 	color: azure;
-	transition: .3s;
+	transition: .75s;
+	transition-timing-function: ease-out;
 	background: transparent;
 	text-decoration: none;
-	box-shadow: 0 2px 7px azure;
+	box-shadow: 0 7px 17px azure;
 	overflow: visible;
 }
-	
-.bar {
-	display: block;
-	width: 25px;
-	height: 3px;
-	margin: 5px auto;
-	transition: all 0.3s ease-in-out;
-	background: azure;
-}
-	
 	
 .hamburger {
 	padding: 2px 2px 2px;
@@ -1086,46 +1054,74 @@ a {
 	overflow: visible;
 }	
 
+.bar {
+	text-decoration: none;
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+    	-webkit-transition: all 0.3s ease-in-out;
+    	transition: all 0.3s ease-in-out;
+	background: azure;
+}
+
+li {
+    	list-style: none;
+}
+
+a {
+    	text-decoration: none;
+}
+
+/*Setting the content format for landing page */
 .landingContent{
 	background-color: transparent;
 	position: absolute;
-	align-items: left;
-	max-width: 100%;
-	max-height: 100%;
-	margin-left: 23px;
-	margin-right: 29px;
-	margin-top: 100px;
-	margin-bottom: 0px;
-	display: inline-block;
-	float: top;
-	height: 75%;
+    	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 98%;
+	height: 100%;
+	max-height: 1000%;
+	margin-left: 45px;
+	margin-right: 45px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 50px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	display: block;
+	gap: 5px;
 }
-	
+
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
-	font-size: 13px;
-	color: #d22900;
+	font-size: 42px;
+	color: #3d0ee8;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: italic;
-	text-shadow: 2px 2px 2px 2px azure;
+	text-shadow: 4px 4px 4px azure;
 	line-height: .9;
-	margin-left: 15%;
-	margin-right: 15%;
-	margin-top: 5%;
-	margin-bottom: 0%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: .5%;
+	margin-bottom: 1%;
 	padding: 0px 0px 0px;
 	width: 100%;
 	max-width: 80%;
 	position: relative;
-	background-color: transparent;
 	z-index: -3;
 	opacity: 0;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 
-	/*Setting the landing page template for H3*/
+.h1 {
+	font-weight: 100;
+}
+/*Setting the landing page template for H3*/
 
 .landingContent h3 grp a{
 	width: 50%;
@@ -1137,20 +1133,20 @@ a {
 	position: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	padding: 0px 0 0px;
 	width: 100%;
 }
 
 .landingContent h3{
-	font-size: 12px;
-	color: #8B3421;
+	font-size: 43px;
+	color: #0775b1;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
 	line-height: 1.1;
 	text-decoration: none;
-	text-shadow: 0 3px 7px #000000;
+	text-shadow: 3px 3px 7px #000000;
 	z-index: 10;
 	padding: 0px 0 0px;
 	align-items: center;
@@ -1166,8 +1162,12 @@ a {
 	max-width: 100%;
 }
 
+.h3 {
+	font-weight: 100;
+}
+
 .landingContent h3 span{
-	font-size: 12px;
+    	font-size: 43px;
 	color: azure;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
@@ -1175,26 +1175,29 @@ a {
 	z-index: 1;
 }
 
+
 /*Setting the landing page template for paragraph*/
 .landingContent p{
 	z-index: 1;
-	display: flex;
-	font-size: 10px;
+    	display: flex;
+	font-size: 20px;
 	color: azure;
 	font-family: sans-serif;
 	font-weight: 100;
+	text-shadow: 2px 3px 6px #000000;
+	text-decoration: none;
 	font-style: italic;
 	line-height: 1.1;
 	padding-left: 0px;
 	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	margin-left: 0%;
-	margin-right: 0%;
-	margin-top: 10%;
-	margin-bottom: 10%;
-	max-width: 95%;
-	max-height: auto;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+    	max-width: 88%;
+	max-height: 15%;
 	background: transparent;
 	position: relative;
 	overflow: visible;
@@ -1203,51 +1206,106 @@ a {
 	transition-timing-function: ease ease-in-out; 
 }
 
-.btnBox a {
+.p {
+	font-weight: 100;
+}
+
+/*Setting the landing page template for Question buttons*/
+.cntr {
 	background: transparent;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	font-size: 11px;
-	font-family:"Open Sans", "sans-serif";
-	text-decoration: none;
-	width: 225px;
-	height: auto;
-	display: flex;
-	float: center;
 	justify-content: space-around;
-	letter-spacing: 1.5px;
-	border: 2px solid #d22900;
-	border-radius: 8px;
-	position: relative;
-	color: #d22900;
-	overflow: hidden;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
-	animation: choiceAnim .5s ease forwards;
-	padding: 10px 10px 10px;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+    	margin: auto;
+	position: absolute;
+	float: top;
+	margin-top: 10%;
+	margin-bottom: 0%;
+	margin-right: 0%;
+	margin-left: 0%;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	padding-right: 0%;
+	padding-left: 0%;
 }
 
 .btnBox {
 	width: auto;
 	height: auto;
 	display: flex;
-	z-index: 5;
+	text-decoration: none;
+	z-index: 15;
 	overflow: hidden;
 	justify-content: center;
 	position: relative;
-	margin-top: 45%;
-	margin-bottom: 0%;
-	margin-right: 15%;
-	margin-left: 15%;
+	margin-top: 5%;
+	margin-bottom: 1%;
+	margin-right: 5%;
+	margin-left: 5%;
 	background: transparent;
-	padding: 5px 5px 5px;
+	padding-top: 0%;
+	padding-bottom: 1%;
+	padding-right: 5%;
+	padding-left: 5%;
 	animation: choiceAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	transition: 1s;
 }
 
+/*Question Box Anchor Tag Button layout and function*/
+.btnBox a {
+	background: transparent;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 300px;
+	height: auto;
+	z-index: 15;
+	font-size: 20px;
+	font-family:"Open Sans", "sans-serif";
+	text-decoration: none;
+	display: flex;
+	float: center;
+	justify-content: space-around;
+	letter-spacing: 1.5px;
+	border: 2px solid #3d0ee8;
+	border-radius: 8px;
+	position: relative;
+	color: #3d0ee8;
+	overflow: hidden;
+	transition-timing-function: ease;
+	transition: 1s;
+	padding: 5px 5px 5px;
+}
+
+/*Setting the attributes for each button*/
+.btnBox a:nth-child(1) {
+	background: transparent;
+	color: #3d0ee8;
+}
+
+/*Setting pre-animation attributes*/
+.btnBox a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	z-index: -1;
+	transition: .9s;
+	transition-timing-function: ease; 
+}
+
+/*Question box Animation Element*/
+.btnBox a:hover::before {
+	height: 100%;
+	background: linear-gradient(0deg,transparent 15%,#3d0ee8 240%);
+}
+
+/*Question Box Hover Function*/
 .btnBox a:hover,
 .btnBox .active{
 	color: azure;
@@ -1256,50 +1314,83 @@ a {
 	overflow: hidden;
 	transition-timing-function: ease-out;
 }
-	
-.socLnk a {
-	align-items: center;
-	font-size: 25px;
-	transition: 1s;
-	transition-timing-function: ease; 
-	text-decoration: none;
-	display: flex;
-	justify-content: center;
-	border: 2px solid #d22900;
-	border-radius: 50%;
-	position: relative;
-	color: #d22900;
-	overflow: hidden;
-	width: 40px;
-	height: 40px;
-	background: transparent;
-	z-index: -3;
-	font-family:"Open Sans", "sans-serif";
-	animation: menuAnim .5s ease forwards;
-	animation-delay: calc(.3s * var(--i));
-	opacity: 0;
-}
-	
+
+/*Setting the alignment and template for Social links*/
 .socLnk {
-	z-index: 5;
+	z-index: 15;
 	overflow: hidden;
 	justify-content: center;
 	position: relative;
-	margin-top: 55%;
-	margin-bottom: 0%;
-	margin-right: 15%;
-	margin-left: 15%;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-right: 5px;
+	margin-left: 5px;
 	background: transparent;
-	padding: 5px 5px 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-right: 5px;
+	padding-left: 5px;
 	display: flex;
 	width: auto;
 	height: auto;
 	text-decoration: none;
-
 	animation: menuAnim ease forwards;
 	animation-delay: calc(.1s * var(--i));
+	transition-timing-function: ease-in-out;
 	opacity: 0;
 }
+
+/*Social Links Anchor Tag Button layout and function*/
+.socLnk a {
+	align-items: center;
+	font-size: 40px;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	border: 2px solid #3d0ee8;
+	border-radius: 50%;
+	position: relative;
+	color: #3d0ee8;
+	overflow: hidden;
+	width: 60px;
+	height: 60px;
+	background: transparent;
+	z-index: 15;
+	font-family:"Open Sans", "sans-serif";
+	transition: 1s;
+	transition-timing-function: ease; 
+	animation: menuAnim 1s ease forwards;
+	animation-delay: calc(.3s * var(--i));
+	opacity: 0;
+}
+
+/*Setting the attributes for each button*/
+.socLnk a:nth-child(1 2 3) {
+	background: transparent;
+	color: #3d0ee8;
+}
+
+/*Setting pre-animation attributes*/
+.socLnk a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	z-index: 3;
+	transition: .9s;
+	transition-timing-function: ease; 
+}
+
+/*Animation element*/
+.socLnk a:hover::before {    
+	height: 100%;
+	background: linear-gradient(0deg,transparent 35%,#3d0ee8 240%);
+	z-index: 3;
+}
+
+/*Hover Function for Social Links*/
 .socLnk a:hover,
 .socLnk .active{
 	color: azure;
@@ -1307,39 +1398,54 @@ a {
 	box-shadow: 0 2px 7px azure;
 	overflow: hidden;
 	transition-timing-function: ease-out;
-}	
+}
+
+/*background layout template*/
+.bkg {
+	z-index: -31;
+	background-repeat: repeat-x;
+	align-items: center;
+	height: 100%;
+	max-width: 100%;
+	width: 100%;
+	margin: 0;
+    	opacity: 100%;
+	position: relative;
+	object-position: cover;
+	padding: 0;
+	background-position: center;
+}
 
 .beePic {
 	background: transparent;
 	opacity: 100%;
 	height: auto;
 	width: 100%;
-	max-height: 80%;
+	max-height: 70%;
 	display: flex;
 	position: absolute;
-	margin-top: 15%;
-	margin-bottom: 0%;
+	margin-top: 7%;
+	margin-bottom: 7%;
 	margin-right: 0%;
 	margin-left: 0%;
 	padding-top: 0%;
-	padding-bottom: 10%;
-	padding-right: 10%;
-	padding-left: 10%;
+	padding-bottom: 0%;
+	padding-right: 15%;
+	padding-left: 15%;
 	z-index: -19;
 	scale: 1;
 	overflow: hidden;
 	object-fit: contain;
+
 }
-	
+
 .picFrame h1{
-	font-size: 12px;
-	color: #d22900;
+	font-size: 16px;
+	color: #494F52;
 	font-family: sans-serif;
 	font-style: italic;
-	text-shadow: .5px .5px .5px azure;
+	text-shadow: 2px 0px 2px azure;
 	line-height: .9;
-	text-decoration: none;
-	font-weight: 100;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1358,16 +1464,14 @@ a {
 .picFrame h3{
 	z-index: 1;
 	display: flex;
-	font-size: 8px;
+	font-size: 12px;
 	color: azure;
 	font-family: sans-serif;
 	font-style: italic;
-	line-height: .9;
-	text-decoration: none;
-	font-weight: 100;
+	line-height: 1.1;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 3px;
+	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 0px 0px 0px;
 	max-width: 95%;
@@ -1379,4 +1483,80 @@ a {
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 }
+.picFrame {
+	flex-direction: reverse-row;
+	flex-wrap: wrap;
+	object-fit: contain;
+	float: center;
+	vertical-align: middle;
+	background-color: transparent;
+	border-radius: 8px;
+	width: 100%;
+	height: auto;
+	max-height: 230%;
+	justify-content: space-around;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-right: 2px;
+	padding-left: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    	z-index: -4;
+    	display: block;
+	color: azure;
+}
+.picFrame:hover{
+	text-decoration: none;
+	overflow: inherit;
+	cursor: pointer;
+	scale: 1.05;
+	z-index: 999999;
+	transition-timing-function: ease ease-in-out; 
+}
+
+.obJects{
+	flex-direction: reverse-row;
+	flex-wrap: wrap;
+	background-color: transparent;
+	position: relative;
+    	align-items: center;
+	justify-content: space-between;
+	width: 50%;
+	height: auto;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	padding-right: 0%;
+	padding-left: 0%;
+	display: block;
+	gap: 5px;
+	z-index: -2;
+}
+
+.showBox {
+	z-index: 1;
+	display: flex;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 50%;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0%;
+	padding-bottom: 0px;
+	max-width: 98%;
+	max-height: auto;
+	background: transparent;
+	position: relative;
+	overflow: inherit;
+	object-fit: contain;
+	float: inherit;
+	justify-content: space-around;
+	z-index: -1;
+	
 }
