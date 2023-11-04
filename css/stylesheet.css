@@ -850,14 +850,15 @@ a {
 
 @keyframes hamAnim {
 	0% {
-		transform: translateY(0px);
+		transform: translateX(-200px);
+		transform: translateZ(-200px);
 		opacity: 0;
-    }
-
+}
 	100% {
-		transform: translateY(80px);;
+		transform: translateX(0);
+		transform: translateZ(0);
 		opacity: 1;
-	}
+	}		
 }
 
 /*-----------------------------------------------------------------------SMALL WINDOW------------------------------------------------------*/
@@ -997,7 +998,7 @@ a {
 	padding: 0px 0px 0px;
 	width: auto;
 	max-height: auto;
-	animation: menuAnim .5s ease forwards;
+	animation: hamAnim .5s ease forwards;
 	border-radius: 8px;
 }
 	
