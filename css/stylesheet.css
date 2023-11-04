@@ -156,7 +156,7 @@ a {
 	overflow: hidden;
 	justify-content: center;
 	position: relative;
-	margin-left: 10px;
+	margin-left: 0px;
 	margin-right: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -174,10 +174,10 @@ a {
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
 	background: #000000;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	font-size: 18px;
 	width: auto;
 	max-width: 250px;
@@ -996,7 +996,7 @@ a {
 	padding: 0px 0px 0px;
 	width: auto;
 	max-height: auto;
-	animation: choiceAnim .5s ease forwards;
+	animation: menuAnim .5s ease forwards;
 	border-radius: 8px;
 }
 	
@@ -1005,10 +1005,10 @@ a {
 	justify-content: center;
 	display: inline-flex;
 	text-decoration: none;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 3px;
+	margin-bottom: 3px;
 	padding: 0;
 	font-size: 12px;
 	color: azure;
