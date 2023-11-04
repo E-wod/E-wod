@@ -95,7 +95,7 @@ a {
 	justify-content: space-around;
 	background: transparent;
 	position: relative;
-	width: 180px;
+	width: auto;
 	height: auto;
 	display: flex;
 	margin-left: 0px;
@@ -893,7 +893,7 @@ a {
 	justify-content: space-around;
 	background: transparent;
 	position: relative;
-	width: 140px;
+	width: auto;
 	height: auto;
 	display: flex;
 	margin-left: 0px;
