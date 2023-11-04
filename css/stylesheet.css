@@ -157,13 +157,13 @@ a {
 	overflow: hidden;
 	justify-content: center;
 	position: relative;
-	margin-left: 0px;
+	margin-left: 10px;
 	margin-right: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 22px;
 	background: transparent;
-	padding: 15px 15px 15px;
+	padding: 0px 0px 0px;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.3s * var(--i));
@@ -176,9 +176,9 @@ a {
 .navBar a {
 	background: #000000;
 	margin-left: 0px;
-	margin-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-right: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	font-size: 18px;
 	width: auto;
 	max-width: 250px;
@@ -198,7 +198,7 @@ a {
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.3s * var(--i));
-	padding: 5px 5px 5px;
+	padding: 0px 0px 0px;
 	opacity: 0;
 }
 /*Setting the attributes for button*/
