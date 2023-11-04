@@ -95,8 +95,8 @@ a {
 	justify-content: space-around;
 	background: transparent;
 	position: relative;
-	width: auto;
-	height: auto;
+	width: 160px;
+	height: 160px;
 	display: flex;
 	margin-left: 0px;
 	margin-right: 0px;
