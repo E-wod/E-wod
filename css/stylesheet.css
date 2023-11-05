@@ -174,9 +174,9 @@ a {
 	font-size: 22px;
 	background: transparent;
 	padding: 0px 0px 0px;
-	animation: choiceAnim 3s ease forwards;
+/* 	animation: choiceAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.4s * var(--i));
+	animation-delay: calc(.4s * var(--i)); */
 	transition: 3s;
 	opacity: 0;
 
@@ -205,9 +205,9 @@ a {
 	color: #3d0ee8;
 	font-color: #3d0ee8;
 	overflow: hidden;
-	animation: choiceAnim 3s ease forwards;
+/* 	animation: choiceAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.4s * var(--i));
+	animation-delay: calc(.4s * var(--i)); */
 	transition: 3s;
 	padding: 0px 0px 0px;
 	opacity: 0;
@@ -1011,9 +1011,9 @@ a {
 	padding: 0px 0px 0px;
 	width: auto;
 	max-height: auto;
-	animation: h3Anim 3s ease forwards;
+/* 	animation: h3Anim 3s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.4s * var(--i));
+	animation-delay: calc(.4s * var(--i)); */
 	transition: 3s;
 	border-radius: 8px;
 }
@@ -1044,9 +1044,9 @@ a {
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	overflow: visible;
-	animation: menuAnim 3s ease forwards;
+/* 	animation: menuAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.4s * var(--i));
+	animation-delay: calc(.4s * var(--i)); */
 	transition: 3s;
 }
 	
