@@ -139,6 +139,10 @@ a {
     	display: flex;
     	justify-content: space-between;
     	align-items: center;
+    	margin-left: 5px;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .nav-item {
