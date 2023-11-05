@@ -164,9 +164,9 @@ a {
 	font-size: 22px;
 	background: transparent;
 	padding: 0px 0px 0px;
-	animation: menuAnim 3s ease forwards;
+/* 	animation: menuAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.6s * var(--i));
+	animation-delay: calc(.4s * var(--i)); */
 	transition: 1s;
 	opacity: 0;
 
@@ -197,7 +197,7 @@ a {
 	overflow: hidden;
 	animation: menuAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.6s * var(--i));
+	animation-delay: calc(.4s * var(--i));
 	padding: 0px 0px 0px;
 	opacity: 0;
 }
@@ -949,9 +949,9 @@ a {
 	margin-top: 5px;
 	margin-bottom: 5px;
     	padding: 0;
-	animation: menuAnim 7s ease forwards;
+/* 	animation: menuAnim 5s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.6s * var(--i));
+	animation-delay: calc(.4s * var(--i)); */
 	transition: .3s;
 }
 	
@@ -962,9 +962,9 @@ a {
 	text-decoration: none;
 	box-shadow: 0 0px 0px azure;
 	overflow: visible;
-	animation: menuAnim 7s ease forwards;
+	animation: menuAnim 5s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.6s * var(--i));
+	animation-delay: calc(.4s * var(--i));
 }
 
 .nav-item {
@@ -1002,9 +1002,9 @@ a {
 	padding: 0px 0px 0px;
 	width: auto;
 	max-height: auto;
-	animation: menuAnim 7s ease forwards;
+/* 	animation: menuAnim 4s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.6s * var(--i));
+	animation-delay: calc(.4s * var(--i)); */
 	border-radius: 8px;
 }
 	
@@ -1021,9 +1021,9 @@ a {
 	font-size: 12px;
 	color: azure;
 	opacity: 0;
-	animation: menuAnim 7s ease forwards;
+	animation: menuAnim 4s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.6s * var(--i));
+	animation-delay: calc(.4s * var(--i));
 }
 
 .navBar a:hover {
