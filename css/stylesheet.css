@@ -927,7 +927,7 @@ a {
 .nav-logo :hover,
 .nav-logo .active {
 	color: azure;
-	transition: .3s;
+	transition: 2s;
 	transition-timing-function: ease;
 	background: transparent;
 	text-decoration: none;
@@ -967,17 +967,19 @@ a {
 	overflow: visible;
 	animation: menuAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.4s * var(--i));
+	animation-delay: calc(.6s * var(--i));
 }
 
 .nav-item {
 	margin: 0 0 0;
 	align-items: center; 
+	transition: 2s;
 }
 
 .nav-link{
     	font-size: 18px;
     	font-weight: 100;
+	transition: 2s;
 }
 	
 .nav-item :active,	
@@ -1008,6 +1010,7 @@ a {
 	animation: menuAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.4s * var(--i));
+	transition: 2s;
 	border-radius: 8px;
 }
 	
