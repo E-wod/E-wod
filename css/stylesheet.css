@@ -262,10 +262,18 @@ a {
 
 li {
     	list-style: none;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
 
 a {
     	text-decoration: none;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
 
 /*Setting the content format for landing page */
@@ -1033,6 +1041,9 @@ a {
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	overflow: visible;
+	animation: menuAnim 3s ease forwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: calc(.4s * var(--i));
 }
 	
 .hamburger {
@@ -1086,6 +1097,10 @@ a {
 
 li {
     	list-style: none;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
 
 a {
