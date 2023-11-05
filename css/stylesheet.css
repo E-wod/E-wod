@@ -164,9 +164,9 @@ a {
 	font-size: 22px;
 	background: transparent;
 	padding: 0px 0px 0px;
-/* 	animation: menuAnim 3s ease forwards;
+	animation: menuAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.4s * var(--i)); */
+	animation-delay: calc(.4s * var(--i));
 	transition: 1s;
 	opacity: 0;
 
@@ -949,9 +949,9 @@ a {
 	margin-top: 5px;
 	margin-bottom: 5px;
     	padding: 0;
-/* 	animation: menuAnim 5s ease forwards;
+	animation: menuAnim 5s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.4s * var(--i)); */
+	animation-delay: calc(.4s * var(--i));
 	transition: .3s;
 }
 	
@@ -1002,9 +1002,9 @@ a {
 	padding: 0px 0px 0px;
 	width: auto;
 	max-height: auto;
-/* 	animation: menuAnim 4s ease forwards;
+	animation: menuAnim 4s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.4s * var(--i)); */
+	animation-delay: calc(.4s * var(--i));
 	border-radius: 8px;
 }
 	
