@@ -113,10 +113,10 @@ a {
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	text-decoration: none;
 	font-weight: 400;
 	font-style: normal;
@@ -142,19 +142,19 @@ a {
 }
 
 .nav-item {
-    	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+    	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .nav-link{
     	font-size: auto;
     	font-weight: 100;
-    	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+    	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 /*Nav Bar Attributes*/
@@ -167,17 +167,17 @@ a {
 	overflow: hidden;
 	justify-content: center;
 	position: relative;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+    	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	font-size: 22px;
 	background: transparent;
 	padding: 0px 0px 0px;
 	animation: choiceAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.4s * var(--i));
-	transition: 1s;
+	transition: 3s;
 	opacity: 0;
 
 }
@@ -185,10 +185,10 @@ a {
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
 	background: #000000;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+    	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	font-size: 18px;
 	width: auto;
 	max-width: 250px;
@@ -205,9 +205,10 @@ a {
 	color: #3d0ee8;
 	font-color: #3d0ee8;
 	overflow: hidden;
-	animation: menuAnim 3s ease forwards;
+	animation: choiceAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.4s * var(--i));
+	transition: 3s;
 	padding: 0px 0px 0px;
 	opacity: 0;
 }
@@ -236,7 +237,7 @@ a {
 /*Hover Function*/
 .navBar a:hover{
 	color: azure;
-	transition: 2s;
+	transition: 3s;
 	transition-timing-function: ease-out;
 	background: transparent;
 	text-decoration: none;
@@ -262,18 +263,18 @@ a {
 
 li {
     	list-style: none;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 a {
     	text-decoration: none;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 /*Setting the content format for landing page */
@@ -957,7 +958,7 @@ a {
 	animation: choiceAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.4s * var(--i));
-	transition: .3s;
+	transition: 3s;
 }
 	
 .nav-menu:hover,	
@@ -967,9 +968,10 @@ a {
 	text-decoration: none;
 	box-shadow: 0 0px 0px azure;
 	overflow: visible;
-	animation: menuAnim 3s ease forwards;
+	animation: choiceAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.6s * var(--i));
+	animation-delay: calc(.4s * var(--i));
+	transition: 3s;
 }
 
 .nav-item {
@@ -1011,8 +1013,8 @@ a {
 	max-height: auto;
 	animation: h3Anim 3s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.7s * var(--i));
-	transition: 5s;
+	animation-delay: calc(.4s * var(--i));
+	transition: 3s;
 	border-radius: 8px;
 }
 	
@@ -1029,9 +1031,10 @@ a {
 	font-size: 12px;
 	color: azure;
 	opacity: 0;
-	animation: h3Anim 4s ease forwards;
+	animation: h3Anim 3s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.7s * var(--i));
+	animation-delay: calc(.4s * var(--i));
+	transition: 3s;
 }
 
 .navBar a:hover {
@@ -1044,6 +1047,7 @@ a {
 	animation: menuAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.4s * var(--i));
+	transition: 3s;
 }
 	
 .hamburger {
@@ -1060,8 +1064,7 @@ a {
 	height: auto;
         display: block;
 	width: 45px;
-        animation: h3Anim 2s ease forwards;
-	animation-delay: calc(.3s * var(--i));
+        transition: 3s;
 	background: transparent;
 }
 	
@@ -1097,18 +1100,18 @@ a {
 
 li {
     	list-style: none;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 a {
     	text-decoration: none;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 /*Setting the content format for landing page */
