@@ -917,7 +917,7 @@ a {
 	font-weight: 400;
 	font-style: normal;
 	background-color: transparent;
-	animation: logoAnim 2s ease forwards;
+	animation: logoAnim 5s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 }
 
@@ -950,7 +950,7 @@ a {
 	margin-top: 5px;
 	margin-bottom: 5px;
     	padding: 0;
-	animation: choiceAnim 2.5s ease forwards;
+	animation: choiceAnim 5.5s ease forwards;
 	animation-timing-function: ease-in-out;
 }
 	
