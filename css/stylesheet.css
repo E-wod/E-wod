@@ -139,7 +139,10 @@ a {
 }
 
 .nav-item {
-    	margin-left: 5px;
+    	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .nav-link{
@@ -157,14 +160,14 @@ a {
 	overflow: hidden;
 	justify-content: center;
 	position: relative;
-	margin-left: 5px;
+	margin-left: 10px;
 	margin-right: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 22px;
 	background: transparent;
 	padding: 0px 0px 0px;
-	animation: menuAnim 3s ease forwards;
+	animation: choiceAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.4s * var(--i));
 	transition: 1s;
@@ -175,10 +178,10 @@ a {
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
 	background: #000000;
-	margin-left: 0px;
-	margin-right: 20px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	font-size: 18px;
 	width: auto;
 	max-width: 250px;
