@@ -959,7 +959,7 @@ a {
 	margin-top: 5px;
 	margin-bottom: 5px;
     	padding: 0;
-	animation: choiceAnim 3s ease forwards;
+	animation: menuAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.4s * var(--i));
 	transition: 3s;
@@ -1035,7 +1035,7 @@ a {
 	font-size: 12px;
 	color: azure;
 	opacity: 0;
-	animation: h3Anim 3s ease forwards;
+	animation: menuAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.4s * var(--i));
 	transition: 3s;
