@@ -164,9 +164,9 @@ a {
 	font-size: 22px;
 	background: transparent;
 	padding: 0px 0px 0px;
-	animation: menuAnim 2s ease forwards;
+	animation: menuAnim ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.8s * var(--i));
+	animation-delay: calc(.6s * var(--i));
 	transition: 1s;
 	opacity: 0;
 
@@ -195,9 +195,9 @@ a {
 	color: #3d0ee8;
 	font-color: #3d0ee8;
 	overflow: hidden;
-	animation: menuAnim 1s ease forwards;
+	animation: menuAnim ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.8s * var(--i));
+	animation-delay: calc(.6s * var(--i));
 	padding: 0px 0px 0px;
 	opacity: 0;
 }
@@ -226,7 +226,7 @@ a {
 /*Hover Function*/
 .navBar a:hover{
 	color: azure;
-	transition: .75s;
+	transition: 2s;
 	transition-timing-function: ease-out;
 	background: transparent;
 	text-decoration: none;
@@ -917,7 +917,7 @@ a {
 	font-weight: 400;
 	font-style: normal;
 	background-color: transparent;
-	animation: logoAnim 5s ease forwards;
+	animation: logoAnim 2s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 }
 
@@ -949,9 +949,9 @@ a {
 	margin-top: 5px;
 	margin-bottom: 5px;
     	padding: 0;
-	animation: menuAnim 5.5s ease forwards;
-	animation-delay: calc(.8s * var(--i));
+	animation: menuAnim ease forwards;
 	animation-timing-function: ease-in-out;
+	animation-delay: calc(.6s * var(--i));
 }
 	
 .nav-menu:hover,	
@@ -961,8 +961,9 @@ a {
 	text-decoration: none;
 	box-shadow: 0 0px 0px azure;
 	overflow: visible;
-	animation: menuAnim 5.5s ease forwards;
-	animation-delay: calc(.8s * var(--i));
+	animation: menuAnim ease forwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: calc(.6s * var(--i));
 }
 
 .nav-item {
@@ -1000,7 +1001,9 @@ a {
 	padding: 0px 0px 0px;
 	width: auto;
 	max-height: auto;
-	animation: hamAnim 2.5s ease forwards;
+	animation: menuAnim ease forwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: calc(.6s * var(--i));
 	border-radius: 8px;
 }
 	
@@ -1017,6 +1020,9 @@ a {
 	font-size: 12px;
 	color: azure;
 	opacity: 0;
+	animation: menuAnim ease forwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: calc(.6s * var(--i));
 }
 
 .navBar a:hover {
