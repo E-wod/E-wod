@@ -949,7 +949,7 @@ a {
 	margin-top: 5px;
 	margin-bottom: 5px;
     	padding: 0;
-	animation: choiceAnim 5.5s ease forwards;
+	animation: menuAnim 5.5s ease forwards;
 	animation-delay: calc(.8s * var(--i));
 	animation-timing-function: ease-in-out;
 }
@@ -961,6 +961,8 @@ a {
 	text-decoration: none;
 	box-shadow: 0 0px 0px azure;
 	overflow: visible;
+	animation: menuAnim 5.5s ease forwards;
+	animation-delay: calc(.8s * var(--i));
 }
 
 .nav-item {
