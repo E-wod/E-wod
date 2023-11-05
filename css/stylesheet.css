@@ -157,16 +157,16 @@ a {
 	overflow: hidden;
 	justify-content: center;
 	position: relative;
-	margin-left: 10px;
+	margin-left: 5px;
 	margin-right: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 22px;
 	background: transparent;
 	padding: 0px 0px 0px;
-	animation: menuAnim 1s ease forwards;
+	animation: menuAnim 2s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.3s * var(--i));
+	animation-delay: calc(.8s * var(--i));
 	transition: 1s;
 	opacity: 0;
 
@@ -197,7 +197,7 @@ a {
 	overflow: hidden;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(.3s * var(--i));
+	animation-delay: calc(.8s * var(--i));
 	padding: 0px 0px 0px;
 	opacity: 0;
 }
@@ -941,7 +941,6 @@ a {
    	width: auto;
 	height: auto;
     	border-radius: 10px;
-    	transition: 0.3s;
 	overflow: visible;
 	z-index: 3;
 	font-color: #3d0ee8;
@@ -951,6 +950,7 @@ a {
 	margin-bottom: 5px;
     	padding: 0;
 	animation: choiceAnim 5.5s ease forwards;
+	animation-delay: calc(.8s * var(--i));
 	animation-timing-function: ease-in-out;
 }
 	
