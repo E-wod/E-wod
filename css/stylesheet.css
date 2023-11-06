@@ -89,8 +89,8 @@ a {
 	z-index: 5;
 	text-decoration: none;
 	overflow: inherit;
-/* 	transition: .9s;
-	transition-timing-function: ease;  */
+	transition: .9s;
+	transition-timing-function: ease; 
 	object-position: center;
 }
 
@@ -143,9 +143,9 @@ a {
 	margin-right: 15px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-/* 	animation: menuAnim 4s ease forwards;
+	animation: menuAnim 4s ease forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: calc(1s * var(--i)); */
+	animation-delay: calc(1s * var(--i));
 	transition: 3s;
 }
 
@@ -182,7 +182,7 @@ a {
 	font-size: 22px;
 	background: transparent;
 	padding: 0px 0px 0px;
-	animation: menuAnim 1s ease forwards;
+	animation: choiceAnim 1s ease forwards;
 	animation-delay: calc(.2s * var(--i)); 
 	animation-timing-function: ease-in-out;
 	opacity: 0;
