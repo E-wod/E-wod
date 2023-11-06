@@ -178,11 +178,11 @@ a {
 	font-size: 22px;
 	background: transparent;
 	padding: 0px 0px 0px;
-	animation: choiceAnim 3s ease forwards;
+	animation: menuAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.4s * var(--i));
 	transition: 3s;
-/* 	opacity: 0; */
+	opacity: 0;
 
 }
 
@@ -214,7 +214,7 @@ a {
 	animation-delay: calc(.4s * var(--i));
 	transition: 3s;
 	padding: 0px 0px 0px;
-/* 	opacity: 0; */
+	opacity: 0;
 }
 /*Setting the attributes for button*/
 .navBar a:nth-child(1 2 3) {
