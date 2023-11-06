@@ -143,10 +143,9 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	animation: menuAnim 4s ease forwards;
+	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 /* 	animation-delay: calc(.2s * var(--i)); */
-	transition: 3s;
 }
 
 .nav-item {
@@ -965,7 +964,6 @@ a {
 	margin-bottom: 5px;
     	padding: 0;
 	animation-timing-function: ease-in-out;
-	transition: .3s;
 	animation: h1Anim 1s ease forwards;
 /* 	animation-delay: calc(.2s * var(--i)); */
 }
