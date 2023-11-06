@@ -184,8 +184,8 @@ a {
 	font-size: 22px;
 	background: transparent;
 	padding: 0px 0px 0px;
-	animation: choiceAnim 1s ease forwards;
-	animation-delay: calc(.2s * var(--i)); 
+/* 	animation: choiceAnim 1s ease forwards;
+	animation-delay: calc(.2s * var(--i));  */
 	animation-timing-function: ease-in-out;
 	opacity: 0;
 
@@ -214,8 +214,8 @@ a {
 	color: #3d0ee8;
 	font-color: #3d0ee8;
 	overflow: hidden;
-	animation: choiceAnim 1s ease forwards;
-	animation-delay: calc(.2s * var(--i)); 
+/* 	animation: choiceAnim 1s ease forwards;
+	animation-delay: calc(.2s * var(--i));  */
 	animation-timing-function: ease-in-out;
 	padding: 0px 0px 0px;
 	opacity: 0;
