@@ -959,7 +959,7 @@ a {
 	margin-top: 5px;
 	margin-bottom: 5px;
     	padding: 0;
-	animation: menuAnim 3s ease forwards;
+	animation: h1Anim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.4s * var(--i));
 	transition: 3s;
@@ -972,7 +972,7 @@ a {
 	text-decoration: none;
 	box-shadow: 0 0px 0px azure;
 	overflow: visible;
-	animation: menuAnim 3s ease forwards;
+	animation: h1Anim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.4s * var(--i));
 	transition: 3s;
@@ -982,12 +982,20 @@ a {
 	margin: 0 0 0;
 	align-items: center; 
 	transition: 5s;
+	margin-left: 10px;
+	margin-right: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .nav-link{
     	font-size: 18px;
     	font-weight: 100;
 	transition: 5s;
+	margin-left: 10px;
+	margin-right: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 	
 .nav-item :active,	
@@ -1009,13 +1017,13 @@ a {
 	align-items: center;
 	float: right;
 	margin-left: 10px;
-	margin-right: 10px;
+	margin-right: 30px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding: 0px 0px 0px;
 	width: auto;
 	max-height: auto;
-	animation: choiceAnim 3s ease forwards;
+	animation: h1Anim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.4s * var(--i));
 	transition: 3s;
@@ -1028,14 +1036,14 @@ a {
 	display: inline-flex;
 	text-decoration: none;
 	margin-left: 3px;
-	margin-right: 3px;
+	margin-right: 30px;
 	margin-top: 3px;
 	margin-bottom: 3px;
 	padding: 0;
 	font-size: 12px;
 	color: azure;
 	opacity: 0;
-	animation: choiceAnim 3s ease forwards;
+	animation: h1Anim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.4s * var(--i));
 	transition: 3s;
@@ -1043,7 +1051,6 @@ a {
 
 .navBar a:hover {
 	color: azure;
-	transition: 3s;
 	background: transparent;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
