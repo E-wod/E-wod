@@ -184,8 +184,8 @@ a {
 	font-size: 22px;
 	background: transparent;
 	padding: 0px 0px 0px;
-/* 	animation: choiceAnim 1s ease forwards;
-	animation-delay: calc(.2s * var(--i));  */
+	animation: choiceAnim 1s ease forwards;
+	animation-delay: calc(.2s * var(--i)); 
 	animation-timing-function: ease-in-out;
 	opacity: 0;
 
@@ -1030,8 +1030,8 @@ a {
 	padding: 0px 0px 0px;
 	width: auto;
 	max-height: auto;
-/*  	animation: h1Anim 3s ease forwards;
-	animation-delay: calc(.2s * var(--i)); */
+ 	animation: h1Anim 3s ease forwards;
+	animation-delay: calc(.2s * var(--i));
 	animation-timing-function: ease-in-out; 
 	transition: .3s;
 	border-radius: 8px;
