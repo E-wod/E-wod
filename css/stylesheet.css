@@ -961,7 +961,7 @@ a {
 	margin-top: 5px;
 	margin-bottom: 5px;
     	padding: 0;
-	animation: h1Anim 3s ease forwards;
+	animation: menuAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.4s * var(--i));
 	transition: 3s;
@@ -1057,7 +1057,7 @@ a {
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	overflow: visible;
-	transition: 3s;
+	transition: .3s;
 }
 	
 .hamburger {
@@ -1074,7 +1074,7 @@ a {
 	height: auto;
         display: block;
 	width: 45px;
-        transition: 3s;
+        transition: .3s;
 	background: transparent;
 }
 	
@@ -1111,7 +1111,7 @@ a {
 li {
     	list-style: none;
 	margin-left: 5px;
-	margin-right: 5px;
+	margin-right: 25px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
@@ -1119,7 +1119,7 @@ li {
 a {
     	text-decoration: none;
 	margin-left: 5px;
-	margin-right: 5px;
+	margin-right: 25px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
