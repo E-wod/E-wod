@@ -143,7 +143,7 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	animation: menuAnim 1s ease forwards;
+	animation: logoAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 /* 	animation-delay: calc(.2s * var(--i)); */
 }
@@ -964,7 +964,7 @@ a {
 	margin-bottom: 5px;
     	padding: 0;
 	animation-timing-function: ease-in-out;
-	animation: h1Anim 1s ease forwards;
+	animation: logoAnim 1s ease forwards;
 /* 	animation-delay: calc(.2s * var(--i)); */
 }
 	
