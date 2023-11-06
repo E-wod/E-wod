@@ -154,7 +154,6 @@ a {
 	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	transition: 5s;
 }
 
 .nav-link{
@@ -164,7 +163,6 @@ a {
 	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	transition: 5s;
 }
 
 /*Nav Bar Attributes*/
@@ -187,7 +185,6 @@ a {
 /* 	animation: menuAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.6s * var(--i)); */
-	transition: 5s;
 	opacity: 0;
 
 }
@@ -218,7 +215,6 @@ a {
 /* 	animation: choiceAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(.6s * var(--i)); */
-	transition: 5s;
 	padding: 0px 0px 0px;
 	opacity: 0;
 }
@@ -236,7 +232,7 @@ a {
 	width: 100%;
 	height: 0%;
 	z-index: -1;
-	transition: 1.5s;
+	transition: .5s;
 	transition-timing-function: ease-in-out; 
 }
 /*Animation Element*/
@@ -247,7 +243,7 @@ a {
 /*Hover Function*/
 .navBar a:hover{
 	color: azure;
-	transition: 1.5s;
+	transition: .5s;
 	transition-timing-function: ease-out;
 	background: transparent;
 	text-decoration: none;
