@@ -963,7 +963,7 @@ a {
     	padding: 0;
 	animation: h1Anim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-/* 	animation-delay: calc(4s * var(--i)); */
+	animation-delay: calc(.2s * var(--i));
 	transition: .3s;
 }
 	
@@ -976,7 +976,7 @@ a {
 	overflow: visible;
 	animation: h1Anim 3s ease forwards;
         animation-timing-function: ease-in-out; 
-/* 	animation-delay: calc(.4s * var(--i)); */
+	animation-delay: calc(.2s * var(--i));
 	transition: .3s;
 }
 
@@ -1027,7 +1027,7 @@ a {
 	max-height: auto;
  	animation: h1Anim 3s ease forwards;
 	animation-timing-function: ease-in-out;
-/* 	animation-delay: calc(.4s * var(--i));  */
+	animation-delay: calc(.2s * var(--i)); 
 	transition: .3s;
 	border-radius: 8px;
 }
