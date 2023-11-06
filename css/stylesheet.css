@@ -214,8 +214,8 @@ a {
 	color: #3d0ee8;
 	font-color: #3d0ee8;
 	overflow: hidden;
-/* 	animation: choiceAnim 1s ease forwards;
-	animation-delay: calc(.2s * var(--i));  */
+	animation: choiceAnim 1s ease forwards;
+	animation-delay: calc(.2s * var(--i)); 
 	animation-timing-function: ease-in-out;
 	padding: 0px 0px 0px;
 	opacity: 0;
@@ -1050,8 +1050,8 @@ a {
 	font-size: 12px;
 	color: azure;
 	opacity: 0;
-/* 	animation: h1Anim 3s ease forwards;
-	animation-delay: calc(.4s * var(--i)); */
+	animation: h1Anim 3s ease forwards;
+	animation-delay: calc(.4s * var(--i));
 	animation-timing-function: ease-in-out;
 	transition: .3s;
 }
