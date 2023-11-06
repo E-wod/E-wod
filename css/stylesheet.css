@@ -153,8 +153,8 @@ a {
 	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	animation: choiceAnim 1s ease forwards;
-	animation-delay: calc(.2s * var(--i)); 
+	animation: choiceAnim 3s ease forwards;
+	animation-delay: calc(.5s * var(--i)); 
 	animation-timing-function: ease-in-out;
 }
 
