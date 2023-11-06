@@ -139,10 +139,10 @@ a {
     	display: flex;
     	justify-content: space-between;
     	align-items: center;
-    	margin-left: 5px;
-	margin-right: 15px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+    	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	animation: menuAnim 4s ease forwards;
 	animation-timing-function: ease-in-out;
 	animation-delay: calc(1s * var(--i));
@@ -159,10 +159,10 @@ a {
 .nav-link{
     	font-size: auto;
     	font-weight: 100;
-    	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+    	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 /*Nav Bar Attributes*/
@@ -175,10 +175,10 @@ a {
 	overflow: hidden;
 	justify-content: center;
 	position: relative;
-    	margin-left: 5px;
-	margin-right: 25px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+    	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	font-size: 22px;
 	background: transparent;
 	padding: 0px 0px 0px;
@@ -193,7 +193,7 @@ a {
 .navBar a {
 	background: #000000;
     	margin-left: 5px;
-	margin-right: 25px;
+	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-size: 18px;
