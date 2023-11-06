@@ -150,6 +150,10 @@ a {
 	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	animation: menuAnim 3s ease forwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: calc(.4s * var(--i));
+	transition: 3s;
 }
 
 .nav-link{
@@ -159,6 +163,10 @@ a {
 	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	animation: menuAnim 3s ease forwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: calc(.4s * var(--i));
+	transition: 3s;
 }
 
 /*Nav Bar Attributes*/
