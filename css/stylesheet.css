@@ -955,6 +955,9 @@ a {
 	margin-top: 10px;
 	margin-bottom: 10px;
     	padding: 0;
+	animation: choiceAnim 3s ease forwards;
+	animation-delay: calc(.5s * var(--i)); 
+	animation-timing-function: ease-in-out;
 }
 	
 .nav-menu:hover,	
@@ -1014,6 +1017,9 @@ a {
 	width: auto;
 	max-height: auto;
 	border-radius: 8px;
+	animation: choiceAnim 3s ease forwards;
+	animation-delay: calc(.5s * var(--i)); 
+	animation-timing-function: ease-in-out;
 }
 	
 /*Nav Bar Anchor Tag*/
@@ -1029,6 +1035,9 @@ a {
 	font-size: 12px;
 	color: azure;
 	opacity: 0;
+	animation: choiceAnim 3s ease forwards;
+	animation-delay: calc(.5s * var(--i)); 
+	animation-timing-function: ease-in-out;
 }
 
 .navBar a:hover {
