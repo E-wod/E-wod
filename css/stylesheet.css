@@ -177,7 +177,9 @@ a {
 	background: transparent;
 	padding: 0px 0px 0px;
 	opacity: 0;
-
+        animation: choiceAnim 3s ease forwards;
+	animation-delay: calc(.5s * var(--i)); 
+	animation-timing-function: ease-in-out;
 }
 
 /*navBar Anchor Tag Button layout and function*/
