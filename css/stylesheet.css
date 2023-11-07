@@ -143,9 +143,9 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	animation: logoAnim 1s ease forwards;
+	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-/* 	animation-delay: calc(.2s * var(--i)); */
+	animation-delay: calc(.2s * var(--i));
 }
 
 .nav-item {
@@ -153,8 +153,8 @@ a {
 	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	animation: choiceAnim 1s ease forwards;
-	animation-delay: calc(.5s * var(--i)); 
+/* 	animation: choiceAnim 1s ease forwards;
+	animation-delay: calc(.5s * var(--i));  */
 	animation-timing-function: ease-in-out;
 }
 
@@ -965,7 +965,7 @@ a {
     	padding: 0;
 	animation-timing-function: ease-in-out;
 	animation: logoAnim 1s ease forwards;
-/* 	animation-delay: calc(.2s * var(--i)); */
+	animation-delay: calc(.2s * var(--i));
 }
 	
 .nav-menu:hover,	
@@ -990,7 +990,7 @@ a {
 	margin-top: 2px;
 	margin-bottom: 2px;
 	animation: choiceAnim 1s ease forwards;
-	animation-delay: calc(.5s * var(--i)); 
+/* 	animation-delay: calc(.5s * var(--i));  */
 	animation-timing-function: ease-in-out;
 }
 
