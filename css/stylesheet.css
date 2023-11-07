@@ -153,8 +153,8 @@ a {
 	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-/* 	animation: choiceAnim 1s ease forwards;
-	animation-delay: calc(.5s * var(--i));  */
+	animation: choiceAnim 1s ease forwards;
+	animation-delay: calc(.5s * var(--i)); 
 	animation-timing-function: ease-in-out;
 }
 
@@ -185,7 +185,7 @@ a {
 	background: transparent;
 	padding: 0px 0px 0px;
 	animation: choiceAnim .8s ease forwards;
-/* 	animation-delay: calc(.2s * var(--i));  */
+	animation-delay: calc(.2s * var(--i)); 
 	animation-timing-function: ease-in-out;
 	opacity: 0;
 
@@ -215,7 +215,7 @@ a {
 	font-color: #3d0ee8;
 	overflow: hidden;
 	animation: choiceAnim .8s ease forwards;
-/* 	animation-delay: calc(.2s * var(--i));  */
+	animation-delay: calc(.2s * var(--i)); 
 	animation-timing-function: ease-in-out;
 	padding: 0px 0px 0px;
 	opacity: 0;
@@ -249,7 +249,7 @@ a {
 	transition-timing-function: ease-out;
 	background: transparent;
 	text-decoration: none;
-	box-shadow: 0 7px 17px azure;
+	box-shadow: 0 7px 12px azure;
 	overflow: visible;
 }
 	
@@ -990,7 +990,7 @@ a {
 	margin-top: 2px;
 	margin-bottom: 2px;
 	animation: choiceAnim 1s ease forwards;
-/* 	animation-delay: calc(.5s * var(--i));  */
+	animation-delay: calc(.5s * var(--i)); 
 	animation-timing-function: ease-in-out;
 }
 
@@ -1030,7 +1030,7 @@ a {
 	width: auto;
 	max-height: auto;
  	animation: h1Anim .8s ease forwards;
-/* 	animation-delay: calc(.2s * var(--i)); */
+	animation-delay: calc(.2s * var(--i));
 	animation-timing-function: ease-in-out; 
 	border-radius: 8px;
 }
@@ -1049,7 +1049,7 @@ a {
 	color: azure;
 	opacity: 0;
 	animation: h1Anim .8s ease forwards;
-/* 	animation-delay: calc(.2s * var(--i)); */
+	animation-delay: calc(.2s * var(--i));
 	animation-timing-function: ease-in-out;
 }
 
