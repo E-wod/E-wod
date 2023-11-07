@@ -141,6 +141,9 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	animation: choiceAnim 3s ease forwards;
+	animation-delay: calc(.5s * var(--i)); 
+	animation-timing-function: ease-in-out;
 }
 
 .nav-item {
@@ -207,8 +210,6 @@ a {
 	overflow: hidden;
 	padding: 0px 0px 0px;
 	opacity: 0;
-	animation: choiceAnim 3s ease forwards;
-	animation-delay: calc(.5s * var(--i)); 
 	animation-timing-function: ease-in-out;
 }
 /*Setting the attributes for button*/
