@@ -89,8 +89,6 @@ a {
 	z-index: 5;
 	text-decoration: none;
 	overflow: inherit;
-	transition: .9s;
-	transition-timing-function: ease; 
 	object-position: center;
 }
 
