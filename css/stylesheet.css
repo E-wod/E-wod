@@ -203,7 +203,7 @@ a {
 .nav-item {
 	justify-content: space-around;
 	max-width: 250px;
-	height: auto;
+	height: 90px;
 	text-align: center;
 	align-all: center;
     	margin-left: 2px;
