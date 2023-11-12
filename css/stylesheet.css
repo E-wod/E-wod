@@ -1272,7 +1272,7 @@ a {
 	margin-bottom: 2px;
 	margin-right: 2px;
 	margin-left: 2px;
-	background: #000000;
+	background: transparent;
 	padding-top: 0%;
 	padding-bottom: 0%;
 	padding-right: 0%;
@@ -1309,16 +1309,17 @@ a {
 	padding: 5px 5px 5px;
 }
 
-/*Setting the attributes for each button*/
-.btnBox a:nth-child(1) {
+
+/* .btnBox a:nth-child(1) {
 	background: transparent;
 	color: #3d0ee8;
-}
+} */
 
 /*Setting pre-animation attributes*/
 .btnBox a::before {
 	content: '';
 	position: absolute;
+	background: #000000;
 	top: 0;
 	left: 0;
 	width: 100%;
