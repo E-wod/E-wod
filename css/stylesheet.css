@@ -762,20 +762,20 @@ li a {
 }
 
 .picFrame {
-    	display: flex;
+    	display: block;
 	object-fit: contain;
 	float: center;
 	vertical-align: middle;
 	background-color: transparent;
 	border-radius: 8px;
-	width: 70%;
+	width: 90%;
 	height: auto;
-	max-height: 250%;\
+	max-height: 250%;
 	justify-content: space-around;
-	margin-right: 0px;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 	padding-right: 2px;
 	padding-left: 2px;
 	padding-top: 10px;
