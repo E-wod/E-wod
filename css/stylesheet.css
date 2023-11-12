@@ -114,6 +114,10 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	overflow: visible;
 }
 
