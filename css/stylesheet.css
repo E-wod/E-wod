@@ -129,8 +129,8 @@ a {
 }
 
 .nav-logo {
-	width: auto;
-	height: auto;
+/* 	width: auto;
+	height: auto; */
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -152,7 +152,7 @@ a {
 
 .nav-logo a {
         max-width: 140px;
-	max-height: auto;
+	max-height: 140px;
 	width: auto;
 	height: auto;
 	margin-left: 2px;
