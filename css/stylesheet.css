@@ -197,8 +197,11 @@ body {
 }
 
 .nav-item {
-	justify-content: space-between;
+	justify-content: space-around;
+	max-width: 250px;
+	height: auto;
 	text-align: center;
+	align-all: center;
     	margin-left: 2px;
 	margin-right: 2px;
 	margin-top: 2px;
@@ -262,7 +265,6 @@ body {
 	padding-bottom: 5px;
 	font-size: 14px;
 	width: auto;
-	max-width: 250px;
 	height: auto;
 	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
