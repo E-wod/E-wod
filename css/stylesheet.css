@@ -413,6 +413,9 @@ li a {
 	position: relative;
 	z-index: -3;
 	opacity: 0;
+	justify-content: space-around;
+	text-align: center;
+	align-all: center;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
@@ -436,6 +439,9 @@ li a {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 100%;
+	justify-content: space-around;
+	text-align: center;
+	align-all: center;
 }
 
 .landingContent h3{
@@ -447,7 +453,9 @@ li a {
 	text-decoration: none;
 	text-shadow: 3px 3px 7px #000000;
 	z-index: 10;
-	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	align-all: center;
 	margin-left: 2px;
 	margin-right: 2px;
 	margin-top: 2px;
@@ -479,6 +487,9 @@ li a {
 .landingContent p{
 	z-index: 1;
     	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	align-all: center;
 	font-size: 20px;
 	color: azure;
 	font-family: sans-serif;
