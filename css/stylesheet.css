@@ -152,6 +152,8 @@ a {
 }
 
 .nav-logo a {
+	width: 140px;
+	height: 140px;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
