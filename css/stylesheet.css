@@ -780,6 +780,39 @@ li a {
 	z-index: -2;
 }
 
+.picFrame {
+/* 	flex-direction: reverse-row;
+	flex-wrap: wrap; */
+	object-fit: contain;
+	float: center;
+	vertical-align: middle;
+	background-color: transparent;
+	border-radius: 8px;
+	width: 100%;
+	height: auto;
+	max-height: 230%;
+	justify-content: space-around;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-right: 2px;
+	padding-left: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    	z-index: -4;
+    	display: block;
+	color: azure;
+}
+.picFrame:hover{
+	text-decoration: none;
+	overflow: inherit;
+	cursor: pointer;
+	scale: 1.05;
+	z-index: 999999;
+	transition-timing-function: ease ease-in-out; 
+}
+
 .picFrame h1{
 	font-size: 16px;
 	color: #494F52;
@@ -828,38 +861,6 @@ li a {
 	overflow: inherit;
 	opacity: 0;
 	animation: pAnim 1s ease forwards;
-	transition-timing-function: ease ease-in-out; 
-}
-.picFrame {
-	flex-direction: reverse-row;
-	flex-wrap: wrap;
-	object-fit: contain;
-	float: center;
-	vertical-align: middle;
-	background-color: transparent;
-	border-radius: 8px;
-	width: 100%;
-	height: auto;
-	max-height: 230%;
-	justify-content: space-around;
-	margin-right: 0px;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-right: 2px;
-	padding-left: 2px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-    	z-index: -4;
-    	display: block;
-	color: azure;
-}
-.picFrame:hover{
-	text-decoration: none;
-	overflow: inherit;
-	cursor: pointer;
-	scale: 1.05;
-	z-index: 999999;
 	transition-timing-function: ease ease-in-out; 
 }
 
