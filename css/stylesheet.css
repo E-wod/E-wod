@@ -160,8 +160,12 @@ a {
 	height: 140px;
 }
 
-.nav-logo :hover,
+
+.nav-logo a :hover,
 .nav-logo .active {
+	width: 145px;
+	height: 145px;
+	opacity: .9;
 	color: azure;
 	transition: .3s;
 	transition-timing-function: ease;
@@ -170,16 +174,16 @@ a {
 	overflow: visible;
 }
 
-.nav-logo a :hover,
+.nav-logo :hover,
 .nav-logo .active {
-	width: 145px;
-	height: 145px;
 	color: azure;
 	transition: .3s;
 	transition-timing-function: ease;
 	background: transparent;
 	text-decoration: none;
 	overflow: visible;
+	width: 145px;
+	height: 145px;
 	opacity: .9;
 }
 
