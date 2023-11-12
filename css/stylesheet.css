@@ -791,10 +791,10 @@ a {
 	animation: menuAnim ease forwards;
 	animation-delay: calc(.1s * var(--i));
 	transition-timing-function: ease-in-out;
-}
+/* }
 
 /*Social Links Anchor Tag Button layout and function*/
-#jumpBtn a {
+#jumpBtn a { */
 	align-items: center;
 	font-size: 40px;
 	text-decoration: none;
@@ -817,13 +817,13 @@ a {
 }
 
 /*Setting the attributes for each button*/
-#jumpBtn a:nth-child(1 2 3) {
+#jumpBtn :nth-child(1 2 3) {
 	background: transparent;
 	color: #3d0ee8;
 }
 
 /*Setting pre-animation attributes*/
-#jumpBtn a::before {
+#jumpBtn ::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -836,14 +836,14 @@ a {
 }
 
 /*Animation element*/
-#jumpBtn a:hover::before {    
+#jumpBtn :hover::before {    
 	height: 100%;
 	background: linear-gradient(0deg,transparent 35%,#3d0ee8 240%);
 	z-index: 99;
 }
 
 /*Hover Function for Social Links*/
-#jumpBtn a:hover,
+#jumpBtn :hover,
 #jumpBtn .active{
 	color: azure;
 	text-decoration: none;
