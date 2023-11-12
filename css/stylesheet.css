@@ -145,6 +145,17 @@ a {
 	transition-timing-function: ease ease-in-out; 
 }
 
+.nav-logo a {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 .nav-logo :hover,
 .nav-logo .active {
 	color: azure;
