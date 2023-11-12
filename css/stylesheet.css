@@ -768,25 +768,93 @@ a {
 
 
 #jumpBtn {
-  display: none; /* Hidden by default */
-  position: sticky; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  	display: none; /* Hidden by default */
+  	position: sticky; /* Fixed/sticky position */
+  	bottom: 20px; /* Place the button at the bottom of the page */
+  	right: 30px; /* Place the button 30px from the right */
+ 	z-index: 99; /* Make sure it does not overlap */
+  	cursor: pointer; /* Add a mouse pointer on hover */
+	overflow: hidden;
+	justify-content: center;
+	position: relative;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-right: 5px;
+	margin-left: 5px;
+	background: transparent;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-right: 5px;
+	padding-left: 5px;
+	display: flex;
+	width: auto;
+	height: auto;
+	text-decoration: none;
+	animation: menuAnim ease forwards;
+	animation-delay: calc(.1s * var(--i));
+	transition-timing-function: ease-in-out;
+	opacity: 0;
 }
 
-#jumpBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+/*Social Links Anchor Tag Button layout and function*/
+#jumpBtn a {
+	align-items: center;
+	font-size: 40px;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	border: 2px solid #3d0ee8;
+	border-radius: 50%;
+	position: relative;
+	color: #3d0ee8;
+	overflow: hidden;
+	width: 60px;
+	height: 60px;
+	background: #000000;
+	z-index: 15;
+	font-family:"Open Sans", "sans-serif";
+	transition: 1s;
+	transition-timing-function: ease; 
+	animation: menuAnim 1s ease forwards;
+	animation-delay: calc(.3s * var(--i));
+	opacity: 0;
 }
 
+/*Setting the attributes for each button*/
+#jumpBtn a:nth-child(1 2 3) {
+	background: transparent;
+	color: #3d0ee8;
+}
+
+/*Setting pre-animation attributes*/
+#jumpBtn a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	z-index: 3;
+	transition: .9s;
+	transition-timing-function: ease; 
+}
+
+/*Animation element*/
+#jumpBtn a:hover::before {    
+	height: 100%;
+	background: linear-gradient(0deg,transparent 35%,#3d0ee8 240%);
+	z-index: 3;
+}
+
+/*Hover Function for Social Links*/
+#jumpBtn a:hover,
+#jumpBtn .active{
+	color: azure;
+	text-decoration: none;
+	box-shadow: 0 2px 7px azure;
+	overflow: hidden;
+	transition-timing-function: ease-out;
+}
 
 
 
