@@ -133,9 +133,10 @@ a {
 }
 
 .nav-logo {
- 	width: 140px;
-	height: 140px;
+ 	width: 130px;
+	height: 130px;
 	max-width: auto;
+	opacity: 1;
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -156,16 +157,17 @@ a {
 }
 
 .nav-logo a {
-	width: 140px;
-	height: 140px;
+	width: 130px;
+	height: 130px;
+	opacity: .8;
 }
 
 
 .nav-logo a :hover,
 .nav-logo .active {
-	width: 135px;
-	height: 135px;
-	opacity: .9;
+	width: 140px;
+	height: 140px;
+	opacity: 1;
 	color: azure;
 	transition: .3s;
 	transition-timing-function: ease;
@@ -182,9 +184,9 @@ a {
 	background: transparent;
 	text-decoration: none;
 	overflow: visible;
-	width: 135px;
-	height: 135px;
-	opacity: .9;
+	width: 140px;
+	height: 140px;
+	opacity: 1;
 }
 
 .nav-menu {
