@@ -155,8 +155,8 @@ body {
 }
 
 .nav-logo a {
-        max-width: 140px;
-	max-height: 140px;
+        width: 140px;
+	height: 140px;
 /* 	width: auto;
 	height: auto; */
 	margin-left: 2px;
