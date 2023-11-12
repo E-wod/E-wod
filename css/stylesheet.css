@@ -741,7 +741,7 @@ li a {
 	margin-right: 0%;
 	margin-top: 0%;
 	margin-bottom: 0px;
-	padding-left: 0px;
+	padding-left: 100%;
 	padding-right: 0px;
 	padding-top: 10px;
 	padding-bottom: 0px;
@@ -765,7 +765,7 @@ li a {
 	position: relative;
     	align-items: center;
 	justify-content: space-between;
-	width: 100%;
+	width: 80%;
 	max-width: auto;
 	height: 100%;
 	margin-left: 0%;
