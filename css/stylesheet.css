@@ -133,8 +133,8 @@ a {
 }
 
 .nav-logo {
- 	width: 100%;
-	height: 100%;
+ 	width: 140px;
+	height: 140px;
 	max-width: auto;
 	display: flex;
 	justify-content: center;
