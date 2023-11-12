@@ -133,8 +133,8 @@ a {
 }
 
 .nav-logo {
- 	width: 130px;
-	height: 130px;
+ 	width: 140px;
+	height: 140px;
 	max-width: auto;
 	opacity: 1;
 	display: flex;
@@ -157,8 +157,8 @@ a {
 }
 
 .nav-logo a {
-	width: 130px;
-	height: 130px;
+	width: 140px;
+	height: 140px;
 	opacity: .8;
 }
 
