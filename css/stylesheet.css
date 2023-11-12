@@ -1271,7 +1271,7 @@ a {
 
 /*Setting the landing page template for H3*/
 
-.landingContent h3 grp a{
+/* .landingContent h3 grp a{
 	width: 50%;
 }
 
@@ -1288,10 +1288,10 @@ a {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 100%;
-}
+} */
 
 .landingContent h3{
-	font-size: 20px;
+	font-size: 16px;
 	color: #0775b1;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
@@ -1318,7 +1318,7 @@ a {
 }
 
 .landingContent h3 span{
-    	font-size: 20px;
+    	font-size: 16px;
 	color: azure;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
