@@ -741,7 +741,7 @@ li a {
 
 }
 
-.showBox {
+/* .showBox {
 	z-index: 1;
 	display: block;
 	margin-left: 0%;
@@ -763,7 +763,7 @@ li a {
 	float: inherit;
 	justify-content: space-around;
 	z-index: -1;
-}
+} */
 
 .obJects{
 	background-color: transparent;
@@ -773,8 +773,8 @@ li a {
 	width: 80%;
 	max-width: auto;
 	height: 100%;
-	margin-left: 0%;
-	margin-right: 0%;
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-top: 5%;
 	margin-bottom: 5%;
 	padding-left: 5%;
