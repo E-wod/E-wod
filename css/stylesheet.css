@@ -770,13 +770,18 @@ li a {
 	position: relative;
     	align-items: center;
 	justify-content: space-between;
-	width: 80%;
-	max-width: auto;
-	height: 100%;
-	margin-left: 5%;
+	width: 100%;
+	max-width: 80%;
+	height: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+/* 	margin-left: 5%;
 	margin-right: 5%;
 	margin-top: 5%;
-	margin-bottom: 5%;
+	margin-bottom: 5%; */
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-top: 10px;
