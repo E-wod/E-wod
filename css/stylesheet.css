@@ -122,6 +122,10 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	text-decoration: none;
 	font-weight: 400;
 	font-style: normal;
@@ -148,6 +152,10 @@ a {
 	margin-right: 20px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	animation: choiceAnim 3s ease forwards;
 	animation-delay: calc(.5s * var(--i)); 
 	animation-timing-function: ease-in-out;
