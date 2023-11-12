@@ -156,7 +156,7 @@ a {
 	transition-timing-function: ease ease-in-out; 
 }
 
-.nav-logo a {
+/* .nav-logo a {
 	width: 140px;
 	height: 140px;
 	opacity: .8;
@@ -172,7 +172,7 @@ a {
 	background: transparent;
 	text-decoration: none;
 	overflow: visible;
-}
+} */
 
 .nav-logo :hover,
 .nav-logo .active {
