@@ -163,8 +163,8 @@ a {
 
 .nav-logo a :hover,
 .nav-logo .active {
-	width: 145px;
-	height: 145px;
+	width: 135px;
+	height: 135px;
 	opacity: .9;
 	color: azure;
 	transition: .3s;
@@ -182,8 +182,8 @@ a {
 	background: transparent;
 	text-decoration: none;
 	overflow: visible;
-	width: 145px;
-	height: 145px;
+	width: 135px;
+	height: 135px;
 	opacity: .9;
 }
 
