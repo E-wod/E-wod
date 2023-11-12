@@ -170,6 +170,19 @@ a {
 	overflow: visible;
 }
 
+.nav-logo a :hover,
+.nav-logo .active {
+	width: 145px;
+	height: 145px;
+	color: azure;
+	transition: .3s;
+	transition-timing-function: ease;
+	background: transparent;
+	text-decoration: none;
+	overflow: visible;
+	opacity: .9;
+}
+
 .nav-menu {
     	display: flex;
     	justify-content: space-between;
