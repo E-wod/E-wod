@@ -19,11 +19,11 @@ function closeMenu() {
 // Get the button
 let jumpbutton = document.getElementById("jumpBtn");
 
-// When the user scrolls down 1000px from the top of the document, show the button
+// When the user scrolls down 500px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
