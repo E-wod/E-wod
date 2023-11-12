@@ -759,8 +759,8 @@ li a {
 }
 
 .obJects{
-	flex-direction: reverse-row;
-	flex-wrap: wrap;
+	flex-direction: flex;
+/* 	flex-wrap: wrap; */
 	background-color: transparent;
 	position: relative;
     	align-items: center;
