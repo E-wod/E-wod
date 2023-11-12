@@ -65,7 +65,7 @@ body {
 	background-repeat: no-repeat;
 }
 
-a {
+/* a {
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -81,7 +81,7 @@ a {
 	scale: 1;
 	text-decorations: none;
 }
-
+ */
 /*Header Attributes*/
 .header {
 	align-self: center;
