@@ -27,8 +27,14 @@ html {
 	scroll-behavior: smooth;
 	height:100%;
         width:100%;
-	padding: 0;
-	margin: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	position: absolute;
 /* 	background-image: url("https://i.ibb.co/LPNzkVc/Mo-Organic-1597.jpg"); */
 /* 	background-color: #0b1d28; */
