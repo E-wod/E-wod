@@ -75,6 +75,7 @@ a {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	width: 100%;
+	max-width: auto;
 	height: 100%; 
 	justify-content: space-around;
 	text-align: center;
