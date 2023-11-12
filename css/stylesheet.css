@@ -287,10 +287,10 @@ a {
 	max-width: 100%;
 	height: 100%;
 	max-height: 1000%;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	padding-right: 0px;
@@ -412,7 +412,6 @@ a {
 	width: 100%;
 	height: 100%;
 	display: inline-block;
-    	margin: auto;
 	position: absolute;
 	float: top;
 	margin-top: 10%;
@@ -474,12 +473,6 @@ a {
 	transition: 1s;
 	padding: 5px 5px 5px;
 }
-
-/*
-.btnBox a:nth-child(1) {
-	background: transparent;
-	color: #3d0ee8;
-} */
 
 /*Setting pre-animation attributes*/
 .btnBox a::before {
@@ -746,6 +739,7 @@ a {
 	padding-top: 0%;
 	padding-bottom: 0px;
 	max-width: 98%;
+	width: 100%;
 	max-height: auto;
 	background: transparent;
 	position: relative;
@@ -1309,12 +1303,6 @@ a {
 	padding: 5px 5px 5px;
 }
 
-
-/* .btnBox a:nth-child(1) {
-	background: transparent;
-	color: #3d0ee8;
-} */
-
 /*Setting pre-animation attributes*/
 .btnBox a::before {
 	content: '';
@@ -1564,7 +1552,6 @@ a {
 	padding-right: 0%;
 	padding-left: 0%;
 	display: block;
-	gap: 5px;
 	z-index: -2;
 }
 
@@ -1580,6 +1567,7 @@ a {
 	padding-top: 0%;
 	padding-bottom: 0px;
 	max-width: 100%;
+	width: 100%;
 	max-height: auto;
 	background: transparent;
 	position: relative;
