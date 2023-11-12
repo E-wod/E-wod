@@ -775,7 +775,6 @@ a {
  	z-index: 99; /* Make sure it does not overlap */
   	cursor: pointer; /* Add a mouse pointer on hover */
 	overflow: hidden;
-	justify-content: center;
 	margin-top: 2px;
 	margin-bottom: 2px;
 	margin-right: 5px;
@@ -787,7 +786,7 @@ a {
 	padding-left: 5px;
 	display: flex;
 	width: auto;
-	height: auto;
+	height: 100%;
 	text-decoration: none;
 	animation: menuAnim ease forwards;
 	animation-delay: calc(.1s * var(--i));
