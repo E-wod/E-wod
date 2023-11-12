@@ -287,12 +287,12 @@ a {
 	max-width: 100%;
 	height: 100%;
 	max-height: 1000%;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding-top: 50px;
-	padding-bottom: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	padding-right: 0px;
 	padding-left: 0px;
 	display: block;
@@ -308,10 +308,10 @@ a {
 	font-style: italic;
 	text-shadow: 4px 4px 4px azure;
 	line-height: .9;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	padding: 0px 0px 0px;
 	width: 100%;
 	max-width: 100%;
@@ -322,9 +322,6 @@ a {
 	transition-timing-function: 1s ease ease-in-out; 
 }
 
-.h1 {
-	font-weight: 100;
-}
 /*Setting the landing page template for H3*/
 
 .landingContent h3 grp a{
@@ -364,10 +361,7 @@ a {
 	animation-delay: .7s;
 	transition-timing-function: ease ease-in-out; 
 	max-width: 100%;
-}
-
-.h3 {
-	font-weight: 100;
+	width: 100%;
 }
 
 .landingContent h3 span{
@@ -396,10 +390,11 @@ a {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 100%;
     	max-width: 100%;
 	max-height: 15%;
 	background: transparent;
@@ -408,10 +403,6 @@ a {
 	opacity: 0;
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: ease ease-in-out; 
-}
-
-.p {
-	font-weight: 100;
 }
 
 /*Setting the landing page template for Question buttons*/
@@ -1129,12 +1120,12 @@ a {
 	max-width: 100%;
 	height: 100%;
 	max-height: 1000%;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding-top: 20px;
-	padding-bottom: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-right: 0px;
 	padding-left: 0px;
 	display: block;
@@ -1152,11 +1143,11 @@ a {
 	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: .5%;
-	margin-bottom: 1%;
+	margin-top: 2px;
+	margin-bottom: 2px;
 	padding: 0px 0px 0px;
 	width: 100%;
-	max-width: 80%;
+	max-width: 100%;
 	position: relative;
 	z-index: -3;
 	opacity: 0;
@@ -1164,9 +1155,6 @@ a {
 	transition-timing-function: 1s ease ease-in-out; 
 }
 
-.h1 {
-	font-weight: 100;
-}
 /*Setting the landing page template for H3*/
 
 .landingContent h3 grp a{
@@ -1194,11 +1182,11 @@ a {
 	text-decoration: none;
 	text-shadow: 3px 3px 7px #000000;
 	z-index: 10;
-	padding: 0px 0 0px;
+	padding: 0px 0px 0px;
 	align-items: center;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 0px;
+	margin-top: 5px;
 	margin-bottom: 5px;
 	background: transparent;
 	opacity: 0;
@@ -1206,10 +1194,7 @@ a {
 	animation-delay: .7s;
 	transition-timing-function: ease ease-in-out; 
 	max-width: 100%;
-}
-
-.h3 {
-	font-weight: 100;
+	width: 100%;
 }
 
 .landingContent h3 span{
@@ -1238,11 +1223,12 @@ a {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
     	max-width: 100%;
+	width: 100%;
 	max-height: 15%;
 	background: transparent;
 	position: relative;
@@ -1250,10 +1236,6 @@ a {
 	opacity: 0;
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: ease ease-in-out; 
-}
-
-.p {
-	font-weight: 100;
 }
 
 /*Setting the landing page template for Question buttons*/
@@ -1470,7 +1452,7 @@ a {
 	max-height: 70%;
 	display: flex;
 	position: absolute;
-	margin-top: 33%;
+	margin-top: 25%;
 	margin-bottom: 15%;
 	margin-right: 0%;
 	margin-left: 0%;
