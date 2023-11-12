@@ -748,8 +748,8 @@ li a {
 	margin-right: 0%;
 	margin-top: 0%;
 	margin-bottom: 0px;
-	padding-left: 0%;
-	padding-right: 0px;
+	padding-left: 5%;
+	padding-right: 5%;
 	padding-top: 10px;
 	padding-bottom: 0px;
 	max-width: 100%;
@@ -766,8 +766,6 @@ li a {
 }
 
 .obJects{
-/* 	flex-direction: flex; */
-/* 	flex-wrap: wrap; */
 	background-color: transparent;
 	position: relative;
     	align-items: center;
@@ -779,8 +777,8 @@ li a {
 	margin-right: 0%;
 	margin-top: 5%;
 	margin-bottom: 5%;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 5%;
+	padding-right: 5%;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: block;
@@ -788,8 +786,6 @@ li a {
 }
 
 .picFrame {
-/* 	flex-direction: reverse-row;
-	flex-wrap: wrap; */
     	display: block;
 	object-fit: contain;
 	float: center;
