@@ -748,6 +748,7 @@ li a {
 	justify-content: space-between;
 	width: 100%;
 	max-width: 80%;
+	max-height: 250%;
 	height: auto;
         top: 0;
         bottom: 0;
@@ -755,7 +756,7 @@ li a {
         right: 0;
  	margin-left: 5%;
 	margin-right: 5%;
-	margin-top: 5%;
+	margin-top: 15%;
 	margin-bottom: 5%; 
 	padding-left: 5%;
 	padding-right: 5%;
