@@ -129,10 +129,8 @@ a {
 }
 
 .nav-logo {
-        max-width: 10%;
-	max-height: auto;
-	width: 140px;
-	height: 140px;
+	width: auto;
+	height: auto;
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -153,7 +151,7 @@ a {
 }
 
 .nav-logo a {
-        max-width: 10%;
+        max-width: 140px;
 	max-height: auto;
 	width: 140px;
 	height: 140px;
