@@ -130,6 +130,8 @@ body {
 }
 
 .nav-logo {
+        max-width: 10%;
+	max-height: auto;
 	width: 140px;
 	height: 140px;
 	display: flex;
@@ -152,6 +154,8 @@ body {
 }
 
 .nav-logo a {
+        max-width: 10%;
+	max-height: auto;
 	width: 140px;
 	height: 140px;
 	margin-left: 0px;
