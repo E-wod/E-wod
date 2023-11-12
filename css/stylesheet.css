@@ -791,29 +791,6 @@ a {
 	animation: menuAnim ease forwards;
 	animation-delay: calc(.1s * var(--i));
 	transition-timing-function: ease-in-out;
-/* }
-
-/*Social Links Anchor Tag Button layout and function*/
-#jumpBtn a { */
-	align-items: center;
-	font-size: 40px;
-	text-decoration: none;
-	display: flex;
-	justify-content: center;
-	border: 2px solid #3d0ee8;
-	border-radius: 50%;
-	position: relative;
-	color: #3d0ee8;
-	overflow: hidden;
-	width: 60px;
-	height: 60px;
-	background: #000000;
-	z-index: 99;
-	font-family:"Open Sans", "sans-serif";
-	transition: 1s;
-	transition-timing-function: ease; 
-	animation: menuAnim 1s ease forwards;
-	animation-delay: calc(.3s * var(--i));
 }
 
 /*Setting the attributes for each button*/
