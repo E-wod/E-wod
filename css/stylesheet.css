@@ -750,10 +750,10 @@ li a {
 	max-width: 80%;
 	max-height: 250%;
 	height: auto;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        top: 20;
+        bottom: 20;
+        left: 20;
+        right: 20;
  	margin-left: 5%;
 	margin-right: 5%;
 	margin-top: 15%;
@@ -767,15 +767,15 @@ li a {
 }
 
 .picFrame {
-    	display: block;
+    	display: flex;
 	object-fit: contain;
 	float: center;
 	vertical-align: middle;
 	background-color: transparent;
 	border-radius: 8px;
-	width: 100%;
+/* 	width: 100%;
 	height: auto;
-	max-height: 230%;
+	max-height: 250%; */
 	justify-content: space-around;
 	margin-right: 0px;
 	margin-left: 0px;
