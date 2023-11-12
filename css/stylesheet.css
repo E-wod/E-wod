@@ -747,7 +747,7 @@ li a {
 
 .showBox {
 	z-index: 1;
-	display: flex;
+	display: block;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-top: 0%;
@@ -770,7 +770,7 @@ li a {
 }
 
 .obJects{
-	flex-direction: flex;
+/* 	flex-direction: flex; */
 /* 	flex-wrap: wrap; */
 	background-color: transparent;
 	position: relative;
@@ -794,6 +794,7 @@ li a {
 .picFrame {
 /* 	flex-direction: reverse-row;
 	flex-wrap: wrap; */
+    	display: block;
 	object-fit: contain;
 	float: center;
 	vertical-align: middle;
@@ -812,7 +813,6 @@ li a {
 	padding-top: 10px;
 	padding-bottom: 10px;
     	z-index: -4;
-    	display: block;
 	color: azure;
 }
 .picFrame:hover{
@@ -825,6 +825,7 @@ li a {
 }
 
 .picFrame h1{
+	display: flex;
 	font-size: 16px;
 	color: #494F52;
 	font-family: sans-serif;
