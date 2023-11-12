@@ -27,14 +27,14 @@ html {
 	scroll-behavior: smooth;
 	height:100%;
         width:100%;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	position: absolute;
 /* 	background-image: url("https://i.ibb.co/LPNzkVc/Mo-Organic-1597.jpg"); */
 /* 	background-color: #0b1d28; */
@@ -357,12 +357,12 @@ li a {
 	max-height: 1000%;
 	margin-left: 2px;
 	margin-right: 2px;
-	margin-top: 10px;
+	margin-top: 2px;
 	margin-bottom: 2px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
 	display: block;
 	gap: 0px;
 }
@@ -380,10 +380,10 @@ li a {
 	margin-right: 2px;
 	margin-top: 2px;
 	margin-bottom: 2px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
 	width: 100%;
 	max-width: 100%;
 	position: relative;
