@@ -711,8 +711,8 @@ li a {
     	align-all: center;
 	width: 100%;
 	height: 1100%;
- 	margin-left: 0%;
-	margin-right: 0%;
+ 	margin-left: 2px;
+	margin-right: 2px;
 	margin-top: 50%;
 	margin-bottom: 0%; 
 	padding-left: 10px;
@@ -729,14 +729,14 @@ li a {
 	width: 100%;
 	max-height: 350%;
 	height: auto;
- 	margin-left: 0%;
-	margin-right: 0%;
-	margin-top: 0%;
-	margin-bottom: 0%; 
+ 	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px; 
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 	display: flex;
 	z-index: -2;
 }
@@ -745,10 +745,11 @@ li a {
     	display: block;
 	object-fit: contain;
 	float: center;
+	align-self: center;
 	vertical-align: middle;
 	background-color: transparent;
 	border-radius: 8px;
-	width: 80%;
+	width: 70%;
 	height: auto;
 	max-height: 350%;
 	justify-content: space-around;
@@ -758,9 +759,9 @@ li a {
 	margin-bottom: 2px;
 	padding-right: 2px;
 	padding-left: 2px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-    	z-index: -4;
+	padding-top: 2px;
+	padding-bottom: 2px;
+    	z-index: 9999;
 	color: azure;
 }
 .picFrame:hover{
@@ -1508,22 +1509,6 @@ a {
 	transition-timing-function: ease-out;
 }
 
-/*background layout template*/
-.bkg {
-	z-index: -31;
-	background-repeat: repeat-x;
-	align-items: center;
-	height: 100%;
-	max-width: 100%;
-	width: 100%;
-	margin: 0;
-    	opacity: 100%;
-	position: relative;
-	object-position: cover;
-	padding: 0;
-	background-position: center;
-}
-
 .beePic {
 	background: transparent;
 	opacity: 100%;
@@ -1546,74 +1531,64 @@ a {
 
 }
 
-.showBox {
-	z-index: 1;
-	display: block;
-	margin-left: 0%;
-	margin-right: 0%;
-	margin-top: 0%;
-	margin-bottom: 0px;
-	padding-left: 0%;
-	padding-right: 0px;
-	padding-top: 10px;
-	padding-bottom: 0px;
-	max-width: 100%;
-	width: 100%;
-	height: 100%;
-	max-height: auto;
-	background: transparent;
-	position: relative;
-	overflow: inherit;
-	object-fit: contain;
-	float: inherit;
-	justify-content: space-around;
-	z-index: -1;
-}
-
-.obJects{
-/* 	flex-direction: flex; */
-/* 	flex-wrap: wrap; */
+/*background layout template*/
+.bkg {
 	background-color: transparent;
 	position: relative;
-    	align-items: center;
-	justify-content: space-between;
-	width: 80%;
-	max-width: auto;
-	height: 100%;
-	margin-left: 0%;
-	margin-right: 0%;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	padding-left: 5px;
-	padding-right: 5px;
+    	align-all: center;
+	width: 100%;
+	height: 1100%;
+ 	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 50%;
+	margin-bottom: 0%; 
+	padding-left: 10px;
+	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	display: block;
+	float: center;
+	z-index: 9;
+}
+.obJects{
+	background-color: transparent;
+	position: relative;
+    	align-all: center;
+	width: 100%;
+	max-height: 350%;
+	height: auto;
+ 	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px; 
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	display: flex;
 	z-index: -2;
 }
 
 .picFrame {
-/* 	flex-direction: reverse-row;
-	flex-wrap: wrap; */
     	display: block;
 	object-fit: contain;
 	float: center;
+	align-self: center;
 	vertical-align: middle;
 	background-color: transparent;
 	border-radius: 8px;
-	width: 100%;
+	width: 70%;
 	height: auto;
-	max-height: 230%;
+	max-height: 350%;
 	justify-content: space-around;
-	margin-right: 0px;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 	padding-right: 2px;
 	padding-left: 2px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-    	z-index: -4;
+	padding-top: 2px;
+	padding-bottom: 2px;
+    	z-index: 9999;
 	color: azure;
 }
 .picFrame:hover{
