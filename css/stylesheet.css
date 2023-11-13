@@ -156,24 +156,6 @@ a {
 	transition-timing-function: ease ease-in-out; 
 }
 
-/* .nav-logo a {
-	width: 140px;
-	height: 140px;
-	opacity: .8;
-}
-
-
-.nav-logo a :hover,
-.nav-logo .active {
-	opacity: 1;
-	color: azure;
-	transition: .3s;
-	transition-timing-function: ease;
-	background: transparent;
-	text-decoration: none;
-	overflow: visible;
-} */
-
 .nav-logo :hover,
 .nav-logo .active {
 	color: azure;
@@ -724,13 +706,14 @@ li a {
 
 /*background layout template*/
 .bkg {
+	justify-content: center;
 	z-index: 99;
 	background-repeat: repeat-x;
 	align-items: center;
 	height: 1100%;
 	max-width: 100%;
 	width: 100%;
-	object-position: cover;
+	object-fit: cover;
 	position: relative;
 	margin-top: 55%;
 	margin-bottom: 0px;
