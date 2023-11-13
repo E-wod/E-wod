@@ -747,9 +747,10 @@ li a {
 .obJects{
 	background-color: transparent;
 	position: relative;
-    	align-items: center;
-	justify-content: space-between;
-	width: 100%;
+    	align-all: center;
+	vertical-align: middle;
+	justify-content: space-around;
+	width: 80%;
 	max-height: 350%;
 	height: auto;
  	margin-left: 0%;
@@ -761,6 +762,7 @@ li a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: flex;
+	float: center;
 	z-index: -2;
 }
 
@@ -773,7 +775,7 @@ li a {
 	border-radius: 8px;
 	width: 80%;
 	height: auto;
-	max-height: 250%;
+	max-height: 350%;
 	justify-content: space-around;
 	margin-right: 2px;
 	margin-left: 2px;
