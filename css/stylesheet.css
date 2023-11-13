@@ -706,24 +706,23 @@ li a {
 
 /*background layout template*/
 .bkg {
-	justify-content: center;
-	z-index: 99;
-	background-repeat: repeat-x;
-	align-items: center;
-	height: 1100%;
-	max-width: 100%;
+	background-color: transparent;
+	position: relative;
+    	align-all: center;
 	width: 100%;
-	object-fit: cover;
-	position: fixed;
-	margin-top: 55%;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 0px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-right: 2px;
-	padding-left: 2px;
+	max-height: 350%;
+	height: auto;
+ 	margin-left: 0%;
+	margin-right: 0%;
+	margin-top: 50%;
+	margin-bottom: 0%; 
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	display: flex;
+	float: center;
+	z-index: -2;
 }
 .obJects{
 	background-color: transparent;
