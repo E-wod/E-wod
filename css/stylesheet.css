@@ -727,7 +727,6 @@ li a {
 	z-index: 99;
 	background-repeat: repeat-x;
 	align-items: center;
-	align-all: center;
 	height: 1100%;
 	max-width: 100%;
 	width: 100%;
@@ -741,7 +740,7 @@ li a {
 	padding-bottom: 2px;
 	padding-right: 2px;
 	padding-left: 2px;
-	display: flex;
+	display: block;
 }
 .obJects{
 	background-color: transparent;
