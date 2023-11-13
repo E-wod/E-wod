@@ -731,7 +731,7 @@ li a {
 	max-width: 100%;
 	width: 100%;
 	object-position: cover;
-	position: absolute;
+	position: relative;
 	margin-top: 55%;
 	margin-bottom: 0px;
 	margin-right: 0px;
@@ -740,7 +740,7 @@ li a {
 	padding-bottom: 2px;
 	padding-right: 2px;
 	padding-left: 2px;
-	display: block;
+	display: flex;
 }
 .obJects{
 	background-color: transparent;
