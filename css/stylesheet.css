@@ -748,8 +748,6 @@ li a {
 	background-color: transparent;
 	position: relative;
     	align-all: center;
-	vertical-align: middle;
-	justify-content: space-around;
 	width: 80%;
 	max-height: 350%;
 	height: auto;
