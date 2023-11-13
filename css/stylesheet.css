@@ -708,7 +708,7 @@ li a {
 .bkg {
 	background-color: transparent;
 	position: relative;
-    	align-all: center;
+    	align-content: flex-start;
 	width: 100%;
 	height: 1100%;
 	
