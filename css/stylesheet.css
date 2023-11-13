@@ -828,7 +828,7 @@ li a {
 /*--------------------------------------------------------------JUMP TO TOP BUTTON------------------------------------------------------*/
 
 .stt {
-  position: sticky;
+  position: fixed;
   right: 5px;
   bottom: 5px;
   width: 25px;
