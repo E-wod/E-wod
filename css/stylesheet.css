@@ -723,7 +723,7 @@ li a {
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	float: center;
+/* 	float: center; */
 	z-index: 9;
 }
 .obJects{
