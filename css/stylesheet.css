@@ -729,7 +729,7 @@ li a {
 .obJects{
 	background-color: transparent;
 	position: relative;
-    	align-all: center;
+/*     	align-all: center; */
 	width: 100%;
 	max-height: 350%;
 	height: auto;
