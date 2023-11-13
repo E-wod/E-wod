@@ -710,8 +710,7 @@ li a {
 	position: relative;
     	align-all: center;
 	width: 100%;
-	max-height: 350%;
-	height: auto;
+	height: 1100%;
  	margin-left: 0%;
 	margin-right: 0%;
 	margin-top: 50%;
@@ -720,9 +719,9 @@ li a {
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	display: flex;
+	display: block;
 	float: center;
-	z-index: -2;
+	z-index: 9;
 }
 .obJects{
 	background-color: transparent;
