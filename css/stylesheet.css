@@ -742,7 +742,6 @@ li a {
 	padding-right: 2px;
 	padding-left: 2px;
 	display: flex;
-	justify-content: space-between;
 }
 .obJects{
 	background-color: transparent;
