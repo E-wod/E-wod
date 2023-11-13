@@ -714,8 +714,8 @@ li a {
 	margin-right: 0px;  
 	margin-top: 55%;
   	margin-bottom: 0%; 
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	z-index: 999;
@@ -723,7 +723,7 @@ li a {
 .obJects{
 	background-color: transparent;
 	position: relative;
-     	align-all: center; 
+     	align-content: center; 
 	width: 100%;
 	max-height: 350%;
 	height: auto;
@@ -731,10 +731,8 @@ li a {
         margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px; 
-	padding-left: 50%;
-	padding-right: 50%;
-/* 	padding-left: 10px;
-	padding-right: 10px; */
+	padding-left: 5%;
+	padding-right: 5%;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: flex;
