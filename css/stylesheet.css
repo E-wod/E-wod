@@ -719,7 +719,6 @@ li a {
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	display: block;
 	float: center;
 	z-index: 9;
 }
@@ -727,7 +726,7 @@ li a {
 	background-color: transparent;
 	position: relative;
     	align-all: center;
-	width: 80%;
+	width: 100%;
 	max-height: 350%;
 	height: auto;
  	margin-left: 0%;
@@ -739,7 +738,6 @@ li a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: flex;
-	float: center;
 	z-index: -2;
 }
 
