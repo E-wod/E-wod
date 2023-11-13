@@ -714,7 +714,7 @@ li a {
 	max-width: 100%;
 	width: 100%;
 	object-fit: cover;
-	position: relative;
+	position: fixed;
 	margin-top: 55%;
 	margin-bottom: 0px;
 	margin-right: 0px;
@@ -1258,27 +1258,6 @@ a {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-
-/*Setting the landing page template for H3*/
-
-/* .landingContent h3 grp a{
-	width: 50%;
-}
-
-.landingContent h3 grp {
-	z-index: 1;
-	background: transparent;
-	position: inherit;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 100%;
-} */
 
 .landingContent h3{
 	font-size: 16px;
