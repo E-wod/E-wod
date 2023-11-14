@@ -1190,14 +1190,14 @@ a {
 	justify-content: center;
 	display: inline-flex;
 	text-decoration: none;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	font-size: 12px;
 	color: azure;
 	opacity: 0;
@@ -1216,14 +1216,14 @@ a {
 }
 	
 .hamburger {
-	margin-left: 0px;
-	margin-right: 0px;
+	margin-left: 2px;
+	margin-right: 2px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	border: 2px solid #3d0ee8;
 	border-radius: 8px;
 	position: relative;
