@@ -984,10 +984,10 @@ body {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	background-repeat: no-repeat;
 }
 
@@ -1190,7 +1190,7 @@ a {
 	margin-top: 1px;
 	margin-bottom: 1px;
 	padding-left: 1px;
-	padding-right: 1px;
+	padding-right: 30px;
 	padding-top: 1px;
 	padding-bottom: 1px;
 	width: auto;
@@ -1657,11 +1657,11 @@ a {
 	width: 100%;
 	display: flex;
 	position: absolute;
-	margin-top: 3px;
-	margin-bottom: 3px;
-	margin-right: 3px;
-	margin-left: 3px;
-	padding-top: 8%;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	margin-left: 2px;
+	padding-top: 20%;
 	padding-bottom: 0%;
 	padding-right: 7%;
 	padding-left: 7%;
