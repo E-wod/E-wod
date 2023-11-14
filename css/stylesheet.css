@@ -1141,6 +1141,8 @@ a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
+	width: auto;
+	height: auto;
 }
 
 .nav-link{
