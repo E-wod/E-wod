@@ -735,7 +735,7 @@ li a {
 	background-color: transparent;
 	position: relative;
 	float: center;
-     	align-items: center; 
+	justify-content: center;
 	width: 100%;
 	max-height: 350%;
 	height: auto;
