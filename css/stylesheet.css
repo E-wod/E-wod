@@ -1106,14 +1106,14 @@ a {
 	overflow: visible;
 	z-index: 999;
 	font-color: #3d0ee8;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	animation: choiceAnim 3s ease forwards;
 	animation-delay: calc(.5s * var(--i)); 
 	animation-timing-function: ease-in-out;
@@ -1133,33 +1133,41 @@ a {
 .nav-item {
 	align-items: center; 
 	transition: .5s;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 }
 
 .nav-link{
-    	font-size: 18px;
+    	font-size: 13px;
     	font-weight: 100;
 	transition: .5s;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 }
 	
 .nav-item :active,	
 .nav-item .hover {
 	color: azure;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	text-decoration: none;
 	box-shadow: 0 0px 0px azure;
 	overflow: visible;
@@ -1170,20 +1178,21 @@ a {
 .navBar {
 	background: transparent;
 	text-decoration: none;
-	font-size: 12px;
+	font-size: 13px;
 	font-color: #3d0ee8;
 	display: flex;
 	align-items: center;
 	float: right;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	width: auto;
+	height: 100%;
 	max-height: auto;
 	border-radius: 8px;
 	animation: choiceAnim 3s ease forwards;
@@ -1193,7 +1202,7 @@ a {
 	
 /*Nav Bar Anchor Tag*/
 .navBar a {
-	justify-content: center;
+	justify-content: space-between;
 	display: inline-flex;
 	text-decoration: none;
 	margin-left: 1px;
@@ -1214,6 +1223,14 @@ a {
 
 .navBar a:hover {
 	color: azure;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	background: transparent;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
