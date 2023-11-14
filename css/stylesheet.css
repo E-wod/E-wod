@@ -827,28 +827,9 @@ li a {
 
 /*--------------------------------------------------------------JUMP TO TOP BUTTON------------------------------------------------------*/
 
-.stt {
-  position: fixed;
-  right: 5px;
-  bottom: 5px;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: rgb(128, 128, 255) url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
-  box-shadow: 0 0.25rem 0.5rem 0 gray;
-  opacity: 0.7;
-}
-.stt:hover {
-  opacity: 0.8;
-}
-.stt:focus {
-  opacity: 0.9;
-}
-.stt:active {
-  opacity: 1;
-}
 
-:root { scroll-behavior: smooth; }
+
+
 
 /* -------------------------------------------------------------PARALLAX SETTINGS--------------------------------------------------------*/
 
@@ -957,31 +938,91 @@ li a {
 @media only screen and (max-width : 768px ){
 
 
+html {
+	scroll-behavior: smooth;
+	height:100%;
+        width:100%;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	position: absolute;
+/* 	background-image: url("https://i.ibb.co/LPNzkVc/Mo-Organic-1597.jpg"); */
+/* 	background-color: #0b1d28; */
+/* 	background-repeat: repeat; */
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,18,96,1) 100%);
+	mix-blend-mode: normal;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+}
+
+/*Body Attributes*/
+body {
+    	max-height: auto;
+	height: 100%;
+    	width: 100%;
+	z-index: 0;
+    	object-fit: cover;
+	background-attachment: fixed;
+	position: relative;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background-repeat: no-repeat;
+}
+
+a {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: 100%;
+	max-width: auto;
+	height: 100%; 
+	justify-content: space-around;
+	text-align: center;
+	align-all: center;
+	text-decorations: none;
+}
+
+/*Header Attributes*/
 .header {
 	align-self: center;
     	max-width: 100%;
 	width: 100%;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	position: sticky;
 	float: top;
 	top: 0;
 	left: 0;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	background: transparent;
+	background-attachment: fixed;
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
 	z-index: 5;
 	text-decoration: none;
 	overflow: inherit;
-	transition: .9s;
-	transition-timing-function: ease; 
 	object-position: center;
 }
 
@@ -990,34 +1031,38 @@ li a {
 	justify-content: space-around;
 	background: transparent;
 	position: relative;
-	width: 100px;
-	height: 100px;
+	width: 100%;
+	height: 100%;
+	max-width: 140px;
+	max-height: 140px; 
 	display: flex;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	overflow: visible;
 }
 
 .nav-logo {
-	width: auto;
-	height: auto;
+ 	width: 140px;
+	height: 140px;
+	max-width: auto;
+	opacity: .8;
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	text-decoration: none;
 	font-weight: 400;
 	font-style: normal;
@@ -1025,180 +1070,157 @@ li a {
 	animation: logoAnim 2s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 }
-	
-.nav-logo a {
-        max-width: 100px;
-	max-height: auto;
-	width: auto;
-	height: auto;
-	margin-left: 2px;
+
+.nav-logo :hover,
+.nav-logo .active {
+	color: azure;
+	transition: .3s;
+	transition-timing-function: ease;
+	background: transparent;
+	text-decoration: none;
+	overflow: visible;
+	opacity: 1;
+}
+
+.nav-menu {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	animation: choiceAnim 3s ease forwards;
+	animation-delay: calc(.5s * var(--i)); 
+	animation-timing-function: ease-in-out;
+}
+
+.nav-item {
+	justify-content: space-around;
+	max-width: 250px;
+	height: 90px;
+	text-align: center;
+	align-all: center;
+    	margin-left: 2px;
 	margin-right: 2px;
 	margin-top: 2px;
 	margin-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.nav-link{
+    	font-size: auto;
+	text-align: center;
+    	font-weight: 100;
+    	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-	
-.nav-logo :hover,
-.nav-logo .active {
-	color: azure;
-	transition: 2s;
-	transition-timing-function: ease;
-	background: transparent;
-	text-decoration: none;
-	overflow: visible;
-}
 
-.nav-menu {
-	position: inherit;
-    	left: 300%;
-    	top: 0px;
-	display: flex;
-    	flex-direction: column-reverse;
-    	background-color: transparent;
-   	width: auto;
-	height: auto;
-    	border-radius: 10px;
-	overflow: visible;
-	z-index: 3;
-	font-color: #3d0ee8;
-	margin-left: 10px;
-	margin-right: 20px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-    	padding: 0;
-	animation: choiceAnim 3s ease forwards;
-	animation-delay: calc(.5s * var(--i)); 
-	animation-timing-function: ease-in-out;
-}
-	
-.nav-menu:hover,	
-.nav-menu.active {
-	left: 0;
-	color: azure;
-	text-decoration: none;
-	box-shadow: 0 0px 0px azure;
-	overflow: visible;
-        animation-timing-function: ease-in-out; 
-	transition: .3s;
-}
-
-.nav-item {
-	margin: 0 0 0;
-	align-items: center; 
-	transition: .5s;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-}
-
-.nav-link{
-    	font-size: 18px;
-    	font-weight: 100;
-	transition: .5s;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-	
-.nav-item :active,	
-.nav-item .hover {
-	color: azure;
-	text-decoration: none;
-	box-shadow: 0 0px 0px azure;
-	overflow: visible;
-	animation-timing-function: ease-in-out;
-}
-	
 /*Nav Bar Attributes*/
 .navBar {
-	background: transparent;
-	text-decoration: none;
-	font-size: 16px;
-	font-color: #3d0ee8;
-	display: flex;
-	align-items: center;
-	float: right;
-	margin-left: 4px;
-	margin-right: 4px;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	padding: 0px 0px 0px;
 	width: auto;
-	max-height: auto;
-	border-radius: 8px;
-	animation: choiceAnim 3s ease forwards;
+	height: auto;
+	display: flex;
+	text-decoration: none;
+	z-index: 5;
+	overflow: hidden;
+	justify-content: center;
+	position: relative;
+    	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 22px;
+	background: transparent;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	opacity: 0;
+        animation: choiceAnim 3s ease forwards;
 	animation-delay: calc(.5s * var(--i)); 
 	animation-timing-function: ease-in-out;
 }
-	
-/*Nav Bar Anchor Tag*/
+
+/*navBar Anchor Tag Button layout and function*/
 .navBar a {
-	justify-content: center;
-	display: inline-flex;
+	background: #000000;
+    	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 14px;
+	width: auto;
+	height: auto;
+	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding: 0;
-	font-size: 12px;
-	color: azure;
+	display: flex;
+	float: center;
+	justify-content: space-around;
+	letter-spacing: 1.5px;
+	border: 2px solid #3d0ee8;
+	border-radius: 8px;
+	position: relative;
+	color: #3d0ee8;
+	font-color: #3d0ee8;
+	overflow: hidden;
 	opacity: 0;
 	animation: choiceAnim 3s ease forwards;
 	animation-delay: calc(.5s * var(--i)); 
 	animation-timing-function: ease-in-out;
 }
-
-.navBar a:hover {
+/*Setting the attributes for button*/
+.navBar a:nth-child(1 2 3) {
+	background: transparent;
+	color: #3d0ee8;
+}
+/*Setting pre-animation attributes*/
+.navBar a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	z-index: -1;
+}
+/*Animation Element*/
+.navBar a:hover::before {
+	height: 100%;
+	background: linear-gradient(0deg,transparent 15%,#3d0ee8 240%);
+}
+/*Hover Function*/
+.navBar a:hover{
 	color: azure;
+	transition: .5s;
+	transition-timing-function: ease-out;
 	background: transparent;
 	text-decoration: none;
-	box-shadow: 0 2px 7px azure;
+	box-shadow: 0 7px 17px azure;
 	overflow: visible;
-	transition: .3s;
 }
 	
 .hamburger {
-	padding: 2px 2px 2px;
-	margin-left: 10px;
-	margin-right: 30px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border: 2px solid #3d0ee8;
-	border-radius: 8px;
-	position: relative;
-	color: #3d0ee8;
-	cursor: pointer;
-	height: auto;
-        display: block;
-	width: 45px;
-        transition: .3s;
-	background: transparent;
+    	display: none;
+    	text-decoration: none;
 }
-	
-.hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-}
-	
-.hamburger:hover {
-	color: azure;
-	text-decoration: none;
-	box-shadow: 0 2px 7px azure;
-	overflow: visible;
-}	
 
 .bar {
 	text-decoration: none;
@@ -1213,18 +1235,31 @@ li a {
 
 li {
     	list-style: none;
-	margin-left: 5px;
-	margin-right: 25px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
-a {
+li a {
     	text-decoration: none;
-	margin-left: 5px;
-	margin-right: 25px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	justify-content: space-around;
+	max-width: 250px;
+	height: auto;
+	text-align: center;
+	align-all: center;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 /*Setting the content format for landing page */
@@ -1241,17 +1276,17 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	display: block;
 	gap: 0px;
 }
 
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
-	font-size: 32px;
+	font-size: 42px;
 	color: #3d0ee8;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
@@ -1262,21 +1297,48 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
 	width: 100%;
 	max-width: 100%;
 	position: relative;
 	z-index: -3;
 	opacity: 0;
+	justify-content: space-around;
+	text-align: center;
+	align-all: center;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 
+/*Setting the landing page template for H3*/
+
+.landingContent h3 grp a{
+	width: 50%;
+}
+
+.landingContent h3 grp {
+	z-index: 1;
+	background: transparent;
+	position: inherit;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;
+	justify-content: space-around;
+	text-align: center;
+	align-all: center;
+}
+
 .landingContent h3{
-	font-size: 16px;
+	font-size: 43px;
 	color: #0775b1;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
@@ -1284,11 +1346,13 @@ a {
 	text-decoration: none;
 	text-shadow: 3px 3px 7px #000000;
 	z-index: 10;
-	align-items: center;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	justify-content: space-around;
+	text-align: center;
+	align-all: center;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 5px;
@@ -1303,7 +1367,7 @@ a {
 }
 
 .landingContent h3 span{
-    	font-size: 16px;
+    	font-size: 43px;
 	color: azure;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
@@ -1316,7 +1380,10 @@ a {
 .landingContent p{
 	z-index: 1;
     	display: flex;
-	font-size: 11px;
+	justify-content: space-around;
+	text-align: center;
+	align-all: center;
+	font-size: 20px;
 	color: azure;
 	font-family: sans-serif;
 	font-weight: 100;
@@ -1324,16 +1391,16 @@ a {
 	text-decoration: none;
 	font-style: italic;
 	line-height: 1.1;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-    	max-width: 100%;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 	width: 100%;
+    	max-width: 100%;
 	max-height: 15%;
 	background: transparent;
 	position: relative;
@@ -1350,14 +1417,13 @@ a {
 	width: 100%;
 	height: 100%;
 	display: inline-block;
-    	margin: auto;
 	position: absolute;
 	float: top;
-	margin-top: 10%;
+	margin-top: %;
 	margin-bottom: 0%;
 	margin-right: 0%;
 	margin-left: 0%;
-	padding-top: 0%;
+	padding-top: 20%;
 	padding-bottom: 0%;
 	padding-right: 0%;
 	padding-left: 0%;
@@ -1372,15 +1438,15 @@ a {
 	overflow: hidden;
 	justify-content: center;
 	position: relative;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	margin-right: 2px;
-	margin-left: 2px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	background: transparent;
-	padding-top: 0%;
-	padding-bottom: 0%;
-	padding-right: 0%;
-	padding-left: 0%;
 	animation: choiceAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	transition: 1s;
@@ -1389,10 +1455,14 @@ a {
 /*Question Box Anchor Tag Button layout and function*/
 .btnBox a {
 	background: #000000;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	width: 300px;
 	height: auto;
 	z-index: 15;
@@ -1410,7 +1480,6 @@ a {
 	overflow: hidden;
 	transition-timing-function: ease;
 	transition: 1s;
-	padding: 5px 5px 5px;
 }
 
 /*Setting pre-animation attributes*/
@@ -1454,10 +1523,10 @@ a {
 	margin-right: 5px;
 	margin-left: 5px;
 	background: transparent;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	padding-right: 5px;
 	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	display: flex;
 	width: auto;
 	height: auto;
@@ -1554,37 +1623,37 @@ a {
 .bkg {
 	background-color: transparent;
 	position: relative;
-    	align-all: center;
 	width: 100%;
 	height: 1100%;
- 	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 50%;
-	margin-bottom: 0%; 
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 55%;
+  	margin-bottom: 0%; 
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	float: center;
-	z-index: 9;
+	z-index: 999;
 }
 .obJects{
 	background-color: transparent;
 	position: relative;
-    	align-all: center;
+     	align-content: center; 
 	width: 100%;
 	max-height: 350%;
 	height: auto;
- 	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px; 
-	padding-left: 10px;
-	padding-right: 10px;
+	
+	margin: 0 auto;
+/* 	margin-left: 0px;
+        margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;  */
+	padding-left: 5%;
+	padding-right: 5%;
 	padding-top: 10px;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 	display: flex;
-	z-index: -2;
+	z-index: 999;
 }
 
 .picFrame {
@@ -1592,7 +1661,7 @@ a {
 	object-fit: contain;
 	float: center;
 	align-self: center;
-	vertical-align: middle;
+/* 	vertical-align: middle; */
 	background-color: transparent;
 	border-radius: 8px;
 	width: 70%;
