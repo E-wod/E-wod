@@ -1102,13 +1102,16 @@ a {
 	height: auto;
     	border-radius: 10px;
 	overflow: visible;
-	z-index: 3;
+	z-index: 999;
 	font-color: #3d0ee8;
 	margin-left: 2px;
 	margin-right: 2px;
 	margin-top: 2px;
 	margin-bottom: 2px;
-    	padding: 0;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	animation: choiceAnim 3s ease forwards;
 	animation-delay: calc(.5s * var(--i)); 
 	animation-timing-function: ease-in-out;
