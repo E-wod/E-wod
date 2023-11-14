@@ -953,10 +953,10 @@ html {
 	scroll-behavior: smooth;
 	height:100%;
         width:100%;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	padding-left: 1px;
 	padding-right: 1px;
 	padding-top: 1px;
@@ -1391,7 +1391,7 @@ a {
 }
 
 .landingContent h3{
-	font-size: 22px;
+	font-size: 17px;
 	color: #0775b1;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
@@ -1420,7 +1420,7 @@ a {
 }
 
 .landingContent h3 span{
-    	font-size: 22px;
+    	font-size: 17px;
 	color: azure;
 	font-family:Script, Lobster, 'Kristen ITC';
 	font-weight: 100;
