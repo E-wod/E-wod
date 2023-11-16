@@ -1677,15 +1677,15 @@ a {
 	background-color: transparent;
 	position: relative;
 	width: 100%;
-	height: auto;
+	height: 115%;
    	margin-left: 0px;
 	margin-right: 0px;  
-	margin-top: 25%;
-  	margin-bottom: 35%; 
+	margin-top: 0%;
+  	margin-bottom: 0%; 
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	z-index: 999;
 }
 .obJects{
