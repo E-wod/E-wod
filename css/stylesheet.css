@@ -841,13 +841,10 @@ li a {
 
 #scrollToTopBtn {
 	background-color: transparent;
-	border: none;
-	border-radius: 50%;
 	cursor: pointer;
 	font-size: 40px;
-	line-height: 48px;
-	width: 48px;
-	right: 10px;
+	right: 20px;
+	bottom: 20px;
 	position: sticky;
 	float: right;
 	cursor: pointer;
