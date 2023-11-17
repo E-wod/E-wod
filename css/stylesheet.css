@@ -857,11 +857,6 @@ li a {
 	transition: all 0.5s ease;
 }
 
-.showBtn {
-	opacity: 1;
-	transform: translateY(0);
-}
-
 
 /* -------------------------------------------------------------PARALLAX SETTINGS--------------------------------------------------------*/
 
