@@ -848,8 +848,8 @@ li a {
 	line-height: 48px;
 	width: 48px;
 	right: 10px;
-	bottom: 10px;
 	position: sticky;
+	float: right;
 }
 
 
