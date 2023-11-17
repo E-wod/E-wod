@@ -351,8 +351,6 @@ li a {
 .landingContent{
 	background-color: transparent;
 	position: absolute;
-	display: flex;
-	flex-grow: 1;
     	align-items: center;
 	justify-content: space-between;
 	width: 100%;
