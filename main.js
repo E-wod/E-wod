@@ -15,9 +15,15 @@ function closeMenu() {
 
 // GOTO TOP BUTTON
 
+var scrollToTopBtn = document.getElementById("scrollToTopBtn")
 
-
-
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
 
 // Parallax 
 (function() {
