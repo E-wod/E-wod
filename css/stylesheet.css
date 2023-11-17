@@ -504,7 +504,7 @@ li a {
 	display: inline-block;
 	position: absolute;
 	float: top;
-	margin-top: %;
+	margin-top: 0%;
 	margin-bottom: 0%;
 	margin-right: 0%;
 	margin-left: 0%;
@@ -1488,7 +1488,7 @@ a {
 	display: inline-block;
 	position: absolute;
 	float: top;
-	margin-top: %;
+	margin-top: 0%;
 	margin-bottom: 0%;
 	margin-right: 0%;
 	margin-left: 0%;
