@@ -849,7 +849,7 @@ li a {
   	width: 48px;
 	float: right;
 	cursor: pointer;
-	z-index: 100;
+	z-index: 900;
 	opacity: 1;
 	transform: translateY(100px);
 	transition: all 0.5s ease;
