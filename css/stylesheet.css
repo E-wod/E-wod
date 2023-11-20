@@ -845,6 +845,7 @@ li a {
 	right: 20px;
 	position: sticky;
   	border: none;
+        border-radius: 50%;
   	line-height: 48px;
   	width: 48px;
 	float: right;
@@ -853,38 +854,92 @@ li a {
 	opacity: 1;
 	transform: translateY(100px);
 	transition: all 0.5s ease;
+	width: auto;
+	height: auto;
+	display: flex;
+	text-decoration: none;
+	z-index: 15;
+	overflow: hidden;
+	justify-content: center;
+	position: relative;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background: transparent;
+	animation: choiceAnim 1s ease forwards;
+	animation-timing-function: ease-in-out;
+	transition: 1s;
 }
 
+/*Question Box Anchor Tag Button layout and function*/
+#scrollToTopBtn a {
+	background: #000000;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 300px;
+	height: auto;
+	z-index: 15;
+	font-size: 20px;
+	font-family:"Open Sans", "sans-serif";
+	text-decoration: none;
+	display: flex;
+	float: center;
+	justify-content: space-around;
+	letter-spacing: 1.5px;
+	border: 2px solid #3d0ee8;
+	border-radius: 8px;
+	position: relative;
+	color: #3d0ee8;
+	overflow: hidden;
+	transition-timing-function: ease;
+	transition: 1s;
+}
 
+/*Setting pre-animation attributes*/
+#scrollToTopBtn a::before {
+	content: '';
+	position: absolute;
+	background: #000000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	z-index: -1;
+	transition: .9s;
+	transition-timing-function: ease; 
+}
+
+/*Question box Animation Element*/
+#scrollToTopBtn a:hover::before {
+	height: 100%;
+	background: linear-gradient(0deg,transparent 15%,#3d0ee8 240%);
+}
+
+/*Question Box Hover Function*/
+#scrollToTopBtn a:hover,
+#scrollToTopBtn .active{
+	color: azure;
+	text-decoration: none;
+	box-shadow: 0 2px 7px azure;
+	overflow: hidden;
+	transition-timing-function: ease-out;
+}
 /* -------------------------------------------------------------PARALLAX SETTINGS--------------------------------------------------------*/
 
-#parallax {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background-image: 
-		url(https://i.ibb.co/Z6D3s7s/parallax13.png),
-                url(https://i.ibb.co/RNzDGXV/parallax11.png),
-		url(https://i.ibb.co/7W82h91/parallax10.png),
-		url(https://i.ibb.co/pPDMZmZ/parallax9.png),
-		url(https://i.ibb.co/2Z6DQdw/parallax8.png),
-		url(https://i.ibb.co/KsXQvG7/parallax7.png),
-		url(https://i.ibb.co/M8VJZqz/parallax6.png),
-		url(https://i.ibb.co/ry8db6Q/parallax5.png),
-		url(https://i.ibb.co/DrvW3TL/parallax4.png),
-		url(https://i.ibb.co/8PdXS42/parallax3.png),
-		url(https://i.ibb.co/DKshZhy/parallax2.png),
-		url(https://i.ibb.co/GJF1jDC/parallax1.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-origin: inherit;
-	background-position: 50% 50%;
-	background-color: transparent;
-	overflow-x: hidden;
-	padding: 0;
-	margin: 0;
-  
-}
+
+
+
 
 
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
