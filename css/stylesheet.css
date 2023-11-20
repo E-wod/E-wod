@@ -841,8 +841,9 @@ li a {
 
 #scrollToTopBtn {
 	background-color: transparent;
-	font-size: 48px;
+	font-size: 40px;
 	right: 20px;
+	bottom: 20px;
 	position: sticky;
   	border: none;
   	line-height: 48px;
