@@ -15,6 +15,7 @@ function closeMenu() {
 
 // GOTO TOP BUTTON
 
+scrollToTopBtn.addEventListener("click", scrollToTop)
 var scrollToTopBtn = document.getElementById("scrollToTopBtn")
 var rootElement = document.documentElement
 
@@ -25,8 +26,6 @@ function scrollToTop() {
     behavior: "smooth"
   })
 }
-
-scrollToTopBtn.addEventListener("click", scrollToTop)
 
 
 })();
