@@ -874,8 +874,6 @@ li a {
 	transition: 1s ease-in-out;
 	z-index: 9999999;
   	width: 48px;
-	float: right;
-	right: 20;
 	cursor: pointer;
 	background-color: transparent;
 	font-size: 40px;
