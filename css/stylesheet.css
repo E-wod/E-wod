@@ -849,7 +849,6 @@ li a {
 	float: right;
 	cursor: pointer;
 	z-index: 9999999;
-	opacity: 1;
 	text-decoration: none;
 	overflow: hidden;
 	margin-top: 0px;
@@ -1254,7 +1253,7 @@ a {
 	padding-bottom: 1px;
 	font-size: 12px;
 	color: azure;
-	opacity: 0;
+	opacity: 1;
 	animation: choiceAnim 3s ease forwards;
 	animation-delay: calc(.5s * var(--i)); 
 	animation-timing-function: ease-in-out;
@@ -1299,7 +1298,7 @@ a {
 }
 	
 .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
+        opacity: 1;
 }
 
 .hamburger.active .bar:nth-child(1) {
