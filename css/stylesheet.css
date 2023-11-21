@@ -847,7 +847,7 @@ li a {
   	border: none;
   	line-height: 48px;
   	width: 48px;
-	float: bottom;
+	float: right;
 	cursor: pointer;
 	z-index: 9999999;
 	text-decoration: none;
@@ -878,6 +878,7 @@ li a {
 	background-color: transparent;
 	font-size: 40px;
 	position: sticky;
+	float: right;
 }
 
 
