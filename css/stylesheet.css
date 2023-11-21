@@ -839,11 +839,9 @@ li a {
 /*--------------------------------------------------------------JUMP TO TOP BUTTON------------------------------------------------------*/
 
 
-/* #scrollToTopBtn {
+#scrollToTopBtn {
 	background-color: transparent;
 	font-size: 40px;
-	right: 20px;
-	bottom: 20px;
 	position: sticky;
   	border: none;
   	line-height: 48px;
@@ -858,12 +856,12 @@ li a {
 	margin-bottom: 0px;
 	margin-right: 0px;
 	margin-left: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	transition: 1s ease-in-out;
-} */
+}
 
 /* -------------------------------------------------------------PARALLAX SETTINGS--------------------------------------------------------*/
 
