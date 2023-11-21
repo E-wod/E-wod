@@ -1298,7 +1298,7 @@ a {
 }
 	
 .hamburger.active .bar:nth-child(2) {
-        opacity: 1;
+        opacity: 0;
 }
 
 .hamburger.active .bar:nth-child(1) {
