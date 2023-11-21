@@ -862,44 +862,25 @@ li a {
 	transition: 1s ease-in-out;
 }
 
-/* .button {
-    	appearance: auto;
-	font-style: ;
-    	font-variant-ligatures: ;
-    	font-variant-caps: ;
-    	font-variant-numeric: ;
-    	font-variant-east-asian: ;
-    	font-variant-alternates: ;
-    	font-variant-position: ;
-    	font-weight: ;
-    	font-stretch: ;
-    	font-size: ;
-    	font-family: ;
-    	font-optical-sizing: ;
-    	font-kerning: ;
-    	font-feature-settings: ;
-    	font-variation-settings: ;
-   	text-rendering: auto;
-    	color: buttontext;
-    	letter-spacing: normal;
-    	word-spacing: normal;
-    	line-height: normal;
-    	text-transform: none;
-    	text-indent: 0px;
-    	text-shadow: none;
-    	display: inline-block;
-    	text-align: center;
-    	align-items: flex-start;
-    	cursor: pointer;
-   	box-sizing: border-box;
-    	background-color: buttonface;
-    	margin: 0em;
-    	padding-block: 1px;
-    	padding-inline: 6px;
-    	border-width: 2px;
-    	border-style: outset;
-    	border-color: buttonborder;
-    	border-image: initial; */
+ .button {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	margin-left: 2px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	transition: 1s ease-in-out;
+	z-index: 9999999;
+  	width: 48px;
+	float: right;
+	right: 20;
+	cursor: pointer;
+	background-color: transparent;
+	font-size: 40px;
+	position: sticky;
+}
 
 
 /* -------------------------------------------------------------PARALLAX SETTINGS--------------------------------------------------------*/
