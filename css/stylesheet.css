@@ -847,10 +847,10 @@ li a {
   	line-height: 48px;
   	width: 48px;
 	float: right;
+	right: 20;
 	cursor: pointer;
 	z-index: 9999999;
 	text-decoration: none;
-	overflow: hidden;
 	margin-top: 2px;
 	margin-bottom: 2px;
 	margin-right: 2px;
