@@ -862,7 +862,7 @@ li a {
 	transition: 1s ease-in-out;
 }
 
-.button {
+/* .button {
     	appearance: auto;
 	font-style: ;
     	font-variant-ligatures: ;
@@ -899,7 +899,7 @@ li a {
     	border-width: 2px;
     	border-style: outset;
     	border-color: buttonborder;
-    	border-image: initial;
+    	border-image: initial; */
 
 
 /* -------------------------------------------------------------PARALLAX SETTINGS--------------------------------------------------------*/
