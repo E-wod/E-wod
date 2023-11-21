@@ -850,7 +850,7 @@ li a {
   	width: 48px;
 	float: right;
 	cursor: pointer;
-	z-index: 99999;
+	z-index: 9999999;
 	opacity: 1;
 	text-decoration: none;
 	overflow: hidden;
