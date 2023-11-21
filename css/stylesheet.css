@@ -847,14 +847,13 @@ li a {
   	border: none;
   	line-height: 48px;
   	width: 48px;
-	float: right;
 	cursor: pointer;
 	z-index: 9999999;
 	text-decoration: none;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	margin-right: 2px;
-	margin-left: 2px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 20px;
@@ -863,10 +862,10 @@ li a {
 }
 
  .button {
-	margin-top: 2px;
-	margin-bottom: 2px;
-	margin-right: 2px;
-	margin-left: 2px;
+/* 	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 20px;
@@ -878,7 +877,7 @@ li a {
 	background-color: transparent;
 	font-size: 40px;
 	position: sticky;
-	float: right;
+	float: right; */
 }
 
 
