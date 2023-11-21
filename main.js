@@ -26,5 +26,3 @@ function scrollToTop() {
   });
 }
 scrollToTopBtn.addEventListener("click", scrollToTop);
-
-})();
