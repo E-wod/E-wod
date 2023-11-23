@@ -20,6 +20,15 @@ img {
 video {
     	height: 100%;
     	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background: transparent;
 }
 
 /*HTML Attributes*/
