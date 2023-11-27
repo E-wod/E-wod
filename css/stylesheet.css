@@ -197,7 +197,8 @@ a {
 	justify-content: space-around;
 	max-width: 250px;
 	width: auto;
-	max-height: 90px;
+	height: auto;
+	max-height: 50px;
 	overflow: hidden;
 	text-align: center;
 	align-all: center;
