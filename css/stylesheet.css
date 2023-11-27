@@ -195,8 +195,10 @@ a {
 
 .nav-item {
 	justify-content: space-around;
-	width: 350px;
-	height: 90px;
+	max-width: 250px;
+	width: auto;
+	max-height: 90px;
+	overflow: hidden;
 	text-align: center;
 	align-all: center;
     	margin-left: 2px;
