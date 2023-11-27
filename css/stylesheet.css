@@ -198,8 +198,8 @@ a {
 	max-width: 250px;
 	width: auto;
 	height: auto;
-	max-height: 50px;
-	overflow: hidden;
+	max-height: 90px;
+	overflow: inherit;
 	text-align: center;
 	align-all: center;
     	margin-left: 2px;
