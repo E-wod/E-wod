@@ -45,9 +45,6 @@ html {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	position: absolute;
-/* 	background-image: url("https://i.ibb.co/LPNzkVc/Mo-Organic-1597.jpg"); */
-/* 	background-color: #0b1d28; */
-/* 	background-repeat: repeat; */
 	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,18,96,1) 100%);
 	mix-blend-mode: normal;
         background-repeat: no-repeat;
@@ -384,11 +381,11 @@ li a {
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
 	font-size: 42px;
-	color: #3d0ee8;
-	font-family: "sofachrome", sans-serif;
+	color: #2f4f71;
+	font-family: "verdana";
 	font-weight: 100;
 	font-style: italic;
-	text-shadow: 4px 4px 4px azure;
+	text-shadow: 2px 2px 2px azure;
 	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
