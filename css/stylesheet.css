@@ -45,17 +45,10 @@ html {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	position: absolute;
-/* 	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,18,96,1) 100%); */
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,18,96,1) 100%);
 	mix-blend-mode: normal;
         background-repeat: no-repeat;
         background-attachment: fixed;
-
-	@grid: 360 / 260vmin;
-        background: #252526; 
-        scale: 0;
-        opacity: 0;
-        animation: bkGnd 4s ease-in-out infinite;
-        animation-delay: calc(-3s/@I * @i * @sin(@i));
 }
 
 /*Body Attributes*/
@@ -904,13 +897,12 @@ li a {
 
 /* <css-doodle>
   <style>
-    @grid: 360 / 260vmin;
-    background: #252526;
-    scale: 0;
-    opacity: 0;
-    animation: m 4s ease-in-out infinite;
-    animation-delay: calc(-3s/@I * @i * @sin(@i));
-
+	@grid: 360 / 260vmin;
+        background: #252526; 
+        scale: 0;
+        opacity: 0;
+        animation: bkGnd 4s ease-in-out infinite;
+        animation-delay: calc(-3s/@I * @i * @sin(@i));
 
   </style>
  </css-doodle> */
