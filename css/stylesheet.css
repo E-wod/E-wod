@@ -45,7 +45,7 @@ html {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	position: absolute;
-	background: linear-gradient(180deg, rgba(129,134,173,1) 0%, rgba(224,225,242,1) 100%);
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,18,96,1) 100%);
 	mix-blend-mode: normal;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -383,9 +383,9 @@ li a {
 	font-size: 60px;
 	stagger: 3;
 	color: #252526;
-	font-family: "Fedra", sans;
+	font-family: "Nova Square", sans;
 	font-weight: 100;
-	font-style: none;
+	font-style: bold;
 	text-shadow: 2px 2px 6px #0775b1;
 	line-height: .9;
 	margin-left: 0px;
@@ -1365,11 +1365,12 @@ a {
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
 	font-size: 30px;
-	color: #3d0ee8;
-	font-family: "sofachrome", sans-serif;
+	stagger: 3;
+	color: #252526;
+	font-family: "Nova Square", sans;
 	font-weight: 100;
-	font-style: italic;
-	text-shadow: 4px 4px 4px azure;
+	font-style: bold;
+	text-shadow: 2px 2px 6px #0775b1;
 	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
