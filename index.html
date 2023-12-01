@@ -47,7 +47,27 @@
 <img src="img/mouseGame.jpg" width="100%" height="100%"/> 
 </div>
 
+<css-doodle>
+  <style>
+    @grid: 120 / 460vmin;
 
+    background: #252526;
+    scale: 0;
+    opacity: 0;
+    animation: m 4s linear infinite;
+    
+    animation-delay: calc(
+      -1s/@I * @i * @sin(@i)
+    );
+
+    @keyframes m {
+      0%, 50%, 90% { scale: 1; opacity: 1 }
+      25%, 75%, 100% { scale: 0; opacity: 0 }
+    }
+  </style>
+ </css-doodle>
+
+	
 	
 <script src="main.js"></script>
 </body>	
