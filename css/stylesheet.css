@@ -380,10 +380,10 @@ li a {
 
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
-	font-size: 42px;
+	font-size: 60px;
 	stagger: 3;
 	color: #252526;
-	font-family: "Nova Square";
+	font-family: "Nova Square", sans;
 	font-weight: 100;
 	font-style: italic;
 	text-shadow: 2px 2px 2px azure;
