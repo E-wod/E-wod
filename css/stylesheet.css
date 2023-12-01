@@ -54,7 +54,7 @@ html {
         background: #252526;
         scale: 0;
         opacity: 0;
-        animation: m 4s ease-in-out infinite;
+        animation: bkGnd 4s ease-in-out infinite;
         animation-delay: calc(-3s/@I * @i * @sin(@i));
 }
 
@@ -917,7 +917,7 @@ li a {
 
 
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
-@keyframes bkgnd {
+@keyframes bkGnd {
       	0%, 50%, 90% { scale: .6; opacity: .5 }
       	25%, 75%, 100% { scale: .1; opacity: .1 }
 }
