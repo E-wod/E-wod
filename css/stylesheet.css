@@ -49,6 +49,13 @@ html {
 	mix-blend-mode: normal;
         background-repeat: no-repeat;
         background-attachment: fixed;
+
+	@grid: 360 / 260vmin;
+        background: #252526;
+        scale: 0;
+        opacity: 0;
+        animation: m 4s ease-in-out infinite;
+        animation-delay: calc(-3s/@I * @i * @sin(@i));
 }
 
 /*Body Attributes*/
@@ -891,14 +898,31 @@ li a {
 }
 
 
-/* -------------------------------------------------------------PARALLAX SETTINGS--------------------------------------------------------*/
+/* -------------------------------------------------------------BackGround Animate SETTINGS--------------------------------------------------------*/
 
 
 
+/* <css-doodle>
+  <style>
+    @grid: 360 / 260vmin;
+    background: #252526;
+    scale: 0;
+    opacity: 0;
+    animation: m 4s ease-in-out infinite;
+    animation-delay: calc(-3s/@I * @i * @sin(@i));
 
+
+  </style>
+ </css-doodle> */
 
 
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
+@keyframes bkgnd {
+      	0%, 50%, 90% { scale: .6; opacity: .5 }
+      	25%, 75%, 100% { scale: .1; opacity: .1 }
+}
+
+
 @keyframes logoAnim {
 	0% {
 		opacity: 0;
