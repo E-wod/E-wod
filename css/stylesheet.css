@@ -381,6 +381,7 @@ li a {
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
 	font-size: 42px;
+	stagger: 3;
 	color: #252526;
 	font-family: "Kristen-ITC";
 	font-weight: 100;
