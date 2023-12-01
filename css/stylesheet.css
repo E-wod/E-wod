@@ -45,7 +45,7 @@ html {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	position: absolute;
-	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,18,96,1) 100%);
+	background: linear-gradient(180deg, rgba(129,134,173,1) 0%, rgba(224,225,242,1) 100%);
 	mix-blend-mode: normal;
         background-repeat: no-repeat;
         background-attachment: fixed;
