@@ -51,7 +51,7 @@ html {
         background-attachment: fixed;
 
 	@grid: 360 / 260vmin;
-        background: #252526;
+/*         background: #252526; */
         scale: 0;
         opacity: 0;
         animation: bkGnd 4s ease-in-out infinite;
