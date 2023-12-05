@@ -382,11 +382,11 @@ li a {
 .landingContent h1{
 	font-size: 60px;
 	stagger: 3;
-	color: #252526;
+	color: #9198cd;
 	font-family: "Nova Square", sans;
 	font-weight: 100;
 	font-style: bold;
-	text-shadow: 2px 2px 6px #0775b1;
+	text-shadow: 2px 2px 6px #4b52bf;
 	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -1382,11 +1382,11 @@ a {
 .landingContent h1{
 	font-size: 30px;
 	stagger: 3;
-	color: #252526;
+	color: #9198cd;
 	font-family: "Nova Square", sans;
 	font-weight: 100;
 	font-style: bold;
-	text-shadow: 2px 2px 6px #0775b1;
+	text-shadow: 2px 2px 2px #4b52bf;
 	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
