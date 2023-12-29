@@ -383,7 +383,7 @@ li a {
 	font-size: 60px;
 	stagger: 3;
 	color: #9198cd;
-	font-family: "Open sans";
+	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: bold;
 	text-shadow: 2px 2px 6px #4b52bf;
@@ -1383,7 +1383,7 @@ a {
 	font-size: 30px;
 	stagger: 3;
 	color: #9198cd;
-	font-family: "Open sans";
+	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: bold;
 	text-shadow: 2px 2px 2px #4b52bf;
