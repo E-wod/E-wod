@@ -1006,7 +1006,7 @@ html {
 /* 	background-image: url("https://i.ibb.co/LPNzkVc/Mo-Organic-1597.jpg"); */
 /* 	background-color: #0b1d28; */
 /* 	background-repeat: repeat; */
-	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,18,96,1) 100%);
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 41%, rgba(65,68,88,1) 100%);
 	mix-blend-mode: normal;
         background-repeat: no-repeat;
         background-attachment: fixed;
