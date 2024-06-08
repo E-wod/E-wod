@@ -1386,7 +1386,7 @@ a {
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: bold;
-	text-shadow: 2px 2px 2px #a6abca;
+	text-shadow: 2px 2px 4px #a6abca;
 	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -1439,7 +1439,7 @@ a {
 	font-weight: 100;
 	line-height: 1.1;
 	text-decoration: none;
-	text-shadow: 2px 2px 2px #a6abca;
+	text-shadow: 1px 1px 2px #a6abca;
 	z-index: 10;
 	justify-content: space-around;
 	text-align: center;
@@ -1482,7 +1482,7 @@ a {
 	color: azure;
 	font-family: sans-serif;
 	font-weight: 100;
-	text-shadow: 2px 2px 2px #a6abca;
+	text-shadow: 1px 1px 2px #a6abca;
 	text-decoration: none;
 	font-style: italic;
 	line-height: 1.1;
