@@ -730,16 +730,16 @@ li a {
 	height: auto;
    	margin-left: 0px;
 	margin-right: 0px;  
-	margin-top: 55%;
+	margin-top: 0px;
   	margin-bottom: 0%; 
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	z-index: 999;
-	align-items: center; 
+	align-all: center; 
 	float: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 .obJects{
 	background-color: transparent;
