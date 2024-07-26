@@ -725,7 +725,7 @@ li a {
 /*background layout template*/
 .bkg {
 	background-color: transparent;
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height: auto;
    	margin-left: 0px;
