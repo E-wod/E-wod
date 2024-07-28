@@ -758,8 +758,8 @@ li a {
 	margin-bottom: 0px;  
 	padding-left: 10%;
 	padding-right: 10%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	display: flex;
 	z-index: 999;
 }
