@@ -745,7 +745,7 @@ li a {
 }
 .obJects{
 	background-color: transparent;
-	position: relative;
+	position: absolute;
 	float: center;
 	justify-content: center;
 	width: 100%;
@@ -761,7 +761,7 @@ li a {
 	padding-right: 10%;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	display: flex;
+	display: flex-block;
 	z-index: 999;
 }
 
