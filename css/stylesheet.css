@@ -725,7 +725,7 @@ li a {
 /*background layout template*/
 .bkg {
 	background-color: transparent;
-	position: absolute;
+	position: relative;
 	width: 100%;
 	max-height: auto;
    	margin-left: 0px;
@@ -737,7 +737,7 @@ li a {
 	padding-top: 50%;
 	padding-bottom: 10px;
 	z-index: 999;
-	display: flex;
+	display: inline;
 	align-all: center; 
 	float: center;
 	justify-content: space-between;
