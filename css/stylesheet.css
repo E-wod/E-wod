@@ -725,9 +725,9 @@ li a {
 /*background layout template*/
 .bkg {
 	background-color: transparent;
-	position: relative;
+	position: fixed;
 	width: 100%;
-	max-height: auto;
+	max-height: 1000%;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
@@ -745,7 +745,7 @@ li a {
 }
 .obJects{
 	background-color: transparent;
-	position: absolute;
+	position: relative;
 	float: center;
 	justify-content: center;
 	width: 100%;
