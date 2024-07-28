@@ -708,11 +708,11 @@ li a {
 	display: flex;
 	position: absolute;
 	margin-top: 3px;
-	margin-bottom: 3px;
+	margin-bottom: 10%;
 	margin-right: 3px;
 	margin-left: 3px;
 	padding-top: 8%;
-	padding-bottom: 0%;
+	padding-bottom: 10%;
 	padding-right: 7%;
 	padding-left: 7%;
 	z-index: -19;
@@ -725,9 +725,9 @@ li a {
 /*background layout template*/
 .bkg {
 	background-color: transparent;
-	position: fixed;
+	position: absolute;
 	width: 100%;
-	height: auto;
+	max-height: auto;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
@@ -737,6 +737,7 @@ li a {
 	padding-top: 50%;
 	padding-bottom: 10px;
 	z-index: 999;
+	display: flex;
 	align-all: center; 
 	float: center;
 	justify-content: space-between;
