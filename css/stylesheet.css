@@ -1004,7 +1004,7 @@ html {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	position: fixed;
+	position: relative;
 	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 41%, rgba(65,68,88,1) 100%);
 	mix-blend-mode: normal;
         background-repeat: no-repeat;
