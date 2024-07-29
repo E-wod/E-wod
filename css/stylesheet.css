@@ -1007,7 +1007,7 @@ html {
 	position: relative;
 	background-color: #2a2e2f;
 	mix-blend-mode: normal;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         background-attachment: absolute;
 }
 
