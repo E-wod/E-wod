@@ -34,8 +34,9 @@ video {
 /*HTML Attributes*/
 html {
 	scroll-behavior: smooth;
-	height:100%;
-        width:100%;
+	height: 100%;
+	max-height: 120000px;
+        width: 100%;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -48,7 +49,7 @@ html {
 	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 41%, rgba(65,68,88,1) 100%);
 	mix-blend-mode: normal;
         background-repeat: no-repeat;
-        background-attachment: absolute;
+        background-attachment: fixed;
 }
 
 /*Body Attributes*/
@@ -992,20 +993,18 @@ li a {
 
 html {
 	scroll-behavior: smooth;
-	height:100%;
-        width:100%;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	height: 100%;
+	max-height: 120000px;
+        width: 100%;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
 	padding-left: 1px;
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
 	position: absolute;
-/* 	background-image: url("https://i.ibb.co/LPNzkVc/Mo-Organic-1597.jpg"); */
-/* 	background-color: #0b1d28; */
-/* 	background-repeat: repeat; */
 	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 41%, rgba(65,68,88,1) 100%);
 	mix-blend-mode: normal;
         background-repeat: no-repeat;
