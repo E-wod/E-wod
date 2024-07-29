@@ -1007,7 +1007,7 @@ html {
 	position: absolute;
 	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 41%, rgba(65,68,88,1) 100%);
 	mix-blend-mode: normal;
-        background-repeat: repeat;
+        background-repeat: no-repeat;
         background-attachment: absolute;
 }
 
