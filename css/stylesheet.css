@@ -46,7 +46,7 @@ html {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	position: absolute;
-	background-color: #2a2e2f;
+	background-color: #181a1b;
 /* 	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 41%, rgba(65,68,88,1) 100%); */
 	mix-blend-mode: normal;
         background-repeat: repeat;
@@ -1006,7 +1006,7 @@ html {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	position: relative;
-	background-color: #2a2e2f;
+	background-color: #181a1b;
 	mix-blend-mode: normal;
         background-repeat: repeat;
         background-attachment: absolute;
