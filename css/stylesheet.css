@@ -35,7 +35,7 @@ video {
 html {
 	scroll-behavior: smooth;
 	max-height: 4000000000px;
-	height: auto;
+	height: 2000000px;
         width: 100%;
 	margin-left: 1px;
 	margin-right: 1px;
@@ -55,7 +55,7 @@ html {
 
 /*Body Attributes*/
 body {
-    	height: 200%;
+    	height: 2000000px;
 	max-height: 4000000000px;
     	width: 100%;
 	z-index: 0;
@@ -994,7 +994,7 @@ li a {
 
 html {
 	scroll-behavior: smooth;
-	height: auto;
+	height: 2000000px;
 	max-height: 4000000000px;
         width: 100%;
 	margin-left: 1px;
@@ -1015,7 +1015,7 @@ html {
 /*Body Attributes*/
 body {
     	max-height: 4000000000px;
-	height: auto;
+	height: 2000000px;
     	width: 100%;
 	z-index: 0;
     	object-fit: cover;
