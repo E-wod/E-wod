@@ -34,8 +34,8 @@ video {
 /*HTML Attributes*/
 html {
 	scroll-behavior: smooth;
-	max-height: 4000000000px;
-	height: auto;
+	height: 4000000000px;
+	max-height: auto;
         width: 100%;
 	margin-left: 1px;
 	margin-right: 1px;
