@@ -103,7 +103,7 @@ a {
 /* 	position: sticky; */
 
 	position: absolute;
-        z-index: -30;
+        z-index: 30;
 	
 	float: top;
 	top: 0;
