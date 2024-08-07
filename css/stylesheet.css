@@ -102,9 +102,8 @@ a {
 	margin-bottom: 0px;
 /* 	position: sticky; */
 
-	object-fit: cover;
-	position: fixed;
-        z-index: 30;
+	position: absolute;
+        z-index: -30;
 	
 	float: top;
 	top: 0;
