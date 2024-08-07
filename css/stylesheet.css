@@ -101,11 +101,8 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-/* 	position: sticky; */
-
 	position: sticky;
         z-index: 30;
-	
 	float: top;
 	top: 0;
 	left: 0;
@@ -118,7 +115,6 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
-/* 	z-index: 5; */
 	text-decoration: none;
 	overflow: inherit;
 	object-position: center;
@@ -1000,7 +996,8 @@ li a {
 html {
 	scroll-behavior: smooth;
 	height: 100%;
-	max-height: 120000px;
+	max-height: 4000000000px;
+	height: 4000000000px;
         width: 100%;
 	margin-left: 1px;
 	margin-right: 1px;
@@ -1077,7 +1074,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
-	z-index: 5;
+	z-index: 30;
 	text-decoration: none;
 	overflow: inherit;
 	object-position: center;
@@ -1733,7 +1730,7 @@ a {
 	padding-right: 10px;
 	padding-top: 10%;
 	padding-bottom: 10px;
-	z-index: 999;
+	z-index: 1;
 	align-all: center; 
 	float: center;
 	justify-content: space-between;
