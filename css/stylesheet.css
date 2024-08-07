@@ -55,7 +55,7 @@ html {
 
 /*Body Attributes*/
 body {
-    	height: auto;
+    	height: 200%;
 	max-height: 4000000000px;
     	width: 100%;
 	z-index: 0;
