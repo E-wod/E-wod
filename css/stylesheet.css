@@ -100,7 +100,12 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	position: sticky;
+/* 	position: sticky; */
+
+	object-fit: cover;
+	position: fixed;
+        z-index: 30;
+	
 	float: top;
 	top: 0;
 	left: 0;
