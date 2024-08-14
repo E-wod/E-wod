@@ -109,8 +109,7 @@ a {
 	padding-right: 1px;
 	padding-top: 0px;
 	padding-bottom: -20px;
-/* 	background: transparent; */
-	background: linear-gradient(90deg, rgba(24,26,27,1) 19%, rgba(73,79,82,0) 100%);
+ 	background: transparent;
 	background-attachment: fixed;
 	display: flex;
 	justify-content: space-between;
