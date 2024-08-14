@@ -55,8 +55,9 @@ html {
 
 /*Body Attributes*/
 body {
-    	height: 2000000px;
-	max-height: 4000000000px;
+    	height: 20000px;
+	max-height: 400000px;
+	background: linear-gradient(90deg, rgba(0,0,0,0.673996356355042) 9%, rgba(73,79,82,0.7104109221813726) 100%);
     	width: 100%;
 	z-index: 0;
     	object-fit: cover;
