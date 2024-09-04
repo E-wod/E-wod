@@ -11,7 +11,10 @@
 	width: 100%;
 	scale: 1;
 }
-
+@font-face {
+    font-family: 'LoversQuarrel';
+    src: url('/font/LoversQuarrel-Regular.ttf');
+}
 img {
     	height: 100%;
     	width: 100%;
@@ -386,7 +389,7 @@ li a {
 	font-size: 60px;
 	stagger: 3;
 	color: #6DA5B8;
-	font-family: 'aclonica';
+	font-family: 'LoversQuarrel';
 	font-weight: 100;
 	font-style: bold;
 	text-shadow: 2px 2px 4px #a6abca;
