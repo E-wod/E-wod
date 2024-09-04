@@ -874,7 +874,7 @@ li a {
 }
 
  .button {
-/* 	margin-top: 0px;
+ 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
 	margin-left: 0px;
@@ -889,26 +889,8 @@ li a {
 	background-color: transparent;
 	font-size: 40px;
 	position: sticky;
-	float: right; */
+	float: right; 
 }
-
-
-/* -------------------------------------------------------------BackGround Animate SETTINGS--------------------------------------------------------*/
-
-
-
-/* <css-doodle>
-  <style>
-	@grid: 360 / 260vmin;
-        background: #252526; 
-        scale: 0;
-        opacity: 0;
-        animation: bkGnd 4s ease-in-out infinite;
-        animation-delay: calc(-3s/@I * @i * @sin(@i));
-
-  </style>
- </css-doodle> */
-
 
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes bkGnd {
