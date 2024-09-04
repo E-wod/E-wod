@@ -386,7 +386,7 @@ li a {
 	font-size: 60px;
 	stagger: 3;
 	color: #6DA5B8;
-	font-family: aclonica;
+	font-family: "aclonica";
 	font-weight: 100;
 	font-style: bold;
 	text-shadow: 2px 2px 4px #a6abca;
@@ -438,7 +438,7 @@ li a {
 .landingContent h3{
 	font-size: 43px;
 	color: #6DA5B8;
-	font-family: gruppo;
+	font-family: "gruppo";
 	font-weight: 100;
 	line-height: 1.1;
 	text-decoration: none;
