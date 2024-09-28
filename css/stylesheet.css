@@ -33,8 +33,8 @@ video {
 /*HTML Attributes*/
 html {
 	scroll-behavior: smooth;
-	max-height: 4000000000px;
-	height: 2000000px;
+	max-height: 45000px;
+	height: auto;
         width: 100%;
 	margin-left: 1px;
 	margin-right: 1px;
@@ -976,8 +976,8 @@ li a {
 
 html {
 	scroll-behavior: smooth;
-	height: 2000000px;
-	max-height: 4000000000px;
+	max-height: 45000px;
+	height: auto;
         width: 100%;
 	margin-left: 1px;
 	margin-right: 1px;
