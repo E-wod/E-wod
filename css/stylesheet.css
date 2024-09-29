@@ -45,9 +45,9 @@ html {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	position: absolute;
-/* 	background-color: #181a1b; */
-	background: rgb(0,0,0);
-        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(24,26,27,1) 100%);
+/* 	background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(24,26,27,1) 100%); */
+	background-image: url("img/facebookcoverad.jpg");
 	mix-blend-mode: normal;
         background-repeat: repeat;
         background-attachment: fixed;
