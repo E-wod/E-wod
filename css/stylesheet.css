@@ -71,34 +71,6 @@ body {
 	background-repeat: no-repeat;
 }
 
-.splash {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #282c34;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    transition: opacity 0.6s ease-in-out;
-}
-
-.splash h1 {
-    color: white;
-    font-size: 3em;
-}
-
-.content {
-    display: all;
-    padding: 20px;
-}
-
-.fade-out {
-    opacity: 0;
-    pointer-events: none;
-}
-
 a {
 	margin-left: 0px;
 	margin-right: 0px;
