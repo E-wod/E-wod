@@ -32,7 +32,6 @@ video {
 
 /*HTML Attributes*/
 html {
-	overflow: hidden;
 	scroll-behavior: smooth;
 	height: 100%;
         width: 100%;
