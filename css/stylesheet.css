@@ -41,7 +41,8 @@ html {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	scroll-behavior: smooth;
-	height: 100%;
+	height: auto;
+	max-height: 100%;
         width: 100%;
 	position: absolute;
         background: rgb(0,0,0);
@@ -63,8 +64,7 @@ body {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-    	height: 100%;
-	max-height: auto;
+    	height: auto;
     	width: 100%;
 	z-index: 0;
     	object-fit: cover;
