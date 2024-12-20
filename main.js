@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         splash.classList.add('fade-out');
         setTimeout(() => {
-            splash.style.display = 'none';
+            splash.style.display = 'all';
             document.querySelector('.content').style.display = 'block';
         }, 1000);
     }, 2000);
