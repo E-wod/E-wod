@@ -709,8 +709,8 @@ li a {
 	position: absolute;
 	margin-top: 3px;
 	margin-bottom: 3px;
-	margin-right: 3px;
-	margin-left: 3px;
+	margin-left: 50%;
+	margin-right: 50%;
 	padding-top: 3px;
 	padding-bottom: 3px;
 	padding-right: 7%;
