@@ -44,10 +44,10 @@ html {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	position: absolute;
-/* 	background: rgb(0,0,0); */
-/*         background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(24,26,27,1) 100%); */
+        background-image: url("https://www.wikihow.com/images/my_background.png");
 	mix-blend-mode: normal;
         background-attachment: fixed;
+	background-repeat: repeat;
 }
 
 /*Body Attributes*/
@@ -66,7 +66,6 @@ body {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	background-repeat: repeat;
-	background-image: url('https://ibb.co/1Gytj4K');
     	object-fit: cover;
 	background-attachment: fixed;
 }
