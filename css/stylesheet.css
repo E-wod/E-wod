@@ -48,6 +48,7 @@ html {
 	mix-blend-mode: normal;
         background-attachment: fixed;
 	background-repeat: repeat;
+	object-fit: cover;
 }
 
 /*Body Attributes*/
