@@ -45,11 +45,10 @@ html {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	position: absolute;
-        background-image: url("https://i.ibb.co/1Gytj4K/happy-Squirrel2.jpg");
-	mix-blend-mode: normal;
+/* 	mix-blend-mode: normal;
         background-attachment: fixed;
 	background-repeat: no-repeat;
-	object-fit: contain;
+	object-fit: contain; */
 }
 
 /*Body Attributes*/
@@ -67,9 +66,12 @@ body {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	background-repeat: no-repeat;
-    	object-fit: cover;
+/* 	background-repeat: no-repeat;
 	background-attachment: fixed;
+    	object-fit: cover; */
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(131,8,81,1) 100%);
+
 }
 
 a {
