@@ -33,7 +33,7 @@ video {
 html {
 	scroll-behavior: smooth;
 	height: auto;
-	width: auto;
+	width: 100%;
         max-width: 100%;
 	margin-left: 1px;
 	margin-right: 1px;
