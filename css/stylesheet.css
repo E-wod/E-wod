@@ -400,8 +400,6 @@ li a {
 	padding-right: 3px;
 	padding-top: 3px;
 	padding-bottom: 3px;
-	width: 100%;
-	max-width: 100%;
 	position: relative;
 	z-index: -3;
 	opacity: 0;
@@ -410,30 +408,6 @@ li a {
 	align-all: center;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
-}
-
-/*Setting the landing page template for H3*/
-
-.landingContent h3 grp a{
-	width: 50%;
-}
-
-.landingContent h3 grp {
-	z-index: 1;
-	background: transparent;
-	position: inherit;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 100%;
-	justify-content: space-around;
-	text-align: center;
-	align-all: center;
 }
 
 .landingContent h3{
@@ -461,19 +435,7 @@ li a {
 	animation: h3Anim 1s ease forwards;
 	animation-delay: .7s;
 	transition-timing-function: ease ease-in-out; 
-	max-width: 100%;
-	width: 100%;
 }
-
-.landingContent h3 span{
-    	font-size: 43px;
-	color: azure;
-	font-family:Script, Lobster, 'Kristen ITC';
-	font-weight: 100;
-	text-decoration: none;
-	z-index: 1;
-}
-
 
 /*Setting the landing page template for paragraph*/
 .landingContent p{
@@ -498,9 +460,6 @@ li a {
 	margin-right: 2px;
 	margin-top: 2px;
 	margin-bottom: 2px;
-	width: 100%;
-    	max-width: 100%;
-	max-height: 15%;
 	background: transparent;
 	position: relative;
 	overflow: visible;
