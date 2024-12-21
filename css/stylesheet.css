@@ -145,6 +145,7 @@ a {
  	width: 140px;
 	height: 140px;
 	max-width: auto;
+	max-height: auto;
 	opacity: .8;
 	display: flex;
 	justify-content: center;
