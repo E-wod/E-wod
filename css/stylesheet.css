@@ -189,8 +189,8 @@ a {
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	animation: choiceAnim 3s ease forwards;
-	animation-delay: calc(.5s * var(--i)); 
+	animation: choiceAnim 1.5s ease forwards;
+	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
 }
 
