@@ -406,8 +406,9 @@ li a {
 	justify-content: space-around;
 	text-align: center;
 	align-all: center;
-	animation: h1Anim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
+	animation-delay: 2s;
+	animation: h1Anim 2.5s ease forwards;
+	transition-timing-function: 2.5s ease ease-in-out; 
 }
 
 .landingContent h3{
