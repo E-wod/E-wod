@@ -833,7 +833,6 @@ li a {
 
 
 .image-blurred-edge {
-  background-image: url('https://picsum.photos/200/300');
   width: 200px;
   height: 200px;
   /* you need to match the shadow color to your background or image border for the desired effect*/
