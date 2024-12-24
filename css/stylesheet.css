@@ -255,7 +255,7 @@ a {
 
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
-	background: #181a1b;
+	background: #3a142a;
     	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -513,7 +513,7 @@ li a {
 
 /*Question Box Anchor Tag Button layout and function*/
 .btnBox a {
-	background: #181a1b;
+	background: #3a142a;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -545,7 +545,7 @@ li a {
 .btnBox a::before {
 	content: '';
 	position: absolute;
-	background: #181a1b;
+	background: #3a142a;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -618,7 +618,7 @@ li a {
 	overflow: hidden;
 	width: 60px;
 	height: 60px;
-	background: #181a1b;
+	background: #3a142a;
 	z-index: 15;
 	font-family:"Open Sans", "sans-serif";
 	transition: 1s;
@@ -1507,7 +1507,7 @@ a {
 
 /*Question Box Anchor Tag Button layout and function*/
 .btnBox a {
-	background: #181a1b;
+	background: #3a142a;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1539,7 +1539,7 @@ a {
 .btnBox a::before {
 	content: '';
 	position: absolute;
-	background: #181a1b;
+	background: #3a142a;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -1612,7 +1612,7 @@ a {
 	overflow: hidden;
 	width: 60px;
 	height: 60px;
-	background: #181a1b;
+	background: #3a142a;
 	z-index: 15;
 	font-family:"Open Sans", "sans-serif";
 	transition: 1s;
