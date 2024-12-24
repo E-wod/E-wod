@@ -1029,6 +1029,7 @@ body {
 
 }
 
+
 a {
 	margin-left: 0px;
 	margin-right: 0px;
@@ -1362,7 +1363,7 @@ a {
 	width: 100%;
 	max-width: 100%;
 	height: 100%;
-	max-height: 1000%;
+	max-height: auto;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1377,13 +1378,13 @@ a {
 
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
-	font-size: 30px;
+	font-size: 60px;
 	stagger: 3;
 	color: #6DA5B8;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: bold;
-	text-shadow: 2px 2px 2px #a6abca;
+	text-shadow: 2px 2px 4px #a6abca;
 	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -1393,50 +1394,25 @@ a {
 	padding-right: 3px;
 	padding-top: 3px;
 	padding-bottom: 3px;
-	width: 100%;
-	max-width: 100%;
 	position: relative;
 	z-index: -3;
 	opacity: 0;
 	justify-content: space-around;
 	text-align: center;
 	align-all: center;
-	animation: h1Anim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
-}
-
-/*Setting the landing page template for H3*/
-
-.landingContent h3 grp a{
-	width: 50%;
-}
-
-.landingContent h3 grp {
-	z-index: 1;
-	background: transparent;
-	position: inherit;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 100%;
-	justify-content: space-around;
-	text-align: center;
-	align-all: center;
+	animation-delay: 2s;
+	animation: h1Anim 2.5s ease forwards;
+	transition-timing-function: 2.5s ease ease-in-out; 
 }
 
 .landingContent h3{
-	font-size: 17px;
+	font-size: 43px;
 	color: #6DA5B8;
-	font-family:Script, Lobster, 'Kristen ITC';
+	font-family: Lobster, 'Kristen ITC', Script;
 	font-weight: 100;
 	line-height: 1.1;
 	text-decoration: none;
-	text-shadow: 1px 1px 2px #a6abca;
+	text-shadow: 3px 3px 7px #a6abca;
 	z-index: 10;
 	justify-content: space-around;
 	text-align: center;
@@ -1454,19 +1430,7 @@ a {
 	animation: h3Anim 1s ease forwards;
 	animation-delay: .7s;
 	transition-timing-function: ease ease-in-out; 
-	max-width: 100%;
-	width: 100%;
 }
-
-.landingContent h3 span{
-    	font-size: 17px;
-	color: azure;
-	font-family:Script, Lobster, 'Kristen ITC';
-	font-weight: 100;
-	text-decoration: none;
-	z-index: 1;
-}
-
 
 /*Setting the landing page template for paragraph*/
 .landingContent p{
@@ -1475,11 +1439,11 @@ a {
 	justify-content: space-around;
 	text-align: center;
 	align-all: center;
-	font-size: 11px;
+	font-size: 20px;
 	color: azure;
 	font-family: sans-serif;
 	font-weight: 100;
-	text-shadow: 1px 1px 2px #a6abca;
+	text-shadow: 2px 3px 6px #a6abca;
 	text-decoration: none;
 	font-style: italic;
 	line-height: 1.1;
@@ -1491,9 +1455,6 @@ a {
 	margin-right: 2px;
 	margin-top: 2px;
 	margin-bottom: 2px;
-	width: 100%;
-    	max-width: 100%;
-	max-height: 15%;
 	background: transparent;
 	position: relative;
 	overflow: visible;
@@ -1614,11 +1575,11 @@ a {
 	margin-bottom: 2px;
 	margin-right: 5px;
 	margin-left: 5px;
-	background: transparent;
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	background: transparent;
 	display: flex;
 	width: auto;
 	height: auto;
@@ -1632,6 +1593,14 @@ a {
 /*Social Links Anchor Tag Button layout and function*/
 .socLnk a {
 	align-items: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	font-size: 40px;
 	text-decoration: none;
 	display: flex;
@@ -1695,7 +1664,7 @@ a {
 	height: auto;
 	width: 100%;
 	display: flex;
-	position: absolute;
+	position: inherit;
 	margin-top: 3px;
 	margin-bottom: 3px;
 	margin-right: 3px;
@@ -1712,11 +1681,32 @@ a {
 }
 
 /*background layout template*/
+.beGod {
+	background-color: transparent;
+	position: inherit;
+	width: 50%;
+	height: 50%;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0%; 
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0%;
+	padding-bottom: 0px;
+	z-index: 1;
+	align-all: center; 
+	float: center;
+	justify-content: space-between;
+	transition: 3s;
+	transition-timing-function: ease; 
+	animation: pAnim 3s ease forwards;
+}
 .bkg {
 	background-color: transparent;
 	position: relative;
 	width: 100%;
-	max-height: 120000px;
+	max-height: auto;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
@@ -1833,4 +1823,48 @@ a {
 	opacity: 0;
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: ease ease-in-out; 
+}
+
+/*--------------------------------------------------------------JUMP TO TOP BUTTON------------------------------------------------------*/
+
+
+#scrollToTopBtn {
+	background-color: transparent;
+	justify-contents: center;
+	font-size: 40px;
+	position: sticky;
+  	border: none;
+  	line-height: 48px;
+  	width: 48px;
+	cursor: pointer;
+	z-index: 9999999;
+	text-decoration: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	transition: 1s ease-in-out;
+}
+
+ .button {
+ 	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	transition: 1s ease-in-out;
+	z-index: 9999999;
+  	width: 48px;
+	cursor: pointer;
+	background-color: transparent;
+	font-size: 40px;
+	position: sticky;
+	float: right; 
 }
