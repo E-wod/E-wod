@@ -831,15 +831,6 @@ li a {
 	transition-timing-function: ease ease-in-out; 
 }
 
-
-.image-blurred-edge {
-  width: 200px;
-  height: 200px;
-  /* you need to match the shadow color to your background or image border for the desired effect*/
-  box-shadow: 0 0 8px 8px white inset;
-}
-
-
 /*--------------------------------------------------------------JUMP TO TOP BUTTON------------------------------------------------------*/
 
 
