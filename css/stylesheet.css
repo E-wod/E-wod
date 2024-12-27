@@ -694,6 +694,10 @@ li a {
 	position: inherit;
 	width: 50%;
 	height: 50%;
+	left: 50%;
+	right: 50%;
+	top: 50%;
+	bottom: 50%;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
@@ -1689,6 +1693,10 @@ a {
 	position: inherit;
 	width: 50%;
 	height: 50%;
+	left: 50%;
+	right: 50%;
+	top: 50%;
+	bottom: 50%;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
@@ -1705,6 +1713,7 @@ a {
 	transition-timing-function: ease; 
 	animation: pAnim 3s ease forwards;
 }
+.bkg {
 .bkg {
 	background-color: transparent;
 	position: relative;
