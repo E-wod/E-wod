@@ -1330,7 +1330,7 @@ a {
 	display: block;
 	width: 30px;
 	height: 2px;
-	margin: 5px auto;
+	margin: auto;
     	-webkit-transition: all 0.3s ease-in-out;
     	transition: all 0.3s ease-in-out;
 	background: azure;
