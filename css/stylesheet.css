@@ -162,7 +162,7 @@ a {
 	font-weight: 400;
 	font-style: normal;
 	background-color: transparent;
-	animation: logoAnim 2s ease forwards;
+	animation: logoAnim ease forwards;
 	transition-timing-function: ease ease-in-out; 
 }
 
@@ -1124,7 +1124,7 @@ a {
 	font-weight: 400;
 	font-style: normal;
 	background-color: transparent;
-	animation: logoAnim 2s ease forwards;
+	animation: logoAnim ease forwards;
 	transition-timing-function: ease ease-in-out; 
 }
 
@@ -1713,7 +1713,6 @@ a {
 	transition-timing-function: ease; 
 	animation: pAnim 3s ease forwards;
 }
-.bkg {
 .bkg {
 	background-color: transparent;
 	position: relative;
