@@ -98,6 +98,7 @@ a {
 	align-self: center;
     	max-width: auto;
 	width: 100%;
+	height: auto;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -708,9 +709,9 @@ li a {
 	padding-top: 1%;
 	padding-bottom: 1%;
 	z-index: 1;
-	align-all: center; 
+	align-all: space--between; 
 	float: center;
-	justify-content: space-between;
+	justify-content: center;
 	transition: 3s;
 	transition-timing-function: ease; 
 	animation: logoAnim 3s ease forwards;
@@ -1086,6 +1087,7 @@ a {
 	align-self: center;
     	max-width: auto;
 	width: 100%;
+	height: auto;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1734,9 +1736,9 @@ a {
 	padding-top: 1%;
 	padding-bottom: 1%;
 	z-index: 1;
-	align-all: center; 
+	align-all: space--between; 
 	float: center;
-	justify-content: space-between;
+	justify-content: center;
 	transition: 3s;
 	transition-timing-function: ease; 
 	animation: logoAnim 3s ease forwards;
