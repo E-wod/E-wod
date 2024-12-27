@@ -465,8 +465,10 @@ li a {
 	position: relative;
 	overflow: visible;
 	opacity: 0;
-	animation: pAnim 1s ease forwards;
-	transition-timing-function: ease ease-in-out; 
+/* 	animation: pAnim 1s ease forwards;
+	transition-timing-function: ease ease-in-out;  */
+	animation: choiceAnim 1.5s ease forwards;
+	animation-timing-function: ease-in-out;
 }
 
 /*Setting the landing page template for Question buttons*/
