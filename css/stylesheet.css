@@ -707,7 +707,6 @@ li a {
 	transition: 3s;
 	transition-timing-function: ease; 
 	animation: pAnim 3s ease forwards;
-	animation-delay: 3s;
 }
 .bkg {
 	background-color: transparent;
