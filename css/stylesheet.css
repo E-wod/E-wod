@@ -162,7 +162,7 @@ a {
 	font-weight: 400;
 	font-style: normal;
 	background-color: transparent;
-	animation: logoAnim ease forwards;
+	animation: logoAnim 1.5s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 }
 
@@ -1124,7 +1124,7 @@ a {
 	font-weight: 400;
 	font-style: normal;
 	background-color: transparent;
-	animation: logoAnim;
+	animation: logoAnim 1.5s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 }
 
