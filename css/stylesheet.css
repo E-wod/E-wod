@@ -894,12 +894,14 @@ li a {
 		opacity: 0;
 		text-shadow: 0 2px 1px #8B3421;
 		scale: .35;
+		transform: rotate(0deg);
     }
 	100% {
 		opacity: 1;
 		color: #8B3421;
 		text-shadow: 0 2px 4px azure;
 		scale: 1;
+		transform: rotate(1440deg);
 	}
 }
 
