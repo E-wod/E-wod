@@ -1157,7 +1157,7 @@ a {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	animation: choiceAnim 3s ease forwards;
-	animation-delay: calc(.5s * var(--i)); 
+	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
 }
 	
@@ -1240,7 +1240,7 @@ a {
 	max-height: auto;
 	border-radius: 8px;
 	animation: choiceAnim 3s ease forwards;
-	animation-delay: calc(.5s * var(--i)); 
+	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
 }
 	
@@ -1261,7 +1261,7 @@ a {
 	color: azure;
 	opacity: 1;
 	animation: choiceAnim 3s ease forwards;
-	animation-delay: calc(.5s * var(--i)); 
+	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
 }
 
@@ -1381,7 +1381,7 @@ a {
 
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
-	font-size: 60px;
+	font-size: 30px;
 	stagger: 3;
 	color: #6DA5B8;
 	font-family: "sofachrome", sans-serif;
@@ -1409,7 +1409,7 @@ a {
 }
 
 .landingContent h3{
-	font-size: 43px;
+	font-size: 21px;
 	color: #6DA5B8;
 	font-family: Lobster, 'Kristen ITC', Script;
 	font-weight: 100;
@@ -1442,7 +1442,7 @@ a {
 	justify-content: space-around;
 	text-align: center;
 	align-all: center;
-	font-size: 20px;
+	font-size: 15px;
 	color: azure;
 	font-family: sans-serif;
 	font-weight: 100;
