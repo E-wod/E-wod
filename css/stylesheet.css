@@ -116,7 +116,7 @@ a {
 	background-attachment: fixed;
 	display: flex;
 	justify-content: center;
-	align-content: space-between;
+	align-content: center;
 	text-decoration: none;
 	overflow: inherit;
 	object-position: center;
@@ -1104,7 +1104,7 @@ a {
 	background-attachment: fixed;
 	display: flex;
 	justify-content: center;
-	align-content: space-between;
+	align-content: center;
 	text-decoration: none;
 	overflow: inherit;
 	object-position: center;
