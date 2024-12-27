@@ -323,7 +323,10 @@ a {
 	display: block;
 	width: 25px;
 	height: 3px;
-	margin: 10px auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
     	-webkit-transition: all 0.125s ease-in-out;
     	transition: all 0.3s ease-in-out;
 	background: azure;
