@@ -696,6 +696,8 @@ li a {
 	background-color: transparent;
 	position: inherit;
 	width: 100%;
+	max-height: auto;
+	max-width: auto;
 	height: 100%;
    	margin-left: 1%;
 	margin-right: 1%;  
@@ -1720,6 +1722,8 @@ a {
 	background-color: transparent;
 	position: inherit;
 	width: 100%;
+	max-height: auto;
+	max-width: auto;
 	height: 100%;
    	margin-left: 1%;
 	margin-right: 1%;  
