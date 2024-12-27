@@ -1102,8 +1102,8 @@ a {
 	background: transparent;
 	background-attachment: fixed;
 	display: flex;
-	justify-content: space-around;
-	align-content: center;
+	justify-content: center;
+	align-content: space-between;
 	z-index: 30;
 	text-decoration: none;
 	overflow: inherit;
