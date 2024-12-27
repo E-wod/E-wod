@@ -161,9 +161,7 @@ a {
 	text-decoration: none;
 	font-weight: 400;
 	font-style: normal;
-	background-color: transparent;
-	animation: logoAnim 1.5s ease forwards;
-	transition-timing-function: ease ease-in-out; 
+	background-color: transparent; 
 }
 
 .nav-logo :hover,
@@ -710,7 +708,7 @@ li a {
 	justify-content: space-between;
 	transition: 3s;
 	transition-timing-function: ease; 
-	animation: pAnim 3s ease forwards;
+	animation: logoAnim 3s ease forwards;
 }
 .bkg {
 	background-color: transparent;
