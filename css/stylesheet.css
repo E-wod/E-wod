@@ -1302,7 +1302,7 @@ a {
 	cursor: pointer;
 	height: auto;
         display: block;
-	width: 45px;
+	width: 90px;
         transition: .3s;
 	background: transparent;
 }
@@ -1329,8 +1329,8 @@ a {
 .bar {
 	text-decoration: none;
 	display: block;
-	width: 25px;
-	height: 3px;
+	width: 75px;
+	height: 5px;
 	margin: 5px auto;
     	-webkit-transition: all 0.3s ease-in-out;
     	transition: all 0.3s ease-in-out;
