@@ -714,7 +714,7 @@ li a {
 	justify-content: space-between;
 	transition: 3s;
 	transition-timing-function: ease; 
-	animation: pAnim 3s ease forwards;
+	animation: logoAnim 3s ease forwards;
 }
 .beNook {
 	background-color: transparent;
@@ -737,7 +737,7 @@ li a {
 	justify-content: space-between;
 	transition: 3s;
 	transition-timing-function: ease; 
-	animation: logoAnim 3s ease forwards;
+	animation: pAnim 3s ease forwards;
 }
 .bkg {
 	background-color: transparent;
@@ -1740,7 +1740,30 @@ a {
 	justify-content: space-between;
 	transition: 3s;
 	transition-timing-function: ease; 
-	animation: choiceAnim 3s ease forwards;
+	animation: logoAnim 3s ease forwards;
+}
+.beNook {
+	background-color: transparent;
+	position: inherit;
+	width: 50%;
+	height: 50%;
+	top: 50%;
+	bottom: 50%;
+   	margin-left: 0%;
+	margin-right: 0%;  
+	margin-top: 0%;
+  	margin-bottom: 0%; 
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	z-index: 1;
+	align-all: center; 
+	float: center;
+	justify-content: space-between;
+	transition: 3s;
+	transition-timing-function: ease; 
+	animation: pAnim 3s ease forwards;
 }
 .bkg {
 	background-color: transparent;
