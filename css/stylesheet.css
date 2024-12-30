@@ -86,10 +86,12 @@ a {
 	padding-bottom: 0px;
 	width: 100%;
 	max-width: auto;
+	max-height: auto;
 	height: 100%; 
-	justify-content: space-around;
+	float: center;
+	justify-content: centter;
 	text-align: center;
-	align-all: center;
+	align-all: space-between;
 	text-decorations: none;
 }
 
