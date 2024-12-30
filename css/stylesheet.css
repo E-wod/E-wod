@@ -150,8 +150,9 @@ a {
 	max-height: auto;
 	opacity: .8;
 	display: flex;
+	float: center;
 	justify-content: center;
-	text-align: center;
+	align-content: space-between;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -1139,8 +1140,9 @@ a {
 	max-height: auto;
 	opacity: .8;
 	display: flex;
+	float: center;
 	justify-content: center;
-	text-align: center;
+	align-content: space-between;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
