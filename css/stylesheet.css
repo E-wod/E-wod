@@ -149,7 +149,7 @@ a {
 	max-width: auto;
 	max-height: auto;
 	opacity: .8;
-	display: center;
+	display: flex;
 	justify-content: center;
 	text-align: center;
 	margin-left: 1px;
@@ -1138,7 +1138,7 @@ a {
 	max-width: auto;
 	max-height: auto;
 	opacity: .8;
-	display: flex-start;
+	display: flex;
 	justify-content: center;
 	text-align: center;
 	margin-left: 1px;
