@@ -89,9 +89,9 @@ a {
 	max-height: auto;
 	height: 100%; 
 	float: center;
-	justify-content: centter;
+	justify-content: center;
 	text-align: center;
-	align-all: space-between;
+	align-all: center;
 	text-decorations: none;
 }
 
@@ -1081,8 +1081,10 @@ a {
 	padding-bottom: 0px;
 	width: 100%;
 	max-width: auto;
+	max-height: auto;
 	height: 100%; 
-	justify-content: space-around;
+	float: center;
+	justify-content: center;
 	text-align: center;
 	align-all: center;
 	text-decorations: none;
