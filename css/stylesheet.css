@@ -118,7 +118,7 @@ a {
 	background-attachment: fixed;
 	display: flex;
 	justify-content: center;
-	align-content: center;
+	align-content: space-between;
 	text-decoration: none;
 	overflow: inherit;
 	object-position: center;
@@ -129,6 +129,7 @@ a {
 	justify-content: center;
 	float: center;
 	align-all: space-between;
+	object-position: center;
 	background: transparent;
 	position: relative;
 	width: 140px;
