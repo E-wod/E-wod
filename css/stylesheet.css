@@ -131,7 +131,7 @@ a {
 	align-all: space-between;
 	object-position: center;
 	background: transparent;
-	position: relative;
+	position: inherit;
 	width: 140px;
 	height: 140px;
 	max-width: 100%;
@@ -1124,10 +1124,11 @@ a {
 	justify-content: center;
 	float: center;
 	align-all: space-between;
+	object-position: center;
 	background: transparent;
-	position: relative;
-	width: 80px;
-	height: 80px;
+	position: inherit;
+	width: 140px;
+	height: 140px;
 	max-width: 100%;
 	max-height: 100%; 
 	display: flex;
