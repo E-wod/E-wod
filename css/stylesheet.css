@@ -761,6 +761,8 @@ li a {
 	align-all: center; 
 	float: center;
 	justify-content: space-between;
+	animation: h1Anim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
 }
 .obJects{
 	background-color: transparent;
@@ -1793,6 +1795,8 @@ a {
 	align-all: center; 
 	float: center;
 	justify-content: space-between;
+	animation: h1Anim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
 }
 .obJects{
 	background-color: transparent;
