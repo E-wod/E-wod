@@ -688,8 +688,8 @@ li a {
 	margin-left: 3px;
 	padding-top: 3px;
 	padding-bottom: 3px;
-	padding-right: 7%;
-	padding-left: 7%;
+	padding-right: 3px;
+	padding-left: 3px;
 	z-index: -19;
 	scale: 1;
 	overflow: hidden;
@@ -1722,13 +1722,12 @@ a {
 	margin-left: 3px;
 	padding-top: 3px;
 	padding-bottom: 3px;
-	padding-right: 7%;
-	padding-left: 7%;
+	padding-right: 3px;
+	padding-left: 3px;
 	z-index: -19;
 	scale: 1;
 	overflow: hidden;
 	object-fit: contain;
-
 }
 
 /*background layout template*/
