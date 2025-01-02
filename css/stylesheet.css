@@ -70,7 +70,6 @@ body {
 	z-index: 0;
     	object-fit: cover;
 	background-attachment: fixed;
-	position: relative;
 	background-repeat: no-repeat;
 
 }
