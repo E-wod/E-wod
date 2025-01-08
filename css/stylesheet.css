@@ -186,7 +186,7 @@ a {
 
 .nav-menu {
     	width: auto;
-	height: auto;
+	height: 100%;
 	display: flex;
     	justify-content: center;
     	align-items: center;
@@ -198,8 +198,6 @@ a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	border: 2px solid #960000;
-	border-radius: 8px;
 	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
@@ -208,7 +206,7 @@ a {
 }
 
 .nav-item {
-	justify-content: space-around;
+	justify-content: center;
  	width: auto;
 	height: auto;
 	overflow: inherit;
@@ -291,7 +289,7 @@ a {
 	text-decoration: none;
 	display: flex;
 	float: center;
-	justify-content: space-around;
+	justify-content: center;
 /* 	border: 2px solid #960000;
 	border-radius: 8px; */
 	position: relative;
@@ -1377,15 +1375,15 @@ a {
 }
 	
 .hamburger.active .bar:nth-child(2) {
-        opacity: 1;
+    opacity: 0;
 }
 
 .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
 }
 	
 .hamburger:hover {
@@ -1396,14 +1394,13 @@ a {
 }	
 
 .bar {
-	text-decoration: none;
-	display: block;
-	width: 25px;
-	height: 3px;
-	margin: 2px auto;
-    	-webkit-transition: all 0.3s ease-in-out;
-    	transition: all 0.3s ease-in-out;
-	background: azure;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
 li {
