@@ -726,8 +726,8 @@ li a {
 .beNook {
 	background-color: transparent;
 	position: inherit;
-	width: 75%;
-	height: 75%;
+	width: 30%;
+	height: 30%;
 	top: 50%;
 	bottom: 50%;
    	margin-left: 0%;
@@ -1778,8 +1778,8 @@ li a {
 .beNook {
 	background-color: transparent;
 	position: inherit;
-	width: 35%;
-	height: 35%;
+	width: 22%;
+	height: 22%;
 	top: 50%;
 	bottom: 50%;
    	margin-left: 0%;
