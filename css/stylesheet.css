@@ -55,7 +55,6 @@ html {
 /*Body Attributes*/
 body {
 	z-index: 0;
-	display: block;
 	position: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -70,14 +69,14 @@ body {
 	max-width: auto;
     	width: 100%;
 	z-index: 0;
-    	object-fit: contain;
+/*     	object-fit: contain;
 	float: center;
 	justify-content: center;
 	text-align: center;
 	align-all: center;
 	text-decorations: none;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 }
 
 a {
@@ -1055,7 +1054,6 @@ html {
 /*Body Attributes*/
 body {
 	z-index: 0;
-	display: block;
 	position: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -1070,14 +1068,14 @@ body {
 	max-width: auto;
     	width: 100%;
 	z-index: 0;
-    	object-fit: contain;
+/*     	object-fit: contain;
 	float: center;
 	justify-content: center;
 	text-align: center;
 	align-all: center;
 	text-decorations: none;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 }
 
 a {
@@ -1118,6 +1116,7 @@ a {
 	left: 0;
  	background: transparent;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-content: center;
 	text-decoration: none;
