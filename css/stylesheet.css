@@ -236,10 +236,10 @@ a {
 
 /*Nav Bar Attributes*/
 .navBar {
- 	background: transparent;
+ 	background: #d55a02;
  	justify-content: center; 
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 14px;
 	font-color: #960000;
 	display: flex;
 	align-items: center;
@@ -256,6 +256,8 @@ a {
 	max-width: 100%;
 	height: auto;
 	max-height: auto;
+/* 	border-radius: 8px; */
+	border: 2px solid #960000;
 	border-radius: 8px;
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
@@ -264,7 +266,7 @@ a {
 
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
-	background: #d55a02;
+	background: transparent;
     	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -282,8 +284,8 @@ a {
 	float: center;
 	justify-content: space-around;
 	letter-spacing: 1.5px;
-	border: 2px solid #960000;
-	border-radius: 8px;
+/* 	border: 2px solid #960000;
+	border-radius: 8px; */
 	position: relative;
 	color: #960000;
 	font-color: #960000;
@@ -1266,10 +1268,10 @@ a {
 	
 /*Nav Bar Attributes*/
 .navBar {
- 	background: transparent;
+ 	background: #d55a02;
  	justify-content: center; 
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 11px;
 	font-color: #960000;
 	display: flex;
 	align-items: center;
@@ -1286,28 +1288,42 @@ a {
 	max-width: 100%;
 	height: auto;
 	max-height: auto;
+/* 	border-radius: 8px; */
+	border: 2px solid #960000;
 	border-radius: 8px;
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
-}	
-/*Nav Bar Anchor Tag*/
+}
+
+/*navBar Anchor Tag Button layout and function*/
 .navBar a {
-	justify-content: space-between;
-	display: inline-flex;
+	background: transparent;
+    	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 11px;
+	width: auto;
+	height: auto;
+	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	font-size: 12px;
-	color: azure;
-	opacity: 1;
-	animation: choiceAnim 3s ease forwards;
+	display: flex;
+	float: center;
+	justify-content: space-around;
+	letter-spacing: 1.5px;
+/* 	border: 2px solid #960000;
+	border-radius: 8px; */
+	position: relative;
+	color: #960000;
+	font-color: #960000;
+	overflow: hidden;
+	opacity: 0;
+	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
 }
