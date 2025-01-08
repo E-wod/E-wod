@@ -120,6 +120,7 @@ a {
 	left: 0;
  	background: transparent;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-content: center;
 	text-decoration: none;
