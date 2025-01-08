@@ -44,12 +44,12 @@ html {
 	height: 100%;
 	max-height: auto;
         width: 100%;
-	position: absolute;
-        background: rgb(0,0,0);
-        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(131,8,81,1) 100%);
+	position: fixed;
+	background: rgb(150,0,0);
+	background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(213,90,2,1) 100%);
 	mix-blend-mode: normal;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+/*         background-attachment: fixed; */
 }
 
 /*Body Attributes*/
@@ -240,7 +240,7 @@ a {
  	justify-content: center; 
 	text-decoration: none;
 	font-size: 13px;
-	font-color: #6DA5B8;
+	font-color: #960000;
 	display: flex;
 	align-items: center;
 	float: center;
@@ -282,11 +282,11 @@ a {
 	float: center;
 	justify-content: space-around;
 	letter-spacing: 1.5px;
-	border: 2px solid #6DA5B8;
+	border: 2px solid #960000;
 	border-radius: 8px;
 	position: relative;
-	color: #6DA5B8;
-	font-color: #6DA5B8;
+	color: #960000;
+	font-color: #960000;
 	overflow: hidden;
 	opacity: 0;
 	animation: choiceAnim 1.5s ease forwards;
@@ -296,7 +296,7 @@ a {
 /*Setting the attributes for button*/
 .navBar a:nth-child(1 2 3) {
 	background: transparent;
-	color: #6DA5B8;
+	color: #960000;
 }
 /*Setting pre-animation attributes*/
 .navBar a::before {
@@ -311,7 +311,7 @@ a {
 /*Animation Element*/
 .navBar a:hover::before {
 	height: 100%;
-	background: linear-gradient(0deg,transparent 15%,#6DA5B8 240%);
+	background: linear-gradient(0deg,transparent 15%,#960000 240%);
 }
 /*Hover Function*/
 .navBar a:hover{
@@ -395,7 +395,7 @@ li a {
 .landingContent h1{
 	font-size: 60px;
 	stagger: 3;
-	color: #6DA5B8;
+	color: #960000;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: bold;
@@ -422,7 +422,7 @@ li a {
 
 .landingContent h3{
 	font-size: 43px;
-	color: #6DA5B8;
+	color: #960000;
 	font-family: Lobster, 'Kristen ITC', Script;
 	font-weight: 100;
 	line-height: 1.1;
@@ -543,10 +543,10 @@ li a {
 	float: center;
 	justify-content: space-around;
 	letter-spacing: 1.5px;
-	border: 2px solid #6DA5B8;
+	border: 2px solid #960000;
 	border-radius: 8px;
 	position: relative;
-	color: #6DA5B8;
+	color: #960000;
 	overflow: hidden;
 	transition-timing-function: ease;
 	transition: 1s;
@@ -569,7 +569,7 @@ li a {
 /*Question box Animation Element*/
 .btnBox a:hover::before {
 	height: 100%;
-	background: linear-gradient(0deg,transparent 15%,#6DA5B8 240%);
+	background: linear-gradient(0deg,transparent 15%,#960000 240%);
 }
 
 /*Question Box Hover Function*/
@@ -622,10 +622,10 @@ li a {
 	text-decoration: none;
 	display: flex;
 	justify-content: center;
-	border: 2px solid #6DA5B8;
+	border: 2px solid #960000;
 	border-radius: 50%;
 	position: relative;
-	color: #6DA5B8;
+	color: #960000;
 	overflow: hidden;
 	width: 60px;
 	height: 60px;
@@ -642,7 +642,7 @@ li a {
 /*Setting the attributes for each button*/
 .socLnk a:nth-child(1 2 3) {
 	background: transparent;
-	color: #6DA5B8;
+	color: #960000;
 }
 
 /*Setting pre-animation attributes*/
@@ -661,7 +661,7 @@ li a {
 /*Animation element*/
 .socLnk a:hover::before {    
 	height: 100%;
-	background: linear-gradient(0deg,transparent 35%,#6DA5B8 240%);
+	background: linear-gradient(0deg,transparent 35%,#960000 240%);
 	z-index: 3;
 }
 
@@ -1040,12 +1040,12 @@ html {
 	height: 100%;
 	max-height: auto;
         width: 100%;
-	position: absolute;
-        background: rgb(0,0,0);
-        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(131,8,81,1) 100%);
+	position: fixed;
+	background: rgb(150,0,0);
+	background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(213,90,2,1) 100%);
 	mix-blend-mode: normal;
         background-repeat: no-repeat;
-        background-attachment: absolute;
+/*         background-attachment: fixed; */
 }
 
 /*Body Attributes*/
@@ -1193,7 +1193,7 @@ a {
     	border-radius: 10px;
 	overflow: visible;
 	z-index: 999;
-	font-color: #6DA5B8;
+	font-color: #960000;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -1270,7 +1270,7 @@ a {
  	justify-content: center; 
 	text-decoration: none;
 	font-size: 13px;
-	font-color: #6DA5B8;
+	font-color: #960000;
 	display: flex;
 	align-items: center;
 	float: center;
@@ -1338,10 +1338,10 @@ a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	border: 2px solid #6DA5B8;
+	border: 2px solid #960000;
 	border-radius: 8px;
 	position: relative;
-	color: #6DA5B8;
+	color: #960000;
 	cursor: pointer;
 	height: auto;
         display: block;
@@ -1431,7 +1431,7 @@ a {
 .landingContent h1{
 	font-size: 30px;
 	stagger: 3;
-	color: #6DA5B8;
+	color: #960000;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: bold;
@@ -1458,7 +1458,7 @@ a {
 
 .landingContent h3{
 	font-size: 21px;
-	color: #6DA5B8;
+	color: #960000;
 	font-family: Lobster, 'Kristen ITC', Script;
 	font-weight: 100;
 	line-height: 1.1;
@@ -1577,10 +1577,10 @@ a {
 	float: center;
 	justify-content: space-around;
 	letter-spacing: 1.5px;
-	border: 2px solid #6DA5B8;
+	border: 2px solid #960000;
 	border-radius: 8px;
 	position: relative;
-	color: #6DA5B8;
+	color: #960000;
 	overflow: hidden;
 	transition-timing-function: ease;
 	transition: 1s;
@@ -1603,7 +1603,7 @@ a {
 /*Question box Animation Element*/
 .btnBox a:hover::before {
 	height: 100%;
-	background: linear-gradient(0deg,transparent 15%,#6DA5B8 240%);
+	background: linear-gradient(0deg,transparent 15%,#960000 240%);
 }
 
 /*Question Box Hover Function*/
@@ -1656,10 +1656,10 @@ a {
 	text-decoration: none;
 	display: flex;
 	justify-content: center;
-	border: 2px solid #6DA5B8;
+	border: 2px solid #960000;
 	border-radius: 50%;
 	position: relative;
-	color: #6DA5B8;
+	color: #960000;
 	overflow: hidden;
 	width: 60px;
 	height: 60px;
@@ -1676,7 +1676,7 @@ a {
 /*Setting the attributes for each button*/
 .socLnk a:nth-child(1 2 3) {
 	background: transparent;
-	color: #6DA5B8;
+	color: #960000;
 }
 
 /*Setting pre-animation attributes*/
@@ -1695,7 +1695,7 @@ a {
 /*Animation element*/
 .socLnk a:hover::before {    
 	height: 100%;
-	background: linear-gradient(0deg,transparent 35%,#6DA5B8 240%);
+	background: linear-gradient(0deg,transparent 35%,#960000 240%);
 	z-index: 3;
 }
 
