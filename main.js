@@ -16,7 +16,7 @@ hamburger.classList.remove("active");
 navMenu.classList.remove("active");
 }
 
-    
+ 
     
 
 // GOTO TOP BUTTON
