@@ -44,11 +44,9 @@ html {
 	height: 100%;
 	max-height: auto;
         width: 100%;
-	position: absolute;
+	position: sticky;
 	background: rgb(150,0,0);
 	background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(213,90,2,1) 100%);
-	mix-blend-mode: normal;
-        background-repeat: no-repeat;
         background-attachment: absolute; 
 }
 
@@ -1040,12 +1038,10 @@ html {
 	height: 100%;
 	max-height: auto;
         width: 100%;
-	position: absoolute;
+	position: sticky;
 	background: rgb(150,0,0);
 	background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(213,90,2,1) 100%);
-	mix-blend-mode: normal;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: absolute; 
 }
 
 /*Body Attributes*/
