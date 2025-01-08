@@ -343,6 +343,8 @@ a {
 	text-decoration: none;
 	box-shadow: 0 7px 17px azure;
 	overflow: visible;
+	border: 2px solid #960000;
+	border-radius: 8px;
 }
 	
 .hamburger {
@@ -1222,14 +1224,14 @@ a {
 	overflow: visible;
 	z-index: 999;
 	font-color: #ffffff;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	animation: choiceAnim 3s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
@@ -1258,14 +1260,14 @@ a {
 	overflow: inherit;
 	text-align: center;
 	align-all: center;
-    	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	cursor: pointer;
 	white-space: pre;
 	line-height: 0.7;
@@ -1279,14 +1281,14 @@ a {
 	font-size: 13px;
     	font-weight: 100;
 	transition: .5s;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	cursor: pointer;
 	white-space: pre;
 	line-height: 0.7;
@@ -1295,14 +1297,14 @@ a {
 .nav-item :active,	
 .nav-item .hover {
 	color: azure;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	text-decoration: none;
 	box-shadow: 0 0px 0px azure;
 	overflow: visible;
@@ -1320,14 +1322,14 @@ a {
 	display: flex;
 	align-items: center;
 	float: center;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	width: 100%;
 	max-width: auto;
 	max-height: auto;
@@ -1345,14 +1347,14 @@ a {
 .navBar a {
 /* 	background: #d55a02; */
 	background: transparent;
-    	margin-left: 0px;
+	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	font-size: 11px;
 	width: 100%;
 	max-width: auto;
@@ -1380,17 +1382,19 @@ a {
 
 .navBar a:hover {
 	color: azure;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	background: transparent;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
+	border: 2px solid #960000;
+	border-radius: 8px;
 	overflow: visible;
 	transition: .3s;
 	cursor: pointer;
