@@ -43,8 +43,8 @@ html {
 	scroll-behavior: smooth;
 	height: 100%;
 	max-height: auto;
+	max-width: auto;
         width: 100%;
-	position: sticky;
 	background: rgb(150,0,0);
 	background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(213,90,2,1) 100%);
         background-attachment: absolute; 
@@ -65,6 +65,7 @@ body {
 	padding-bottom: 0px;
     	height: 100%;
 	max-height: auto;
+	max-width: auto;
     	width: 100%;
 	z-index: 0;
     	object-fit: cover;
@@ -1047,8 +1048,8 @@ html {
 	scroll-behavior: smooth;
 	height: 100%;
 	max-height: auto;
+	max-width: auto;
         width: 100%;
-	position: sticky;
 	background: rgb(150,0,0);
 	background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(213,90,2,1) 100%);
         background-attachment: absolute; 
@@ -1069,6 +1070,7 @@ body {
 	padding-bottom: 0px;
     	height: 100%;
 	max-height: auto;
+	max-width: auto;
     	width: 100%;
 	z-index: 0;
     	object-fit: cover;
@@ -1135,8 +1137,8 @@ a {
 	object-position: center;
 	background: transparent;
 	position: inherit;
-	width: 140px;
-	height: 140px;
+	width: 70px;
+	height: 70px;
 	max-width: 100%;
 	max-height: 100%; 
 	display: flex;
