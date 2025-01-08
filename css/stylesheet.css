@@ -55,6 +55,7 @@ html {
 /*Body Attributes*/
 body {
 	z-index: 0;
+	display: flex;
 	position: relative;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -70,6 +71,11 @@ body {
     	width: 100%;
 	z-index: 0;
     	object-fit: cover;
+	float: center;
+	justify-content: center;
+	text-align: center;
+	align-all: center;
+	text-decorations: none;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 
@@ -1051,6 +1057,7 @@ html {
 /*Body Attributes*/
 body {
 	z-index: 0;
+	display: flex;
 	position: relative;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -1066,8 +1073,12 @@ body {
     	width: 100%;
 	z-index: 0;
     	object-fit: cover;
+	float: center;
+	justify-content: center;
+	text-align: center;
+	align-all: center;
+	text-decorations: none;
 	background-attachment: fixed;
-	position: relative;
 	background-repeat: no-repeat;
 
 }
