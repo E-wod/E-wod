@@ -203,10 +203,10 @@ a {
 
 .nav-item {
 	justify-content: space-around;
-	max-width: 250px;
+	max-width: auto;
 	width: auto;
 	height: auto;
-	max-height: 90px;
+	max-height: auto;
 	overflow: inherit;
 	text-align: center;
 	align-all: center;
@@ -239,8 +239,8 @@ a {
  	background: #d55a02;
  	justify-content: center; 
 	text-decoration: none;
-	font-size: 14px;
-	font-color: #960000;
+	font-size: 17px;
+	font-color: #ffffff;
 	display: flex;
 	align-items: center;
 	float: center;
@@ -256,9 +256,7 @@ a {
 	max-width: 100%;
 	height: auto;
 	max-height: auto;
-/* 	border-radius: 8px; */
-	border: 2px solid #960000;
-	border-radius: 8px;
+ 	border-radius: 8px;
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
@@ -275,7 +273,7 @@ a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	font-size: 14px;
+	font-size: 17px;
 	width: auto;
 	height: auto;
 	font-family:"Open Sans", "sans-serif";
@@ -284,11 +282,11 @@ a {
 	float: center;
 	justify-content: space-around;
 	letter-spacing: 1.5px;
-/* 	border: 2px solid #960000;
-	border-radius: 8px; */
+	border: 2px solid #960000;
+	border-radius: 8px;
 	position: relative;
 	color: #960000;
-	font-color: #960000;
+	font-color: #ffffff;
 	overflow: hidden;
 	opacity: 0;
 	animation: choiceAnim 1.5s ease forwards;
@@ -1195,7 +1193,7 @@ a {
     	border-radius: 10px;
 	overflow: visible;
 	z-index: 999;
-	font-color: #960000;
+	font-color: #ffffff;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -1221,9 +1219,15 @@ a {
 }
 
 .nav-item {
-	align-items: center; 
-	transition: .5s;
-	margin-left: 1px;
+	justify-content: space-around;
+	max-width: auto;
+	width: auto;
+	height: auto;
+	max-height: auto;
+	overflow: inherit;
+	text-align: center;
+	align-all: center;
+    	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
 	margin-bottom: 1px;
@@ -1231,8 +1235,6 @@ a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	width: auto;
-	height: auto;
 }
 
 .nav-link{
@@ -1272,7 +1274,7 @@ a {
  	justify-content: center; 
 	text-decoration: none;
 	font-size: 11px;
-	font-color: #960000;
+	font-color: #ffffff;
 	display: flex;
 	align-items: center;
 	float: center;
@@ -1287,9 +1289,7 @@ a {
 	width: auto;
 	max-width: 100%;
 	height: auto;
-	max-height: auto;
-/* 	border-radius: 8px; */
-	border: 2px solid #960000;
+	max-height: auto; 
 	border-radius: 8px;
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
@@ -1316,11 +1316,11 @@ a {
 	float: center;
 	justify-content: space-around;
 	letter-spacing: 1.5px;
-/* 	border: 2px solid #960000;
-	border-radius: 8px; */
+ 	border: 2px solid #960000;
+	border-radius: 8px;
 	position: relative;
 	color: #960000;
-	font-color: #960000;
+	font-color: #ffffff;
 	overflow: hidden;
 	opacity: 0;
 	animation: choiceAnim 1.5s ease forwards;
