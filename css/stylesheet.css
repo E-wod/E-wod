@@ -201,7 +201,7 @@ a {
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
 	white-space: pre;
-	line-height: 0.7;
+	line-height: 0.9;
 }
 
 .nav-item {
@@ -222,7 +222,7 @@ a {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	white-space: pre;
-	line-height: 0.7;
+	line-height: 0.9;
 }
 
 .nav-link{
@@ -238,7 +238,7 @@ a {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	white-space: pre;
-	line-height: 0.7;
+	line-height: 0.9;
 }
 
 /*Nav Bar Attributes*/
@@ -263,17 +263,18 @@ a {
 	max-width: 100%;
 	height: auto;
 	max-height: auto;
- 	border-radius: 8px;
+/*  	border-radius: 8px; */
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
 	white-space: pre;
-	line-height: 0.7;
+	line-height: 0.9;
 }
 
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
-	background: #d55a02;
+/* 	background: #d55a02; */
+	background: transparent;
     	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -290,8 +291,8 @@ a {
 	display: flex;
 	float: center;
 	justify-content: space-around;
-	border: 2px solid #960000;
-	border-radius: 8px;
+/* 	border: 2px solid #960000;
+	border-radius: 8px; */
 	position: relative;
 	color: #960000;
 	font-color: #ffffff;
@@ -301,7 +302,7 @@ a {
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
 	white-space: pre;
-	line-height: 0.7;
+	line-height: 0.9;
 }
 /*Setting the attributes for button*/
 .navBar a:nth-child(1 2 3) {
@@ -1322,7 +1323,8 @@ a {
 
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
-	background: #d55a02;
+/* 	background: #d55a02; */
+	background: transparent;
     	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1339,8 +1341,8 @@ a {
 	display: flex;
 	float: center;
 	justify-content: space-around;
- 	border: 2px solid #960000;
-	border-radius: 8px;
+/*  	border: 2px solid #960000;
+	border-radius: 8px; */
 	position: relative;
 	color: #960000;
 	font-color: #ffffff;
