@@ -375,9 +375,9 @@ li a {
 /*Setting the content format for landing page */
 .landingContent{
 	background-color: transparent;
-	position: absolute;
+	position: inherit;
     	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	width: 100%;
 	max-width: auto;
 	height: 100%;
@@ -1434,9 +1434,9 @@ li a {
 /*Setting the content format for landing page */
 .landingContent{
 	background-color: transparent;
-	position: absolute;
+	position: inherit;
     	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	width: 100%;
 	max-width: auto;
 	height: 100%;
