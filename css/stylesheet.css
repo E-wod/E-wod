@@ -234,7 +234,7 @@ a {
 
 /*Nav Bar Attributes*/
 .navBar {
- 	background: #d55a02;
+ 	background: transparent;
  	justify-content: center; 
 	text-decoration: none;
 	font-size: 17px;
@@ -262,7 +262,7 @@ a {
 
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
-	background: transparent;
+	background: #d55a02;
     	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1201,6 +1201,7 @@ a {
 	animation: choiceAnim 3s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
+	cursor: pointer;
 }
 	
 .nav-menu:hover,	
@@ -1231,6 +1232,7 @@ a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
+	cursor: pointer;
 }
 
 .nav-link{
@@ -1245,6 +1247,7 @@ a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
+	cursor: pointer;
 }
 	
 .nav-item :active,	
@@ -1262,11 +1265,12 @@ a {
 	box-shadow: 0 0px 0px azure;
 	overflow: visible;
 	animation-timing-function: ease-in-out;
+	cursor: pointer;
 }
 	
 /*Nav Bar Attributes*/
 .navBar {
- 	background: #d55a02;
+ 	background: transparent;
  	justify-content: center; 
 	text-decoration: none;
 	font-size: 11px;
@@ -1290,11 +1294,12 @@ a {
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
+	cursor: pointer;
 }
 
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
-	background: transparent;
+	background: #d55a02;
     	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1322,6 +1327,7 @@ a {
 	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
+	cursor: pointer;
 }
 
 .navBar a:hover {
@@ -1339,6 +1345,7 @@ a {
 	box-shadow: 0 2px 7px azure;
 	overflow: visible;
 	transition: .3s;
+	cursor: pointer;
 }
 	
 .hamburger {
