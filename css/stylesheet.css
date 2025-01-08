@@ -183,11 +183,17 @@ a {
 }
 
 .nav-menu {
-    	width: auto;
-	height: 100%;
-	display: flex;
-    	justify-content: center;
-    	align-items: center;
+	position: fixed;
+	left: -100%;
+	top: 5rem;
+	flex-direction: column;
+	background-color: transparent;
+	width: 100%;
+	border-radius: 10px;
+	text-align: center;
+	transition: 0.3s;
+	box-shadow:
+	0 10px 27px rgba(0, 0, 0, 0.05);
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -1178,16 +1184,17 @@ a {
 }
 
 .nav-menu {
-	position: inherit;
-	display: flex;
-    	flex-direction: column-reverse;
-    	background-color: transparent;
-	width: auto;
-	height: auto; 
-    	border-radius: 10px;
-	overflow: visible;
-	z-index: 999;
-	font-color: #ffffff;
+	position: fixed;
+	left: -100%;
+	top: 5rem;
+	flex-direction: column;
+	background-color: transparent;
+	width: 100%;
+	border-radius: 10px;
+	text-align: center;
+	transition: 0.3s;
+	box-shadow:
+	0 10px 27px rgba(0, 0, 0, 0.05);
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -1196,12 +1203,11 @@ a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	animation: choiceAnim 3s ease forwards;
+	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
-	cursor: pointer;
 	white-space: pre;
-	line-height: 0.7;
+	line-height: 0.9;
 }
 	
 .nav-menu:hover,	
