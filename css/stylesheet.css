@@ -105,7 +105,7 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	position: sticky;
+	position: fixed;
         z-index: 30;
 	float: top;
 	top: 0;
@@ -118,7 +118,7 @@ a {
 	background-attachment: fixed;
 	display: flex;
 	justify-content: center;
-	align-content: space-between;
+	align-content: center;
 	text-decoration: none;
 	overflow: inherit;
 	object-position: center;
@@ -128,7 +128,7 @@ a {
 .logSz {
 	justify-content: center;
 	float: center;
-	align-all: space-between;
+	align-all: center;
 	object-position: center;
 	background: transparent;
 	position: inherit;
@@ -157,7 +157,7 @@ a {
 	display: flex;
 	float: center;
 	justify-content: center;
-	align-content: space-between;
+	align-content: center;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -191,7 +191,7 @@ a {
 	max-width: auto;
 	max-height: auto;
 	display: flex;
-    	justify-content: space-between;
+    	justify-content: center;
     	align-items: center;
     	margin-left: 0px;
 	margin-right: 0px;
@@ -1131,7 +1131,7 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	position: sticky;
+	position: fixed;
         z-index: 30;
 	float: top;
 	top: 0;
@@ -1144,7 +1144,7 @@ a {
 	background-attachment: fixed;
 	display: flex;
 	justify-content: center;
-	align-content: space-between;
+	align-content: center;
 	text-decoration: none;
 	overflow: inherit;
 	object-position: center;
@@ -1154,7 +1154,7 @@ a {
 .logSz {
 	justify-content: center;
 	float: center;
-	align-all: space-between;
+	align-all: center;
 	object-position: center;
 	background: transparent;
 	position: inherit;
@@ -1183,7 +1183,7 @@ a {
 	display: flex;
 	float: center;
 	justify-content: center;
-	align-content: space-between;
+	align-content: center;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -1252,7 +1252,7 @@ a {
 }
 
 .nav-item {
-	justify-content: space-around;
+	justify-content: center;
 	width: 100%;
 	max-width: auto;
 	max-height: auto;
