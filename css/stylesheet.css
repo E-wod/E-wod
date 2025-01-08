@@ -119,7 +119,7 @@ a {
 	left: 0;
  	background: transparent;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-content: center;
 	text-decoration: none;
@@ -390,7 +390,7 @@ li a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	display: flex;
+	display: flex-start;
 	gap: 0px;
 }
 
