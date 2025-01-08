@@ -119,6 +119,7 @@ a {
 	left: 0;
  	background: transparent;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
 	align-content: center;
