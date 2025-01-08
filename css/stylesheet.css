@@ -198,6 +198,8 @@ a {
 	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
+	white-space: pre;
+	line-height: 0.7;
 }
 
 .nav-item {
@@ -217,6 +219,8 @@ a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
+	white-space: pre;
+	line-height: 0.7;
 }
 
 .nav-link{
@@ -231,6 +235,8 @@ a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
+	white-space: pre;
+	line-height: 0.7;
 }
 
 /*Nav Bar Attributes*/
@@ -259,6 +265,8 @@ a {
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
+	white-space: pre;
+	line-height: 0.7;
 }
 
 /*navBar Anchor Tag Button layout and function*/
@@ -280,7 +288,6 @@ a {
 	display: flex;
 	float: center;
 	justify-content: space-around;
-	letter-spacing: 1.5px;
 	border: 2px solid #960000;
 	border-radius: 8px;
 	position: relative;
@@ -291,6 +298,8 @@ a {
 	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
+	white-space: pre;
+	line-height: 0.7;
 }
 /*Setting the attributes for button*/
 .navBar a:nth-child(1 2 3) {
@@ -1204,6 +1213,8 @@ a {
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
 	cursor: pointer;
+	white-space: pre;
+	line-height: 0.7;
 }
 	
 .nav-menu:hover,	
@@ -1235,6 +1246,8 @@ a {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	cursor: pointer;
+	white-space: pre;
+	line-height: 0.7;
 }
 
 .nav-link{
@@ -1250,6 +1263,8 @@ a {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	cursor: pointer;
+	white-space: pre;
+	line-height: 0.7;
 }
 	
 .nav-item :active,	
@@ -1297,6 +1312,8 @@ a {
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
 	cursor: pointer;
+	white-space: pre;
+	line-height: 0.7;
 }
 
 /*navBar Anchor Tag Button layout and function*/
@@ -1318,7 +1335,6 @@ a {
 	display: flex;
 	float: center;
 	justify-content: space-around;
-	letter-spacing: 1.5px;
  	border: 2px solid #960000;
 	border-radius: 8px;
 	position: relative;
@@ -1330,6 +1346,8 @@ a {
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
 	cursor: pointer;
+	white-space: pre;
+	line-height: 0.7;
 }
 
 .navBar a:hover {
@@ -1353,8 +1371,8 @@ a {
 .hamburger {
 	margin-left: 2px;
 	margin-right: 2px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 	padding-left: 1px;
 	padding-right: 1px;
 	padding-top: 1px;
