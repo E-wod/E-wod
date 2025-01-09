@@ -87,7 +87,7 @@ a {
 .header {
 	align-self: center;
 	width: 100%;
-	max-width: 100%;
+	max-width: auto;
 	height: auto;
 	max-height: 15%;
 	margin-left: 1px;
@@ -100,12 +100,10 @@ a {
 	padding-bottom: 1px;
 	position: fixed;
         z-index: 30;
-	float: top;
 	top: 0;
 	left: 0;
  	background: transparent;
 	justify-content: space-evenly;
- 	display: flex;
 	text-decoration: none;
 	overflow: inherit;
 }
