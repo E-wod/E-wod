@@ -61,7 +61,7 @@ body {
 	max-height: auto;
 	max-width: auto;
     	width: 100%;
-	z-index: 0;
+	top: 0;
 }
 a {
 	margin-left: 0px;
