@@ -111,6 +111,10 @@ a {
 }
 .flex-container {
   	background-color: transparent;
+	align-self: center;
+	width: 100%;
+	max-width: auto;
+	max-height: 15%;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -120,6 +124,7 @@ a {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	display: flex;
+	position: inherit;
 	justify-content: space-evenly;
 	text-decoration: none;
 	overflow: hidden;
@@ -129,9 +134,10 @@ a {
 
 .flex-container > div {
   	background-color: transparent;
+	width: auto;
+	height: auto;
   	margin: 10px;
 	align-content: center;
-  	position: center;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
