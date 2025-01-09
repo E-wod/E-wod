@@ -146,18 +146,21 @@ a {
 	width: 45%;
 	height: auto;
 	background: transparent;
- 	justify-content: space-evenly;
+ 	position: inherit;
+    	align-items: center;
+	justify-content: space-evenly;
+	display: flex;
 	text-decoration: none;
 	font-size: 17px;
 	font-color: #ffffff;
-	margin-left: 1px;
+/* 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
 	margin-bottom: 1px;
 	padding-left: 1px;
 	padding-right: 1px;
 	padding-top: 1px;
-	padding-bottom: 1px;
+	padding-bottom: 1px; */
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
