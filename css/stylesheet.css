@@ -149,7 +149,7 @@ a {
  	position: inherit;
     	align-items: center;
 	justify-content: space-evenly;
-	display: flex;
+/* 	display: flex; */
 	text-decoration: none;
 	font-size: 17px;
 	font-color: #ffffff;
