@@ -147,7 +147,7 @@ a {
 	width: 45%;
 	height: auto;
 	background: transparent;
-	position: fixed;
+	position: relative;
     	align-items: center;
 	justify-content: space-evenly;
 /* 	display: flex; */
@@ -228,7 +228,7 @@ a {
 .nav-menu {
 	background-color: transparent;
 	width: 100%;
-	position: fixed;
+	position: inherit;
 /* 	border-radius: 10px; */
 	text-align: center;
 	transition: 0.3s;
@@ -256,6 +256,7 @@ a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
+	position: inherit;
 	white-space: pre;
 	line-height: 0.9;
 }
@@ -274,6 +275,7 @@ a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
+	position: relative;
 	white-space: pre;
 	line-height: 0.9;
 }
