@@ -284,6 +284,22 @@ a {
     	display: none;
     	text-decoration: none;
 }
+ul {
+	width: auto;
+	height: auto;
+	justify-content: space-evenly;
+	text-align: center;
+	align-all: center;
+	list-style: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
 li {
 	width: auto;
 	height: auto;
