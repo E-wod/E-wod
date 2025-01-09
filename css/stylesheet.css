@@ -103,10 +103,9 @@ a {
 	float: top;
 	top: 0;
 	left: 0;
-	align-content: center;
  	background: transparent;
 	justify-content: space-evenly;
- 	display: flex;  
+ 	display: flex;
 	text-decoration: none;
 	overflow: inherit;
 }
