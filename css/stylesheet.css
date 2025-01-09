@@ -103,7 +103,7 @@ a {
 .header {
 	align-self: center;
 	width: 100%;
-	height: auto;
+	max-height: 100%;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -119,12 +119,10 @@ a {
 	left: 0;
  	background: transparent;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-content: center;
 	text-decoration: none;
 	overflow: inherit;
-	object-position: center;
 }
 
 /*Logo*/
@@ -154,7 +152,7 @@ a {
 	height: 100%;
 	opacity: .8;
 	float: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-content: center;
 	margin-left: 1px;
 	margin-right: 1px;
@@ -250,7 +248,7 @@ a {
 /*Nav Bar Attributes*/
 .navBar {
  	background: transparent;
- 	justify-content: center; 
+ 	justify-content: space-evenly;
 	text-decoration: none;
 	font-size: 17px;
 	font-color: #ffffff;
@@ -294,7 +292,7 @@ a {
 	text-decoration: none;
 	display: flex;
 	float: center;
-	justify-content: center;
+	justify-content: space-evenly;
 /* 	border: 2px solid #960000;
 	border-radius: 8px; */
 	position: relative;
@@ -1153,7 +1151,7 @@ a {
 	height: 100%;
 	opacity: .8;
 	float: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-content: center;
 	margin-left: 1px;
 	margin-right: 1px;
@@ -1357,14 +1355,14 @@ a {
 }
 	
 .hamburger {
-	margin-left: 1px;
+/* 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
 	margin-bottom: 1px;
 	padding-left: 1px;
 	padding-right: 1px;
 	padding-top: 1px;
-	padding-bottom: 1px;
+	padding-bottom: 1px; */
 	border: 2px solid #960000;
 	border-radius: 8px;
 	position: relative;
