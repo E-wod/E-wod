@@ -192,7 +192,10 @@ a {
 }
 /*Nav Bar Attributes*/
 .navBar {
-  	background: transparent;
+  	max-width: auto;
+	width: 45%;
+	height: auto;
+	background: transparent;
  	justify-content: space-evenly;
 	text-decoration: none;
 	font-size: 17px;
