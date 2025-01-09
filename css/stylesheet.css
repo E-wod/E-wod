@@ -168,8 +168,8 @@ a {
 /* 	display: block; */
 	float: center;
 	text-decoration: none;
-	font-size: 17px;
-	font-color: #ffffff;
+/* 	font-size: 17px; */
+/* 	font-color: #ffffff; */
  	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -198,7 +198,7 @@ a {
 	font-size: 17px;
 	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
- 	color: #960000; 
+/*  	color: #960000;  */
 	font-color: #ffffff;
 	overflow: hidden;
 	opacity: 0;
@@ -247,7 +247,7 @@ a {
 	border-radius: 10px; 
 	text-align: center;
 	transition: 0.3s;
-	box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); 
+/* 	box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);  */
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
