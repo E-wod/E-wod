@@ -183,8 +183,8 @@ a {
 	font-size: 17px;
 	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
- 	color: #960000; 
-	font-color: #ffffff;
+/*  	color: #960000; 
+	font-color: #ffffff; */
 	overflow: hidden;
 	opacity: 0;
 	animation: choiceAnim 1.5s ease forwards;
