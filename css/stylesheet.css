@@ -125,7 +125,7 @@ a {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	display: flex;
-	position: inherit;
+/* 	position: inherit; */ 
 	justify-content: space-evenly;
 	text-decoration: none;
 	align-content: center;
@@ -135,9 +135,9 @@ a {
 .flex-container > div {
   	background-color: transparent;
 	width: auto;
-	height: 100%;
-	overflow: hidden;
+	height: auto;
   	margin: 10px;
+	display: flex;
 	align-content: center;
 	margin-left: 1px;
 	margin-right: 1px;
