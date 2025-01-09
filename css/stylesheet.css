@@ -75,10 +75,6 @@ a {
 	max-width: auto;
 	max-height: auto;
 	height: 100%; 
-	float: center;
-	justify-content: center;
-	text-align: center;
-	align-all: center;
 	text-decorations: none;
 }
 /*Header Attributes*/
@@ -246,8 +242,7 @@ a {
 }
 /*Animation Element*/
 .navBar a:hover::before {
-	height: 100%;
-  	background: linear-gradient(0deg,transparent 15%,#960000 240%);  
+	height: 100%;  
 }
 /*Hover Function*/
 .navBar a:hover{
@@ -258,6 +253,7 @@ a {
 	text-decoration: none;
  	box-shadow: 0 7px 17px azure; 
 	overflow: visible;
+	background: linear-gradient(0deg,transparent 15%,#960000 240%);
 	border: 2px solid #960000;
 	border-radius: 8px;
 }
@@ -267,7 +263,7 @@ a {
 	border-radius: 10px; 
 	text-align: center;
 	transition: 0.3s;
-/*  	box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);    */
+  	box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);    
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -321,8 +317,6 @@ ul {
 	width: auto;
 	height: auto;
 	justify-content: space-evenly;
-	text-align: center;
-	align-all: center;
 	list-style: none;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -332,6 +326,7 @@ ul {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
+	display: flex;
 }
 li {
 	width: auto;
