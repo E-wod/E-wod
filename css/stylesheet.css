@@ -109,7 +109,7 @@ a {
 	align-content: center;
 	object-position: center;
 }
-.flex-container {
+/* .flex-container {
   	background-color: transparent;
 	align-self: center;
 	width: 100%;
@@ -125,7 +125,7 @@ a {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	display: flex;
-/* 	position: inherit; */ 
+	position: inherit; 
 	justify-content: space-evenly;
 	text-decoration: none;
 	align-content: center;
@@ -147,7 +147,7 @@ a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-}
+} */
 /*Logo*/
 .nav-logo {
 	width: 140px;
@@ -188,7 +188,7 @@ a {
 	width: auto;
 	height: auto;
 	background: transparent;
-	position: inherit;
+/* 	position: inherit; */
     	align-items: center;
 	justify-content: space-evenly;
 /* 	display: block; */
@@ -226,7 +226,6 @@ a {
 	text-decoration: none;
 /*  	color: #960000;  */
 	font-color: #ffffff;
-	overflow: hidden;
 	opacity: 0;
 	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
@@ -252,7 +251,7 @@ a {
 /*Animation Element*/
 .navBar a:hover::before {
 	height: 100%;
-/*  	background: linear-gradient(0deg,transparent 15%,#960000 240%);  */
+  	background: linear-gradient(0deg,transparent 15%,#960000 240%);  
 }
 /*Hover Function*/
 .navBar a:hover{
@@ -269,11 +268,10 @@ a {
 .nav-menu {
 	background-color: transparent;
 	width: 100%;
-	position: inherit;
 	border-radius: 10px; 
 	text-align: center;
 	transition: 0.3s;
-/* 	box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);  */
+/*  	box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);    */
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -316,7 +314,6 @@ a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	position: relative;
 	white-space: pre;
 	line-height: 0.9;
 }
