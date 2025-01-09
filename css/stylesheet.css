@@ -144,14 +144,14 @@ a {
 /*Nav Bar Attributes*/
 .navBar {
   	max-width: auto;
-	width: 45%;
+	width: auto;
 	height: auto;
 	background: transparent;
-	position: relative;
+	position: inherit;
     	align-items: center;
 	justify-content: space-evenly;
-	display: table;
-	float: right;
+/* 	display: block; */
+	float: center;
 	text-decoration: none;
 	font-size: 17px;
 	font-color: #ffffff;
