@@ -147,10 +147,11 @@ a {
 	width: 45%;
 	height: auto;
 	background: transparent;
-	position: absolute;
+	position: fixed;
     	align-items: center;
 	justify-content: space-evenly;
 /* 	display: flex; */
+	float: right;
 	text-decoration: none;
 	font-size: 17px;
 	font-color: #ffffff;
@@ -227,7 +228,7 @@ a {
 .nav-menu {
 	background-color: transparent;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 /* 	border-radius: 10px; */
 	text-align: center;
 	transition: 0.3s;
