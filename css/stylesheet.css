@@ -1,7 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
-
-/*Overall Attributes*/
 * {
 	margin: 0;
 	padding: 0;
@@ -14,7 +11,6 @@ img {
     	height: 100%;
     	width: 100%;
 }
-
 video {
     	height: 100%;
     	width: 100%;
@@ -28,7 +24,6 @@ video {
 	padding-bottom: 1px;
 	background: transparent;
 }
-
 /*HTML Attributes*/
 html {
 	scroll-behavior: smooth;
@@ -51,7 +46,6 @@ html {
 	object-fit: fill;
 	background-repeat: no-repeat;
 }
-
 /*Body Attributes*/
 body {
 	z-index: 0;
@@ -69,16 +63,7 @@ body {
 	max-width: auto;
     	width: 100%;
 	z-index: 0;
-/*     	object-fit: contain;
-	float: center;
-	justify-content: center;
-	text-align: center;
-	align-all: center;
-	text-decorations: none;
-	background-attachment: fixed;
-	background-repeat: no-repeat; */
 }
-
 a {
 	margin-left: 0px;
 	margin-right: 0px;
@@ -98,13 +83,13 @@ a {
 	align-all: center;
 	text-decorations: none;
 }
-
 /*Header Attributes*/
 .header {
 	align-self: center;
-	width: 100%;
+	width: auto;
 	max-width: 100%;
 	height: auto;
+	max-height: 15%;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -124,7 +109,6 @@ a {
 	text-decoration: none;
 	overflow: inherit;
 }
-
 /*Logo*/
 .logSz {
 	justify-content: center;
@@ -146,7 +130,6 @@ a {
 	padding-bottom: 1px;
 	overflow: visible;
 }
-
 .nav-logo {
 	width: 100%;
 	height: 100%;
@@ -167,7 +150,6 @@ a {
 	animation: logoAnim 1.5s ease forwards; 
 	animation-timing-function: ease-in-out;
 }
-
 .nav-logo :hover,
 .nav-logo .active {
 	color: azure;
@@ -178,7 +160,6 @@ a {
 	overflow: visible;
 	opacity: 1;
 }
-
 .nav-menu {
 	position: fixed;
 	background-color: transparent;
@@ -201,7 +182,6 @@ a {
 	white-space: pre;
 	line-height: 0.9;
 }
-
 .nav-item {
 	justify-content: center;
  	width: auto;
@@ -220,7 +200,6 @@ a {
 	white-space: pre;
 	line-height: 0.9;
 }
-
 .nav-link{
     	width: auto;
 	height: auto;
@@ -238,7 +217,6 @@ a {
 	white-space: pre;
 	line-height: 0.9;
 }
-
 /*Nav Bar Attributes*/
 .navBar {
  	background: transparent;
@@ -259,17 +237,14 @@ a {
 	padding-bottom: 1px;
  	width: auto;
 	height: auto;
-/*  	border-radius: 8px; */
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
 	white-space: pre;
 	line-height: 0.9;
 }
-
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
-/* 	background: #d55a02; */
 	background: transparent;
 	margin-left: 1px;
 	margin-right: 1px;
@@ -287,8 +262,6 @@ a {
 	display: flex;
 	float: center;
 	justify-content: space-evenly;
-/* 	border: 2px solid #960000;
-	border-radius: 8px; */
 	position: relative;
 	color: #960000;
 	font-color: #ffffff;
@@ -332,12 +305,10 @@ a {
 	border: 2px solid #960000;
 	border-radius: 8px;
 }
-	
 .hamburger {
     	display: none;
     	text-decoration: none;
 }
-
 li {
 	width: auto;
 	height: auto;
@@ -351,7 +322,6 @@ li {
 	padding-top: 1px;
 	padding-bottom: 1px;
 }
-
 li a {
     	text-decoration: none;
 	justify-content: center;
@@ -368,7 +338,6 @@ li a {
 	padding-top: 1px;
 	padding-bottom: 1px;
 }
-
 /*Setting the content format for landing page */
 .landingContent{
 	background-color: transparent;
@@ -390,7 +359,6 @@ li a {
 	display: flex-start;
 	gap: 0px;
 }
-
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
 	font-size: 60px;
@@ -419,7 +387,6 @@ li a {
 	animation: h1Anim 2.5s ease forwards;
 	transition-timing-function: 2.5s ease ease-in-out; 
 }
-
 .landingContent h3{
 	font-size: 43px;
 	color: #960000;
@@ -446,7 +413,6 @@ li a {
 	animation-delay: .7s;
 	transition-timing-function: ease ease-in-out; 
 }
-
 /*Setting the landing page template for paragraph*/
 .landingContent p{
 	z-index: 1;
@@ -474,12 +440,9 @@ li a {
 	position: relative;
 	overflow: visible;
 	opacity: 0;
-/* 	animation: pAnim 1s ease forwards;
-	transition-timing-function: ease ease-in-out;  */
 	animation: choiceAnim 1.5s ease forwards;
 	animation-timing-function: ease-in-out;
 }
-
 /*Setting the landing page template for Question buttons*/
 .cntr {
 	background: transparent;
@@ -498,7 +461,6 @@ li a {
 	padding-right: 0%;
 	padding-left: 0%;
 }
-
 .btnBox {
 	width: auto;
 	height: auto;
@@ -521,7 +483,6 @@ li a {
 	animation-timing-function: ease-in-out;
 	transition: 1s;
 }
-
 /*Question Box Anchor Tag Button layout and function*/
 .btnBox a {
 	background: #d55a02;
@@ -551,7 +512,6 @@ li a {
 	transition-timing-function: ease;
 	transition: 1s;
 }
-
 /*Setting pre-animation attributes*/
 .btnBox a::before {
 	content: '';
@@ -565,13 +525,11 @@ li a {
 	transition: .9s;
 	transition-timing-function: ease; 
 }
-
 /*Question box Animation Element*/
 .btnBox a:hover::before {
 	height: 100%;
 	background: linear-gradient(0deg,transparent 15%,#960000 240%);
 }
-
 /*Question Box Hover Function*/
 .btnBox a:hover,
 .btnBox .active{
@@ -581,7 +539,6 @@ li a {
 	overflow: hidden;
 	transition-timing-function: ease-out;
 }
-
 /*Setting the alignment and template for Social links*/
 .socLnk {
 	z-index: 15;
@@ -606,7 +563,6 @@ li a {
 	transition-timing-function: ease-in-out;
 	opacity: 0;
 }
-
 /*Social Links Anchor Tag Button layout and function*/
 .socLnk a {
 	align-items: center;
@@ -638,13 +594,11 @@ li a {
 	animation-delay: calc(.3s * var(--i));
 	opacity: 0;
 }
-
 /*Setting the attributes for each button*/
 .socLnk a:nth-child(1 2 3) {
 	background: transparent;
 	color: #960000;
 }
-
 /*Setting pre-animation attributes*/
 .socLnk a::before {
 	content: '';
@@ -657,14 +611,12 @@ li a {
 	transition: .9s;
 	transition-timing-function: ease; 
 }
-
 /*Animation element*/
 .socLnk a:hover::before {    
 	height: 100%;
 	background: linear-gradient(0deg,transparent 35%,#960000 240%);
 	z-index: 3;
 }
-
 /*Hover Function for Social Links*/
 .socLnk a:hover,
 .socLnk .active{
@@ -674,7 +626,6 @@ li a {
 	overflow: hidden;
 	transition-timing-function: ease-out;
 }
-
 .beePic {
 	background: transparent;
 	opacity: 100%;
@@ -694,9 +645,7 @@ li a {
 	scale: 1;
 	overflow: hidden;
 	object-fit: contain;
-
 }
-
 /*background layout template*/
 .beGod {
 	background-color: transparent;
@@ -785,7 +734,6 @@ li a {
 	display: flex;
 	z-index: 999;
 }
-
 .picFrame {
     	display: block;
 	object-fit: contain;
@@ -816,7 +764,6 @@ li a {
 	z-index: 999999;
 	transition-timing-function: ease ease-in-out; 
 }
-
 .picFrame h1{
 	display: flex;
 	font-size: 16px;
@@ -842,7 +789,6 @@ li a {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-	
 .picFrame h3{
 	z-index: 1;
 	display: flex;
@@ -868,10 +814,7 @@ li a {
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 }
-
 /*--------------------------------------------------------------JUMP TO TOP BUTTON------------------------------------------------------*/
-
-
 #scrollToTopBtn {
 	background-color: transparent;
 	justify-contents: center;
@@ -893,8 +836,7 @@ li a {
 	padding-bottom: 20px;
 	transition: 1s ease-in-out;
 }
-
- .button {
+.button {
  	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
@@ -912,15 +854,11 @@ li a {
 	position: sticky;
 	float: right; 
 }
-
-
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes bkGnd {
       	0%, 50%, 90% { scale: .6; opacity: .5 }
       	25%, 75%, 100% { scale: .1; opacity: .1 }
 }
-
-
 @keyframes logoAnim {
 	0% {
 		opacity: 0;
@@ -936,7 +874,6 @@ li a {
 		transform: rotate(1440deg);
 	}
 }
-
 @keyframes menuAnim {
 	0% {
 		transform: translateY(200px);
@@ -947,7 +884,6 @@ li a {
 		opacity: 1;
 	}
 }
-
 @keyframes h1Anim {
 	0% {
 		transform: translateY(-200px);
@@ -958,7 +894,6 @@ li a {
 		opacity: 1;
 	}
 }
-
 @keyframes h3Anim {
 	0% {
 		transform: translateX(-200px);
@@ -969,8 +904,6 @@ li a {
 		opacity: 1;
 	}		
 }
-
-
 @keyframes pAnim {
 	0% {
 		transform: scale(.01);
@@ -981,23 +914,18 @@ li a {
 		opacity: 1;
 	}
 }
-
 @keyframes choiceAnim {
 	0% {
 		transform: translateY(80px);
 		opacity: 0;
     }
-
 	100% {
 		transform: translateY(0px);;
 		opacity: 1;
 	}
 }
-
 /*-----------------------------------------------------------------------SMALL WINDOW------------------------------------------------------*/
 @media only screen and (max-width : 768px ){
-
-
 * {
 	margin: 0;
 	padding: 0;
@@ -1010,7 +938,6 @@ img {
     	height: 100%;
     	width: 100%;
 }
-
 video {
     	height: 100%;
     	width: 100%;
@@ -1024,7 +951,6 @@ video {
 	padding-bottom: 1px;
 	background: transparent;
 }
-
 /*HTML Attributes*/
 html {
 	scroll-behavior: smooth;
@@ -1045,7 +971,6 @@ html {
 	object-fit: cover;
 	background-repeat: no-repeat;
 }
-
 /*Body Attributes*/
 body {
 	z-index: 0;
@@ -1063,16 +988,7 @@ body {
 	max-width: auto;
     	width: 100%;
 	z-index: 0;
-/*     	object-fit: contain;
-	float: center;
-	justify-content: center;
-	text-align: center;
-	align-all: center;
-	text-decorations: none;
-	background-attachment: fixed;
-	background-repeat: no-repeat; */
 }
-
 a {
 	margin-left: 0px;
 	margin-right: 0px;
@@ -1090,12 +1006,13 @@ a {
 	align-all: center;
 	text-decorations: none;
 }
-
 /*Header Attributes*/
 .header {
 	align-self: center;
-	width: 100%;
+	width: auto;
+	max-width: 100%;
 	height: auto;
+	max-height: 15%;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -1110,15 +1027,11 @@ a {
 	top: 0;
 	left: 0;
  	background: transparent;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-content: center;
 	text-decoration: none;
 	overflow: inherit;
-	object-position: center;
 }
-
 /*Logo*/
 .logSz {
 	justify-content: center;
@@ -1162,7 +1075,6 @@ a {
 	animation: logoAnim 1.5s ease forwards; 
 	animation-timing-function: ease-in-out;
 }
-
 .nav-logo :hover,
 .nav-logo .active {
 	color: azure;
@@ -1173,7 +1085,6 @@ a {
 	overflow: visible;
 	opacity: 1;
 }
-
 .nav-menu {
 	position: fixed;
 	left: -100%;
@@ -1200,7 +1111,6 @@ a {
 	white-space: pre;
 	line-height: 0.9;
 }
-	
 .nav-menu:hover,	
 .nav-menu.active {
 	left: 0;
@@ -1211,7 +1121,6 @@ a {
         animation-timing-function: ease-in-out; 
 	transition: .3s;
 }
-
 .nav-item {
 	justify-content: center;
 	float: center;
@@ -1232,7 +1141,6 @@ a {
 	white-space: pre;
 	line-height: 0.7;
 }
-
 .nav-link{
 	font-size: 13px;
     	font-weight: 100;
@@ -1248,8 +1156,7 @@ a {
 	cursor: pointer;
 	white-space: pre;
 	line-height: 0.7;
-}
-	
+}	
 .nav-item :active,	
 .nav-item .hover {
 	color: azure;
@@ -1267,7 +1174,6 @@ a {
 	animation-timing-function: ease-in-out;
 	cursor: pointer;
 }
-	
 /*Nav Bar Attributes*/
 .navBar {
  	background: transparent;
@@ -1294,10 +1200,8 @@ a {
 	white-space: pre;
 	line-height: 0.7;
 }
-
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
-/* 	background: #d55a02; */
 	background: transparent;
 	margin-left: 1px;
 	margin-right: 1px;
@@ -1313,8 +1217,6 @@ a {
 	display: flex;
 	float: center;
 	justify-content: space-around;
-/*  	border: 2px solid #960000;
-	border-radius: 8px; */
 	position: relative;
 	color: #960000;
 	font-color: #ffffff;
@@ -1327,7 +1229,6 @@ a {
 	white-space: pre;
 	line-height: 0.7;
 }
-
 .navBar a:hover {
 	color: azure;
 	margin-left: 1px;
@@ -1347,16 +1248,7 @@ a {
 	transition: .3s;
 	cursor: pointer;
 }
-	
 .hamburger {
-/* 	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px; */
 	border: 2px solid #960000;
 	border-radius: 8px;
 	position: relative;
@@ -1367,27 +1259,22 @@ a {
 	height: 45px;
         transition: .3s;
 	background: transparent;
-}
-	
+}	
 .hamburger.active .bar:nth-child(2) {
     opacity: 0;
 }
-
 .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
-
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-}
-	
+}	
 .hamburger:hover {
 	color: azure;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	overflow: visible;
 }	
-
 .bar {
     display: block;
     width: 25px;
@@ -1397,7 +1284,6 @@ a {
     transition: all 0.3s ease-in-out;
     background-color: #101010;
 }
-
 li {
     	width: 100%;
 	height: 100%;
@@ -1413,7 +1299,6 @@ li {
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
-
 li a {
     	text-decoration: none;
 	margin-left: 0px;
@@ -1425,7 +1310,6 @@ li a {
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
-
 /*Setting the content format for landing page */
 .landingContent{
 	background-color: transparent;
@@ -1447,7 +1331,6 @@ li a {
 	display: flex;
 	gap: 0px;
 }
-
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
 	font-size: 30px;
@@ -1476,7 +1359,6 @@ li a {
 	animation: h1Anim 2.5s ease forwards;
 	transition-timing-function: 2.5s ease ease-in-out; 
 }
-
 .landingContent h3{
 	font-size: 21px;
 	color: #960000;
@@ -1503,7 +1385,6 @@ li a {
 	animation-delay: .7s;
 	transition-timing-function: ease ease-in-out; 
 }
-
 /*Setting the landing page template for paragraph*/
 .landingContent p{
 	z-index: 1;
@@ -1534,7 +1415,6 @@ li a {
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 }
-
 /*Setting the landing page template for Question buttons*/
 .cntr {
 	background: transparent;
@@ -1553,7 +1433,6 @@ li a {
 	padding-right: 0%;
 	padding-left: 0%;
 }
-
 .btnBox {
 	width: auto;
 	height: auto;
@@ -1576,7 +1455,6 @@ li a {
 	animation-timing-function: ease-in-out;
 	transition: 1s;
 }
-
 /*Question Box Anchor Tag Button layout and function*/
 .btnBox a {
 	background: #d55a02;
@@ -1606,7 +1484,6 @@ li a {
 	transition-timing-function: ease;
 	transition: 1s;
 }
-
 /*Setting pre-animation attributes*/
 .btnBox a::before {
 	content: '';
@@ -1620,13 +1497,11 @@ li a {
 	transition: .9s;
 	transition-timing-function: ease; 
 }
-
 /*Question box Animation Element*/
 .btnBox a:hover::before {
 	height: 100%;
 	background: linear-gradient(0deg,transparent 15%,#960000 240%);
 }
-
 /*Question Box Hover Function*/
 .btnBox a:hover,
 .btnBox .active{
@@ -1636,7 +1511,6 @@ li a {
 	overflow: hidden;
 	transition-timing-function: ease-out;
 }
-
 /*Setting the alignment and template for Social links*/
 .socLnk {
 	z-index: 15;
@@ -1661,7 +1535,6 @@ li a {
 	transition-timing-function: ease-in-out;
 	opacity: 0;
 }
-
 /*Social Links Anchor Tag Button layout and function*/
 .socLnk a {
 	align-items: center;
@@ -1693,13 +1566,11 @@ li a {
 	animation-delay: calc(.3s * var(--i));
 	opacity: 0;
 }
-
 /*Setting the attributes for each button*/
 .socLnk a:nth-child(1 2 3) {
 	background: transparent;
 	color: #960000;
 }
-
 /*Setting pre-animation attributes*/
 .socLnk a::before {
 	content: '';
@@ -1712,14 +1583,12 @@ li a {
 	transition: .9s;
 	transition-timing-function: ease; 
 }
-
 /*Animation element*/
 .socLnk a:hover::before {    
 	height: 100%;
 	background: linear-gradient(0deg,transparent 35%,#960000 240%);
 	z-index: 3;
 }
-
 /*Hover Function for Social Links*/
 .socLnk a:hover,
 .socLnk .active{
@@ -1729,7 +1598,6 @@ li a {
 	overflow: hidden;
 	transition-timing-function: ease-out;
 }
-
 .beePic {
 	background: transparent;
 	opacity: 100%;
@@ -1750,7 +1618,6 @@ li a {
 	overflow: hidden;
 	object-fit: contain;
 }
-
 /*background layout template*/
 .beGod {
 	background-color: transparent;
@@ -1839,7 +1706,6 @@ li a {
 	display: flex;
 	z-index: 999;
 }
-
 .picFrame {
     	display: block;
 	object-fit: contain;
@@ -1870,7 +1736,6 @@ li a {
 	z-index: 999999;
 	transition-timing-function: ease ease-in-out; 
 }
-
 .picFrame h1{
 	display: flex;
 	font-size: 16px;
@@ -1896,7 +1761,6 @@ li a {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-	
 .picFrame h3{
 	z-index: 1;
 	display: flex;
@@ -1922,10 +1786,7 @@ li a {
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: ease ease-in-out; 
 }
-
 /*--------------------------------------------------------------JUMP TO TOP BUTTON------------------------------------------------------*/
-
-
 #scrollToTopBtn {
 	background-color: transparent;
 	justify-contents: center;
@@ -1947,7 +1808,6 @@ li a {
 	padding-bottom: 20px;
 	transition: 1s ease-in-out;
 }
-
  .button {
  	margin-top: 0px;
 	margin-bottom: 0px;
