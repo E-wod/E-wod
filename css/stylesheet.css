@@ -156,7 +156,7 @@ a {
 	justify-content: space-evenly;
 	display: flex;
 	position: absolute;
-	float: center;
+	float: left;
 	opacity: 1;
 	margin-left: 1px;
 	margin-right: 1px;
@@ -191,7 +191,7 @@ a {
     	align-items: center;
 	justify-content: space-evenly;
 /* 	display: block; */
-	float: center;
+	float: right;
 	text-decoration: none;
 /* 	font-size: 17px; */
 /* 	font-color: #ffffff; */
