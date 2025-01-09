@@ -117,7 +117,7 @@ a {
 	align-all: center;
 	object-position: center; */
 	background: transparent;
-	position: inherit;
+/* 	position: inherit; */
 	max-width: 140px;
 	max-height: 140px;
 /* 	display: flex; */
@@ -132,8 +132,8 @@ a {
 	overflow: visible;
 }
 .nav-logo {
-	width: 100%;
-	height: 100%;
+	width: auto;
+	height: auto;
 	opacity: .8;
 /* 	align-content: center; */
 	margin-left: 1px;
