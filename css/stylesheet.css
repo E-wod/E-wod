@@ -106,8 +106,7 @@ a {
 	align-content: center;
  	background: transparent;
 	justify-content: space-evenly;
-/* 	align-content: center; */
-/*  	display: flex;  */
+ 	display: flex;  
 	text-decoration: none;
 	overflow: inherit;
 }
