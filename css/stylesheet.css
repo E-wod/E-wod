@@ -83,7 +83,6 @@ a {
 }
 /*Header Attributes*/
 .header {
-	align-self: center;
 	width: 100%;
 	max-width: auto;
 	max-height: 15%;
@@ -105,8 +104,6 @@ a {
 	justify-content: space-evenly;
 	text-decoration: none;
 	overflow: inherit;
-	align-content: center;
-	object-position: center;
 }
 /* .flex-container {
   	background-color: transparent;
