@@ -116,6 +116,10 @@ a {
 	height: 140px;
 	max-width: 140px;
 	max-height: 140px;
+	justify-content: space-evenly;
+	display: flex;
+	position: absolute;
+	float: center;
 	opacity: 1;
 	margin-left: 1px;
 	margin-right: 1px;
@@ -146,7 +150,7 @@ a {
 	width: 45%;
 	height: auto;
 	background: transparent;
- 	position: inherit;
+/*  	position: inherit; */
     	align-items: center;
 	justify-content: space-evenly;
 /* 	display: flex; */
