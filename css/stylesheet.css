@@ -211,7 +211,7 @@ a {
 /*Animation Element*/
 .navBar a:hover::before {
 	height: 100%;
-	background: linear-gradient(0deg,transparent 15%,#960000 240%);
+/* 	background: linear-gradient(0deg,transparent 15%,#960000 240%); */
 }
 /*Hover Function*/
 .navBar a:hover{
@@ -220,7 +220,7 @@ a {
 	transition-timing-function: ease-out;
 	background: transparent;
 	text-decoration: none;
-	box-shadow: 0 7px 17px azure;
+/* 	box-shadow: 0 7px 17px azure; */
 	overflow: visible;
 	border: 2px solid #960000;
 	border-radius: 8px;
