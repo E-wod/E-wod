@@ -106,7 +106,7 @@ a {
  	background: transparent;
 	justify-content: space-evenly;
 	align-content: center;
-	display: flex-start;
+/* 	display: flex; */
 	text-decoration: none;
 	overflow: inherit;
 }
@@ -114,8 +114,8 @@ a {
 .nav-logo {
 	width: 18%;
 	height: 18%;
-	max-width: auto;
-	max-height: auto;
+	max-width: 18%;
+	max-height: 18%;
 	opacity: 1;
 	margin-left: 1px;
 	margin-right: 1px;
@@ -141,7 +141,6 @@ a {
 	opacity: .3;
 }
 .nav-menu {
-/* 	position: fixed; */
 	background-color: transparent;
 	width: 100%;
 	border-radius: 10px;
@@ -163,12 +162,6 @@ a {
 	line-height: 0.9;
 }
 .nav-item {
-/* 	justify-content: center;
- 	width: auto;
-	height: auto;
-	overflow: inherit;
-	text-align: center;
-	align-all: center; */
     	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -181,10 +174,10 @@ a {
 	line-height: 0.9;
 }
 .nav-link{
-/*     	width: auto;
+     	width: auto;
 	height: auto;
 	font-size: auto;
-	text-align: center; */
+	text-align: center;
     	font-weight: 100;
 	margin-left: 1px;
 	margin-right: 1px;
@@ -199,14 +192,11 @@ a {
 }
 /*Nav Bar Attributes*/
 .navBar {
-/*  	background: transparent;
- 	justify-content: space-evenly; */
+  	background: transparent;
+ 	justify-content: space-evenly;
 	text-decoration: none;
 	font-size: 17px;
 	font-color: #ffffff;
-/* 	display: flex;
-	align-items: center;
-	float: center; */
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -215,8 +205,6 @@ a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-/*  	width: auto;
-	height: auto; */
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
@@ -235,14 +223,8 @@ a {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	font-size: 17px;
-/*  	width: auto;
-	height: auto; */
 	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
-/* 	display: flex;
-	float: center;
-	justify-content: space-evenly;
-	position: relative; */
 	color: #960000;
 	font-color: #ffffff;
 	overflow: hidden;
@@ -1016,8 +998,8 @@ a {
 .nav-logo {
 	width: 8%;
 	height: 8%;
-	max-width: auto;
-	max-height: auto;
+	max-width: 8%;
+	max-height: 8%;
 	opacity: 1;
 	margin-left: 1px;
 	margin-right: 1px;
@@ -1052,16 +1034,7 @@ a {
 	border-radius: 10px;
 	text-align: center;
 	transition: 0.3s;
-	box-shadow:
-	0 10px 27px rgba(0, 0, 0, 0.05);
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
