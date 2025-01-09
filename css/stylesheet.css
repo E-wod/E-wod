@@ -42,8 +42,7 @@ html {
         width: 100%;
 	background: rgb(150,0,0);
 	background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(213,90,2,1) 100%);
-        position: fixed; 
-	object-fit: fill;
+        position: relative; 
 	background-repeat: no-repeat;
 }
 /*Body Attributes*/
