@@ -102,7 +102,7 @@ a {
         z-index: 30;
 	top: 0;
 	left: 0;
-	display: flex;
+	display: block;
  	background: transparent;
 	justify-content: space-evenly;
 	text-decoration: none;
