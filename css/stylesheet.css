@@ -662,7 +662,7 @@ li a {
 }
 .beNook {
 	background-color: transparent;
-	position: inherit;
+	position: relative;
 	width: 30%;
 	height: 30%;
 	top: 50%;
@@ -678,7 +678,7 @@ li a {
 	z-index: 1;
 	align-all: center; 
 	float: center;
-	justify-content: center;
+	justify-content: space-evenly;
 	transition: 3s;
 	transition-timing-function: ease; 
 	animation: pAnim 3s ease forwards;
