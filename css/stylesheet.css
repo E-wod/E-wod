@@ -105,7 +105,7 @@ a {
 	left: 0;
  	background: transparent;
 	justify-content: space-evenly;
-	align-content: center;
+/* 	align-content: center; */
 /*  	display: flex;  */
 	text-decoration: none;
 	overflow: inherit;
