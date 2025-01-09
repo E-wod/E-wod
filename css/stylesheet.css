@@ -151,7 +151,7 @@ a {
 	width: 45%;
 	height: auto;
 	background: transparent;
-/*  	position: inherit; */
+	position: absolute;
     	align-items: center;
 	justify-content: space-evenly;
 /* 	display: flex; */
@@ -186,7 +186,7 @@ a {
 	font-size: 17px;
 	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
-/* 	color: #960000; */
+ 	color: #960000; 
 	font-color: #ffffff;
 	overflow: hidden;
 	opacity: 0;
@@ -199,7 +199,7 @@ a {
 /*Setting the attributes for button*/
 .navBar a:nth-child(1 2 3) {
 	background: transparent;
-/* 	color: #960000; */
+ 	color: #960000;
 }
 /*Setting pre-animation attributes*/
 .navBar a::before {
@@ -231,6 +231,7 @@ a {
 .nav-menu {
 	background-color: transparent;
 	width: 100%;
+	position: absolute;
 /* 	border-radius: 10px; */
 	text-align: center;
 	transition: 0.3s;
@@ -266,6 +267,7 @@ a {
 	height: auto;
 	font-size: auto;
 	text-align: center;
+	color: #960000;
     	font-weight: 100;
 	margin-left: 1px;
 	margin-right: 1px;
