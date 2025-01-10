@@ -725,16 +725,18 @@ li a {
 .beNook {
 	background-color: transparent;
 	position: absolute;
-	width: 30%;
-	height: 30%;
-   	margin-left: 2px;
-	margin-right: 2px;  
-	margin-top: 2px;
-  	margin-bottom: 2px; 
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	width: auto;
+	height: auto;
+	max-width: 30%;
+	max-height: 30%;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	z-index: 1;
 	align-all: center; 
 	display: flex;
