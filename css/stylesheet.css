@@ -403,6 +403,7 @@ li a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: flex;
+	flex-direction: column;
 	gap: 0px;
 }
 /*Setting the landing page template for H1 Heading*/
