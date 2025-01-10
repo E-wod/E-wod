@@ -72,6 +72,8 @@ a {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
+	font-size: auto; 
+	font-color: #960000;
 	justify-content: space-evenly;
 	display: flex;
 	position: absolute;
@@ -81,6 +83,8 @@ a {
 	max-width: auto;
 	max-height: auto;
 	text-decorations: none;
+	font-family:"Open Sans", "sans-serif";
+	
 }
 /*Header Attributes*/
 .header {
@@ -453,7 +457,7 @@ li a {
 	text-align: center;
 	align-all: center;
 	font-size: 20px;
-	color: azure;
+	color: #ffffff;
 	font-family: sans-serif;
 	font-weight: 100;
 	text-shadow: 2px 3px 6px #a6abca;
