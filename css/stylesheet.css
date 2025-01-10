@@ -192,14 +192,14 @@ a {
 	justify-content: space-evenly;
 	text-decoration: none;
 	font-size: 17px; 
- 	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+ 	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	text-align: center;
 	text-color: #960000;
 	border-radius: 8px;
@@ -212,14 +212,14 @@ a {
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
 	background: transparent;
- 	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px; 
+ 	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px; 
 	font-size: 17px;
 	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
@@ -254,14 +254,14 @@ a {
 }
 /*Hover Function*/
 .navBar a:hover{
-	margin-left: 4px;
-	margin-right: 4px;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	transition: .5s;
 	transition-timing-function: ease-out;
 	background: transparent;
@@ -285,14 +285,14 @@ a {
 	align-all: center;
 	text-color: #960000;
 	transition: 0.3s;
-	margin-left: 4px;
-	margin-right: 4px;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
@@ -301,14 +301,14 @@ a {
 }
 .nav-item {
 	background-color: transparent;
-    	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+    	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	position: inherit;
 	text-color: #ffffff;
 	border-radius: 8px;
@@ -323,14 +323,14 @@ a {
 	text-align: center;
 	text-color: #ffffff;
     	font-weight: 100;
-	margin-left: 4px;
-	margin-right: 4px;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	border-radius: 8px;
 	white-space: pre;
 	line-height: 0.9;
@@ -344,14 +344,14 @@ ul {
 	height: auto;
 	justify-content: space-evenly;
 	list-style: none;
-	margin-left: 4px;
-	margin-right: 4px;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	display: flex;
 	flex-direction: right;
 }
@@ -359,14 +359,14 @@ li {
 	width: auto;
 	height: auto;
 	list-style: none;
-	margin-left: 4px;
-	margin-right: 4px;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 li a {
     	text-decoration: none;
@@ -375,14 +375,14 @@ li a {
 	height: auto;
 	text-align: center;
 	align-all: center;
-	margin-left: 4px;
-	margin-right: 4px;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 /*Setting the content format for landing page */
 .landingContent{
@@ -394,14 +394,14 @@ li a {
 	max-width: auto;
 	height: 100%;
 	max-height: 100%;
-	margin-left: 4px;
-	margin-right: 4px;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	display: flex;
 	gap: 0px;
 }
@@ -415,14 +415,14 @@ li a {
 	font-style: bold;
 	text-shadow: 2px 2px 4px #a6abca;
 	line-height: .9;
-	margin-left: 4px;
-	margin-right: 4px;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	position: relative;
 	display: flex;
 	z-index: -3;
@@ -446,14 +446,14 @@ li a {
 	justify-content: space-around;
 	text-align: center;
 	align-all: center;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background: transparent;
 	opacity: 0;
 	animation: h3Anim 1s ease forwards;
@@ -475,14 +475,14 @@ li a {
 	text-decoration: none;
 	font-style: italic;
 	line-height: 1.1;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background: transparent;
 	position: relative;
 	overflow: visible;
@@ -515,8 +515,9 @@ li a {
 	text-decoration: none;
 	z-index: 15;
 	overflow: hidden;
-	justify-content: center;
+	justify-content: space-evenly;
 	position: relative;
+	align-all: center;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
@@ -548,6 +549,7 @@ li a {
 	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
 	display: flex;
+	align-all: center;
 	float: center;
 	justify-content: space-around;
 	letter-spacing: 1.5px;
@@ -590,7 +592,8 @@ li a {
 .socLnk {
 	z-index: 15;
 	overflow: hidden;
-	justify-content: center;
+	justify-content: space-evenly;
+	align-all: center;
 	position: relative;
 	margin-top: 2px;
 	margin-bottom: 2px;
@@ -612,7 +615,7 @@ li a {
 }
 /*Social Links Anchor Tag Button layout and function*/
 .socLnk a {
-	align-items: center;
+	align-all: center;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
@@ -624,7 +627,7 @@ li a {
 	font-size: 40px;
 	text-decoration: none;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	border: 2px solid #960000;
 	border-radius: 50%;
 	position: relative;
