@@ -183,13 +183,13 @@ a {
 	width: auto;
 	height: auto;
 	background: transparent;
-/* 	position: inherit; */
+	display: flex;
+	position: absolute;
     	align-items: center;
 	justify-content: space-evenly;
-/* 	display: block; */
 	text-decoration: none;
-/* 	font-size: 17px; */
-/* 	font-color: #ffffff; */
+	font-size: 17px; 
+ 	font-color: #ffffff;
  	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -199,7 +199,7 @@ a {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	text-align: center;
-	text-color: #960000;
+/* 	text-color: #960000; */
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
