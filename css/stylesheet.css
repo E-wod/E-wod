@@ -152,7 +152,6 @@ a {
 	justify-content: space-evenly;
 	display: flex;
 	position: absolute;
-	float: left;
 	opacity: 1;
 	margin-left: 1px;
 	margin-right: 1px;
@@ -169,7 +168,7 @@ a {
 }
 .nav-logo :hover,
 .nav-logo .active {
-	color: azure;
+	text-color: #960000;
 	transition: .3s;
 	transition-timing-function: ease;
 	background: transparent;
@@ -187,7 +186,6 @@ a {
     	align-items: center;
 	justify-content: space-evenly;
 /* 	display: block; */
-	float: right;
 	text-decoration: none;
 /* 	font-size: 17px; */
 /* 	font-color: #ffffff; */
@@ -255,7 +253,7 @@ a {
 	transition-timing-function: ease-out;
 	background: transparent;
 	text-decoration: none;
- 	box-shadow: 0 7px 17px azure; 
+ 	box-shadow: 0 7px 17px #ffffff; 
 	overflow: visible;
 	background: linear-gradient(0deg,transparent 15%,#960000 240%);
 	border: 2px solid #960000;
