@@ -198,6 +198,7 @@ a {
 	padding-bottom: 0px;
 	text-align: center;
 	text-color: #960000;
+	border-radius: 8px;
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
@@ -207,19 +208,20 @@ a {
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
 	background: transparent;
-/* 	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px; */
+ 	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px; 
 	font-size: 17px;
 	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
 	text-align: center;
 	font-color: #ffffff;
+	border-radius: 8px;
 	opacity: 1;
 	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
@@ -261,7 +263,7 @@ a {
 .nav-menu {
 	background-color: transparent;
 	width: 100%;
-	border-radius: 10px; 
+	border-radius: 8px;
 	display: flex;
 	position: relative;
 	z-index: -3;
@@ -270,7 +272,7 @@ a {
 	align-all: center;
 	text-color: #960000;
 	transition: 0.3s;
-/*   	box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);     */
+   	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);     
 	margin-left: 4px;
 	margin-right: 4px;
 	margin-top: 4px;
@@ -296,6 +298,7 @@ a {
 	padding-bottom: 0px;
 	position: inherit;
 	text-color: #ffffff;
+	border-radius: 8px;
 	white-space: pre;
 	line-height: 0.9;
 }
@@ -314,6 +317,7 @@ a {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
+	border-radius: 8px;
 	white-space: pre;
 	line-height: 0.9;
 }
