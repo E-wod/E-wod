@@ -99,7 +99,7 @@ a {
 	top: 0;
 	left: 0;
 	display: flex;
-	flex-direction: right;
+	flex-direction: row;
  	background: transparent;
 	text-decoration: none;
 	overflow: inherit;
