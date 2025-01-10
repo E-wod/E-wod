@@ -187,7 +187,7 @@ a {
 	height: auto;
 	background: transparent;
 	display: flex;
-	position: inherit;
+/* 	position: inherit; */
     	align-items: center;
 	justify-content: space-evenly;
 	text-decoration: none;
@@ -216,17 +216,17 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px; 
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px; 
 	font-size: 17px;
 	font-family:"Open Sans", "sans-serif";
 	text-decoration: none;
 	text-align: center;
 	font-color: #ffffff;
 	border-radius: 8px;
-	opacity: 1;
+	opacity: 0;
 	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
@@ -251,6 +251,7 @@ a {
 /*Animation Element*/
 .navBar a:hover::before {
 	height: 100%;  
+	background: linear-gradient(0deg,transparent 15%,#960000 240%);
 }
 /*Hover Function*/
 .navBar a:hover{
@@ -258,10 +259,10 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	transition: .5s;
 	transition-timing-function: ease-out;
 	background: transparent;
@@ -278,7 +279,7 @@ a {
 	height: 100%;
 	border-radius: 8px;
 	display: flex;
-	position: relative;
+/* 	position: relative; */
 	z-index: -3;
 	justify-content: space-evenly;
 	text-align: center;
@@ -289,10 +290,10 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
@@ -305,11 +306,11 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	position: inherit;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+/* 	position: inherit; */
 	text-color: #ffffff;
 	border-radius: 8px;
 	white-space: pre;
@@ -327,10 +328,10 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border-radius: 8px;
 	white-space: pre;
 	line-height: 0.9;
