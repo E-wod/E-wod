@@ -61,6 +61,8 @@ body {
 	max-height: auto;
 	max-width: auto;
     	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
 	top: 0;
 }
 a {
@@ -103,7 +105,7 @@ a {
 	position: sticky;
 	top: 0;
 	left: 0;
-	display: flex;
+	display: flex-block;
 	flex-direction: row;
  	background: transparent;
 	text-decoration: none;
@@ -370,10 +372,14 @@ li {
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	display: flex;
+	position: inherit; 
+	justify-content: space-evenly;
 }
 li a {
     	text-decoration: none;
 	justify-content: center;
+	display: flex;
 	width: auto;
 	height: auto;
 	text-align: center;
