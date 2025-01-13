@@ -158,7 +158,7 @@ a {
 	max-height: 140px;
 	justify-content: space-evenly;
 	display: flex;
-	position: absolute;
+	position: inherit;
 	opacity: 1;
 	margin-left: 1px;
 	margin-right: 1px;
@@ -188,8 +188,8 @@ a {
 	width: auto;
 	height: auto;
 	background: transparent;
-	display: flex;
-/* 	position: inherit; */
+ 	display: flex;
+ 	position: inherit; 
     	align-items: center;
 	justify-content: space-evenly;
 	text-decoration: none;
@@ -229,7 +229,7 @@ a {
 	font-color: #ffffff;
 	border-radius: 8px;
 	opacity: 0;
-	justify-content: space-evenly;
+/* 	justify-content: space-evenly; */
 	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
@@ -244,7 +244,7 @@ a {
 /*Setting pre-animation attributes*/
 .navBar a::before {
 	content: '';
-	position: absolute;
+/* 	position: absolute; */
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -372,7 +372,7 @@ li {
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	display: flex;
+/* 	display: flex; */
 /* 	position: inherit;  */
 	justify-content: space-evenly;
 }
