@@ -213,7 +213,7 @@ a {
 }
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
-     	width: 100%;
+     	width: auto;
 	height: auto;
 	background: transparent;
  	margin-left: 0px;
@@ -275,7 +275,7 @@ a {
  	box-shadow: 0 7px 17px #ffffff; 
 	overflow: visible;
 	background: linear-gradient(0deg,transparent 15%,#960000 240%);
-	justify-content: space-evenly;
+/* 	justify-content: space-evenly; */
 	border: 2px solid #960000;
 	border-radius: 8px;
 }
@@ -329,7 +329,7 @@ a {
 }
 .nav-link{
 	background-color: transparent;
-     	width: 100%;
+     	width: auto;
 	height: auto;
 	text-align: center;
 	align-all: center;
