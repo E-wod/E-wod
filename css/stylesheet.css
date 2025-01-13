@@ -448,13 +448,13 @@ li a {
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	position: relative;
+/* 	position: relative;
 	display: flex;
 	z-index: -3;
 	opacity: 0;
 	justify-content: space-evenly;
 	text-align: center;
-	align-all: center;
+	align-all: center; */
 	animation-delay: 2s;
 	animation: h1Anim 2.5s ease forwards;
 	transition-timing-function: 2.5s ease ease-in-out; 
