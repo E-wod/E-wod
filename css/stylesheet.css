@@ -413,7 +413,7 @@ li a {
 	background-color: transparent;
 	position: inherit;
     	align-items: center;
-	justify-content: space-around;
+/* 	justify-content: space-around; */
 	float: top;
 	width: 100%;
 	max-width: auto;
