@@ -190,8 +190,8 @@ a {
 	background: transparent;
  	display: flex;
  	position: inherit; 
-    	align-items: center;
-	justify-content: space-evenly;
+/*     	align-items: center;
+	justify-content: space-evenly; */
 	text-decoration: none;
 	font-size: 17px; 
  	margin-left: 0px;
