@@ -156,7 +156,7 @@ a {
 	height: 140px;
 	max-width: 140px;
 	max-height: 140px;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	display: flex;
 	position: inherit;
 	opacity: 1;
@@ -311,7 +311,9 @@ a {
 	background-color: transparent;
 	width: 100%;
 	height: auto;
-    	margin-left: 0px;
+    	text-align: center;
+	align-all: center;
+	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -329,6 +331,8 @@ a {
 	background-color: transparent;
      	width: 100%;
 	height: auto;
+	text-align: center;
+	align-all: center;
 	font-size: auto;
 	text-align: center;
 	text-color: #ffffff;
@@ -362,6 +366,7 @@ ul {
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	text-color: #ffffff;
 	display: flex;
 	flex-direction: right;
 }
@@ -377,6 +382,7 @@ li {
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	text-color: #ffffff;
 /* 	display: flex; */
 /* 	position: inherit;  */
 	justify-content: space-evenly;
@@ -389,6 +395,7 @@ li a {
 	height: auto;
 	text-align: center;
 	align-all: center;
+	text-color: #ffffff;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
