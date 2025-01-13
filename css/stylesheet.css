@@ -39,6 +39,8 @@ html {
 	max-height: auto;
 	max-width: auto;
         width: 100%;
+	display: flex;
+	justify-content: space-evenly;
 /* 	background: rgb(150,0,0); */
 	background: #c5410d;
 /* 	background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(213,90,2,1) 100%); */
@@ -61,8 +63,6 @@ body {
 	max-height: auto;
 	max-width: auto;
     	width: 100%;
-	display: flex;
-	justify-content: space-evenly;
 	top: 0;
 }
 a {
