@@ -185,7 +185,7 @@ a {
 /*Nav Bar Attributes*/
 .navBar {
   	max-width: 100%;
-     	width: auto;
+     	width: auto; 
 	height: auto;
 	background: transparent;
  	display: flex;
@@ -271,16 +271,15 @@ a {
 	padding-right: 2px;
 	padding-top: 2px;
 	padding-bottom: 2px;
-/* 	transition: .5s;
+	transition: .5s;
 	transition-timing-function: ease-out;
 	background: transparent;
 	text-decoration: none;
  	box-shadow: 0 7px 17px #ffffff; 
 	overflow: visible;
 	background: linear-gradient(0deg,transparent 15%,#960000 240%);
-	justify-content: space-evenly; 
 	border: 2px solid #960000;
-	border-radius: 8px; */
+	border-radius: 8px; 
 }
 .nav-menu {
 	background-color: transparent;
