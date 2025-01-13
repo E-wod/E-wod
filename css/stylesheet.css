@@ -413,7 +413,8 @@ li a {
 	background-color: transparent;
 	position: inherit;
     	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-around;
+	float: top;
 	width: 100%;
 	max-width: auto;
 	height: 100%;
@@ -427,7 +428,7 @@ li a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: flex;
-/* 	flex-direction: column; */
+	flex-direction: column; 
 	gap: 0px;
 }
 /*Setting the landing page template for H1 Heading*/
