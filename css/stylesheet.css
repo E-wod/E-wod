@@ -189,7 +189,7 @@ a {
 	height: auto;
 	background: transparent;
  	display: flex;
- 	position: absolute; 
+ 	position: inherit; 
      	align-items: center;
 	justify-content: space-between;
 	text-decoration: none;
