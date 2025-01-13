@@ -227,6 +227,7 @@ a {
 	font-color: #ffffff;
 	border-radius: 8px;
 	opacity: 0;
+	justify-content: space-evenly;
 	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
@@ -270,6 +271,7 @@ a {
  	box-shadow: 0 7px 17px #ffffff; 
 	overflow: visible;
 	background: linear-gradient(0deg,transparent 15%,#960000 240%);
+	justify-content: space-evenly;
 	border: 2px solid #960000;
 	border-radius: 8px;
 }
@@ -404,7 +406,7 @@ li a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: flex;
-	flex-direction: column;
+/* 	flex-direction: column; */
 	gap: 0px;
 }
 /*Setting the landing page template for H1 Heading*/
@@ -696,7 +698,6 @@ li a {
 	z-index: -19;
 	scale: 1;
 	overflow: hidden;
-	object-fit: contain;
 }
 /*background layout template*/
 .beGod {
@@ -724,7 +725,7 @@ li a {
 }
 .beNook {
 	background-color: transparent;
-	position: absolute;
+	position: relative;
 	width: auto;
 	height: auto;
 	max-width: 30%;
