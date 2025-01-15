@@ -110,6 +110,7 @@ a {
  	background: transparent;
 	text-decoration: none;
 	overflow: inherit;
+	justify-content: space-between;
 }
 /* .flex-container {
   	background-color: transparent;
