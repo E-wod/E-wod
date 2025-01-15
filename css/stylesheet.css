@@ -152,6 +152,8 @@ a {
 } */
 /*Logo*/
 .nav-logo {
+	top: 50%;
+	bottom: 50%;
 	width: 140px;
 	height: 140px;
 	max-width: 140px;
@@ -184,6 +186,8 @@ a {
 }
 /*Nav Bar Attributes*/
 .navBar {
+	top: 50%;
+	bottom: 50%;
   	max-width: 100%;
      	width: auto; 
 	height: auto;
