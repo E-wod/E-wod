@@ -163,6 +163,7 @@ a {
 	display: flex;
 	position: inherit;
 	opacity: 1;
+	scale: 1;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -757,6 +758,7 @@ li a {
 	height: auto;
 	top: 50%;
 	bottom: 50%;
+	scale: 1;
 	max-width: 50%;
 	max-height: 50%;
    	margin-left: 0px;
