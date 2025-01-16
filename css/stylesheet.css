@@ -40,10 +40,9 @@ html {
 	max-width: auto;
         width: 100%;
 	display: flex;
-/* 	justify-content: space-evenly; */
-/* 	background: rgb(150,0,0); */
-	background: #c5410d;
-/* 	background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(213,90,2,1) 100%); */
+ 	background: rgb(150,0,0); 
+/* 	background: #c5410d; */
+ 	background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(213,90,2,1) 100%); 
         position: sticky; 
 	background-repeat: repeat;
 }
@@ -295,7 +294,7 @@ a {
 	height: 100%;
 	border-radius: 8px;
 	display: flex;
-/* 	position: relative; */
+	float: center;
 	z-index: -3;
  	justify-content: space-around; 
 	text-align: center;
@@ -756,11 +755,12 @@ li a {
 	position: relative;
 	width: auto;
 	height: auto;
+	float: center;
 	top: 50%;
 	bottom: 50%;
 	scale: 1;
-	max-width: 50%;
-	max-height: 50%;
+	max-width: auto;
+	max-height: auto;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
