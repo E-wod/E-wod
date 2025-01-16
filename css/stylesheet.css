@@ -208,7 +208,6 @@ a {
 	padding-top: 2px;
 	padding-bottom: 2px;
 	text-align: center;
-	font-color: #960000;
 	border-radius: 8px;
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
@@ -220,6 +219,9 @@ a {
 .navBar a {
      	width: auto;
 	height: auto;
+	float: center;
+	top: 50%;
+	bottom: 50%;
 	background: transparent;
  	margin-left: 0px;
 	margin-right: 0px;
@@ -289,14 +291,10 @@ a {
 }
 .nav-menu {
 	background-color: transparent;
-	max-width: auto;
 	width: 100%;
 	height: 100%;
 	border-radius: 8px;
 	display: flex;
-	float: center;
-	top: 50%;
-	bottom: 50%;
 	z-index: -3;
  	justify-content: space-around; 
 	text-align: center;
@@ -319,10 +317,10 @@ a {
 }
 .nav-item {
 	background-color: transparent;
+	justify-content: center;
 	width: 100%;
 	height: auto;
     	text-align: center;
-	align-all: center;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -331,8 +329,6 @@ a {
 	padding-right: 2px;
 	padding-top: 2px;
 	padding-bottom: 2px;
-/* 	position: inherit; */
-	font-color: #960000;
 	border-radius: 8px;
 	white-space: pre;
 	line-height: 0.9;
@@ -755,11 +751,9 @@ li a {
 .beNook {
 	background-color: transparent;
 	position: relative;
-	width: auto;
-	height: auto;
-	float: center;
-	top: 50%;
-	bottom: 50%;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
 	scale: 1;
 	max-width: auto;
 	max-height: auto;
@@ -771,8 +765,7 @@ li a {
 	padding-right: 2px;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	z-index: 1;
-	align-all: center; 
+	z-index: 1; 
 	display: flex;
 	transition: 3s;
 	transition-timing-function: ease; 
