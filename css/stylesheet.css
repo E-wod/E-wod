@@ -295,6 +295,8 @@ a {
 	border-radius: 8px;
 	display: flex;
 	float: center;
+	top: 50%;
+	bottom: 50%;
 	z-index: -3;
  	justify-content: space-around; 
 	text-align: center;
