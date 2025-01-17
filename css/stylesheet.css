@@ -41,6 +41,10 @@ html {
 	max-width: 100%;
 	display: flex;
  	background: #243472;
+	font-color: #960000;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
         position: sticky; 
 	background-repeat: repeat;
 }
@@ -997,6 +1001,10 @@ html {
 	max-width: 100%;
 	display: flex;
  	background: #243472;
+	font-color: #960000;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
         position: sticky; 
 	background-repeat: repeat;
 }
