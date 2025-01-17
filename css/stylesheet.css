@@ -108,6 +108,8 @@ a {
 	text-decoration: none;
 	overflow: inherit;
 	justify-content: space-between;
+	font-family:"Open Sans", "sans-serif";
+	font-color: #ffffff;
 }
 /*Logo*/
 .nav-logo {
@@ -708,24 +710,26 @@ li a {
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	background-color: transparent;
-	position: relative;
-	width: 80%;
-	height: 80%;
+	top: 50%;
+	bottom: 50%;
+	width: auto;
+	height: auto;
+	max-width: 70%;
+	max-height: 70%;
 	justify-content: center;
-	scale: 1;
-	max-width: auto;
-	max-height: auto;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	z-index: 1; 
 	display: flex;
+	position: inherit;
+	opacity: 1;
+	scale: 1;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-decoration: none;
 	transition: 3s;
 	transition-timing-function: ease; 
 	animation: pAnim 3s ease forwards;
