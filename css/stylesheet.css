@@ -43,13 +43,13 @@ html {
  	background: rgb(150,0,0); 
 /* 	background: #c5410d; */
  	background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(213,90,2,1) 100%); 
-        position: absolute; 
-	background-repeat: repeat;
+        position: sticky; 
+	background-repeat: no-repeat;
 }
 /*Body Attributes*/
 body {
 	z-index: 0;
-	position: inherit;
+/* 	position: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -62,7 +62,7 @@ body {
 	max-height: 1000%;
 	max-width: auto;
     	width: 100%;
-	top: 0;
+	top: 0; */
 }
 a {
 	margin-left: 0px;
