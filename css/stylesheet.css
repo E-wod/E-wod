@@ -75,6 +75,7 @@ a {
 	padding-bottom: 0px;
 	font-size: auto; 
 	font-color: #ffffff;
+	text-decoration: none;
 	justify-content: space-around;
 	display: flex;
 	position: inherit;
@@ -117,6 +118,7 @@ a {
 	max-width: 140px;
 	max-height: 140px;
 	justify-content: center;
+	text-decoration: none;
 	display: flex;
 	position: inherit;
 	opacity: 1;
@@ -151,7 +153,10 @@ a {
  	display: flex;
  	position: inherit; 
 	justify-content: space-between;
-	font-size: 17px; 
+	font-color: #960000;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
  	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -181,8 +186,9 @@ a {
 	padding-top: 2px;
 	padding-bottom: 2px; 
 	font-size: 17px;
+	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
-	font-color: #ffffff;
+	font-color: #FFFFFF;
 	border-radius: 8px;
 	opacity: 0;
  	justify-content: center; 
@@ -195,7 +201,7 @@ a {
 /*Setting the attributes for button*/
 .navBar a:nth-child(1 2 3) {
 	background: transparent;
- 	font-color: #960000;
+ 	font-color: #FFFFFF;
 }
 /*Setting pre-animation attributes*/
 .navBar a::before {
@@ -229,6 +235,9 @@ a {
 	transition-timing-function: ease-out;
 	background: transparent;
 	font-color: #960000;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
  	box-shadow: 0 7px 17px #ffffff; 
 	overflow: visible;
 	background: linear-gradient(0deg,transparent 15%,#960000 240%);
@@ -245,6 +254,9 @@ a {
 	z-index: -3;
  	justify-content: space-around; 
 	font-color: #960000;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
 	transition: 0.3s;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -263,6 +275,10 @@ a {
 .nav-item {
 	background-color: transparent;
 	justify-content: center;
+	font-color: #960000;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
 	width: 100%;
 	height: 100%;
 	max-width: auto;
@@ -284,8 +300,10 @@ a {
 	float: center;
      	width: 100%;
 	height: 100%;
-	font-size: auto;
-	font-color: #ffffff;
+	font-color: #960000;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
     	font-weight: 100;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -319,6 +337,9 @@ ul {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-color: #960000;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
 	display: flex;
 	flex-direction: right;
 }
@@ -336,7 +357,10 @@ li {
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	font-color: #ffffff;
+	font-color: #960000;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
 	display: flex; 
 	justify-content: center; 
 }
@@ -347,7 +371,10 @@ li a {
 	height: 100%;
 	max-width: auto;
 	max-height: auto;
-	font-color: #ffffff;
+	font-color: #960000;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -363,6 +390,10 @@ li a {
 	position: inherit;
     	align-items: center;
 /* 	justify-content: space-around; */
+	font-color: #960000;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
 	float: top;
 	width: 100%;
 	max-width: auto;
