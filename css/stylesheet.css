@@ -665,11 +665,12 @@ li a {
 }
 .beePic {
 	background: transparent;
+	float: top;
 	opacity: 100%;
 	height: auto;
-	width: 100%;
+	max-width: 100%;
 	display: flex;
-	position: inherit;
+	position: absolute;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
