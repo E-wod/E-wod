@@ -153,41 +153,24 @@ a {
 	line-height: 0.9;
 }
 /*navBar Anchor Tag Button layout and function*/
-.navBar a {
+.nav-menu a {
 	background: transparent;
 }
 /*Setting the attributes for button*/
-.navBar a:nth-child(1 2 3) {
+.nav-menu a:nth-child(1 2 3) {
 	background: transparent;
  	font-color: #ffffff;
 }
 /*Setting pre-animation attributes*/
-.navBar a::before {
+.nav-menu a::before {
 	content: '';
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
 }
 /*Animation Element*/
-.navBar a:hover::before {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%; 
+.nav-menu a:hover::before {
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 }
 /*Hover Function*/
-.navBar a:hover{
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+.nav-menu a:hover{
 	transition: .5s;
 	transition-timing-function: ease-out;
 	background: transparent;
@@ -198,7 +181,7 @@ a {
 	border: 2px solid #ffffff;
 	border-radius: 8px; 
 }
-.nav-menu {
+.nav-menu a {
 	background-color: transparent;
 	float: center;
 	width: 100%;
@@ -225,6 +208,34 @@ a {
 	animation-timing-function: ease-in-out;
 	white-space: pre;
 	line-height: 0.9;
+}
+.nav-menu {
+	background-color: transparent;
+	float: center;
+	width: 100%;
+	height: 100%;
+/* 	border-radius: 8px; */
+	display: flex;
+	z-index: -3;
+ 	justify-content: space-around; 
+/* 	font-color: #ffffff;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
+	transition: 0.3s; */
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+/* 	animation: choiceAnim 1.5s ease forwards;
+	animation-delay: calc(.125s * var(--i)); 
+	animation-timing-function: ease-in-out;
+	white-space: pre;
+	line-height: 0.9; */
 }
 .nav-item {
 	background-color: transparent;
