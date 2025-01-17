@@ -40,8 +40,8 @@ html {
 	max-height: 100%;
 	max-width: 100%;
 	display: flex;
- 	background: #243472;
-	font-color: #960000;
+ 	background: #9e1a00;
+	font-color: #ffffff;
 	font-size: 17px;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
@@ -143,7 +143,7 @@ a {
  	display: flex;
  	position: inherit; 
 	justify-content: space-between;
-	font-color: #960000;
+	font-color: #ffffff;
 	font-size: 17px;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
@@ -223,14 +223,14 @@ a {
 	transition: .5s;
 	transition-timing-function: ease-out;
 	background: transparent;
-	font-color: #960000;
+	font-color: #ffffff;
 	font-size: 17px;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
  	box-shadow: 0 7px 17px #ffffff; 
 	overflow: visible;
-	background: linear-gradient(0deg,transparent 15%,#960000 240%);
-	border: 2px solid #960000;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	border: 2px solid #ffffff;
 	border-radius: 8px; 
 }
 .nav-menu {
@@ -242,7 +242,7 @@ a {
 	display: flex;
 	z-index: -3;
  	justify-content: space-around; 
-	font-color: #960000;
+	font-color: #ffffff;
 	font-size: 17px;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
@@ -264,7 +264,7 @@ a {
 .nav-item {
 	background-color: transparent;
 	justify-content: center;
-	font-color: #960000;
+	font-color: #ffffff;
 	font-size: 17px;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
@@ -289,7 +289,7 @@ a {
 	float: center;
      	width: 100%;
 	height: 100%;
-	font-color: #960000;
+	font-color: #ffffff;
 	font-size: 17px;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
@@ -342,7 +342,7 @@ ul {
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	font-color: #960000;
+	font-color: #ffffff;
 	font-size: 17px;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
@@ -363,7 +363,7 @@ li {
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	font-color: #960000;
+	font-color: #ffffff;
 	font-size: 17px;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
@@ -377,7 +377,7 @@ li a {
 	height: 100%;
 	max-width: auto;
 	max-height: auto;
-	font-color: #960000;
+	font-color: #ffffff;
 	font-size: 17px;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
@@ -395,8 +395,7 @@ li a {
 	background-color: transparent;
 	position: inherit;
     	align-items: center;
-/* 	justify-content: space-around; */
-	font-color: #960000;
+	font-color: #ffffff;
 	font-size: 17px;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
@@ -414,14 +413,13 @@ li a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: flex;
-/* 	flex-direction: column;  */
 	gap: 0px;
 }
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
 	font-size: 60px;
 	stagger: 3;
-	font-color: #960000;
+	font-color: #ffffff;
 	font-family: "sofachrome", sans-serif;
 	justify-content: space-around;
 	font-weight: 100;
@@ -442,7 +440,7 @@ li a {
 }
 .landingContent h3{
 	font-size: 43px;
-	font-color: #960000;
+	font-color: #ffffff;
 	font-family: Lobster, 'Kristen ITC', Script;
 	font-weight: 100;
 	line-height: 1.1;
@@ -538,7 +536,7 @@ li a {
 }
 /*Question Box Anchor Tag Button layout and function*/
 .btnBox a {
-	background: #d55a02;
+	background: #9e1a00;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -557,10 +555,10 @@ li a {
 	float: center;
 	justify-content: space-around;
 	letter-spacing: 1.5px;
-	border: 2px solid #960000;
+	border: 2px solid #ffffff;
 	border-radius: 8px;
 	position: relative;
-	color: #960000;
+	color: #ffffff;
 	overflow: hidden;
 	transition-timing-function: ease;
 	transition: 1s;
@@ -569,7 +567,7 @@ li a {
 .btnBox a::before {
 	content: '';
 	position: absolute;
-	background: #d55a02;
+	background: #9e1a00;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -581,7 +579,7 @@ li a {
 /*Question box Animation Element*/
 .btnBox a:hover::before {
 	height: 100%;
-	background: linear-gradient(0deg,transparent 15%,#960000 240%);
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 }
 /*Question Box Hover Function*/
 .btnBox a:hover,
@@ -631,14 +629,14 @@ li a {
 	font-size: 40px;
 	display: flex;
 	justify-content: space-evenly;
-	border: 2px solid #960000;
+	border: 2px solid #ffffff;
 	border-radius: 50%;
 	position: relative;
-	color: #960000;
+	color: #ffffff;
 	overflow: hidden;
 	width: 60px;
 	height: 60px;
-	background: #d55a02;
+	background: #9e1a00;
 	z-index: 15;
 	font-family:"Open Sans", "sans-serif";
 	transition: 1s;
@@ -650,7 +648,7 @@ li a {
 /*Setting the attributes for each button*/
 .socLnk a:nth-child(1 2 3) {
 	background: transparent;
-	color: #960000;
+	color: #ffffff;
 }
 /*Setting pre-animation attributes*/
 .socLnk a::before {
@@ -667,7 +665,7 @@ li a {
 /*Animation element*/
 .socLnk a:hover::before {    
 	height: 100%;
-	background: linear-gradient(0deg,transparent 35%,#960000 240%);
+	background: linear-gradient(0deg,transparent 35%,#ffffff 240%);
 	z-index: 3;
 }
 /*Hover Function for Social Links*/
@@ -978,343 +976,5 @@ li a {
 }
 /*-----------------------------------------------------------------------SMALL WINDOW------------------------------------------------------*/
 @media only screen and (max-width : 768px ){
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	height: 100%;
-	width: 100%;
-	scale: 1;
-}
-img {
-    	height: 100%;
-    	width: 100%;
-}
-video {
-    	height: 100%;
-    	width: 100%;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	background: transparent;
-}
-/*HTML Attributes*/
-html {
-	scroll-behavior: smooth;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	height: 100%;
-        width: 100%;
-	max-height: 100%;
-	max-width: 100%;
-	display: flex;
- 	background: #243472;
-	font-color: #960000;
-	font-size: 17px;
-	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif;
-        position: sticky; 
-	background-repeat: repeat;
-}
-/*Body Attributes*/
-body {
-	z-index: 0;
-}
-a {
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	font-size: auto; 
-	font-color: #ffffff;
-	text-decoration: none;
-	justify-content: space-around;
-	display: flex;
-	position: inherit;
-	width: 100%;
-	height: 100%;
-	scale: 1;
-	font-family: Helvetica, Arial, sans-serif;
-}
-/*Header Attributes*/
-.header {
-	width: 100%;
-	max-width: auto;
-	max-height: 15%;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-        z-index: 30;
-	position: sticky;
-	top: 0;
-	left: 0;
-	display: flex;
-	flex-direction: row;
- 	background: transparent;
-	text-decoration: none;
-	overflow: inherit;
-	justify-content: space-between;
-	font-family: Helvetica, Arial, sans-serif;
-	font-color: #ffffff;
-}
-/*Logo*/
-.nav-logo {
-	width: 100%;
-	height: 100%;
-	max-width: 140px;
-	max-height: 140px;
-	justify-content: center;
-	text-decoration: none;
-	display: flex;
-	position: inherit;
-	opacity: 1;
-	scale: 1;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	background-color: transparent; 
-	animation: logoAnim 1.5s ease forwards; 
-	animation-timing-function: ease-in-out;
-}
-.nav-logo :hover,
-.nav-logo .active {
-	transition: .3s;
-	transition-timing-function: ease;
-	background: transparent;
-	overflow: visible;
-	opacity: .3;
-}
-/*Nav Bar Attributes*/
-.navBar {
-	float: center;
-  	max-width: 100%;
-     	width: auto; 
-	height: auto;
-	background: transparent;
- 	display: flex;
- 	position: inherit; 
-	justify-content: space-between;
-	font-color: #960000;
-	font-size: 17px;
-	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif;
- 	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	border-radius: 8px;
-	animation: choiceAnim 2s ease forwards;
-	animation-delay: calc(.125s * var(--i)); 
-	animation-timing-function: ease-in-out;
-	white-space: pre;
-	line-height: 0.9;
-}
-/*navBar Anchor Tag Button layout and function*/
-.navBar a {
-     	width: auto;
-	height: auto;
-	background: transparent;
- 	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px; 
-	font-size: 17px;
-	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif;
-	font-color: #FFFFFF;
-	border-radius: 8px;
-	opacity: 0;
- 	justify-content: center; 
-	animation: choiceAnim 1.5s ease forwards;
-	animation-delay: calc(.125s * var(--i)); 
-	animation-timing-function: ease-in-out;
-	white-space: pre;
-	line-height: 0.9;
-}
-/*Setting the attributes for button*/
-.navBar a:nth-child(1 2 3) {
-	background: transparent;
- 	font-color: #FFFFFF;
-}
-/*Setting pre-animation attributes*/
-.navBar a::before {
-	content: '';
-/* 	position: absolute; */
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-}
-/*Animation Element*/
-.navBar a:hover::before {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%; 
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-}
-/*Hover Function*/
-.navBar a:hover{
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	transition: .5s;
-	transition-timing-function: ease-out;
-	background: transparent;
-	font-color: #960000;
-	font-size: 17px;
-	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif;
- 	box-shadow: 0 7px 17px #ffffff; 
-	overflow: visible;
-	background: linear-gradient(0deg,transparent 15%,#960000 240%);
-	border: 2px solid #960000;
-	border-radius: 8px; 
-}
-.nav-menu {
-	background-color: transparent;
-	float: center;
-	width: 100%;
-	height: 100%;
-	border-radius: 8px;
-	display: flex;
-	z-index: -3;
- 	justify-content: space-around; 
-	font-color: #960000;
-	font-size: 17px;
-	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif;
-	transition: 0.3s;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	animation: choiceAnim 1.5s ease forwards;
-	animation-delay: calc(.125s * var(--i)); 
-	animation-timing-function: ease-in-out;
-	white-space: pre;
-	line-height: 0.9;
-}
-.nav-item {
-	background-color: transparent;
-	justify-content: center;
-	font-color: #960000;
-	font-size: 17px;
-	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif;
-	width: 100%;
-	height: 100%;
-	max-width: auto;
-	max-height: auto;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	border-radius: 8px;
-	white-space: pre;
-	line-height: 0.9;
-}
-.nav-link{
-	background-color: transparent;
-	float: center;
-     	width: 100%;
-	height: 100%;
-	font-color: #960000;
-	font-size: 17px;
-	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif;
-    	font-weight: 100;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	border-radius: 8px;
-	white-space: pre;
-	line-height: 0.9;
-}
-.hamburger {
-	border: 2px solid #960000;
-	border-radius: 8px;
-	position: relative;
-	color: #960000;
-	cursor: pointer;
-        display: block;
-	width: 45px;
-	height: 45px;
-        transition: .3s;
-	background: transparent;
-}	
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-}
-.hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-.hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}	
-.hamburger:hover {
-	color: azure;
-	text-decoration: none;
-	box-shadow: 0 2px 7px azure;
-	overflow: visible;
-}	
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
+
+
