@@ -132,6 +132,9 @@ a {
 }
 /*Nav Bar Attributes*/
 .navBar {
+    	align-items: center;
+
+	
 	float: center;
   	max-width: 100%;
      	width: auto; 
@@ -161,23 +164,22 @@ a {
 }
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
-     	width: auto;
-	height: auto;
+/*      	width: auto;
+	height: auto; */
 	background: transparent;
- 	margin-left: 0px;
+/*  	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-left: 2px;
 	padding-right: 2px;
 	padding-top: 2px;
-	padding-bottom: 2px; 
+	padding-bottom: 2px;  */
 	font-size: 17px;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
-	font-color: #FFFFFF;
+	font-color: #ffffff;
 	border-radius: 8px;
-	opacity: 0;
  	justify-content: center; 
 	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
@@ -188,7 +190,7 @@ a {
 /*Setting the attributes for button*/
 .navBar a:nth-child(1 2 3) {
 	background: transparent;
- 	font-color: #FFFFFF;
+ 	font-color: #ffffff;
 }
 /*Setting pre-animation attributes*/
 .navBar a::before {
@@ -304,9 +306,26 @@ a {
 	white-space: pre;
 	line-height: 0.9;
 }
+/*Hover Function*/
+.navlink :hover{
+
+	transition: .5s;
+	transition-timing-function: ease-out;
+	background: transparent;
+	font-color: #ffffff;
+}
 .hamburger {
     	display: none;
     	text-decoration: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 ul {
 	width: 100%;
