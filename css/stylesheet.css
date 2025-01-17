@@ -40,11 +40,11 @@ html {
 	max-width: auto;
         width: 100%;
 	display: flex;
- 	background: rgb(150,0,0); 
-/* 	background: #c5410d; */
- 	background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(213,90,2,1) 100%); 
+/*  	background: rgb(150,0,0); */
+ 	background: #c5410d;
+/*  	background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(213,90,2,1) 100%);  */
         position: sticky; 
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 }
 /*Body Attributes*/
 body {
@@ -672,7 +672,7 @@ li a {
 .beePic {
 	background: transparent;
 	float: top;
-	top: 0;
+	justify-content: center;
 	opacity: 1;
 	height: auto;
 	width: 100%;
