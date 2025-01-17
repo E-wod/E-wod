@@ -147,8 +147,7 @@ a {
 }
 /*Nav Bar Attributes*/
 .navBar {
-	top: 50%;
-	bottom: 50%;
+	float: center;
   	max-width: 100%;
      	width: auto; 
 	height: auto;
