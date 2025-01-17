@@ -41,28 +41,12 @@ html {
 	max-width: 100%;
 	display: flex;
  	background: #243472;
-/*  	background: rgb(150,0,0); 
- 	background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(213,90,2,1) 100%);  */
         position: sticky; 
 	background-repeat: repeat;
 }
 /*Body Attributes*/
 body {
 	z-index: 0;
-/* 	position: inherit;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-    	height: 100%;
-	max-height: 1000%;
-	max-width: auto;
-    	width: 100%;
-	top: 0; */
 }
 a {
 	margin-left: 0px;
@@ -83,7 +67,6 @@ a {
 	height: 100%;
 	scale: 1;
 	font-family: Helvetica, Arial, sans-serif;
-	
 }
 /*Header Attributes*/
 .header {
@@ -417,6 +400,7 @@ li a {
 	stagger: 3;
 	font-color: #960000;
 	font-family: "sofachrome", sans-serif;
+	justify-content: space-around;
 	font-weight: 100;
 	font-style: bold;
 	text-shadow: 2px 2px 4px #a6abca;
@@ -429,13 +413,6 @@ li a {
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-/* 	position: relative;
-	display: flex;
-	z-index: -3;
-	opacity: 0;
-	justify-content: space-evenly;
-	text-align: center;
-	align-all: center; */
 	animation-delay: 2s;
 	animation: h1Anim 2.5s ease forwards;
 	transition-timing-function: 2.5s ease ease-in-out; 
@@ -1014,31 +991,17 @@ html {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	scroll-behavior: smooth;
 	height: 100%;
         width: 100%;
-	background: rgb(150,0,0);
-	background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(213,90,2,1) 100%);
-        position: absolute; 
-	object-fit: cover;
-	background-repeat: no-repeat;
+	max-height: 100%;
+	max-width: 100%;
+	display: flex;
+ 	background: #243472;
+        position: sticky; 
+	background-repeat: repeat;
 }
 /*Body Attributes*/
 body {
-	z-index: 0;
-	position: inherit;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-    	height: 100%;
-	max-height: auto;
-	max-width: auto;
-    	width: 100%;
 	z-index: 0;
 }
 a {
@@ -1050,223 +1013,248 @@ a {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
+	font-size: auto; 
+	font-color: #ffffff;
+	text-decoration: none;
+	justify-content: space-around;
+	display: flex;
+	position: inherit;
 	width: 100%;
-	height: 100%; 
-	float: center;
-	justify-content: center;
-	text-align: center;
-	align-all: center;
-	text-decorations: none;
+	height: 100%;
+	scale: 1;
+	font-family: Helvetica, Arial, sans-serif;
 }
 /*Header Attributes*/
 .header {
-	align-self: center;
 	width: 100%;
 	max-width: auto;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	max-height: 15%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
         z-index: 30;
 	position: sticky;
-	float: top;
 	top: 0;
 	left: 0;
 	display: flex;
+	flex-direction: row;
  	background: transparent;
-	justify-content: space-evenly;
 	text-decoration: none;
 	overflow: inherit;
-	align-content: center;
-	object-position: center;
+	justify-content: space-between;
+	font-family: Helvetica, Arial, sans-serif;
+	font-color: #ffffff;
 }
 /*Logo*/
 .nav-logo {
-	width: 45px;
-	height: 45px;
-	max-width: 45px;
-	max-height: 45px;
+	width: 100%;
+	height: 100%;
+	max-width: 140px;
+	max-height: 140px;
+	justify-content: center;
+	text-decoration: none;
+	display: flex;
+	position: inherit;
 	opacity: 1;
+	scale: 1;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
 	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	text-decoration: none;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	background-color: transparent; 
 	animation: logoAnim 1.5s ease forwards; 
 	animation-timing-function: ease-in-out;
 }
 .nav-logo :hover,
 .nav-logo .active {
-	color: azure;
 	transition: .3s;
 	transition-timing-function: ease;
 	background: transparent;
-	text-decoration: none;
 	overflow: visible;
 	opacity: .3;
 }
-.nav-menu {
-	position: fixed;
-	left: -100%;
-	top: 5rem;
-	flex-direction: column;
-	background-color: transparent;
-	width: 100%;
-	border-radius: 10px;
-	text-align: center;
-	transition: 0.3s;
-	box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+/*Nav Bar Attributes*/
+.navBar {
+	float: center;
+  	max-width: 100%;
+     	width: auto; 
+	height: auto;
+	background: transparent;
+ 	display: flex;
+ 	position: inherit; 
+	justify-content: space-between;
+	font-color: #960000;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
+ 	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-radius: 8px;
+	animation: choiceAnim 2s ease forwards;
+	animation-delay: calc(.125s * var(--i)); 
+	animation-timing-function: ease-in-out;
+	white-space: pre;
+	line-height: 0.9;
+}
+/*navBar Anchor Tag Button layout and function*/
+.navBar a {
+     	width: auto;
+	height: auto;
+	background: transparent;
+ 	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px; 
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
+	font-color: #FFFFFF;
+	border-radius: 8px;
+	opacity: 0;
+ 	justify-content: center; 
 	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
 	white-space: pre;
 	line-height: 0.9;
 }
-.nav-menu:hover,	
-.nav-menu.active {
-	left: 0;
-	color: azure;
-	text-decoration: none;
-	box-shadow: 0 0px 0px azure;
-	overflow: visible;
-        animation-timing-function: ease-in-out; 
-	transition: .3s;
+/*Setting the attributes for button*/
+.navBar a:nth-child(1 2 3) {
+	background: transparent;
+ 	font-color: #FFFFFF;
 }
-.nav-item {
-	justify-content: center;
-	float: center;
+/*Setting pre-animation attributes*/
+.navBar a::before {
+	content: '';
+/* 	position: absolute; */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+/*Animation Element*/
+.navBar a:hover::before {
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%; 
-	overflow: inherit;
-	text-align: center;
-	align-all: center;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	cursor: pointer;
-	white-space: pre;
-	line-height: 0.7;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 }
-.nav-link{
-	font-size: 13px;
-    	font-weight: 100;
+/*Hover Function*/
+.navBar a:hover{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	transition: .5s;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	cursor: pointer;
-	white-space: pre;
-	line-height: 0.7;
-}	
-.nav-item :active,	
-.nav-item .hover {
-	color: azure;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	text-decoration: none;
-	box-shadow: 0 0px 0px azure;
-	overflow: visible;
-	animation-timing-function: ease-in-out;
-	cursor: pointer;
-}
-/*Nav Bar Attributes*/
-.navBar {
- 	background: transparent;
- 	justify-content: center; 
-	text-decoration: none;
-	font-size: 11px;
-	font-color: #ffffff;
-	display: flex;
-	align-items: center;
-	float: center;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	border-radius: 8px;
-	animation: choiceAnim 2s ease forwards;
-	animation-delay: calc(.125s * var(--i)); 
-	animation-timing-function: ease-in-out;
-	cursor: pointer;
-	white-space: pre;
-	line-height: 0.7;
-}
-/*navBar Anchor Tag Button layout and function*/
-.navBar a {
+	transition-timing-function: ease-out;
 	background: transparent;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	font-size: 11px;
-	font-family:"Open Sans", "sans-serif";
+	font-color: #960000;
+	font-size: 17px;
 	text-decoration: none;
-	display: flex;
+	font-family: Helvetica, Arial, sans-serif;
+ 	box-shadow: 0 7px 17px #ffffff; 
+	overflow: visible;
+	background: linear-gradient(0deg,transparent 15%,#960000 240%);
+	border: 2px solid #960000;
+	border-radius: 8px; 
+}
+.nav-menu {
+	background-color: transparent;
 	float: center;
-	justify-content: space-around;
-	position: relative;
-	color: #960000;
-	font-color: #ffffff;
-	overflow: hidden;
-	opacity: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	display: flex;
+	z-index: -3;
+ 	justify-content: space-around; 
+	font-color: #960000;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
+	transition: 0.3s;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	animation: choiceAnim 1.5s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
-	cursor: pointer;
 	white-space: pre;
-	line-height: 0.7;
+	line-height: 0.9;
 }
-.navBar a:hover {
-	color: azure;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	background: transparent;
+.nav-item {
+	background-color: transparent;
+	justify-content: center;
+	font-color: #960000;
+	font-size: 17px;
 	text-decoration: none;
-	box-shadow: 0 2px 7px azure;
-	border: 2px solid #960000;
+	font-family: Helvetica, Arial, sans-serif;
+	width: 100%;
+	height: 100%;
+	max-width: auto;
+	max-height: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border-radius: 8px;
-	overflow: visible;
-	transition: .3s;
-	cursor: pointer;
+	white-space: pre;
+	line-height: 0.9;
+}
+.nav-link{
+	background-color: transparent;
+	float: center;
+     	width: 100%;
+	height: 100%;
+	font-color: #960000;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
+    	font-weight: 100;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-radius: 8px;
+	white-space: pre;
+	line-height: 0.9;
 }
 .hamburger {
 	border: 2px solid #960000;
@@ -1302,546 +1290,4 @@ a {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #101010;
-}
-li {
-    	width: 100%;
-	height: 100%;
-	max-width: auto;
-	max-height: auto;
-	list-style: none;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
-li a {
-    	text-decoration: none;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 10px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
-/*Setting the content format for landing page */
-.landingContent{
-	background-color: transparent;
-	position: inherit;
-    	align-items: center;
-	justify-content: space-around;
-	width: 100%;
-	max-width: auto;
-	height: 100%;
-	max-height: 100%;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	display: flex;
-	gap: 0px;
-}
-/*Setting the landing page template for H1 Heading*/
-.landingContent h1{
-	font-size: 30px;
-	stagger: 3;
-	color: #960000;
-	font-family: "sofachrome", sans-serif;
-	font-weight: 100;
-	font-style: bold;
-	text-shadow: 2px 2px 4px #a6abca;
-	line-height: .9;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 3px;
-	padding-right: 3px;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	position: relative;
-	z-index: -3;
-	opacity: 0;
-	justify-content: space-around;
-	text-align: center;
-	align-all: center;
-	animation-delay: 2s;
-	animation: h1Anim 2.5s ease forwards;
-	transition-timing-function: 2.5s ease ease-in-out; 
-}
-.landingContent h3{
-	font-size: 21px;
-	color: #960000;
-	font-family: Lobster, 'Kristen ITC', Script;
-	font-weight: 100;
-	line-height: 1.1;
-	text-decoration: none;
-	text-shadow: 3px 3px 7px #a6abca;
-	z-index: 10;
-	justify-content: space-around;
-	text-align: center;
-	align-all: center;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	background: transparent;
-	opacity: 0;
-	animation: h3Anim 1s ease forwards;
-	animation-delay: .7s;
-	transition-timing-function: ease ease-in-out; 
-}
-/*Setting the landing page template for paragraph*/
-.landingContent p{
-	z-index: 1;
-    	display: flex;
-	justify-content: space-around;
-	text-align: center;
-	align-all: center;
-	font-size: 15px;
-	color: azure;
-	font-family: sans-serif;
-	font-weight: 100;
-	text-shadow: 2px 3px 6px #a6abca;
-	text-decoration: none;
-	font-style: italic;
-	line-height: 1.1;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin-left: 2px;
-	margin-right: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	background: transparent;
-	position: relative;
-	overflow: visible;
-	opacity: 0;
-	animation: pAnim 1s ease forwards;
-	transition-timing-function: ease ease-in-out; 
-}
-/*Setting the landing page template for Question buttons*/
-.cntr {
-	background: transparent;
-	justify-content: space-around;
-	width: 100%;
-	height: 100%;
-	display: inline-block;
-	position: absolute;
-	float: top;
-	margin-top: 0%;
-	margin-bottom: 0%;
-	margin-right: 0%;
-	margin-left: 0%;
-	padding-top: 20%;
-	padding-bottom: 0%;
-	padding-right: 0%;
-	padding-left: 0%;
-}
-.btnBox {
-	width: auto;
-	height: auto;
-	display: flex;
-	text-decoration: none;
-	z-index: 15;
-	overflow: hidden;
-	justify-content: center;
-	position: relative;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	background: transparent;
-	animation: choiceAnim 1s ease forwards;
-	animation-timing-function: ease-in-out;
-	transition: 1s;
-}
-/*Question Box Anchor Tag Button layout and function*/
-.btnBox a {
-	background: #d55a02;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 300px;
-	height: auto;
-	z-index: 15;
-	font-size: 20px;
-	font-family:"Open Sans", "sans-serif";
-	text-decoration: none;
-	display: flex;
-	float: center;
-	justify-content: space-around;
-	letter-spacing: 1.5px;
-	border: 2px solid #960000;
-	border-radius: 8px;
-	position: relative;
-	color: #960000;
-	overflow: hidden;
-	transition-timing-function: ease;
-	transition: 1s;
-}
-/*Setting pre-animation attributes*/
-.btnBox a::before {
-	content: '';
-	position: absolute;
-	background: #d55a02;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 0%;
-	z-index: -1;
-	transition: .9s;
-	transition-timing-function: ease; 
-}
-/*Question box Animation Element*/
-.btnBox a:hover::before {
-	height: 100%;
-	background: linear-gradient(0deg,transparent 15%,#960000 240%);
-}
-/*Question Box Hover Function*/
-.btnBox a:hover,
-.btnBox .active{
-	color: azure;
-	text-decoration: none;
-	box-shadow: 0 2px 7px azure;
-	overflow: hidden;
-	transition-timing-function: ease-out;
-}
-/*Setting the alignment and template for Social links*/
-.socLnk {
-	z-index: 15;
-	overflow: hidden;
-	justify-content: center;
-	position: relative;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	margin-right: 5px;
-	margin-left: 5px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	background: transparent;
-	display: flex;
-	width: auto;
-	height: auto;
-	text-decoration: none;
-	animation: menuAnim ease forwards;
-	animation-delay: calc(.1s * var(--i));
-	transition-timing-function: ease-in-out;
-	opacity: 0;
-}
-/*Social Links Anchor Tag Button layout and function*/
-.socLnk a {
-	align-items: center;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	font-size: 40px;
-	text-decoration: none;
-	display: flex;
-	justify-content: center;
-	border: 2px solid #960000;
-	border-radius: 50%;
-	position: relative;
-	color: #960000;
-	overflow: hidden;
-	width: 60px;
-	height: 60px;
-	background: #d55a02;
-	z-index: 15;
-	font-family:"Open Sans", "sans-serif";
-	transition: 1s;
-	transition-timing-function: ease; 
-	animation: menuAnim 1s ease forwards;
-	animation-delay: calc(.3s * var(--i));
-	opacity: 0;
-}
-/*Setting the attributes for each button*/
-.socLnk a:nth-child(1 2 3) {
-	background: transparent;
-	color: #960000;
-}
-/*Setting pre-animation attributes*/
-.socLnk a::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 0%;
-	z-index: 3;
-	transition: .9s;
-	transition-timing-function: ease; 
-}
-/*Animation element*/
-.socLnk a:hover::before {    
-	height: 100%;
-	background: linear-gradient(0deg,transparent 35%,#960000 240%);
-	z-index: 3;
-}
-/*Hover Function for Social Links*/
-.socLnk a:hover,
-.socLnk .active{
-	color: azure;
-	text-decoration: none;
-	box-shadow: 0 2px 7px azure;
-	overflow: hidden;
-	transition-timing-function: ease-out;
-}
-.beePic {
-	background: transparent;
-	opacity: 100%;
-	height: auto;
-	width: 100%;
-	display: flex;
-	position: inherit;
-	margin-top: 3px;
-	margin-bottom: 3px;
-	margin-right: 3px;
-	margin-left: 3px;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-right: 3px;
-	padding-left: 3px;
-	z-index: -19;
-	scale: 1;
-	overflow: hidden;
-	object-fit: contain;
-}
-/*background layout template*/
-.beGod {
-	background-color: transparent;
-	position: inherit;
-	width: 100%;
-	max-height: auto;
-	max-width: auto;
-	height: 100%;
-   	margin-left: 1%;
-	margin-right: 1%;  
-	margin-top: 1%;
-  	margin-bottom: 1%; 
-	padding-left: 1%;
-	padding-right: 1%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	z-index: 1;
-	align-all: space-between; 
-	float: center;
-	justify-content: center;
-	transition: 3s;
-	transition-timing-function: ease; 
-	animation: logoAnim 3s ease forwards;
-}
-.beNook {
-	background-color: transparent;
-	position: inherit;
-	width: 22%;
-	height: 22%;
-	top: 50%;
-	bottom: 50%;
-   	margin-left: 0%;
-	margin-right: 0%;  
-	margin-top: 0%;
-  	margin-bottom: 0%; 
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	z-index: 1;
-	align-all: center; 
-	float: center;
-	justify-content: center;
-	transition: 3s;
-	transition-timing-function: ease; 
-	animation: pAnim 3s ease forwards;
-}
-.bkg {
-	background-color: transparent;
-	position: relative;
-	width: 100%;
-	max-height: auto;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0%; 
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10%;
-	padding-bottom: 10px;
-	z-index: 1;
-	align-all: center; 
-	float: center;
-	justify-content: space-between;
-	animation: h1Anim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
-}
-.obJects{
-	background-color: transparent;
-	position: relative;
-	float: center;
-	justify-content: center;
-	width: 100%;
-	max-height: 350%;
-	height: auto;
-	left: 0;
-	right: 0;
- 	margin-left: auto;
-        margin-right: auto;
-	margin-top: 10px;
-	margin-bottom: 10px;  
-	padding-left: 10%;
-	padding-right: 10%;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	display: flex;
-	z-index: 999;
-}
-.picFrame {
-    	display: block;
-	object-fit: contain;
-	float: center;
-	align-self: center;
-	background-color: transparent;
-	border-radius: 8px;
-	width: 70%;
-	height: auto;
-	max-height: 350%;
-	justify-content: space-between;
-	margin-right: 2px;
-	margin-left: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding-right: 2px;
-	padding-left: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-    	z-index: 9999;
-	color: azure;
-}
-.picFrame:hover{
-	text-decoration: none;
-	overflow: inherit;
-	cursor: pointer;
-	scale: 1.05;
-	z-index: 999999;
-	transition-timing-function: ease ease-in-out; 
-}
-.picFrame h1{
-	display: flex;
-	font-size: 16px;
-	color: #494F52;
-	font-family: sans-serif;
-	font-style: italic;
-	text-shadow: 2px 0px 2px azure;
-	line-height: .9;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 100%;
-	max-width: 80%;
-	position: relative;
-	background-color: transparent;
-	z-index: 3;
-	opacity: 0;
-	animation: h1Anim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
-}
-.picFrame h3{
-	z-index: 1;
-	display: flex;
-	font-size: 12px;
-	color: azure;
-	font-family: sans-serif;
-	font-style: italic;
-	line-height: 1.1;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	max-width: 95%;
-	max-height: auto;
-	background: transparent;
-	position: relative;
-	overflow: inherit;
-	opacity: 0;
-	animation: pAnim 1s ease forwards;
-	transition-timing-function: ease ease-in-out; 
-}
-/*--------------------------------------------------------------JUMP TO TOP BUTTON------------------------------------------------------*/
-#scrollToTopBtn {
-	background-color: transparent;
-	justify-contents: center;
-	font-size: 40px;
-	position: sticky;
-  	border: none;
-  	line-height: 48px;
-  	width: 48px;
-	cursor: pointer;
-	z-index: 9999999;
-	text-decoration: none;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	transition: 1s ease-in-out;
-}
- .button {
- 	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	transition: 1s ease-in-out;
-	z-index: 9999999;
-  	width: 48px;
-	cursor: pointer;
-	background-color: transparent;
-	font-size: 40px;
-	position: sticky;
-	float: right; 
 }
