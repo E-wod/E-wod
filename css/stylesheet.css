@@ -272,7 +272,9 @@ a {
 	background-color: transparent;
 	justify-content: center;
 	width: 100%;
-	height: auto;
+	height: 100%;
+	max-width: auto;
+	max-height: auto;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -310,8 +312,10 @@ a {
     	text-decoration: none;
 }
 ul {
-	width: auto;
-	height: auto;
+	width: 100%;
+	height: 100%;
+	max-width: auto;
+	max-height: auto;
 	justify-content: center; 
 	list-style: none;
 	margin-left: 0px;
@@ -327,8 +331,10 @@ ul {
 	flex-direction: right;
 }
 li {
-	width: auto;
-	height: auto;
+	width: 100%;
+	height: 100%;
+	max-width: auto;
+	max-height: auto;
 	list-style: none;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -346,8 +352,10 @@ li a {
     	text-decoration: none;
 	justify-content: center;
 	display: flex;
-	width: auto;
-	height: auto;
+	width: 100%;
+	height: 100%;
+	max-width: auto;
+	max-height: auto;
 	text-align: center;
 	align-all: center;
 	font-color: #ffffff;
