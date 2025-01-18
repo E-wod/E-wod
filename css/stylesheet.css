@@ -136,10 +136,6 @@ a {
  	display: flex;
  	position: inherit; 
 	justify-content: space-between;
-/* 	font-color: #ffffff;
-	font-size: 17px;
-	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif; */
  	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -194,9 +190,6 @@ a {
 	z-index: -3;
  	justify-content: space-around; 
 	font-color: #ffffff;
-	font-size: 17px;
-	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif;
 	transition: 0.3s;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -217,15 +210,11 @@ a {
 	float: center;
 	width: 100%;
 	height: 100%;
-/* 	border-radius: 8px; */
 	display: flex;
 	z-index: -3;
  	justify-content: space-around; 
-/* 	font-color: #ffffff;
-	font-size: 17px;
-	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif;
-	transition: 0.3s; */
+	font-color: #ffffff;
+	transition: 0.3s; 
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -330,14 +319,10 @@ li {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-color: #ffffff;
-	font-size: 17px;
-	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	display: flex; 
 	justify-content: center; 
 }
@@ -348,18 +333,14 @@ li a {
 	height: 100%;
 	max-width: auto;
 	max-height: auto;
-	font-color: #ffffff;
-	font-size: 17px;
-	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 }
 /*Setting the content format for landing page */
 .landingContent{
