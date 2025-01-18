@@ -220,6 +220,8 @@ a {
 	line-height: 0.9; */
 }
 .nav-item {
+	top: 50%;
+	bottom: 50%;
 	background-color: transparent;
 	justify-content: center;
 	font-color: #ffffff;
