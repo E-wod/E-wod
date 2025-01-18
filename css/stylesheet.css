@@ -10,6 +10,8 @@
 img {
     	height: 100%;
     	width: 100%;
+	scale: 1;
+	display: flex;
 }
 video {
     	height: 100%;
@@ -655,7 +657,7 @@ li a {
 }
 .beePic {
 	background: transparent;
-	top: 0;
+	top: 2px;
 	justify-content: center;
 	opacity: 1;
 	height: auto;
