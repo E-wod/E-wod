@@ -41,7 +41,7 @@ html {
 	max-width: 100%;
 	display: flex;
  	background: #9e1a00;
-        position: sticky; 
+        position: fixed; 
 	background-repeat: repeat;
 }
 /*Body Attributes*/
@@ -154,24 +154,24 @@ a {
 	line-height: 0.9;
 }
 /*navBar Anchor Tag Button layout and function*/
-.navBar a {
+.nav-item a {
 	background: transparent;
 }
 /*Setting the attributes for button*/
-.navBar a:nth-child(1 2 3) {
+.nav-item a:nth-child(1 2 3) {
 	background: transparent;
  	font-color: #ffffff;
 }
 /*Setting pre-animation attributes*/
-.navBar a::before {
+.nav-item a::before {
 	content: '';
 }
 /*Animation Element*/
-.navBar a:hover::before {
+.nav-item a:hover::before {
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 }
 /*Hover Function*/
-.navBar a:hover{
+.nav-item a:hover{
 	transition: .5s;
 	transition-timing-function: ease-out;
 	background: transparent;
@@ -182,7 +182,7 @@ a {
 	border: 2px solid #ffffff;
 	border-radius: 8px; 
 }
-.navBar a {
+.nav-item a {
 	background-color: transparent;
 	float: center;
 	width: 100%;
