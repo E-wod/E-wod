@@ -150,7 +150,7 @@ a {
 	height: 0%;
 	z-index: -1;
 	transition: .9s;
-	transition-timing-function: ease; 
+	animation-timing-function: ease-in-out;
 }
 /*Animation Element*/
 .navBar a:hover::before {
@@ -161,11 +161,12 @@ a {
 /*Hover Function*/
 .navBar a:hover,
 .navBar .active{
-	color: azure;
+	color: #9e1a00;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	overflow: hidden;
-	transition-timing-function: ease-out;
+	transition: .9s;
+	animation-timing-function: ease-in-out;
 	border-radius: 8px;
 	border: 2px;
 }
@@ -176,6 +177,8 @@ a {
 	display: flex;
 	z-index: -3;
  	justify-content: center; 
+	transition: .9s;
+	animation-timing-function: ease-in-out;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -192,10 +195,10 @@ a {
 .nav-item {
 	background-color: transparent;
  	justify-content: space-around;
-	font-color: #ffffff;
-	font-size: 37px;
+	font-color: #9e1a00;
+	font-size: 19px;
 	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Lobster, 'Kristen ITC', Script;
 /* 	width: 100%;
 	height: 100%;
 	max-width: 100%;
