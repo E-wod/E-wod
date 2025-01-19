@@ -118,6 +118,8 @@ a {
 .navBar {
   	width: 100%;
 	height: 100%;
+	top: 0;
+	bottom: 0;
 	font-color: #9e1a00;
 	text-decoration: none;
 	background: transparent;
@@ -128,10 +130,10 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-radius: 8px;
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
@@ -139,6 +141,8 @@ a {
 }
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
+	top: 0;
+	bottom: 0;
 	background: transparent;
 	border-radius: 8px;
 	font-color: #9e1a00;
@@ -146,6 +150,8 @@ a {
 }
 /*Setting pre-animation attributes*/
 .navBar a::before {
+	top: 0;
+	bottom: 0;
 	content: '';
 	position: absolute;
 	background: #9e1a00;
@@ -159,6 +165,8 @@ a {
 }
 /*Animation Element*/
 .navBar a:hover::before {
+	top: 0;
+	bottom: 0;
 	height: 100%;
 	font-color: #9e1a00;
 	text-decoration: none;
@@ -168,6 +176,8 @@ a {
 /*Hover Function*/
 .navBar a:hover,
 .navBar .active{
+	top: 0;
+	bottom: 0;
 	color: #ffffff;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
@@ -178,6 +188,8 @@ a {
 	border: 2px;
 }
 .nav-menu {
+	top: 0;
+	bottom: 0;
 	background-color: transparent;
 	text-decoration: none;
 	width: 100%;
@@ -201,6 +213,8 @@ a {
  */
 }
 .nav-item {
+	top: 0;
+	bottom: 0;
 	background-color: transparent;
  	justify-content: space-around;
 	font-color: #9e1a00;
@@ -213,26 +227,28 @@ a {
 	max-height: 100%; */
 	width: 100%;
 	height: 100%;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-radius: 8px;
 }
 .nav-link{
+	top: 0;
+	bottom: 0;
 	background-color: transparent;
-	float: center;
+/* 	float: center;
 	width: 100%;
 	height: 100%;
 	font-color: #9e1a00;
 	font-size: 25px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-    	font-weight: 100;
+    	font-weight: 100; */
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
