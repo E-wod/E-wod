@@ -118,6 +118,7 @@ a {
 .navBar {
   	width: auto;
 	height: auto;
+	font-color: #9e1a00;
 	background: transparent;
  	display: flex;
  	position: inherit; 
@@ -139,6 +140,7 @@ a {
 .navBar a {
 	background: transparent;
 	border-radius: 8px;
+	font-color: #9e1a00;
 }
 /*Setting pre-animation attributes*/
 .navBar a::before {
@@ -155,13 +157,14 @@ a {
 /*Animation Element*/
 .navBar a:hover::before {
 	height: 100%;
+	font-color: #9e1a00;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	border-radius: 8px;
 }
 /*Hover Function*/
 .navBar a:hover,
 .navBar .active{
-	color: #9e1a00;
+	color: #ffffff;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	overflow: hidden;
