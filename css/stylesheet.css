@@ -43,7 +43,7 @@ html {
 	max-width: 100%;
 	display: flex;
  	background: #9e1a00;
-        position: fixed; 
+        position: sticky; 
 	background-repeat: repeat;
 }
 /*Body Attributes*/
@@ -125,7 +125,7 @@ a {
 	max-height: 100%;
 	background: transparent;
  	display: flex;
- 	position: absolute; 
+ 	position: inherit; 
 	justify-content: space-between;
  	margin-left: 0px;
 	margin-right: 0px;
