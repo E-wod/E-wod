@@ -592,10 +592,10 @@ li a {
 }
 .beePic {
 	background: transparent;
-	float: top;
-/* 	justify-content: center; */
+	top: 5px;
+ 	justify-content: center;
 	opacity: 1;
-	height: auto;
+	height: 100%;
 	width: 100%;
 	display: flex;
 	position: inherit;
