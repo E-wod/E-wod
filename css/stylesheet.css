@@ -40,7 +40,7 @@ html {
 	max-height: 100%;
 	max-width: 100%;
 	display: flex;
- 	background: #736908;
+ 	background: #243b71;
         position: sticky; 
 	background-repeat: repeat;
 }
@@ -76,7 +76,7 @@ a {
 	display: flex;
 	flex-direction: row;
 /*  	background: transparent; */
-	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(115,105,8,1) 93%);
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,59,113,1) 74%);
 	text-decoration: none;
 	overflow: inherit;
 	justify-content: space-between;
@@ -117,7 +117,7 @@ a {
 .navBar {
   	width: 100%;
 	height: 100%;
-	font-color: #736908;
+	font-color: #243b71;
 	text-decoration: none;
 	background: transparent;
  	display: flex;
@@ -140,14 +140,14 @@ a {
 .navBar a {
 	background: transparent;
 	border-radius: 8px;
-	font-color: #736908;
+	font-color: #243b71;
 	text-decoration: none;
 }
 /*Setting pre-animation attributes*/
 .navBar a::before {
 	content: '';
 	position: absolute;
-	background: #736908;
+	background: #243b71;
 	border-radius: 8px;
 	text-decoration: none;
 	width: 100%;
@@ -159,7 +159,7 @@ a {
 /*Animation Element*/
 .navBar a:hover::before {
 	height: 100%;
-	font-color: #736908;
+	font-color: #243b71;
 	text-decoration: none;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	border-radius: 8px;
@@ -202,7 +202,7 @@ a {
 .nav-item {
 	background-color: transparent;
  	justify-content: space-around;
-	font-color: #736908;
+	font-color: #243b71;
 	font-size: 25px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -448,7 +448,7 @@ li a {
 }
 /*Question Box Anchor Tag Button layout and function*/
 .btnBox a {
-	background: #736908;
+	background: #243b71;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -479,7 +479,7 @@ li a {
 .btnBox a::before {
 	content: '';
 	position: absolute;
-	background: #736908;
+	background: #243b71;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -548,7 +548,7 @@ li a {
 	overflow: hidden;
 	width: 60px;
 	height: 60px;
-	background: #736908;
+	background: #243b71;
 	z-index: 15;
 	font-family:"Open Sans", "sans-serif";
 	transition: 1s;
@@ -735,11 +735,11 @@ li a {
 }
 .picFrame h1{
 	display: flex;
-	font-size: 16px;
-	color: #494F52;
+	font-size: 19px;
+	color: #ffffff;
 	font-family: sans-serif;
 	font-style: italic;
-	text-shadow: 2px 0px 2px azure;
+	text-shadow: 1px 0px 1px #000000;
 	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -762,7 +762,7 @@ li a {
 	z-index: 1;
 	display: flex;
 	font-size: 12px;
-	color: azure;
+	color: #243b71;
 	font-family: sans-serif;
 	font-style: italic;
 	line-height: 1.1;
