@@ -47,6 +47,7 @@ html {
 /*Body Attributes*/
 body {
 	z-index: 0;
+	position: inherit; 
 }
 a {
 	text-decoration: none;
