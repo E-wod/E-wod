@@ -116,8 +116,8 @@ a {
 }
 /*Nav Bar Attributes*/
 .navBar {
-  	width: auto;
-	height: auto;
+  	max-width: auto;
+	max-height: auto;
 	font-color: #9e1a00;
 	background: transparent;
  	display: flex;
