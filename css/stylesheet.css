@@ -37,12 +37,11 @@ html {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	height: 100%;
-        width: 100%;
+	width: auto;
+	height: auto;
 	max-height: 100%;
 	max-width: 100%;
 	display: flex;
-	flex-direction: column;
  	background: #9e1a00;
         position: sticky; 
 	background-repeat: repeat;
@@ -51,6 +50,8 @@ html {
 body {
 	z-index: 0;
 	display: flex;
+	width: auto;
+	height: auto;
 }
 a {
 	text-decoration: none;
