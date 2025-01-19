@@ -52,13 +52,11 @@ body {
 }
 a {
 	text-decoration: none;
-	align-content: center;
+	justify-content: center;
 	display: flex;
 	width: 100%;
 	height: 100%;
 	scale: 1;
-	top: 0;
-	bottom: 0;
 }
 /*Header Attributes*/
 .header {
@@ -119,6 +117,8 @@ a {
 /*Nav Bar Attributes*/
 .navBar {
     	align-items: center;
+	top: 50%;
+	bottom: 50%;
   	width: 100%;
 	height: 100%;
      	max-width: 100%; 
@@ -680,11 +680,9 @@ li a {
 .beNook {
 	width: 100%;
 	height: 100%;
-	max-width: 100%;
-	max-height: 100%;
 	justify-content: center;
 	display: flex;
-	position: fixed;
+	position: inherit;
 	opacity: 1;
 	scale: 1;
 	margin-left: 1px;
