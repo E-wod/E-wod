@@ -789,6 +789,10 @@ li a {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
+.blurredEdge {
+  background: transparent;
+  box-shadow: 0 0 8px 8px #243b71 inset;
+}
 /*--------------------------------------------------------------JUMP TO TOP BUTTON------------------------------------------------------*/
 #scrollToTopBtn {
 	background-color: transparent;
