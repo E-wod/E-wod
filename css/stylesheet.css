@@ -426,10 +426,9 @@ li a {
 /*Setting the landing page template for Question buttons*/
 .cntr {
 	background: transparent;
-	top: 0;
 	justify-items: center;
 	display: flex;
-	position: inherit;
+	position: absolute;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -439,9 +438,7 @@ li a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	width: 100%;
-	height: auto;
-	max-width: 100%;
-	max-height: auto;
+	height: 100%;
 }
 .btnBox {
 	z-index: 15;
