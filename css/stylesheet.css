@@ -428,6 +428,11 @@ li a {
 	max-height: 100%;
 }
 .btnBox {
+	z-index: 15;
+	overflow: hidden;
+	justify-content: space-between;
+	align-all: center;
+	position: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -440,13 +445,9 @@ li a {
 	height: 100%;
 	max-width: 100%;
 	max-height: 100%;
+	background: transparent;
 	display: flex;
 	text-decoration: none;
-	z-index: 15;
-	overflow: hidden;
-	justify-content: space-evenly;
-	position: relative;
-	align-all: center;
 	background: transparent;
 	animation: choiceAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
@@ -514,9 +515,9 @@ li a {
 .socLnk {
 	z-index: 15;
 	overflow: hidden;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-all: center;
-	position: relative;
+	position: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
