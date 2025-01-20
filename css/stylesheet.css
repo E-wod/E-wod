@@ -711,7 +711,7 @@ li a {
 .obJects{
 	background-color: transparent;
 	position: inherit;
-	justify-content: space-around;
+	justify-items: center;
 	width: 100%;
 	height: 100%;
 	max-width: 100%;
@@ -745,6 +745,7 @@ li a {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	display: flex;
+	flex-direction: column;
 	z-index: 999;
 }
 .picFrame:hover{
