@@ -344,10 +344,12 @@ li a {
 	font-style: bold;
 	text-shadow: 2px 2px 4px #ffffff;
 	line-height: .9;
-	width: auto;
+	left: 50%;
+	right: 50%;
+	width: 100%;
 	height: auto;
-	max-width: 100%;
-	max-height: 100%;
+/* 	max-width: 100%;
+	max-height: 100%; */
 	float: center;
 	display: flex;
 	margin-left: 0px;
@@ -370,6 +372,8 @@ li a {
 	font-style: bold;
 	text-shadow: 2px 2px 4px #ffffff;
 	line-height: .9;
+	left: 50%;
+	right: 50%;
 	width: auto;
 	height: auto;
 	max-width: 100%;
@@ -401,6 +405,8 @@ li a {
 	height: auto;
 	max-width: 100%;
 	max-height: 100%;
+	left: 50%;
+	right: 50%;
 	float: center;
 	display: flex;
 	margin-left: 0px;
@@ -418,6 +424,7 @@ li a {
 /*Setting the landing page template for Question buttons*/
 .cntr {
 	background: transparent;
+	top: 0;
 	justify-items: center;
 	display: flex;
 	position: inherit;
@@ -430,9 +437,9 @@ li a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	max-width: 100%;
-	max-height: 100%;
+	max-height: auto;
 }
 .btnBox {
 	z-index: 15;
