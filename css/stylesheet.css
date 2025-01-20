@@ -5,10 +5,7 @@
 	box-sizing: border-box;
 }
 img {
-    	height: 100%;
-    	width: 100%;
 	scale: 1;
-	display: flex;
 }
 video {
     	height: 100%;
