@@ -494,13 +494,14 @@ li a {
 	width: 100%;
 	height: 0%;
 	z-index: -1;
-	transition: .3s;
 	transition-timing-function: ease; 
 }
 /*Question box Animation Element*/
 .btnBox a:hover::before {
 	height: 100%;
 	border-radius: 8px;
+	border: 3px solid #ffffff;
+	transition: .3s;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 }
 /*Question Box Hover Function*/
@@ -510,7 +511,6 @@ li a {
 	border-radius: 8px;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
-	border: 3px solid #ffffff;
 	transition: .3s;
 	overflow: hidden;
 	transition-timing-function: ease-out;
@@ -593,6 +593,8 @@ li a {
 .socLnk a:hover::before {    
 	height: 100%;
 	background: linear-gradient(0deg,transparent 35%,#ffffff 240%);
+	border: 3px solid #ffffff;
+	transition: .3s;
 	z-index: 3;
 }
 /*Hover Function for Social Links*/
@@ -601,7 +603,6 @@ li a {
 	color: azure;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
-	border: 3px solid #ffffff;
 	overflow: hidden;
 	transition: .3s;
 	transition-timing-function: ease-out;
