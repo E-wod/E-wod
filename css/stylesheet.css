@@ -144,6 +144,14 @@ a {
 }
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	background: transparent;
 	border-radius: 8px;
 	font-color: #243b71;
@@ -173,13 +181,14 @@ a {
 /*Hover Function*/
 .navBar a:hover,
 .navBar .active{
-	color: #ffffff;
+	font-color: #ffffff;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	overflow: hidden;
 	transition: .9s;
 	animation-timing-function: ease-in-out;
 	border-radius: 8px;
+	border-color: #ffffff;
 	border: 2px;
 }
 .nav-menu {
