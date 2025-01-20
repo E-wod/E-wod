@@ -225,14 +225,6 @@ a {
 }
 .nav-link{
 	background-color: transparent;
-/* 	float: center;
-	width: 100%;
-	height: 100%;
-	font-color: #9e1a00;
-	font-size: 25px;
-	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
-    	font-weight: 100; */
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -309,9 +301,8 @@ li a {
 	background-color: transparent;
 	position: inherit;
     	text-align: center;
-	top: 5px;
-	left: 50%;
-	right: 50%;
+	float: top;
+	justify-contents: space-between;
 	width: 100%;
 	height: 100%;
 	max-width: 100%;
@@ -713,7 +704,6 @@ li a {
 .obJects{
 	background-color: transparent;
 	position: inherit;
-	float: center;
 	justify-content: space-around;
 	width: 100%;
 	height: 100%;
@@ -727,14 +717,14 @@ li a {
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	display: block;
+	display: flex;
 	z-index: 999;
 }
 .picFrame {
 	background-color: transparent;
 	position: inherit;
 	float: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	width: 100%;
 	height: 100%;
 	max-width: 100%;
@@ -755,7 +745,7 @@ li a {
 	overflow: inherit;
 	cursor: pointer;
 /* 	scale: 1.05; */
-	justify-self: stretch;
+/* 	justify-self: stretch; */
 	transition-timing-function: ease ease-in-out; 
 }
 .picFrame h1{
