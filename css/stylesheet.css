@@ -488,6 +488,7 @@ li a {
 	content: '';
 	position: absolute;
 	background: #243b71;
+	border-radius: 8px;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -499,15 +500,18 @@ li a {
 /*Question box Animation Element*/
 .btnBox a:hover::before {
 	height: 100%;
+	border-radius: 8px;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 }
 /*Question Box Hover Function*/
 .btnBox a:hover,
 .btnBox .active{
 	color: azure;
+	border-radius: 8px;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	border: 3px solid #ffffff;
+	transition: .3s;
 	overflow: hidden;
 	transition-timing-function: ease-out;
 }
@@ -599,6 +603,7 @@ li a {
 	box-shadow: 0 2px 7px azure;
 	border: 3px solid #ffffff;
 	overflow: hidden;
+	transition: .3s;
 	transition-timing-function: ease-out;
 }
 .beePic {
