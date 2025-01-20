@@ -445,6 +445,8 @@ li a {
 	height: 100%;
 	max-width: 100%;
 	max-height: 100%;
+	border: 2px solid #ffffff;
+	border-radius: 8px;
 	background: transparent;
 	display: flex;
 	text-decoration: none;
@@ -508,6 +510,7 @@ li a {
 .btnBox a:hover,
 .btnBox .active{
 	color: azure;
+	border: 3px solid #ffffff;
 	border-radius: 8px;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
@@ -537,6 +540,8 @@ li a {
 	background: transparent;
 	display: flex;
 	text-decoration: none;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
 	animation: menuAnim 1s ease forwards;
 	animation-delay: calc(.1s * var(--i));
 	transition-timing-function: ease-in-out;
@@ -587,13 +592,16 @@ li a {
 	height: 0%;
 	z-index: 3;
 	transition: .3s;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
 	transition-timing-function: ease; 
 }
 /*Animation element*/
 .socLnk a:hover::before {    
 	height: 100%;
 	background: linear-gradient(0deg,transparent 35%,#ffffff 240%);
-	border: 3px solid #ffffff;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
 	transition: .3s;
 	z-index: 3;
 }
@@ -605,6 +613,8 @@ li a {
 	box-shadow: 0 2px 7px azure;
 	overflow: hidden;
 	transition: .3s;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
 	transition-timing-function: ease-out;
 }
 .beePic {
