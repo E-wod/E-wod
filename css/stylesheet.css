@@ -308,8 +308,10 @@ li a {
 .landingContent{
 	background-color: transparent;
 	position: inherit;
-    	align-items: center;
+    	text-align: center;
 	top: 5px;
+	left: 50%;
+	right: 50%;
 	width: 100%;
 	height: 100%;
 	max-width: 100%;
