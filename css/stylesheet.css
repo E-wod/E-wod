@@ -76,7 +76,7 @@ a {
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	float: top;
+	top: 0;
         z-index: 30;
 	position: sticky;
 	scale: 1;
