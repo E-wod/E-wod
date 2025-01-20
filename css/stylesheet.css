@@ -754,7 +754,7 @@ li a {
 	overflow: inherit;
 	cursor: pointer;
 /* 	scale: 1.05; */
-/* 	justify-self: stretch; */
+ 	justify-self: stretch; 
 	transition-timing-function: ease ease-in-out; 
 }
 .picFrame h1{
