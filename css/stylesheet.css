@@ -84,6 +84,7 @@ a {
 	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,59,113,1) 74%);
 	text-decoration: none;
 	overflow: inherit;
+	float: center;
 	justify-content: space-between;
 }
 /*Logo*/
