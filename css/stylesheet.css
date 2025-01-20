@@ -605,7 +605,6 @@ li a {
 	padding-right: 2px;
 	padding-left: 2px;
 	z-index: -19;
-/* 	scale: 1; */
 	overflow: hidden;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
@@ -680,61 +679,57 @@ li a {
 }
 .obJects{
 	background-color: transparent;
-	position: relative;
+	position: inherit;
 	float: center;
-	justify-content: center;
+	justify-content: space-between;
 	width: 100%;
-	max-height: 350%;
-	height: auto;
-	left: 0;
-	right: 0;
- 	margin-left: auto;
-        margin-right: auto;
-	margin-top: 10px;
-	margin-bottom: 10px;  
-	padding-left: 10%;
-	padding-right: 10%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	display: flex;
 	z-index: 999;
 }
 .picFrame {
-    	display: block;
-	object-fit: contain;
-	float: center;
-	align-self: center;
 	background-color: transparent;
-	border-radius: 8px;
-	width: 70%;
-	height: auto;
-	max-height: 350%;
+	position: inherit;
+	float: center;
 	justify-content: space-between;
-	margin-right: 2px;
-	margin-left: 2px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding-right: 2px;
-	padding-left: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-    	z-index: 9999;
-	color: azure;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: flex;
+	z-index: 999;
 }
 .picFrame:hover{
 	text-decoration: none;
 	overflow: inherit;
 	cursor: pointer;
 	scale: 1.05;
-	z-index: 999999;
 	transition-timing-function: ease ease-in-out; 
 }
 .picFrame h1{
 	display: flex;
-	font-size: 19px;
-	color: #ffffff;
-	font-family: sans-serif;
-	font-style: italic;
+	font-color: #243b71;
+	font-size: 25px;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	line-height: .9;
 	margin-left: 0px;
@@ -746,38 +741,38 @@ li a {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 100%;
-	max-width: 80%;
-	position: relative;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	position: inherit;
 	background-color: transparent;
-	z-index: 3;
-	opacity: 0;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .picFrame h3{
-	z-index: 1;
 	display: flex;
-	font-size: 12px;
-	color: #243b71;
-	font-family: sans-serif;
-	font-style: italic;
-	line-height: 1.1;
+	font-color: #243b71;
+	font-size: 15px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
+	text-shadow: 1px 0px 1px #000000;
+	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	max-width: 95%;
-	max-height: auto;
-	background: transparent;
-	position: relative;
-	overflow: inherit;
-	opacity: 0;
-	animation: pAnim 1s ease forwards;
-	transition-timing-function: ease ease-in-out; 
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	position: inherit;
+	background-color: transparent;
+	animation: h1Anim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
 }
 /*--------------------------------------------------------------JUMP TO TOP BUTTON------------------------------------------------------*/
 #scrollToTopBtn {
