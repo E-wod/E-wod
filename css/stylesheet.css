@@ -212,10 +212,7 @@ a {
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-/*  	animation: choiceAnim 1.5s ease forwards;
-	animation-delay: calc(.125s * var(--i)); 
-	animation-timing-function: ease-in-out;
- */
+ 
 }
 .nav-item {
 	background-color: transparent;
@@ -224,12 +221,10 @@ a {
 	font-size: 25px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-/* 	width: 100%;
-	height: 100%;
-	max-width: 100%;
-	max-height: 100%; */
 	width: 100%;
 	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
