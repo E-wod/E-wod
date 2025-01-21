@@ -508,7 +508,7 @@ li a {
 .btnBox a:hover,
 .btnBox .active{
 	color: azure;
-	border: 4px solid #ffffff;
+	border: 2px solid #ffffff;
 	border-radius: 8px;
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
@@ -606,14 +606,12 @@ li a {
 	box-shadow: 0 2px 7px azure;
 	overflow: hidden;
 	transition: .3s;
-	border: 4px solid #ffffff;
+	border: 2px solid #ffffff;
 	border-radius: 50%;
 	transition-timing-function: ease-out;
 }
 .beePic {
-  	background-color: #243b71; 
-  	box-shadow: 0 0 12px 12px #243b71 inset;
-/* 	background: transparent; */
+ 	background: transparent; 
 	top: 5px;
  	justify-content: center;
 	opacity: 1;
@@ -797,10 +795,6 @@ li a {
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
-}
-.blurredEdge {
-  background-color: #243b71; 
-  box-shadow: 0 0 12px 12px #243b71 inset;
 }
 /*--------------------------------------------------------------JUMP TO TOP BUTTON------------------------------------------------------*/
 #scrollToTopBtn {
