@@ -713,11 +713,11 @@ li a {
 }
 .obJects{
 	background-color: transparent;
-	position: inherit;
+	position: absolute;
 	justify-items: center;
 	width: 100%;
 	height: auto;
-	max-width: 100%;
+	max-width: 70%;
 	max-height: auto;
 	margin-top: 0px;
 	margin-bottom: 0px;
