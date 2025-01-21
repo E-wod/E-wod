@@ -800,7 +800,7 @@ li a {
 	background-color: transparent;
 	justify-items: center;
 	font-size: 40px;
-	position: sticky;
+	position: fixed;
   	border: none;
 	width: 100%;
 	height: auto;
