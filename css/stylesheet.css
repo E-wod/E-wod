@@ -805,8 +805,8 @@ li a {
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .blurredEdge {
-/*   background: transparent; */
-  box-shadow: 0 0 8px 8px #243b71 inset;
+  background-color: #243b71; 
+  box-shadow: 0 0 12px 12px #243b71 inset;
 }
 /*--------------------------------------------------------------JUMP TO TOP BUTTON------------------------------------------------------*/
 #scrollToTopBtn {
