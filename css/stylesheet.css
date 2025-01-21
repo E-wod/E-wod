@@ -687,7 +687,7 @@ li a {
 .bkg {
 	background-color: transparent;
 	position: inherit;
-	display: flex;
+	display: flex-start;
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
@@ -700,7 +700,7 @@ li a {
 	padding-top: 10%;
 	padding-bottom: 10px;
 	z-index: 1;
-	justify-content: space-between;
+	justify-items: center;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
@@ -804,12 +804,13 @@ li a {
 /*--------------------------------------------------------------JUMP TO TOP BUTTON------------------------------------------------------*/
 #scrollToTopBtn {
 	background-color: transparent;
-	justify-contents: center;
+	justify-items: center;
 	font-size: 40px;
 	position: sticky;
   	border: none;
-  	line-height: 48px;
-  	width: 48px;
+	width: 100%;
+	height: auto;
+	max-height: 100%;
 	cursor: pointer;
 	z-index: 9999999;
 	text-decoration: none;
@@ -821,6 +822,7 @@ li a {
 	padding-right: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	bottom: 0; 
 	transition: 1s ease-in-out;
 }
 .button {
@@ -834,12 +836,13 @@ li a {
 	padding-bottom: 20px;
 	transition: 1s ease-in-out;
 	z-index: 9999999;
-  	width: 48px;
 	cursor: pointer;
 	background-color: transparent;
-	font-size: 40px;
-	position: sticky;
-	float: right; 
+	position: inherit;
+	width: 100%;
+	height: auto;
+	max-height: 100%;
+	bottom: 0; 
 }
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes bkGnd {
