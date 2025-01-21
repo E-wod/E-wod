@@ -620,7 +620,9 @@ li a {
 	transition-timing-function: ease-out;
 }
 .beePic {
-	background: transparent;
+  	background-color: #243b71; 
+  	box-shadow: 0 0 12px 12px #243b71 inset;
+/* 	background: transparent; */
 	top: 5px;
  	justify-content: center;
 	opacity: 1;
