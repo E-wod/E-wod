@@ -13,6 +13,7 @@ navMenu.classList.remove("active");
 // GOTO TOP BUTTON
 var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 var rootElement = document.documentElement;
+scrollToTopBtn.addEventListener("click", scrollToTop);
 function scrollToTop() {
   // Scroll to top logic
   rootElement.scrollTo({
@@ -20,4 +21,3 @@ function scrollToTop() {
     behavior: "smooth"
   });
 }
-scrollToTopBtn.addEventListener("click", scrollToTop);
