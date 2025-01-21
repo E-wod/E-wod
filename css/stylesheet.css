@@ -332,7 +332,6 @@ li a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: flex;
-	flex-direction: column;
 }
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
