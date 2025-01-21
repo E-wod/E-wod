@@ -128,9 +128,9 @@ a {
 	font-color: #243b71;
 	text-decoration: none;
 	background: transparent;
- 	display: flex;
+ 	display: flex-end;
  	position: inherit; 
-	justify-content: flex-end;
+	justify-items: center;
  	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
