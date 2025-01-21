@@ -696,6 +696,7 @@ li a {
 .bkg {
 	background-color: transparent;
 	position: inherit;
+	display: flex;
 	width: 100%;
 	height: auto;
 	max-height: auto;
