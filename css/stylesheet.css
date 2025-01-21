@@ -688,9 +688,9 @@ li a {
 	background-color: transparent;
 	position: inherit;
 	display: flex;
+	flex-direction: column;
 	width: 100%;
-	height: auto;
-	max-height: auto;
+	height: 100%;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
@@ -700,14 +700,13 @@ li a {
 	padding-top: 10%;
 	padding-bottom: 10px;
 	z-index: 1;
-	float: center;
 	justify-content: space-between;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .obJects{
 	background-color: transparent;
-	position: absolute;
+	position: inherit;
 	justify-items: center;
 	width: 100%;
 	height: auto;
