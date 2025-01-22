@@ -40,8 +40,7 @@ html {
 	padding-bottom: 0px;
 	width: 100%;
 	height: 100%;
-	max-height: auto;
-	max-width: auto;
+	max-width: 100%;
 	display: flex;
  	background: #243b71;
         position: sticky; 
@@ -53,7 +52,6 @@ body {
 	z-index: 0;
 	width: 100%;
 	height: 100%;
-	max-height: 100%;
 	max-width: 100%;
 	overflow: inherit;
 }
@@ -317,13 +315,11 @@ li a {
 /*Setting the content format for landing page */
 .landingContent{
 	background-color: transparent;
-	position: absolute;
+	position: inherit;
     	align-all: center;
 	float: top;
+	max-width: 100%;
 	justify-contents: space-around;
-	width: 100%;
-	height: auto;
-	max-height: 1000%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -333,7 +329,6 @@ li a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: flex;
-	flex-direction: row;
 	overflow: inherit;
 }
 /*Setting the landing page template for H1 Heading*/
@@ -348,8 +343,8 @@ li a {
 	line-height: .9;
 	width: 100%;
 	height: 100%;
-	max-height: 100%;
-	float: center;
+	max-width: 100%;
+	position: inherit;
 	display: flex;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -373,8 +368,8 @@ li a {
 	line-height: .9;
 	width: 100%;
 	height: 100%;
-	max-height: 100%;
-	float: center;
+	max-width: 100%;
+	position: inherit;
 	display: flex;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -399,8 +394,8 @@ li a {
 	line-height: .9;
 	width: 100%;
 	height: 100%;
-	max-height: 100%;
-	float: center;
+	max-width: 100%;
+	position: inherit;
 	display: flex;
 	margin-left: 0px;
 	margin-right: 0px;
