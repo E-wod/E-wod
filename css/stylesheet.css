@@ -333,7 +333,7 @@ li a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	overflow: inherit;
 }
 /*Setting the landing page template for H1 Heading*/
