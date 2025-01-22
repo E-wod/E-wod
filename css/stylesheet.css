@@ -347,7 +347,8 @@ li a {
 	text-shadow: 2px 2px 4px #ffffff;
 	line-height: .9;
 	width: 100%;
-	height: auto;
+	height: 100%;
+	max-height: 100%;
 	float: center;
 	display: flex;
 	margin-left: 0px;
@@ -371,7 +372,8 @@ li a {
 	text-shadow: 2px 2px 4px #ffffff;
 	line-height: .9;
 	width: 100%;
-	height: auto;
+	height: 100%;
+	max-height: 100%;
 	float: center;
 	display: flex;
 	margin-left: 0px;
@@ -396,7 +398,8 @@ li a {
 	text-shadow: 2px 2px 4px #ffffff;
 	line-height: .9;
 	width: 100%;
-	height: auto;
+	height: 100%;
+	max-height: 100%;
 	float: center;
 	display: flex;
 	margin-left: 0px;
