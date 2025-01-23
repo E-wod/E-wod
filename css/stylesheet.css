@@ -326,7 +326,7 @@ li a {
 	display: flex;
 }
 /*Setting the landing page template for H1 Heading*/
-.h1{
+.landingContent h1{
 	font-size: 60px;
 	stagger: 3;
 	font-color: azure;
