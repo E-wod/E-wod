@@ -6,7 +6,7 @@
 }
 img {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	scale: 1.0;
 	display: flex;
 }
@@ -312,8 +312,9 @@ li a {
 	background-color: transparent;
 	position: inherit;
     	align-all: center;
-	max-width: 100%;
-	justify-contents: space-around;
+	width: auto;
+	height: auto;
+	justify-contents: center;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -323,7 +324,6 @@ li a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: flex;
-	overflow: inherit;
 }
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
@@ -335,8 +335,8 @@ li a {
 	font-style: bold;
 	text-shadow: 2px 2px 4px #ffffff;
 	line-height: .9;
-/* 	width: auto; */
-/* 	height: auto; */
+	width: auto; 
+	height: auto;
 	position: inherit;
 	display: flex;
 /* 	margin-left: 0px;
