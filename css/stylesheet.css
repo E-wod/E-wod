@@ -311,8 +311,8 @@ li a {
 .landingContent{
 	background-color: transparent;
 	position: inherit;
-	width: 100%;
-	height: 100%;
+	width: auto;
+	height: auto;
 	max-width: 100%;
 	justify-contents: center;
 	margin-left: 0px;
