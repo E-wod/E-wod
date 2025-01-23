@@ -336,8 +336,9 @@ li a {
 	text-shadow: 2px 2px 4px #ffffff;
 	line-height: .9;
 	float: top;
-	width: 100%;
-	height: 100%;
+	width: auto;
+	height: auto;
+	display: flex;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
