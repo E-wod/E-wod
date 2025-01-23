@@ -456,7 +456,7 @@ li a {
 	display: flex;
 	align-all: center;
 	letter-spacing: 1.5px;
-	position: relative;
+	position: inherit;
 	font-color: #378dae;
 	overflow: hidden;
 	transition-timing-function: ease;
@@ -465,11 +465,9 @@ li a {
 /*Setting pre-animation attributes*/
 .btnBox a::before {
 	content: '';
-	position: relative;
+	position: inherit;
 	background: transparent;
 	border-radius: 8px;
-	top: 0;
-	left: 0;
 	width: 100%;
 	height: 0%;
 	z-index: -1;
@@ -530,7 +528,7 @@ li a {
 	display: flex;
 	justify-content: space-between;
 	border-radius: 50%;
-	position: relative;
+	position: inherit;
 	overflow: inherit;
 	width: 60px;
 	height: 60px;
@@ -550,7 +548,7 @@ li a {
 /*Setting pre-animation attributes*/
 .socLnk a::before {
 	content: '';
-	position: relative;
+	position: inherit;
 	background: transparent;
 	border-radius: 50%;
 	top: 0;
