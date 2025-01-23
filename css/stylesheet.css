@@ -335,18 +335,18 @@ li a {
 	font-style: bold;
 	text-shadow: 2px 2px 4px #ffffff;
 	line-height: .9;
-	width: auto;
-	height: auto;
+/* 	width: auto; */
+/* 	height: auto; */
 	position: inherit;
 	display: flex;
-	margin-left: 0px;
+/* 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 10px; */
 	animation-delay: 2s;
 	animation: h1Anim 2.5s ease forwards;
 	transition-timing-function: 2.5s ease ease-in-out; 
