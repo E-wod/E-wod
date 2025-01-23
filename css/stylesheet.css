@@ -603,6 +603,7 @@ li a {
 	height: 70%;
 	display: flex;
 	position: absolute;
+	float: center;
 	overflow: inherit;
 	z-index: -19;
 	overflow: hidden;
