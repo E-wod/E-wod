@@ -335,10 +335,12 @@ li a {
 	font-style: bold;
 	text-shadow: 2px 2px 4px #ffffff;
 	line-height: .9;
-	width: 100%; 
-	height: auto;
+	justify-contents: center;
 	position: inherit;
 	display: flex;
+	float: top;
+	width: auto;
+	height: auto;
 /* 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
