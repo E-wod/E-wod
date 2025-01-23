@@ -337,7 +337,6 @@ li a {
 	line-height: .9;
 	justify-contents: center;
 	position: inherit;
-	display: flex;
 	float: top;
 	width: auto;
 	height: auto;
