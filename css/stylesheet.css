@@ -662,10 +662,11 @@ li a {
 }
 .bkg {
 	background-color: transparent;
-	position: inherit;
+	position: relative;
 	display: flex;
-	width: 90%;
-	height: 90%;
+	width: 100%;
+	height: 100%;
+	max-height: auto;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
@@ -682,7 +683,7 @@ li a {
 }
 .obJects{
 	background-color: transparent;
-	position: absolute;
+	position: inherit;
 	justify-items: center;
 	width: 70%;
 	height: 70%;
