@@ -438,7 +438,8 @@ li a {
 	font-family:"Open Sans", "sans-serif";
 	display: flex;
 	letter-spacing: 1.5px;
-	font-color: #378dae;
+	font-color: #243b71;
+	border: 2px solid #ffffff;
 	display: flex;
 	text-decoration: none;
 	background: transparent;
@@ -457,7 +458,7 @@ li a {
 	align-all: center;
 	letter-spacing: 1.5px;
 	position: inherit;
-	font-color: #378dae;
+	font-color: #243b71;
 	overflow: hidden;
 	transition-timing-function: ease;
 	transition: .3s;
@@ -511,6 +512,11 @@ li a {
 	padding-bottom: 30px;
 	width: 100%;
 	height: 100%;
+	font-size: 40px;	
+	font-color: ##243b71;
+	font-family:"Open Sans", "sans-serif";	
+	border: 2px solid #ffffff;
+	border-radius: 50%;
 	background: transparent;
 	display: flex;
 	text-decoration: none;
@@ -523,11 +529,12 @@ li a {
 .socLnk a {
 	align-all: center;
 	font-size: 40px;	
-	font-color: #378dae;
+	font-color: ##243b71;
 	font-family:"Open Sans", "sans-serif";
 	display: flex;
 	justify-content: space-between;
 	border-radius: 50%;
+	border: 2px solid #ffffff;
 	position: inherit;
 	overflow: inherit;
 	width: 60px;
@@ -551,6 +558,7 @@ li a {
 	position: inherit;
 	background: transparent;
 	border-radius: 50%;
+	border: 2px solid #ffffff;
 	top: 0;
 	left: 0;
 	width: 100%;
