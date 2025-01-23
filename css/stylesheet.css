@@ -38,7 +38,7 @@ html {
 	height: 100%;
 	display: flex;
  	background: #243b71;
-        position: sticky; 
+        position: absolute; 
 	overflow: inherit;
 	background-repeat: repeat;
 }
@@ -311,7 +311,6 @@ li a {
 	background-color: transparent;
 	position: inherit;
     	align-all: center;
-	float: top;
 	max-width: 100%;
 	justify-contents: space-around;
 	margin-left: 0px;
