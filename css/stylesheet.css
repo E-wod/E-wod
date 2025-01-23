@@ -452,7 +452,7 @@ li a {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	width: 300px;
-	height: auto;
+	height: 65px;
 	z-index: 15;
 	font-size: 20px;
 	font-family:"Open Sans", "sans-serif";
@@ -460,7 +460,7 @@ li a {
 	align-all: center;
 	letter-spacing: 1.5px;
 	position: relative;
-	font-color: #243b71;
+	font-color: #378dae;
 	overflow: hidden;
 	transition-timing-function: ease;
 	transition: .3s;
@@ -538,7 +538,7 @@ li a {
 	justify-content: space-between;
 	border-radius: 50%;
 	position: relative;
-	font-color: #243b71;
+	font-color: #378dae;
 	overflow: inherit;
 	width: 60px;
 	height: 60px;
@@ -560,33 +560,32 @@ li a {
 .socLnk a::before {
 	content: '';
 	position: relative;
+	background: transparent;
+	border-radius: 50%;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 0%;
-	z-index: 3;
-	transition: .3s;
-	border-radius: 50%;
+	z-index: -1;
 	transition-timing-function: ease; 
 }
 /*Animation element*/
 .socLnk a:hover::before {    
 	height: 100%;
-	background: linear-gradient(0deg,transparent 35%,#ffffff 240%);
 	border-radius: 50%;
 	transition: .3s;
-	z-index: 3;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 }
 /*Hover Function for Social Links*/
 .socLnk a:hover,
 .socLnk .active{
 	color: azure;
-	text-decoration: none;
-	box-shadow: 0 2px 7px azure;
-	overflow: hidden;
-	transition: .3s;
 	border: 2px solid #ffffff;
 	border-radius: 50%;
+	text-decoration: none;
+	box-shadow: 0 2px 7px azure;
+	transition: .3s;
+	overflow: hidden;
 	transition-timing-function: ease-out;
 }
 .beePic {
