@@ -41,6 +41,7 @@ html {
         position: absolute; 
 	overflow: inherit;
 	background-repeat: repeat;
+	text-decoration: none;
 }
 /*Body Attributes*/
 body {
@@ -328,14 +329,14 @@ li a {
 .landingContent h1{
 	font-size: 60px;
 	stagger: 3;
-	font-color: #ffffff;
+	font-color: azure;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: bold;
 	text-shadow: 2px 2px 4px #ffffff;
 	line-height: .9;
-	width: 40%;
-	height: 40%;
+	width: auto;
+	height: auto;
 	position: inherit;
 	display: flex;
 	margin-left: 0px;
@@ -358,8 +359,8 @@ li a {
 	font-style: bold;
 	text-shadow: 2px 2px 4px #ffffff;
 	line-height: .9;
-	width: 40%;
-	height: 40%;
+	width: auto;
+	height: auto;
 	max-width: 100%;
 	position: inherit;
 	display: flex;
@@ -384,8 +385,8 @@ li a {
 	font-style: bold;
 	text-shadow: 2px 2px 4px #ffffff;
 	line-height: .9;
-	width: 40%;
-	height: 40%;
+	width: auto;
+	height: auto;
 	max-width: 100%;
 	position: inherit;
 	display: flex;
