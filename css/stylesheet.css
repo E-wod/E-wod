@@ -311,7 +311,7 @@ li a {
 .landingContent{
 	background-color: transparent;
 	position: inherit;
-	width: 100%;
+	width: auto;
 	height: 100%;
 	max-width: auto;
 	float: top;
@@ -324,7 +324,7 @@ li a {
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	display: flex;
+	display: block;
 }
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
