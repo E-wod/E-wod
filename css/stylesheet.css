@@ -442,7 +442,7 @@ li a {
 }
 /*Question Box Anchor Tag Button layout and function*/
 .btnBox a {
-	background: #243b71;
+	background: transparent;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -460,7 +460,7 @@ li a {
 	align-all: center;
 	letter-spacing: 1.5px;
 	position: relative;
-	color: #ffffff;
+	font-color: #243b71;
 	overflow: hidden;
 	transition-timing-function: ease;
 	transition: .3s;
@@ -469,7 +469,7 @@ li a {
 .btnBox a::before {
 	content: '';
 	position: relative;
-	background: #243b71;
+	background: transparent;
 	border-radius: 8px;
 	top: 0;
 	left: 0;
@@ -538,11 +538,11 @@ li a {
 	justify-content: space-between;
 	border-radius: 50%;
 	position: relative;
-	color: #ffffff;
+	font-color: #243b71;
 	overflow: inherit;
 	width: 60px;
 	height: 60px;
-	background: #243b71;
+	background: transparent;
 	z-index: 15;
 	font-family:"Open Sans", "sans-serif";
 	transition: .3s;
