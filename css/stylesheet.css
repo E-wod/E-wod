@@ -125,7 +125,7 @@ a {
 	background: transparent;
  	display: flex-end;
  	position: inherit; 
-	justify-items: center;
+	justify-items: space-between;
  	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -312,7 +312,7 @@ li a {
 	background-color: transparent;
 	position: inherit;
     	align-all: center;
-	width: auto;
+	width: 100%;
 	height: auto;
 	justify-contents: center;
 	margin-left: 0px;
