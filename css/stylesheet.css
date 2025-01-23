@@ -311,9 +311,9 @@ li a {
 .landingContent{
 	background-color: transparent;
 	position: inherit;
-    	align-all: center;
 	width: 100%;
 	height: auto;
+	max-width: 100%;
 	justify-contents: center;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -335,7 +335,7 @@ li a {
 	font-style: bold;
 	text-shadow: 2px 2px 4px #ffffff;
 	line-height: .9;
-	width: auto; 
+	width: 100%; 
 	height: auto;
 	position: inherit;
 	display: flex;
