@@ -672,7 +672,6 @@ li a {
 .bkg {
 	background-color: transparent;
 	position: inherit;
-	overflow: scroll;
 	display: flex;
 	width: 90%;
 	height: 90%;
@@ -705,13 +704,11 @@ li a {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	display: flex;
-	overflow: inherit;
 	z-index: 999;
 }
 .picFrame {
 	background-color: transparent;
 	position: inherit;
-	overflow: inherit;
 	float: center;
 	width: 100%;
 	height: auto;
