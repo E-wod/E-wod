@@ -160,6 +160,7 @@ body {
 	border-radius: 8px;
 	font-color: #243b71;
 	text-decoration: none;
+	display: flex;
 }
 /*Setting pre-animation attributes*/
 .navBar a::before {
@@ -168,6 +169,7 @@ body {
 	background: #243b71;
 	border-radius: 8px;
 	text-decoration: none;
+	display: flex;
 	width: 100%;
 	height: 0%;
 	z-index: -1;
@@ -181,6 +183,7 @@ body {
 	text-decoration: none;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	border-radius: 8px;
+	display: flex;
 }
 /*Hover Function*/
 .navBar a:hover,
@@ -189,6 +192,7 @@ body {
 	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
 	overflow: inherit;
+	display: flex;
 	transition: .6s;
 	animation-timing-function: ease-in-out;
 	border-radius: 8px;
@@ -228,6 +232,7 @@ body {
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	overflow: hide;
+	display: flex;
 	width: 100%;
 	height: 100%;
 	max-width: 100%;
@@ -236,10 +241,10 @@ body {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	border-radius: 8px;
 }
 .nav-link{
@@ -249,11 +254,13 @@ body {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	border-radius: 8px;
+	display: flex;
+	overflow: hide;
 }
 .hamburger {
     	display: none;
