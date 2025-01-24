@@ -468,8 +468,8 @@ li a {
 	display: flex;	
 	line-height: 1;
 	text-decoration: none;
-	width: 100%;
-	height: 100%;
+	width: 140px;
+	height: 50px;
 	z-index: 15;
 	justify-content: center;
 	position: inherit;
@@ -528,31 +528,31 @@ li a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	border-radius: 50%;
 	background: transparent;
+	font-color: #378dae;
 	width: 100%;
 	height: 100%;
 	display: flex;
-	font-color: #378dae;
-	text-decoration: none;
-	float: center;
+	line-height: 1;
+	justify-content: center;
 	animation: choiceAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 }
 /*Social Links Anchor Tag Button layout and function*/
 .socLnk a {
 	background: transparent;
-	display: flex;
-	font-color: #378dae;
+	display: flex;	
+	line-height: 1;
 	text-decoration: none;
+	font-color: #378dae;
 	width: 65px;
 	height: 65px;
 	z-index: 15;
-	float: center;
 	justify-content: center;
 	position: inherit;
 	border-radius: 50%;
@@ -591,8 +591,6 @@ li a {
 	border-radius: 50%;
 	width: 100%;
 	height: 0%;
-	font-color: #378dae;
-	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
 }
@@ -600,25 +598,25 @@ li a {
 .socLnk a:hover::before {    
 	width: 100%;
 	height: 100%;
-	font-color: #378dae;
+	font-color: azure;
+	border-radius: 50%;
 	text-decoration: none;
-	border-radius: 50%%;
 	transition: .3s;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 }
 /*Hover Function for Social Links*/
 .socLnk a:hover,
 .socLnk .active{
-	font-color: azure;
+	font-color: #ffffff;
 	border: 2px solid #ffffff;
 	border-radius: 50%;
 	box-shadow: 0 2px 7px azure;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	float: center;
+	position: inherit;
 	transition: .3s;
-	overflow: hidden;
-	transition-timing-function: ease-out;
 	width: 100%;
 	height: 100%;
+	transition-timing-function: ease-out;
 }
 .beePic {
  	background: transparent; 
