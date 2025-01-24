@@ -50,7 +50,7 @@ body {
 	height: 100%;
 	overflow: inherit;
 }
-a {
+/* a {
 	text-decoration: none;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -64,7 +64,7 @@ a {
 	width: auto;
 	height: auto;
 	scale: 1;
-}
+} */
 /*Header Attributes*/
 .header {
 	width: 100%;
@@ -438,17 +438,12 @@ li a {
 	padding-right: 30px;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	border-radius: 8px;
+	border-radius: 12px;
 	background: transparent;
 	width: 100%;
 	height: 100%;
 	display: flex;
-	font-size: 20px;
-	font-family:"Open Sans", "sans-serif";	
-	letter-spacing: 1.5px;	
-	font-color: #243b71;
 	text-decoration: none;
-	background: transparent;
 	animation: choiceAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 }
@@ -463,10 +458,9 @@ li a {
 	letter-spacing: 1.5px;	
 	font-color: #243b71;
 	text-decoration: none;
-/* 	display: flex; */
 	align-all: center;
 	position: inherit;
-	border-radius: 8px;
+	border-radius: 12px;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -485,10 +479,9 @@ li a {
 	position: inherit;
 	background: transparent;
 	text-decoration: none;
-	border-radius: 8px;
+	border-radius: 12px;
 	width: auto;
 	height: 0%;
-	display: flex;
 	z-index: -1;
 	transition-timing-function: ease; 
 }
@@ -497,9 +490,8 @@ li a {
 	width: 100%;
 	height: 100%;
 	font-color: azure;
-	border-radius: 8px;
+	border-radius: 12px;
 	text-decoration: none;
-	display: flex;
 	transition: .3s;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 }
@@ -507,14 +499,10 @@ li a {
 .btnBox a:hover,
 .btnBox .active{
 	font-color: azure;
-	font-size: 20px;
-	font-family:"Open Sans", "sans-serif";	
-	letter-spacing: 1.5px;	
 	text-decoration: none;
 	border: 2px solid #ffffff;
-	border-radius: 8px;
+	border-radius: 12px;
 	box-shadow: 0 2px 7px azure;
-/* 	display: flex; */
 	align-all: center;
 	position: inherit;
 	transition: .3s;
