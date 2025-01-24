@@ -458,7 +458,7 @@ li a {
 	font-size: 20px;
 	font-family:"Open Sans", "sans-serif";	
 	letter-spacing: 1.5px;	
-	font-color: #243b71;
+	font-color: #ffffff;
 	text-decoration: none;
 	width: 300px;
 	height: 65px;
@@ -519,15 +519,14 @@ li a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	border-radius: 12px;
 	background: transparent;
 	width: 100%;
 	height: 100%;
-	justify-content: center;
 	display: flex;
 	text-decoration: none;
 	animation: choiceAnim 1s ease forwards;
@@ -540,9 +539,9 @@ li a {
 	width: 60px;
 	height: 60px;
 	z-index: 15;
-	font-color: #243b71;
+	font-color: #ffffff;
 	text-decoration: none;
-	justify-content: center;
+	justify-content: space-between;
 	border-radius: 50%;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -598,7 +597,6 @@ li a {
 	box-shadow: 0 2px 7px azure;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	align-all: center;
-	position: inherit;
 	transition: .3s;
 	overflow: hidden;
 	transition-timing-function: ease-out;
