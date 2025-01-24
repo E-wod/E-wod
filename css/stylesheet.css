@@ -157,7 +157,8 @@ a {
 	background: transparent;
 	border-radius: 8px;
 	font-color: #243b71;
-	font-size: 25px;
+	font-size:calc((var(--h) / 3) * 2);
+	line-height: 1;
   	flex-grow: 1;
   	flex-shrink: 0;
   	flex-basis: auto;
