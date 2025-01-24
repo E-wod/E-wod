@@ -494,6 +494,7 @@ li a {
 	position: inherit;
 	background: transparent;
 	border-radius: 12px;
+	font-color: #378dae;
 	width: 100%;
 	height: 0%;
 	z-index: -1;
@@ -501,13 +502,22 @@ li a {
 }
 /*Question box Animation Element*/
 .btnBox a:hover::before {
+	font-color: #ffffff;
+	font-family: "sofachrome", sans-serif;
+	border: 2px solid #ffffff;
 	border-radius: 12px;
+	width: 100%;
+	height: 0%;
+	box-shadow: 0 2px 7px azure;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	text-decoration: none;
 	transition: .3s;
 }
 /*Question Box Hover Function*/
 .btnBox a:hover,
 .btnBox .active{
+	width: 100%;
+	height: 100%;
 	font-color: #ffffff;
 	font-family: "sofachrome", sans-serif;
 	border: 2px solid #ffffff;
@@ -578,6 +588,7 @@ li a {
 	position: inherit;
 	background: transparent;
 	border-radius: 50%;
+	font-color: #378dae;
 	width: 100%;
 	height: 0%;
 	z-index: -1;
@@ -585,13 +596,18 @@ li a {
 }
 /*Animation element*/
 .socLnk a:hover::before {    
+	font-color: #ffffff;
+	font-family: "sofachrome", sans-serif;
+	border: 2px solid #ffffff;
 	border-radius: 50%;
-	text-decoration: none;
-	transition: .3s;
+	width: 100%;
+	height: 0%;
 }
 /*Hover Function for Social Links*/
 .socLnk a:hover,
 .socLnk .active{
+	width: 100%;
+	height: 100%;
 	font-color: #ffffff;
 	font-family: "sofachrome", sans-serif;
 	border: 2px solid #ffffff;
