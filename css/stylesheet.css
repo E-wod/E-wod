@@ -462,7 +462,7 @@ li a {
 	letter-spacing: 1.5px;	
 	font-color: #243b71;
 	text-decoration: none;
-	display: flex;
+/* 	display: flex; */
 	align-all: center;
 	position: inherit;
 	border-radius: 8px;
@@ -485,7 +485,7 @@ li a {
 	background: transparent;
 	text-decoration: none;
 	border-radius: 8px;
-	width: 100%;
+	width: auto;
 	height: 0%;
 	display: flex;
 	z-index: -1;
@@ -513,7 +513,7 @@ li a {
 	border: 2px solid #ffffff;
 	border-radius: 8px;
 	box-shadow: 0 2px 7px azure;
-	display: flex;
+/* 	display: flex; */
 	align-all: center;
 	position: inherit;
 	transition: .3s;
