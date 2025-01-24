@@ -504,12 +504,10 @@ li a {
 .btnBox a:hover::before {
 	font-color: #ffffff;
 	font-family: "sofachrome", sans-serif;
-	border: 2px solid #ffffff;
 	border-radius: 12px;
-	width: 100%;
-	height: 0%;
+/* 	border: 2px solid #ffffff;
 	box-shadow: 0 2px 7px azure;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%); */
 	text-decoration: none;
 	transition: .3s;
 }
@@ -598,10 +596,12 @@ li a {
 .socLnk a:hover::before {    
 	font-color: #ffffff;
 	font-family: "sofachrome", sans-serif;
-	border: 2px solid #ffffff;
 	border-radius: 50%;
-	width: 100%;
-	height: 0%;
+/* 	border: 2px solid #ffffff;
+	box-shadow: 0 2px 7px azure;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%); */
+	text-decoration: none;
+	transition: .3s;
 }
 /*Hover Function for Social Links*/
 .socLnk a:hover,
