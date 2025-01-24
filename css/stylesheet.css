@@ -125,14 +125,13 @@ a {
 .navBar {
   	width: 100%;
 	height: 100%;
-	max-width: 100%;
-	max-height: 100%;
+	max-width: auto;
+	max-height: auto;
 	font-color: #243b71;
 	text-decoration: none;
 	background: transparent;
  	display: flex-end;
  	position: inherit; 
-	overflow: hidden;
 	justify-items: center;
  	margin-left: 0px;
 	margin-right: 0px;
@@ -149,8 +148,6 @@ a {
 }
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
-	max-width: 100%;
-	max-height: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -159,7 +156,6 @@ a {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	overflow: hidden;
 	background: transparent;
 	border-radius: 8px;
 	font-color: #243b71;
@@ -176,11 +172,8 @@ a {
 	border-radius: 8px;
 	text-decoration: none;
 	display: flex;
-	overflow: hidden;
 	width: 100%;
 	height: 0%;
-	max-width: 100%;
-	max-height: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -200,8 +193,6 @@ a {
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	border-radius: 8px;
 	display: flex;
-  	width: auto;
-	height: auto;
 	overflow: hidden;
 }
 /*Hover Function*/
@@ -218,10 +209,8 @@ a {
 	border-color: #ffffff;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	border: 2px;
-  	width: auto;
-	height: auto;
-	max-width: 100%;
-	max-height: 100%;
+  	width: 100%;
+	height: 100%;
 }
 .nav-menu {
 	background-color: transparent;
@@ -230,11 +219,11 @@ a {
 	height: 100%;
 	display: flex;
 	z-index: -3;
- 	justify-content: space-between; 
+ 	justify-content: space-around; 
+	float: center;
 	font-color: #243b71;
 	transition: .9s;
 	animation-timing-function: ease-in-out;
-	overflow: hidden;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -247,17 +236,14 @@ a {
 }
 .nav-item {
 	background-color: transparent;
- 	justify-content: space-around;
+ 	justify-content: center;
 	font-color: #243b71;
 	font-size: 25px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	overflow: hidden;
 	display: flex;
 	width: 100%;
 	height: 100%;
-	max-width: 100%;
-	max-height: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -281,7 +267,6 @@ a {
 	padding-bottom: 0px;
 	border-radius: 8px;
 	display: flex;
-	overflow: hidden;
 }
 .hamburger {
     	display: none;
@@ -712,9 +697,9 @@ li a {
 }
 .bkg {
 	background-color: transparent;
-	position: relative;
+	position: inherit;
 	display: flex;
-	width: auto;
+	width: 100%;
 	height: 100%;
 	max-height: auto;
    	margin-left: 0px;
@@ -725,9 +710,7 @@ li a {
 	padding-right: 10px;
 	padding-top: 10%;
 	padding-bottom: 10px;
-	top: 30px;
 	z-index: 1;
-	justify-items: center;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
@@ -735,8 +718,8 @@ li a {
 	background-color: transparent;
 	position: inherit;
 	justify-items: center;
-	width: auto;
-	height: 100%;
+	width: 100%;
+	height: auto;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
@@ -764,7 +747,7 @@ li a {
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	width: auto;
+	width: 100%;
 	max-width: 100%;
 	height: auto;
 	max-height: 100%;
@@ -775,7 +758,7 @@ li a {
 }
 .picFrame h1{
 	display: flex;
-	font-color: #243b71;
+	font-color: #ffffff;
 	font-size: 15px;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
@@ -790,9 +773,7 @@ li a {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: auto;
-	max-width: 100%;
 	height: auto;
-	max-height: 100%;
 	position: inherit;
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
@@ -800,7 +781,7 @@ li a {
 }
 .picFrame h3{
 	display: flex;
-	font-color: #243b71;
+	font-color: #ffffff;
 	font-size: 10px;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
@@ -815,12 +796,10 @@ li a {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: auto;
-	max-width: 100%;
 	height: auto;
-	max-height: 100%;
 	position: inherit;
 	background-color: transparent;
-	animation: h1Anim 1s ease forwards;
+	animation: h3Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 /*--------------------------------------------------------------JUMP TO TOP BUTTON------------------------------------------------------*/
