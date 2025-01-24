@@ -176,25 +176,20 @@ a {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	z-index: -1;
 	transition: .9s;
 	animation-timing-function: ease-in-out;
 }
 /*Animation Element*/
 .navBar a:hover::before {
-	font-color: #ffffff;
 	text-decoration: none;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	border-radius: 8px;
-	display: flex;
-	overflow: hidden;
 }
 /*Hover Function*/
 .navBar a:hover,
 .navBar .active{
 	font-color: #ffffff;
 	text-decoration: none;
-	overflow: hidden;
 	transition: .6s;
 	animation-timing-function: ease-in-out;
 	border-radius: 8px;
@@ -210,10 +205,6 @@ a {
 	text-decoration: none;
 	width: 100%;
 	height: 100%;
-	display: flex;
-	z-index: -3;
- 	justify-content: space-around; 
-	float: center;
 	transition: .9s;
 	animation-timing-function: ease-in-out;
 	margin-left: 0px;
@@ -228,9 +219,9 @@ a {
 }
 .nav-item {
 	background-color: transparent;
- 	justify-content: center;
 	width: 100%;
 	height: 100%;
+	text-decoration: none;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -243,6 +234,8 @@ a {
 }
 .nav-link{
 	background-color: transparent;
+	width: 100%;
+	height: 100%;
 	text-decoration: none;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -253,7 +246,6 @@ a {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	border-radius: 8px;
-	display: flex;
 }
 .hamburger {
     	display: none;
