@@ -460,6 +460,7 @@ li a {
 	justify-content: center;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
+	text-decoration: none;
 }
 /*Question Box Anchor Tag Button layout and function*/
 .btnBox a {
@@ -468,11 +469,11 @@ li a {
 	font-size: 20px;
 	font-color: #378dae;
 	font-family: "sofachrome", sans-serif;
+	text-decoration: none;
 	width: 140px;
 	height: 50px;
 	z-index: 15;
 	justify-content: center;
-	position: inherit;
 	border-radius: 12px;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -491,6 +492,7 @@ li a {
 	background: transparent;
 	border-radius: 12px;
 	font-color: #378dae;
+	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
 }
@@ -499,12 +501,14 @@ li a {
 	font-color: #ffffff;
 	border-radius: 12px;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	text-decoration: none;
 	transition: .3s;
 }
 /*Question Box Hover Function*/
 .btnBox a:hover,
 .btnBox .active{
 	font-color: #ffffff;
+	text-decoration: none;
 	border: 2px solid #ffffff;
 	border-radius: 12px;
 	box-shadow: 0 2px 7px azure;
@@ -532,6 +536,7 @@ li a {
 	justify-content: center;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
+	text-decoration: none;
 }
 /*Social Links Anchor Tag Button layout and function*/
 .socLnk a {
@@ -540,11 +545,11 @@ li a {
 	font-size: 20px;
 	font-color: #378dae;
 	font-family: "sofachrome", sans-serif;
+	text-decoration: none;
 	width: 90px;
 	height: 90px;
 	z-index: 15;
 	justify-content: space-around;
-	position: inherit;
 	border-radius: 50%;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -561,13 +566,15 @@ li a {
 .socLnk a:nth-child(1 2 3) {
 	background: transparent;
 	border-radius: 50%;
+	text-decoration: none;
 }
 /*Setting pre-animation attributes*/
 .socLnk a::before {
 	content: '';
 	background: transparent;
-	border-radius: 12px;
+	border-radius: 50%;
 	font-color: #378dae;
+	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
 }
@@ -576,12 +583,14 @@ li a {
 	font-color: #ffffff;
 	border-radius: 50%;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	text-decoration: none;
 	transition: .3s;
 }
 /*Hover Function for Social Links*/
 .socLnk a:hover,
 .socLnk .active{
 	font-color: #ffffff;
+	text-decoration: none;
 	border: 2px solid #ffffff;
 	border-radius: 50%;
 	box-shadow: 0 2px 7px azure;
