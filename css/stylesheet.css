@@ -63,6 +63,8 @@ a {
 	z-index: 0;
 	width: 100%;
 	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 	scale: 1;
 }
 /*Header Attributes*/
@@ -95,7 +97,8 @@ a {
 	height: 100%;
 	max-width: 140px;
 	max-height: 140px;
-	justify-content: center;
+	justify-self: center;
+	justify-items: center;
 	text-decoration: none;
 	display: flex-start;
 	position: inherit;
@@ -123,6 +126,8 @@ a {
 }
 /*Nav Bar Attributes*/
 .navBar {
+	top: 50%;
+	bottom: 50%;
   	width: 100%;
 	height: 100%;
 	background: transparent;
@@ -148,9 +153,9 @@ a {
 .navBar a {
 	top: 50%;
 	bottom: 50%;
-  	width: auto;
+  	width: 100%;
 	height: auto;
-	max-width: 100%;
+	max-height: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -207,8 +212,6 @@ a {
 	border: 2px solid #ffffff;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	box-shadow: 0 2px 7px azure;
-  	width: 100%;
-	height: 100%;
 }
 .nav-menu {
 	background-color: transparent;
@@ -234,8 +237,8 @@ a {
 	justify-self: center;
 	justify-content: center;
 	background-color: transparent;
-	width: 100%;
-	height: 100%;
+/* 	width: 100%;
+	height: 100%; */
 	text-decoration: none;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -249,8 +252,10 @@ a {
 }
 .nav-link{
 	background-color: transparent;
-	width: 100%;
-	height: 100%;
+	justify-self: center;
+	justify-content: center;
+/* 	width: 100%;
+	height: 100%; */
 	text-decoration: none;
 	margin-left: 0px;
 	margin-right: 0px;
