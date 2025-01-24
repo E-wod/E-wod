@@ -468,7 +468,6 @@ li a {
 	font-size: 20px;
 	font-color: #378dae;
 	font-family: "sofachrome", sans-serif;
-	text-decoration: none;
 	width: 140px;
 	height: 50px;
 	z-index: 15;
@@ -500,7 +499,6 @@ li a {
 	font-color: #ffffff;
 	border-radius: 12px;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	text-decoration: none;
 	transition: .3s;
 }
 /*Question Box Hover Function*/
@@ -542,11 +540,10 @@ li a {
 	font-size: 20px;
 	font-color: #378dae;
 	font-family: "sofachrome", sans-serif;
-	text-decoration: none;
 	width: 90px;
 	height: 90px;
 	z-index: 15;
-	justify-content: center;
+	justify-content: space-around;
 	position: inherit;
 	border-radius: 50%;
 	margin-left: 0px;
@@ -563,7 +560,6 @@ li a {
 /*Setting the attributes for each button*/
 .socLnk a:nth-child(1 2 3) {
 	background: transparent;
-	text-decoration: none;
 	border-radius: 50%;
 }
 /*Setting pre-animation attributes*/
@@ -580,7 +576,6 @@ li a {
 	font-color: #ffffff;
 	border-radius: 50%;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	text-decoration: none;
 	transition: .3s;
 }
 /*Hover Function for Social Links*/
