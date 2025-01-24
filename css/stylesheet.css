@@ -139,6 +139,7 @@ a {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	border-radius: 8px;
+	font-color: #243b71;
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
@@ -156,7 +157,7 @@ a {
 	background: transparent;
 	border-radius: 8px;
 	font-color: #243b71;
-	font-size: 25px;
+	font-size: auto;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	display: flex;
@@ -185,6 +186,7 @@ a {
 /*Animation Element*/
 .navBar a:hover::before {
 	text-decoration: none;
+	font-color: #ffffff;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	border-radius: 8px;
 }
