@@ -443,6 +443,10 @@ li a {
 	width: 100%;
 	height: 100%;
 	display: flex;
+	font-size: 20px;
+	font-family:"Open Sans", "sans-serif";	
+	letter-spacing: 1.5px;	
+	font-color: #243b71;
 	text-decoration: none;
 	background: transparent;
 	animation: choiceAnim 1s ease forwards;
@@ -455,13 +459,13 @@ li a {
 	height: 65px;
 	z-index: 15;
 	font-size: 20px;
-	font-family:"Open Sans", "sans-serif";
-	display: flex;
-	align-all: center;
-	letter-spacing: 1.5px;
-	position: inherit;
+	font-family:"Open Sans", "sans-serif";	
+	letter-spacing: 1.5px;	
 	font-color: #243b71;
 	text-decoration: none;
+	display: flex;
+	align-all: center;
+	position: inherit;
 	border-radius: 8px;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -503,16 +507,16 @@ li a {
 .btnBox a:hover,
 .btnBox .active{
 	font-color: azure;
+	font-size: 20px;
+	font-family:"Open Sans", "sans-serif";	
+	letter-spacing: 1.5px;	
+	text-decoration: none;
 	border: 2px solid #ffffff;
 	border-radius: 8px;
-	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
-	font-family:"Open Sans", "sans-serif";
 	display: flex;
 	align-all: center;
-	letter-spacing: 1.5px;
 	position: inherit;
-	font-color: #243b71;
 	transition: .3s;
 	overflow: hidden;
 	transition-timing-function: ease-out;
@@ -535,6 +539,10 @@ li a {
 	width: 100%;
 	height: 100%;
 	display: flex;
+	font-size: 20px;
+	font-family:"Open Sans", "sans-serif";	
+	letter-spacing: 1.5px;	
+	font-color: #243b71;
 	text-decoration: none;
 	background: transparent;
 	animation: choiceAnim 1s ease forwards;
@@ -543,17 +551,17 @@ li a {
 /*Social Links Anchor Tag Button layout and function*/
 .socLnk a {
 	background: transparent;
-	width: 300px;
-	height: 65px;
+	width: 60px;
+	height: 60px;
 	z-index: 15;
 	font-size: 20px;
-	font-family:"Open Sans", "sans-serif";
-	display: flex;
-	align-all: center;
-	letter-spacing: 1.5px;
-	position: inherit;
+	font-family:"Open Sans", "sans-serif";	
+	letter-spacing: 1.5px;	
 	font-color: #243b71;
 	text-decoration: none;
+	display: flex;
+	align-all: center;
+	position: inherit;
 	border-radius: 50%;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -598,16 +606,16 @@ li a {
 .socLnk a:hover,
 .socLnk .active{
 	font-color: azure;
+	font-size: 20px;
+	font-family:"Open Sans", "sans-serif";	
+	letter-spacing: 1.5px;	
+	text-decoration: none;
 	border: 2px solid #ffffff;
 	border-radius: 50%;
-	text-decoration: none;
 	box-shadow: 0 2px 7px azure;
-	font-family:"Open Sans", "sans-serif";
 	display: flex;
 	align-all: center;
-	letter-spacing: 1.5px;
 	position: inherit;
-	font-color: #243b71;
 	transition: .3s;
 	overflow: hidden;
 	transition-timing-function: ease-out;
