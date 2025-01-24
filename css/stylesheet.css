@@ -63,6 +63,7 @@ a {
 	z-index: 0;
 	width: auto;
 	height: auto;
+	scale: 1;
 }
 /*Header Attributes*/
 .header {
