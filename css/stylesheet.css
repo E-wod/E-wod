@@ -157,7 +157,10 @@ a {
 	background: transparent;
 	border-radius: 8px;
 	font-color: #243b71;
-	font-size: auto;
+	font-size: 25px;
+  	flex-grow: 1;
+  	flex-shrink: 0;
+  	flex-basis: auto;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	display: flex;
