@@ -202,6 +202,7 @@ a {
 }
 .nav-menu {
 	background-color: transparent;
+	justify-content: space-between; 
 	text-decoration: none;
 	width: 100%;
 	height: 100%;
@@ -218,6 +219,7 @@ a {
 	border-radius: 8px;
 }
 .nav-item {
+	justify-content: center;
 	background-color: transparent;
 	width: 100%;
 	height: 100%;
@@ -270,43 +272,42 @@ ul {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	text-decoration: none;
 	display: flex;
 	flex-direction: right;
 }
 li {
 	float: center;
-	width: auto;
-	height: auto;
+	width: 100%;
+	height: 100%;
 	list-style: none;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	display: flex; 
-	justify-content: space-between; 
+	justify-content: center; 
 }
 li a {
-	justify-content: space-between;
 	display: flex;
-	width: auto;
-	height: auto;
+	width: 100%;
+	height: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 /*Setting the content format for landing page */
 .landingContent{
