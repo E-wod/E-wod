@@ -144,7 +144,7 @@ a {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	border-radius: 8px;
-	font-color: #243b71;
+	font-color: #378dae;
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
@@ -166,7 +166,7 @@ a {
 	padding-bottom: 5px;
 	background: transparent;
 	border-radius: 8px;
-	font-color: #243b71;
+	font-color: #378dae;
 	text-size: 20px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -190,6 +190,7 @@ a {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
+	font-color: #ffffff;
 	transition: .9s;
 	animation-timing-function: ease-in-out;
 }
@@ -218,6 +219,7 @@ a {
 	justify-items: space-between;
 	justify-self: center;
 	text-decoration: none;
+	font-color: #378dae;
 	width: 100%;
 	height: auto;
 	max-height: 100%
@@ -234,11 +236,10 @@ a {
 	border-radius: 8px;
 }
 .nav-item {
+	font-color: #378dae;
 	justify-self: center;
 	justify-content: center;
 	background-color: transparent;
-/* 	width: 100%;
-	height: 100%; */
 	text-decoration: none;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -254,8 +255,6 @@ a {
 	background-color: transparent;
 	justify-self: center;
 	justify-content: center;
-/* 	width: 100%;
-	height: 100%; */
 	text-decoration: none;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -350,7 +349,7 @@ li a {
 .landingContent h1{
 	font-size: 60px;
 	stagger: 3;
-	font-color: azure;
+	font-color: #378dae;
 	font-family: "sofachrome", sans-serif;
 	font-weight: 100;
 	font-style: bold;
@@ -374,7 +373,7 @@ li a {
 }
 .landingContent h3{
 	font-size: 43px;
-	font-color: #ffffff;
+	font-color: #378dae;
 	font-family: Lobster, 'Kristen ITC', Script;
 	font-weight: 100;
 	font-style: bold;
@@ -400,7 +399,7 @@ li a {
 /*Setting the landing page template for paragraph*/
 .landingContent p{
 	font-size: 30px;
-	font-color: #ffffff;
+	font-color: #378dae;
 	font-family: Lobster, 'Kristen ITC', Script;
 	font-weight: 100;
 	font-style: bold;
@@ -458,6 +457,7 @@ li a {
 	width: 100%;
 	height: 100%;
 	display: flex;
+	line-height: 1;
 	justify-content: center;
 	animation: choiceAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
@@ -465,14 +465,11 @@ li a {
 /*Question Box Anchor Tag Button layout and function*/
 .btnBox a {
 	background: transparent;
-	display: flex;
-	font-size: 20px;	
+	display: flex;	
 	line-height: 1;
 	text-decoration: none;
-	width: auto;
-	height: auto;
-	max-width: 100%;
-	max-height: 100%;
+	width: 100%;
+	height: 100%;
 	z-index: 15;
 	justify-content: center;
 	position: inherit;
@@ -501,7 +498,6 @@ li a {
 }
 /*Question box Animation Element*/
 .btnBox a:hover::before {
-	max-width: 100%;
 	width: 100%;
 	height: 100%;
 	font-color: azure;
@@ -540,9 +536,8 @@ li a {
 	background: transparent;
 	width: 100%;
 	height: 100%;
-	max-height: auto;
 	display: flex;
-	font-color: #ffffff;
+	font-color: #378dae;
 	text-decoration: none;
 	float: center;
 	animation: choiceAnim 1s ease forwards;
@@ -552,11 +547,12 @@ li a {
 .socLnk a {
 	background: transparent;
 	display: flex;
-	font-color: #ffffff;
+	font-color: #378dae;
 	text-decoration: none;
-	width: 100%;
-	height: 100%;
+	width: 65px;
+	height: 65px;
 	z-index: 15;
+	float: center;
 	justify-content: center;
 	position: inherit;
 	border-radius: 50%;
@@ -595,7 +591,8 @@ li a {
 	border-radius: 50%;
 	width: 100%;
 	height: 0%;
-	max-width: auto;
+	font-color: #378dae;
+	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
 }
@@ -603,11 +600,9 @@ li a {
 .socLnk a:hover::before {    
 	width: 100%;
 	height: 100%;
-	max-width: auto;
-	max-height: auto;
-	font-color: azure;
-	border-radius: 50%%;
+	font-color: #378dae;
 	text-decoration: none;
+	border-radius: 50%%;
 	transition: .3s;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 }
@@ -734,12 +729,7 @@ li a {
 }
 .picFrame {
 	display: flex;
-	font-color: #243b71;
-	font-size: 25px;
 	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
-	text-shadow: 1px 0px 1px #000000;
-	line-height: .9;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -749,9 +739,7 @@ li a {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 100%;
-	max-width: 100%;
 	height: auto;
-	max-height: 100%;
 	position: inherit;
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
@@ -759,7 +747,7 @@ li a {
 }
 .picFrame h1{
 	display: flex;
-	font-color: #ffffff;
+	font-color: #378dae;
 	font-size: 15px;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
@@ -773,8 +761,8 @@ li a {
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	width: auto;
-	height: auto;
+	width: 100%;
+	height: 100%;
 	position: inherit;
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
@@ -782,7 +770,7 @@ li a {
 }
 .picFrame h3{
 	display: flex;
-	font-color: #ffffff;
+	font-color: #378dae;
 	font-size: 10px;
 	text-decoration: none;
 	font-family: Helvetica, Arial, sans-serif;
@@ -796,11 +784,11 @@ li a {
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	width: auto;
-	height: auto;
+	width: 100%;
+	height: 100%;
 	position: inherit;
 	background-color: transparent;
-	animation: h3Anim 1s ease forwards;
+	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 /*--------------------------------------------------------------JUMP TO TOP BUTTON------------------------------------------------------*/
