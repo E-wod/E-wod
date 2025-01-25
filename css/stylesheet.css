@@ -124,8 +124,6 @@ a {
 }
 /*Nav Bar Attributes*/
 .navBar {
-	top: 50%;
-	bottom: 50%;
   	width: 100%;
 	height: 100%;
 	background: transparent;
@@ -330,7 +328,7 @@ li a {
 	width: 100%;
 	height: 100%;
 	max-height: auto;
-	justify-items: center;
+	justify-contents: center;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -450,6 +448,7 @@ li a {
 	justify-content: center;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
+	font-color: #378dae;
 	text-decoration: none;
 }
 /*Question Box Anchor Tag Button layout and function*/
@@ -485,6 +484,8 @@ li a {
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
+	width: 140px;
+	height: 50px;
 }
 /*Question box Animation Element*/
 .btnBox a:hover::before {
@@ -493,6 +494,8 @@ li a {
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	text-decoration: none;
 	transition: .3s;
+	width: 140px;
+	height: 50px;
 }
 /*Question Box Hover Function*/
 .btnBox a:hover,
@@ -505,6 +508,8 @@ li a {
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	transition: .3s;
 	transition-timing-function: ease-out;
+	width: 140px;
+	height: 50px;
 }
 /*Setting the alignment and template for Social links*/
 .socLnk {
@@ -527,17 +532,18 @@ li a {
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	text-decoration: none;
+	font-color: #378dae;
 }
 /*Social Links Anchor Tag Button layout and function*/
 .socLnk a {
+	width: 90px;
+	height: 90px;
 	background: transparent;
 	display: flex;	
 	font-size: 20px;
 	font-color: #378dae;
 	font-family: "sofachrome", sans-serif;
 	text-decoration: none;
-	width: 90px;
-	height: 90px;
 	z-index: 15;
 	justify-content: space-around;
 	border-radius: 50%;
@@ -557,6 +563,8 @@ li a {
 	background: transparent;
 	border-radius: 50%;
 	text-decoration: none;
+	width: 90px;
+	height: 90px;
 }
 /*Setting pre-animation attributes*/
 .socLnk a::before {
@@ -567,6 +575,8 @@ li a {
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
+	width: 90px;
+	height: 90px;
 }
 /*Animation element*/
 .socLnk a:hover::before {    
@@ -575,6 +585,8 @@ li a {
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	text-decoration: none;
 	transition: .3s;
+	width: 90px;
+	height: 90px;
 }
 /*Hover Function for Social Links*/
 .socLnk a:hover,
@@ -587,6 +599,8 @@ li a {
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	transition: .3s;
 	transition-timing-function: ease-out;
+	width: 90px;
+	height: 90px;
 }
 .beePic {
  	background: transparent; 
