@@ -212,7 +212,7 @@ a {
 }
 .nav-menu {
 	background-color: transparent;
-	justify-items: space-between;
+	float: center;
 	justify-self: center;
 	text-decoration: none;
 	font-color: #378dae;
