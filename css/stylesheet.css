@@ -486,7 +486,7 @@ li a {
 .btnBox a:hover::before {
 	color: #ffffff;
 	border-radius: 12px;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+/* 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%); */
 	text-decoration: none;
 	transition: .6s;
 	width: 180px;
@@ -532,8 +532,8 @@ li a {
 }
 /*Social Links Anchor Tag Button layout and function*/
 .socLnk a {
-	width: 150px;
-	height: 150px;
+	width: 90px;
+	height: 90px;
 	justify-content: space-between;
 	float: center;
 	background: transparent;
@@ -560,8 +560,8 @@ li a {
 	background: transparent;
 	border-radius: 50%;
 	text-decoration: none;
-	width: 150px;
-	height: 150px;
+	width: 90px;
+	height: 90px;
 }
 /*Setting pre-animation attributes*/
 .socLnk a::before {
@@ -572,17 +572,17 @@ li a {
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
-	width: 150px;
+	width: 90px;
 	height: 0px;
 }
 /*Animation element*/
 .socLnk a:hover::before {    
 	color: #ffffff;
 	border-radius: 50%;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+/* 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%); */
 	text-decoration: none;
 	transition: .6s;
-	width: 150px;
+	width: 90px;
 	height: 0px;
 }
 /*Hover Function for Social Links*/
@@ -596,8 +596,8 @@ li a {
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	transition: .6s;
 	transition-timing-function: ease-out;
-	width: 150px;
-	height: 150px;
+	width: 90px;
+	height: 90px;
 }
 .beePic {
  	background: transparent; 
