@@ -78,8 +78,8 @@ i {
 	padding-bottom: 5px;
 	z-index: 0;
 	float: center;
-	width: 100%;
-	height: 100%;
+	width: 90px;
+	height: 90px;
 	scale: 1;
 }
 /*Header Attributes*/
@@ -548,8 +548,8 @@ li a {
 }
 /*Social Links Anchor Tag Button layout and function*/
 .socLnk a {
-	width: 90px;
-	height: 90px;
+	width: 100%;
+	height: 100%;
 	justify-content: space-between;
 	float: center;
 	background: transparent;
