@@ -129,7 +129,7 @@ a {
 	background: transparent;
  	display: flex-end;
  	position: inherit; 
-	justify-self: center;
+	float: center;
 	justify-items: space-between;
  	margin-left: 0px;
 	margin-right: 0px;
@@ -140,7 +140,7 @@ a {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	border-radius: 8px;
-	font-color: #378dae;
+	color: #378dae;
 	animation: choiceAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in-out;
@@ -162,8 +162,8 @@ a {
 	padding-bottom: 5px;
 	background: transparent;
 	border-radius: 8px;
-	font-color: #378dae;
-	text-size: 20px;
+	color: #378dae;
+	text-size: 25px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	display: flex;
@@ -186,21 +186,21 @@ a {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	font-color: #ffffff;
+	color: #ffffff;
 	transition: .9s;
 	animation-timing-function: ease-in-out;
 }
 /*Animation Element*/
 .navBar a:hover::before {
 	text-decoration: none;
-	font-color: #ffffff;
+	color: #ffffff;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	border-radius: 8px;
 }
 /*Hover Function*/
 .navBar a:hover,
 .navBar .active{
-	font-color: #ffffff;
+	color: #ffffff;
 	text-decoration: none;
 	transition: .6s;
 	animation-timing-function: ease-in-out;
@@ -215,7 +215,7 @@ a {
 	float: center;
 	justify-self: center;
 	text-decoration: none;
-	font-color: #378dae;
+	color: #378dae;
 	width: 100%;
 	height: auto;
 	max-height: 100%
@@ -232,7 +232,7 @@ a {
 	border-radius: 8px;
 }
 .nav-item {
-	font-color: #378dae;
+	color: #378dae;
 	justify-self: center;
 	justify-content: center;
 	background-color: transparent;
