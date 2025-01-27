@@ -136,10 +136,10 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border-radius: 8px;
 	color: #378dae;
 	animation: choiceAnim 2s ease forwards;
@@ -157,10 +157,10 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	background: transparent;
 	border-radius: 8px;
 	color: #378dae;
@@ -188,7 +188,7 @@ a {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	color: #ffffff;
-	transition: .9s;
+	transition: .6s;
 	animation-timing-function: ease-in-out;
 }
 /*Animation Element*/
@@ -221,16 +221,16 @@ a {
 	height: auto;
 	max-height: 100%
 	max-width: 100%
-	transition: .9s;
+	transition: .6s;
 	animation-timing-function: ease-in-out;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border-radius: 8px;
 }
 .nav-item {
@@ -243,10 +243,10 @@ a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	border-radius: 8px;
 }
 .nav-link{
@@ -448,6 +448,7 @@ li a {
 	height: 100%;
 	display: flex;
 	justify-content: center;
+	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	color: #378dae;
@@ -475,7 +476,7 @@ li a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	transition-timing-function: ease;
-	transition: .3s;
+	transition: .6s;
 }
 /*Setting pre-animation attributes*/
 .btnBox a::before {
@@ -487,7 +488,7 @@ li a {
 	z-index: -1;
 	transition-timing-function: ease; 
 	width: 140px;
-	height: 50px;
+	height: 0px;
 }
 /*Question box Animation Element*/
 .btnBox a:hover::before {
@@ -495,9 +496,9 @@ li a {
 	border-radius: 12px;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	text-decoration: none;
-	transition: .3s;
+	transition: .6s;
 	width: 140px;
-	height: 50px;
+	height: 0px;
 }
 /*Question Box Hover Function*/
 .btnBox a:hover,
@@ -511,7 +512,7 @@ li a {
 	transition: .3s;
 	transition-timing-function: ease-out;
 	width: 140px;
-	height: 140px;
+	height: 50px;
 }
 /*Setting the alignment and template for Social links*/
 .socLnk {
@@ -531,6 +532,7 @@ li a {
 	height: 100%;
 	display: flex;
 	justify-content: center;
+	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	text-decoration: none;
@@ -541,6 +543,7 @@ li a {
 	width: 90px;
 	height: 90px;
 	justify-content: space-between;
+	float: center;
 	background: transparent;
 	display: flex;	
 	font-size: 25px;
@@ -553,12 +556,12 @@ li a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	transition-timing-function: ease;
-	transition: .3s;
+	transition: .6s;
 }
 /*Setting the attributes for each button*/
 .socLnk a:nth-child(1 2 3) {
@@ -586,7 +589,7 @@ li a {
 	border-radius: 50%;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	text-decoration: none;
-	transition: .3s;
+	transition: .6s;
 	width: 90px;
 	height: 0px;
 }
@@ -599,7 +602,7 @@ li a {
 	border-radius: 50%;
 	box-shadow: 0 2px 7px azure;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	transition: .3s;
+	transition: .6s;
 	transition-timing-function: ease-out;
 	width: 90px;
 	height: 90px;
