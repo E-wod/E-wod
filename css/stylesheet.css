@@ -124,14 +124,13 @@ a {
 }
 /*Nav Bar Attributes*/
 .navBar {
-	top: 50%;
-	bottom: 50%;
   	width: 100%;
 	height: 100%;
 	background: transparent;
  	display: flex-end;
  	position: inherit; 
-	float: center;
+	float: right;
+	justify-self: center;
 	justify-items: space-between;
  	margin-left: 0px;
 	margin-right: 0px;
@@ -451,15 +450,15 @@ li a {
 	justify-content: center;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-	font-color: #378dae;
+	color: #378dae;
 	text-decoration: none;
 }
 /*Question Box Anchor Tag Button layout and function*/
 .btnBox a {
 	background: transparent;
 	display: flex;	
-	font-size: 20px;
-	font-color: #378dae;
+	font-size: 25px;
+	color: #378dae;
 	font-family: "sofachrome", sans-serif;
 	text-decoration: none;
 	width: 140px;
@@ -471,10 +470,10 @@ li a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	transition-timing-function: ease;
 	transition: .3s;
 }
@@ -483,7 +482,7 @@ li a {
 	content: '';
 	background: transparent;
 	border-radius: 12px;
-	font-color: #378dae;
+	color: #378dae;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
@@ -492,7 +491,7 @@ li a {
 }
 /*Question box Animation Element*/
 .btnBox a:hover::before {
-	font-color: #ffffff;
+	color: #ffffff;
 	border-radius: 12px;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	text-decoration: none;
@@ -503,7 +502,7 @@ li a {
 /*Question Box Hover Function*/
 .btnBox a:hover,
 .btnBox .active{
-	font-color: #ffffff;
+	color: #ffffff;
 	text-decoration: none;
 	border: 2px solid #ffffff;
 	border-radius: 12px;
@@ -512,7 +511,7 @@ li a {
 	transition: .3s;
 	transition-timing-function: ease-out;
 	width: 140px;
-	height: 50px;
+	height: 140px;
 }
 /*Setting the alignment and template for Social links*/
 .socLnk {
@@ -535,7 +534,7 @@ li a {
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	text-decoration: none;
-	font-color: #378dae;
+	color: #378dae;
 }
 /*Social Links Anchor Tag Button layout and function*/
 .socLnk a {
@@ -544,8 +543,8 @@ li a {
 	justify-content: space-between;
 	background: transparent;
 	display: flex;	
-	font-size: 20px;
-	font-color: #378dae;
+	font-size: 25px;
+	color: #378dae;
 	font-family: "sofachrome", sans-serif;
 	text-decoration: none;
 	z-index: 15;
@@ -574,27 +573,27 @@ li a {
 	content: '';
 	background: transparent;
 	border-radius: 50%;
-	font-color: #378dae;
+	color: #378dae;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
 	width: 90px;
-	height: 90px;
+	height: 0px;
 }
 /*Animation element*/
 .socLnk a:hover::before {    
-	font-color: #ffffff;
+	color: #ffffff;
 	border-radius: 50%;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	text-decoration: none;
 	transition: .3s;
 	width: 90px;
-	height: 90px;
+	height: 0px;
 }
 /*Hover Function for Social Links*/
 .socLnk a:hover,
 .socLnk .active{
-	font-color: #ffffff;
+	color: #ffffff;
 	text-decoration: none;
 	border: 2px solid #ffffff;
 	border-radius: 50%;
