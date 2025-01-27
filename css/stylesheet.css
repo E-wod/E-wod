@@ -78,8 +78,8 @@ i {
 	padding-bottom: 5px;
 	z-index: 0;
 	float: center;
-	width: 100%;
-	height: 100%;
+	width: 90px;
+	height: 90px;
 	scale: 1;
 }
 /*Header Attributes*/
@@ -536,8 +536,8 @@ li a {
 	padding-bottom: 15px;
 	border-radius: 50%;
 	background: transparent;
-	width: 100%;
-	height: 100%;
+	width: 110px;
+	height: 110px;
 	display: flex;
 	justify-content: space-between;
 	float: center;
