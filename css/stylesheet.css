@@ -235,10 +235,10 @@ i {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border-radius: 8px;
 }
 .nav-item {
@@ -539,7 +539,7 @@ li a {
 	width: 100%;
 	height: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
