@@ -253,9 +253,6 @@ i {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	border-radius: 8px;
-	animation: choiceAnim 2s ease forwards;
-	animation-delay: calc(.125s * var(--i)); 
-	animation-timing-function: ease-in-out;
 }
 .nav-link{
 	background-color: transparent;
@@ -271,6 +268,9 @@ i {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	border-radius: 8px;
+	animation: choiceAnim 2s ease forwards;
+	animation-delay: calc(.125s * var(--i)); 
+	animation-timing-function: ease-in-out;
 }
 .hamburger {
     	display: none;
@@ -533,10 +533,10 @@ li a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	border-radius: 50%;
 	background: transparent;
 	width: 100%;
@@ -557,7 +557,6 @@ li a {
 	float: center;
 	background: transparent;
 	display: flex;	
-	font-size: 25px;
 	color: #378dae;
 	font-family: "sofachrome", sans-serif;
 	text-decoration: none;
@@ -567,10 +566,10 @@ li a {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	transition-timing-function: ease;
 	transition: .6s;
 }
@@ -598,7 +597,7 @@ li a {
 .socLnk a:hover::before {    
 	color: #ffffff;
 	border-radius: 50%;
-/* 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%); */
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	text-decoration: none;
 	transition: .6s;
 	width: 90px;
