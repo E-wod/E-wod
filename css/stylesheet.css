@@ -158,9 +158,6 @@ i {
 	padding-bottom: 5px;
 	border-radius: 8px;
 	color: #378dae;
-	animation: choiceAnim 2s ease forwards;
-	animation-delay: calc(.125s * var(--i)); 
-	animation-timing-function: ease-in-out;
 }
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
@@ -256,6 +253,9 @@ i {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	border-radius: 8px;
+	animation: choiceAnim 2s ease forwards;
+	animation-delay: calc(.125s * var(--i)); 
+	animation-timing-function: ease-in-out;
 }
 .nav-link{
 	background-color: transparent;
