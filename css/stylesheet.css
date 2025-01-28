@@ -147,8 +147,8 @@ i {
 	bottom: 50%;
 	background: transparent;
  	display: flex-end;
-/*  	position: inherit;
-	float: center; */
+ 	position: inherit;
+	float: center;
 	justify-content: space-between;
  	margin-left: 0px;
 	margin-right: 0px;
@@ -227,10 +227,10 @@ i {
 	justify-self: center;
 	text-decoration: none;
 	color: #378dae;
-	width: auto;
-	height: auto;
-	max-height: 100%
-	max-width: 100%
+	width: 100%;
+	height: 100%;
+	max-height: auto;
+	max-width: auto;
 	transition: .6s;
 	animation-timing-function: ease-in-out;
 	margin-left: 0px;
