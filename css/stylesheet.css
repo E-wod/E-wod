@@ -147,7 +147,7 @@ i {
 	max-height: 100%;
 	background: transparent;
  	display: flex-end;
- 	position: inherit; 
+/*  	position: inherit;  */
 	float: center;
 	justify-content: space-between;
  	margin-left: 0px;
