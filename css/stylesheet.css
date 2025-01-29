@@ -690,8 +690,9 @@ li a {
 	background-color: transparent;
 	justify-items: center;
 	width: 100%;
-	height: auto;
-	max-height: 100%;
+	height: 100%;
+	max-height: auto;
+	top: 0;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
@@ -708,7 +709,7 @@ li a {
 	background-color: transparent;
 	justify-items: center;
 	width: 70%;
-	height: auto;
+	height: 100%;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
@@ -717,7 +718,7 @@ li a {
 	padding-right: 15px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	display: flex;
+/* 	display: flex; */
 	z-index: 999;
 }
 .picFrame {
@@ -731,14 +732,14 @@ li a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .picFrame h1{
 	color: #378dae;
-	text-size: 30px;
+	text-size: 20px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -759,7 +760,7 @@ li a {
 }
 .picFrame h3{
 	color: #378dae;
-	text-size: 25px;
+	text-size: 15px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
