@@ -75,7 +75,7 @@ i {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	position: inherit;
+/* 	position: inherit; */
 	width: 80px;
 	height: 80px;
 	z-index: 0;
@@ -351,7 +351,7 @@ li a {
 	width: auto;
 	height: auto;
 	max-width: 100%;
-	font-size: 60px;
+	font-size: 28px;
 	stagger: 3;
 	font-color: #378dae;
 	font-family: "sofachrome", sans-serif;
@@ -371,7 +371,7 @@ li a {
 	transition-timing-function: 2.5s ease ease-in-out; 
 }
 .landingContent h3{
-	font-size: 43px;
+	font-size: 23px;
 	font-color: #378dae;
 	font-family: Lobster, 'Kristen ITC', Script;
 	font-weight: 100;
@@ -397,7 +397,7 @@ li a {
 }
 /*Setting the landing page template for paragraph*/
 .landingContent p{
-	font-size: 30px;
+	font-size: 20px;
 	font-color: #378dae;
 	font-family: Lobster, 'Kristen ITC', Script;
 	font-weight: 100;
@@ -551,6 +551,7 @@ li a {
 .socLnk a {
 	width: 80px;
 	height: 80px;
+	display: flex;
 	justify-content: space-between;
 	background: transparent;	
 	color: #378dae;
@@ -715,7 +716,7 @@ li a {
 	padding-right: 15px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-/* 	display: flex; */
+	display: flex;
 	z-index: 999;
 }
 .picFrame {
