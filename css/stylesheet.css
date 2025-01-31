@@ -75,7 +75,6 @@ i {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-/* 	position: inherit; */
 	width: 80px;
 	height: 80px;
 	z-index: 0;
@@ -155,7 +154,6 @@ i {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	border-radius: 8px;
-	color: #378dae;
 }
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
@@ -195,6 +193,7 @@ i {
 	height: 0%;
 	color: #ffffff;
 	transition: .6s;
+	opacity: 0;
 	animation-timing-function: ease-in-out;
 }
 /*Animation Element*/
@@ -222,7 +221,6 @@ i {
 	float: center;
 	justify-self: center;
 	text-decoration: none;
-	color: #378dae;
 	width: auto;
 	height: auto;
 	max-height: 100%;
@@ -238,9 +236,6 @@ i {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	border-radius: 8px;
-/* 	animation: menuAnim 2s ease forwards;
-	animation-delay: calc(.125s * var(--i)); 
-	animation-timing-function: ease-in-out; */
 }
 .nav-item {
 	color: #378dae;
