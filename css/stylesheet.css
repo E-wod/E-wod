@@ -719,7 +719,11 @@ li a {
 	z-index: 999;
 }
 .picFrame {
+	text-color: #378dae;
+	text-size: 20px;
 	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	text-shadow: 1px 0px 1px #000000;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
