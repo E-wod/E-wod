@@ -154,6 +154,7 @@ i {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	border-radius: 8px;
+	opacity: 0;
 }
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
