@@ -709,7 +709,7 @@ li a {
 	background-color: transparent;
 	justify-items: center;
 	width: 70%;
-	height: 70%;
+	height: auto;
 	position: inherit;
 	margin-top: 0px;
 	margin-bottom: 0px;
