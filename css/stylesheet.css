@@ -181,9 +181,8 @@ i {
 	align: center;
 	float: center;
 	animation: menuAnim 2s ease forwards;
-	animation-delay: calc(.125s * var(--i)); 
-	animation-timing-function: ease-in;
-	timing-delay: .7;
+	animation-delay: calc(.085s * var(--i)); 
+	animation-timing-function: easy-ease;
 }
 /*Setting pre-animation attributes*/
 .navBar a::before {
@@ -553,6 +552,7 @@ li a {
 	height: 80px;
 	display: flex;
 	justify-content: center;
+	position: inherit;
 	background: transparent;	
 	color: #378dae;
 	text-decoration: none;
@@ -567,9 +567,8 @@ li a {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	animation: menuAnim 2s ease forwards;
-	animation-delay: calc(.125s * var(--i)); 
-	animation-timing-function: ease-in;
-	timing-delay: .7;
+	animation-delay: calc(.085s * var(--i)); 
+	animation-timing-function: easy-ease;
 }
 /*Setting the attributes for each button*/
 .socLnk a:nth-child(1 2 3) {
