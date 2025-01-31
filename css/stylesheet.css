@@ -64,7 +64,7 @@ a {
 	height: 100%;
 	z-index: 0;
 	scale: 1;
-	justify-items: center;
+	position: inherit;
 }
 i {
 	text-decoration: none;
@@ -80,7 +80,7 @@ i {
 	height: 80px;
 	z-index: 0;
 	scale: 1;
-	justify-items: center;
+	position: inherit;
 }
 /*Header Attributes*/
 .header {
@@ -146,6 +146,7 @@ i {
 	background: transparent;
  	display: flex-end;
  	position: inherit;
+	align: center;
 	justify-content: space-between;
  	margin-left: 0px;
 	margin-right: 0px;
