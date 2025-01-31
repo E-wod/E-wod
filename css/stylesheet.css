@@ -183,6 +183,7 @@ i {
 	animation: menuAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in;
+	timing-delay: .7;
 }
 /*Setting pre-animation attributes*/
 .navBar a::before {
@@ -568,6 +569,7 @@ li a {
 	animation: menuAnim 2s ease forwards;
 	animation-delay: calc(.125s * var(--i)); 
 	animation-timing-function: ease-in;
+	timing-delay: .7;
 }
 /*Setting the attributes for each button*/
 .socLnk a:nth-child(1 2 3) {
