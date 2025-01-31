@@ -64,6 +64,7 @@ a {
 	height: 100%;
 	z-index: 0;
 	scale: 1;
+	justify-items: center;
 }
 i {
 	text-decoration: none;
@@ -79,6 +80,7 @@ i {
 	height: 80px;
 	z-index: 0;
 	scale: 1;
+	justify-items: center;
 }
 /*Header Attributes*/
 .header {
