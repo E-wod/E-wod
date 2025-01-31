@@ -565,8 +565,9 @@ li a {
 	padding-right: 1px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	transition-timing-function: ease;
-	transition: .6s;
+	animation: menuAnim 2s ease forwards;
+	animation-delay: calc(.125s * var(--i)); 
+	animation-timing-function: ease-in;
 }
 /*Setting the attributes for each button*/
 .socLnk a:nth-child(1 2 3) {
