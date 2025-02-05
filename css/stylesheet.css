@@ -578,8 +578,10 @@ li a {
 }
 /*Social Links Anchor Tag Button layout and function*/
 .socLnk a {
-	width: 80px;
-	height: 80px;
+	width: 100%;
+	height: 100%;
+	max-width: 80px;
+	max-height: 80px;
 	display: flex;
 	justify-content: center;
 	position: inherit;
@@ -605,8 +607,8 @@ li a {
 	background: transparent;
 	border-radius: 50%;
 	text-decoration: none;
-	width: 80px;
-	height: 80px;
+/* 	width: 80px;
+	height: 80px; */
 }
 /*Setting pre-animation attributes*/
 .socLnk a::before {
