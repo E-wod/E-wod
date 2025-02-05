@@ -66,21 +66,21 @@ a {
 	scale: 1;
 	position: inherit;
 }
-.a::before {
+a::before {
 	content: '';
 	background: transparent;
 	text-decoration: none;
 	width: 100%;
 	height: 100%;
 }
-.a:hover::before {
+a:hover::before {
 	text-decoration: none;
 	width: 100%;
 	height: 100%;
 }
 /*Hover Function*/
-.a:hover,
-.a .active{
+a:hover,
+a .active{
 	text-decoration: none;
 	width: 100%;
 	height: 100%;
@@ -101,21 +101,21 @@ i {
 	scale: 1;
 	position: inherit;
 }
-.i::before {
+i::before {
 	content: '';
 	background: transparent;
 	text-decoration: none;
 	width: 100%;
 	height: 100%;
 }
-.i:hover::before {
+i:hover::before {
 	text-decoration: none;
 	width: 100%;
 	height: 100%;
 }
 /*Hover Function*/
-.i:hover,
-.i .active{
+i:hover,
+i .active{
 	text-decoration: none;
 	width: 100%;
 	height: 100%;
