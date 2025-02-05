@@ -66,6 +66,21 @@ a {
 	scale: 1;
 	position: inherit;
 }
+.a::before {
+	content: '';
+	background: transparent;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+.a:hover::before {
+	text-decoration: none;
+}
+/*Hover Function*/
+.a:hover,
+.a .active{
+	text-decoration: none;
+}
 i {
 	text-decoration: none;
 	margin-left: 0px;
@@ -81,6 +96,21 @@ i {
 	z-index: 0;
 	scale: 1;
 	position: inherit;
+}
+.i::before {
+	content: '';
+	background: transparent;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+.i:hover::before {
+	text-decoration: none;
+}
+/*Hover Function*/
+.i:hover,
+.i .active{
+	text-decoration: none;
 }
 /*Header Attributes*/
 .header {
