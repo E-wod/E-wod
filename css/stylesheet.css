@@ -150,6 +150,7 @@ i {
 	text-decoration: none;
 	background: transparent;
  	display: flex-end;
+	flex-direction: row;
  	position: inherit;
 	align-self: center;
 	justify-content: space-between;
@@ -165,8 +166,8 @@ i {
 }
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
-  	width: 100%;
-	height: 100%;
+/*   	width: 100%;
+	height: 100%; */
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -181,7 +182,6 @@ i {
 	text-size: 35px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	display: flex;
 	align: center;
 	float: center;
 	animation: menuAnim 2s ease forwards;
