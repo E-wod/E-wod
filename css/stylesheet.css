@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* Extra large devices (large laptops and desktops, 1000px and up) */
 @media only screen and (min-width: 1000px) {	
 * {
 	margin: 0;
@@ -731,6 +730,7 @@ i {
 	height: 100%;
 	position: sticky;
 }
+}
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes bkGnd {
       	0%, 50%, 90% { scale: .6; opacity: .5 }
@@ -801,16 +801,14 @@ i {
 		opacity: 1;
 	}
 }
-}
-/* Large devices (laptops/desktops, 1000px and down) */
-@media only screen and (max-width: 1000px) {
+
+
+/* @media only screen and (max-width: 1000px) {
 
 }
-/* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
 
 }
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-}
+} */
