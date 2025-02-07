@@ -50,7 +50,7 @@ body {
 	height: 100%;
 	overflow: inherit;
 }
-/* a {
+a {
 	text-decoration: none;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -83,7 +83,7 @@ i {
 	scale: 1;
 	position: inherit;
 	float: center;
-} */
+}
 /*Header Attributes*/
 .header {
 	width: 100%;
@@ -286,6 +286,10 @@ i {
     	background-color: #101010;
 }
 ul {
+	color: #378dae;
+	text-size: 35px;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
 	float: center;
 	width: 100%;
 	height: 100%;
@@ -301,7 +305,6 @@ ul {
 	padding-bottom: 0px;
 	text-decoration: none;
 	display: flex;
-	flex-direction: right;
 }
 li {
 	float: center;
@@ -320,6 +323,11 @@ li {
 	justify-content: center; 
 }
 li a {
+	color: #378dae;
+	text-size: 35px;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	justify-content: center;
 	display: flex;
 	width: 100%;
 	height: 100%;
@@ -338,7 +346,7 @@ li a {
 	width: 100%;
 	height: 100%;
 	max-height: auto;
-	justify-contents: center;
+	justify-content: center;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -429,7 +437,7 @@ li a {
 	justify-items: center;
 	display: inherit;
 	position: inherit;
-	justify-contents: space-between;
+	justify-content: space-between;
 	width: 100%;
 	height: auto;
 	max-width: 100%;
