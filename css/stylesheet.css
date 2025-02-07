@@ -461,8 +461,8 @@ i {
 }
 /*Social Links Anchor Tag Button layout and function*/
 .socLnk a {
-	width: 80px;
-	height: 80px;
+	width: 180px;
+	height: 180px;
 	display: flex;
 	align-self: center;
 	position: inherit;
@@ -502,7 +502,7 @@ i {
 	transition-timing-function: ease; 
 	display: flex;
 	align-self: center;
-	width: 80px;
+	width: 180px;
 	height: 0px;
 }
 /*Animation element*/
@@ -513,7 +513,7 @@ i {
 	text-decoration: none;
 	display: flex;
 	transition: .6s;
-	width: 80px;
+	width: 180px;
 	height: 0px;
 }
 /*Hover Function for Social Links*/
@@ -528,8 +528,8 @@ i {
 	transition: .6s;
 	transition-timing-function: ease-out;
 	display: flex;
-	width: 80px;
-	height: 80px;
+	width: 180px;
+	height: 180px;
 }
 .beePic {
  	background: transparent; 
