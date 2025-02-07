@@ -50,7 +50,7 @@ body {
 	height: 100%;
 	overflow: inherit;
 }
-a {
+.a {
 	text-decoration: none;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -66,7 +66,43 @@ a {
 	scale: 1;
 	position: inherit;
 }
-i {
+.a::before {
+	content: '';
+	background: transparent;
+	border-radius: 12px;
+	color: #378dae;
+	text-decoration: none;
+	z-index: -1;
+	transition-timing-function: ease; 
+	width: 100%;
+	height: 100%;
+}
+/*Question box Animation Element*/
+.a:hover::before {
+	color: #ffffff;
+	border-radius: 12px;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	text-decoration: none;
+	transition: .6s;
+	width: 100%;
+	height: 100%;
+}
+ .a:hover, .active{
+	color: #ffffff;
+	text-decoration: none;
+	border: 2px solid #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 2px 7px azure;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	transition: .3s;
+	transition-timing-function: ease-out;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.i {
 	text-decoration: none;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -174,7 +210,7 @@ i {
 	background: transparent;
 	border-radius: 8px;
 	color: #378dae;
-	text-size: 30px;
+	text-size: 35px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	display: flex;
@@ -240,7 +276,9 @@ i {
 }
 .nav-item {
 	color: #378dae;
-	justify-self: center;
+	text-size: 35px;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
 	justify-content: center;
 	background-color: transparent;
 	text-decoration: none;
@@ -670,9 +708,7 @@ li a {
 }
 .beNook {
 	width: 100%;
-	height: auto;
-	max-width: 60%;
-	max-height: 100%;
+	height: 100%;
 	justify-content: center;
 	display: flex;
 	position: inherit;
@@ -682,10 +718,10 @@ li a {
 	margin-right: 1px;
 	margin-top: 1px;
 	margin-bottom: 1px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	text-decoration: none;
 	transition: 3s;
 	transition-timing-function: ease; 
