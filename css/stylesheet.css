@@ -268,7 +268,6 @@ li {
 .nav-link:hover{
 	color: #ffffff;
 }
- CSS
 .hamburger {
     display: none;
 }
@@ -497,6 +496,7 @@ li {
 	animation-timing-function: ease-in-out;
 	color: #378dae;
 	text-decoration: none;
+	display: flex;
 }
 /*Social Links Anchor Tag Button layout and function*/
 .socLnk a {
