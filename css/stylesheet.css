@@ -1,5 +1,4 @@
-@charset "utf-8";
-@media only screen and (min-width: 1000px) {	
+@charset "utf-8";	
 * {
 	margin: 0;
 	padding: 0;
@@ -777,7 +776,6 @@ li {
 	height: 100%;
 	position: sticky;
 }
-}
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes bkGnd {
       	0%, 50%, 90% { scale: .6; opacity: .5 }
@@ -850,7 +848,7 @@ li {
 }
 
 /*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
 
 }
 @media only screen and (max-width: 768px) {
@@ -886,3 +884,4 @@ li {
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
+ */
