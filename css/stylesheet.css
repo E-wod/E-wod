@@ -135,8 +135,8 @@ i {
 	animation-timing-function: ease-in-out;
 }
 .nav-logo a {
-	width: 140px;
-	height: 140px;
+	max-width: 140px;
+	max-height: 140px;
 	justify-self: center;
 	justify-items: center;
 	text-decoration: none;
