@@ -113,12 +113,34 @@ i {
 }
 /*Logo*/
 .nav-logo {
+	width: 100%;
+	height: 100%;
+	justify-self: center;
+	justify-items: center;
+	text-decoration: none;
+	display: flex-start;
+	position: inherit;
+	opacity: 1;
+	scale: 1;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: transparent; 
+	animation: logoAnim 1.5s ease forwards; 
+	animation-timing-function: ease-in-out;
+}
+.nav-logo a {
 	width: 140px;
 	height: 140px;
 	justify-self: center;
 	justify-items: center;
 	text-decoration: none;
-	display: flex-start;
+	display: flex;
 	position: inherit;
 	opacity: 1;
 	scale: 1;
@@ -232,6 +254,26 @@ i {
 	height: auto;
 	max-height: 100%;
 	max-width: 100%;
+	transition: .6s;
+	animation-timing-function: ease-in-out;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 8px;
+}
+.nav-menu a {
+	background-color: transparent;
+	float: center;
+	justify-self: center;
+	text-decoration: none;
+	display: flex;
+	height: 100%;
+	width: 100%;
 	transition: .6s;
 	animation-timing-function: ease-in-out;
 	margin-left: 0px;
