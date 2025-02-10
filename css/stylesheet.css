@@ -156,8 +156,8 @@ i {
 	animation: logoAnim 1.5s ease forwards; 
 	animation-timing-function: ease-in-out;
 }
-.nav-logo :hover,
-.nav-logo .active {
+.nav-logo a:hover,
+.nav-logo a.active {
 	transition: .3s;
 	transition-timing-function: ease;
 	background: transparent;
