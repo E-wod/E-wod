@@ -508,7 +508,7 @@ li {
 	background: transparent;
 	width: 100%;
 	height: 100%;
-	justify-content: center;
+	justify-items: center;
 	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
