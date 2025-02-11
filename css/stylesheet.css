@@ -51,7 +51,7 @@ body {
 	height: 100%;
 	overflow: inherit;
 }
-a {
+/* a {
 	text-decoration: none;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -68,7 +68,7 @@ a {
 	position: inherit;
 	float: center;
 	display: flex;
-}
+} */
 i {
 	text-decoration: none;
 	margin-left: 0px;
