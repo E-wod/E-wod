@@ -550,7 +550,6 @@ li {
 }
 /*Setting pre-animation attributes*/
 .socLnk a::before {
-	content: '';
 	background: transparent;
 	border-radius: 50%;
 	color: #378dae;
@@ -559,8 +558,8 @@ li {
 	transition-timing-function: ease; 
 	display: flex;
 	align-self: center;
-/* 	width: 80px;
-	height: 0px; */
+	width: 80px;
+	height: 0px;
 }
 /*Animation element*/
 .socLnk a:hover::before {    
