@@ -520,7 +520,7 @@ li {
 .socLnk a {
 	width: 80px;
 	height: 80px;
-	align-self: center;
+	align: center;
 	position: inherit;
 	background: transparent;	
 	display: flex;
