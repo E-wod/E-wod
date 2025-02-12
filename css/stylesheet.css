@@ -494,16 +494,16 @@ li {
 }
 /*Setting the alignment and template for Social links*/
 .socLnk {
-	z-index: 15;
+	z-index: 1500;
 	position: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-radius: 50%;
 	background: transparent;
 	width: 100%;
@@ -527,7 +527,7 @@ li {
 	color: #378dae;
 	text-decoration: none;
 	justify-content: center;
-	z-index: 15;
+	z-index: 1500;
 	border-radius: 50%;
 	margin-left: 0px;
 	margin-right: 0px;
