@@ -334,18 +334,16 @@ li {
 	animation-delay: 2s;
 	animation: h1Anim 2.5s ease forwards;
 	transition-timing-function: 2.5s ease ease-in-out; 
-	justify-content: center;
+	float: center;
 }
 .landingContent h3{
-	font-size: 23px;
+	width: 40%;
+	height: 40%;
+	font-size: 20px;
+	stagger: 3;
 	font-color: #378dae;
-	font-family: Lobster, 'Kristen ITC', Script;
+	font-family: "sofachrome", sans-serif;
 	text-shadow: 2px 2px 4px #ffffff;
-	width: auto;
-	height: auto;
-	max-width: 100%;
-	position: inherit;
-	display: flex;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -357,21 +355,17 @@ li {
 	animation-delay: 2s;
 	animation: h3Anim 2.5s ease forwards;
 	transition-timing-function: 2.5s ease ease-in-out; 
+	float: center;
 }
 /*Setting the landing page template for paragraph*/
 .landingContent p{
-	font-size: 20px;
+	width: 40%;
+	height: 40%;
+	font-size: 17px;
+	stagger: 3;
 	font-color: #378dae;
-	font-family: Lobster, 'Kristen ITC', Script;
-	font-weight: 100;
-	font-style: bold;
+	font-family: "sofachrome", sans-serif;
 	text-shadow: 2px 2px 4px #ffffff;
-	line-height: .9;
-	width: auto;
-	height: auto;
-	max-width: 100%;
-	position: inherit;
-	display: flex;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -383,6 +377,7 @@ li {
 	animation-delay: 2s;
 	animation: pAnim 2.5s ease forwards;
 	transition-timing-function: 2.5s ease ease-in-out; 
+	float: center;
 }
 /*Setting the landing page template for Question buttons*/
 .cntr {
