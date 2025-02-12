@@ -774,8 +774,8 @@ li {
 	justify-content: center;
 	font-size: 60px;
   	border: none;
-	width: 100%;
-	height: 100%;
+	width: 50px;
+	height: 50px;
 	cursor: pointer;
 	z-index: 9999999;
 	text-decoration: none;
@@ -803,8 +803,8 @@ li {
 	z-index: 9999999;
 	cursor: pointer;
 	background-color: transparent;
-	width: 80px;
-	height: 80px;
+	width: auto;
+	height: auto;
 	justify-content: center;
 	position: sticky;
 }
