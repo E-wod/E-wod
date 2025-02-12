@@ -681,17 +681,17 @@ li {
 .obJects{
 	background-color: transparent;
 	justify-items: center;
-	width: 70%;
+	width: 40%;
 	height: auto;
 	position: inherit;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
 	margin-left: 0px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	display: flex;
 	z-index: 999;
 }
@@ -704,10 +704,10 @@ li {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	width: 100%;
 	height: 100%;
 	position: inherit;
@@ -717,7 +717,7 @@ li {
 }
 .picFrame h1{
 	color: #378dae;
-	text-size: 20px;
+	text-size: 17px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
