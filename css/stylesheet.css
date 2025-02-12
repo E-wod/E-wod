@@ -113,8 +113,8 @@ i {
 }
 /*Logo*/
 .nav-logo {
-	max-width: 140px;
-	max-height: 140px;
+	max-width: 90px;
+	max-height: 90px;
 	justify-self: center;
 	justify-items: center;
 	text-decoration: none;
