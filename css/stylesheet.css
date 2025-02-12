@@ -316,68 +316,80 @@ li {
 }
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
-	width: 40%;
-	height: 40%;
-	font-size: 28px;
-	stagger: 3;
-	font-color: #378dae;
-	font-family: "sofachrome", sans-serif;
-	text-shadow: 2px 2px 4px #ffffff;
-	margin-left: 0px;
-	margin-right: 0px;
+	color: #378dae;
+	text-size: 20px;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	text-shadow: 1px 0px 1px #000000;
+	background-color: transparent;
+	justify-items: center;
+	width: 100%;
+	height: 100%;
+	position: inherit;
+	max-height: auto;
+	top: 0;
+   	margin-left: 0px;
+	margin-right: 0px;  
 	margin-top: 0px;
-	margin-bottom: 0px;
+  	margin-bottom: 0%; 
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 10px;
+	padding-top: 10%;
 	padding-bottom: 10px;
-	animation-delay: 2s;
-	animation: h1Anim 2.5s ease forwards;
-	transition-timing-function: 2.5s ease ease-in-out; 
-	float: center;
+	z-index: 1;
+	animation: h1Anim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
 }
 .landingContent h3{
-	width: 40%;
-	height: 40%;
-	font-size: 20px;
-	stagger: 3;
-	font-color: #378dae;
-	font-family: "sofachrome", sans-serif;
-	text-shadow: 2px 2px 4px #ffffff;
-	margin-left: 0px;
-	margin-right: 0px;
+	color: #378dae;
+	text-size: 17px;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	text-shadow: 1px 0px 1px #000000;
+	background-color: transparent;
+	justify-items: center;
+	width: 100%;
+	height: 100%;
+	position: inherit;
+	max-height: auto;
+	top: 0;
+   	margin-left: 0px;
+	margin-right: 0px;  
 	margin-top: 0px;
-	margin-bottom: 0px;
+  	margin-bottom: 0%; 
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 10px;
+	padding-top: 10%;
 	padding-bottom: 10px;
-	animation-delay: 2s;
-	animation: h3Anim 2.5s ease forwards;
-	transition-timing-function: 2.5s ease ease-in-out; 
-	float: center;
+	z-index: 1;
+	animation: h3Anim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
 }
 /*Setting the landing page template for paragraph*/
 .landingContent p{
-	width: 40%;
-	height: 40%;
-	font-size: 17px;
-	stagger: 3;
-	font-color: #378dae;
-	font-family: "sofachrome", sans-serif;
-	text-shadow: 2px 2px 4px #ffffff;
-	margin-left: 0px;
-	margin-right: 0px;
+	color: #378dae;
+	text-size: 13px;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	text-shadow: 1px 0px 1px #000000;
+	background-color: transparent;
+	justify-items: center;
+	width: 100%;
+	height: 100%;
+	position: inherit;
+	max-height: auto;
+	top: 0;
+   	margin-left: 0px;
+	margin-right: 0px;  
 	margin-top: 0px;
-	margin-bottom: 0px;
+  	margin-bottom: 0%; 
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 10px;
+	padding-top: 10%;
 	padding-bottom: 10px;
-	animation-delay: 2s;
-	animation: pAnim 2.5s ease forwards;
-	transition-timing-function: 2.5s ease ease-in-out; 
-	float: center;
+	z-index: 1;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
 }
 /*Setting the landing page template for Question buttons*/
 .cntr {
