@@ -659,6 +659,11 @@ li {
 	animation: pAnim 3s ease forwards;
 }
 .bkg {
+	color: #378dae;
+	text-size: 13px;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
 	justify-items: center;
 	width: 100%;
@@ -679,6 +684,11 @@ li {
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .obJects{
+	color: #378dae;
+	text-size: 13px;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
 	justify-items: center;
 	width: 60%;
@@ -696,6 +706,11 @@ li {
 	z-index: 999;
 }
 .picFrame {
+	color: #378dae;
+	text-size: 13px;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	text-shadow: 1px 0px 1px #000000;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
