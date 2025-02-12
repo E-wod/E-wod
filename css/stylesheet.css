@@ -322,7 +322,7 @@ li {
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
-	align: center;
+	float: center;
 	width: 100%;
 	height: 100%;
 	position: inherit;
@@ -346,7 +346,7 @@ li {
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
-	align: center;
+	float: center;
 	width: 100%;
 	height: 100%;
 	position: inherit;
@@ -371,7 +371,7 @@ li {
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
-	align: center;
+	float: center;
 	width: 100%;
 	height: 100%;
 	position: inherit;
@@ -637,7 +637,8 @@ li {
 }
 .beNook {
 	width: 100%;
-	height: 100%;
+	height: auto;
+	max-height: 100%;
 	justify-content: center;
 	display: flex;
 	position: inherit;
@@ -647,10 +648,10 @@ li {
 	margin-right: 1px;
 	margin-top: 1px;
 	margin-bottom: 1px;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	text-decoration: none;
 	transition: 3s;
 	transition-timing-function: ease; 
