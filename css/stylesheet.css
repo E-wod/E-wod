@@ -681,7 +681,7 @@ li {
 .obJects{
 	background-color: transparent;
 	justify-items: center;
-	width: 40%;
+	width: 60%;
 	height: auto;
 	position: inherit;
 	margin-top: 0px;
@@ -696,10 +696,6 @@ li {
 	z-index: 999;
 }
 .picFrame {
-	text-color: #378dae;
-	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
-	text-shadow: 1px 0px 1px #000000;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -717,7 +713,7 @@ li {
 }
 .picFrame h1{
 	color: #378dae;
-	text-size: 17px;
+	text-size: 13px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -725,10 +721,10 @@ li {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	width: auto;
 	height: auto;
 	max-width: 100%;
@@ -738,7 +734,7 @@ li {
 }
 .picFrame h3{
 	color: #378dae;
-	text-size: 15px;
+	text-size: 10px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -746,10 +742,10 @@ li {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	width: auto;
 	height: auto;
 	max-width: 100%;
