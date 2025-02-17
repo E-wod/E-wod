@@ -1,5 +1,4 @@
 @charset "utf-8";
-@media only screen and (min-width: 768px) {
 * {
 	margin: 0;
 	padding: 0;
@@ -317,7 +316,7 @@ li {
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
 	color: #378dae;
-	text-size: 20px;
+	text-size: 26px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -326,6 +325,7 @@ li {
 	width: 100%;
 	height: 100%;
 	position: inherit;
+	justify-content: center;
 	top: 0;
    	margin-left: 0px;
 	margin-right: 0px;  
@@ -341,7 +341,7 @@ li {
 }
 .landingContent h3{
 	color: #378dae;
-	text-size: 17px;
+	text-size: 21px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -350,6 +350,7 @@ li {
 	width: 100%;
 	height: 100%;
 	position: inherit;
+	justify-content: center;
 	top: 0;
    	margin-left: 0px;
 	margin-right: 0px;  
@@ -366,7 +367,7 @@ li {
 /*Setting the landing page template for paragraph*/
 .landingContent p{
 	color: #378dae;
-	text-size: 13px;
+	text-size: 17px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -375,6 +376,7 @@ li {
 	width: 100%;
 	height: 100%;
 	position: inherit;
+	justify-content: center;
 	top: 0;
    	margin-left: 0px;
 	margin-right: 0px;  
@@ -824,7 +826,7 @@ li {
 		color: #8B3421;
 		text-shadow: 0 2px 4px azure;
 		scale: 1;
-		transform: rotate(1440deg);
+		transform: rotate(-1440deg);
 	}
 }
 @keyframes menuAnim {
@@ -877,9 +879,8 @@ li {
 		opacity: 1;
 	}
 }
-}
 /*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
 .hamburger {
     display: block;
     cursor: pointer;
@@ -896,3 +897,4 @@ li {
     transform: translateY(-8px) rotate(-45deg);
 }
 }
+ */
