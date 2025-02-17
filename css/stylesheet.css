@@ -321,11 +321,11 @@ li {
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
-	float: center;
 	width: 100%;
 	height: 100%;
 	position: inherit;
 	justify-content: center;
+	display: flex;
 	top: 0;
    	margin-left: 0px;
 	margin-right: 0px;  
@@ -346,11 +346,11 @@ li {
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
-	float: center;
 	width: 100%;
 	height: 100%;
 	position: inherit;
 	justify-content: center;
+	display: flex;
 	top: 0;
    	margin-left: 0px;
 	margin-right: 0px;  
@@ -372,11 +372,11 @@ li {
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
-	float: center;
 	width: 100%;
 	height: 100%;
 	position: inherit;
 	justify-content: center;
+	display: flex;
 	top: 0;
    	margin-left: 0px;
 	margin-right: 0px;  
