@@ -326,7 +326,6 @@ li {
 	position: inherit;
 	justify-content: center;
 	display: flex;
-	top: 0;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
@@ -351,7 +350,6 @@ li {
 	position: inherit;
 	justify-content: center;
 	display: flex;
-	top: 0;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
@@ -377,7 +375,6 @@ li {
 	position: inherit;
 	justify-content: center;
 	display: flex;
-	top: 0;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
@@ -671,7 +668,8 @@ li {
 	height: 100%;
 	position: inherit;
 	max-height: auto;
-	top: 0;
+	display: flex;
+	float: top;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
