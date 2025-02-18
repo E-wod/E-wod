@@ -338,55 +338,6 @@ li {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-.landingContent h3{
-	color: #378dae;
-	text-size: 21px;
-	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
-	text-shadow: 1px 0px 1px #000000;
-	background-color: transparent;
-	width: 100%;
-	height: 100%;
-	position: inherit;
-	justify-content: center;
-	display: flex;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0%; 
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2%;
-	padding-bottom: 2px;
-	z-index: 1;
-	animation: h3Anim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
-}
-/*Setting the landing page template for paragraph*/
-.landingContent p{
-	color: #378dae;
-	text-size: 17px;
-	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
-	text-shadow: 1px 0px 1px #000000;
-	background-color: transparent;
-	width: 100%;
-	height: 100%;
-	position: inherit;
-	justify-content: center;
-	display: flex;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0%; 
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2%;
-	padding-bottom: 2px;
-	z-index: 1;
-	animation: pAnim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
-}
 /*Setting the landing page template for Question buttons*/
 .cntr {
 	background: transparent;
@@ -663,7 +614,6 @@ li {
 	height: 100%;
 	position: inherit;
 	max-height: auto;
-	display: flex;
 	float: top;
    	margin-left: 0px;
 	margin-right: 0px;  
@@ -691,7 +641,6 @@ li {
 	padding-right: 2px;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	display: flex;
 	z-index: 999;
 }
 .picFrame {
@@ -706,6 +655,7 @@ li {
 	width: 100%;
 	height: 100%;
 	position: inherit;
+	display: flex;
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
