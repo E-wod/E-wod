@@ -43,6 +43,10 @@ public static String decrypt(String encryptedData, SecretKey key, byte[] iv) thr
     return new String(decrypted); } 
 }
 
+
+
+
+// Hambuurger
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
