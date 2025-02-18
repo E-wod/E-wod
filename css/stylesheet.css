@@ -611,10 +611,8 @@ li {
 	background-color: transparent;
 	justify-items: center;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	position: inherit;
-	max-height: auto;
-	float: top;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
