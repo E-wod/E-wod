@@ -316,7 +316,7 @@ li {
 /*Setting the landing page template for H1 Heading*/
 .landingContent h1{
 	color: #378dae;
-	text-size: 26px;
+	text-size: 36px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -657,11 +657,6 @@ li {
 	animation: pAnim 3s ease forwards;
 }
 .bkg {
-	color: #378dae;
-	text-size: 13px;
-	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
-	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
 	justify-items: center;
 	width: 100%;
@@ -683,11 +678,6 @@ li {
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .obJects{
-	color: #378dae;
-	text-size: 13px;
-	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
-	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
 	justify-items: center;
 	width: 60%;
@@ -705,11 +695,6 @@ li {
 	z-index: 999;
 }
 .picFrame {
-	color: #378dae;
-	text-size: 13px;
-	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
-	text-shadow: 1px 0px 1px #000000;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -725,7 +710,7 @@ li {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-.picFrame h1{
+.picFrame h2{
 	color: #378dae;
 	text-size: 13px;
 	text-decoration: none;
@@ -742,6 +727,9 @@ li {
 	width: auto;
 	height: auto;
 	max-width: 100%;
+	position: inherit;
+	display: flex;
+	float: left;
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
@@ -763,6 +751,9 @@ li {
 	width: auto;
 	height: auto;
 	max-width: 100%;
+	position: inherit;
+	display: flex;
+	float: left;
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
