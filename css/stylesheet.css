@@ -655,6 +655,7 @@ li {
 	width: 100%;
 	height: 100%;
 	position: inherit;
+	display: flex;
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
@@ -677,8 +678,6 @@ li {
 	height: auto;
 	max-width: 100%;
 	position: inherit;
-	display: flex;
-	float: left;
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
@@ -701,8 +700,6 @@ li {
 	height: auto;
 	max-width: 100%;
 	position: inherit;
-	display: flex;
-	float: left;
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
