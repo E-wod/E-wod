@@ -322,7 +322,7 @@ li {
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	position: inherit;
 	justify-content: center;
 	display: flex;
