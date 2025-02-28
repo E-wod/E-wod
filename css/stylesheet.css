@@ -587,8 +587,8 @@ li {
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	width: 100%;
-	height: 100%;
+	width: 90%;
+	height: 90%;
 	justify-content: center;
 	display: flex;
 	position: inherit;
@@ -1409,8 +1409,8 @@ li {
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	width: 100%;
-	height: 100%;
+	width: 80%;
+	height: 80%;
 	justify-content: center;
 	display: flex;
 	position: inherit;
@@ -2232,8 +2232,8 @@ li {
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	width: 100%;
-	height: 100%;
+	width: 70%;
+	height: 70%;
 	justify-content: center;
 	display: flex;
 	position: inherit;
