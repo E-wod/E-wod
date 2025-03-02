@@ -985,8 +985,8 @@ i {
 }
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
-  	width: 160px;
-	height: 160px;
+  	width: 100px;
+	height: 100px;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1808,8 +1808,8 @@ i {
 }
 /*navBar Anchor Tag Button layout and function*/
 .navBar a {
-  	width: 140px;
-	height: 140px;
+  	width: 80px;
+	height: 80px;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
