@@ -557,9 +557,9 @@ li {
 	overflow: inherit;
 	z-index: -19;
 	overflow: hidden;
-	animation: pAnim 1s ease forwards;
+	animation: pAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
-	transition: 1s;
+	transition: 3s;
 }
 /*background layout template*/
 .beGod {
@@ -794,18 +794,6 @@ li {
 	0% {
 		transform: scale(.00);
 		opacity: 0;
-    }
-	25% {
-		transform: scale(.25);
-		opacity: .25;
-	}
-	50% {
-		transform: scale(.50);
-		opacity: .50;
-    }
-	75% {
-		transform: scale(.75);
-		opacity: .75;
     }
 	100% {
 		transform: scale(1);
@@ -1391,9 +1379,9 @@ li {
 	overflow: inherit;
 	z-index: -19;
 	overflow: hidden;
-	animation: pAnim 1s ease forwards;
+	animation: pAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
-	transition: 1s;
+	transition: 3s;
 }
 /*background layout template*/
 .beGod {
@@ -1628,18 +1616,6 @@ li {
 	0% {
 		transform: scale(.00);
 		opacity: 0;
-    }
-	25% {
-		transform: scale(.25);
-		opacity: .25;
-	}
-	50% {
-		transform: scale(.50);
-		opacity: .50;
-    }
-	75% {
-		transform: scale(.75);
-		opacity: .75;
     }
 	100% {
 		transform: scale(1);
@@ -2226,9 +2202,9 @@ li {
 	overflow: inherit;
 	z-index: -19;
 	overflow: hidden;
-	animation: pAnim 1s ease forwards;
+	animation: pAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
-	transition: 1s;
+	transition: 3s;
 }
 /*background layout template*/
 .beGod {
@@ -2463,18 +2439,6 @@ li {
 	0% {
 		transform: scale(.00);
 		opacity: 0;
-    }
-	25% {
-		transform: scale(.25);
-		opacity: .25;
-	}
-	50% {
-		transform: scale(.50);
-		opacity: .50;
-    }
-	75% {
-		transform: scale(.75);
-		opacity: .75;
     }
 	100% {
 		transform: scale(1);
