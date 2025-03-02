@@ -112,8 +112,8 @@ i {
 }
 /*Logo*/
 .nav-logo {
-	max-width: 90px;
-	max-height: 90px;
+	max-width: 100px;
+	max-height: 100px;
 	justify-self: center;
 	justify-items: center;
 	text-decoration: none;
@@ -586,8 +586,8 @@ li {
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	width: 90%;
-	height: 90%;
+	width: 80%;
+	height: 80%;
 	justify-content: center;
 	display: flex;
 	position: inherit;
@@ -934,8 +934,8 @@ i {
 }
 /*Logo*/
 .nav-logo {
-	max-width: 50px;
-	max-height: 50px;
+	max-width: 70px;
+	max-height: 70px;
 	justify-self: center;
 	justify-items: center;
 	text-decoration: none;
@@ -1408,8 +1408,8 @@ li {
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	width: 80%;
-	height: 80%;
+	width: 70%;
+	height: 70%;
 	justify-content: center;
 	display: flex;
 	position: inherit;
@@ -1757,8 +1757,8 @@ i {
 }
 /*Logo*/
 .nav-logo {
-	max-width: 40px;
-	max-height: 40px;
+	max-width: 55px;
+	max-height: 55px;
 	justify-self: center;
 	justify-items: center;
 	text-decoration: none;
@@ -2231,8 +2231,8 @@ li {
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	width: 70%;
-	height: 70%;
+	width: 60%;
+	height: 60%;
 	justify-content: center;
 	display: flex;
 	position: inherit;
