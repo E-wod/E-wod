@@ -792,8 +792,20 @@ li {
 }
 @keyframes pAnim {
 	0% {
-		transform: scale(.01);
+		transform: scale(.00);
 		opacity: 0;
+    }
+	25% {
+		transform: scale(.25);
+		opacity: .25;
+	}
+	50% {
+		transform: scale(.50);
+		opacity: .50;
+    }
+	75% {
+		transform: scale(.75);
+		opacity: .75;
     }
 	100% {
 		transform: scale(1);
@@ -1614,8 +1626,20 @@ li {
 }
 @keyframes pAnim {
 	0% {
-		transform: scale(.01);
+		transform: scale(.00);
 		opacity: 0;
+    }
+	25% {
+		transform: scale(.25);
+		opacity: .25;
+	}
+	50% {
+		transform: scale(.50);
+		opacity: .50;
+    }
+	75% {
+		transform: scale(.75);
+		opacity: .75;
     }
 	100% {
 		transform: scale(1);
@@ -2437,8 +2461,20 @@ li {
 }
 @keyframes pAnim {
 	0% {
-		transform: scale(.01);
+		transform: scale(.00);
 		opacity: 0;
+    }
+	25% {
+		transform: scale(.25);
+		opacity: .25;
+	}
+	50% {
+		transform: scale(.50);
+		opacity: .50;
+    }
+	75% {
+		transform: scale(.75);
+		opacity: .75;
     }
 	100% {
 		transform: scale(1);
