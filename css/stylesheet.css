@@ -182,7 +182,6 @@ i {
 	align: center;
 	float: center;
 	display: flex;
-	flex-direction: row;
 	animation: menuAnim 2s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
@@ -268,6 +267,8 @@ li {
     	list-style: none;
 }
 .nav-item {
+	display: flex;
+	flex-direction: row;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1094,6 +1095,8 @@ li {
     	list-style: none;
 }
 .nav-item {
+	display: flex;
+	flex-direction: column;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1921,6 +1924,8 @@ li {
     	list-style: none;
 }
 .nav-item {
+	display: flex;
+	flex-direction: column;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
