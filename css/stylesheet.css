@@ -586,8 +586,8 @@ li {
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	width: 80%;
-	height: 80%;
+	width: 60%;
+	height: 60%;
 	justify-content: center;
 	display: flex;
 	position: inherit;
@@ -965,8 +965,8 @@ i {
 }
 /*Nav Bar Attributes*/
 .navBar {
-  	width: 100%;
-	height: 100%;
+  	width: 30%;
+	height: 30%;
 	text-decoration: none;
 	background: transparent;
  	display: flex-end;
@@ -1408,8 +1408,8 @@ li {
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	width: 70%;
-	height: 70%;
+	width: 50%;
+	height: 50%;
 	justify-content: center;
 	display: flex;
 	position: inherit;
@@ -1788,8 +1788,8 @@ i {
 }
 /*Nav Bar Attributes*/
 .navBar {
-  	width: 100%;
-	height: 100%;
+  	width: 25%;
+	height: 25%;
 	text-decoration: none;
 	background: transparent;
  	display: flex-end;
@@ -2231,8 +2231,8 @@ li {
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	width: 60%;
-	height: 60%;
+	width: 45%;
+	height: 45%;
 	justify-content: center;
 	display: flex;
 	position: inherit;
