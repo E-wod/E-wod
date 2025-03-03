@@ -244,11 +244,12 @@ i {
 	border-radius: 8px;
 }
 .nav-menu a {
+	display: flex;
+	flex-direction: row;
 	background-color: transparent;
 	float: center;
 	justify-self: center;
 	text-decoration: none;
-	display: flex;
 	height: 100%;
 	width: 100%;
 	transition: .6s;
@@ -267,8 +268,6 @@ li {
     	list-style: none;
 }
 .nav-item {
-	display: flex;
-	flex-direction: row;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1072,11 +1071,12 @@ i {
 	border-radius: 8px;
 }
 .nav-menu a {
+	display: flex;
+	flex-direction: row;
 	background-color: transparent;
 	float: center;
 	justify-self: center;
 	text-decoration: none;
-	display: flex;
 	height: 100%;
 	width: 100%;
 	transition: .6s;
@@ -1901,11 +1901,12 @@ i {
 	border-radius: 8px;
 }
 .nav-menu a {
+	display: flex;
+	flex-direction: column;
 	background-color: transparent;
 	float: center;
 	justify-self: center;
 	text-decoration: none;
-	display: flex;
 	height: 100%;
 	width: 100%;
 	transition: .6s;
