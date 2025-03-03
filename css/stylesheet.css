@@ -143,8 +143,8 @@ i {
 }
 /*Nav Bar Attributes*/
 .navBar {
-  	width: 100%;
-	height: 100%;
+  	width: 40%;
+	height: 40%;
 	text-decoration: none;
 	background: transparent;
  	display: flex-end;
