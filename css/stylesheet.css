@@ -762,7 +762,7 @@ li {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-.picFrame h2{
+.h2{
 	color: #378dae;
 	text-size: 13px;
 	text-decoration: none;
@@ -784,7 +784,7 @@ li {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-.picFrame h3{
+.h3{
 	color: #378dae;
 	text-size: 10px;
 	text-decoration: none;
@@ -1502,7 +1502,7 @@ li {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-.picFrame h2{
+.h2{
 	color: #378dae;
 	text-size: 13px;
 	text-decoration: none;
@@ -1524,7 +1524,7 @@ li {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-.picFrame h3{
+h3{
 	color: #378dae;
 	text-size: 10px;
 	text-decoration: none;
@@ -2242,7 +2242,7 @@ li {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-.picFrame h2{
+.h2{
 	color: #378dae;
 	text-size: 13px;
 	text-decoration: none;
@@ -2264,7 +2264,7 @@ li {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-.picFrame h3{
+.h3{
 	color: #378dae;
 	text-size: 10px;
 	text-decoration: none;
