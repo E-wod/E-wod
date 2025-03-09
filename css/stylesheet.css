@@ -193,6 +193,8 @@ i {
 .nav-logo {
 	max-width: 100px;
 	max-height: 100px;
+	width: auto;
+	height: auto;
 	justify-self: center;
 	justify-items: center;
 	text-decoration: none;
@@ -931,8 +933,10 @@ i {
 }
 /*Logo*/
 .nav-logo {
-	max-width: 100px;
-	max-height: 100px;
+	max-width: 70px;
+	max-height: 70px;
+	width: auto;
+	height: auto;
 	justify-self: center;
 	justify-items: center;
 	text-decoration: none;
@@ -1671,8 +1675,10 @@ i {
 }
 /*Logo*/
 .nav-logo {
-	max-width: 100px;
-	max-height: 100px;
+	max-width: 40px;
+	max-height: 40px;
+	width: auto;
+	height: auto;
 	justify-self: center;
 	justify-items: center;
 	text-decoration: none;
