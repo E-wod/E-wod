@@ -193,8 +193,6 @@ i {
 .nav-logo {
 	max-width: 100px;
 	max-height: 100px;
-	width: auto;
-	height: auto;
 	justify-self: center;
 	justify-items: center;
 	text-decoration: none;
@@ -935,8 +933,6 @@ i {
 .nav-logo {
 	max-width: 70px;
 	max-height: 70px;
-	width: auto;
-	height: auto;
 	justify-self: center;
 	justify-items: center;
 	text-decoration: none;
@@ -1677,8 +1673,6 @@ i {
 .nav-logo {
 	max-width: 30px;
 	max-height: 30px;
-	width: auto;
-	height: auto;
 	justify-self: center;
 	justify-items: center;
 	text-decoration: none;
