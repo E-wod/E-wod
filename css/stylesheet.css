@@ -398,7 +398,7 @@ h1{
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	position: inherit;
 	justify-content: center;
 	display: flex;
@@ -422,7 +422,7 @@ h2{
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	position: inherit;
 	justify-content: center;
 	display: flex;
@@ -446,7 +446,7 @@ h3{
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	position: inherit;
 	justify-content: center;
 	display: flex;
@@ -742,7 +742,7 @@ h3{
 .obJects{
 	background-color: transparent;
 	justify-items: center;
-	width: 60%;
+	width: 90%;
 	height: auto;
 	position: inherit;
 	margin-top: 0px;
@@ -1015,7 +1015,7 @@ h1{
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	position: inherit;
 	justify-content: center;
 	display: flex;
@@ -1039,7 +1039,7 @@ h2{
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	position: inherit;
 	justify-content: center;
 	display: flex;
@@ -1063,7 +1063,7 @@ h3{
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	position: inherit;
 	justify-content: center;
 	display: flex;
@@ -1359,7 +1359,7 @@ h3{
 .obJects{
 	background-color: transparent;
 	justify-items: center;
-	width: 60%;
+	width: 90%;
 	height: auto;
 	position: inherit;
 	margin-top: 0px;
@@ -1473,7 +1473,7 @@ h3{
 	height: 60%;
 	text-decoration: none;
 	background: transparent;
- 	display: flex-end;
+ 	display: flex;
  	position: inherit;
 	align-self: center;
 	justify-content: space-between;
@@ -1633,7 +1633,7 @@ h1{
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	position: inherit;
 	justify-content: center;
 	display: flex;
@@ -1657,7 +1657,7 @@ h2{
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	position: inherit;
 	justify-content: center;
 	display: flex;
@@ -1681,7 +1681,7 @@ h3{
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	position: inherit;
 	justify-content: center;
 	display: flex;
@@ -1977,7 +1977,7 @@ h3{
 .obJects{
 	background-color: transparent;
 	justify-items: center;
-	width: 60%;
+	width: 95%;
 	height: auto;
 	position: inherit;
 	margin-top: 0px;
