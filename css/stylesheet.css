@@ -762,7 +762,7 @@ li {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-.h2{
+h2{
 	color: #378dae;
 	text-size: 13px;
 	text-decoration: none;
@@ -784,7 +784,7 @@ li {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-.h3{
+h3{
 	color: #378dae;
 	text-size: 10px;
 	text-decoration: none;
@@ -967,7 +967,6 @@ i {
 	text-decoration: none;
 	background: transparent;
  	display: flex-end;
-	flex-direction: column;
  	position: inherit;
 	align-self: center;
 	justify-content: space-between;
@@ -1503,7 +1502,7 @@ li {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-.h2{
+/* h2{
 	color: #378dae;
 	text-size: 13px;
 	text-decoration: none;
@@ -1546,7 +1545,7 @@ h3{
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
-}
+} */
 }
 /*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
@@ -1708,7 +1707,6 @@ i {
 	text-decoration: none;
 	background: transparent;
  	display: flex-end;
-	flex-direction: column;
  	position: inherit;
 	align-self: center;
 	justify-content: space-between;
@@ -2244,7 +2242,7 @@ li {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-.h2{
+h2{
 	color: #378dae;
 	text-size: 13px;
 	text-decoration: none;
@@ -2266,7 +2264,7 @@ li {
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-.h3{
+h3{
 	color: #378dae;
 	text-size: 10px;
 	text-decoration: none;
