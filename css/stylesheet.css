@@ -1396,7 +1396,7 @@ h3{
 .header {
 	width: 100%;
 	max-width: 100%;
-	max-height: 15%;
+	height: auto;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
