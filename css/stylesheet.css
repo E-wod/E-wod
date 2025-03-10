@@ -864,15 +864,15 @@ h3{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border-radius: 8px;
 }
 .navBar a {
-  	width: 140px;
-	height: 140px;
+  	width: 110px;
+	height: 110px;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -942,10 +942,10 @@ h3{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border-radius: 8px;
 }
 .nav-menu a {
@@ -962,10 +962,10 @@ h3{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border-radius: 8px;
 }
 li {
@@ -980,10 +980,10 @@ li {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border-radius: 8px;
 }
 .nav-link{
@@ -1469,11 +1469,11 @@ h3{
 	opacity: .3;
 }
 .navBar {
-  	width: 60%;
-	height: 60%;
+  	width: 100%;
+	height: 100%;
 	text-decoration: none;
 	background: transparent;
- 	display: flex;
+ 	display: flex-end;
  	position: inherit;
 	align-self: center;
 	justify-content: space-between;
@@ -1488,8 +1488,8 @@ h3{
 	border-radius: 8px;
 }
 .navBar a {
-  	width: 140px;
-	height: 140px;
+  	width: 90px;
+	height: 90px;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
