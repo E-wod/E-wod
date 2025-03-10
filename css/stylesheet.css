@@ -1465,8 +1465,8 @@ h3{
 	opacity: .3;
 }
 .navBar {
-  	width: 100px;
-	height: 100px;
+  	width: 100%;
+	height: 100%;
 	text-decoration: none;
 	background: transparent;
  	display: flex-end;
@@ -1484,8 +1484,8 @@ h3{
 	border-radius: 8px;
 }
 .navBar a {
-  	width: 90px;
-	height: 90px;
+  	width: 40%;
+	height: 40%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1512,8 +1512,8 @@ h3{
 	border-radius: 8px;
 	text-decoration: none;
 	display: flex;
-	width: 90px;
-	height: 0px;
+	width: 40%;
+	height: 0%;
 	color: #ffffff;
 	transition: .6s;
 	opacity: 0;
@@ -1528,8 +1528,8 @@ h3{
 }
 .navBar a:hover,
 .navBar .active{
-	width: 90px;
-	height: 90px;
+	width: 40%;
+	height: 40%;
 	color: #ffffff;
 	text-decoration: none;
 	transition: .6s;
