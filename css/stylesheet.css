@@ -354,6 +354,10 @@ li {
     	list-style: none;
 }
 .nav-item {
+	color: #378dae;
+	text-size: 2.5vw;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -968,6 +972,10 @@ li {
     	list-style: none;
 }
 .nav-item {
+	color: #378dae;
+	text-size: 2vw;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
