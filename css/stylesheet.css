@@ -527,7 +527,6 @@ h3{
 	transition: .6s;
 }
 .btnBox a::before {
-	content: '';
 	background: transparent;
 	border-radius: 12px;
 	color: #378dae;
@@ -1144,7 +1143,6 @@ h3{
 	transition: .6s;
 }
 .btnBox a::before {
-	content: '';
 	background: transparent;
 	border-radius: 12px;
 	color: #378dae;
@@ -1762,7 +1760,6 @@ h3{
 	transition: .6s;
 }
 .btnBox a::before {
-	content: '';
 	background: transparent;
 	border-radius: 12px;
 	color: #378dae;
