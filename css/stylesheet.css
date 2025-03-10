@@ -204,8 +204,8 @@ i {
 	animation-timing-function: ease-in-out;
 }
 .nav-logo a {
-	width: 100px;
-	height: 100px;
+	width: 100%;
+	height: 100%;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
@@ -796,8 +796,8 @@ h3{
 	justify-items: center;
 }
 .nav-logo {
-	width: 100%;
-	height: 100%;
+	width: 80px;
+	height: 80px;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
@@ -818,8 +818,8 @@ h3{
 	animation-timing-function: ease-in-out;
 }
 .nav-logo a {
-	width: 80px;
-	height: 80px;
+	width: 100%;
+	height: 100%;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
@@ -848,8 +848,8 @@ h3{
 	opacity: .3;
 }
 .navBar {
-  	width: 50%;
-	height: 50%;
+  	width: 60%;
+	height: 60%;
 	text-decoration: none;
 	background: transparent;
  	display: flex-end;
@@ -867,8 +867,8 @@ h3{
 	border-radius: 8px;
 }
 .navBar a {
-  	width: 120px;
-	height: 120px;
+  	width: 140px;
+	height: 140px;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -880,7 +880,7 @@ h3{
 	background: transparent;
 	border-radius: 8px;
 	color: #378dae;
-	text-size: 20px;
+	text-size: 22px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	align: center;
@@ -928,7 +928,6 @@ h3{
 	justify-self: center;
 	text-decoration: none;
 	display: flex;
-	flex-direction: column;
 	width: auto;
 	height: auto;
 	max-height: 100%;
@@ -979,7 +978,6 @@ li {
 	padding-bottom: 5px;
 	border-radius: 8px;
 }
-
 .nav-link{
 	color: #378dae;
 }
@@ -1003,7 +1001,7 @@ li {
 }
 h1{
 	color: #378dae;
-	text-size: 24px;
+	text-size: 20px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1027,7 +1025,7 @@ h1{
 }
 h2{
 	color: #378dae;
-	text-size: 22px;
+	text-size: 17px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1051,7 +1049,7 @@ h2{
 }
 h3{
 	color: #378dae;
-	text-size: 18px;
+	text-size: 13px;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
