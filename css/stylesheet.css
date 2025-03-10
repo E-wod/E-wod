@@ -277,7 +277,6 @@ i {
 	animation-timing-function: easy-ease;
 }
 .navBar a::before {
-	content: '';
 	background: transparent;
 	border-radius: 8px;
 	text-decoration: none;
@@ -894,7 +893,6 @@ h3{
 	animation-timing-function: easy-ease;
 }
 .navBar a::before {
-	content: '';
 	background: transparent;
 	border-radius: 8px;
 	text-decoration: none;
@@ -1510,7 +1508,6 @@ h3{
 	animation-timing-function: easy-ease;
 }
 .navBar a::before {
-	content: '';
 	background: transparent;
 	border-radius: 8px;
 	text-decoration: none;
