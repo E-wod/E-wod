@@ -1465,8 +1465,8 @@ h3{
 	opacity: .3;
 }
 .navBar {
-  	width: 100%;
-	height: 100%;
+  	width: 100px;
+	height: 100px;
 	text-decoration: none;
 	background: transparent;
  	display: flex-end;
@@ -1513,7 +1513,7 @@ h3{
 	text-decoration: none;
 	display: flex;
 	width: 90px;
-	height: 0%;
+	height: 0px;
 	color: #ffffff;
 	transition: .6s;
 	opacity: 0;
@@ -1528,6 +1528,8 @@ h3{
 }
 .navBar a:hover,
 .navBar .active{
+	width: 90px;
+	height: 90px;
 	color: #ffffff;
 	text-decoration: none;
 	transition: .6s;
