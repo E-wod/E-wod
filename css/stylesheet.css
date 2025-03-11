@@ -182,8 +182,8 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	width: 75px;
-	height: 75px;
+	width: 30%;
+	height: 30%;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
@@ -819,8 +819,8 @@ h3{
 	justify-items: center;
 }
 .nav-logo {
-	width: 75px;
-	height: 75px;
+	width: 30%;
+	height: 30%;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
