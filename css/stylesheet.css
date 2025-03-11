@@ -182,8 +182,8 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	width: 100%;
-	height: 100%;
+	width: 75px;
+	height: 75px;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
@@ -204,8 +204,8 @@ i {
 	animation-timing-function: ease-in-out;
 }
 .nav-logo a {
-	width: 45px;
-	height: 45px;
+	width: 100%;
+	height: 100%;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
@@ -323,10 +323,10 @@ i {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-radius: 8px;
 }
 .nav-menu a {
@@ -343,10 +343,10 @@ i {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-radius: 8px;
 }
 li {
@@ -821,8 +821,8 @@ h3{
 	justify-items: center;
 }
 .nav-logo {
-	width: 100%;
-	height: 100%;
+	width: 75px;
+	height: 75px;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
@@ -843,8 +843,8 @@ h3{
 	animation-timing-function: ease-in-out;
 }
 .nav-logo a {
-	width: 45px;
-	height: 45px;
+	width: 100%;
+	height: 100%;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
@@ -962,10 +962,10 @@ h3{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-radius: 8px;
 }
 .nav-menu a {
@@ -982,10 +982,10 @@ h3{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-radius: 8px;
 }
 li {
