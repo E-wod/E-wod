@@ -160,8 +160,7 @@ i {
 @media (min-width: 993px) {
 .header {
 	width: 100%;
-	max-width: 100%;
-	max-height: 15%;
+	height: 15%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -182,8 +181,8 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
@@ -234,8 +233,6 @@ i {
 	opacity: .3;
 }
 .navBar {
-    	width: auto;
-	height: auto;
 	max-width: 60%;
 	max-height: 20%;
 	text-decoration: none;
@@ -393,7 +390,7 @@ li {
 }
 h1{
 	color: #378dae;
-	font-size: 7vw;
+	font-size: 10vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -417,7 +414,7 @@ h1{
 }
 h2{
 	color: #378dae;
-	font-size: 6vw;
+	font-size: 8vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -441,7 +438,7 @@ h2{
 }
 h3{
 	color: #378dae;
-	font-size: 5vw;
+	font-size: 6vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -698,8 +695,8 @@ h3{
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	width: 50%;
-	height: 50%;
+	max-width: 30%;
+	max-height: 30%;
 	text-decoration: none;
 	background: transparent;
  	position: inherit;
@@ -1008,7 +1005,7 @@ li {
 }
 h1{
 	color: #378dae;
-	font-size: 6vw;
+	font-size: 8vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1032,7 +1029,7 @@ h1{
 }
 h2{
 	color: #378dae;
-	font-size: 5vw;
+	font-size: 6vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1623,7 +1620,7 @@ li {
 }
 h1{
 	color: #378dae;
-	font-size: 4vw;
+	font-size: 7vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1647,7 +1644,7 @@ h1{
 }
 h2{
 	color: #378dae;
-	font-size: 3vw;
+	font-size: 5vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1671,7 +1668,7 @@ h2{
 }
 h3{
 	color: #378dae;
-	font-size: 2vw;
+	font-size: 3vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1928,8 +1925,8 @@ h3{
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	max-width: 20%;
-	max-height: 20%;
+	max-width: 40%;
+	max-height: 40%;
 	text-decoration: none;
 	background: transparent;
  	position: inherit;
