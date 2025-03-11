@@ -744,7 +744,7 @@ h3{
 }
 .bkg {
 	background-color: transparent;
-	justify-items: center;
+	justify-content: center;
 	width: 100%;
 	height: auto;
 	position: inherit;
@@ -1383,7 +1383,7 @@ h3{
 }
 .bkg {
 	background-color: transparent;
-	justify-items: center;
+	justify-content: center;
 	width: 100%;
 	height: auto;
 	position: inherit;
@@ -1998,7 +1998,7 @@ h3{
 }
 .bkg {
 	background-color: transparent;
-	justify-items: center;
+	justify-content: center;
 	width: 100%;
 	height: auto;
 	position: inherit;
