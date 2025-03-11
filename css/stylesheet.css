@@ -160,7 +160,8 @@ i {
 @media (min-width: 993px) {
 .header {
 	width: 100%;
-	height: 15%;
+	max-width: 100%;
+	max-height: 15%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -181,8 +182,8 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	width: 80px;
-	height: 80px;
+	width: 100%;
+	height: 100%;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
@@ -203,8 +204,8 @@ i {
 	animation-timing-function: ease-in-out;
 }
 .nav-logo a {
-	width: 100%;
-	height: 100%;
+	width: 45px;
+	height: 45px;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
@@ -234,7 +235,7 @@ i {
 }
 .navBar {
     	width: 100%;
-	height: 100%;
+	height: 20%;
 	text-decoration: none;
 	background: transparent;
  	display: flex-end;
@@ -245,16 +246,15 @@ i {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border-radius: 8px;
 }
 .navBar a {
-	max-width: 60%;
-	max-height: 20%;
-	scale: 1;
+    	width: 100%;
+	height: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -269,7 +269,7 @@ i {
 	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	align: center;
+	align-content: center;
 	float: center;
 	display: flex;
 	animation: menuAnim 2s ease forwards;
@@ -323,10 +323,10 @@ i {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border-radius: 8px;
 }
 .nav-menu a {
@@ -343,10 +343,10 @@ i {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border-radius: 8px;
 }
 li {
@@ -361,13 +361,12 @@ li {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border-radius: 8px;
 }
-
 .nav-link{
 	color: #378dae;
 }
@@ -720,8 +719,8 @@ h3{
 	animation: pAnim 3s ease forwards;
 }
 .beNook a {
-	width: 100%;
-	height: 100%;
+	width: 80%;
+	height: 80%;
 	text-decoration: none;
 	background: transparent;
  	position: inherit;
@@ -822,8 +821,8 @@ h3{
 	justify-items: center;
 }
 .nav-logo {
-	width: 45px;
-	height: 45px;
+	width: 100%;
+	height: 100%;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
@@ -844,8 +843,8 @@ h3{
 	animation-timing-function: ease-in-out;
 }
 .nav-logo a {
-	width: 100%;
-	height: 100%;
+	width: 45px;
+	height: 45px;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
