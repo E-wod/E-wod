@@ -265,7 +265,7 @@ i {
 	background: transparent;
 	border-radius: 8px;
 	color: #378dae;
-	font-size: 1vw;
+	font-size: 2.25vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	align: center;
@@ -353,7 +353,7 @@ li {
 }
 .nav-item {
 	color: #378dae;
-	font-size: 1vw;
+	font-size: 2.25vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	margin-left: 0px;
@@ -390,7 +390,7 @@ li {
 }
 h1{
 	color: #378dae;
-	font-size: 1.5vw;
+	font-size: 2.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -414,7 +414,7 @@ h1{
 }
 h2{
 	color: #378dae;
-	font-size: 1.25vw;
+	font-size: 2.5vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -438,7 +438,7 @@ h2{
 }
 h3{
 	color: #378dae;
-	font-size: 1vw;
+	font-size: 2.25vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -504,7 +504,7 @@ h3{
 .btnBox a {
 	background: transparent;
 	display: flex;	
-	font-size: 5vw;
+	font-size: 25px;
 	color: #378dae;
 	font-family: "sofachrome", sans-serif;
 	text-decoration: none;
@@ -881,7 +881,7 @@ h3{
 	background: transparent;
 	border-radius: 8px;
 	color: #378dae;
-	font-size: .75vw;
+	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	align-content: center;
@@ -969,7 +969,7 @@ li {
 }
 .nav-item {
 	color: #378dae;
-	font-size: .75vw;
+	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	margin-left: 0px;
@@ -1005,7 +1005,7 @@ li {
 }
 h1{
 	color: #378dae;
-	font-size: 1.25vw;
+	font-size: 2.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1029,7 +1029,7 @@ h1{
 }
 h2{
 	color: #378dae;
-	font-size: 1vw;
+	font-size: 2.25vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1053,7 +1053,7 @@ h2{
 }
 h3{
 	color: #378dae;
-	font-size: .75vw;
+	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1119,7 +1119,7 @@ h3{
 .btnBox a {
 	background: transparent;
 	display: flex;	
-	font-size: .75vw;
+	font-size: 25px;
 	color: #378dae;
 	font-family: "sofachrome", sans-serif;
 	text-decoration: none;
@@ -1496,7 +1496,7 @@ h3{
 	background: transparent;
 	border-radius: 8px;
 	color: #378dae;
-	font-size: .75vw;
+	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
  	position: inherit;
@@ -1620,7 +1620,7 @@ li {
 }
 h1{
 	color: #378dae;
-	font-size: 1.25vw;
+	font-size: 3.25vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1644,7 +1644,7 @@ h1{
 }
 h2{
 	color: #378dae;
-	font-size: 1vw;
+	font-size: 2.25vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1668,7 +1668,7 @@ h2{
 }
 h3{
 	color: #378dae;
-	font-size: .75vw;
+	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1734,7 +1734,7 @@ h3{
 .btnBox a {
 	background: transparent;
 	display: flex;	
-	font-size: 1vw;
+	font-size: 25px;
 	color: #378dae;
 	font-family: "sofachrome", sans-serif;
 	text-decoration: none;
