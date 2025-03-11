@@ -854,10 +854,8 @@ h3{
 	opacity: .3;
 }
 .navBar {
-    	width: auto;
-	height: auto;
-	max-width: 60%;
-	max-height: 20%;
+    	width: 100%;
+	height: 20%;
 	text-decoration: none;
 	background: transparent;
  	display: flex-end;
@@ -1550,10 +1548,8 @@ h3{
 	text-decoration: none;
 	display: flex;
 	flex-direction: column;
-	width: auto;
-	height: auto;
-	max-height: 100%;
-	max-width: 100%;
+	height: 100%;
+	width: 100%;
 	transition: .6s;
 	animation-timing-function: ease-in-out;
 	margin-left: 0px;
@@ -1572,10 +1568,10 @@ h3{
 	justify-content: space-around;
 	text-decoration: none;
 	display: flex;
-/* 	width: auto;
-	height: auto; */
-	height: 100%;
-	width: 100%;
+	width: auto;
+	height: auto;
+	max-height: 100%;
+	max-width: 100%;
 	transition: .6s;
 	animation-timing-function: ease-in-out;
 	margin-left: 0px;
