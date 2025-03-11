@@ -1392,15 +1392,15 @@ h3{
 .header {
 	width: 100%;
 	max-width: 100%;
-	height: auto;
+	max-height: 15%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	top: 0;
         z-index: 30;
 	position: sticky;
@@ -1413,8 +1413,8 @@ h3{
 	justify-items: center;
 }
 .nav-logo {
-	width: 55px;
-	height: 55px;
+	width: 75px;
+	height: 75px;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
@@ -1426,10 +1426,10 @@ h3{
 	margin-right: 1px;
 	margin-top: 1px;
 	margin-bottom: 1px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	background-color: transparent; 
 	animation: logoAnim 1.5s ease forwards; 
 	animation-timing-function: ease-in-out;
@@ -1477,23 +1477,23 @@ h3{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border-radius: 8px;
 }
 .navBar a {
-  	width: 40%;
-	height: 40%;
+  	width: 100%;
+	height: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	background: transparent;
 	border-radius: 8px;
 	color: #378dae;
@@ -1512,8 +1512,6 @@ h3{
 	border-radius: 8px;
 	text-decoration: none;
 	display: flex;
-	width: 40%;
-	height: 0%;
 	color: #ffffff;
 	transition: .6s;
 	opacity: 0;
@@ -1528,8 +1526,6 @@ h3{
 }
 .navBar a:hover,
 .navBar .active{
-	width: 40%;
-	height: 40%;
 	color: #ffffff;
 	text-decoration: none;
 	transition: .6s;
@@ -1587,6 +1583,10 @@ li {
     	list-style: none;
 }
 .nav-item {
+	color: #378dae;
+	text-size: 2vw;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1613,36 +1613,12 @@ li {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 h1{
-	color: #378dae;
-	text-size: 5vw;
-	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
-	text-shadow: 1px 0px 1px #000000;
-	background-color: transparent;
-	width: 100%;
-	height: 100%;
-	position: inherit;
-	justify-content: center;
-	display: flex;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0%; 
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2%;
-	padding-bottom: 2px;
-	z-index: 1;
-	animation: h1Anim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
-}
-h2{
 	color: #378dae;
 	text-size: 4vw;
 	text-decoration: none;
@@ -1666,9 +1642,33 @@ h2{
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
-h3{
+h2{
 	color: #378dae;
 	text-size: 3vw;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	text-shadow: 1px 0px 1px #000000;
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	position: inherit;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0%; 
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2%;
+	padding-bottom: 2px;
+	z-index: 1;
+	animation: h1Anim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
+}
+h3{
+	color: #378dae;
+	text-size: 2vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1703,10 +1703,10 @@ h3{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 .btnBox {
 	z-index: 15;
@@ -1715,10 +1715,10 @@ h3{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-radius: 12px;
 	background: transparent;
 	width: 100%;
@@ -1747,10 +1747,10 @@ h3{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	transition-timing-function: ease;
 	transition: .6s;
 }
@@ -1793,10 +1793,10 @@ h3{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-radius: 50%;
 	background: transparent;
 	width: 100%;
@@ -1825,10 +1825,10 @@ h3{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	animation: menuAnim 2s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
@@ -1884,10 +1884,10 @@ h3{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	width: 100%;
 	height: auto;
 	max-width: 100%;
@@ -1908,14 +1908,14 @@ h3{
 	max-height: auto;
 	max-width: auto;
 	height: 100%;
-   	margin-left: 1px;
-	margin-right: 1px;  
-	margin-top: 1px;
-  	margin-bottom: 1px; 
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+   	margin-left: 1%;
+	margin-right: 1%;  
+	margin-top: 1%;
+  	margin-bottom: 1%; 
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 	z-index: 1;
 	align-all: space-between; 
 	float: center;
@@ -1925,8 +1925,8 @@ h3{
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	width: 50%;
-	height: 50%;
+	max-width: 20%;
+	max-height: 20%;
 	text-decoration: none;
 	background: transparent;
  	position: inherit;
@@ -1958,10 +1958,10 @@ h3{
 	margin-right: 0px;  
 	margin-top: 0px;
   	margin-bottom: 0%; 
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2%;
-	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5%;
+	padding-bottom: 5px;
 	z-index: 1;
 	animation: h1Anim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
@@ -1969,7 +1969,7 @@ h3{
 .obJects{
 	background-color: transparent;
 	justify-items: center;
-	width: 95%;
+	width: 90%;
 	height: auto;
 	position: inherit;
 	margin-top: 0px;
