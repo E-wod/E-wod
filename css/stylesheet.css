@@ -1392,15 +1392,15 @@ h3{
 .header {
 	width: 100%;
 	max-width: 100%;
-	max-height: 15%;
+	max-height: auto;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	top: 0;
         z-index: 30;
 	position: sticky;
@@ -1471,7 +1471,8 @@ h3{
 	background: transparent;
  	display: flex;
  	position: inherit;
-	align-self: center;
+	align-content: center;
+	float: center;
 	justify-content: space-between;
  	margin-left: 0px;
 	margin-right: 0px;
@@ -1500,8 +1501,7 @@ h3{
 	text-size: 2vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	align: center;
-	float: center;
+	align-content: center;
 	display: flex;
 	animation: menuAnim 2s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
@@ -1538,8 +1538,8 @@ h3{
 }
 .nav-menu {
 	background-color: transparent;
-	float: center;
-	justify-self: center;
+	align-content: center;
+	justify-content: space-around;
 	text-decoration: none;
 	display: flex;
 	flex-direction: column;
@@ -1560,11 +1560,13 @@ h3{
 	border-radius: 8px;
 }
 .nav-menu a {
-	display: flex;
 	background-color: transparent;
-	float: center;
-	justify-self: center;
+	align-content: center;
+	justify-content: space-around;
 	text-decoration: none;
+	display: flex;
+/* 	width: auto;
+	height: auto; */
 	height: 100%;
 	width: 100%;
 	transition: .6s;
@@ -1583,10 +1585,10 @@ li {
     	list-style: none;
 }
 .nav-item {
-	color: #378dae;
-	text-size: 2vw;
+	align-content: center;
+	justify-content: space-around;
 	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
+	display: flex;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
