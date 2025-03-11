@@ -786,10 +786,10 @@ h3{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	top: 0;
         z-index: 30;
 	position: sticky;
@@ -802,8 +802,8 @@ h3{
 	justify-items: center;
 }
 .nav-logo {
-	width: 55px;
-	height: 55px;
+	width: 45px;
+	height: 45px;
 	align-self: center;
 	justify-content: space-between;
 	text-decoration: none;
@@ -1317,8 +1317,8 @@ h3{
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	max-width: 20%;
-	max-height: 20%;
+	max-width: 18%;
+	max-height: 18%;
 	text-decoration: none;
 	background: transparent;
  	position: inherit;
@@ -1421,11 +1421,10 @@ h3{
 .nav-logo {
 	width: 75px;
 	height: 75px;
+	text-decoration: none;
+ 	position: inherit;
 	align-self: center;
 	justify-content: space-between;
-	text-decoration: none;
-	display: flex;
-	position: inherit;
 	opacity: 1;
 	scale: 1;
 	margin-left: 1px;
@@ -1477,8 +1476,9 @@ h3{
 	background: transparent;
  	display: flex;
  	position: inherit;
-	align-content: center;
-	justify-content: space-around;
+	align-self: center;
+	justify-content: space-between;
+	float: center;
  	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
