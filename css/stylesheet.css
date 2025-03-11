@@ -850,8 +850,10 @@ h3{
 	opacity: .3;
 }
 .navBar {
-  	width: 60%;
-	height: 60%;
+    	width: auto;
+	height: auto;
+	max-width: 60%;
+	max-height: 20%;
 	text-decoration: none;
 	background: transparent;
  	display: flex-end;
@@ -869,8 +871,8 @@ h3{
 	border-radius: 8px;
 }
 .navBar a {
-  	width: 110px;
-	height: 110px;
+    	width: auto;
+	height: auto;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -885,7 +887,7 @@ h3{
 	text-size: 2vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	align: center;
+	align-content: center;
 	float: center;
 	display: flex;
 	animation: menuAnim 2s ease forwards;
@@ -1465,8 +1467,10 @@ h3{
 	opacity: .3;
 }
 .navBar {
-  	width: 100%;
-	height: 100%;
+      	width: auto;
+	height: auto;
+	max-width: 60%;
+	max-height: 40%;
 	text-decoration: none;
 	background: transparent;
  	display: flex;
