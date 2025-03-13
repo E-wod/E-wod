@@ -182,48 +182,42 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	width: 100%;
+    	width: 100%;
 	height: 100%;
-	align-self: center;
-	justify-content: space-between;
-	text-decoration: none;
-	display: flex;
-	position: inherit;
-	opacity: 1;
-	scale: 1;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	background-color: transparent; 
-	animation: logoAnim 1.5s ease forwards; 
-	animation-timing-function: ease-in-out;
-}
-.nav-logo a {
-	width: 50%;
-	height: 50%;
-	align-self: center;
-	justify-content: space-between;
-	text-decoration: none;
-	display: flex;
-	position: inherit;
-	opacity: 1;
-	scale: 1;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	padding-left: 2px;
 	padding-right: 2px;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	background-color: transparent; 
-	animation: logoAnim 1.5s ease forwards; 
-	animation-timing-function: ease-in-out;
+	background: transparent;
+	align-content: center;
+	float: center;
+	display: flex;
+	animation: logoAnim 2s ease forwards;
+	animation-delay: calc(.085s * var(--i)); 
+	animation-timing-function: easy-ease;
+}
+.nav-logo a {
+    	width: 100%;
+	height: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background: transparent;
+	align-content: center;
+	float: center;
+	display: flex;
+	animation: logoAnim 2s ease forwards;
+	animation-delay: calc(.085s * var(--i)); 
+	animation-timing-function: easy-ease;
 }
 .nav-logo :hover,
 .nav-logo .active {
@@ -822,48 +816,42 @@ h3{
 	justify-items: center;
 }
 .nav-logo {
-	width: 100%;
+    	width: 100%;
 	height: 100%;
-	align-self: center;
-	justify-content: space-between;
-	text-decoration: none;
-	display: flex;
-	position: inherit;
-	opacity: 1;
-	scale: 1;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	background-color: transparent; 
-	animation: logoAnim 1.5s ease forwards; 
-	animation-timing-function: ease-in-out;
-}
-.nav-logo a {
-	width: 50%;
-	height: 50%;
-	align-self: center;
-	justify-content: space-between;
-	text-decoration: none;
-	display: flex;
-	position: inherit;
-	opacity: 1;
-	scale: 1;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	padding-left: 2px;
 	padding-right: 2px;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	background-color: transparent; 
-	animation: logoAnim 1.5s ease forwards; 
-	animation-timing-function: ease-in-out;
+	background: transparent;
+	align-content: center;
+	float: center;
+	display: flex;
+	animation: logoAnim 2s ease forwards;
+	animation-delay: calc(.085s * var(--i)); 
+	animation-timing-function: easy-ease;
+}
+.nav-logo a {
+    	width: 100%;
+	height: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background: transparent;
+	align-content: center;
+	float: center;
+	display: flex;
+	animation: logoAnim 2s ease forwards;
+	animation-delay: calc(.085s * var(--i)); 
+	animation-timing-function: easy-ease;
 }
 .nav-logo :hover,
 .nav-logo .active {
