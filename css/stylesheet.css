@@ -202,8 +202,6 @@ i {
 	animation-timing-function: ease-in-out;
 }
 .nav-logo a {
-	width: 100%;
-	height: 100%;
 	display: flex;
 	text-decoration: none;
  	position: inherit;
@@ -817,7 +815,7 @@ h3{
 	overflow: inherit;
 	justify-items: center;
 }
-.nav-logo a {
+.nav-logo {
 	width: 75px;
 	height: 75px;
 	display: flex;
@@ -837,9 +835,7 @@ h3{
 	animation: logoAnim 1.5s ease forwards; 
 	animation-timing-function: ease-in-out;
 }
-.nav-logo {
-	width: 100%;
-	height: 100%;
+.nav-logo a {
 	display: flex;
 	text-decoration: none;
  	position: inherit;
