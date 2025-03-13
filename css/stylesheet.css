@@ -182,8 +182,8 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	width: 100%;
-	height: 100%;
+	width: 10%;
+	height: 10%;
 	display: flex;
 	text-decoration: none;
  	position: inherit;
@@ -818,8 +818,8 @@ h3{
 	justify-items: center;
 }
 .nav-logo {
-	width: 100%;
-	height: 100%;
+	width: 10%;
+	height: 10%;
 	display: flex;
 	text-decoration: none;
  	position: inherit;
