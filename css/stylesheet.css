@@ -184,6 +184,7 @@ i {
 .nav-logo {
 	width: 75px;
 	height: 75px;
+	display: flex;
 	text-decoration: none;
  	position: inherit;
 	align-self: center;
@@ -201,8 +202,9 @@ i {
 	animation-timing-function: ease-in-out;
 }
 .nav-logo a {
-	width: 75px;
-	height: 75px;
+	width: 100%;
+	height: 100%;
+	display: flex;
 	text-decoration: none;
  	position: inherit;
 	align-self: center;
@@ -815,9 +817,10 @@ h3{
 	overflow: inherit;
 	justify-items: center;
 }
-.nav-logo {
+.nav-logo a {
 	width: 75px;
 	height: 75px;
+	display: flex;
 	text-decoration: none;
  	position: inherit;
 	align-self: center;
@@ -834,9 +837,10 @@ h3{
 	animation: logoAnim 1.5s ease forwards; 
 	animation-timing-function: ease-in-out;
 }
-.nav-logo a {
-	width: 75px;
-	height: 75px;
+.nav-logo {
+	width: 100%;
+	height: 100%;
+	display: flex;
 	text-decoration: none;
  	position: inherit;
 	align-self: center;
