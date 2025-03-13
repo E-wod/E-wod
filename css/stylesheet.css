@@ -196,6 +196,7 @@ i {
 	align-content: center;
 	float: center;
 	display: flex;
+	position: inherit;
 	animation: logoAnim 2s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
@@ -215,6 +216,7 @@ i {
 	align-content: center;
 	float: center;
 	display: flex;
+	position: inherit;
 	animation: logoAnim 2s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
@@ -830,6 +832,7 @@ h3{
 	align-content: center;
 	float: center;
 	display: flex;
+	position: inherit;
 	animation: logoAnim 2s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
@@ -849,6 +852,7 @@ h3{
 	align-content: center;
 	float: center;
 	display: flex;
+	position: inherit;
 	animation: logoAnim 2s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
