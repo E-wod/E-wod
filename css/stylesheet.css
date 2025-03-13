@@ -182,8 +182,8 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	width: 75px;
-	height: 75px;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	text-decoration: none;
  	position: inherit;
@@ -202,6 +202,8 @@ i {
 	animation-timing-function: ease-in-out;
 }
 .nav-logo a {
+	width: 10%;
+	height: 10%;
 	display: flex;
 	text-decoration: none;
  	position: inherit;
@@ -816,8 +818,8 @@ h3{
 	justify-items: center;
 }
 .nav-logo {
-	width: 75px;
-	height: 75px;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	text-decoration: none;
  	position: inherit;
@@ -836,6 +838,8 @@ h3{
 	animation-timing-function: ease-in-out;
 }
 .nav-logo a {
+	width: 10%;
+	height: 10%;
 	display: flex;
 	text-decoration: none;
  	position: inherit;
