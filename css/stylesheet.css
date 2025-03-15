@@ -182,8 +182,8 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	width: 30%;
-	height: 30%;
+	width: 11%;
+	height: 11%;
 	display: flex;
 	text-decoration: none;
  	position: inherit;
@@ -823,8 +823,8 @@ h3{
 	justify-items: center;
 }
 .nav-logo {
-	width: 30%;
-	height: 30%;
+	width: 11%;
+	height: 11%;
 	display: flex;
 	text-decoration: none;
  	position: inherit;
@@ -1548,7 +1548,7 @@ h3{
 	background: transparent;
 	border-radius: 8px;
 	color: #378dae;
-	font-size: 1.75vw;
+	font-size: 2vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
  	position: inherit;
@@ -1696,7 +1696,7 @@ h1{
 }
 h2{
 	color: #378dae;
-	font-size: 2.25vw;
+	font-size: 2.5vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1720,7 +1720,7 @@ h2{
 }
 h3{
 	color: #378dae;
-	font-size: 1.75vw;
+	font-size: 2vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
