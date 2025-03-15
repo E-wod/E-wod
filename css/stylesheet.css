@@ -182,8 +182,8 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	width: 10%;
-	height: 10%;
+	width: 30%;
+	height: 30%;
 	display: flex;
 	text-decoration: none;
  	position: inherit;
@@ -823,8 +823,8 @@ h3{
 	justify-items: center;
 }
 .nav-logo {
-	width: 10%;
-	height: 10%;
+	width: 30%;
+	height: 30%;
 	display: flex;
 	text-decoration: none;
  	position: inherit;
@@ -1977,8 +1977,32 @@ h3{
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	max-width: 40%;
-	max-height: 40%;
+	max-width: 70%;
+	max-height: 70%;
+	text-decoration: none;
+	background: transparent;
+ 	position: inherit;
+	align-self: center;
+	justify-content: space-between;
+	display: flex;
+	opacity: 1;
+	scale: 1;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-decoration: none;
+	transition: 3s;
+	transition-timing-function: ease; 
+	animation: pAnim 3s ease forwards;
+}
+.beNook a {
+	width: 40%;
+	height: 40%;
 	text-decoration: none;
 	background: transparent;
  	position: inherit;
