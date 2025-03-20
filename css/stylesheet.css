@@ -766,7 +766,6 @@ h3{
 	float: center;
 	justify-self: center;
 	display: flex;
-	flex-direction: column;
 	width: 100%;
 	height: auto;
 	position: inherit;
@@ -794,6 +793,7 @@ h3{
 	float: center;
 	justify-self: center;
 	text-decoration: none;
+	flex-direction: column;
 	display: flex;
 	align: center;
 	position: inherit;
@@ -1686,7 +1686,7 @@ li {
 }
 h1{
 	color: #378dae;
-	font-size: 3.25vw;
+	font-size: 3.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1710,7 +1710,7 @@ h1{
 }
 h2{
 	color: #378dae;
-	font-size: 2.75vw;
+	font-size: 3.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -2086,6 +2086,7 @@ h3{
 	width: 100%;
 	height: 100%;
 	float: center;
+	flex-direction: column;
 	justify-self: center;
 	text-decoration: none;
 	display: flex;
