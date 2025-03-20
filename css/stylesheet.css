@@ -182,13 +182,14 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	width: 11%;
-	height: 11%;
-	display: flex;
+	width: 75px;
+	height: 75px;
 	text-decoration: none;
  	position: inherit;
 	align-self: center;
-	justify-content: space-around;
+	justify-content: space-between;
+	opacity: 1;
+	scale: 1;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
@@ -202,21 +203,23 @@ i {
 	animation-timing-function: ease-in-out;
 }
 .nav-logo a {
-	width: 10%;
-	height: 10%;
-	display: flex;
-	text-decoration: none;
- 	position: inherit;
+	width: 100%;
+	height: 100%;
 	align-self: center;
-	justify-content: space-around;
+	justify-content: space-between;
+	text-decoration: none;
+	display: flex;
+	position: inherit;
+	opacity: 1;
+	scale: 1;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
 	margin-bottom: 1px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	background-color: transparent; 
 	animation: logoAnim 1.5s ease forwards; 
 	animation-timing-function: ease-in-out;
@@ -2079,8 +2082,8 @@ h3{
 	padding-right: 2px;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	width: 100%;
-	height: 100%;
+	width: 60%;
+	height: 60%;
 	float: center;
 	flex-direction: column;
 	justify-self: center;
