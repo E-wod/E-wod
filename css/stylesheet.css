@@ -309,6 +309,7 @@ i {
 	justify-self: center;
 	text-decoration: none;
 	display: flex;
+	overflow: inherit;
 	width: auto;
 	height: auto;
 	max-height: 100%;
@@ -386,7 +387,7 @@ li {
 }
 h1{
 	color: #378dae;
-	font-size: 2.50vw;
+	font-size: 3.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -790,6 +791,7 @@ h3{
 	justify-self: center;
 	text-decoration: none;
 	display: flex;
+	align: center;
 	position: inherit;
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
@@ -951,6 +953,7 @@ h3{
 	justify-self: center;
 	text-decoration: none;
 	display: flex;
+	overflow: inherit;
 	width: auto;
 	height: auto;
 	max-height: 100%;
@@ -1028,7 +1031,7 @@ li {
 }
 h1{
 	color: #378dae;
-	font-size: 2.50vw;
+	font-size: 3.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1432,6 +1435,7 @@ h3{
 	justify-self: center;
 	text-decoration: none;
 	display: flex;
+	align: center;
 	position: inherit;
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
@@ -1550,7 +1554,7 @@ h3{
 	background: transparent;
 	border-radius: 8px;
 	color: #378dae;
-	font-size: 2vw;
+	font-size: 2.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
  	position: inherit;
@@ -1698,7 +1702,7 @@ h1{
 }
 h2{
 	color: #378dae;
-	font-size: 2.5vw;
+	font-size: 2.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1722,7 +1726,7 @@ h2{
 }
 h3{
 	color: #378dae;
-	font-size: 2vw;
+	font-size: 2.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
