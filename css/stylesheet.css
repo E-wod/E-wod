@@ -764,8 +764,6 @@ h3{
 .obJects{
 	background-color: transparent;
 	float: center;
-	justify-self: center;
-	align-items: center;
 	display: flex;
 	width: 100%;
 	height: auto;
@@ -1411,9 +1409,7 @@ h3{
 .obJects{
 	background-color: transparent;
 	float: center;
-	justify-self: center;
 	display: flex;
-	flex-direction: column;
 	width: 100%;
 	height: auto;
 	position: inherit;
