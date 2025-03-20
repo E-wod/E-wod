@@ -238,6 +238,7 @@ i {
  	position: inherit;
 	align-self: center;
 	justify-content: space-between;
+	overflow: inherit;
  	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -268,6 +269,7 @@ i {
 	align-content: center;
 	float: center;
 	display: flex;
+	overflow: inherit;
 	animation: menuAnim 2s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
@@ -332,6 +334,7 @@ i {
 	float: center;
 	justify-self: center;
 	text-decoration: none;
+	overflow: inherit;
 	height: 100%;
 	width: 100%;
 	transition: .6s;
@@ -354,6 +357,7 @@ li {
 	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
+	overflow: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -882,6 +886,7 @@ h3{
  	position: inherit;
 	align-self: center;
 	justify-content: space-between;
+	overflow: inherit;
  	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -912,6 +917,7 @@ h3{
 	align-content: center;
 	float: center;
 	display: flex;
+	overflow: inherit;
 	animation: menuAnim 2s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
@@ -975,6 +981,7 @@ h3{
 	background-color: transparent;
 	float: center;
 	justify-self: center;
+	overflow: inherit;
 	text-decoration: none;
 	height: 100%;
 	width: 100%;
@@ -998,6 +1005,7 @@ li {
 	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
+	overflow: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
