@@ -357,10 +357,10 @@ li {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-radius: 8px;
 }
 .nav-link{
@@ -761,6 +761,7 @@ h3{
 	float: center;
 	justify-self: center;
 	display: flex;
+	flex-direction: column;
 	width: 100%;
 	height: auto;
 	position: inherit;
@@ -789,7 +790,6 @@ h3{
 	justify-self: center;
 	text-decoration: none;
 	display: flex;
-	flex-direction: column;
 	position: inherit;
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
@@ -999,10 +999,10 @@ li {
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-radius: 8px;
 }
 .nav-link{
@@ -1403,6 +1403,7 @@ h3{
 	float: center;
 	justify-self: center;
 	display: flex;
+	flex-direction: column;
 	width: 100%;
 	height: auto;
 	position: inherit;
@@ -1431,7 +1432,6 @@ h3{
 	justify-self: center;
 	text-decoration: none;
 	display: flex;
-	flex-direction: column;
 	position: inherit;
 	background-color: transparent;
 	animation: h1Anim 1s ease forwards;
