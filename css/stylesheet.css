@@ -696,8 +696,8 @@ h3{
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	width: 80%;
-	height: 80%;
+	width: 70%;
+	height: 70%;
 	text-decoration: none;
 	background: transparent;
  	position: inherit;
@@ -720,8 +720,8 @@ h3{
 	animation: pAnim 3s ease forwards;
 }
 .beNook a {
-	width: 60%;
-	height: 60%;
+	width: 50%;
+	height: 50%;
 	text-decoration: none;
 	background: transparent;
  	position: inherit;
@@ -1342,8 +1342,8 @@ h3{
 	animation: logoAnim 3s ease forwards;
 }
 .beNook {
-	width: 80%;
-	height: 80%;
+	width: 65%;
+	height: 65%;
 	text-decoration: none;
 	background: transparent;
  	position: inherit;
