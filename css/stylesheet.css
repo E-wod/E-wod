@@ -545,7 +545,6 @@ h3{
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	text-decoration: none;
 	transition: .6s;
-	opacity: 0;
 	width: 180px;
 	height: 0px;
 }
@@ -1158,7 +1157,8 @@ h3{
 }
 .btnBox a {
 	background: transparent;
-	display: flex;	
+	display: flex;
+	opacity: 0;
 	font-size: 25px;
 	color: #378dae;
 	font-family: "sofachrome", sans-serif;
@@ -1185,6 +1185,7 @@ h3{
 	color: #378dae;
 	text-decoration: none;
 	z-index: -1;
+	opacity: 0;
 	transition-timing-function: ease; 
 	width: 180px;
 	height: 0px;
@@ -1241,6 +1242,7 @@ h3{
 	position: inherit;
 	background: transparent;	
 	display: flex;
+	opacity: 0;
 	color: #378dae;
 	text-decoration: none;
 	justify-content: center;
@@ -1273,6 +1275,7 @@ h3{
 	z-index: -1;
 	transition-timing-function: ease; 
 	display: flex;
+	opacity: 0;
 	align-self: center;
 	width: 80px;
 	height: 0px;
@@ -1804,7 +1807,8 @@ h3{
 }
 .btnBox a {
 	background: transparent;
-	display: flex;	
+	display: flex;
+	opacity: 0;
 	font-size: 25px;
 	color: #378dae;
 	font-family: "sofachrome", sans-serif;
@@ -1831,6 +1835,7 @@ h3{
 	color: #378dae;
 	text-decoration: none;
 	z-index: -1;
+	opacity: 0;
 	transition-timing-function: ease; 
 	width: 180px;
 	height: 0px;
@@ -1887,6 +1892,7 @@ h3{
 	position: inherit;
 	background: transparent;	
 	display: flex;
+	opacity: 0;
 	color: #378dae;
 	text-decoration: none;
 	justify-content: center;
@@ -1919,6 +1925,7 @@ h3{
 	z-index: -1;
 	transition-timing-function: ease; 
 	display: flex;
+	opacity: 0;
 	align-self: center;
 	width: 80px;
 	height: 0px;
