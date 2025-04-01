@@ -753,10 +753,10 @@ h3{
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
-  	margin-bottom: 0%; 
+  	margin-bottom: 0px; 
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 10%;
+	padding-top: 10px;
 	padding-bottom: 10px;
 	z-index: 1;
 	animation: h1Anim 1s ease forwards;
@@ -916,6 +916,7 @@ h3{
 	align-content: center;
 	float: center;
 	display: flex;
+	opacity: 0;
 	overflow: inherit;
 	animation: menuAnim 2s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
@@ -1399,10 +1400,10 @@ h3{
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
-  	margin-bottom: 0%; 
+  	margin-bottom: 0px; 
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 10%;
+	padding-top: 10px;
 	padding-bottom: 10px;
 	z-index: 1;
 	animation: h1Anim 1s ease forwards;
@@ -1566,6 +1567,7 @@ h3{
 	align-content: center;
 	justify-content: space-around;
 	display: flex;
+	opacity: 0;
 	animation: menuAnim 2s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
@@ -2044,10 +2046,10 @@ h3{
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
-  	margin-bottom: 0%; 
+  	margin-bottom: 0px; 
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 10%;
+	padding-top: 10px;
 	padding-bottom: 10px;
 	z-index: 1;
 	animation: h1Anim 1s ease forwards;
