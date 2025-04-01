@@ -507,7 +507,6 @@ h3{
 .btnBox a {
 	background: transparent;
 	display: flex;	
-	opacity: 0;
 	font-size: 25px;
 	color: #378dae;
 	font-family: "sofachrome", sans-serif;
@@ -534,6 +533,7 @@ h3{
 	color: #378dae;
 	text-decoration: none;
 	z-index: -1;
+	opacity: 0;
 	transition-timing-function: ease; 
 	width: 180px;
 	height: 0px;
@@ -1157,7 +1157,6 @@ h3{
 .btnBox a {
 	background: transparent;
 	display: flex;
-	opacity: 0;
 	font-size: 25px;
 	color: #378dae;
 	font-family: "sofachrome", sans-serif;
@@ -1184,6 +1183,7 @@ h3{
 	color: #378dae;
 	text-decoration: none;
 	z-index: -1;
+	opacity: 0;
 	transition-timing-function: ease; 
 	width: 180px;
 	height: 0px;
@@ -1806,7 +1806,6 @@ h3{
 .btnBox a {
 	background: transparent;
 	display: flex;
-	opacity: 0;
 	font-size: 25px;
 	color: #378dae;
 	font-family: "sofachrome", sans-serif;
@@ -1833,6 +1832,7 @@ h3{
 	color: #378dae;
 	text-decoration: none;
 	z-index: -1;
+	opacity: 0;
 	transition-timing-function: ease; 
 	width: 180px;
 	height: 0px;
