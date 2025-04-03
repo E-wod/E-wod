@@ -94,16 +94,26 @@ i {
 @keyframes logoAnim {
 	0% {
 		opacity: 0;
-		text-shadow: 0 2px 1px #8B3421;
-		scale: .35;
-		transform: rotate(0deg);
+		scale: .55;
     }
+	95% {
+		color: #8B3421;
+		transform: rotate(-10deg);
+	}
+	96% {
+		color: #8B3421;
+		transform: rotate(10deg);
+	}
+	98% {
+		color: #8B3421;
+		scale: 1.125;
+		transform: rotate(-10deg);
+	}
 	100% {
 		opacity: 1;
 		color: #8B3421;
-		text-shadow: 0 2px 4px azure;
 		scale: 1;
-		transform: rotate(-1440deg);
+		transform: rotate(0deg);
 	}
 }
 @keyframes menuAnim {
