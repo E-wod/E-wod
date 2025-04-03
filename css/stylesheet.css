@@ -103,27 +103,27 @@ i {
 	}
 	94% {
 		color: #8B3421;
-		transform: rotate(10deg);
+		transform: rotate(25deg);
 	}
 	95% {
 		color: #8B3421;
-		transform: rotate(-10deg);
+		transform: rotate(-25deg);
 	}
 	96% {
 		color: #8B3421;
-		transform: rotate(10deg);
+		transform: rotate(25deg);
 	}
 	97% {
 		color: #8B3421;
-		transform: rotate(-10deg);
+		transform: rotate(-25deg);
 	}
 	98% {
 		color: #8B3421;
-		transform: rotate(10deg);
+		transform: rotate(25deg);
 	}
 	99% {
 		color: #8B3421;
-		scale: 1.125;
+		scale: 1.025;
 		transform: rotate(0deg);
 	}
 	100% {
@@ -135,7 +135,7 @@ i {
 }
 @keyframes menuAnim {
 	0% {
-		transform: translateY(200px);
+		transform: translateY(-200px);
 		opacity: 0;
     }
 	100% {
