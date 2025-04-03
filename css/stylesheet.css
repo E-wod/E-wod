@@ -95,7 +95,16 @@ i {
 	0% {
 		opacity: 0;
 		scale: .55;
-    }
+		transform: rotate(0deg);
+        }
+	93% {
+		color: #8B3421;
+		transform: rotate(0deg);
+	}
+	94% {
+		color: #8B3421;
+		transform: rotate(10deg);
+	}
 	95% {
 		color: #8B3421;
 		transform: rotate(-10deg);
@@ -104,10 +113,18 @@ i {
 		color: #8B3421;
 		transform: rotate(10deg);
 	}
+	97% {
+		color: #8B3421;
+		transform: rotate(-10deg);
+	}
 	98% {
 		color: #8B3421;
+		transform: rotate(10deg);
+	}
+	99% {
+		color: #8B3421;
 		scale: 1.125;
-		transform: rotate(-10deg);
+		transform: rotate(0deg);
 	}
 	100% {
 		opacity: 1;
