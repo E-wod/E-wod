@@ -366,7 +366,7 @@ i {
 	display: flex;
 	opacity: 0;
 	overflow: inherit;
-	animation: menuAnim 2s ease forwards;
+	animation: menuAnim 2.5s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
 }
@@ -1006,7 +1006,7 @@ h3{
 	display: flex;
 	opacity: 0;
 	overflow: inherit;
-	animation: menuAnim 2s ease forwards;
+	animation: menuAnim 2.5s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
 }
@@ -1649,7 +1649,7 @@ h3{
 	justify-content: space-around;
 	display: flex;
 	opacity: 0;
-	animation: menuAnim 2s ease forwards;
+	animation: menuAnim 2.5s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
 }
