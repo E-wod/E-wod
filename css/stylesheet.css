@@ -143,16 +143,13 @@ i {
 		opacity: 0;
     	}
 	97% {
-		transform: translateY(10px);
+		transform: translateY(12px);
 	}
 	98% {
-		transform: translateY(-15px);
-	}
-	99% {
-		transform: translateY(-16px);
-	}
-	99% {
 		transform: translateY(-17px);
+	}
+	99% {
+		transform: translateY(4px);
 	}
 	100% {
 		transform: translateY(0px);
