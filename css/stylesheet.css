@@ -594,7 +594,7 @@ h3{
 }
 .btnBox a {
 	background: transparent;
-	display: flex;	
+	display: flex;
 	font-size: 25px;
 	color: #03999e;
 	font-family: "sofachrome", sans-serif;
@@ -612,7 +612,7 @@ h3{
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	animation: h1Anim 2.50s ease forwards;
+	animation: h1Anim 2.5s ease forwards;
 	animation-timing-function: ease-in-out;
 }
 .btnBox a::before {
@@ -629,7 +629,6 @@ h3{
 	color: #ffffff;
 	border-radius: 12px;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	border: 2px solid #ffffff;
 	text-decoration: none;
 	transition: .6s;
 	width: 180px;
@@ -639,6 +638,7 @@ h3{
 .btnBox .active{
 	color: #ffffff;
 	text-decoration: none;
+	border: 2px solid #ffffff;
 	border-radius: 12px;
 	box-shadow: 0 2px 7px azure;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
@@ -700,13 +700,13 @@ h3{
 	display: flex;
 }
 .socLnk a::before {
-	border-radius: 50%;
 	background: transparent;
-	border-radius: 12px;
+	border-radius: 50%;
 	color: #03999e;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
+	display: flex;
 	opacity: 0;
 	align-self: center;
 	width: 80px;
@@ -716,21 +716,22 @@ h3{
 	color: #ffffff;
 	border-radius: 50%;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	border: 2px solid #ffffff;
 	text-decoration: none;
-	transition: .6s;
 	display: flex;
+	transition: .6s;
 	width: 80px;
 	height: 0px;
 }
 .socLnk a:hover,
 .socLnk .active{
-	border-radius: 50%;
 	color: #ffffff;
 	text-decoration: none;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
 	box-shadow: 0 2px 7px azure;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	transition: .3s;
+	display: flex;
+	transition: .6s;
 	transition-timing-function: ease-out;
 	width: 80px;
 	height: 80px;
@@ -1236,7 +1237,7 @@ h3{
 }
 .btnBox a {
 	background: transparent;
-	display: flex;	
+	display: flex;
 	font-size: 25px;
 	color: #03999e;
 	font-family: "sofachrome", sans-serif;
@@ -1254,7 +1255,7 @@ h3{
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	animation: h1Anim 2.50s ease forwards;
+	animation: h1Anim 2.5s ease forwards;
 	animation-timing-function: ease-in-out;
 }
 .btnBox a::before {
@@ -1271,7 +1272,6 @@ h3{
 	color: #ffffff;
 	border-radius: 12px;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	border: 2px solid #ffffff;
 	text-decoration: none;
 	transition: .6s;
 	width: 180px;
@@ -1281,6 +1281,7 @@ h3{
 .btnBox .active{
 	color: #ffffff;
 	text-decoration: none;
+	border: 2px solid #ffffff;
 	border-radius: 12px;
 	box-shadow: 0 2px 7px azure;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
@@ -1342,13 +1343,13 @@ h3{
 	display: flex;
 }
 .socLnk a::before {
-	border-radius: 50%;
 	background: transparent;
-	border-radius: 12px;
+	border-radius: 50%;
 	color: #03999e;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
+	display: flex;
 	opacity: 0;
 	align-self: center;
 	width: 80px;
@@ -1358,21 +1359,22 @@ h3{
 	color: #ffffff;
 	border-radius: 50%;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	border: 2px solid #ffffff;
 	text-decoration: none;
-	transition: .6s;
 	display: flex;
+	transition: .6s;
 	width: 80px;
 	height: 0px;
 }
 .socLnk a:hover,
 .socLnk .active{
-	border-radius: 50%;
 	color: #ffffff;
 	text-decoration: none;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
 	box-shadow: 0 2px 7px azure;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	transition: .3s;
+	display: flex;
+	transition: .6s;
 	transition-timing-function: ease-out;
 	width: 80px;
 	height: 80px;
@@ -1877,7 +1879,7 @@ h3{
 }
 .btnBox a {
 	background: transparent;
-	display: flex;	
+	display: flex;
 	font-size: 25px;
 	color: #03999e;
 	font-family: "sofachrome", sans-serif;
@@ -1895,7 +1897,7 @@ h3{
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	animation: h1Anim 2.50s ease forwards;
+	animation: h1Anim 2.5s ease forwards;
 	animation-timing-function: ease-in-out;
 }
 .btnBox a::before {
@@ -1912,7 +1914,6 @@ h3{
 	color: #ffffff;
 	border-radius: 12px;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	border: 2px solid #ffffff;
 	text-decoration: none;
 	transition: .6s;
 	width: 180px;
@@ -1922,6 +1923,7 @@ h3{
 .btnBox .active{
 	color: #ffffff;
 	text-decoration: none;
+	border: 2px solid #ffffff;
 	border-radius: 12px;
 	box-shadow: 0 2px 7px azure;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
@@ -1983,13 +1985,13 @@ h3{
 	display: flex;
 }
 .socLnk a::before {
-	border-radius: 50%;
 	background: transparent;
-	border-radius: 12px;
+	border-radius: 50%;
 	color: #03999e;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
+	display: flex;
 	opacity: 0;
 	align-self: center;
 	width: 80px;
@@ -1999,21 +2001,22 @@ h3{
 	color: #ffffff;
 	border-radius: 50%;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	border: 2px solid #ffffff;
 	text-decoration: none;
-	transition: .6s;
 	display: flex;
+	transition: .6s;
 	width: 80px;
 	height: 0px;
 }
 .socLnk a:hover,
 .socLnk .active{
-	border-radius: 50%;
 	color: #ffffff;
 	text-decoration: none;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
 	box-shadow: 0 2px 7px azure;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	transition: .3s;
+	display: flex;
+	transition: .6s;
 	transition-timing-function: ease-out;
 	width: 80px;
 	height: 80px;
