@@ -394,7 +394,6 @@ i {
 	animation-timing-function: ease-in-out;
 	border-radius: 8px;
 	border-color: #ffffff;
-	border: 2px solid #ffffff;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	box-shadow: 0 2px 7px azure;
 }
@@ -464,7 +463,6 @@ li {
 .nav-link{
 	color: #03999e;
 }
-
 .nav-link:hover{
 	color: #ffffff;
 }
@@ -1035,7 +1033,6 @@ h3{
 	animation-timing-function: ease-in-out;
 	border-radius: 8px;
 	border-color: #ffffff;
-	border: 2px solid #ffffff;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	box-shadow: 0 2px 7px azure;
 }
@@ -1677,7 +1674,6 @@ h3{
 	animation-timing-function: ease-in-out;
 	border-radius: 8px;
 	border-color: #ffffff;
-	border: 2px solid #ffffff;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
 	box-shadow: 0 2px 7px azure;
 }
