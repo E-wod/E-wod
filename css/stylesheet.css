@@ -97,39 +97,39 @@ i {
 		scale: .55;
 		transform: rotate(0deg);
         }
-	40% {
+	45% {
 		transform: rotate(0deg);
 	}
-	46% {
+	50% {
 		transform: rotate(-25deg);
 	}
-	51% {
+	55% {
 		transform: rotate(25deg);
 	}
-	66% {
+	60% {
 		transform: rotate(-25deg);
 	}
-	71% {
+	65% {
 		transform: rotate(25deg);
 	}
-	76% {
+	70% {
 		transform: rotate(-25deg);
 	}
-	81% {
+	75% {
 		transform: rotate(25deg);
-	}
-	82% {
-		transform: rotate(-25deg);
-	}
-	83% {
-		transform: rotate(25deg);
-	}
-	84% {
-		transform: rotate(-10deg);
-		scale: 1.0125;
 	}
 	85% {
+		transform: rotate(-25deg);
+	}
+	86% {
+		transform: rotate(25deg);
+	}
+	87% {
+		transform: rotate(-15deg);
+	}
+	88% {
 		transform: rotate(0deg);
+		scale: 1.0175;
 	}
 	100% {
 		opacity: 1;
