@@ -626,9 +626,9 @@ h3{
 	height: 0px;
 }
 .btnBox a:hover::before {
-	color: #ffffff;
+/* 	color: #ffffff;
 	border-radius: 12px;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%); */
 	text-decoration: none;
 	transition: .6s;
 	width: 180px;
@@ -713,9 +713,9 @@ h3{
 	height: 0px;
 }
 .socLnk a:hover::before {    
-	color: #ffffff;
+/* 	color: #ffffff;
 	border-radius: 50%;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%); */
 	text-decoration: none;
 	display: flex;
 	transition: .6s;
@@ -1269,9 +1269,9 @@ h3{
 	height: 0px;
 }
 .btnBox a:hover::before {
-	color: #ffffff;
+/* 	color: #ffffff;
 	border-radius: 12px;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%); */
 	text-decoration: none;
 	transition: .6s;
 	width: 180px;
@@ -1356,9 +1356,9 @@ h3{
 	height: 0px;
 }
 .socLnk a:hover::before {    
-	color: #ffffff;
+/* 	color: #ffffff;
 	border-radius: 50%;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%); */
 	text-decoration: none;
 	display: flex;
 	transition: .6s;
@@ -1911,9 +1911,9 @@ h3{
 	height: 0px;
 }
 .btnBox a:hover::before {
-	color: #ffffff;
+/* 	color: #ffffff;
 	border-radius: 12px;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%); */
 	text-decoration: none;
 	transition: .6s;
 	width: 180px;
@@ -1998,9 +1998,9 @@ h3{
 	height: 0px;
 }
 .socLnk a:hover::before {    
-	color: #ffffff;
+/* 	color: #ffffff;
 	border-radius: 50%;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%); */
 	text-decoration: none;
 	display: flex;
 	transition: .6s;
