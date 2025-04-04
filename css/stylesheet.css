@@ -143,13 +143,13 @@ i {
 		opacity: 0;
     	}
 	97% {
-		transform: translateY(12px);
+		transform: translateY(4px);
 	}
 	98% {
-		transform: translateY(-17px);
+		transform: translateY(-4px);
 	}
 	99% {
-		transform: translateY(4px);
+		transform: translateY(2px);
 	}
 	100% {
 		transform: translateY(0px);
@@ -311,7 +311,7 @@ i {
 	display: flex;
 	opacity: 0;
 	overflow: inherit;
-	animation: menuAnim 2s ease forwards;
+	animation: menuAnim 1.5s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
 }
@@ -539,7 +539,7 @@ h3{
 	display: flex;
 	justify-content: center;
 	transition: .6s;
-	animation: menuAnim 1s ease forwards;
+	animation: h1Anim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	color: #03999e;
 	text-decoration: none;
@@ -616,7 +616,7 @@ h3{
 	height: 100%;
 	justify-content: center;
 	transition: .6s;
-	animation: menuAnim 1s ease forwards;
+	animation: h1Anim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	color: #03999e;
 	text-decoration: none;
@@ -643,7 +643,7 @@ h3{
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	animation: menuAnim 2s ease forwards;
+	animation: h1Anim 2s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
 }
@@ -961,7 +961,7 @@ h3{
 	display: flex;
 	opacity: 0;
 	overflow: inherit;
-	animation: menuAnim 2s ease forwards;
+	animation: menuAnim 1.5s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
 }
@@ -1188,7 +1188,7 @@ h3{
 	display: flex;
 	justify-content: center;
 	transition: .6s;
-	animation: menuAnim 1s ease forwards;
+	animation: h1Anim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	color: #03999e;
 	text-decoration: none;
@@ -1265,7 +1265,7 @@ h3{
 	height: 100%;
 	justify-content: center;
 	transition: .6s;
-	animation: menuAnim 1s ease forwards;
+	animation: h1Anim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	color: #03999e;
 	text-decoration: none;
@@ -1292,7 +1292,7 @@ h3{
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	animation: menuAnim 2s ease forwards;
+	animation: h1Anim 2s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
 }
@@ -1836,7 +1836,7 @@ h3{
 	display: flex;
 	justify-content: center;
 	transition: .6s;
-	animation: menuAnim 1s ease forwards;
+	animation: h1Anim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	color: #03999e;
 	text-decoration: none;
@@ -1913,7 +1913,7 @@ h3{
 	height: 100%;
 	justify-content: center;
 	transition: .6s;
-	animation: menuAnim 1s ease forwards;
+	animation: h1Anim 1s ease forwards;
 	animation-timing-function: ease-in-out;
 	color: #03999e;
 	text-decoration: none;
@@ -1940,7 +1940,7 @@ h3{
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	animation: menuAnim 2s ease forwards;
+	animation: h1Anim 2s ease forwards;
 	animation-delay: calc(.085s * var(--i)); 
 	animation-timing-function: easy-ease;
 }
