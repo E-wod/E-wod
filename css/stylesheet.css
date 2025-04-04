@@ -700,38 +700,37 @@ h3{
 	display: flex;
 }
 .socLnk a::before {
-	background: transparent;
 	border-radius: 50%;
+	background: transparent;
+	border-radius: 12px;
 	color: #03999e;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
-	display: flex;
 	opacity: 0;
 	align-self: center;
 	width: 80px;
 	height: 0px;
 }
 .socLnk a:hover::before {    
-/* 	color: #ffffff;
+	color: #ffffff;
 	border-radius: 50%;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%); */
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	border: 2px solid #ffffff;
 	text-decoration: none;
-	display: flex;
 	transition: .6s;
+	display: flex;
 	width: 80px;
 	height: 0px;
 }
 .socLnk a:hover,
 .socLnk .active{
+	border-radius: 50%;
 	color: #ffffff;
 	text-decoration: none;
-	border: 2px solid #ffffff;
-	border-radius: 50%;
 	box-shadow: 0 2px 7px azure;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	display: flex;
-	transition: .6s;
+	transition: .3s;
 	transition-timing-function: ease-out;
 	width: 80px;
 	height: 80px;
@@ -1237,7 +1236,7 @@ h3{
 }
 .btnBox a {
 	background: transparent;
-	display: flex;
+	display: flex;	
 	font-size: 25px;
 	color: #03999e;
 	font-family: "sofachrome", sans-serif;
@@ -1255,7 +1254,7 @@ h3{
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	animation: h1Anim 2.5s ease forwards;
+	animation: h1Anim 2.50s ease forwards;
 	animation-timing-function: ease-in-out;
 }
 .btnBox a::before {
@@ -1343,38 +1342,37 @@ h3{
 	display: flex;
 }
 .socLnk a::before {
-	background: transparent;
 	border-radius: 50%;
+	background: transparent;
+	border-radius: 12px;
 	color: #03999e;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
-	display: flex;
 	opacity: 0;
 	align-self: center;
 	width: 80px;
 	height: 0px;
 }
 .socLnk a:hover::before {    
-/* 	color: #ffffff;
+	color: #ffffff;
 	border-radius: 50%;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%); */
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	border: 2px solid #ffffff;
 	text-decoration: none;
-	display: flex;
 	transition: .6s;
+	display: flex;
 	width: 80px;
 	height: 0px;
 }
 .socLnk a:hover,
 .socLnk .active{
+	border-radius: 50%;
 	color: #ffffff;
 	text-decoration: none;
-	border: 2px solid #ffffff;
-	border-radius: 50%;
 	box-shadow: 0 2px 7px azure;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	display: flex;
-	transition: .6s;
+	transition: .3s;
 	transition-timing-function: ease-out;
 	width: 80px;
 	height: 80px;
@@ -1879,7 +1877,7 @@ h3{
 }
 .btnBox a {
 	background: transparent;
-	display: flex;
+	display: flex;	
 	font-size: 25px;
 	color: #03999e;
 	font-family: "sofachrome", sans-serif;
@@ -1985,38 +1983,37 @@ h3{
 	display: flex;
 }
 .socLnk a::before {
-	background: transparent;
 	border-radius: 50%;
+	background: transparent;
+	border-radius: 12px;
 	color: #03999e;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
-	display: flex;
 	opacity: 0;
 	align-self: center;
 	width: 80px;
 	height: 0px;
 }
 .socLnk a:hover::before {    
-/* 	color: #ffffff;
+	color: #ffffff;
 	border-radius: 50%;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%); */
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	border: 2px solid #ffffff;
 	text-decoration: none;
-	display: flex;
 	transition: .6s;
+	display: flex;
 	width: 80px;
 	height: 0px;
 }
 .socLnk a:hover,
 .socLnk .active{
+	border-radius: 50%;
 	color: #ffffff;
 	text-decoration: none;
-	border: 2px solid #ffffff;
-	border-radius: 50%;
 	box-shadow: 0 2px 7px azure;
 	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	display: flex;
-	transition: .6s;
+	transition: .3s;
 	transition-timing-function: ease-out;
 	width: 80px;
 	height: 80px;
