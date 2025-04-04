@@ -308,7 +308,9 @@ i {
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: transparent; 
+	background-color: transparent;
+	animation: logoAnim 2.5s ease forwards; 
+	animation-timing-function: ease-in-out;
 }
 .nav-logo :hover,
 .nav-logo .active {
@@ -950,7 +952,9 @@ h3{
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: transparent; 
+	background-color: transparent;
+	animation: logoAnim 2.5s ease forwards; 
+	animation-timing-function: ease-in-out;
 }
 .nav-logo :hover,
 .nav-logo .active {
@@ -1595,6 +1599,8 @@ h3{
 	padding-top: 2px;
 	padding-bottom: 2px;
 	background-color: transparent; 
+	animation: logoAnim 2.5s ease forwards; 
+	animation-timing-function: ease-in-out;
 }
 .nav-logo :hover,
 .nav-logo .active {
