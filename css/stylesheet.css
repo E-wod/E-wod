@@ -36,7 +36,7 @@ html {
 	width: 100%;
 	height: 100%;
 	display: flex;
- 	background: #174152;
+ 	background: #007276;
         position: absolute; 
 	overflow: inherit;
 	background-repeat: repeat;
@@ -98,37 +98,29 @@ i {
 		transform: rotate(0deg);
         }
 	93% {
-		color: #8B3421;
 		transform: rotate(0deg);
 	}
 	94% {
-		color: #8B3421;
 		transform: rotate(25deg);
 	}
 	95% {
-		color: #8B3421;
 		transform: rotate(-25deg);
 	}
 	96% {
-		color: #8B3421;
 		transform: rotate(25deg);
 	}
 	97% {
-		color: #8B3421;
 		transform: rotate(-25deg);
 	}
 	98% {
-		color: #8B3421;
 		transform: rotate(25deg);
 	}
 	99% {
-		color: #8B3421;
 		scale: 1.025;
 		transform: rotate(0deg);
 	}
 	100% {
 		opacity: 1;
-		color: #8B3421;
 		scale: 1;
 		transform: rotate(0deg);
 	}
@@ -203,7 +195,7 @@ i {
 	scale: 1;
 	display: flex;
 	flex-direction: row;
-	background: linear-gradient(0deg, rgba(23,65,82,1) 0%, rgba(11,40,51,1) 74%);
+	background: linear-gradient(0deg, rgba(0,114,118,1) 0%, rgba(1,50,51,1) 100%);
 	text-decoration: none;
 	overflow: inherit;
 	justify-items: center;
@@ -289,7 +281,7 @@ i {
 	padding-bottom: 2px;
 	background: transparent;
 	border-radius: 8px;
-	color: #378dae;
+	color: #007276;
 	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -382,7 +374,7 @@ li {
     	list-style: none;
 }
 .nav-item {
-	color: #378dae;
+	color: #007276;
 	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -398,7 +390,7 @@ li {
 	border-radius: 8px;
 }
 .nav-link{
-	color: #378dae;
+	color: #007276;
 }
 
 .nav-link:hover{
@@ -419,7 +411,7 @@ li {
 	padding-bottom: 10px;
 }
 h1{
-	color: #378dae;
+	color: #007276;
 	font-size: 3.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -443,7 +435,7 @@ h1{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h2{
-	color: #378dae;
+	color: #007276;
 	font-size: 2.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -467,7 +459,7 @@ h2{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h3{
-	color: #378dae;
+	color: #007276;
 	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -528,14 +520,14 @@ h3{
 	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-	color: #378dae;
+	color: #007276;
 	text-decoration: none;
 }
 .btnBox a {
 	background: transparent;
 	display: flex;	
 	font-size: 25px;
-	color: #378dae;
+	color: #007276;
 	font-family: "sofachrome", sans-serif;
 	text-decoration: none;
 	width: 180px;
@@ -557,7 +549,7 @@ h3{
 .btnBox a::before {
 	background: transparent;
 	border-radius: 12px;
-	color: #378dae;
+	color: #007276;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
@@ -605,7 +597,7 @@ h3{
 	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-	color: #378dae;
+	color: #007276;
 	text-decoration: none;
 	display: flex;
 }
@@ -617,7 +609,7 @@ h3{
 	background: transparent;	
 	display: flex;
 	opacity: 0;
-	color: #378dae;
+	color: #007276;
 	text-decoration: none;
 	justify-content: center;
 	z-index: 1500;
@@ -644,7 +636,7 @@ h3{
 .socLnk a::before {
 	background: transparent;
 	border-radius: 50%;
-	color: #378dae;
+	color: #007276;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
@@ -853,7 +845,7 @@ h3{
 	scale: 1;
 	display: flex;
 	flex-direction: row;
-	background: linear-gradient(0deg, rgba(23,65,82,1) 0%, rgba(11,40,51,1) 74%);
+	background: linear-gradient(0deg, rgba(0,114,118,1) 0%, rgba(1,50,51,1) 100%);
 	text-decoration: none;
 	overflow: inherit;
 	justify-items: center;
@@ -939,7 +931,7 @@ h3{
 	padding-bottom: 2px;
 	background: transparent;
 	border-radius: 8px;
-	color: #378dae;
+	color: #007276;
 	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1031,7 +1023,7 @@ li {
     	list-style: none;
 }
 .nav-item {
-	color: #378dae;
+	color: #007276;
 	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1047,7 +1039,7 @@ li {
 	border-radius: 8px;
 }
 .nav-link{
-	color: #378dae;
+	color: #007276;
 }
 
 .nav-link:hover{
@@ -1068,7 +1060,7 @@ li {
 	padding-bottom: 10px;
 }
 h1{
-	color: #378dae;
+	color: #007276;
 	font-size: 3.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1092,7 +1084,7 @@ h1{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h2{
-	color: #378dae;
+	color: #007276;
 	font-size: 2.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1116,7 +1108,7 @@ h2{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h3{
-	color: #378dae;
+	color: #007276;
 	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1177,14 +1169,14 @@ h3{
 	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-	color: #378dae;
+	color: #007276;
 	text-decoration: none;
 }
 .btnBox a {
 	background: transparent;
 	display: flex;
 	font-size: 25px;
-	color: #378dae;
+	color: #007276;
 	font-family: "sofachrome", sans-serif;
 	text-decoration: none;
 	width: 180px;
@@ -1206,7 +1198,7 @@ h3{
 .btnBox a::before {
 	background: transparent;
 	border-radius: 12px;
-	color: #378dae;
+	color: #007276;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
@@ -1254,7 +1246,7 @@ h3{
 	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-	color: #378dae;
+	color: #007276;
 	text-decoration: none;
 	display: flex;
 }
@@ -1266,7 +1258,7 @@ h3{
 	background: transparent;	
 	display: flex;
 	opacity: 0;
-	color: #378dae;
+	color: #007276;
 	text-decoration: none;
 	justify-content: center;
 	z-index: 1500;
@@ -1293,7 +1285,7 @@ h3{
 .socLnk a::before {
 	background: transparent;
 	border-radius: 50%;
-	color: #378dae;
+	color: #007276;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
@@ -1502,7 +1494,7 @@ h3{
 	scale: 1;
 	display: flex;
 	flex-direction: column;
-	background: linear-gradient(0deg, rgba(23,65,82,1) 0%, rgba(11,40,51,1) 74%);
+	background: linear-gradient(0deg, rgba(0,114,118,1) 0%, rgba(1,50,51,1) 100%);
 	text-decoration: none;
 	overflow: inherit;
 	justify-items: center;
@@ -1591,7 +1583,7 @@ h3{
 	padding-bottom: 2px;
 	background: transparent;
 	border-radius: 8px;
-	color: #378dae;
+	color: #007276;
 	font-size: 2.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1695,7 +1687,7 @@ li {
 	border-radius: 8px;
 }
 .nav-link{
-	color: #378dae;
+	color: #007276;
 }
 
 .nav-link:hover{
@@ -1716,7 +1708,7 @@ li {
 	padding-bottom: 5px;
 }
 h1{
-	color: #378dae;
+	color: #007276;
 	font-size: 3.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1740,7 +1732,7 @@ h1{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h2{
-	color: #378dae;
+	color: #007276;
 	font-size: 3.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1764,7 +1756,7 @@ h2{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h3{
-	color: #378dae;
+	color: #007276;
 	font-size: 2.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1825,14 +1817,14 @@ h3{
 	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-	color: #378dae;
+	color: #007276;
 	text-decoration: none;
 }
 .btnBox a {
 	background: transparent;
 	display: flex;
 	font-size: 25px;
-	color: #378dae;
+	color: #007276;
 	font-family: "sofachrome", sans-serif;
 	text-decoration: none;
 	width: 180px;
@@ -1854,7 +1846,7 @@ h3{
 .btnBox a::before {
 	background: transparent;
 	border-radius: 12px;
-	color: #378dae;
+	color: #007276;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
@@ -1902,7 +1894,7 @@ h3{
 	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-	color: #378dae;
+	color: #007276;
 	text-decoration: none;
 	display: flex;
 }
@@ -1914,7 +1906,7 @@ h3{
 	background: transparent;	
 	display: flex;
 	opacity: 0;
-	color: #378dae;
+	color: #007276;
 	text-decoration: none;
 	justify-content: center;
 	z-index: 1500;
@@ -1941,7 +1933,7 @@ h3{
 .socLnk a::before {
 	background: transparent;
 	border-radius: 50%;
-	color: #378dae;
+	color: #007276;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
