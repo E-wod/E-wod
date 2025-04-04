@@ -138,9 +138,14 @@ i {
 	0% {
 		transform: translateY(-200px);
 		opacity: 0;
+		scale: 1;
     	}
+	89% {
+		scale: 1;
+	}
 	90% {
 		transform: translateY(10px);
+		scale: 1.0175;
 	}
 	91% {
 		transform: translateY(9px);
@@ -156,6 +161,7 @@ i {
 	}
 	95% {
 		transform: translateY(5px);
+		scale: 1;
 	}
 	96% {
 		transform: translateY(4px);
@@ -172,6 +178,7 @@ i {
 	100% {
 		transform: translateY(0);
 		opacity: 1;
+		scale: 1;
 	}
 }
 @keyframes h1Anim {
