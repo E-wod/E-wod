@@ -97,38 +97,38 @@ i {
 		scale: .55;
 		transform: rotate(0deg);
         }
-	65% {
+	40% {
 		transform: rotate(0deg);
 	}
-	70% {
+	46% {
 		transform: rotate(-25deg);
 	}
-	75% {
+	51% {
 		transform: rotate(25deg);
 	}
-	80% {
+	66% {
 		transform: rotate(-25deg);
 	}
-	85% {
+	71% {
 		transform: rotate(25deg);
 	}
-	90% {
+	76% {
 		transform: rotate(-25deg);
 	}
-	95% {
+	81% {
 		transform: rotate(25deg);
 	}
-	96% {
+	82% {
 		transform: rotate(-25deg);
 	}
-	97% {
+	83% {
 		transform: rotate(25deg);
 	}
-	98% {
-		transform: rotate(0deg);
+	84% {
+		transform: rotate(-10deg);
 		scale: 1.0125;
 	}
-	99% {
+	85% {
 		transform: rotate(0deg);
 	}
 	100% {
