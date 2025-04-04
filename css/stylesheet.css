@@ -129,7 +129,7 @@ i {
 		scale: 1.0125;
 	}
 	99% {
-		scale: 1.025;
+		transform: rotate(0deg);
 	}
 	100% {
 		opacity: 1;
