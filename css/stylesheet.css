@@ -281,7 +281,7 @@ i {
 	padding-bottom: 2px;
 	background: transparent;
 	border-radius: 8px;
-	color: #007276;
+	color: #03999e;
 	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -374,7 +374,7 @@ li {
     	list-style: none;
 }
 .nav-item {
-	color: #007276;
+	color: #03999e;
 	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -390,7 +390,7 @@ li {
 	border-radius: 8px;
 }
 .nav-link{
-	color: #007276;
+	color: #03999e;
 }
 
 .nav-link:hover{
@@ -411,7 +411,7 @@ li {
 	padding-bottom: 10px;
 }
 h1{
-	color: #007276;
+	color: #03999e;
 	font-size: 3.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -435,7 +435,7 @@ h1{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h2{
-	color: #007276;
+	color: #03999e;
 	font-size: 2.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -459,7 +459,7 @@ h2{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h3{
-	color: #007276;
+	color: #03999e;
 	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -520,14 +520,14 @@ h3{
 	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-	color: #007276;
+	color: #03999e;
 	text-decoration: none;
 }
 .btnBox a {
 	background: transparent;
 	display: flex;	
 	font-size: 25px;
-	color: #007276;
+	color: #03999e;
 	font-family: "sofachrome", sans-serif;
 	text-decoration: none;
 	width: 180px;
@@ -549,7 +549,7 @@ h3{
 .btnBox a::before {
 	background: transparent;
 	border-radius: 12px;
-	color: #007276;
+	color: #03999e;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
@@ -597,7 +597,7 @@ h3{
 	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-	color: #007276;
+	color: #03999e;
 	text-decoration: none;
 	display: flex;
 }
@@ -609,7 +609,7 @@ h3{
 	background: transparent;	
 	display: flex;
 	opacity: 0;
-	color: #007276;
+	color: #03999e;
 	text-decoration: none;
 	justify-content: center;
 	z-index: 1500;
@@ -636,7 +636,7 @@ h3{
 .socLnk a::before {
 	background: transparent;
 	border-radius: 50%;
-	color: #007276;
+	color: #03999e;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
@@ -931,7 +931,7 @@ h3{
 	padding-bottom: 2px;
 	background: transparent;
 	border-radius: 8px;
-	color: #007276;
+	color: #03999e;
 	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1023,7 +1023,7 @@ li {
     	list-style: none;
 }
 .nav-item {
-	color: #007276;
+	color: #03999e;
 	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1038,11 +1038,11 @@ li {
 	padding-bottom: 5px;
 	border-radius: 8px;
 }
-.nav-link{
-	color: #007276;
+.nav-link {
+	color: #03999e;
 }
 
-.nav-link:hover{
+.nav-link:hover {
 	color: #ffffff;
 }
 .landingContent{
@@ -1060,7 +1060,7 @@ li {
 	padding-bottom: 10px;
 }
 h1{
-	color: #007276;
+	color: #03999e;
 	font-size: 3.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1084,7 +1084,7 @@ h1{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h2{
-	color: #007276;
+	color: #03999e;
 	font-size: 2.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1108,7 +1108,7 @@ h2{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h3{
-	color: #007276;
+	color: #03999e;
 	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1169,14 +1169,14 @@ h3{
 	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-	color: #007276;
+	color: #03999e;
 	text-decoration: none;
 }
 .btnBox a {
 	background: transparent;
 	display: flex;
 	font-size: 25px;
-	color: #007276;
+	color: #03999e;
 	font-family: "sofachrome", sans-serif;
 	text-decoration: none;
 	width: 180px;
@@ -1198,7 +1198,7 @@ h3{
 .btnBox a::before {
 	background: transparent;
 	border-radius: 12px;
-	color: #007276;
+	color: #03999e;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
@@ -1246,7 +1246,7 @@ h3{
 	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-	color: #007276;
+	color: #03999e;
 	text-decoration: none;
 	display: flex;
 }
@@ -1258,7 +1258,7 @@ h3{
 	background: transparent;	
 	display: flex;
 	opacity: 0;
-	color: #007276;
+	color: #03999e;
 	text-decoration: none;
 	justify-content: center;
 	z-index: 1500;
@@ -1285,7 +1285,7 @@ h3{
 .socLnk a::before {
 	background: transparent;
 	border-radius: 50%;
-	color: #007276;
+	color: #03999e;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
@@ -1583,7 +1583,7 @@ h3{
 	padding-bottom: 2px;
 	background: transparent;
 	border-radius: 8px;
-	color: #007276;
+	color: #03999e;
 	font-size: 2.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1686,11 +1686,11 @@ li {
 	padding-bottom: 2px;
 	border-radius: 8px;
 }
-.nav-link{
-	color: #007276;
+.nav-link {
+	color: #03999e;
 }
 
-.nav-link:hover{
+.nav-link:hover {
 	color: #ffffff;
 }
 .landingContent{
@@ -1708,7 +1708,7 @@ li {
 	padding-bottom: 5px;
 }
 h1{
-	color: #007276;
+	color: #03999e;
 	font-size: 3.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1732,7 +1732,7 @@ h1{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h2{
-	color: #007276;
+	color: #03999e;
 	font-size: 3.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1756,7 +1756,7 @@ h2{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h3{
-	color: #007276;
+	color: #03999e;
 	font-size: 2.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
@@ -1817,14 +1817,14 @@ h3{
 	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-	color: #007276;
+	color: #03999e;
 	text-decoration: none;
 }
 .btnBox a {
 	background: transparent;
 	display: flex;
 	font-size: 25px;
-	color: #007276;
+	color: #03999e;
 	font-family: "sofachrome", sans-serif;
 	text-decoration: none;
 	width: 180px;
@@ -1846,7 +1846,7 @@ h3{
 .btnBox a::before {
 	background: transparent;
 	border-radius: 12px;
-	color: #007276;
+	color: #03999e;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
@@ -1894,7 +1894,7 @@ h3{
 	transition: .6s;
 	animation: menuAnim 1s ease forwards;
 	animation-timing-function: ease-in-out;
-	color: #007276;
+	color: #03999e;
 	text-decoration: none;
 	display: flex;
 }
@@ -1906,7 +1906,7 @@ h3{
 	background: transparent;	
 	display: flex;
 	opacity: 0;
-	color: #007276;
+	color: #03999e;
 	text-decoration: none;
 	justify-content: center;
 	z-index: 1500;
@@ -1933,7 +1933,7 @@ h3{
 .socLnk a::before {
 	background: transparent;
 	border-radius: 50%;
-	color: #007276;
+	color: #03999e;
 	text-decoration: none;
 	z-index: -1;
 	transition-timing-function: ease; 
