@@ -146,31 +146,31 @@ i {
 		transform: translateY(4px);
 	}
 	91% {
-		transform: translateY(10px);
+		transform: translateY(-10px);
 	}
 	92% {
-		transform: translateY(9px);
+		transform: translateY(-9px);
 	}
 	93% {
-		transform: translateY(8px);
+		transform: translateY(-8px);
 	}
 	94% {
-		transform: translateY(7px);
+		transform: translateY(-7px);
 	}
 	95% {
-		transform: translateY(6px);
+		transform: translateY(-6px);
 	}
 	96% {
-		transform: translateY(5px);
+		transform: translateY(-5px);
 	}
 	97% {
-		transform: translateY(2px);
+		transform: translateY(-4px);
 	}
 	98% {
-		transform: translateY(-2px);
+		transform: translateY(-3px);
 	}
 	99% {
-		transform: translateY(-1px);
+		transform: translateY(-2px);
 	}
 	100% {
 		transform: translateY(0);
