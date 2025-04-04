@@ -612,8 +612,7 @@ h3{
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	transition: .6s;
-	animation: h1Anim 1s ease forwards;
+	animation: h1Anim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 }
 .btnBox a::before {
@@ -1256,8 +1255,7 @@ h3{
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	transition: .6s;
-	animation: h1Anim 1s ease forwards;
+	animation: h1Anim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 }
 .btnBox a::before {
@@ -1899,8 +1897,7 @@ h3{
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	transition: .6s;
-	animation: h1Anim 1s ease forwards;
+	animation: h1Anim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 }
 .btnBox a::before {
