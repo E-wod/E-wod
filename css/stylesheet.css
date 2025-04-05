@@ -1148,7 +1148,7 @@ h1{
 	padding-top: 2px;
 	padding-bottom: 2px;
 	z-index: 1;
-	animation: h1Anim 1s ease forwards;
+	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h2{
@@ -1172,7 +1172,7 @@ h2{
 	padding-top: 2px;
 	padding-bottom: 2px;
 	z-index: 1;
-	animation: h1Anim 1s ease forwards;
+	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h3{
@@ -1196,7 +1196,7 @@ h3{
 	padding-top: 2px;
 	padding-bottom: 2px;
 	z-index: 1;
-	animation: h1Anim 1s ease forwards;
+	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .cntr {
@@ -1789,7 +1789,7 @@ h1{
 	padding-top: 2px;
 	padding-bottom: 2px;
 	z-index: 1;
-	animation: h1Anim 1s ease forwards;
+	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h2{
@@ -1813,7 +1813,7 @@ h2{
 	padding-top: 2px;
 	padding-bottom: 2px;
 	z-index: 1;
-	animation: h1Anim 1s ease forwards;
+	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h3{
@@ -1837,7 +1837,7 @@ h3{
 	padding-top: 2px;
 	padding-bottom: 2px;
 	z-index: 1;
-	animation: h1Anim 1s ease forwards;
+	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .cntr {
