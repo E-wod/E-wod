@@ -155,16 +155,13 @@ i {
 	}
 	94% {
 		transform: translateY(6px);
+		scale: 1.195;
 	}
 	95% {
 		transform: translateY(8px);
 	}
 	96% {
-		transform: translateY(10px);
-	}
-	97% {
 		transform: translateY(11px);
-		scale: 1.125;
 	}
 	100% {
 		transform: translateY(0);
