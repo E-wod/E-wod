@@ -141,27 +141,36 @@ i {
 		scale: 1;
     	}
 	90% {
-		transform: translateY(0px);
+		transform: translateY(10px);
 		scale: 1;
 	}
 	91% {
-		transform: translateY(1px);
+		transform: translateY(9px);
 	}
 	92% {
-		transform: translateY(2px);
+		transform: translateY(8px);
+		scale: 1.175;
 	}
 	93% {
-		transform: translateY(4px);
+		transform: translateY(7px);
 	}
 	94% {
 		transform: translateY(6px);
-		scale: 1.195;
 	}
 	95% {
-		transform: translateY(8px);
+		transform: translateY(5px);
 	}
 	96% {
-		transform: translateY(11px);
+		transform: translateY(4px);
+	}
+	97% {
+		transform: translateY(3px);
+	}
+	98% {
+		transform: translateY(2px);
+	}
+	99% {
+		transform: translateY(1px);
 	}
 	100% {
 		transform: translateY(0);
