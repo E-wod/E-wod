@@ -27,4 +27,10 @@ function scrollToTop() {
     behavior: "smooth"
   });
 // Splash
-npm install @lottiefiles/dotlottie-react
+import { DotLottie } from '@lottiefiles/dotlottie-web';
+const dotLottie = new DotLottie({
+    autoplay: true,
+    loop: true,
+    canvas: document.querySelector('#dotlottie-canvas'),
+    src: "<https://lottie.host/ab2505d2-fab2-408f-8b27-2d524505b4fa/GeV3593VxK.lottie>",
+});
