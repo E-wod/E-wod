@@ -52,6 +52,19 @@
   loop
   autoplay>	
 </dotlottie-player>
+
+
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <script type="module">
+      import { DotLottie } from "<https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm>";
+
+      new DotLottie({
+        autoplay: true,
+        loop: true,
+        canvas: document.getElementById("canvas"),
+        src: "<https://lottie.host/87523996-ed8c-4e4e-9199-146bf0ae91fe/xUvamU8EDS.lottie>", // replace with your .lottie or .json file URL
+      });
+    </script>
 		<div class="beePic">
 			<img src="img/lochy.jpg"/>
 		</div>
