@@ -40,6 +40,17 @@
         </nav>
 </header>
 	<div class="landingContent">
+		<canvas id="dotlottie-canvas" style="width: 300px; height: 300px;"></canvas>
+		    <canvas id="canvas" width="300" height="300"></canvas>
+    	<script type="module">
+      	import { DotLottie } from "<https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm>";
+      	new DotLottie({
+        autoplay: true,
+        loop: true,
+        canvas: document.getElementById("canvas"),
+        src: "<https://lottie.host/YOUR_ANIMATION_ID.lottie>", // replace with your .lottie or .json file URL
+      	});
+    	</script>
 		<div class="beePic">
 			<img src="img/lochy.jpg"/>
 		</div>
