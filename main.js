@@ -27,10 +27,15 @@ function scrollToTop() {
     behavior: "smooth"
   });
 // Splash
-import { DotLottie } from '@lottiefiles/dotlottie-web';
-const dotLottie = new DotLottie({
-    autoplay: true,
-    loop: true,
-    canvas: document.querySelector('#dotlottie-canvas'),
-    src: "<https://lottie.host/ab2505d2-fab2-408f-8b27-2d524505b4fa/GeV3593VxK.lottie>",
-});
+import React from 'react';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
+const App = () => {
+  return (
+    <DotLottieReact
+      src="https://lottie.host/87523996-ed8c-4e4e-9199-146bf0ae91fe/xUvamU8EDS.lottie"
+      loop
+      autoplay
+    />
+  );
+};
