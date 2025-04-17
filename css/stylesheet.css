@@ -96,7 +96,8 @@ i {
 .photo-block {
   	position: sticky;
   	top: calc(50% - 30vh);
-  	height: 60vh;
+/*   	height: 60vh; */
+  	height: 100%;
 	width: 100%;
 	display: grid;
   	overflow: hidden;
@@ -124,7 +125,8 @@ i {
 }
 
 .collage {
-  	height: 200vh;
+/*   	height: 200vh; */
+  	height: 100%;
   	view-timeline: --collage;
 }
 
