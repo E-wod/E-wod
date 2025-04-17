@@ -41,7 +41,8 @@ html {
  	background-repeat: repeat; */
 	text-decoration: none;
 	overflow: inherit;
-
+	background-color: transparent; 
+	
 	background-image: url("https://imageshack.com/i/pnwkWOS8j");
 	background-attachment: fixed;
   	background-position: center;
