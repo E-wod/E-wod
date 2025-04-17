@@ -36,18 +36,17 @@ html {
 	width: 100%;
 	height: 100%;
 	display: flex;
-/*  	background: #000a0a; 
+ 	background: #000a0a; 
         position: absolute;  
- 	background-repeat: repeat; */
+ 	background-repeat: repeat;
 	text-decoration: none;
 	overflow: inherit;
 	background-color: transparent; 
-	
-	background-image: url("https://imageshack.com/i/pnwkWOS8j");
+/* 	background-image: url("https://imageshack.com/i/pnwkWOS8j");
 	background-attachment: fixed;
   	background-position: center;
   	background-repeat: no-repeat;
-  	background-size: cover;
+  	background-size: cover; */
 }
 body {
 	z-index: 0;
@@ -91,20 +90,15 @@ i {
 	float: center;
 	display: flex;
 }
-
-
 .photo-block {
   	position: sticky;
-/*   	top: calc(50% - 30vh); */
   	top: 0;
-/*   	height: 60vh; */
   	height: 100%;
 	width: 100%;
 	display: grid;
   	overflow: hidden;
   	background: var(--gray-6);
 }
-
 .photo-grid {	
   	position: absolute;
   	top: 50%;
@@ -113,23 +107,19 @@ i {
   	display: grid;
 	grid-template-columns: repeat(7, 1fr);
 }
-
 .photo {
   	aspect-ratio: 3 / 4;
   	width: 20vmax;
 }
-
 .collage {
         height: 200vh; 
   	view-timeline: --collage;
 }
-
 .photo img {
   	width: 100%;
   	height: 100%;
   	object-fit: cover;
 }
-
 .photo:nth-of-type(7n + 1):nth-of-type(even),
 .photo:nth-of-type(7n + 3):nth-of-type(even),
 .photo:nth-of-type(7n + 5):nth-of-type(even),
@@ -144,21 +134,18 @@ i {
   --vertical: -100%;
   --horizontal: -100%;
 }
-
 .photo:nth-of-type(7n + 2):nth-of-type(even),
 .photo:nth-of-type(7n + 4):nth-of-type(even),
 .photo:nth-of-type(7n + 6):nth-of-type(even) {
   --vertical: 100%;
   --horizontal: -100%;
 }
-
 .photo:nth-of-type(7n + 2):nth-of-type(odd),
 .photo:nth-of-type(7n + 4):nth-of-type(odd),
 .photo:nth-of-type(7n + 6):nth-of-type(odd) {
   --vertical: 100%;
   --horizontal: 100%;
 }
-
 .photo {
   	animation-name: travel;
   	animation-fill-mode: both;
@@ -166,7 +153,6 @@ i {
   	animation-timeline: --collage;
   	animation-range: entry 100% exit 0%;
 }
-
 @keyframes travel {
  	 0% {
     	translate: 0 0;
@@ -856,10 +842,6 @@ h3{
 	animation: pAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	transition: 3s;
-
-	transform-origin: 50% 50%;
-  	transform-style: preserve-3d;
-  	transform: rotateX(11deg) rotateY(16.5deg);
 }
 .beGod {
 	background-color: transparent;
