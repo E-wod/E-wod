@@ -97,12 +97,12 @@ i {
   	position: sticky;
 /*   	top: calc(50% - 30vh); */
   	top: 0;
-  	height: 60vh;
+/*   	height: 60vh; */
+  	height: 100%;
 	width: 100%;
 	display: grid;
   	overflow: hidden;
   	background: var(--gray-6);
-	background: transparent;
 }
 
 .photo-grid {	
@@ -112,13 +112,11 @@ i {
 	transform: translate(-50%, -50%) rotate(38deg);
   	display: grid;
 	grid-template-columns: repeat(7, 1fr);
-	background: transparent;
 }
 
 .photo {
   	aspect-ratio: 3 / 4;
   	width: 20vmax;
-	background: transparent;
 }
 
 .collage {
@@ -130,7 +128,6 @@ i {
   	width: 100%;
   	height: 100%;
   	object-fit: cover;
-	background: transparent;
 }
 
 .photo:nth-of-type(7n + 1):nth-of-type(even),
