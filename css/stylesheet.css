@@ -94,7 +94,7 @@ i {
 
 .photo-block {
   	position: sticky;
-/*   	top: calc(50% - 30vh); */
+  	top: calc(50% - 30vh);
   	height: 60vh;
 	width: 100%;
 	display: grid;
