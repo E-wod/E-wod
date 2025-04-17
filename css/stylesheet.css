@@ -36,11 +36,11 @@ html {
 	width: 100%;
 	height: 100%;
 	display: flex;
-/*  	background: #000a0a; */
-/*         position: absolute;  */
-	overflow: inherit;
-/* 	background-repeat: repeat; */
+/*  	background: #000a0a; 
+        position: absolute;  
+ 	background-repeat: repeat; */
 	text-decoration: none;
+	overflow: inherit;
 
 	background-image: url("https://imageshack.com/i/pox1PpNVj");
 	background-attachment: fixed;
