@@ -856,6 +856,10 @@ h3{
 	animation: pAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	transition: 3s;
+
+	transform-origin: 50% 50%;
+  	transform-style: preserve-3d;
+  	transform: rotateX(11deg) rotateY(16.5deg);
 }
 .beGod {
 	background-color: transparent;
@@ -903,10 +907,6 @@ h3{
 	animation: pAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	transition: 3s;
-
-	transform-origin: 50% 50%;
-  	transform-style: preserve-3d;
-  	transform: rotateX(11deg) rotateY(16.5deg);
 }
 .beNook a {
 	width: 70%;
@@ -931,10 +931,6 @@ h3{
 	animation: pAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	transition: 3s;
-	
-	transform-origin: 50% 50%;
-  	transform-style: preserve-3d;
-  	transform: rotateX(11deg) rotateY(16.5deg);
 }
 .bkg {
 	background-color: transparent;
