@@ -363,8 +363,7 @@ i {
 	scale: 1;
 	display: flex;
 	flex-direction: row;
-/* 	background: linear-gradient(0deg, rgba(0,10,10,1) 0%, rgba(2,82,84,1) 100%); */
-	background: linear-gradient(180deg,rgba(0, 96, 99, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
 	text-decoration: none;
 	overflow: inherit;
 	justify-items: center;
@@ -1007,8 +1006,7 @@ h3{
 	scale: 1;
 	display: flex;
 	flex-direction: row;
-/* 	background: linear-gradient(0deg, rgba(0,10,10,1) 0%, rgba(2,82,84,1) 100%); */
-	background: linear-gradient(180deg,rgba(0, 96, 99, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
 	text-decoration: none;
 	overflow: inherit;
 	justify-items: center;
@@ -1651,8 +1649,7 @@ h3{
 	scale: 1;
 	display: flex;
 	flex-direction: column;
-/* 	background: linear-gradient(0deg, rgba(0,10,10,1) 0%, rgba(2,82,84,1) 100%); */
-	background: linear-gradient(180deg,rgba(0, 96, 99, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
 	text-decoration: none;
 	overflow: inherit;
 	justify-items: center;
