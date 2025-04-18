@@ -108,10 +108,10 @@ i {
 }
 .photo {
   	aspect-ratio: 3 / 4;
-  	width: 50vmax;
+  	width: 20vmax;
 }
 .collage {
-        height: 300vh; 
+        height: 160vh; 
   	view-timeline: --collage;
 }
 .photo img {
