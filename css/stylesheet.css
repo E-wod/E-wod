@@ -172,26 +172,23 @@ i {
 
 
 parallaxMod {
-  background-size: cover;
-  color: white;
-  background-color: var(--bg, --color-black);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &.image {
-    background-position: center center;
-    transform: translateZ(-1px) scale(1.5);
+	background-size: cover;
+  	color: white;
+  	background-color: var(--bg, --color-black);
+  	position: relative;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+parallaxMox .image {
+    	background-position: center center;
+    	transform: translateZ(-1px) scale(1.5);
     /* Force the background image to fill the whole element. */
-    background-size: cover;
+    	background-size: cover;
     /* Keep the image from overlapping sibling elements. */
-    z-index: -1;
-    height: 100vh;
+    	z-index: -1;
+    	height: 100vh;
   }
-  &.text {
-    height: 50vh;
-  }
-  &.heading {
+  parallaxMox .heading {
     z-index: -1;
     transform: translateY(-30vh) translateZ(1px) scale(1.5);
   }
