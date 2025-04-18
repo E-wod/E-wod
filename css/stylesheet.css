@@ -41,7 +41,7 @@ html {
  	background-repeat: repeat;
 	text-decoration: none;
 	overflow: inherit;
-	background-image: url("https://imageshack.com/i/pox1PpNVj");
+	background-image: url("https://imageshack.com/i/pnwkWOS8j");
 	background-attachment: fixed;
   	background-position: center;
   	background-repeat: no-repeat;
@@ -108,10 +108,10 @@ i {
 }
 .photo {
   	aspect-ratio: 3 / 4;
-  	width: 20vmax;
+  	width: 30vmax;
 }
 .collage {
-        height: 200vh; 
+        height: 300vh; 
   	view-timeline: --collage;
 }
 .photo img {
