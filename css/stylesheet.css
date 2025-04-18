@@ -111,7 +111,7 @@ i {
   	width: 50vmax;
 }
 .collage {
-        height: 500vh; 
+        height: 400vh; 
   	view-timeline: --collage;
 }
 .photo img {
