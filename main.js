@@ -1,6 +1,25 @@
 let images = document.querySelectorAll("landingContent");
 lazyload(images);
 
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll('img[decoding="asynchronous"]');
+    images.forEach(img => {
+        img.addEventListener('load', () => {
+            img.classList.add('loaded');
+        });
+    });
+});
+</script>
+
+
+
+
+
+
+
 public class ImageUtil 
 {
 
@@ -73,8 +92,6 @@ public class ImageUtil
     }
 
     /**
-     * See http://www.digitalsanctuary.com/tech-blog/java/how-to-resize-uploaded-images-using-java-better-way.html
-     * This instance seems to produce quality images ONLY when you are
      * scaling down to something less than 50% of the original size.
      * @param img
      * @param scale
@@ -86,7 +103,7 @@ public class ImageUtil
                 throw new RuntimeException("Can't scale according to " + scale + " : This method only scales down.");
         }
         PlanarImage originalImage = PlanarImage.wrapRenderedImage(img);
-        // now resize the image
+        // resize the image
         ParameterBlock paramBlock = new ParameterBlock();
         paramBlock.addSource(originalImage); // The source image
         paramBlock.add(scale); // The xScale
