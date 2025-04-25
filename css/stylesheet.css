@@ -100,7 +100,8 @@ i {
 .photo-grid {	
   	position: absolute;
 	background-color: transparent;
-	justify-content: center;
+	top: 50%;
+	left: 50%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -160,6 +161,7 @@ i {
   	animation-timing-function: linear;
   	animation-timeline: --collage;
   	animation-range: entry 100% exit 0%;
+   	background-color: #000000;
 }
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
