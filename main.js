@@ -1,2 +1,2 @@
-let images = document.querySelectorAll("picFrame");
+let images = document.querySelectorAll("landingContent");
 lazyload(images);
