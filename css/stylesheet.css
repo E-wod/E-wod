@@ -152,8 +152,8 @@ i {
 .photo:nth-of-type(8n + 4):nth-of-type(odd),
 .photo:nth-of-type(8n + 6):nth-of-type(odd),
 .photo:nth-of-type(8n + 8):nth-of-type(odd){
-  --vertical: 100%;
-  --horizontal: 100%;
+  --vertical: -100%;
+  --horizontal: -100%;
 }
 .photo {
   	animation-name: travel;
@@ -161,7 +161,6 @@ i {
   	animation-timing-function: linear;
   	animation-timeline: --collage;
   	animation-range: entry 100% exit 0%;
-   	background-color: #000000;
 }
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
