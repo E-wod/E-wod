@@ -127,20 +127,11 @@ i {
   	height: 100%;
   	object-fit: cover;
 }
-.photo:nth-of-type(8n + 1):nth-of-type(even){
-  --vertical: -100%;
-  --horizontal: -100%;
-}
-.photo:nth-of-type(8n + 3):nth-of-type(even){
-  --vertical: -100%;
-  --horizontal: 100%;
-}
-.photo:nth-of-type(8n + 5):nth-of-type(even){
-  --vertical: -100%;
-  --horizontal: -100%;
-}
+.photo:nth-of-type(8n + 1):nth-of-type(even), 
+.photo:nth-of-type(8n + 3):nth-of-type(even),
+.photo:nth-of-type(8n + 5):nth-of-type(even),
 .photo:nth-of-type(8n + 7):nth-of-type(even){
-  --vertical: -100%;
+  --vertical: 100%;
   --horizontal: 100%;
 }
 .photo:nth-of-type(8n + 1):nth-of-type(odd),
