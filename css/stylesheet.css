@@ -131,8 +131,8 @@ i {
 .photo:nth-of-type(8n + 3):nth-of-type(even),
 .photo:nth-of-type(8n + 5):nth-of-type(even),
 .photo:nth-of-type(8n + 7):nth-of-type(even){
-  --vertical: 100%;
-  --horizontal: 100%;
+  --vertical: -100%;
+  --horizontal: -100%;
 }
 .photo:nth-of-type(8n + 2):nth-of-type(odd),
 .photo:nth-of-type(8n + 4):nth-of-type(odd),
@@ -146,7 +146,7 @@ i {
 .photo:nth-of-type(8n + 5):nth-of-type(even),
 .photo:nth-of-type(8n + 7):nth-of-type(even){
   --vertical: 100%;
-  --horizontal: 100%;
+  --horizontal: -100%;
 }
 .photo:nth-of-type(8n + 2):nth-of-type(odd),
 .photo:nth-of-type(8n + 4):nth-of-type(odd),
