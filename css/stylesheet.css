@@ -150,8 +150,8 @@ i {
 .photo:nth-of-type(7n + 2):nth-of-type(odd),
 .photo:nth-of-type(7n + 4):nth-of-type(odd),
 .photo:nth-of-type(7n + 6):nth-of-type(odd) {
-  --vertical: 100%;
-  --horizontal: 100%;
+  --vertical: -100%;
+  --horizontal: -100%;
 }
 .photo {
   	animation-name: travel;
