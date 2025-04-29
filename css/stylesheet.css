@@ -115,8 +115,8 @@ i {
 	grid-template-columns: repeat(13, 1fr);
 }
 .photo {
-  	aspect-ratio: 3 / 4;
-  	width: 21vmax;
+  	aspect-ratio: auto 3 / 4;
+  	width: 25vmax;
 }
 .collage {
         height: 200vh; 
@@ -141,13 +141,13 @@ i {
 .photo:nth-of-type(8n + 7):nth-of-type(odd),
 .photo:nth-of-type(8n + 9):nth-of-type(odd) {
   --vertical: -100%;
-  --horizontal: -100%;
+  --horizontal: 100%;
 }
 .photo:nth-of-type(8n + 2):nth-of-type(even),
 .photo:nth-of-type(8n + 4):nth-of-type(even),
 .photo:nth-of-type(8n + 6):nth-of-type(even),
 .photo:nth-of-type(8n + 8):nth-of-type(even),
-.photo:nth-of-type(8n + 8):nth-of-type(even),
+.photo:nth-of-type(8n + 10):nth-of-type(even),
 .photo:nth-of-type(8n + 12):nth-of-type(even) {
   --vertical: 100%;
   --horizontal: -100%;
@@ -159,7 +159,7 @@ i {
 .photo:nth-of-type(8n + 10):nth-of-type(odd),
 .photo:nth-of-type(8n + 12):nth-of-type(odd) {
   --vertical: -100%;
-  --horizontal: -100%;
+  --horizontal: 100%;
 }
 .photo {
   	animation-name: travel;
