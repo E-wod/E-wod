@@ -1,3 +1,5 @@
+app.use(require('prerender-node').set('prerenderToken', 'rCd6ILObks0JrJglPBkl'));
+
 let images = document.querySelectorAll("landingContent");
 lazyload(images);
 
