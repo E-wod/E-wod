@@ -130,26 +130,28 @@ i {
 .photo:nth-of-type(7n + 1):nth-of-type(even),
 .photo:nth-of-type(7n + 3):nth-of-type(even),
 .photo:nth-of-type(7n + 5):nth-of-type(even),
-.photo:nth-of-type(7n + 7):nth-of-type(even) {
+.photo:nth-of-type(7n + 7):nth-of-type(even){
   --vertical: -100%;
   --horizontal: 100%;
 }
 .photo:nth-of-type(7n + 1):nth-of-type(odd),
 .photo:nth-of-type(7n + 3):nth-of-type(odd),
 .photo:nth-of-type(7n + 5):nth-of-type(odd),
-.photo:nth-of-type(7n + 7):nth-of-type(odd) {
+.photo:nth-of-type(7n + 7):nth-of-type(odd){
   --vertical: -100%;
   --horizontal: -100%;
 }
 .photo:nth-of-type(7n + 2):nth-of-type(even),
 .photo:nth-of-type(7n + 4):nth-of-type(even),
-.photo:nth-of-type(7n + 6):nth-of-type(even) {
+.photo:nth-of-type(7n + 6):nth-of-type(even),
+.photo:nth-of-type(7n + 8):nth-of-type(even){
   --vertical: 100%;
   --horizontal: -100%;
 }
 .photo:nth-of-type(7n + 2):nth-of-type(odd),
 .photo:nth-of-type(7n + 4):nth-of-type(odd),
-.photo:nth-of-type(7n + 6):nth-of-type(odd) {
+.photo:nth-of-type(7n + 6):nth-of-type(odd),
+.photo:nth-of-type(7n + 8):nth-of-type(odd){
   --vertical: 100%;
   --horizontal: 100%;
 }
