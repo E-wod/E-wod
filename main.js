@@ -255,7 +255,14 @@ prerender.set = function(name, value) {
   this[name] = value;
   return this;
 };
-
+language: node_js
+node_js:
+  - "10"
+script:
+  - cd test/support/express3 && npm install
+  - cd ../express4 && npm install
+  - cd ../../..
+  - npm test
 
 
 
