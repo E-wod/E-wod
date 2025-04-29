@@ -127,37 +127,37 @@ i {
   	height: 100%;
   	object-fit: cover;
 }
-.photo:nth-of-type(8n + 1):nth-of-type(even),
-.photo:nth-of-type(8n + 3):nth-of-type(even),
-.photo:nth-of-type(8n + 5):nth-of-type(even),
-.photo:nth-of-type(8n + 7):nth-of-type(even),
-.photo:nth-of-type(8n + 9):nth-of-type(even) {
+.photo:nth-of-type(10n + 1):nth-of-type(even),
+.photo:nth-of-type(10n + 3):nth-of-type(even),
+.photo:nth-of-type(10n + 5):nth-of-type(even),
+.photo:nth-of-type(10n + 7):nth-of-type(even),
+.photo:nth-of-type(10n + 9):nth-of-type(even) {
   --vertical: -100%;
   --horizontal: 100%;
 }
-.photo:nth-of-type(8n + 1):nth-of-type(odd),
-.photo:nth-of-type(8n + 3):nth-of-type(odd),
-.photo:nth-of-type(8n + 5):nth-of-type(odd),
-.photo:nth-of-type(8n + 7):nth-of-type(odd),
-.photo:nth-of-type(8n + 9):nth-of-type(odd) {
+.photo:nth-of-type(10n + 1):nth-of-type(odd),
+.photo:nth-of-type(10n + 3):nth-of-type(odd),
+.photo:nth-of-type(10n + 5):nth-of-type(odd),
+.photo:nth-of-type(10n + 7):nth-of-type(odd),
+.photo:nth-of-type(10n + 9):nth-of-type(odd) {
   --vertical: -100%;
   --horizontal: 100%;
 }
-.photo:nth-of-type(8n + 2):nth-of-type(even),
-.photo:nth-of-type(8n + 4):nth-of-type(even),
-.photo:nth-of-type(8n + 6):nth-of-type(even),
-.photo:nth-of-type(8n + 8):nth-of-type(even),
-.photo:nth-of-type(8n + 10):nth-of-type(even),
-.photo:nth-of-type(8n + 12):nth-of-type(even) {
-  --vertical: 100%;
+.photo:nth-of-type(10n + 2):nth-of-type(even),
+.photo:nth-of-type(10n + 4):nth-of-type(even),
+.photo:nth-of-type(10n + 6):nth-of-type(even),
+.photo:nth-of-type(10n + 8):nth-of-type(even),
+.photo:nth-of-type(10n + 10):nth-of-type(even),
+.photo:nth-of-type(10n + 12):nth-of-type(even) {
+  --vertical: -100%;
   --horizontal: -100%;
 }
-.photo:nth-of-type(8n + 2):nth-of-type(odd),
-.photo:nth-of-type(8n + 4):nth-of-type(odd),
-.photo:nth-of-type(8n + 6):nth-of-type(odd),
-.photo:nth-of-type(8n + 8):nth-of-type(odd),
-.photo:nth-of-type(8n + 10):nth-of-type(odd),
-.photo:nth-of-type(8n + 12):nth-of-type(odd) {
+.photo:nth-of-type(10n + 2):nth-of-type(odd),
+.photo:nth-of-type(10n + 4):nth-of-type(odd),
+.photo:nth-of-type(10n + 6):nth-of-type(odd),
+.photo:nth-of-type(10n + 8):nth-of-type(odd),
+.photo:nth-of-type(10n + 10):nth-of-type(odd),
+.photo:nth-of-type(10n + 12):nth-of-type(odd) {
   --vertical: -100%;
   --horizontal: 100%;
 }
