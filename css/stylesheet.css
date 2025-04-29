@@ -115,7 +115,7 @@ i {
 	grid-template-columns: repeat(13, 1fr);
 }
 .photo {
-  	aspect-ratio: auto 3 / 4;
+  	aspect-ratio: 9 / 6;
   	width: 25vmax;
 }
 .collage {
