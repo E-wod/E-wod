@@ -41,7 +41,7 @@ html {
  	background-repeat: repeat;
 	text-decoration: none;
 	overflow: inherit;
-	background-image:"background-size: cover" url("https://imageshack.com/i/pnwkWOS8j");
+	background-image: url("https://imageshack.com/i/pnwkWOS8j");
 	background-attachment: fixed;
   	background-position: center;
   	background-repeat: no-repeat;
@@ -110,7 +110,7 @@ i {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%) rotate(38deg);
   	display: grid;
 	grid-template-columns: repeat(7, 1fr);
 }
@@ -127,25 +127,25 @@ i {
   	height: 100%;
   	object-fit: cover;
 }
-.photo:nth-of-type(7n + 1):nth-of-type(even),
-.photo:nth-of-type(7n + 1):nth-of-type(even),{
+.photo:nth-of-type(7n + 2):nth-of-type(even),
+.photo:nth-of-type(7n + 4):nth-of-type(even),{
   --vertical: -100%;
   --horizontal: 100%;
 }
 .photo:nth-of-type(7n + 1):nth-of-type(odd),
-.photo:nth-of-type(7n + 1):nth-of-type(odd),
-.photo:nth-of-type(7n + 1):nth-of-type(odd){
+.photo:nth-of-type(7n + 3):nth-of-type(odd),
+.photo:nth-of-type(7n + 5):nth-of-type(odd){
   --vertical: 100%;
   --horizontal: 100%;
 }
-.photo:nth-of-type(7n + 1):nth-of-type(even),
-.photo:nth-of-type(7n + 1):nth-of-type(even){
+.photo:nth-of-type(7n + 2):nth-of-type(even),
+.photo:nth-of-type(7n + 4):nth-of-type(even){
   --vertical: -100%;
   --horizontal: 100%;
 }
 .photo:nth-of-type(7n + 1):nth-of-type(odd),
-.photo:nth-of-type(7n + 1):nth-of-type(odd),
-.photo:nth-of-type(7n + 1):nth-of-type(odd){
+.photo:nth-of-type(7n + 3):nth-of-type(odd),
+.photo:nth-of-type(7n + 5):nth-of-type(odd){
   --vertical: 100%;
   --horizontal: 100%;
 }
