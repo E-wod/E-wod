@@ -41,7 +41,7 @@ html {
  	background-repeat: repeat;
 	text-decoration: none;
 	overflow: inherit;
-	background-image: url("https://imageshack.com/i/pnwkWOS8j");
+	background-image:"background-size: cover" url("https://imageshack.com/i/pnwkWOS8j");
 	background-attachment: fixed;
   	background-position: center;
   	background-repeat: no-repeat;
