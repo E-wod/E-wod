@@ -130,24 +130,24 @@ i {
 .photo:nth-of-type(even),
 .photo:nth-of-type(even),{
   --vertical: -100%;
-  --horizontal: 100%;
+  --horizontal: -100%;
 }
 .photo:nth-of-type(odd),
 .photo:nth-of-type(odd),
 .photo:nth-of-type(odd){
   --vertical: 100%;
-  --horizontal: 100%;
+  --horizontal: -100%;
 }
 .photo:nth-of-type(even),
 .photo:nth-of-type(even){
   --vertical: -100%;
-  --horizontal: 100%;
+  --horizontal: -100%;
 }
 .photo:nth-of-type(odd),
 .photo:nth-of-type(odd),
 .photo:nth-of-type(odd){
   --vertical: 100%;
-  --horizontal: 100%;
+  --horizontal: -100%;
 }
 .photo {
   	animation-name: travel;
