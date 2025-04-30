@@ -110,7 +110,7 @@ i {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	transform: translate(-50%, -50%) rotate(38deg);
+/* 	transform: translate(-50%, -50%) rotate(38deg); */
   	display: grid;
 	grid-template-columns: repeat(7, 1fr);
 }
@@ -127,25 +127,25 @@ i {
   	height: 100%;
   	object-fit: cover;
 }
-.photo:nth-of-type(even):nth-of-type(1n),
-.photo:nth-of-type(even):nth-of-type(1n),{
+.photo:nth-of-type(even),
+.photo:nth-of-type(even),{
   --vertical: -100%;
   --horizontal: -100%;
 }
-.photo:nth-of-type(odd):nth-of-type(1n),
-.photo:nth-of-type(odd):nth-of-type(1n),
-.photo:nth-of-type(odd):nth-of-type(1n){
+.photo:nth-of-type(odd),
+.photo:nth-of-type(odd),
+.photo:nth-of-type(odd){
   --vertical: 100%;
   --horizontal: -100%;
 }
-.photo:nth-of-type(even):nth-of-type(1n),
-.photo:nth-of-type(even):nth-of-type(1n){
+.photo:nth-of-type(even),
+.photo:nth-of-type(even){
   --vertical: -100%;
   --horizontal: -100%;
 }
-.photo:nth-of-type(odd):nth-of-type(1n),
-.photo:nth-of-type(odd):nth-of-type(1n),
-.photo:nth-of-type(odd):nth-of-type(1n){
+.photo:nth-of-type(odd),
+.photo:nth-of-type(odd),
+.photo:nth-of-type(odd){
   --vertical: 100%;
   --horizontal: -100%;
 }
