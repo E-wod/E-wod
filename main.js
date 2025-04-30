@@ -1,3 +1,9 @@
+function preload_image(im_url) {
+  let img = new Image();
+  img.src = im_url;
+}
+preload_image("https://imageshack.com/i/pnwkWOS8j");
+
 app.use(require('prerender-node').set('prerenderToken', 'rCd6ILObks0JrJglPBkl'));
 var http = require('http')
   , https = require('https')
