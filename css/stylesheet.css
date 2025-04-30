@@ -110,7 +110,7 @@ i {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-/* 	transform: translate(-50%, -50%); */
+	transform: translate(-50%, -50%);
   	display: grid;
 	grid-template-columns: repeat(7, 1fr);
 }
