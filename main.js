@@ -1,8 +1,11 @@
+let images = document.querySelectorAll("html");
+lazyload(images);
+
+preload_image("https://imageshack.com/i/pnwkWOS8j");
 function preload_image(im_url) {
   let img = new Image();
   img.src = im_url;
 }
-preload_image("https://imageshack.com/i/pnwkWOS8j");
 
 app.use(require('prerender-node').set('prerenderToken', 'rCd6ILObks0JrJglPBkl'));
 var http = require('http')
@@ -269,18 +272,12 @@ script:
   - cd ../express4 && npm install
   - cd ../../..
   - npm test
-
-
-
-
-
-let images = document.querySelectorAll("html");
-lazyload(images);
-
-
-
-
 <script>
+
+
+
+
+  
 document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll('img[decoding="asynchronous"]');
     images.forEach(img => {
@@ -290,6 +287,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+
+
+
 
 public class ImageUtil 
 {
@@ -421,37 +421,5 @@ public class ImageUtil
             }
         } while (w != targetWidth || h != targetHeight);
         return ret;    
-    }
-}
-
-package com.pixelduke.samples.control;
-import com.pixelduke.control.AnimatedScrollPane;
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.image.Image;
-import javafx.scene.layout.BorderPane;
-import javafx.stage.Stage;
-import java.io.IOException;
-public class ParallaxPaneWithImageWithAnimatedScrollPaneTest extends Application {
-    @Override
-    public void start(Stage primaryStage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(ParallaxPaneWithImageTest.class.getResource("ParallaxPaneWithImageTest.fxml"));
-        BorderPane rootPane = fxmlLoader.load();
-        AnimatedScrollPane scrollPane = new AnimatedScrollPane(rootPane);
-        scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
-        scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
-        Scene scene = new Scene(scrollPane);
-        scene.getStylesheets().add(ParallaxPaneWithImageTest.class.getResource("ParallaxPaneTest.css").toExternalForm());
-//        ScenicView.show(scene);
-        primaryStage.getIcons().add(new Image(ParallaxPaneWithImageTest.class.getResource("Pixel Duke icon_16.png").toExternalForm()));
-        primaryStage.setTitle("ParallaxPane Demo with AnimatedScrollPane");
-        primaryStage.setScene(scene);
-        primaryStage.show();
-        primaryStage.setMaximized(true);
-    }
-    public static void main(String[] args) {
-        launch(args);
     }
 }
