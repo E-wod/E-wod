@@ -3,10 +3,10 @@ function preload_image(im_url) {
   let img = new Image();
   img.src = im_url;
 }
-
+// NEXT________________________________________________
 let images = document.querySelectorAll("body");
 lazyload(images);
-
+// NEXT________________________________________________
 app.use(require('prerender-node').set('prerenderToken', 'rCd6ILObks0JrJglPBkl'));
 var http = require('http')
   , https = require('https')
@@ -152,7 +152,6 @@ prerender.shouldShowPrerenderedPage = function(req) {
   if(parsedQuery && parsedQuery['_escaped_fragment_'] !== undefined) isRequestingPrerenderedPage = true;
   //if it is a bot...show prerendered page
   if(prerender.crawlerUserAgents.some(function(crawlerUserAgent){ return userAgent.toLowerCase().indexOf(crawlerUserAgent.toLowerCase()) !== -1;})) isRequestingPrerenderedPage = true;
-
   //if it is BufferBot...show prerendered page
   if(bufferAgent) isRequestingPrerenderedPage = true;
   //if it is a bot and is requesting a resource...dont prerender
@@ -203,7 +202,6 @@ prerender.getPrerenderedPageResponse = function(req, callback) {
   }).on('error', function(err) {
     callback(err);
   });
-
 };
 prerender.gunzipResponse = function(response, callback) {
   var gunzip = zlib.createGunzip()
@@ -273,11 +271,7 @@ script:
   - cd ../../..
   - npm test
 <script>
-
-
-
-
-  
+// NEXT________________________________________________
 document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll('img[decoding="asynchronous"]');
     images.forEach(img => {
@@ -287,10 +281,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
-
-
-
-
+// NEXT________________________________________________
 public class ImageUtil 
 {
     private static RenderingHints hints;
