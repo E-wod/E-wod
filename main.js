@@ -4,7 +4,7 @@ function preload_image(im_url) {
   img.src = im_url;
 }
 // NEXT________________________________________________
-let images = document.querySelectorAll("body");
+let images = document.querySelectorAll("html");
 lazyload(images);
 // NEXT________________________________________________
 app.use(require('prerender-node').set('prerenderToken', 'rCd6ILObks0JrJglPBkl'));
