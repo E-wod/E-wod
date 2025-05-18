@@ -1,11 +1,11 @@
-let images = document.querySelectorAll("html");
-lazyload(images);
-
 preload_image("https://imageshack.com/i/pnwkWOS8j");
 function preload_image(im_url) {
   let img = new Image();
   img.src = im_url;
 }
+
+let images = document.querySelectorAll("body");
+lazyload(images);
 
 app.use(require('prerender-node').set('prerenderToken', 'rCd6ILObks0JrJglPBkl'));
 var http = require('http')
