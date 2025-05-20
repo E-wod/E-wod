@@ -112,7 +112,7 @@ i {
 	padding-bottom: 0px;
 	transform: translate(-50%, -50%);
   	display: grid;
-	grid-template-columns: repeat(7, 1fr);
+	grid-template-columns: repeat(10, 1fr);
 }
 .photo {
   	aspect-ratio: 3/4;
@@ -135,19 +135,6 @@ i {
   	object-fit: cover;
 
 }
-.photo:hover {
-        transform: scale(1.1);
-	transform: rotateY(360deg);
-	transform-origin: center;
-}
-
-
-
-
-	
-
-
-
 .photo:nth-of-type(even),
 .photo:nth-of-type(even),{
   --vertical: -100%;
@@ -857,7 +844,7 @@ h3{
 	max-height: 100%;
 	object-fit: cover;
 	display: flex;
-	position: static;
+	position: inherit;
 	align-items: center;
 	z-index: -19;
 	overflow: hidden;
@@ -1500,7 +1487,7 @@ h3{
 	max-height: 100%;
 	object-fit: cover;
 	display: flex;
-	position: static;
+	position: inherit;
 	align-items: center;
 	z-index: -19;
 	overflow: hidden;
@@ -2142,7 +2129,7 @@ h3{
 	max-height: 100%;
 	object-fit: cover;
 	display: flex;
-	position: static;
+	position: inherit;
 	align-items: center;
 	z-index: -19;
 	overflow: hidden;
