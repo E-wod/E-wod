@@ -841,6 +841,7 @@ h3{
 	width: auto;
 	height: 100%;
 	max-width: 100%;
+	object-fit: cover;
 	display: flex;
 	position: inherit;
 	align-items: center;
