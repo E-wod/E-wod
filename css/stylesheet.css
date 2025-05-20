@@ -104,7 +104,7 @@ i {
 }
 .photo-block {
   	position: sticky;
- 	height: 60%;
+ 	height: 200%;
 	width: 100%;
 	display: grid;
   	overflow: hidden;
@@ -138,8 +138,8 @@ i {
 }
 .photo {
   	aspect-ratio: 3 / 4;
-   	width: 35vh;
-	height: auto;
+   	width: auto;
+	height: 65vh;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
