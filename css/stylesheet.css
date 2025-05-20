@@ -90,7 +90,7 @@ i {
 	display: flex;
 }
 .collage {
-	height: 600%;
+	height: 100%;
   	view-timeline: --collage;
 }
 .photo-block {
@@ -114,7 +114,7 @@ i {
 }
 .photo {
   	aspect-ratio: 3 / 4;
-   	width: 100px;
+   	width: 50vh;
 }
 .photo img {
   	width: 100%;
