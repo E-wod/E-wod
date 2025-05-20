@@ -104,11 +104,10 @@ i {
 }
 .photo-block {
   	position: sticky;
-   	width: auto;
-	height: 11%;
+  	top: calc(50% - 30vh);
+  	height: 60vh;
+	width: 100%;
 	display: grid;
-  	overflow: hidden;
-	background: transparent;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -124,7 +123,7 @@ i {
   	left: 50%;
   	transform: translate(-50%, -50%);
   	display: grid;
-	grid-template-columns: repeat(9, 1fr);
+	grid-template-columns: repeat(20, 1fr);
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -136,8 +135,7 @@ i {
 }
 .photo {
   	aspect-ratio: 3 / 4;
- 	height: 100%;
-	width: 100%;
+  	width: 12vmax;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
