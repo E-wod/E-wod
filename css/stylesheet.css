@@ -105,6 +105,9 @@ i {
 	background: transparent;
 }
 .photo-grid {
+  	height: 100%;
+	width: 100%;
+	
   	position: absolute;
   	top: 50%;
   	left: 50%;
@@ -114,7 +117,7 @@ i {
 }
 .photo {
   	aspect-ratio: 3 / 4;
-  	width: 20vmax;
+  	width: 17vmax;
 }
 .photo img {
   	width: 100%;
