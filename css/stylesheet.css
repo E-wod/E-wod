@@ -90,7 +90,8 @@ i {
 	display: flex;
 }
 .collage {
-  	height: 100vh;
+  	max-height: 100%;
+	height: 100%;
 	width: 100%;
   	view-timeline: --collage;
 }
@@ -104,7 +105,7 @@ i {
 	background: transparent;
 }
 .photo-grid {
-  	height: 100%;
+	height: 100%;
 	width: 100%;
 	
   	position: absolute;
@@ -112,15 +113,16 @@ i {
   	left: 50%;
   	transform: translate(-50%, -50%);
   	display: grid;
-	grid-template-columns: repeat(9, 1fr);
+	grid-template-columns: repeat(7, 1fr);
 }
 .photo {
   	aspect-ratio: 3 / 4;
-  	width: 17vmax;
+/*   	width: 17vmax; */
+  	width: 15%;
 
   	animation-name: travel;
   	animation-fill-mode: both;
-  	animation-timing-function: .6s ease-in-out;
+  	animation-timing-function: linear;
   	animation-timeline: --collage;
   	animation-range: entry 100% exit 0%;
 }
