@@ -90,13 +90,14 @@ i {
 	display: flex;
 }
 .collage {
-  	height: 100%;
+  	height: auto;
+	width: 100%;
   	view-timeline: --collage;
 }
 .photo-block {
   	position: sticky;
-  	top: calc(50% - 30vh);
-  	height: 100%;
+/*   	top: calc(50% - 30vh); */
+  	height: auto;
 	width: 100%;
 	display: grid;
   	overflow: hidden;
@@ -113,12 +114,6 @@ i {
 .photo {
   	aspect-ratio: 3 / 4;
   	width: 20vmax;
-
-  	animation-name: travel;
-  	animation-fill-mode: both;
-  	animation-timing-function: linear;
-  	animation-timeline: --collage;
-  	animation-range: entry 100% exit 0%;
 }
 .photo img {
   	width: 100%;
@@ -146,6 +141,13 @@ i {
 .photo:nth-of-type(odd){
   	--vertical: 100%;
   	--horizontal: -100%;
+}
+.photo {
+  	animation-name: travel;
+  	animation-fill-mode: both;
+  	animation-timing-function: linear;
+  	animation-timeline: --collage;
+  	animation-range: entry 100% exit 0%;
 }
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
