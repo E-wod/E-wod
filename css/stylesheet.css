@@ -90,13 +90,15 @@ i {
 	display: flex;
 }
 .collage {
-  	height: 400vh;
+  	height: 100%;
+	width: 100%;
   	view-timeline: --collage;
 }
 .photo-block {
   	position: sticky;
-  	top: calc(50% - 30vh);
-  	height: 60vh;
+  	top: 0;
+/*   	top: calc(50% - 30vh); */
+  	height: 25vh;
 	width: 100%;
 	display: grid;
   	overflow: hidden;
@@ -121,7 +123,7 @@ i {
 }
 .photo:nth-of-type(even),
 .photo:nth-of-type(even),{
-  	--vertical: 100%;
+  	--vertical: -100%;
   	--horizontal: 100%;
 }
 .photo:nth-of-type(odd),
