@@ -157,16 +157,18 @@ i {
 @keyframes travel {
 	animation-range: normal;
  	0% {
+	border-radius: 0%;
     	translate: 0 0;
   	}
         100% {
+	border-radius: 50%;
     	translate: var(--horizontal) var(--vertical);
  	}
 }
 @keyframes bkGnd {
 	animation-range: normal;
-      	0%, 50%, 90% { scale: .6; opacity: .5 }
-      	25%, 75%, 100% { scale: .1; opacity: .1 }
+      	0%, 50%, 90% { scale: .6; opacity: .5 };
+      	25%, 75%, 100% { scale: .1; opacity: .1 };
 }
 @keyframes logoAnim {
 	animation-range: normal;
@@ -2256,5 +2258,4 @@ h3{
 	animation: pAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	transition: 3s;
-}
 }
