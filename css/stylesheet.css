@@ -106,9 +106,6 @@ i {
 	background: transparent;
 }
 .photo-grid {
-	height: 100%;
-	width: 100%;
-	
   	position: absolute;
   	top: 50%;
   	left: 50%;
@@ -119,12 +116,6 @@ i {
 .photo {
   	aspect-ratio: 3 / 4;
    	width: 20vmax;
-
-  	animation-name: travel;
-  	animation-fill-mode: both;
-  	animation-timing-function: linear;
-  	animation-timeline: --collage;
-  	animation-range: entry 100% exit 0%;
 }
 .photo img {
   	width: 100%;
@@ -152,6 +143,13 @@ i {
 .photo:nth-of-type(odd){
   	--vertical: 100%;
   	--horizontal: -100%;
+}
+.photo {
+  	animation-name: travel;
+  	animation-fill-mode: both;
+  	animation-timing-function: linear;
+  	animation-timeline: --collage;
+  	animation-range: entry 100% exit 0%;
 }
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
