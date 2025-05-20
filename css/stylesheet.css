@@ -96,7 +96,7 @@ i {
 .photo-block {
   	position: sticky;
   	top: 0;
- 	height: 50%;
+ 	height: 80%;
 	width: 100%;
 	display: grid;
   	overflow: hidden;
@@ -112,7 +112,7 @@ i {
 }
 .photo {
   	aspect-ratio: 3 / 4;
-   	width: 120px;
+   	width: 100px;
 }
 .photo img {
   	width: 100%;
@@ -640,10 +640,11 @@ h3{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .cntr {
+	z-index: 1000;
 	background: transparent;
 	justify-items: center;
-	display: inherit;
-	position: inherit;
+	display: flex;
+	position: sticky;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -652,10 +653,10 @@ h3{
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 .btnBox {
 	z-index: 15;
@@ -1283,10 +1284,11 @@ h3{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .cntr {
+	z-index: 1000;
 	background: transparent;
 	justify-items: center;
-	display: inherit;
-	position: inherit;
+	display: flex;
+	position: sticky;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -1924,10 +1926,11 @@ h3{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .cntr {
+	z-index: 1000;
 	background: transparent;
 	justify-items: center;
-	display: inherit;
-	position: inherit;
+	display: flex;
+	position: sticky;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
