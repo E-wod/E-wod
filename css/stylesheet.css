@@ -90,7 +90,7 @@ i {
 	display: flex;
 }
 .collage {
-  	height: 90vh;
+  	height: 100vh;
 	width: 100%;
   	view-timeline: --collage;
 }
@@ -113,7 +113,7 @@ i {
   	left: 50%;
   	transform: translate(-50%, -50%);
   	display: grid;
-	grid-template-columns: repeat(11, 1fr);
+	grid-template-columns: repeat(9, 1fr);
 }
 .photo {
   	aspect-ratio: 3 / 4;
@@ -143,7 +143,7 @@ i {
 .photo:nth-of-type(odd),
 .photo:nth-of-type(odd),
 .photo:nth-of-type(odd){
-  	--vertical: 100%;
+  	--vertical: -100%;
   	--horizontal: -100%;
 }
 .photo {
