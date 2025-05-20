@@ -103,7 +103,7 @@ i {
   	position: absolute;
   	top: 50%;
   	left: 50%;
-  	transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%) rotate(38deg);
   	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 }
@@ -141,6 +141,13 @@ i {
 .photo:nth-of-type(odd){
   --vertical: 100%;
   --horizontal: -100%;
+}
+.photo {
+  animation-name: travel;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-timeline: --collage;
+  animation-range: entry 100% exit 0%;
 }
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
