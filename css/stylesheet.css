@@ -119,6 +119,11 @@ i {
   	width: 20vmax;
         width: 100%;
         height: 100%;
+  	animation-name: travel;
+  	animation-fill-mode: both;
+  	animation-timing-function: linear;
+  	animation-timeline: --collage;
+  	animation-range: entry 100% exit 0%;
 }
 .collage {
         height: 200vh; 
@@ -128,11 +133,12 @@ i {
   	width: 100%;
   	height: 100%;
   	object-fit: cover;
-	transform-origin: center;
+
 }
-.photo img:hover {
+.photo:hover {
         transform: scale(1.1);
 	transform: rotateY(360deg);
+	transform-origin: center;
 }
 
 
@@ -162,14 +168,7 @@ i {
 .photo:nth-of-type(odd),
 .photo:nth-of-type(odd){
   --vertical: 100%;
-  --horizontal: -100%;
-}
-.photo {
-  	animation-name: travel;
-  	animation-fill-mode: both;
-  	animation-timing-function: linear;
-  	animation-timeline: --collage;
-  	animation-range: entry 100% exit 0%;
+  --horizontal: 100%;
 }
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
