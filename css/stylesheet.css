@@ -686,8 +686,8 @@ h3{
 	z-index: 1000;
 	background: transparent;
 	justify-items: center;
-	display: flex;
-	position: fixed;
+	display: table-cloumn;
+	position: absolute;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
