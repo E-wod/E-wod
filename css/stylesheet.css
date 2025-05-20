@@ -91,7 +91,7 @@ i {
 }
 .collage {
   	top: 0;
-	height: 200%;
+	height: 100%;
   	view-timeline: --collage;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -104,7 +104,7 @@ i {
 }
 .photo-block {
   	position: sticky;
- 	height: 100%;
+ 	height: 60%;
 	width: 100%;
 	display: grid;
   	overflow: hidden;
@@ -687,7 +687,7 @@ h3{
 	background: transparent;
 	justify-items: center;
 	display: flex;
-	position: absolute;
+	position: fixed;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -1330,7 +1330,7 @@ h3{
 	background: transparent;
 	justify-items: center;
 	display: flex;
-	position: absolute;
+	position: fixed;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -1972,7 +1972,7 @@ h3{
 	background: transparent;
 	justify-items: center;
 	display: flex;
-	position: absolute;
+	position: fixed;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
