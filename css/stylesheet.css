@@ -90,7 +90,7 @@ i {
 	display: flex;
 }
 .collage {
-	height: 90%;
+	height: 100%;
 	width: 100%;
   	view-timeline: --collage;
 }
@@ -109,7 +109,7 @@ i {
   	left: 50%;
   	transform: translate(-50%, -50%);
   	display: grid;
-	grid-template-columns: repeat(7, 1fr);
+	grid-template-columns: repeat(9, 1fr);
 }
 .photo {
   	aspect-ratio: 3 / 4;
