@@ -111,9 +111,9 @@ i {
   	position: absolute;
   	top: 50%;
   	left: 50%;
-  	transform: translate(-50%, -50%) rotate(38deg);
+  	transform: translate(-50%, -50%);
   	display: grid;
-	grid-template-columns: repeat(10, 1fr);
+	grid-template-columns: repeat(11, 1fr);
 }
 .photo {
   	aspect-ratio: 3 / 4;
@@ -127,7 +127,7 @@ i {
 .photo:nth-of-type(even),
 .photo:nth-of-type(even),{
   	--vertical: -100%;
-  	--horizontal: 100%;
+  	--horizontal: -100%;
 }
 .photo:nth-of-type(odd),
 .photo:nth-of-type(odd),
