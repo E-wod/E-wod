@@ -148,7 +148,7 @@ i {
 .photo:nth-of-type(odd),
 .photo:nth-of-type(odd){
   --vertical: 100%;
-  --horizontal: 100%;
+  --horizontal: -100%;
 }
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
@@ -835,7 +835,6 @@ h3{
 	width: auto;
 	height: 100%;
 	max-height: 100%;
-	object-fit: cover;
 	display: flex;
 	position: inherit;
 	align-items: center;
@@ -1478,7 +1477,6 @@ h3{
 	width: auto;
 	height: 100%;
 	max-height: 100%;
-	object-fit: cover;
 	display: flex;
 	position: inherit;
 	align-items: center;
@@ -2120,7 +2118,6 @@ h3{
 	width: auto;
 	height: 100%;
 	max-height: 100%;
-	object-fit: cover;
 	display: flex;
 	position: inherit;
 	align-items: center;
