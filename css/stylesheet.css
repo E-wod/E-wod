@@ -682,8 +682,8 @@ h3{
 	z-index: 100;
 	background: transparent;
 	justify-items: center;
-	display: table;
-	position: relative;
+	display: grid;
+	position: fixed;
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
@@ -711,10 +711,10 @@ h3{
 	background: transparent;
 	width: 100%;
 	height: 100%;
-	display: flex;
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
+	display: flex;
 }
 .btnBox a {
 	background: transparent;
