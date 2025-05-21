@@ -683,7 +683,7 @@ h3{
 	z-index: 1000;
 	background: transparent;
 	justify-items: center;
-	display: table-column-group;
+	display: column;
 	position: absolute;
 	justify-content: space-between;
 	width: 100%;
@@ -712,7 +712,7 @@ h3{
 	background: transparent;
 	width: 100%;
 	height: 100%;
-	display: flex;
+	display: column;
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
@@ -789,7 +789,7 @@ h3{
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
-	display: flex;
+	display: column;
 }
 .socLnk a {
 	width: 80px;
