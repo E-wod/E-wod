@@ -1,12 +1,3 @@
-const splash = document.querySelector('.splash');
-  
-document.addEventListener('DOMContentLoaded', (e) =>){
-    setTimeout(()=>{
-      splash.classList.add('display-none');
-    }, 2000);
-})
-  
-  
 preload_image("https://imageshack.com/i/pnwkWOS8j");
 function preload_image(im_url) {
   let img = new Image();
