@@ -124,7 +124,7 @@ i {
   	left: 50%;
   	transform: translate(-50%, -50%);
   	display: grid;
-	grid-template-columns: repeat(13, 1fr);
+	grid-template-columns: repeat(7, 1fr);
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
