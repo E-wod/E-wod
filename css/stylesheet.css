@@ -160,8 +160,7 @@ i {
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
-	background-color: transparent;
-	width: auto;
+	width: 100%;
 	height: auto;
 	justify-content: center;
 	display: flex;
@@ -674,8 +673,8 @@ p{
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
-	background-color: transparent;
-	width: auto;
+	background-color: opaque;
+	width: 100%;
 	height: auto;
 	position: inherit;
 	justify-content: center;
@@ -725,7 +724,7 @@ p{
 	border-radius: 12px;
 	background: transparent;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
@@ -799,7 +798,7 @@ p{
 	border-radius: 50%;
 	background: transparent;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
