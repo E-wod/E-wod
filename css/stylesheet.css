@@ -159,59 +159,7 @@ i {
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
-.photo:nth-of-type(20n + 1):nth-of-type(even),
-.photo:nth-of-type(20n + 3):nth-of-type(even),
-.photo:nth-of-type(20n + 5):nth-of-type(even),
-.photo:nth-of-type(20n + 7):nth-of-type(even),
-.photo:nth-of-type(20n + 9):nth-of-type(even),
-.photo:nth-of-type(20n + 11):nth-of-type(even),
-.photo:nth-of-type(20n + 13):nth-of-type(even),
-.photo:nth-of-type(20n + 15):nth-of-type(even),
-.photo:nth-of-type(20n + 17):nth-of-type(even),
-.photo:nth-of-type(20n + 19):nth-of-type(even) {
-  --vertical: -100%;
-  --horizontal: 100%;
-}
-.photo:nth-of-type(20n + 1):nth-of-type(even),
-.photo:nth-of-type(20n + 3):nth-of-type(even),
-.photo:nth-of-type(20n + 5):nth-of-type(even),
-.photo:nth-of-type(20n + 7):nth-of-type(even),
-.photo:nth-of-type(20n + 9):nth-of-type(even),
-.photo:nth-of-type(20n + 11):nth-of-type(even),
-.photo:nth-of-type(20n + 13):nth-of-type(even),
-.photo:nth-of-type(20n + 15):nth-of-type(even),
-.photo:nth-of-type(20n + 17):nth-of-type(even),
-.photo:nth-of-type(20n + 19):nth-of-type(even) {
-  --vertical: -100%;
-  --horizontal: -100%;
-}
-.photo:nth-of-type(20n + 2):nth-of-type(even),
-.photo:nth-of-type(20n + 4):nth-of-type(even),
-.photo:nth-of-type(20n + 6):nth-of-type(even),
-.photo:nth-of-type(20n + 8):nth-of-type(even),
-.photo:nth-of-type(20n + 10):nth-of-type(even),
-.photo:nth-of-type(20n + 12):nth-of-type(even),
-.photo:nth-of-type(20n + 14):nth-of-type(even),
-.photo:nth-of-type(20n + 16):nth-of-type(even),
-.photo:nth-of-type(20n + 18):nth-of-type(even),
-.photo:nth-of-type(20n + 20):nth-of-type(even) {
-  --vertical: 100%;
-  --horizontal: -100%;
-}
-.photo:nth-of-type(20n + 2):nth-of-type(even),
-.photo:nth-of-type(20n + 4):nth-of-type(even),
-.photo:nth-of-type(20n + 6):nth-of-type(even),
-.photo:nth-of-type(20n + 8):nth-of-type(even),
-.photo:nth-of-type(20n + 10):nth-of-type(even),
-.photo:nth-of-type(20n + 12):nth-of-type(even),
-.photo:nth-of-type(20n + 14):nth-of-type(even),
-.photo:nth-of-type(20n + 16):nth-of-type(even),
-.photo:nth-of-type(20n + 18):nth-of-type(even),
-.photo:nth-of-type(20n + 20):nth-of-type(even) {
-  --vertical: 100%;
-  --horizontal: 100%;
-}
-/* .photo:nth-of-type(even),
+.photo:nth-of-type(even),
 .photo:nth-of-type(even),{
   	--vertical: -100%;
   	--horizontal: -100%;
@@ -232,7 +180,7 @@ i {
 .photo:nth-of-type(odd){
   	--vertical: 100%;
   	--horizontal: -100%;
-} */
+}
 .photo {
   	animation-name: travel;
   	animation-fill-mode: both;
@@ -735,7 +683,7 @@ h3{
 	z-index: 1000;
 	background: transparent;
 	justify-items: center;
-	display: table-column;
+	display: block;
 	position: absolute;
 	justify-content: space-between;
 	width: 100%;
