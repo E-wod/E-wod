@@ -671,7 +671,8 @@ p{
 	z-index: 100;
 	background: transparent;
 	justify-items: center;
-	display: table;
+	display: flex;
+	flex-direction: column;
 	position: fixed;
 	justify-content: space-between;
 	width: 100%;
