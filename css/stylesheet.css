@@ -286,8 +286,8 @@ i {
 }
 .photo-block {
   	position: sticky;
-  	top: calc(50% - 30vh);
-  	height: 60vh;
+  	top: 0;
+  	height: 80vh;
 	width: 100%;
 	display: grid;
   	overflow: hidden;
@@ -1038,6 +1038,107 @@ p{
 /*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 992px) {
+.wallPaper {
+	position: fixed;
+	background-image: url("https://imagizer.imageshack.com/img924/3995/kPr8m0.jpg");
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100vh;
+	z-index: 0;
+	opacity: 0.7;
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+.photo-block {
+  	position: sticky;
+  	top: 0;
+  	height: 80vh;
+	width: 100%;
+	display: grid;
+  	overflow: hidden;
+  	background: var(--gray-6);
+}
+.photo-grid {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%) rotate(38deg);
+  	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+}
+.photo {
+  	aspect-ratio: 3 / 4;
+  	width: 13vmax;
+}
+.collage {
+  	height: 225vh;
+  	view-timeline: --collage;
+}
+.photo img {
+  	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+}
+.photo:nth-of-type(9n + 1):nth-of-type(even),
+.photo:nth-of-type(9n + 3):nth-of-type(even),
+.photo:nth-of-type(9n + 5):nth-of-type(even),
+.photo:nth-of-type(9n + 7):nth-of-type(even),
+.photo:nth-of-type(9n + 9):nth-of-type(even) {
+  	--vertical: -100%;
+  	--horizontal: 100%;
+}
+.photo:nth-of-type(9n + 1):nth-of-type(odd),
+.photo:nth-of-type(9n + 3):nth-of-type(odd),
+.photo:nth-of-type(9n + 5):nth-of-type(odd),
+.photo:nth-of-type(9n + 7):nth-of-type(odd),
+.photo:nth-of-type(9n + 9):nth-of-type(odd) {
+  	--vertical: -100%;
+  	--horizontal: -100%;
+}
+.photo:nth-of-type(9n + 2):nth-of-type(even),
+.photo:nth-of-type(9n + 4):nth-of-type(even),
+.photo:nth-of-type(9n + 6):nth-of-type(even),
+.photo:nth-of-type(9n + 8):nth-of-type(even) {
+  	--vertical: 100%;
+  	--horizontal: -100%;
+}
+.photo:nth-of-type(9n + 2):nth-of-type(odd),
+.photo:nth-of-type(9n + 4):nth-of-type(odd),
+.photo:nth-of-type(9n + 6):nth-of-type(odd),
+.photo:nth-of-type(9n + 8):nth-of-type(odd) {
+  	--vertical: 100%;
+  	--horizontal: 100%;
+}
+.photo {
+  	animation-name: travel;
+  	animation-fill-mode: both;
+  	animation-timing-function: linear;
+  	animation-timeline: --collage;
+  	animation-range: entry 100% exit 0%;
+}
+.scroller {
+  	height: 33vh;
+  	view-timeline: --scroller;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	z-index: -10;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
+}
 .header {
 	width: 100%;
 	max-width: 100%;
@@ -1705,6 +1806,107 @@ p{
 /*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
 @media (max-width: 767px) {
+.wallPaper {
+	position: fixed;
+	background-image: url("https://imagizer.imageshack.com/img924/3995/kPr8m0.jpg");
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100vh;
+	z-index: 0;
+	opacity: 0.7;
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+.photo-block {
+  	position: sticky;
+  	top: 0;
+  	height: 80vh;
+	width: 100%;
+	display: grid;
+  	overflow: hidden;
+  	background: var(--gray-6);
+}
+.photo-grid {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%) rotate(38deg);
+  	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+}
+.photo {
+  	aspect-ratio: 3 / 4;
+  	width: 13vmax;
+}
+.collage {
+  	height: 225vh;
+  	view-timeline: --collage;
+}
+.photo img {
+  	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+}
+.photo:nth-of-type(9n + 1):nth-of-type(even),
+.photo:nth-of-type(9n + 3):nth-of-type(even),
+.photo:nth-of-type(9n + 5):nth-of-type(even),
+.photo:nth-of-type(9n + 7):nth-of-type(even),
+.photo:nth-of-type(9n + 9):nth-of-type(even) {
+  	--vertical: -100%;
+  	--horizontal: 100%;
+}
+.photo:nth-of-type(9n + 1):nth-of-type(odd),
+.photo:nth-of-type(9n + 3):nth-of-type(odd),
+.photo:nth-of-type(9n + 5):nth-of-type(odd),
+.photo:nth-of-type(9n + 7):nth-of-type(odd),
+.photo:nth-of-type(9n + 9):nth-of-type(odd) {
+  	--vertical: -100%;
+  	--horizontal: -100%;
+}
+.photo:nth-of-type(9n + 2):nth-of-type(even),
+.photo:nth-of-type(9n + 4):nth-of-type(even),
+.photo:nth-of-type(9n + 6):nth-of-type(even),
+.photo:nth-of-type(9n + 8):nth-of-type(even) {
+  	--vertical: 100%;
+  	--horizontal: -100%;
+}
+.photo:nth-of-type(9n + 2):nth-of-type(odd),
+.photo:nth-of-type(9n + 4):nth-of-type(odd),
+.photo:nth-of-type(9n + 6):nth-of-type(odd),
+.photo:nth-of-type(9n + 8):nth-of-type(odd) {
+  	--vertical: 100%;
+  	--horizontal: 100%;
+}
+.photo {
+  	animation-name: travel;
+  	animation-fill-mode: both;
+  	animation-timing-function: linear;
+  	animation-timeline: --collage;
+  	animation-range: entry 100% exit 0%;
+}
+.scroller {
+  	height: 33vh;
+  	view-timeline: --scroller;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	z-index: -10;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
+}
 .header {
 	width: 100%;
 	max-width: 100%;
