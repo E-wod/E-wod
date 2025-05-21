@@ -188,7 +188,7 @@ i {
   	animation-timeline: --collage;
   	animation-range: entry 100% exit 0%;
 }
-.splash{
+.splash {
 	position: fixed;
 	background: #000000;
 	top: 0;
@@ -197,7 +197,18 @@ i {
 	height: 100vh;
 	z-index: 200;
 }
-.splash-fade{
+.splash.display-none {
+	opacity: 0;
+	position: fixed;
+	background: #000000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: -20;
+	transition: all .5s;
+}
+.splash-fade {
 	opacity: 0;
 	animation: splashFade 2s ease-in forwards;
 }
