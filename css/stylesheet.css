@@ -698,7 +698,7 @@ h3{
 }
 .btnBox {
 	z-index: 15;
-	position: fixed;
+	position: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
