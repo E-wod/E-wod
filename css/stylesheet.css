@@ -104,7 +104,7 @@ i {
 }
 .photo-block {
   	position: sticky;
-/*   	top: calc(50% - 30vh); */
+  	top: calc(50% - 30vh);
 	top: 0;
   	height: 60vh;
 	width: 100%;
