@@ -104,7 +104,7 @@ i {
   	left: 50%;
   	transform: translate(-50%, -50%) rotate(38deg);
   	display: grid;
-	grid-template-columns: repeat(7, 1fr);
+	grid-template-columns: repeat(9, 1fr);
 }
 .photo {
   	aspect-ratio: 3 / 4;
