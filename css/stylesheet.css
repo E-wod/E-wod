@@ -729,7 +729,7 @@ p{
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
-	display: flex;
+	display: block;
 }
 .btnBox a {
 	background: transparent;
@@ -803,7 +803,7 @@ p{
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
-	display: flex;
+	display: block;
 }
 .socLnk a {
 	width: 80px;
