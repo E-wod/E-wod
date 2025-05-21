@@ -83,112 +83,6 @@ i {
 	float: center;
 	display: flex;
 }
-.wallPaper {
-	position: fixed;
-	background-image: url("https://imagizer.imageshack.com/img924/3995/kPr8m0.jpg");
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-	width: 100%;
-	height: 100vh;
-	z-index: 0;
-	opacity: 0.6;
-	background-attachment: fixed;
-  	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-}
-.photo-block {
-  	position: sticky;
-  	top: calc(50% - 30vh);
-  	height: 60vh;
-	width: 100%;
-	display: grid;
-  	overflow: hidden;
-  	background: var(--gray-6);
-}
-.photo-grid {
-  	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%) rotate(38deg);
-  	display: grid;
-	grid-template-columns: repeat(9, 1fr);
-}
-.photo {
-  	aspect-ratio: 3 / 4;
-  	width: 13vmax;
-}
-.collage {
-  	height: 225vh;
-  	view-timeline: --collage;
-}
-.photo img {
-  	width: 100%;
-  	height: 100%;
-  	object-fit: cover;
-}
-.photo:nth-of-type(9n + 1):nth-of-type(even),
-.photo:nth-of-type(9n + 3):nth-of-type(even),
-.photo:nth-of-type(9n + 5):nth-of-type(even),
-.photo:nth-of-type(9n + 7):nth-of-type(even),
-.photo:nth-of-type(9n + 9):nth-of-type(even) {
-  	--vertical: -100%;
-  	--horizontal: 100%;
-}
-.photo:nth-of-type(9n + 1):nth-of-type(odd),
-.photo:nth-of-type(9n + 3):nth-of-type(odd),
-.photo:nth-of-type(9n + 5):nth-of-type(odd),
-.photo:nth-of-type(9n + 7):nth-of-type(odd),
-.photo:nth-of-type(9n + 9):nth-of-type(odd) {
-  	--vertical: -100%;
-  	--horizontal: -100%;
-}
-.photo:nth-of-type(9n + 2):nth-of-type(even),
-.photo:nth-of-type(9n + 4):nth-of-type(even),
-.photo:nth-of-type(9n + 6):nth-of-type(even),
-.photo:nth-of-type(9n + 8):nth-of-type(even) {
-  	--vertical: 100%;
-  	--horizontal: -100%;
-}
-.photo:nth-of-type(9n + 2):nth-of-type(odd),
-.photo:nth-of-type(9n + 4):nth-of-type(odd),
-.photo:nth-of-type(9n + 6):nth-of-type(odd),
-.photo:nth-of-type(9n + 8):nth-of-type(odd) {
-  	--vertical: 100%;
-  	--horizontal: 100%;
-}
-.photo {
-  	animation-name: travel;
-  	animation-fill-mode: both;
-  	animation-timing-function: linear;
-  	animation-timeline: --collage;
-  	animation-range: entry 100% exit 0%;
-}
-.scroller {
-  	height: 33vh;
-  	view-timeline: --scroller;
-	color: #AAAAAA;
-	font-size: 2.75vw;
-	text-decoration: none;
-	font-family: open sans;
-	text-shadow: 1px 0px 1px #000000;
-	width: 100%;
-	height: auto;
-	justify-content: center;
-	display: flex;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	z-index: 1;
-	animation: pAnim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
-}
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
@@ -375,6 +269,107 @@ i {
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
 @media (min-width: 993px) {
+.wallPaper {
+	position: fixed;
+	background-image: url("https://imagizer.imageshack.com/img924/3995/kPr8m0.jpg");
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100vh;
+	z-index: 0;
+	opacity: 0.7;
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+.photo-block {
+  	position: sticky;
+  	top: calc(50% - 30vh);
+  	height: 60vh;
+	width: 100%;
+	display: grid;
+  	overflow: hidden;
+  	background: var(--gray-6);
+}
+.photo-grid {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%) rotate(38deg);
+  	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+}
+.photo {
+  	aspect-ratio: 3 / 4;
+  	width: 13vmax;
+}
+.collage {
+  	height: 225vh;
+  	view-timeline: --collage;
+}
+.photo img {
+  	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+}
+.photo:nth-of-type(9n + 1):nth-of-type(even),
+.photo:nth-of-type(9n + 3):nth-of-type(even),
+.photo:nth-of-type(9n + 5):nth-of-type(even),
+.photo:nth-of-type(9n + 7):nth-of-type(even),
+.photo:nth-of-type(9n + 9):nth-of-type(even) {
+  	--vertical: -100%;
+  	--horizontal: 100%;
+}
+.photo:nth-of-type(9n + 1):nth-of-type(odd),
+.photo:nth-of-type(9n + 3):nth-of-type(odd),
+.photo:nth-of-type(9n + 5):nth-of-type(odd),
+.photo:nth-of-type(9n + 7):nth-of-type(odd),
+.photo:nth-of-type(9n + 9):nth-of-type(odd) {
+  	--vertical: -100%;
+  	--horizontal: -100%;
+}
+.photo:nth-of-type(9n + 2):nth-of-type(even),
+.photo:nth-of-type(9n + 4):nth-of-type(even),
+.photo:nth-of-type(9n + 6):nth-of-type(even),
+.photo:nth-of-type(9n + 8):nth-of-type(even) {
+  	--vertical: 100%;
+  	--horizontal: -100%;
+}
+.photo:nth-of-type(9n + 2):nth-of-type(odd),
+.photo:nth-of-type(9n + 4):nth-of-type(odd),
+.photo:nth-of-type(9n + 6):nth-of-type(odd),
+.photo:nth-of-type(9n + 8):nth-of-type(odd) {
+  	--vertical: 100%;
+  	--horizontal: 100%;
+}
+.photo {
+  	animation-name: travel;
+  	animation-fill-mode: both;
+  	animation-timing-function: linear;
+  	animation-timeline: --collage;
+  	animation-range: entry 100% exit 0%;
+}
+.scroller {
+  	height: 33vh;
+  	view-timeline: --scroller;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	z-index: -10;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
+}
 .header {
 	width: 100%;
 	max-width: 100%;
@@ -615,7 +610,7 @@ h1{
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
-	width: auto;
+	width: 100%;
 	height: auto;
 	position: inherit;
 	justify-content: center;
@@ -639,7 +634,7 @@ h2{
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
-	width: auto;
+	width: 100%;
 	height: auto;
 	position: inherit;
 	justify-content: center;
@@ -663,7 +658,7 @@ h3{
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
-	width: auto;
+	width: 100%;
 	height: auto;
 	position: inherit;
 	justify-content: center;
@@ -681,12 +676,12 @@ h3{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 p{
-	color: #AAAAAA;
+	color: #FFFFFF;
 	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
-	background: rgba(181, 181, 181, 0.1);
+	background-color: rgba(181, 181, 181, 0.1);
 	width: 100%;
 	height: auto;
 	position: inherit;
@@ -888,7 +883,7 @@ p{
 }
 .beePic {
  	background: transparent; 
-	opacity: 1;
+	opacity: 1.0;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -903,7 +898,7 @@ p{
 	display: flex;
 	position: relative;
 	align-items: center;
-	z-index: -19;
+	z-index: 19;
 	overflow: hidden;
 	animation: pAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
@@ -1282,7 +1277,7 @@ h1{
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
-	width: auto;
+	width: 100%;
 	height: auto;
 	position: inherit;
 	justify-content: center;
@@ -1306,7 +1301,7 @@ h2{
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
-	width: auto;
+	width: 100%;
 	height: auto;
 	position: inherit;
 	justify-content: center;
@@ -1330,7 +1325,31 @@ h3{
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
-	width: auto;
+	width: 100%;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	z-index: 1;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
+}
+p{
+	color: #FFFFFF;
+	font-size: 1.25vw;
+	text-decoration: none;
+	font-family: open sans;
+	text-shadow: 1px 0px 1px #000000;
+	background-color: rgba(181, 181, 181, 0.1);
+	width: 100%;
 	height: auto;
 	position: inherit;
 	justify-content: center;
@@ -1348,23 +1367,23 @@ h3{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .cntr {
-	z-index: 1000;
+	z-index: 100;
 	background: transparent;
-	justify-items: center;
+	align-items: center;
 	display: flex;
-	position: fixed;
+	flex-direction: column;
+	position: relative;
 	justify-content: space-between;
 	width: 100%;
-	height: 15%;
-	max-width: 100%;
+	height: auto;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 .btnBox {
 	z-index: 15;
@@ -1380,11 +1399,11 @@ h3{
 	border-radius: 12px;
 	background: transparent;
 	width: 100%;
-	height: 100%;
-	display: flex;
+	height: auto;
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
+	display: flex;
 }
 .btnBox a {
 	background: transparent;
@@ -1454,7 +1473,7 @@ h3{
 	border-radius: 50%;
 	background: transparent;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
@@ -1531,7 +1550,7 @@ h3{
 }
 .beePic {
  	background: transparent; 
-	opacity: 1;
+	opacity: 1.0;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1546,7 +1565,7 @@ h3{
 	display: flex;
 	position: relative;
 	align-items: center;
-	z-index: -19;
+	z-index: 19;
 	overflow: hidden;
 	animation: pAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
@@ -1919,12 +1938,12 @@ li {
 }
 h1{
 	color: #03999e;
-	font-size: 3.75vw;
+	font-size: 3.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
-	width: auto;
+	width: 100%;
 	height: auto;
 	position: inherit;
 	justify-content: center;
@@ -1948,7 +1967,7 @@ h2{
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
-	width: auto;
+	width: 100%;
 	height: auto;
 	position: inherit;
 	justify-content: center;
@@ -1972,7 +1991,31 @@ h3{
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
-	width: auto;
+	width: 100%;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	z-index: 1;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
+}
+p{
+	color: #FFFFFF;
+	font-size: 2.125vw;
+	text-decoration: none;
+	font-family: open sans;
+	text-shadow: 1px 0px 1px #000000;
+	background-color: rgba(181, 181, 181, 0.1);
+	width: 100%;
 	height: auto;
 	position: inherit;
 	justify-content: center;
@@ -1990,23 +2033,23 @@ h3{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .cntr {
-	z-index: 1000;
+	z-index: 100;
 	background: transparent;
-	justify-items: center;
+	align-items: center;
 	display: flex;
-	position: fixed;
+	flex-direction: column;
+	position: relative;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
-	max-width: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 .btnBox {
 	z-index: 15;
@@ -2022,11 +2065,11 @@ h3{
 	border-radius: 12px;
 	background: transparent;
 	width: 100%;
-	height: 100%;
-	display: flex;
+	height: auto;
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
+	display: flex;
 }
 .btnBox a {
 	background: transparent;
