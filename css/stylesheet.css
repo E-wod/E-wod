@@ -673,7 +673,7 @@ p{
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
-	background-color: opaque;
+	background-color: #AAAAAA, .5;
 	width: 100%;
 	height: auto;
 	position: inherit;
