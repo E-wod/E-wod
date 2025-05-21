@@ -714,11 +714,11 @@ h3{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .cntr {
-	z-index: 1000;
+	z-index: 100;
 	background: transparent;
 	justify-items: center;
-	display: block;
-	position: absolute;
+	display: table;
+	position: relative;
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
@@ -746,7 +746,7 @@ h3{
 	background: transparent;
 	width: 100%;
 	height: 100%;
-	display: column;
+	display: flex;
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
@@ -823,7 +823,7 @@ h3{
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
-	display: column;
+	display: flex;
 }
 .socLnk a {
 	width: 80px;
