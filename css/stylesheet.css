@@ -41,7 +41,7 @@ html {
  	background-repeat: repeat;
 	text-decoration: none;
 	overflow: inherit;
-	background-image: url("https://imageshack.com/i/pnwkWOS8j");
+	background-image: url("https://imageshack.com/i/pnwkWOS8j", opacity: "0.3");
 	background-attachment: fixed;
   	background-position: center;
   	background-repeat: no-repeat;
@@ -677,7 +677,7 @@ p{
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
-	background-color: #AAAAAA, .5;
+	background: rgba(181, 181, 181, 0.1);
 	width: 100%;
 	height: auto;
 	position: inherit;
