@@ -188,9 +188,27 @@ i {
   	animation-timeline: --collage;
   	animation-range: entry 100% exit 0%;
 }
+.splash{
+	position: fixed;
+	background: #000000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 200;
+}
+.splash-fade{
+	opacity: 0;
+	animation: splashFade 2s ease-in forwards;
+}
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
+@keyframes splashFade {
+	to{
+		opacity: 1;
+	}
+}
 @keyframes travel {
 	animation-range: normal;
  	0% {
@@ -712,7 +730,7 @@ h3{
 	background: transparent;
 	width: 100%;
 	height: 100%;
-	display: column;
+	display: flex;
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
@@ -789,7 +807,7 @@ h3{
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
-	display: column;
+	display: flex;
 }
 .socLnk a {
 	width: 80px;
