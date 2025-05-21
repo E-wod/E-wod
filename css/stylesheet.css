@@ -108,7 +108,7 @@ i {
 }
 .photo {
   	aspect-ratio: 3 / 4;
-  	width: 15vmax;
+  	width: 13vmax;
 }
 .collage {
   	height: 225vh;
@@ -643,6 +643,30 @@ h3{
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
+p{
+	color: #AAAAAA;
+	font-size: 1.0vw;
+	text-decoration: none;
+	font-family: open sans;
+	text-shadow: 1px 0px 1px #000000;
+	background-color: transparent;
+	width: auto;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	z-index: 1;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
+}
 .cntr {
 	z-index: 100;
 	background: transparent;
@@ -674,8 +698,8 @@ h3{
 	padding-bottom: 5px;
 	border-radius: 12px;
 	background: transparent;
-	width: auto;
-	height: auto;
+	width: 100%;
+	height: 100%;
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
@@ -748,8 +772,8 @@ h3{
 	padding-bottom: 5px;
 	border-radius: 50%;
 	background: transparent;
-	width: auto;
-	height: auto;
+	width: 100%;
+	height: 100%;
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
