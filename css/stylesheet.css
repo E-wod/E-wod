@@ -155,6 +155,27 @@ i {
 .scroller {
   	height: 33vh;
   	view-timeline: --scroller;
+	color: #AAAAAA;
+	font-size: 1.75vw;
+	text-decoration: none;
+	font-family: open sans;
+	text-shadow: 1px 0px 1px #000000;
+	background-color: transparent;
+	width: auto;
+	height: auto;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	z-index: 1;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
 }
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
