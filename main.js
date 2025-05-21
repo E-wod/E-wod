@@ -1,4 +1,4 @@
-preload_image("https://imageshack.com/i/pnwkWOS8j"); 
+preload_image("https://imagizer.imageshack.com/img924/3995/kPr8m0.jpg"); 
 function preload_image(im_url) {
   let img = new Image();
   img.src = im_url;
