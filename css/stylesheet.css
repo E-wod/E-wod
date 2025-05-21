@@ -36,12 +36,11 @@ html {
 	width: 100%;
 	height: 100%;
 	display: flex;
- 	background: #000000; 
+ 	background: #AAAAAA; 
         position: absolute;  
  	background-repeat: repeat;
 	text-decoration: none;
 	overflow: inherit;
-	background-image: url("https://imageshack.com/i/pnwkWOS8j", opacity: "0.3");
 	background-attachment: fixed;
   	background-position: center;
   	background-repeat: no-repeat;
@@ -88,6 +87,16 @@ i {
 	position: inherit;
 	float: center;
 	display: flex;
+}
+.wallPaper {
+	position: fixed;
+	background-image: url("https://imageshack.com/i/pnwkWOS8j", 0.3);
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100vh;
+	z-index: -2000;
 }
 .photo-block {
   	position: sticky;
