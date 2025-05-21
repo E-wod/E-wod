@@ -36,7 +36,7 @@ html {
 	width: 100%;
 	height: 100%;
 	display: flex;
- 	background: #AAAAAA; 
+ 	background: #FFFFFF; 
         position: absolute;  
 	text-decoration: none;
 	overflow: inherit;
@@ -85,14 +85,14 @@ i {
 }
 .wallPaper {
 	position: fixed;
-	background-image: url("https://imageshack.com/i/pnwkWOS8j");
+	background-image: url("https://imagizer.imageshack.com/img924/3995/kPr8m0.jpg");
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
 	width: 100%;
 	height: 100vh;
 	z-index: 0;
-	opacity: 0.2;
+	opacity: 0.6;
 	background-attachment: fixed;
   	background-position: center;
   	background-repeat: no-repeat;
