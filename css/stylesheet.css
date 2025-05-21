@@ -105,8 +105,7 @@ i {
 .photo-block {
   	position: sticky;
   	top: calc(50% - 30vh);
-	top: 0;
-  	height: 60vh;
+  	height: 100vh;
 	width: 100%;
 	display: grid;
 	margin-left: 0px;
@@ -206,7 +205,8 @@ i {
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	z-index: 200;
+	opacity: 0;
+	z-index: -10;
 	text-align: center;
 	line-height: 90vh;
 }
@@ -714,7 +714,7 @@ h3{
 	z-index: 1000;
 	background: transparent;
 	justify-items: center;
-	display: column;
+	display: block;
 	position: absolute;
 	justify-content: space-between;
 	width: 100%;
@@ -730,7 +730,7 @@ h3{
 }
 .btnBox {
 	z-index: 15;
-	position: inherit;
+	position: fixed;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -743,7 +743,7 @@ h3{
 	background: transparent;
 	width: 100%;
 	height: 100%;
-	display: flex;
+	display: column;
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
@@ -820,7 +820,7 @@ h3{
 	justify-content: center;
 	color: #03999e;
 	text-decoration: none;
-	display: flex;
+	display: column;
 }
 .socLnk a {
 	width: 80px;
