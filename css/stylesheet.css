@@ -287,11 +287,10 @@ i {
 .photo-block {
   	position: sticky;
   	top: 0;
-  	height: 80vh;
+  	height: 90vh;
 	width: 100%;
 	display: grid;
   	overflow: hidden;
-  	background: var(--gray-6);
 }
 .photo-grid {
   	position: absolute;
@@ -1056,11 +1055,10 @@ p{
 .photo-block {
   	position: sticky;
   	top: 0;
-  	height: 80vh;
+  	height: 90vh;
 	width: 100%;
 	display: grid;
   	overflow: hidden;
-  	background: var(--gray-6);
 }
 .photo-grid {
   	position: absolute;
@@ -1824,11 +1822,10 @@ p{
 .photo-block {
   	position: sticky;
   	top: 0;
-  	height: 80vh;
+  	height: 90vh;
 	width: 100%;
 	display: grid;
   	overflow: hidden;
-  	background: var(--gray-6);
 }
 .photo-grid {
   	position: absolute;
@@ -2418,7 +2415,7 @@ p{
 }
 .beePic {
  	background: transparent; 
-	opacity: 1;
+	opacity: 1.0;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -2433,7 +2430,7 @@ p{
 	display: flex;
 	position: relative;
 	align-items: center;
-	z-index: -19;
+	z-index: 19;
 	overflow: hidden;
 	animation: pAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
