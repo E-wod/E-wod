@@ -396,7 +396,7 @@ i {
 .nav-logo {
 	width: 14%;
 	height: 14%;
-	display: none;
+	display: flex;
 	text-decoration: none;
  	position: inherit;
 	align-self: center;
@@ -1927,12 +1927,11 @@ p{
 .nav-logo {
 	width: 75px;
 	height: 75px;
+	display: flex;
 	text-decoration: none;
  	position: inherit;
 	align-self: center;
-	justify-content: space-between;
-	opacity: 1;
-	scale: 1;
+	justify-content: space-around;
 	margin-left: 1px;
 	margin-right: 1px;
 	margin-top: 1px;
