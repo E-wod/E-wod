@@ -83,31 +83,6 @@ i {
 	float: center;
 	display: flex;
 }
-.splash {
-	opacity: 1.0;
-	position: fixed;
-	background: #000000;
-  	top: 0;
-  	left: 0;
-	width: 100%;
-	height: 100%;
-	transition: all .5s;
-}
-.splash.display-none {
-	opacity: 0.0;
-	position: fixed;
-	background: #000000;
-  	top: 0;
-  	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -200;
-	transition: all .5s;
-}
-.splash-fade {
-	opacity: 0.0;
-	animation: splashFade 4.25s ease-in forwards;
-}
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
@@ -303,6 +278,31 @@ i {
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
 @media (min-width: 993px) {
+.splash {
+	opacity: 1.0;
+	position: fixed;
+	background: #000000;
+  	top: 0;
+  	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all .5s;
+}
+.splash.display-none {
+	opacity: 0.0;
+	position: fixed;
+	background: #000000;
+  	top: 0;
+  	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -200;
+	transition: all .5s;
+}
+.splash-fade {
+	animation: splashFade 4.25s ease-in forwards;
+}
+				
 .wallPaper {
 	position: fixed;
 	background-image: url("https://imagizer.imageshack.com/img924/3995/kPr8m0.jpg");
