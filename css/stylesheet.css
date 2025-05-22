@@ -90,10 +90,10 @@ i {
 	0%{
 		opacity: 0.0;
 	}
-	5%{
+	2%{
 		opacity: 1.0;
 	}
-	95%{
+	98%{
 		opacity: 1.0;
 	}
 	100%{
@@ -285,14 +285,15 @@ i {
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
 @media (min-width: 993px) {
 .splash {
-	opacity: 0.0;
+	z-index: 2000;
 	position: fixed;
 	background: transparent;
 	object-fit: cover;
-  	top: 0;
-  	left: 0;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	transition: all .5s;
 	animation: splashFade 4.25s ease-in forwards;
 }			
