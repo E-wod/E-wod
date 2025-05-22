@@ -106,44 +106,41 @@ i {
 	animation-range: normal;
 		0% {
 			opacity: 0;
-			scale: .55;
-			transform: rotate(0deg);
+			scale: 0.25;
         	}
 		45% {
-			transform: rotate(0deg);
+			scale: 0.25;
 		}
 		50% {
-			transform: rotate(-25deg);
+			scale: 0.45;
 		}
 		55% {
-			transform: rotate(25deg);
+			scale: 0.35;
 		}
 		60% {
-			transform: rotate(-25deg);
+			scale: 0.655;
 		}
 		65% {
-			transform: rotate(25deg);
+			scale: 0.55;
 		}
 		70% {
-			transform: rotate(-25deg);
+			scale: 0.75;
 		}
 		75% {
-			transform: rotate(25deg);
+			scale: 0.65;
 		}
 		80% {
-			transform: rotate(-25deg);
+			scale: 0.95;
 		}
 		85% {
-			transform: rotate(25deg);
+			scale: 0.85;
 		}
 		90% {
 			scale: 1.0175;
-			transform: rotate(-35deg);
 		}
 		100% {
 			opacity: 1;
 			scale: 1;
-			transform: rotate(0deg);
 		}
 }
 @keyframes menuAnim {
@@ -706,7 +703,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: fixed;
+	position: relative;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -1473,7 +1470,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: fixed;
+	position: relative;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -2239,7 +2236,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: fixed;
+	position: relative;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
