@@ -90,10 +90,10 @@ i {
 	0%{
 		opacity: 0.0;
 	}
-	20%{
+	5%{
 		opacity: 1.0;
 	}
-	80%{
+	95%{
 		opacity: 1.0;
 	}
 	100%{
@@ -285,7 +285,7 @@ i {
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
 @media (min-width: 993px) {
 .splash {
-	opacity: 1.0;
+	opacity: 0.0;
 	position: fixed;
 	background: transparent;
 	object-fit: cover;
