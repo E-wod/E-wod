@@ -1,11 +1,3 @@
-const splash = document.querySelector('.splash');
-document.addEventListener('DOMContentLoaded', (e)=>){
-    setTimeout(()=>{
-      splash.classList.add('display-none');
-    }, 2000);
-})
-
-
 const image = document.getElementById('img/ESDLogo.png');
     image.addEventListener('load', () => {
       image.style.display = 'block';
