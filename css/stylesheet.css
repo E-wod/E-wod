@@ -103,13 +103,12 @@ i {
 			scale: .1; opacity: .1 };
 }
 @keyframes logoAnim {
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
 	animation-range: normal;
 		0% {
 			opacity: 0.0;
 			scale: 0.0;
-        	}
-		25% {
-			scale: 0.125;
         	}
 		45% {
 			scale: 0.25;
@@ -397,26 +396,6 @@ i {
 .nav-logo {
 	width: 14%;
 	height: 14%;
-	display: flex;
-	text-decoration: none;
- 	position: inherit;
-	align-self: center;
-	justify-content: space-around;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	background-color: transparent; 
-	animation: logoAnim 2.5s ease forwards; 
-	animation-timing-function: ease-in-out;
-}
-.nav-logo a {
-	width: 13%;
-	height: 13%;
 	display: none;
 	text-decoration: none;
  	position: inherit;
@@ -430,8 +409,27 @@ i {
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	background-color: transparent; 
+	animation: logoAnim 2.5s; 
+}
+.nav-logo a {
+	width: 13%;
+	height: 13%;
+	display: flex;
+	text-decoration: none;
+ 	position: inherit;
+	align-self: center;
+	justify-content: space-around;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	background-color: transparent;
-	animation: logoAnim 2.5s ease-in forwards; 
+	animation: logoAnim 2.5s; 
 }
 .nav-logo :hover,
 .nav-logo .active {
@@ -1178,8 +1176,7 @@ p{
 	padding-top: 5px;
 	padding-bottom: 5px;
 	background-color: transparent; 
-	animation: logoAnim 2.5s ease forwards; 
-	animation-timing-function: ease-in-out;
+	animation: logoAnim 2.5s; 
 }
 .nav-logo a {
 	width: 11%;
@@ -1198,7 +1195,7 @@ p{
 	padding-top: 5px;
 	padding-bottom: 5px;
 	background-color: transparent;
-	animation: logoAnim 2.5s ease-in forwards; 
+	animation: logoAnim 2.5s; 
 }
 .nav-logo :hover,
 .nav-logo .active {
@@ -1945,8 +1942,7 @@ p{
 	padding-top: 5px;
 	padding-bottom: 5px;
 	background-color: transparent; 
-	animation: logoAnim 2.5s ease forwards; 
-	animation-timing-function: ease-in-out;
+	animation: logoAnim 2.5s; 
 }
 .nav-logo a {
 	width: 100%;
@@ -1967,7 +1963,7 @@ p{
 	padding-top: 2px;
 	padding-bottom: 2px;
 	background-color: transparent; 
-	animation: logoAnim 2.5s ease-in forwards; 
+	animation: logoAnim 2.5s; 
 }
 .nav-logo :hover,
 .nav-logo .active {
