@@ -2,7 +2,7 @@ const image = document.getElementById('img/ESDLogo.png');
     image.addEventListener('load', () => {
       image.style.display = 'block';
       
-preload_image("https://imagizer.imageshack.com/img924/3995/kPr8m0.jpg"); 
+preload_image("https://imageshack.com/i/pnwkWOS8j"); 
 function preload_image(im_url) {
   let img = new Image();
   img.src = im_url;
