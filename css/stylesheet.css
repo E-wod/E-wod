@@ -285,7 +285,7 @@ i {
 	font-size: 3.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	text-shadow: 1px 0px 1px #000000;
+/* 	text-shadow: 1px 0px 1px #000000; */
   	background-clip: text;
 	z-index: 200;
   	text-fill-color: transparent;
