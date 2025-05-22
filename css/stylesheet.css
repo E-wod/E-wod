@@ -106,7 +106,7 @@ i {
 	animation-range: normal;
 		0% {
 			opacity: 0;
-			scale: 0.25;
+			scale: 0.125;
         	}
 		45% {
 			scale: 0.25;
@@ -703,7 +703,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: relative;
+	position: absolute;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -1470,7 +1470,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: relative;
+	position: absolute;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -2236,7 +2236,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: relative;
+	position: absolute;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
