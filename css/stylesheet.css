@@ -297,7 +297,22 @@ i {
 	height: 100vh;
 	transition: all .5s;
 	animation: splashFade ease-in-out forwards;
-}			
+}
+.responsive-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+      height: 0;
+      overflow: hidden;
+}
+.responsive-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+}
 .wallPaper {
 	position: fixed;
 	background-image: url("https://imagizer.imageshack.com/img924/3995/kPr8m0.jpg");
