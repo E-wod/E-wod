@@ -281,7 +281,11 @@ i {
   	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 200% auto;
-  	color: #FFFFFF;
+	color: #03999e;
+	font-size: 3.50vw;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	text-shadow: 1px 0px 1px #000000;
   	background-clip: text;
 	z-index: 200;
   	text-fill-color: transparent;
@@ -387,6 +391,11 @@ i {
 	padding-bottom: 2px;
 	z-index: 200;
 	text-align: center;
+	color: #03999e;
+	font-size: 3.50vw;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	text-shadow: 1px 0px 1px #000000;
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
