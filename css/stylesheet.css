@@ -281,10 +281,6 @@ i {
   	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 200% auto;
-	color: #03999e;
-	font-size: 3.50vw;
-	text-decoration: none;
-	font-family: open sans;
   	background-clip: text;
 	z-index: 200;
   	text-fill-color: transparent;
@@ -628,7 +624,7 @@ h1{
 	color: #03999e;
 	font-size: 3.50vw;
 	text-decoration: none;
-	font-family: open sans;
+	font-family: Lobster, 'Kristen ITC', Script;
 	background-color: transparent;
 	width: 100%;
 	height: auto;
@@ -652,7 +648,6 @@ h2{
 	font-size: 2.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	text-shadow: 1px 0px 1px #000000;
 	background-color: transparent;
 	width: 100%;
 	height: auto;
@@ -1392,7 +1387,7 @@ h1{
 	color: #03999e;
 	font-size: 3.50vw;
 	text-decoration: none;
-	font-family: open sans;
+	font-family: Lobster, 'Kristen ITC', Script;
 	background-color: transparent;
 	width: 100%;
 	height: auto;
@@ -2154,7 +2149,6 @@ h1{
 	font-size: 3.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-/* 	text-shadow: 1px 0px 1px #000000; */
 	background-color: transparent;
 	width: 100%;
 	height: auto;
@@ -2178,7 +2172,6 @@ h2{
 	font-size: 2.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-/* 	text-shadow: 1px 0px 1px #000000; */
 	background-color: transparent;
 	width: 100%;
 	height: auto;
