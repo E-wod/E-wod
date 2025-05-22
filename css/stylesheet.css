@@ -281,8 +281,9 @@ i {
   	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 100% auto;
-  	color: #fff;
+  	color: #FFFFFF;
   	background-clip: text;
+	z-index: 100;
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
@@ -385,7 +386,8 @@ i {
 	padding-right: 2px;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	z-index: -10;
+	z-index: 100;
+	text-decoration: none;
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
