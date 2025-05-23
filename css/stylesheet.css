@@ -87,6 +87,7 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes fadeIn {
+	animation-duration: 1s;
 	from {opacity: 0; transform: scale(0.95);}
 	to {opacity: 1; transform: scale(1);}
 }
@@ -181,7 +182,7 @@ i {
 	justify-content: center;
 	z-index: 9000;
 	overflow: hidden;
-	animation-duration: 6s;
+	animation-duration: 10s;
         animation-iteration-count: 1;
 	animation-direction: normal;
 	animation-timing-function: linear;
@@ -192,16 +193,18 @@ i {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	z-index: 9500;
 }
 .logo-overlay {
 	position: relative;
-	z-index: 9999;
+	z-index: 9750;
 	text-align: center;
 }
 .logo-overlay img {
 	max-width: 300px;
 	width: 60%;
-	animation: fadeIn ease-out;
+	animation: fadeIn ease-in-out;
+	z-index: 9750;
 }				
 .animate-text {
 	text-transform: uppercase;
@@ -996,7 +999,7 @@ p{
 	justify-content: center;
 	z-index: 9000;
 	overflow: hidden;
-	animation-duration: 6s;
+	animation-duration: 10s;
         animation-iteration-count: 1;
 	animation-direction: normal;
 	animation-timing-function: linear;
@@ -1007,16 +1010,18 @@ p{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	z-index: 9500;
 }
 .logo-overlay {
 	position: relative;
-	z-index: 9999;
+	z-index: 9750;
 	text-align: center;
 }
 .logo-overlay img {
 	max-width: 300px;
 	width: 60%;
-	animation: fadeIn ease-out;
+	animation: fadeIn ease-in-out;
+	z-index: 9750;
 }				
 .animate-text {
 	text-transform: uppercase;
@@ -1810,7 +1815,7 @@ p{
 	justify-content: center;
 	z-index: 9000;
 	overflow: hidden;
-	animation-duration: 6s;
+	animation-duration: 10s;
         animation-iteration-count: 1;
 	animation-direction: normal;
 	animation-timing-function: linear;
@@ -1821,17 +1826,19 @@ p{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	z-index: 9500;
 }
 .logo-overlay {
 	position: relative;
-	z-index: 9999;
+	z-index: 9750;
 	text-align: center;
 }
 .logo-overlay img {
 	max-width: 300px;
 	width: 60%;
-	animation: fadeIn ease-out;
-}				
+	animation: fadeIn ease-in-out;
+	z-index: 9750;
+}			
 .animate-text {
 	text-transform: uppercase;
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
