@@ -224,7 +224,7 @@ i {
 	opacity: 0.9;
 	background-attachment: fixed;
   	background-position: center;
-  	background-repeat: no-repeat;
+  	background-repeat: repeat;
   	background-size: cover;
 }
 .photo-block {
@@ -1029,7 +1029,7 @@ p{
 	opacity: 0.9;
 	background-attachment: fixed;
   	background-position: center;
-  	background-repeat: no-repeat;
+  	background-repeat: repeat;
   	background-size: cover;
 }
 .photo-block {
@@ -1833,7 +1833,7 @@ p{
 	opacity: 0.9;
 	background-attachment: fixed;
   	background-position: center;
-  	background-repeat: no-repeat;
+  	background-repeat: repeat;
   	background-size: cover;
 }
 .photo-block {
