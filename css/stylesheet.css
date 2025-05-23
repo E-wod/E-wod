@@ -175,7 +175,7 @@ i {
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
   	background-size: auto auto;
   	background-clip: border-box;
-  	background-size: 200% auto;
+  	background-size: 100% auto;
   	background-clip: text;
 	z-index: 2000;
   	text-fill-color: transparent;
@@ -958,7 +958,7 @@ p{
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
   	background-size: auto auto;
   	background-clip: border-box;
-  	background-size: 200% auto;
+  	background-size: 100% auto;
   	background-clip: text;
 	z-index: 2000;
   	text-fill-color: transparent;
@@ -1740,7 +1740,7 @@ p{
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
   	background-size: auto auto;
   	background-clip: border-box;
-  	background-size: 200% auto;
+  	background-size: 100% auto;
   	background-clip: text;
 	z-index: 2000;
   	text-fill-color: transparent;
