@@ -169,43 +169,7 @@ i {
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
-@media (min-width: 993px) {
-#splash-screen {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background: black;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 9000;
-	overflow: hidden;
-	animation-duration: 10s;
-        animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-timing-function: linear;
-	animation-fill-mode: both;
-}
-#splash-screen video {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	z-index: 9500;
-}
-.logo-overlay {
-	position: relative;
-	z-index: 9750;
-	text-align: center;
-}
-.logo-overlay img {
-	max-width: 300px;
-	width: 60%;
-	animation: fadeIn ease-in-out;
-	z-index: 9750;
-}				
+@media (min-width: 993px) {			
 .animate-text {
 	text-transform: uppercase;
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
@@ -609,7 +573,7 @@ h3{
 	font-size: 2.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-width: 0.5px;
 	-webkit-text-stroke-color: #FFFFFF;
 	width: 100%;
 	height: auto;
@@ -988,43 +952,7 @@ p{
 /*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
-@media (min-width: 768px) and (max-width: 992px) {
-#splash-screen {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background: black;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 9000;
-	overflow: hidden;
-	animation-duration: 10s;
-        animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-timing-function: linear;
-	animation-fill-mode: both;
-}
-#splash-screen video {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	z-index: 9500;
-}
-.logo-overlay {
-	position: relative;
-	z-index: 9750;
-	text-align: center;
-}
-.logo-overlay img {
-	max-width: 300px;
-	width: 60%;
-	animation: fadeIn ease-in-out;
-	z-index: 9750;
-}				
+@media (min-width: 768px) and (max-width: 992px) {			
 .animate-text {
 	text-transform: uppercase;
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
@@ -1427,7 +1355,7 @@ h3{
 	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-width: 0.5px;
 	-webkit-text-stroke-color: #FFFFFF;
 	width: 100%;
 	height: auto;
@@ -1806,43 +1734,7 @@ p{
 /*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
-@media (max-width: 767px) {
-#splash-screen {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background: black;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 9000;
-	overflow: hidden;
-	animation-duration: 10s;
-        animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-timing-function: linear;
-	animation-fill-mode: both;
-}
-#splash-screen video {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	z-index: 9500;
-}
-.logo-overlay {
-	position: relative;
-	z-index: 9750;
-	text-align: center;
-}
-.logo-overlay img {
-	max-width: 300px;
-	width: 60%;
-	animation: fadeIn ease-in-out;
-	z-index: 9750;
-}			
+@media (max-width: 767px) {		
 .animate-text {
 	text-transform: uppercase;
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
@@ -2243,7 +2135,7 @@ h3{
 	font-size: 2.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-width: 0.5px;
 	-webkit-text-stroke-color: #FFFFFF;
 	width: 100%;
 	height: auto;
