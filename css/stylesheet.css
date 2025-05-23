@@ -181,6 +181,11 @@ i {
 	justify-content: center;
 	z-index: 9000;
 	overflow: hidden;
+	animation-duration: 6s;
+        animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-timing-function: linear;
+	animation-fill-mode: both;
 }
 #splash-screen video {
 	position: absolute;
@@ -200,7 +205,7 @@ i {
 }				
 .animate-text {
 	text-transform: uppercase;
-  	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 25%, #802A1F 50%, #FF9D00 75%, #1E85D4 100%);
+  	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
   	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 200% auto;
@@ -212,7 +217,7 @@ i {
   	animation: textclip;
 	animation-duration: 2s;
         animation-iteration-count: infinite;
-	animation-direction: alternate;
+	animation-direction: reverse;
 	animation-timing-function: linear;
 	animation-fill-mode: both;
   	display: inline-block;
@@ -225,7 +230,7 @@ i {
   	transform: translate(-50%, -50%);
 	width: 100%;
 	height: 100vh;
-	z-index: -10;
+	z-index: 0;
 	opacity: 0.9;
 	background-attachment: fixed;
   	background-position: center;
@@ -991,6 +996,11 @@ p{
 	justify-content: center;
 	z-index: 9000;
 	overflow: hidden;
+	animation-duration: 6s;
+        animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-timing-function: linear;
+	animation-fill-mode: both;
 }
 #splash-screen video {
 	position: absolute;
@@ -1010,7 +1020,7 @@ p{
 }				
 .animate-text {
 	text-transform: uppercase;
-  	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 25%, #802A1F 50%, #FF9D00 75%, #1E85D4 100%);
+  	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
   	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 200% auto;
@@ -1022,7 +1032,7 @@ p{
   	animation: textclip;
 	animation-duration: 2s;
         animation-iteration-count: infinite;
-	animation-direction: alternate;
+	animation-direction: reverse;
 	animation-timing-function: linear;
 	animation-fill-mode: both;
   	display: inline-block;
@@ -1800,6 +1810,11 @@ p{
 	justify-content: center;
 	z-index: 9000;
 	overflow: hidden;
+	animation-duration: 6s;
+        animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-timing-function: linear;
+	animation-fill-mode: both;
 }
 #splash-screen video {
 	position: absolute;
@@ -1819,7 +1834,7 @@ p{
 }				
 .animate-text {
 	text-transform: uppercase;
-  	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 25%, #802A1F 50%, #FF9D00 75%, #1E85D4 100%);
+  	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
   	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 200% auto;
@@ -1831,7 +1846,7 @@ p{
   	animation: textclip;
 	animation-duration: 2s;
         animation-iteration-count: infinite;
-	animation-direction: alternate;
+	animation-direction: reverse;
 	animation-timing-function: linear;
 	animation-fill-mode: both;
   	display: inline-block;
