@@ -5,12 +5,12 @@ function preload_image(im_url) {
 }
 function hideSplash() {
 const splash = document.getElementById('splash-screen');
-splash.style.transition = 'opacity 1s ease';
+splash.style.transition = 'opacity 2s ease';
 splash.style.opacity = '0';
 setTimeout(() => {
 splash.style.display = 'none';
 document.getElementById('main-content').style.display = 'block';
-}, 1000);
+}, 2000);
 }
 // NEXT________________________________________________
 document.addEventListener("DOMContentLoaded", function() {
