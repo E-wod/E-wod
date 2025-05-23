@@ -3,6 +3,15 @@ function preload_image(im_url) {
   let img = new Image();
   img.src = im_url;
 }
+function hideSplash() {
+const splash = document.getElementById('splash-screen');
+splash.style.transition = 'opacity 1s ease';
+splash.style.opacity = '0';
+setTimeout(() => {
+splash.style.display = 'none';
+document.getElementById('main-content').style.display = 'block';
+}, 1000);
+}
 // NEXT________________________________________________
 document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll('img[decoding="asynchronous"]');
@@ -12,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-</script>
 // NEXT________________________________________________
 let images = document.querySelectorAll("html");
 lazyload(images);
