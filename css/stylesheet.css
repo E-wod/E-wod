@@ -173,9 +173,7 @@ i {
 .animate-text {
 	text-transform: uppercase;
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
-  	background-size: auto auto;
-  	background-clip: border-box;
-  	background-size: 100% auto;
+	background-size: cover;
   	background-clip: text;
 	z-index: 2000;
   	text-fill-color: transparent;
@@ -573,7 +571,7 @@ h3{
 	font-size: 2.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-width: 0.25px;
 	-webkit-text-stroke-color: #FFFFFF;
 	width: 100%;
 	height: auto;
@@ -956,9 +954,7 @@ p{
 .animate-text {
 	text-transform: uppercase;
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
-  	background-size: auto auto;
-  	background-clip: border-box;
-  	background-size: 100% auto;
+	background-size: cover;
   	background-clip: text;
 	z-index: 2000;
   	text-fill-color: transparent;
@@ -1355,7 +1351,7 @@ h3{
 	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-width: 0.25px;
 	-webkit-text-stroke-color: #FFFFFF;
 	width: 100%;
 	height: auto;
@@ -1738,9 +1734,7 @@ p{
 .animate-text {
 	text-transform: uppercase;
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
-  	background-size: auto auto;
-  	background-clip: border-box;
-  	background-size: 100% auto;
+	background-size: cover;
   	background-clip: text;
 	z-index: 2000;
   	text-fill-color: transparent;
@@ -2135,7 +2129,7 @@ h3{
 	font-size: 2.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-width: 0.25px;
 	-webkit-text-stroke-color: #FFFFFF;
 	width: 100%;
 	height: auto;
