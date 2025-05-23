@@ -200,7 +200,7 @@ i {
 }				
 .animate-text {
 	text-transform: uppercase;
-  	background-image: linear-gradient(-225deg, #1E85D4 0%, #1C8094 29%, #802A1F 67%, #FF9D00 100%);
+  	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 25%, #802A1F 50%, #FF9D00 75%, #1E85D4 100%);
   	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 200% auto;
@@ -210,7 +210,7 @@ i {
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
   	animation: textclip;
-	animation-duration: 6s;
+	animation-duration: 3s;
         animation-iteration-count: infinite;
 	animation-direction: alternate;
 	animation-timing-function: linear;
@@ -1010,7 +1010,7 @@ p{
 }				
 .animate-text {
 	text-transform: uppercase;
-  	background-image: linear-gradient(-225deg, #1E85D4 0%, #1C8094 29%, #802A1F 67%, #FF9D00 100%);
+  	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 25%, #802A1F 50%, #FF9D00 75%, #1E85D4 100%);
   	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 200% auto;
@@ -1019,7 +1019,12 @@ p{
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	animation: textclip linear infinite alternate slide-in;
+  	animation: textclip;
+	animation-duration: 3s;
+        animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+	animation-fill-mode: both;
   	display: inline-block;
 }
 .wallPaper {
@@ -1814,7 +1819,7 @@ p{
 }				
 .animate-text {
 	text-transform: uppercase;
-  	background-image: linear-gradient(-225deg, #1E85D4 0%, #1C8094 29%, #802A1F 67%, #FF9D00 100%);
+  	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 25%, #802A1F 50%, #FF9D00 75%, #1E85D4 100%);
   	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 200% auto;
@@ -1823,7 +1828,12 @@ p{
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	animation: textclip linear infinite alternate slide-in;
+  	animation: textclip;
+	animation-duration: 3s;
+        animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+	animation-fill-mode: both;
   	display: inline-block;
 }
 .wallPaper {
