@@ -209,7 +209,7 @@ i {
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	animation: textclip 3s linear infinite alternate slide-in;
+  	animation: textclip linear infinite alternate slide-in;
   	display: inline-block;
 }
 .wallPaper {
@@ -974,6 +974,35 @@ p{
 /*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 992px) {
+#splash-screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999;
+	overflow: hidden;
+}
+#splash-screen video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.logo-overlay {
+	position: relative;
+	z-index: 2;
+	text-align: center;
+}
+.logo-overlay img {
+	max-width: 300px;
+	width: 60%;
+	animation: fadeIn 2s ease-out;
+}				
 .animate-text {
 	text-transform: uppercase;
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #1C8094 29%, #802A1F 67%, #FF9D00 100%);
@@ -985,7 +1014,7 @@ p{
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	animation: textclip 3s linear infinite alternate slide-in;
+  	animation: textclip linear infinite alternate slide-in;
   	display: inline-block;
 }
 .wallPaper {
@@ -1749,6 +1778,35 @@ p{
 /*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
 @media (max-width: 767px) {
+#splash-screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999;
+	overflow: hidden;
+}
+#splash-screen video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.logo-overlay {
+	position: relative;
+	z-index: 2;
+	text-align: center;
+}
+.logo-overlay img {
+	max-width: 300px;
+	width: 60%;
+	animation: fadeIn 2s ease-out;
+}				
 .animate-text {
 	text-transform: uppercase;
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #1C8094 29%, #802A1F 67%, #FF9D00 100%);
@@ -1760,7 +1818,7 @@ p{
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	animation: textclip 3s linear infinite alternate slide-in;
+  	animation: textclip linear infinite alternate slide-in;
   	display: inline-block;
 }
 .wallPaper {
