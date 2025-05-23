@@ -1,7 +1,15 @@
-preload_image("https://imagizer.imageshack.com/img924/3995/kPr8m0.jpg"); 
-function preload_image(im_url) {
-  let img = new Image();
-  img.src = im_url;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+import javax.servlet.http.HttpServletResponse;
+@RestController
+public class HomeController {
+    @GetMapping("/")
+    public String home(HttpServletResponse response) {
+        // ✅ Replace the filename and path here
+        response.addHeader("Link", "<https://imagizer.imageshack.com/img924/4341/x1PpNV.jpg>; rel=preload; as=image");
+        // Return a template name (like home.html) or raw HTML
+        return "home"; // home.html or home.jsp handles background
+    }
 }
 // NEXT________________________________________________
 document.addEventListener("DOMContentLoaded", function() {
