@@ -86,190 +86,84 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
+@keyframes fadeIn {
+	from {opacity: 0; transform: scale(0.95);}
+	to {opacity: 1; transform: scale(1);}
+}
 @keyframes textclip {
-  	to {
-    		background-position: 200% center;
-  	}
+  	to {background-position: 200% center;}
 }
 @keyframes travel {
 	animation-range: normal;
- 		0% {
-    			translate: 0 0;
-  		}
-        	100% {
-    			translate: var(--horizontal) var(--vertical);
- 		}
+ 	0% {translate: 0 0;}
+        100% {translate: var(--horizontal) var(--vertical);}
 }
 @keyframes bkGnd {
 	animation-range: normal;
-      		0%, 50%, 90% {
-			scale: .6; opacity: .5 };
-      		25%, 75%, 100% { 
-			scale: .1; opacity: .1 };
+      	0%, 50%, 90% {scale: .6; opacity: .5};
+        25%, 75%, 100% {scale: .1; opacity: .1};
 }
 @keyframes logoAnim {
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 	animation-range: normal;
-		0% {
-			opacity: 0.0;
-			scale: 0.0;
-        	}
-		45% {
-			scale: 0.25;
-		}
-		50% {
-			scale: 0.45;
-		}
-		55% {
-			scale: 0.35;
-		}
-		60% {
-			scale: 0.655;
-		}
-		65% {
-			scale: 0.55;
-		}
-		70% {
-			scale: 0.75;
-		}
-		75% {
-			scale: 0.65;
-		}
-		80% {
-			scale: 0.95;
-		}
-		85% {
-			scale: 0.85;
-		}
-		90% {
-			scale: 1.0175;
-		}
-		100% {
-			opacity: 1.0;
-			scale: 1.0;
-		}
+	0% {opacity: 0.0; scale: 0.0;}
+	45% {scale: 0.25;}
+	50% {scale: 0.45;}
+	55% {scale: 0.35;}
+	60% {scale: 0.655;}
+	65% {scale: 0.55;}
+	70% {scale: 0.75;}
+	75% {scale: 0.65;}
+	80% {scale: 0.95;}
+	85% {scale: 0.85;}
+	90% {scale: 1.0175;}
+	100% {opacity: 1.0; scale: 1.0;}
 }
 @keyframes menuAnim {
 	animation-range: normal;
-		0% {
-			transform: translateY(-200px);
-			opacity: 0;
-			scale: 1;
-    		}
-		90% {
-			transform: translateY(10px);
-			scale: 1;
-		}
-		91% {
-			transform: translateY(9px);
-		}
-		92% {
-			transform: translateY(8px);
-			scale: 1.175;
-		}
-		93% {
-			transform: translateY(7px);
-		}
-		94% {
-			transform: translateY(6px);
-		}
-		95% {
-			transform: translateY(5px);
-		}
-		96% {
-			transform: translateY(4px);
-		}
-		97% {
-			transform: translateY(3px);
-		}
-		98% {
-			transform: translateY(2px);
-		}
-		99% {
-			transform: translateY(1px);
-		}
-		100% {
-			transform: translateY(0);
-			opacity: 1;
-			scale: 1;
-		}
+	0% {transform: translateY(-200px); opacity: 0; scale: 1;}
+	90% {transform: translateY(10px); scale: 1;}
+	91% {transform: translateY(9px);}
+	92% {transform: translateY(8px); scale: 1.175;}
+	93% {transform: translateY(7px);}
+	94% {transform: translateY(6px);}
+	95% {transform: translateY(5px);}
+	96% {transform: translateY(4px);}
+	97% {transform: translateY(3px);}
+	98% {transform: translateY(2px);}
+	99% {transform: translateY(1px);}
+	100% {transform: translateY(0); opacity: 1; scale: 1;}
 }
 @keyframes h1Anim {
 	animation-range: normal;
-		0% {
-			transform: translateY(-200px);
-			opacity: 0;
-			scale: 1;
-    		}
-		90% {
-			transform: translateY(10px);
-			scale: 1;
-		}
-		91% {
-			transform: translateY(9px);
-		}
-		92% {
-			transform: translateY(8px);
-			scale: 1.175;
-		}
-		93% {
-			transform: translateY(7px);
-		}
-		94% {
-			transform: translateY(6px);
-		}
-		95% {
-			transform: translateY(5px);
-		}
-		96% {
-			transform: translateY(4px);
-		}
-		97% {
-			transform: translateY(3px);
-		}
-		98% {
-			transform: translateY(2px);
-		}
-		99% {
-			transform: translateY(1px);
-		}
-		100% {
-			transform: translateY(0);
-			opacity: 1;
-			scale: 1;
-		}
+	0% {transform: translateY(-200px); opacity: 0; scale: 1;}
+	90% {transform: translateY(10px); scale: 1;}
+	91% {transform: translateY(9px);}
+	92% {transform: translateY(8px); scale: 1.175;}
+	93% {transform: translateY(7px);}
+	94% {transform: translateY(6px);}
+	95% {transform: translateY(5px);}
+	96% {transform: translateY(4px);}
+	97% {transform: translateY(3px);}
+	98% {transform: translateY(2px);}
+	99% {transform: translateY(1px);}
+	100% {transform: translateY(0); opacity: 1; scale: 1;}
 }
 @keyframes h3Anim {
 	animation-range: normal;
-		0% {
-			transform: translateX(-200px);
-			opacity: 0;
-		}
-		100% {
-			transform: translateX(0);
-			opacity: 1;
-		}		
+	0% {transform: translateX(-200px); opacity: 0;}
+	100% {transform: translateX(0); opacity: 1;}		
 }
 @keyframes pAnim {
 	animation-range: normal;
-		0% {
-			opacity: 0;
-    		}
-		100% {
-			opacity: 1;
-		}
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }
 @keyframes choiceAnim {
 	animation-range: normal;
-		0% {
-			transform: translateY(80px);
-			opacity: 0;
-        	}
-		100% {
-			transform: translateY(0px);;
-			opacity: 1;
-		}
+	0% {transform: translateY(80px); opacity: 0;}
+	100% {transform: translateY(0px);; opacity: 1;}
 }
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
@@ -302,7 +196,7 @@ i {
 .logo-overlay img {
 	max-width: 300px;
 	width: 60%;
-	animation: pAnim 2s ease-out;
+	animation: fadeIn 2s ease-out;
 }				
 .animate-text {
 	text-transform: uppercase;
@@ -699,10 +593,9 @@ h2{
 }
 h3{
 	color: #03999e;
-	font-size: 3.50vw;
+	font-size: 3.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	background-color: transparent;
 	width: 100%;
 	height: auto;
 	position: inherit;
@@ -717,8 +610,6 @@ h3{
 	padding-top: 2px;
 	padding-bottom: 2px;
 	z-index: 1;
-	animation: pAnim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
 }
 p{
 	color: #FFFFFF;
@@ -738,8 +629,8 @@ p{
   	margin-bottom: 0px; 
 	padding-left: 2px;
 	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	z-index: 1;
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
@@ -1477,10 +1368,9 @@ h2{
 }
 h3{
 	color: #03999e;
-	font-size: 3.50vw;
+	font-size: 3.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	background-color: transparent;
 	width: 100%;
 	height: auto;
 	position: inherit;
@@ -1495,12 +1385,10 @@ h3{
 	padding-top: 2px;
 	padding-bottom: 2px;
 	z-index: 1;
-	animation: pAnim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
 }
 p{
 	color: #FFFFFF;
-	font-size: 1.25vw;
+	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
@@ -1516,8 +1404,8 @@ p{
   	margin-bottom: 0px; 
 	padding-left: 2px;
 	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	z-index: 1;
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
@@ -2253,10 +2141,9 @@ h2{
 }
 h3{
 	color: #03999e;
-	font-size: 3.50vw;
+	font-size: 3.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
-	background-color: transparent;
 	width: 100%;
 	height: auto;
 	position: inherit;
@@ -2271,12 +2158,10 @@ h3{
 	padding-top: 2px;
 	padding-bottom: 2px;
 	z-index: 1;
-	animation: pAnim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
 }
 p{
 	color: #FFFFFF;
-	font-size: 2.125vw;
+	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
@@ -2292,8 +2177,8 @@ p{
   	margin-bottom: 0px; 
 	padding-left: 2px;
 	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	z-index: 1;
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
