@@ -163,7 +163,7 @@ i {
 @keyframes choiceAnim {
 	animation-range: normal;
 	0% {transform: translateY(80px); opacity: 0;}
-	100% {transform: translateY(0px);; opacity: 1;}
+	100% {transform: translateY(0px); opacity: 1;}
 }
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
@@ -179,7 +179,7 @@ i {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	z-index: 9999;
+	z-index: 9000;
 	overflow: hidden;
 }
 #splash-screen video {
@@ -190,13 +190,13 @@ i {
 }
 .logo-overlay {
 	position: relative;
-	z-index: 2;
+	z-index: 9999;
 	text-align: center;
 }
 .logo-overlay img {
 	max-width: 300px;
 	width: 60%;
-	animation: fadeIn 1s ease-out;
+	animation: fadeIn ease-out;
 }				
 .animate-text {
 	text-transform: uppercase;
@@ -205,12 +205,12 @@ i {
   	background-clip: border-box;
   	background-size: 200% auto;
   	background-clip: text;
-	z-index: 200;
+	z-index: 2000;
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
   	animation: textclip;
-	animation-duration: 3s;
+	animation-duration: 2s;
         animation-iteration-count: infinite;
 	animation-direction: alternate;
 	animation-timing-function: linear;
@@ -989,7 +989,7 @@ p{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	z-index: 9999;
+	z-index: 9000;
 	overflow: hidden;
 }
 #splash-screen video {
@@ -1000,13 +1000,13 @@ p{
 }
 .logo-overlay {
 	position: relative;
-	z-index: 2;
+	z-index: 9999;
 	text-align: center;
 }
 .logo-overlay img {
 	max-width: 300px;
 	width: 60%;
-	animation: fadeIn 2s ease-out;
+	animation: fadeIn ease-out;
 }				
 .animate-text {
 	text-transform: uppercase;
@@ -1015,12 +1015,12 @@ p{
   	background-clip: border-box;
   	background-size: 200% auto;
   	background-clip: text;
-	z-index: 200;
+	z-index: 2000;
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
   	animation: textclip;
-	animation-duration: 3s;
+	animation-duration: 2s;
         animation-iteration-count: infinite;
 	animation-direction: alternate;
 	animation-timing-function: linear;
@@ -1798,7 +1798,7 @@ p{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	z-index: 9999;
+	z-index: 9000;
 	overflow: hidden;
 }
 #splash-screen video {
@@ -1809,13 +1809,13 @@ p{
 }
 .logo-overlay {
 	position: relative;
-	z-index: 2;
+	z-index: 9999;
 	text-align: center;
 }
 .logo-overlay img {
 	max-width: 300px;
 	width: 60%;
-	animation: fadeIn 2s ease-out;
+	animation: fadeIn ease-out;
 }				
 .animate-text {
 	text-transform: uppercase;
@@ -1824,12 +1824,12 @@ p{
   	background-clip: border-box;
   	background-size: 200% auto;
   	background-clip: text;
-	z-index: 200;
+	z-index: 2000;
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
   	animation: textclip;
-	animation-duration: 3s;
+	animation-duration: 2s;
         animation-iteration-count: infinite;
 	animation-direction: alternate;
 	animation-timing-function: linear;
