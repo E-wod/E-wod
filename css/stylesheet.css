@@ -36,7 +36,7 @@ html {
 	width: 100%;
 	height: 100%;
 	display: flex;
- 	background: #FFFFFF; 
+ 	background-color: #000000; 
         position: absolute;  
 	text-decoration: none;
 	overflow: inherit;
@@ -286,9 +286,8 @@ i {
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	animation: textclip 2s linear infinite;
+  	animation: textclip 3s linear infinite alternate slide-in;
   	display: inline-block;
-	transition-timing-function: 2s ease ease-in-out;
 }
 .wallPaper {
 	position: fixed;
@@ -299,7 +298,7 @@ i {
 	width: 100%;
 	height: 100vh;
 	z-index: 0;
-	opacity: 0.7;
+	opacity: 0.9;
 	background-attachment: fixed;
   	background-position: center;
   	background-repeat: no-repeat;
@@ -1055,6 +1054,20 @@ p{
 /*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 992px) {
+.animate-text {
+	text-transform: uppercase;
+  	background-image: linear-gradient(-225deg, #1E85D4 0%, #1C8094 29%, #802A1F 67%, #FF9D00 100%);
+  	background-size: auto auto;
+  	background-clip: border-box;
+  	background-size: 200% auto;
+  	background-clip: text;
+	z-index: 200;
+  	text-fill-color: transparent;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	animation: textclip 3s linear infinite alternate slide-in;
+  	display: inline-block;
+}
 .wallPaper {
 	position: fixed;
 	background-image: url("https://imagizer.imageshack.com/img924/3995/kPr8m0.jpg");
@@ -1064,7 +1077,7 @@ p{
 	width: 100%;
 	height: 100vh;
 	z-index: 0;
-	opacity: 0.7;
+	opacity: 0.9;
 	background-attachment: fixed;
   	background-position: center;
   	background-repeat: no-repeat;
@@ -1137,7 +1150,6 @@ p{
   	animation-range: entry 100% exit 0%;
 }
 .scroller {
-  	height: 33vh;
   	view-timeline: --scroller;
 	width: 100%;
 	height: auto;
@@ -1151,7 +1163,8 @@ p{
 	padding-right: 2px;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	z-index: -10;
+	z-index: 200;
+	text-align: center;
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
@@ -1819,6 +1832,20 @@ p{
 /*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
 @media (max-width: 767px) {
+.animate-text {
+	text-transform: uppercase;
+  	background-image: linear-gradient(-225deg, #1E85D4 0%, #1C8094 29%, #802A1F 67%, #FF9D00 100%);
+  	background-size: auto auto;
+  	background-clip: border-box;
+  	background-size: 200% auto;
+  	background-clip: text;
+	z-index: 200;
+  	text-fill-color: transparent;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	animation: textclip 3s linear infinite alternate slide-in;
+  	display: inline-block;
+}
 .wallPaper {
 	position: fixed;
 	background-image: url("https://imagizer.imageshack.com/img924/3995/kPr8m0.jpg");
@@ -1828,7 +1855,7 @@ p{
 	width: 100%;
 	height: 100vh;
 	z-index: 0;
-	opacity: 0.7;
+	opacity: 0.9;
 	background-attachment: fixed;
   	background-position: center;
   	background-repeat: no-repeat;
@@ -1901,7 +1928,6 @@ p{
   	animation-range: entry 100% exit 0%;
 }
 .scroller {
-  	height: 33vh;
   	view-timeline: --scroller;
 	width: 100%;
 	height: auto;
@@ -1915,7 +1941,8 @@ p{
 	padding-right: 2px;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	z-index: -10;
+	z-index: 200;
+	text-align: center;
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
