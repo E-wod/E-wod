@@ -1,12 +1,18 @@
-const image = document.getElementById('img/ESDLogo.png');
-    image.addEventListener('load', () => {
-      image.style.display = 'block';
-      
-preload_image("https://imageshack.com/i/pnwkWOS8j"); 
+preload_image("https://imagizer.imageshack.com/img924/3995/kPr8m0.jpg"); 
 function preload_image(im_url) {
   let img = new Image();
   img.src = im_url;
 }
+// NEXT________________________________________________
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll('img[decoding="asynchronous"]');
+    images.forEach(img => {
+        img.addEventListener('load', () => {
+            img.classList.add('loaded');
+        });
+    });
+});
+</script>
 // NEXT________________________________________________
 let images = document.querySelectorAll("html");
 lazyload(images);
@@ -275,16 +281,6 @@ script:
   - cd ../../..
   - npm test
 <script>
-// NEXT________________________________________________
-document.addEventListener("DOMContentLoaded", function() {
-    const images = document.querySelectorAll('img[decoding="asynchronous"]');
-    images.forEach(img => {
-        img.addEventListener('load', () => {
-            img.classList.add('loaded');
-        });
-    });
-});
-</script>
 // NEXT________________________________________________
 public class ImageUtil 
 {
