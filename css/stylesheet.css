@@ -609,6 +609,8 @@ h3{
 	font-size: 2.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #FFFFFF;
 	width: 100%;
 	height: auto;
 	position: inherit;
@@ -1425,6 +1427,8 @@ h3{
 	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #FFFFFF;
 	width: 100%;
 	height: auto;
 	position: inherit;
@@ -2239,6 +2243,8 @@ h3{
 	font-size: 2.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #FFFFFF;
 	width: 100%;
 	height: auto;
 	position: inherit;
