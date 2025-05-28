@@ -283,7 +283,6 @@ i {
 	padding-bottom: 2px;
 	z-index: 200;
 	text-align: center;
-	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .header {
@@ -1060,7 +1059,6 @@ p{
 	padding-bottom: 2px;
 	z-index: 200;
 	text-align: center;
-	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .header {
@@ -1836,7 +1834,6 @@ p{
 	padding-bottom: 2px;
 	z-index: 200;
 	text-align: center;
-	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
 }
 .header {
