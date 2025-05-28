@@ -174,12 +174,10 @@ i {
 	text-transform: uppercase;
 	font-size: 2.50vw;
 	font-family: Impact;
-	
 	width: 100%;
 	height: auto;
 	position: inherit;
 	justify-content: center;
-	display: flex;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
@@ -188,12 +186,11 @@ i {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
   	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 200% auto;
-	z-index: 2000;
+	z-index: 200;
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
@@ -578,22 +575,12 @@ h2{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h3{
-	font-size: 2.50vw;
 	font-family: Impact;
 	width: 100%;
 	height: auto;
 	position: inherit;
 	justify-content: center;
 	display: flex;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	z-index: 100;
 }
 p{
 	color: #FFFFFF;
@@ -960,23 +947,34 @@ p{
 @media (min-width: 768px) and (max-width: 992px) {			
 .animate-text {
 	text-transform: uppercase;
+	font-size: 2.00vw;
+	font-family: Impact;
+	width: 100%;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
   	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 200% auto;
-	z-index: 2000;
+	z-index: 200;
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	animation-name: textclip;
-        animation-iteration-count: infinite;
-	animation-direction: reverse;
-	animation-timing-function: linear;
+  	animation: textclip 2s infinite reverse linear;
   	display: inline-block;
 }
 .wallPaper {
 	position: fixed;
-	background-image: url("https://imagizer.imageshack.com/img924/3995/kPr8m0.jpg");
+	background-image: url("https://imagizer.imageshack.com/img924/4341/x1PpNV.jpg");
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
@@ -1351,23 +1349,12 @@ h2{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h3{
-	font-size: 1.75vw;
 	font-family: Impact;
-/* 	font-style: oblique; */
 	width: 100%;
 	height: auto;
 	position: inherit;
 	justify-content: center;
 	display: flex;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	z-index: 100;
 }
 p{
 	color: #FFFFFF;
@@ -1734,18 +1721,29 @@ p{
 @media (max-width: 767px) {		
 .animate-text {
 	text-transform: uppercase;
+	font-size: 1.50vw;
+	font-family: Impact;
+	width: 100%;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
   	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 200% auto;
-	z-index: 2000;
+	z-index: 200;
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	animation-name: textclip;
-        animation-iteration-count: infinite;
-	animation-direction: reverse;
-	animation-timing-function: linear;
+  	animation: textclip 2s infinite reverse linear;
   	display: inline-block;
 }
 .wallPaper {
@@ -2123,23 +2121,12 @@ h2{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h3{
-	font-size: 1.25vw;
 	font-family: Impact;
-/* 	font-style: oblique; */
 	width: 100%;
 	height: auto;
 	position: inherit;
 	justify-content: center;
 	display: flex;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	z-index: 100;
 }
 p{
 	color: #FFFFFF;
