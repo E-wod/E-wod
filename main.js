@@ -8,7 +8,7 @@ public class HomeController {
         //  Replace the filename and path here
         response.addHeader("Link", "<https://imagizer.imageshack.com/img924/4341/x1PpNV.jpg>; rel=preload; as=image");
         // Return a template name (like home.html) or raw HTML
-        return "index.html"; // home.html or home.jsp handles background
+        return "home.html"; // home.html or home.jsp handles background
     }
 }
 // NEXT________________________________________________
