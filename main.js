@@ -5,10 +5,10 @@ import javax.servlet.http.HttpServletResponse;
 public class HomeController {
     @GetMapping("/")
     public String home(HttpServletResponse response) {
-        // ✅ Replace the filename and path here
+        //  Replace the filename and path here
         response.addHeader("Link", "<https://imagizer.imageshack.com/img924/4341/x1PpNV.jpg>; rel=preload; as=image");
         // Return a template name (like home.html) or raw HTML
-        return "home"; // home.html or home.jsp handles background
+        return "index.html"; // home.html or home.jsp handles background
     }
 }
 // NEXT________________________________________________
