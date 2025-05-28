@@ -282,7 +282,6 @@ i {
 	padding-bottom: 2px;
 	z-index: 200;
 	text-align: center;
-	transition-timing-function: 1s ease ease-in-out; 
 }
 .header {
 	width: 100%;
@@ -588,7 +587,7 @@ p{
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
-	background-color: rgba(181, 181, 181, 0.1);
+	background-color: rgba(181, 181, 181, 0.3);
 	width: 100%;
 	height: auto;
 	position: inherit;
@@ -1057,7 +1056,6 @@ p{
 	padding-bottom: 2px;
 	z-index: 200;
 	text-align: center;
-	transition-timing-function: 1s ease ease-in-out; 
 }
 .header {
 	width: 100%;
@@ -1362,7 +1360,7 @@ p{
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
-	background-color: rgba(181, 181, 181, 0.1);
+	background-color: rgba(181, 181, 181, 0.3);
 	width: 100%;
 	height: auto;
 	position: inherit;
@@ -1831,7 +1829,6 @@ p{
 	padding-bottom: 2px;
 	z-index: 200;
 	text-align: center;
-	transition-timing-function: 1s ease ease-in-out; 
 }
 .header {
 	width: 100%;
@@ -2134,7 +2131,7 @@ p{
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
-	background-color: rgba(181, 181, 181, 0.1);
+	background-color: rgba(181, 181, 181, 0.3);
 	width: 100%;
 	height: auto;
 	position: inherit;
