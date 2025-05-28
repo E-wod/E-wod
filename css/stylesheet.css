@@ -42,10 +42,19 @@ html {
 	overflow: inherit;
 }
 body {
-	z-index: 0;
+	position: fixed;
+	background-image: url("https://imagizer.imageshack.com/img924/4341/x1PpNV.jpg");
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
 	width: 100%;
-	height: 100%;
-	overflow: inherit;
+	height: 100vh;
+	z-index: 0;
+	opacity: 0.9;
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: repeat;
+  	background-size: cover;
 }
 a {
 	text-decoration: none;
@@ -180,10 +189,10 @@ i {
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	animation: textclip infinite reverse linear;
+  	animation: textclip 2s infinite reverse linear;
   	display: inline-block;
 }
-.wallPaper {
+/* .wallPaper {
 	position: fixed;
 	background-image: url("https://imagizer.imageshack.com/img924/4341/x1PpNV.jpg");
   	top: 50%;
@@ -197,7 +206,7 @@ i {
   	background-position: center;
   	background-repeat: repeat;
   	background-size: cover;
-}
+} */
 .photo-block {
   	position: sticky;
   	top: 0;
