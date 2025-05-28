@@ -184,7 +184,6 @@ i {
         animation-iteration-count: infinite;
 	animation-direction: reverse;
 	animation-timing-function: linear;
-	animation-fill-mode: both;
   	display: inline-block;
 }
 .wallPaper {
@@ -962,7 +961,6 @@ p{
         animation-iteration-count: infinite;
 	animation-direction: reverse;
 	animation-timing-function: linear;
-	animation-fill-mode: both;
   	display: inline-block;
 }
 .wallPaper {
@@ -1739,7 +1737,6 @@ p{
         animation-iteration-count: infinite;
 	animation-direction: reverse;
 	animation-timing-function: linear;
-	animation-fill-mode: both;
   	display: inline-block;
 }
 .wallPaper {
