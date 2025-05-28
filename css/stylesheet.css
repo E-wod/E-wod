@@ -180,7 +180,7 @@ i {
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	animation: textclip;
+  	animation-name: textclip;
         animation-iteration-count: infinite;
 	animation-direction: reverse;
 	animation-timing-function: linear;
@@ -955,7 +955,7 @@ p{
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	animation: textclip;
+  	animation-name: textclip;
         animation-iteration-count: infinite;
 	animation-direction: reverse;
 	animation-timing-function: linear;
@@ -1729,7 +1729,7 @@ p{
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	animation: textclip;
+  	animation-name: textclip;
         animation-iteration-count: infinite;
 	animation-direction: reverse;
 	animation-timing-function: linear;
