@@ -42,19 +42,9 @@ html {
 	overflow: inherit;
 }
 body {
-	position: fixed;
-	background-image: url("https://imagizer.imageshack.com/img924/4341/x1PpNV.jpg");
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
+	z-index: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 0;
-	opacity: 0.9;
-	background-attachment: fixed;
-  	background-position: center;
-  	background-repeat: repeat;
-  	background-size: cover;
 	overflow: inherit;
 }
 a {
@@ -182,6 +172,23 @@ i {
 @media (min-width: 993px) {			
 .animate-text {
 	text-transform: uppercase;
+	font-size: 2.50vw;
+	font-family: Impact;
+	
+	width: 100%;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	
   	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
   	background-size: auto auto;
   	background-clip: border-box;
@@ -193,7 +200,7 @@ i {
   	animation: textclip 2s infinite reverse linear;
   	display: inline-block;
 }
-/* .wallPaper {
+.wallPaper {
 	position: fixed;
 	background-image: url("https://imagizer.imageshack.com/img924/4341/x1PpNV.jpg");
   	top: 50%;
@@ -207,7 +214,7 @@ i {
   	background-position: center;
   	background-repeat: repeat;
   	background-size: cover;
-} */
+}
 .photo-block {
   	position: sticky;
   	top: 0;
@@ -573,7 +580,6 @@ h2{
 h3{
 	font-size: 2.50vw;
 	font-family: Impact;
-/* 	font-style: oblique; */
 	width: 100%;
 	height: auto;
 	position: inherit;
