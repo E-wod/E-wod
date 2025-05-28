@@ -180,7 +180,6 @@ i {
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
   	animation: textclip;
-	animation-duration: 2s;
         animation-iteration-count: infinite;
 	animation-direction: reverse;
 	animation-timing-function: linear;
@@ -581,7 +580,7 @@ h3{
 	padding-right: 2px;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	z-index: 1;
+	z-index: 100;
 }
 p{
 	color: #FFFFFF;
@@ -956,7 +955,6 @@ p{
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
   	animation: textclip;
-	animation-duration: 2s;
         animation-iteration-count: infinite;
 	animation-direction: reverse;
 	animation-timing-function: linear;
@@ -1356,7 +1354,7 @@ h3{
 	padding-right: 2px;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	z-index: 1;
+	z-index: 100;
 }
 p{
 	color: #FFFFFF;
@@ -1731,7 +1729,6 @@ p{
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
   	animation: textclip;
-	animation-duration: 2s;
         animation-iteration-count: infinite;
 	animation-direction: reverse;
 	animation-timing-function: linear;
@@ -2129,7 +2126,7 @@ h3{
 	padding-right: 2px;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	z-index: 1;
+	z-index: 100;
 }
 p{
 	color: #FFFFFF;
