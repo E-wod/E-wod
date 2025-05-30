@@ -281,7 +281,7 @@ i {
 .scroller {
   	view-timeline: --scroller;
 	width: 100%;
-	height: auto;
+	height: 33%;
 	justify-content: center;
 	display: flex;
    	margin-left: 0px;
@@ -575,6 +575,7 @@ h2{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h3{
+	font-family: "sofachrome", sans-serif;
 	width: 100%;
 	height: auto;
 	position: inherit;
@@ -1055,7 +1056,7 @@ p{
 .scroller {
   	view-timeline: --scroller;
 	width: 100%;
-	height: auto;
+	height: 33%;
 	justify-content: center;
 	display: flex;
    	margin-left: 0px;
@@ -1348,6 +1349,7 @@ h2{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h3{
+	font-family: "sofachrome", sans-serif;
 	width: 100%;
 	height: auto;
 	position: inherit;
@@ -1828,7 +1830,7 @@ p{
 .scroller {
   	view-timeline: --scroller;
 	width: 100%;
-	height: auto;
+	height: 33%;
 	justify-content: center;
 	display: flex;
    	margin-left: 0px;
@@ -2119,6 +2121,7 @@ h2{
 	transition-timing-function: 1s ease ease-in-out; 
 }
 h3{
+	font-family: "sofachrome", sans-serif;
 	width: 100%;
 	height: auto;
 	position: inherit;
