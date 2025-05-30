@@ -6,7 +6,7 @@ public class HomeController {
     @GetMapping("/")
     public String home(HttpServletResponse response) {
         //  Replace the filename and path here
-        response.addHeader("Link", "<https://imagizer.imageshack.com/img924/4341/x1PpNV.jpg>; rel=preload; as=image");
+        response.addHeader("Link", "<https://i.ibb.co/k2mhX8Nb/Eric-Souza-Wallpaper.jpg>; rel=preload; as=image");
         // Return a template name (like home.html) or raw HTML
         return "home.html"; // home.html or home.jsp handles background
     }
