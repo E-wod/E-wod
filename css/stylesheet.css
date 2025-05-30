@@ -281,7 +281,7 @@ i {
 .scroller {
   	view-timeline: --scroller;
 	width: 100%;
-	height: 33%;
+	height: auto;
 	justify-content: center;
 	display: flex;
    	margin-left: 0px;
@@ -1059,7 +1059,7 @@ p{
 .scroller {
   	view-timeline: --scroller;
 	width: 100%;
-	height: 33%;
+	height: auto;
 	justify-content: center;
 	display: flex;
    	margin-left: 0px;
@@ -1836,7 +1836,7 @@ p{
 .scroller {
   	view-timeline: --scroller;
 	width: 100%;
-	height: 33%;
+	height: auto;
 	justify-content: center;
 	display: flex;
    	margin-left: 0px;
