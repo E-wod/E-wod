@@ -88,6 +88,9 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes splashscreen {
   	to {background-position: 200% center;}
+	  0% {opacity: 1;}
+  	  99% {opacity: 1;}
+          100% {opacity: 0;display: none;}
 }
 @keyframes textclip {
   	to {background-position: 200% center;}
@@ -192,7 +195,7 @@ i {
 /*   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent; */
-  	animation: splashscreen 5s reverse linear;
+  	animation: splashscreen 3s reverse linear;
   	display: inline-block;
 }
 .animate-text {
