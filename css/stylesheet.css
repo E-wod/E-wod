@@ -187,7 +187,7 @@ i {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-  	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
+  	background-image: linear-gradient(0deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
   	background-size: cover;
 /*   	background-clip: border-box;
   	background-size: 200% auto; */
@@ -195,7 +195,7 @@ i {
 /*   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent; */
-  	animation: splashscreen 6s linear;
+  	animation: splashscreen 4s ease forwards;
   	display: inline-block;
 }
 .animate-text {
