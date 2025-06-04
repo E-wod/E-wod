@@ -187,8 +187,10 @@ i {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-  	background-image: linear-gradient(0deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
-  	background-size: cover;
+	background: transparent;
+/* 	background-image: src="img/CarHype1.mp4";
+  	background-image: linear-gradient(0deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%); */
+  	background-fit: cover;
   	background-size: 200% auto; 
 	z-index: 2000;
   	animation: splashscreen 4s ease forwards;
