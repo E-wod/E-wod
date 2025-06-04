@@ -191,7 +191,7 @@ i {
   	background-fit: cover;
   	background-size: 200% auto; 
 	z-index: 2000;
-  	animation: splashscreen 4s ease forwards;
+  	animation: splashscreen 14s ease forwards;
 }
 .animate-text {
 	text-transform: uppercase;
