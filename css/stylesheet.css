@@ -87,10 +87,10 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes splashscreen {
-	  0% {opacity: 1;display: flex;transform: translateX(-2200px);}
+	  0% {opacity: 1;display: flex;background-position: -1200% center;}
   	  90% {opacity: 1;}
   	  99% {opacity: 0;}
-          100% {opacity: 0;display: none;transform: translateX(2200px);}
+          100% {opacity: 0;display: none;background-position: 1200% center;}
 }
 @keyframes textclip {
   	to {background-position: 200% center;}
