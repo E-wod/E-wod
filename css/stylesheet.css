@@ -87,10 +87,10 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes splashscreen {
-	  0% {opacity: 1;display: flex; background-position: -300% center;}
+	  0% {opacity: 1; display: initial; background-position: -300% center;}
   	  90% {opacity: 1;}
   	  99% {opacity: 0;}
-          100% {opacity: 0;display: none; background-position: 300% center;}
+          100% {opacity: 0; display: none; background-position: 300% center;}
 }
 @keyframes textclip {
   	to {background-position: 200% center;}
@@ -187,11 +187,11 @@ i {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-        background-image: linear-gradient(0deg, #1E85D4 23%, #4B806E 65%, #000000 100%);
+        background-image: linear-gradient(180deg, #1E85D4 23%, #4B806E 65%, #000000 100%);
   	background-size: 300% auto; 
 	z-index: 2000;
-  	animation: splashscreen 6s alternate ease-in-out;
-	animation-iteration-count: 2;
+  	animation: splashscreen 6s alternate linear;
+	animation-iteration-count: 4;
 }
 .animate-text {
 	text-transform: uppercase;
