@@ -87,7 +87,7 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes splashscreen {
-	  0% {opacity: 1;background-position: -2200%;}
+	  0% {opacity: 1;display: flex; background-position: -2200%;}
   	  90% {opacity: 1;}
   	  99% {opacity: 0;}
           100% {opacity: 0;display: none; background-position: 2200%;}
@@ -189,14 +189,9 @@ i {
 	padding-bottom: 0px;
   	background-image: linear-gradient(0deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
   	background-size: cover;
-/*   	background-clip: border-box;
-  	background-size: 200% auto; */
+  	background-size: 200% auto; 
 	z-index: 2000;
-/*   	text-fill-color: transparent;
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent; */
   	animation: splashscreen 4s ease forwards;
-  	display: inline-block;
 }
 .animate-text {
 	text-transform: uppercase;
