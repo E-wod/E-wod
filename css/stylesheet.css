@@ -87,7 +87,7 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes splashscreen {
-	  0% {opacity: 1; display: initial; background-position: -300% center;}
+	  0% {opacity: 1; display: flex; background-position: -300% center;}
   	  90% {opacity: 1;}
   	  99% {opacity: 0;}
           100% {opacity: 0; display: none; background-position: 300% center;}
