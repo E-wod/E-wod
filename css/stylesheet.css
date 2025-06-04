@@ -195,7 +195,7 @@ i {
 /*   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent; */
-  	animation: splashscreen 3s reverse linear;
+  	animation: splashscreen 6s linear;
   	display: inline-block;
 }
 .animate-text {
