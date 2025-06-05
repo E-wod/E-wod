@@ -87,10 +87,12 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes splashscreen {
-	  0% {opacity: 1; display: contents; from background-position: -600% center;}
+	  from {background-position: -600% center; opacity: 1; display: contents;}
+          to {background-position: 600% center; opacity: 0; display: none;}
+/* 	  0% {opacity: 1; display: contents;}
   	  90% {opacity: 1;}
   	  99% {opacity: 0;}
-          100% {opacity: 0; display: none; to background-position: 600% center;}
+          100% {opacity: 0; display: none;} */
 }
 @keyframes textclip {
   	  to {background-position: 200% center;}
