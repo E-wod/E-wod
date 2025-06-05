@@ -176,8 +176,10 @@ i {
 .splash-screen {
 	width: 100%;
 	height: 100vh;
-	position: fixed;
+	position: inherit;
+	justify-content: center;
 	text-align: center;
+	display: flex;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
