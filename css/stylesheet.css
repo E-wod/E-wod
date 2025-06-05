@@ -87,9 +87,9 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes splashscreen {
-	  0% {opacity: 1; display: flex; background-position: -600% center;}
+	  0% {opacity: 1; display: flex; background-position: -600%;}
   	  90% {opacity: 1;}
-  	  99% {opacity: 0; background-position: 600% center;}
+  	  99% {opacity: 0; background-position: 600%;}
           100% {display: none;}
 }
 @keyframes textclip {
@@ -176,10 +176,9 @@ i {
 .splash-screen {
 	width: 100%;
 	height: 100vh;
-	position: inherit;
+	position: fixed;
 	justify-content: center;
 	text-align: center;
-	display: contents;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
