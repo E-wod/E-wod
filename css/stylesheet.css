@@ -90,7 +90,7 @@ i {
 	  0% {opacity: 1; display: flex; background-position: -600% center;}
   	  90% {opacity: 1;}
   	  99% {opacity: 0; background-position: 600% center;}
-          100% {opacity: 0; display: none;}
+          100% {display: none;}
 }
 @keyframes textclip {
   	to {background-position: 200% center;}
@@ -215,6 +215,7 @@ i {
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
+	-webkit-box-reflect: below -20px 
   	animation: textclip 2s infinite reverse linear;
   	display: inline-block;
 }
