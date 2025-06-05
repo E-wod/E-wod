@@ -175,7 +175,7 @@ i {
 	width: 100%;
 	height: 100vh;
 	text-align: center;
-	background-size: cover;
+  	background-size: auto auto;
 	background-size: 600% auto;
    	margin-left: 0px;
 	margin-right: 0px;  
@@ -213,8 +213,6 @@ i {
 	z-index: 200;
   	text-fill-color: transparent;
   	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-	-webkit-box-reflect: below -20px 
   	animation: textclip 2s infinite reverse linear;
   	display: inline-block;
 }
