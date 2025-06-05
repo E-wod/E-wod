@@ -88,9 +88,9 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes splashscreen {
 	  animation-range: normal;
-	  0% {opacity: 1; perspective: 100px; translate: -600%;}
+	  0% {opacity: 1;}
   	  90% {opacity: 1;}
-          100% {opacity: 0; perspective: 100px; translate: 600%;}
+          100% {opacity: 0;}
 }
 @keyframes textclip {
   	  to {background-position: 200% center;}
@@ -175,7 +175,6 @@ i {
 	width: 100%;
 	height: 100vh;
 	text-align: center;
-  	background-size: auto auto;
 	background-size: 600% auto;
    	margin-left: 0px;
 	margin-right: 0px;  
@@ -185,7 +184,7 @@ i {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	display: contents;
+	display: flex;
         background-image: linear-gradient(119deg, #1E85D4 5%, #621C94 24%, #802A1F 41%, #FF9D00 64%, #1E85D4 94%);
 	z-index: 2000;
   	animation: splashscreen 3s forward linear;
