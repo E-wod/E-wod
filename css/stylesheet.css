@@ -179,7 +179,7 @@ i {
 	position: inherit;
 	justify-content: center;
 	text-align: center;
-	display: flex;
+	display: contents;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
