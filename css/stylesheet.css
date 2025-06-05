@@ -87,10 +87,10 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes splashscreen {
-	  0% {opacity: 1; display: flex; background-position: -300% center;}
+	  0% {opacity: 1; display: flex; background-position: -600% center;}
   	  90% {opacity: 1;}
-  	  99% {opacity: 0;}
-          100% {opacity: 0; display: none; background-position: 300% center;}
+  	  99% {opacity: 0; background-position: 600% center;}
+          100% {opacity: 0; display: none;}
 }
 @keyframes textclip {
   	to {background-position: 200% center;}
@@ -176,6 +176,7 @@ i {
 	height: 100vh;
 	position: absolute;
 	justify-content: center;
+	text-align: center;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
@@ -184,11 +185,11 @@ i {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-        background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
-  	background-size: 300% auto; 
+        background-image: linear-gradient(-225deg, #1E85D4 5%, #621C94 20%, #802A1F 40%, #FF9D00 70%, #1E85D4 90%);
+  	background-size: 600% auto; 
 	z-index: 2000;
-  	animation: splashscreen 6s alternate linear;
-	animation-iteration-count: 2;
+  	animation: splashscreen 6s linear;
+	animation-iteration-count: 1;
 }
 .animate-text {
 	text-transform: uppercase;
@@ -206,7 +207,7 @@ i {
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-  	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
+  	background-image: linear-gradient(-225deg, #1E85D4 5%, #621C94 20%, #802A1F 40%, #FF9D00 70%, #1E85D4 90%);
   	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 200% auto;
