@@ -211,7 +211,8 @@ i {
   	background-size: 200% auto;
 	z-index: 200;
   	text-fill-color: transparent;
-  	-webkit-background-clip: text;
+ 	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
   	animation: textclip 2s infinite reverse linear;
   	display: inline-block;
 }
