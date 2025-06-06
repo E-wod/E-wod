@@ -176,6 +176,7 @@ i {
 	height: 100vh;
 	text-align: center;
 	background-size: cover;
+  	background-size: 200% auto;
    	margin-left: 0px;
 	margin-right: 0px;  
 	margin-top: 0px;
