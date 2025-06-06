@@ -87,9 +87,9 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes splashscreen {
-	  0% {transform: translate(-50%); opacity: 1; display: flex;}
+	  0% {opacity: 1;}
   	  90% {opacity: 1;}
-          100% {transform: translate(50%); opacity: 0; display: none;}
+          100% {opacity: 0;}
 }
 @keyframes textclip {
   	  to {background-position: 200% center;}
