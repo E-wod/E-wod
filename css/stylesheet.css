@@ -185,7 +185,6 @@ i {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	position: inherit;
-	display: contents;
         background-image: linear-gradient(119deg, #1E85D4 5%, #621C94 24%, #802A1F 41%, #FF9D00 64%, #1E85D4 94%);
 	z-index: 2000;
   	animation: splashscreen 3s forward linear;
