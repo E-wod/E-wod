@@ -87,8 +87,8 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes splashscreen {
-	from {opacity: 1; display: inline; transform: rotate(0deg);}
-	to {opacity: 0; display: none; transform: rotate(1440deg);}
+	from {opacity: 1; display: inline; background-position: -400% center;}
+	to {opacity: 0; display: none; background-position: 400% center;}
 }
 @keyframes textclip {
   	to {background-position: 200% center;}
@@ -186,6 +186,8 @@ i {
         background-image: radial-gradient(circle, #1E85D4, #621C94, #802A1F, #FF9D00, #1E85D4);
 	z-index: 1000;
   	animation: splashscreen 3s linear;
+	opacity: 0; 
+	display: none;
 }
 .animate-text {
 	text-transform: uppercase;
