@@ -88,7 +88,7 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes splashscreen {
 	from {opacity: 1; background-position: -400% center;}
-	to {opacity: 0; background-position: 400% center;}
+	to {opacity: 0; background-position: 400% center; visibility: hidden;}
 }
 @keyframes textclip {
   	to {background-position: 200% center;}
