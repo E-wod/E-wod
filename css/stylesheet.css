@@ -185,7 +185,7 @@ i {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	position: fixed;
-        background-image: linear-gradient(89deg, #104873 5%, #2E0D45 24%, #2E100C 41%, #523302 64%, #104873 94%);
+        background-image: linear-gradient(89deg, #385B75 5%, #3B274A 24%, #36201D 41%, #59431F 64%, #385B75 94%);
 	z-index: 1000;
   	animation: splashscreen 3s ease-in-out forwards;
 }
