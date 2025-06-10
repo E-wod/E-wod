@@ -87,9 +87,9 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes splashscreen {
-	0% {opacity: 1; background-position: top; transform: scale(1);}
+	0% {opacity: 1; background-position: 200% center; transform: scale(1);}
 	90% {opacity: 1;}
-	99% {opacity: .5; background-position: bottom; transform: scale(1);} 
+	99% {opacity: .5; background-position: -200% center; transform: scale(1);} 
         100% {opacity: 0; visibility: hidden; transform: scale(0);}
 }
 @keyframes textclip {
@@ -185,7 +185,7 @@ i {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	position: fixed;
-        background-image: linear-gradient(0deg, #104873 5%, #2E0D45 24%, #2E100C 41%, #523302 64%, #104873 94%);
+        background-image: linear-gradient(89deg, #104873 5%, #2E0D45 24%, #2E100C 41%, #523302 64%, #104873 94%);
 	z-index: 1000;
   	animation: splashscreen 3s ease-in-out forwards;
 }
