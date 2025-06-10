@@ -175,6 +175,9 @@ i {
 	width: 100%;
 	height: 100vh;
 	text-align: center;
+	justify-content: center;
+        align-items: center;
+	display: flex;
   	background-size: 400% auto;
    	margin-left: 0px;
 	margin-right: 0px;  
