@@ -187,7 +187,7 @@ i {
 	position: fixed;
         background-image: linear-gradient(89deg, #186AA8 5%, #451369 24%, #541C14 41%, #B36F04 64%, #186AA8 94%);
 	z-index: 1000;
-  	animation: splashscreen 7s ease-in-out forwards;
+  	animation: splashscreen 3s ease-in-out forwards;
 }
 .animate-text {
 	text-transform: uppercase;
