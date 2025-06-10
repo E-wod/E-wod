@@ -184,9 +184,9 @@ i {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	position: fixed;
-        background-image: linear-gradient(119deg, #1E85D4 5%, #621C94 24%, #802A1F 41%, #FF9D00 64%, #1E85D4 94%);
+        background-image: linear-gradient(93deg, #1E85D4 5%, #621C94 24%, #802A1F 41%, #FF9D00 64%, #1E85D4 94%);
 	z-index: 1000;
-  	animation: splashscreen 3s normal linear;
+  	animation: splashscreen 7s normal linear cover;
 }
 .animate-text {
 	text-transform: uppercase;
