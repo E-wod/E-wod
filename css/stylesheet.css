@@ -634,7 +634,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: relative;
+	position: fixed;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -967,6 +967,27 @@ p{
 /*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 992px) {			
+.splash-screen {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	justify-content: center;
+        align-items: center;
+	display: flex;
+  	background-size: 400% auto;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	position: fixed;
+        background-image: linear-gradient(90deg, #1F3240 5%, #23172B 24%, #1F1211 41%, #3B2C15 64%, #1F3240 94%);
+	z-index: 1000;
+  	animation: splashscreen 5s ease-in-out forwards;
+}
 .animate-text {
 	text-transform: uppercase;
 	font-size: 2.00vw;
@@ -983,13 +1004,13 @@ p{
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-  	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
+  	background-image: linear-gradient(119deg, #1E85D4 5%, #621C94 24%, #802A1F 41%, #FF9D00 64%, #1E85D4 94%);
   	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 200% auto;
 	z-index: 200;
   	text-fill-color: transparent;
-  	-webkit-background-clip: text;
+ 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
   	animation: textclip 2s infinite reverse linear;
   	display: inline-block;
@@ -1741,6 +1762,27 @@ p{
 /*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
 @media (max-width: 767px) {		
+.splash-screen {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	justify-content: center;
+        align-items: center;
+	display: flex;
+  	background-size: 400% auto;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	position: fixed;
+        background-image: linear-gradient(90deg, #1F3240 5%, #23172B 24%, #1F1211 41%, #3B2C15 64%, #1F3240 94%);
+	z-index: 1000;
+  	animation: splashscreen 5s ease-in-out forwards;
+}
 .animate-text {
 	text-transform: uppercase;
 	font-size: 1.50vw;
@@ -1757,13 +1799,13 @@ p{
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-  	background-image: linear-gradient(-225deg, #1E85D4 0%, #621C94 15%, #802A1F 40%, #FF9D00 70%, #1E85D4 100%);
+  	background-image: linear-gradient(119deg, #1E85D4 5%, #621C94 24%, #802A1F 41%, #FF9D00 64%, #1E85D4 94%);
   	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 200% auto;
 	z-index: 200;
   	text-fill-color: transparent;
-  	-webkit-background-clip: text;
+ 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
   	animation: textclip 2s infinite reverse linear;
   	display: inline-block;
