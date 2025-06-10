@@ -634,7 +634,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: fixed;
+	position: relative;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
