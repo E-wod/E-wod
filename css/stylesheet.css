@@ -331,7 +331,7 @@ i {
 .header {
 	width: 100%;
 	max-width: 100%;
-	max-height: 15%;
+	height: 12%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1127,7 +1127,7 @@ p{
 .header {
 	width: 100%;
 	max-width: 100%;
-	max-height: 15%;
+	height: 12%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1922,7 +1922,7 @@ p{
 .header {
 	width: 100%;
 	max-width: 100%;
-	max-height: auto;
+	height: 20%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
