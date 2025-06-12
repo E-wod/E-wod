@@ -86,10 +86,22 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
-@keyframes splashscreen {
+/* @keyframes splashscreen {
 	0% {opacity: 1; background-position: 100% center; transform: scale(1);}
 	90% {opacity: 1;}
 	99% {opacity: .5; background-position: -100% center; transform: scale(1);} 
+        100% {opacity: 0; visibility: hidden; transform: scale(0);}
+} */
+
+
+@keyframes splashscreen {
+	0% {opacity: 1; transform: scale(1);}
+	20% {opacity: 1; transform: scale(1.3);}
+	30% {opacity: 1; transform: scale(.7);}
+	40% {opacity: 1; transform: scale(1.8);}
+	60% {opacity: 1; transform: scale(.9);}
+	80% {opacity: 1; transform: scale(2.0);}
+	99% {opacity: .5; transform: scale(1);} 
         100% {opacity: 0; visibility: hidden; transform: scale(0);}
 }
 @keyframes textclip {
@@ -188,7 +200,7 @@ i {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	position: fixed;
-        background-image: linear-gradient(90deg, #1F3240 5%, #23172B 24%, #1F1211 41%, #3B2C15 64%, #1F3240 94%);
+        background-image: radial-gradient(circle, #1F3240 5%, #23172B 24%, #1F1211 41%, #3B2C15 64%, #1F3240 94%);
 	z-index: 1000;
   	animation: splashscreen 5s ease-in-out forwards;
 }
