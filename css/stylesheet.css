@@ -341,8 +341,8 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	width: 100px;
-	height: 100px;
+	width: 180px;
+	height: 180px;
 	display: flex;
 	text-decoration: none;
  	position: inherit;
@@ -1137,8 +1137,8 @@ p{
 	justify-items: center;
 }
 .nav-logo {
-	width: 100px;
-	height: auto;
+	width: 150px;
+	height: 150px;
 	display: flex;
 	text-decoration: none;
  	position: inherit;
@@ -1980,8 +1980,8 @@ p{
 	opacity: .3;
 }
 .navBar {
-	width: 100%;
-	height: 100%;
+	width: 100px;
+	height: 100px;
 	text-decoration: none;
 	background: transparent;
  	display: flex;
