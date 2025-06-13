@@ -341,8 +341,8 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	width: 100px;
-	height: 100px;
+	width: 40px;
+	height: 40px;
 	display: flex;
 	background-size: cover;
 	text-decoration: none;
@@ -360,8 +360,6 @@ i {
 	animation: logoAnim 2.5s; 
 }
 .nav-logo a {
-	width: 100%;
-	height: 100%;
 	display: flex;
 	text-decoration: none;
 	align-self: center;
@@ -831,29 +829,6 @@ p{
 	animation-timing-function: ease-in-out;
 	transition: 3s;
 }
-.beGod {
-	background-color: transparent;
-	position: inherit;
-	width: 100%;
-	max-height: auto;
-	max-width: auto;
-	height: 100%;
-   	margin-left: 0x;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	z-index: 1;
-	align-all: space-between; 
-	float: center;
-	justify-content: center;
-	animation: pAnim 3s ease forwards;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
-}
 .beNook {
 	width: 100%;
 	height: 100%;
@@ -1135,40 +1110,36 @@ p{
 	justify-items: center;
 }
 .nav-logo {
-	width: 150px;
-	height: 150px;
+	width: 40px;
+	height: 40px;
 	display: flex;
+	background-size: cover;
 	text-decoration: none;
- 	position: inherit;
-	align-self: center;
-	justify-content: space-around;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	position: inherit;
+	justify-content: flex-start;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	background-color: transparent; 
 	animation: logoAnim 2.5s; 
 }
 .nav-logo a {
-	width: 100%;
-	height: 100%;
 	display: flex;
 	text-decoration: none;
- 	position: inherit;
 	align-self: center;
-	justify-content: space-around;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	background-color: transparent;
 	animation: logoAnim 2.5s; 
 }
@@ -1622,29 +1593,6 @@ p{
 	align-items: center;
 	z-index: 19;
 	overflow: hidden;
-	animation: pAnim 3s ease forwards;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
-}
-.beGod {
-	background-color: transparent;
-	position: inherit;
-	width: 100%;
-	max-height: auto;
-	max-width: auto;
-	height: 100%;
-   	margin-left: 0x;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	z-index: 1;
-	align-all: space-between; 
-	float: center;
-	justify-content: center;
 	animation: pAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	transition: 3s;
@@ -2415,29 +2363,6 @@ p{
 	align-items: center;
 	z-index: 19;
 	overflow: hidden;
-	animation: pAnim 3s ease forwards;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
-}
-.beGod {
-	background-color: transparent;
-	position: inherit;
-	width: 100%;
-	max-height: auto;
-	max-width: auto;
-	height: 100%;
-   	margin-left: 0x;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	z-index: 1;
-	align-all: space-between; 
-	float: center;
-	justify-content: center;
 	animation: pAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	transition: 3s;
