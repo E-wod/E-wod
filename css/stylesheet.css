@@ -341,8 +341,6 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	width: 140px;
-	height: 140px;	
 	display: flex;
 	top: 0;
 	left: 0;
@@ -362,8 +360,8 @@ i {
 	animation: logoAnim 2.5s; 
 }
 .nav-logo a {
-	width: 100%;
-	height: 100%;
+	width: 100px;
+	height: 100px;
 	display: flex;
 	text-decoration: none;
 	align-self: center;
