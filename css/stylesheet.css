@@ -191,8 +191,8 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	width: 100px;
-	height: 100px;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	display: flex;
 	text-decoration: none;
@@ -462,7 +462,7 @@ li {
 }
 h1{
 	color: #03999e;
-	font-size: 2.75vw;
+	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -486,7 +486,7 @@ h1{
 }
 h2{
 	color: #03999e;
-	font-size: 2.25vw;
+	font-size: 1.25vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -518,7 +518,7 @@ h3{
 }
 p{
 	color: #FFFFFF;
-	font-size: 2.00vw;
+	font-size: 1.00vw;
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
@@ -961,8 +961,8 @@ p{
 	justify-items: center;
 }
 .nav-logo {
-	width: 100px;
-	height: 100px;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	display: flex;
 	text-decoration: none;
@@ -1232,7 +1232,7 @@ li {
 }
 h1{
 	color: #03999e;
-	font-size: 2.50vw;
+	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1256,7 +1256,7 @@ h1{
 }
 h2{
 	color: #03999e;
-	font-size: 2.00vw;
+	font-size: 1.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1288,7 +1288,7 @@ h3{
 }
 p{
 	color: #FFFFFF;
-	font-size: 1.50vw;
+	font-size: .75vw;
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
@@ -1731,8 +1731,8 @@ p{
 	justify-items: center;
 }
 .nav-logo {
-	width: 100px;
-	height: 100px;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	display: flex;
 	text-decoration: none;
@@ -2002,7 +2002,7 @@ li {
 }
 h1{
 	color: #03999e;
-	font-size: 2.00vw;
+	font-size: 1.00vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -2026,7 +2026,7 @@ h1{
 }
 h2{
 	color: #03999e;
-	font-size: 1.50vw;
+	font-size: .75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -2058,7 +2058,7 @@ h3{
 }
 p{
 	color: #FFFFFF;
-	font-size: 1.25vw;
+	font-size: .50vw;
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
