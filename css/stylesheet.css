@@ -717,7 +717,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: relative;
+	position: sticky;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -1486,7 +1486,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: relative;
+	position: sticky;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -2255,7 +2255,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: relative;
+	position: sticky;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
