@@ -718,7 +718,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: fixed;
+	position: inherit;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -733,7 +733,7 @@ p{
 }
 .btnBox {
 	z-index: 15;
-	position: inherit;
+	position: sticky;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -807,7 +807,7 @@ p{
 }
 .socLnk {
 	z-index: 1500;
-	position: inherit;
+	position: sticky;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1488,7 +1488,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: fixed;
+	position: inherit;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -1503,7 +1503,7 @@ p{
 }
 .btnBox {
 	z-index: 15;
-	position: inherit;
+	position: sticky;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1577,7 +1577,7 @@ p{
 }
 .socLnk {
 	z-index: 1500;
-	position: inherit;
+	position: sticky;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -2258,7 +2258,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: fixed;
+	position: inherit;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -2273,7 +2273,7 @@ p{
 }
 .btnBox {
 	z-index: 15;
-	position: inherit;
+	position: sticky;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -2347,7 +2347,7 @@ p{
 }
 .socLnk {
 	z-index: 1500;
-	position: inherit;
+	position: sticky;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
