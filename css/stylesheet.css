@@ -83,10 +83,10 @@ i {
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 /*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
 @keyframes splashscreen {
-	0% {opacity: 1; background-position: 100% center; transform: scale(1); filter: brightness(100%);}
-	90% {opacity: 1; filter: brightness(100%);}
-	99% {opacity: .5; background-position: -100% center; transform: scale(1); filter: brightness(150%);} 
-        100% {opacity: 0; visibility: hidden; transform: scale(0); filter: brightness(0%);}
+	0% {opacity: 1; background-position: 100% center; transform: scale(1);}
+	90% {opacity: 1;}
+	99% {opacity: .5; background-position: -100% center; transform: scale(1);} 
+        100% {opacity: 0; visibility: hidden; transform: scale(0);}
 }
 @keyframes textclip {
   	to {background-position: 200% center;}
@@ -106,17 +106,17 @@ i {
 	animation-fill-mode: forwards;
 	animation-range: normal;
 	0% {opacity: 0.0; scale: 0.0;}
-	45% {scale: 0.25;}
-	50% {scale: 0.45;}
-	55% {scale: 0.35;}
-	60% {scale: 0.655;}
-	65% {scale: 0.55;}
-	70% {scale: 0.75;}
-	75% {scale: 0.65;}
-	80% {scale: 0.95;}
-	85% {scale: 0.85;}
-	90% {scale: 1.0175;}
-	100% {opacity: 1.0; scale: 1.0;}
+	45% {scale: 0.25; filter: brightness(100%);}
+	50% {scale: 0.45; filter: brightness(150%);}
+	55% {scale: 0.35; filter: brightness(100%);}
+	60% {scale: 0.655; filter: brightness(150%);}
+	65% {scale: 0.55; filter: brightness(100%);}
+	70% {scale: 0.75; filter: brightness(150%);}
+	75% {scale: 0.65; filter: brightness(150%);}
+	80% {scale: 0.95; filter: brightness(100%);}
+	85% {scale: 0.85; filter: brightness(150%);}
+	90% {scale: 1.0175; filter: brightness(100%);}
+	100% {opacity: 1.0; scale: 1.0; filter: brightness(100%);}
 }
 @keyframes menuAnim {
 	animation-range: normal;
@@ -211,6 +211,7 @@ i {
 .nav-logo a {
 	width: 100px;
 	height: 100px;
+	object-fit: cover;
 	display: flex;
 	text-decoration: none;
 	align-self: center;
@@ -717,7 +718,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: sticky;
+	position: fixed;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -980,6 +981,7 @@ p{
 .nav-logo a {
 	width: 100px;
 	height: 100px;
+	object-fit: cover;
 	display: flex;
 	text-decoration: none;
 	align-self: center;
@@ -1486,7 +1488,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: sticky;
+	position: fixed;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
@@ -1749,6 +1751,7 @@ p{
 .nav-logo a {
 	width: 100px;
 	height: 100px;
+	object-fit: cover;
 	display: flex;
 	text-decoration: none;
 	align-self: center;
@@ -2255,7 +2258,7 @@ p{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	position: sticky;
+	position: fixed;
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
