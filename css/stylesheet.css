@@ -1727,10 +1727,10 @@ p{
 .nav-logo {
 	display: flex;
 	width: 75px;
-	height: auto;
+	height: 75px;
 	text-decoration: none;
 	position: inherit;
-	justify-content: flex-start;
+	justify-content: space-around;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1743,6 +1743,10 @@ p{
 	animation: logoAnim 2.5s; 
 }
 .nav-logo a {
+	width: 100%;
+	height: 100%;
+	align-self: center;
+	justify-content: space-between;
 	display: flex;
 	text-decoration: none;
 	align-self: center;
@@ -1770,11 +1774,12 @@ p{
 	height: auto;
 	text-decoration: none;
 	background: transparent;
- 	display: flex-end;
+ 	display: flex;
  	position: inherit;
 	align-self: center;
 	justify-content: space-between;
 	overflow: inherit;
+	float: center;
  	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1786,7 +1791,7 @@ p{
 	border-radius: 8px;
 }
 .navBar a {
-    	width: 150px;
+    	width: 100%;
 	height: auto;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -1799,10 +1804,12 @@ p{
 	background: transparent;
 	border-radius: 8px;
 	color: #03999e;
-	font-size: 1.50vw;
+	font-size: 2.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	align-content: center;
+	position: inherit;
+	justify-content: space-around;
 	float: center;
 	display: flex;
 	opacity: 0;
