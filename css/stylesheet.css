@@ -167,6 +167,216 @@ i {
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
 @media (min-width: 993px) {
+.header {
+	width: 100%;
+	max-width: 100%;
+	height: 12%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	top: 0;
+        z-index: 30;
+	position: sticky;
+	scale: 1;
+	display: flex;
+	flex-direction: row;
+	background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	text-decoration: none;
+	overflow: inherit;
+	justify-items: center;
+}
+.nav-logo {
+	display: flex;
+	background-size: 75px auto;
+	text-decoration: none;
+	position: inherit;
+	justify-content: flex-start;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: transparent; 
+	animation: logoAnim 2.5s; 
+}
+.nav-logo a {
+	display: flex;
+	text-decoration: none;
+	align-self: center;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: transparent;
+	animation: logoAnim 2.5s; 
+}
+.nav-logo :hover,
+.nav-logo .active {
+	transition: .3s;
+	transition-timing-function: ease;
+	background: transparent;
+	overflow: visible;
+	opacity: .3;
+}
+.navBar {
+    	width: 100%;
+	height: auto;
+	text-decoration: none;
+	background: transparent;
+ 	display: flex-end;
+ 	position: inherit;
+	align-self: center;
+	justify-content: space-between;
+	overflow: inherit;
+ 	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-radius: 8px;
+}
+.navBar a {
+    	width: 150px;
+	height: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background: transparent;
+	border-radius: 8px;
+	color: #03999e;
+	font-size: 1.50vw;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	align-content: center;
+	float: center;
+	display: flex;
+	opacity: 0;
+	overflow: inherit;
+	animation: menuAnim 2.5s ease forwards;
+	animation-delay: calc(.085s * var(--i)); 
+	animation-timing-function: easy-ease;
+}
+.navBar a::before {
+	background: transparent;
+	border-radius: 8px;
+	text-decoration: none;
+	display: flex;
+	width: 100%;
+	height: 0%;
+	color: #ffffff;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	transition: .6s;
+	opacity: 0;
+	animation-timing-function: ease-in-out;
+}
+.navBar a:hover::before {
+	text-decoration: none;
+	color: #ffffff;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	border-radius: 8px;
+	display: flex;
+	opacity: 0;
+}
+.navBar a:hover,
+.navBar .active{
+	color: #ffffff;
+	text-decoration: none;
+	transition: .6s;
+	animation-timing-function: ease-in-out;
+	border-radius: 8px;
+	border-color: #ffffff;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	box-shadow: 0 2px 7px azure;
+}
+.nav-menu {
+	background-color: transparent;
+	float: center;
+	justify-self: center;
+	text-decoration: none;
+	display: flex;
+	overflow: inherit;
+	width: auto;
+	height: auto;
+	max-height: 100%;
+	max-width: 100%;
+	transition: .6s;
+	animation-timing-function: ease-in-out;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 8px;
+}
+.nav-menu a {
+	display: flex;
+	background-color: transparent;
+	float: center;
+	justify-self: center;
+	text-decoration: none;
+	overflow: inherit;
+	height: 100%;
+	width: 100%;
+	transition: .6s;
+	animation-timing-function: ease-in-out;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 8px;
+}
+li {
+    	list-style: none;
+}
+.nav-item {
+	color: #03999e;
+	font-size: 1.50vw;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	overflow: inherit;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 8px;
+}
+.nav-link{
+	color: #03999e;
+}
+.nav-link:hover{
+	color: #ffffff;
+}
 .splash-screen {
 	width: 100%;
 	height: 100vh;
@@ -229,6 +439,191 @@ i {
   	background-position: center;
   	background-repeat: repeat;
   	background-size: cover;
+}
+.landingContent{
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	max-height: auto;
+	justify-content: center;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+h1{
+	color: #03999e;
+	font-size: 2.75vw;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	text-shadow: 1px 0px 1px #000000;
+	background-color: transparent;
+	width: 100%;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	z-index: 1;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
+}
+h2{
+	color: #03999e;
+	font-size: 2.25vw;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	text-shadow: 1px 0px 1px #000000;
+	background-color: transparent;
+	width: 100%;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	z-index: 1;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
+}
+h3{
+	font-family: "sofachrome", sans-serif;
+	width: 100%;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+	display: flex;
+}
+p{
+	color: #FFFFFF;
+	font-size: 2.00vw;
+	text-decoration: none;
+	font-family: open sans;
+	text-shadow: 1px 0px 1px #000000;
+	background-color: rgba(181, 181, 181, 0.3);
+	width: 100%;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	z-index: 1;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
+}
+.beePic {
+ 	background: transparent; 
+	opacity: 1.0;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: auto;
+	height: 100%;
+	object-fit: cover;
+	display: flex;
+	position: relative;
+	align-items: center;
+	z-index: 19;
+	overflow: hidden;
+	animation: pAnim 3s ease forwards;
+	animation-timing-function: ease-in-out;
+	transition: 3s;
+}
+.beNook {
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	background: transparent;
+ 	position: inherit;
+	align-self: center;
+	justify-content: space-between;
+	display: flex;
+	opacity: 1;
+	scale: 1;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-decoration: none;
+	animation: pAnim 3s ease forwards;
+	animation-timing-function: ease-in-out;
+	transition: 3s;
+}
+.beNook a {
+	width: 100px;
+	height: auto;
+	text-decoration: none;
+	background: transparent;
+ 	position: inherit;
+	align-self: center;
+	justify-content: space-between;
+	display: flex;
+	opacity: 1;
+	scale: 1;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-decoration: none;
+	animation: pAnim 3s ease forwards;
+	animation-timing-function: ease-in-out;
+	transition: 3s;
+}
+.bkg {
+	background-color: transparent;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	position: inherit;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	z-index: 1;
+	animation: pAnim 3s ease forwards;
+	animation-timing-function: ease-in-out;
+	transition: 3s;
 }
 .photo-block {
   	position: sticky;
@@ -313,6 +708,231 @@ i {
 	z-index: 200;
 	text-align: center;
 }
+.cntr {
+	z-index: 100;
+	background: transparent;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.btnBox {
+	z-index: 15;
+	position: inherit;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 12px;
+	background: transparent;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	color: #03999e;
+	text-decoration: none;
+	display: flex;
+}
+.btnBox a {
+	background: transparent;
+	display: flex;
+	font-size: 25px;
+	color: #03999e;
+	font-family: "sofachrome", sans-serif;
+	text-decoration: none;
+	width: 180px;
+	height: 60px;
+	z-index: 15;
+	justify-content: center;
+	border-radius: 12px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	animation: h1Anim 2.5s ease forwards;
+	animation-timing-function: ease-in-out;
+}
+.btnBox a::before {
+	background: transparent;
+	border-radius: 12px;
+	color: #03999e;
+	text-decoration: none;
+	z-index: -1;
+	transition-timing-function: ease; 
+	width: 180px;
+	height: 0px;
+}
+.btnBox a:hover::before {
+	color: #ffffff;
+	border-radius: 12px;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	text-decoration: none;
+	transition: .6s;
+	width: 180px;
+	height: 0px;
+}
+.btnBox a:hover,
+.btnBox .active{
+	color: #ffffff;
+	text-decoration: none;
+	border-radius: 12px;
+	box-shadow: 0 2px 7px azure;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	transition: .3s;
+	transition-timing-function: ease-out;
+	width: 180px;
+	height: 60px;
+}
+.socLnk {
+	z-index: 1500;
+	position: inherit;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 50%;
+	background: transparent;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	color: #03999e;
+	text-decoration: none;
+	display: flex;
+}
+.socLnk a {
+	width: 80px;
+	height: 80px;
+	align: center;
+	position: inherit;
+	background: transparent;	
+	display: flex;
+	opacity: 0;
+	color: #03999e;
+	text-decoration: none;
+	justify-content: center;
+	z-index: 1500;
+	border-radius: 50%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	animation: h1Anim 1.975s ease forwards;
+	animation-delay: calc(.085s * var(--i)); 
+	animation-timing-function: easy-ease;
+}
+.socLnk a:nth-child(1 2 3) {
+	background: transparent;
+	border-radius: 50%;
+	text-decoration: none;
+	justify-content: center;
+	display: flex;
+}
+.socLnk a::before {
+	background: transparent;
+	border-radius: 50%;
+	color: #03999e;
+	text-decoration: none;
+	z-index: -1;
+	transition-timing-function: ease; 
+	display: flex;
+	opacity: 0;
+	align-self: center;
+	width: 80px;
+	height: 0px;
+}
+.socLnk a:hover::before {    
+	color: #ffffff;
+	border-radius: 50%;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	text-decoration: none;
+	display: flex;
+	transition: .6s;
+	width: 80px;
+	height: 0px;
+}
+.socLnk a:hover,
+.socLnk .active{
+	color: #ffffff;
+	text-decoration: none;
+	border-radius: 50%;
+	box-shadow: 0 2px 7px azure;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	display: flex;
+	transition: .6s;
+	transition-timing-function: ease-out;
+	width: 80px;
+	height: 80px;
+	z-index: 100;
+}
+.obJects{
+	background-color: transparent;
+	float: center;
+	justify-content: center;
+	display: flex;
+	width: 100%;
+	height: auto;
+	position: inherit;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	z-index: 999;
+}
+.picFrame {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	width: 50%;
+	height: 50%;
+	text-decoration: none;
+	flex-direction: column;
+	justify-content: center;
+	display: flex;
+	position: inherit;
+	background-color: transparent;
+	animation: pAnim 3s ease forwards;
+	animation-timing-function: ease-in-out;
+	transition: 3s;
+}
+/*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
+/*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
+/*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 992px) {			
 .header {
 	width: 100%;
 	max-width: 100%;
@@ -331,6 +951,772 @@ i {
 	scale: 1;
 	display: flex;
 	flex-direction: row;
+	background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	text-decoration: none;
+	overflow: inherit;
+	justify-items: center;
+}
+.nav-logo {
+	display: flex;
+	background-size: 65px auto
+	text-decoration: none;
+	position: inherit;
+	justify-content: flex-start;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: transparent; 
+	animation: logoAnim 2.5s; 
+}
+.nav-logo a {
+	display: flex;
+	text-decoration: none;
+	align-self: center;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: transparent;
+	animation: logoAnim 2.5s; 
+}
+.nav-logo :hover,
+.nav-logo .active {
+	transition: .3s;
+	transition-timing-function: ease;
+	background: transparent;
+	overflow: visible;
+	opacity: .3;
+}
+.navBar {
+    	width: 100%;
+	height: auto;
+	text-decoration: none;
+	background: transparent;
+ 	display: flex-end;
+ 	position: inherit;
+	align-self: center;
+	justify-content: space-between;
+	overflow: inherit;
+ 	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-radius: 8px;
+}
+.navBar a {
+    	width: 150px;
+	height: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background: transparent;
+	border-radius: 8px;
+	color: #03999e;
+	font-size: 1.50vw;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	align-content: center;
+	float: center;
+	display: flex;
+	opacity: 0;
+	overflow: inherit;
+	animation: menuAnim 2.5s ease forwards;
+	animation-delay: calc(.085s * var(--i)); 
+	animation-timing-function: easy-ease;
+}
+.navBar a::before {
+	background: transparent;
+	border-radius: 8px;
+	text-decoration: none;
+	display: flex;
+	width: 100%;
+	height: 0%;
+	color: #ffffff;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	transition: .6s;
+	opacity: 0;
+	animation-timing-function: ease-in-out;
+}
+.navBar a:hover::before {
+	text-decoration: none;
+	color: #ffffff;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	border-radius: 8px;
+	display: flex;
+	opacity: 0;
+}
+.navBar a:hover,
+.navBar .active{
+	color: #ffffff;
+	text-decoration: none;
+	transition: .6s;
+	animation-timing-function: ease-in-out;
+	border-radius: 8px;
+	border-color: #ffffff;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	box-shadow: 0 2px 7px azure;
+}
+.nav-menu {
+	background-color: transparent;
+	float: center;
+	justify-self: center;
+	text-decoration: none;
+	display: flex;
+	overflow: inherit;
+	width: auto;
+	height: auto;
+	max-height: 100%;
+	max-width: 100%;
+	transition: .6s;
+	animation-timing-function: ease-in-out;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 8px;
+}
+.nav-menu a {
+	display: flex;
+	background-color: transparent;
+	float: center;
+	justify-self: center;
+	text-decoration: none;
+	overflow: inherit;
+	height: 100%;
+	width: 100%;
+	transition: .6s;
+	animation-timing-function: ease-in-out;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 8px;
+}
+li {
+    	list-style: none;
+}
+.nav-item {
+	color: #03999e;
+	font-size: 1.50vw;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	overflow: inherit;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 8px;
+}
+.nav-link{
+	color: #03999e;
+}
+.nav-link:hover{
+	color: #ffffff;
+}
+.splash-screen {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	justify-content: center;
+        align-items: center;
+	display: flex;
+  	background-size: 400% auto;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	position: fixed;
+        background-image: linear-gradient(90deg, #1F3240 5%, #23172B 24%, #1F1211 41%, #3B2C15 64%, #1F3240 94%);
+	z-index: 1000;
+  	animation: splashscreen 5s ease-in-out forwards;
+}
+.animate-text {
+	text-transform: uppercase;
+	font-size: 2.50vw;
+	font-family: "sofachrome", sans-serif;
+	width: 100%;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+  	background-image: linear-gradient(119deg, #1E85D4 5%, #621C94 24%, #802A1F 41%, #FF9D00 64%, #1E85D4 94%);
+  	background-size: auto auto;
+  	background-clip: border-box;
+  	background-size: 200% auto;
+	z-index: 200;
+  	text-fill-color: transparent;
+ 	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	animation: textclip 2s infinite reverse linear;
+  	display: inline-block;
+}
+.wallPaper {
+	position: fixed;
+	background-image: url("https://i.ibb.co/k2mhX8Nb/Eric-Souza-Wallpaper.jpg");
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100vh;
+	z-index: 0;
+	opacity: 0.9;
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: repeat;
+  	background-size: cover;
+}
+.landingContent{
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	max-height: auto;
+	justify-content: center;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+h1{
+	color: #03999e;
+	font-size: 2.50vw;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	text-shadow: 1px 0px 1px #000000;
+	background-color: transparent;
+	width: 100%;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	z-index: 1;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
+}
+h2{
+	color: #03999e;
+	font-size: 2.00vw;
+	text-decoration: none;
+	font-family: Lobster, 'Kristen ITC', Script;
+	text-shadow: 1px 0px 1px #000000;
+	background-color: transparent;
+	width: 100%;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	z-index: 1;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
+}
+h3{
+	font-family: "sofachrome", sans-serif;
+	width: 100%;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+	display: flex;
+}
+p{
+	color: #FFFFFF;
+	font-size: 1.50vw;
+	text-decoration: none;
+	font-family: open sans;
+	text-shadow: 1px 0px 1px #000000;
+	background-color: rgba(181, 181, 181, 0.3);
+	width: 100%;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	z-index: 1;
+	animation: pAnim 1s ease forwards;
+	transition-timing-function: 1s ease ease-in-out; 
+}
+.beePic {
+ 	background: transparent; 
+	opacity: 1.0;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: auto;
+	height: 100%;
+	object-fit: cover;
+	display: flex;
+	position: relative;
+	align-items: center;
+	z-index: 19;
+	overflow: hidden;
+	animation: pAnim 3s ease forwards;
+	animation-timing-function: ease-in-out;
+	transition: 3s;
+}
+.beNook {
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	background: transparent;
+ 	position: inherit;
+	align-self: center;
+	justify-content: space-between;
+	display: flex;
+	opacity: 1;
+	scale: 1;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-decoration: none;
+	animation: pAnim 3s ease forwards;
+	animation-timing-function: ease-in-out;
+	transition: 3s;
+}
+.beNook a {
+	width: 80px;
+	height: auto;
+	text-decoration: none;
+	background: transparent;
+ 	position: inherit;
+	align-self: center;
+	justify-content: space-between;
+	display: flex;
+	opacity: 1;
+	scale: 1;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-decoration: none;
+	animation: pAnim 3s ease forwards;
+	animation-timing-function: ease-in-out;
+	transition: 3s;
+}
+.bkg {
+	background-color: transparent;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	position: inherit;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	z-index: 1;
+	animation: pAnim 3s ease forwards;
+	animation-timing-function: ease-in-out;
+	transition: 3s;
+}
+.photo-block {
+  	position: sticky;
+  	top: 0;
+  	height: 90vh;
+	width: 100%;
+	display: grid;
+  	overflow: hidden;
+}
+.photo-grid {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%) rotate(38deg);
+  	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+}
+.photo {
+  	aspect-ratio: 3 / 4;
+  	width: 13vmax;
+}
+.collage {
+  	height: 225vh;
+  	view-timeline: --collage;
+}
+.photo img {
+  	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+}
+.photo:nth-of-type(9n + 1):nth-of-type(even),
+.photo:nth-of-type(9n + 3):nth-of-type(even),
+.photo:nth-of-type(9n + 5):nth-of-type(even),
+.photo:nth-of-type(9n + 7):nth-of-type(even),
+.photo:nth-of-type(9n + 9):nth-of-type(even) {
+  	--vertical: -100%;
+  	--horizontal: 100%;
+}
+.photo:nth-of-type(9n + 1):nth-of-type(odd),
+.photo:nth-of-type(9n + 3):nth-of-type(odd),
+.photo:nth-of-type(9n + 5):nth-of-type(odd),
+.photo:nth-of-type(9n + 7):nth-of-type(odd),
+.photo:nth-of-type(9n + 9):nth-of-type(odd) {
+  	--vertical: -100%;
+  	--horizontal: -100%;
+}
+.photo:nth-of-type(9n + 2):nth-of-type(even),
+.photo:nth-of-type(9n + 4):nth-of-type(even),
+.photo:nth-of-type(9n + 6):nth-of-type(even),
+.photo:nth-of-type(9n + 8):nth-of-type(even) {
+  	--vertical: 100%;
+  	--horizontal: -100%;
+}
+.photo:nth-of-type(9n + 2):nth-of-type(odd),
+.photo:nth-of-type(9n + 4):nth-of-type(odd),
+.photo:nth-of-type(9n + 6):nth-of-type(odd),
+.photo:nth-of-type(9n + 8):nth-of-type(odd) {
+  	--vertical: 100%;
+  	--horizontal: 100%;
+}
+.photo {
+  	animation-name: travel;
+  	animation-fill-mode: both;
+  	animation-timing-function: linear;
+  	animation-timeline: --collage;
+  	animation-range: entry 100% exit 0%;
+}
+.scroller {
+  	view-timeline: --scroller;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	display: flex;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	z-index: 200;
+	text-align: center;
+}
+.cntr {
+	z-index: 100;
+	background: transparent;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.btnBox {
+	z-index: 15;
+	position: inherit;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 12px;
+	background: transparent;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	color: #03999e;
+	text-decoration: none;
+	display: flex;
+}
+.btnBox a {
+	background: transparent;
+	display: flex;
+	font-size: 25px;
+	color: #03999e;
+	font-family: "sofachrome", sans-serif;
+	text-decoration: none;
+	width: 180px;
+	height: 60px;
+	z-index: 15;
+	justify-content: center;
+	border-radius: 12px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	animation: h1Anim 2.5s ease forwards;
+	animation-timing-function: ease-in-out;
+}
+.btnBox a::before {
+	background: transparent;
+	border-radius: 12px;
+	color: #03999e;
+	text-decoration: none;
+	z-index: -1;
+	transition-timing-function: ease; 
+	width: 180px;
+	height: 0px;
+}
+.btnBox a:hover::before {
+	color: #ffffff;
+	border-radius: 12px;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	text-decoration: none;
+	transition: .6s;
+	width: 180px;
+	height: 0px;
+}
+.btnBox a:hover,
+.btnBox .active{
+	color: #ffffff;
+	text-decoration: none;
+	border-radius: 12px;
+	box-shadow: 0 2px 7px azure;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	transition: .3s;
+	transition-timing-function: ease-out;
+	width: 180px;
+	height: 60px;
+}
+.socLnk {
+	z-index: 1500;
+	position: inherit;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 50%;
+	background: transparent;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	color: #03999e;
+	text-decoration: none;
+	display: flex;
+}
+.socLnk a {
+	width: 80px;
+	height: 80px;
+	align: center;
+	position: inherit;
+	background: transparent;	
+	display: flex;
+	opacity: 0;
+	color: #03999e;
+	text-decoration: none;
+	justify-content: center;
+	z-index: 1500;
+	border-radius: 50%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	animation: h1Anim 1.975s ease forwards;
+	animation-delay: calc(.085s * var(--i)); 
+	animation-timing-function: easy-ease;
+}
+.socLnk a:nth-child(1 2 3) {
+	background: transparent;
+	border-radius: 50%;
+	text-decoration: none;
+	justify-content: center;
+	display: flex;
+}
+.socLnk a::before {
+	background: transparent;
+	border-radius: 50%;
+	color: #03999e;
+	text-decoration: none;
+	z-index: -1;
+	transition-timing-function: ease; 
+	display: flex;
+	opacity: 0;
+	align-self: center;
+	width: 80px;
+	height: 0px;
+}
+.socLnk a:hover::before {    
+	color: #ffffff;
+	border-radius: 50%;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	text-decoration: none;
+	display: flex;
+	transition: .6s;
+	width: 80px;
+	height: 0px;
+}
+.socLnk a:hover,
+.socLnk .active{
+	color: #ffffff;
+	text-decoration: none;
+	border-radius: 50%;
+	box-shadow: 0 2px 7px azure;
+	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
+	display: flex;
+	transition: .6s;
+	transition-timing-function: ease-out;
+	width: 80px;
+	height: 80px;
+	z-index: 100;
+}
+.obJects{
+	background-color: transparent;
+	float: center;
+	justify-content: center;
+	display: flex;
+	width: 100%;
+	height: auto;
+	position: inherit;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	z-index: 999;
+}
+.picFrame {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	width: 50%;
+	height: 50%;
+	text-decoration: none;
+	flex-direction: column;
+	justify-content: center;
+	display: flex;
+	position: inherit;
+	background-color: transparent;
+	animation: pAnim 3s ease forwards;
+	animation-timing-function: ease-in-out;
+	transition: 3s;
+}
+/*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
+/*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
+/*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
+@media (max-width: 767px) {		
+.header {
+	width: 100%;
+	max-width: 100%;
+	height: 12%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	top: 0;
+        z-index: 30;
+	position: sticky;
+	scale: 1;
+	display: flex;
+	flex-direction: column;
 	background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
 	text-decoration: none;
 	overflow: inherit;
@@ -523,6 +1909,69 @@ li {
 .nav-link:hover{
 	color: #ffffff;
 }
+.splash-screen {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	justify-content: center;
+        align-items: center;
+	display: flex;
+  	background-size: 400% auto;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	position: fixed;
+        background-image: linear-gradient(90deg, #1F3240 5%, #23172B 24%, #1F1211 41%, #3B2C15 64%, #1F3240 94%);
+	z-index: 1000;
+  	animation: splashscreen 5s ease-in-out forwards;
+}
+.animate-text {
+	text-transform: uppercase;
+	font-size: 2.50vw;
+	font-family: "sofachrome", sans-serif;
+	width: 100%;
+	height: auto;
+	position: inherit;
+	justify-content: center;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+  	background-image: linear-gradient(119deg, #1E85D4 5%, #621C94 24%, #802A1F 41%, #FF9D00 64%, #1E85D4 94%);
+  	background-size: auto auto;
+  	background-clip: border-box;
+  	background-size: 200% auto;
+	z-index: 200;
+  	text-fill-color: transparent;
+ 	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	animation: textclip 2s infinite reverse linear;
+  	display: inline-block;
+}
+.wallPaper {
+	position: fixed;
+	background-image: url("https://i.ibb.co/k2mhX8Nb/Eric-Souza-Wallpaper.jpg");
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100vh;
+	z-index: 0;
+	opacity: 0.9;
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: repeat;
+  	background-size: cover;
+}
 .landingContent{
 	background-color: transparent;
 	width: 100%;
@@ -540,7 +1989,7 @@ li {
 }
 h1{
 	color: #03999e;
-	font-size: 2.75vw;
+	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -564,7 +2013,7 @@ h1{
 }
 h2{
 	color: #03999e;
-	font-size: 1.75vw;
+	font-size: 1.50vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -596,7 +2045,7 @@ h3{
 }
 p{
 	color: #FFFFFF;
-	font-size: 1.75vw;
+	font-size: 1.25vw;
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
@@ -617,188 +2066,6 @@ p{
 	z-index: 1;
 	animation: pAnim 1s ease forwards;
 	transition-timing-function: 1s ease ease-in-out; 
-}
-.cntr {
-	z-index: 100;
-	background: transparent;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	justify-content: space-between;
-	width: 100%;
-	height: auto;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-.btnBox {
-	z-index: 15;
-	position: inherit;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-radius: 12px;
-	background: transparent;
-	width: 100%;
-	height: auto;
-	justify-content: center;
-	color: #03999e;
-	text-decoration: none;
-	display: flex;
-}
-.btnBox a {
-	background: transparent;
-	display: flex;
-	font-size: 25px;
-	color: #03999e;
-	font-family: "sofachrome", sans-serif;
-	text-decoration: none;
-	width: 180px;
-	height: 60px;
-	z-index: 15;
-	justify-content: center;
-	border-radius: 12px;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	animation: h1Anim 2.5s ease forwards;
-	animation-timing-function: ease-in-out;
-}
-.btnBox a::before {
-	background: transparent;
-	border-radius: 12px;
-	color: #03999e;
-	text-decoration: none;
-	z-index: -1;
-	transition-timing-function: ease; 
-	width: 180px;
-	height: 0px;
-}
-.btnBox a:hover::before {
-	color: #ffffff;
-	border-radius: 12px;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	text-decoration: none;
-	transition: .6s;
-	width: 180px;
-	height: 0px;
-}
-.btnBox a:hover,
-.btnBox .active{
-	color: #ffffff;
-	text-decoration: none;
-	border-radius: 12px;
-	box-shadow: 0 2px 7px azure;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	transition: .3s;
-	transition-timing-function: ease-out;
-	width: 180px;
-	height: 60px;
-}
-.socLnk {
-	z-index: 1500;
-	position: inherit;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-radius: 50%;
-	background: transparent;
-	width: 100%;
-	height: auto;
-	justify-content: center;
-	color: #03999e;
-	text-decoration: none;
-	display: flex;
-}
-.socLnk a {
-	width: 80px;
-	height: 80px;
-	align: center;
-	position: inherit;
-	background: transparent;	
-	display: flex;
-	opacity: 0;
-	color: #03999e;
-	text-decoration: none;
-	justify-content: center;
-	z-index: 1500;
-	border-radius: 50%;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	animation: h1Anim 1.975s ease forwards;
-	animation-delay: calc(.085s * var(--i)); 
-	animation-timing-function: easy-ease;
-}
-.socLnk a:nth-child(1 2 3) {
-	background: transparent;
-	border-radius: 50%;
-	text-decoration: none;
-	justify-content: center;
-	display: flex;
-}
-.socLnk a::before {
-	background: transparent;
-	border-radius: 50%;
-	color: #03999e;
-	text-decoration: none;
-	z-index: -1;
-	transition-timing-function: ease; 
-	display: flex;
-	opacity: 0;
-	align-self: center;
-	width: 80px;
-	height: 0px;
-}
-.socLnk a:hover::before {    
-	color: #ffffff;
-	border-radius: 50%;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	text-decoration: none;
-	display: flex;
-	transition: .6s;
-	width: 80px;
-	height: 0px;
-}
-.socLnk a:hover,
-.socLnk .active{
-	color: #ffffff;
-	text-decoration: none;
-	border-radius: 50%;
-	box-shadow: 0 2px 7px azure;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	display: flex;
-	transition: .6s;
-	transition-timing-function: ease-out;
-	width: 80px;
-	height: 80px;
-	z-index: 100;
 }
 .beePic {
  	background: transparent; 
@@ -848,7 +2115,7 @@ p{
 	transition: 3s;
 }
 .beNook a {
-	width: 200px;
+	width: 100%;
 	height: auto;
 	text-decoration: none;
 	background: transparent;
@@ -889,113 +2156,6 @@ p{
 	animation: pAnim 3s ease forwards;
 	animation-timing-function: ease-in-out;
 	transition: 3s;
-}
-.obJects{
-	background-color: transparent;
-	float: center;
-	justify-content: center;
-	display: flex;
-	width: 100%;
-	height: auto;
-	position: inherit;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	z-index: 999;
-}
-.picFrame {
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 2px;
-	width: 50%;
-	height: 50%;
-	text-decoration: none;
-	flex-direction: column;
-	justify-content: center;
-	display: flex;
-	position: inherit;
-	background-color: transparent;
-	animation: pAnim 3s ease forwards;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
-}
-}
-/*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
-/*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
-/*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
-@media (min-width: 768px) and (max-width: 992px) {			
-.splash-screen {
-	width: 100%;
-	height: 100vh;
-	text-align: center;
-	justify-content: center;
-        align-items: center;
-	display: flex;
-  	background-size: 400% auto;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	position: fixed;
-        background-image: linear-gradient(90deg, #1F3240 5%, #23172B 24%, #1F1211 41%, #3B2C15 64%, #1F3240 94%);
-	z-index: 1000;
-  	animation: splashscreen 5s ease-in-out forwards;
-}
-.animate-text {
-	text-transform: uppercase;
-	font-size: 2.00vw;
-	font-family: "sofachrome", sans-serif;
-	width: 100%;
-	height: auto;
-	position: inherit;
-	justify-content: center;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-  	background-image: linear-gradient(119deg, #1E85D4 5%, #621C94 24%, #802A1F 41%, #FF9D00 64%, #1E85D4 94%);
-  	background-size: auto auto;
-  	background-clip: border-box;
-  	background-size: 200% auto;
-	z-index: 200;
-  	text-fill-color: transparent;
- 	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-  	animation: textclip 2s infinite reverse linear;
-  	display: inline-block;
-}
-.wallPaper {
-	position: fixed;
-	background-image: url("https://i.ibb.co/k2mhX8Nb/Eric-Souza-Wallpaper.jpg");
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-	width: 100%;
-	height: 100vh;
-	z-index: 0;
-	opacity: 0.9;
-	background-attachment: fixed;
-  	background-position: center;
-  	background-repeat: repeat;
-  	background-size: cover;
 }
 .photo-block {
   	position: sticky;
@@ -1080,312 +2240,6 @@ p{
 	z-index: 200;
 	text-align: center;
 }
-.header {
-	width: 100%;
-	max-width: 100%;
-	height: 12%;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	top: 0;
-        z-index: 30;
-	position: sticky;
-	scale: 1;
-	display: flex;
-	flex-direction: row;
-	background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
-	text-decoration: none;
-	overflow: inherit;
-	justify-items: center;
-}
-.nav-logo {
-	width: 40px;
-	height: 40px;
-	display: flex;
-	background-size: cover;
-	text-decoration: none;
-	position: inherit;
-	justify-content: flex-start;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	background-color: transparent; 
-	animation: logoAnim 2.5s; 
-}
-.nav-logo a {
-	display: flex;
-	text-decoration: none;
-	align-self: center;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	background-color: transparent;
-	animation: logoAnim 2.5s; 
-}
-.nav-logo :hover,
-.nav-logo .active {
-	transition: .3s;
-	transition-timing-function: ease;
-	background: transparent;
-	overflow: visible;
-	opacity: .3;
-}
-.navBar {
-    	width: 100%;
-	height: auto;
-	text-decoration: none;
-	background: transparent;
- 	display: flex-end;
- 	position: inherit;
-	align-self: center;
-	justify-content: space-between;
-	overflow: inherit;
- 	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	border-radius: 8px;
-}
-.navBar a {
-    	width: 100px;
-	height: auto;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	background: transparent;
-	border-radius: 8px;
-	color: #03999e;
-	font-size: 1.50vw;
-	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
-	align-content: center;
-	float: center;
-	display: flex;
-	opacity: 0;
-	overflow: inherit;
-	animation: menuAnim 2.5s ease forwards;
-	animation-delay: calc(.085s * var(--i)); 
-	animation-timing-function: easy-ease;
-}
-.navBar a::before {
-	background: transparent;
-	border-radius: 8px;
-	text-decoration: none;
-	display: flex;
-	width: 100%;
-	height: 0%;
-	color: #ffffff;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	transition: .6s;
-	opacity: 0;
-	animation-timing-function: ease-in-out;
-}
-.navBar a:hover::before {
-	text-decoration: none;
-	color: #ffffff;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	border-radius: 8px;
-	display: flex;
-}
-.navBar a:hover,
-.navBar .active{
-	color: #ffffff;
-	text-decoration: none;
-	transition: .6s;
-	animation-timing-function: ease-in-out;
-	border-radius: 8px;
-	border-color: #ffffff;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	box-shadow: 0 2px 7px azure;
-}
-.nav-menu {
-	background-color: transparent;
-	float: center;
-	justify-self: center;
-	text-decoration: none;
-	display: flex;
-	overflow: inherit;
-	width: auto;
-	height: auto;
-	max-height: 100%;
-	max-width: 100%;
-	transition: .6s;
-	animation-timing-function: ease-in-out;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-radius: 8px;
-}
-.nav-menu a {
-	display: flex;
-	background-color: transparent;
-	float: center;
-	justify-self: center;
-	overflow: inherit;
-	text-decoration: none;
-	height: 100%;
-	width: 100%;
-	transition: .6s;
-	animation-timing-function: ease-in-out;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-radius: 8px;
-}
-li {
-    	list-style: none;
-}
-.nav-item {
-	color: #03999e;
-	font-size: 1.50vw;
-	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
-	overflow: inherit;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-radius: 8px;
-}
-.nav-link {
-	color: #03999e;
-}
-
-.nav-link:hover {
-	color: #ffffff;
-}
-.landingContent{
-	background-color: transparent;
-	width: 100%;
-	height: auto;
-	justify-content: center;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
-h1{
-	color: #03999e;
-	font-size: 2.25vw;
-	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
-	text-shadow: 1px 0px 1px #000000;
-	background-color: transparent;
-	width: 100%;
-	height: auto;
-	position: inherit;
-	justify-content: center;
-	display: flex;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	z-index: 1;
-	animation: pAnim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
-}
-h2{
-	color: #03999e;
-	font-size: 1.25vw;
-	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
-	text-shadow: 1px 0px 1px #000000;
-	background-color: transparent;
-	width: 100%;
-	height: auto;
-	position: inherit;
-	justify-content: center;
-	display: flex;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	z-index: 1;
-	animation: pAnim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
-}
-h3{
-	font-family: "sofachrome", sans-serif;
-	width: 100%;
-	height: auto;
-	position: inherit;
-	justify-content: center;
-	display: flex;
-}
-p{
-	color: #FFFFFF;
-	font-size: 1.75vw;
-	text-decoration: none;
-	font-family: open sans;
-	text-shadow: 1px 0px 1px #000000;
-	background-color: rgba(181, 181, 181, 0.3);
-	width: 100%;
-	height: auto;
-	position: inherit;
-	justify-content: center;
-	display: flex;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	z-index: 1;
-	animation: pAnim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
-}
 .cntr {
 	z-index: 100;
 	background: transparent;
@@ -1567,866 +2421,6 @@ p{
 	width: 80px;
 	height: 80px;
 	z-index: 100;
-}
-.beePic {
- 	background: transparent; 
-	opacity: 1.0;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	width: auto;
-	height: 100%;
-	object-fit: cover;
-	display: flex;
-	position: relative;
-	align-items: center;
-	z-index: 19;
-	overflow: hidden;
-	animation: pAnim 3s ease forwards;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
-}
-.beNook {
-	width: 100%;
-	height: 100%;
-	text-decoration: none;
-	background: transparent;
- 	position: inherit;
-	align-self: center;
-	justify-content: space-between;
-	display: flex;
-	opacity: 1;
-	scale: 1;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	text-decoration: none;
-	animation: pAnim 3s ease forwards;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
-}
-.beNook a {
-	width: 175px;
-	height: auto;
-	text-decoration: none;
-	background: transparent;
- 	position: inherit;
-	align-self: center;
-	justify-content: space-between;
-	display: flex;
-	opacity: 1;
-	scale: 1;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	text-decoration: none;
-	animation: pAnim 3s ease forwards;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
-}
-.bkg {
-	background-color: transparent;
-	justify-content: center;
-	width: 100%;
-	height: auto;
-	position: inherit;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	z-index: 1;
-	animation: pAnim 3s ease forwards;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
-}
-.obJects{
-	background-color: transparent;
-	float: center;
-	justify-content: center;
-	display: flex;
-	width: 100%;
-	height: auto;
-	position: inherit;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	z-index: 999;
-}
-.picFrame {
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 2px;
-	width: 50%;
-	height: 50%;
-	text-decoration: none;
-	flex-direction: column;
-	justify-content: center;
-	display: flex;
-	position: inherit;
-	background-color: transparent;
-	animation: pAnim 3s ease forwards;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
-}
-}
-/*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
-/*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
-/*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
-@media (max-width: 767px) {		
-.splash-screen {
-	width: 100%;
-	height: 100vh;
-	text-align: center;
-	justify-content: center;
-        align-items: center;
-	display: flex;
-  	background-size: 400% auto;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	position: fixed;
-        background-image: linear-gradient(90deg, #1F3240 5%, #23172B 24%, #1F1211 41%, #3B2C15 64%, #1F3240 94%);
-	z-index: 1000;
-  	animation: splashscreen 5s ease-in-out forwards;
-}
-.animate-text {
-	text-transform: uppercase;
-	font-size: 1.50vw;
-	font-family: "sofachrome", sans-serif;
-	width: 100%;
-	height: auto;
-	position: inherit;
-	justify-content: center;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-  	background-image: linear-gradient(119deg, #1E85D4 5%, #621C94 24%, #802A1F 41%, #FF9D00 64%, #1E85D4 94%);
-  	background-size: auto auto;
-  	background-clip: border-box;
-  	background-size: 200% auto;
-	z-index: 200;
-  	text-fill-color: transparent;
- 	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-  	animation: textclip 2s infinite reverse linear;
-  	display: inline-block;
-}
-.wallPaper {
-	position: fixed;
-	background-image: url("https://i.ibb.co/k2mhX8Nb/Eric-Souza-Wallpaper.jpg");
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-	width: 100%;
-	height: 100vh;
-	z-index: 0;
-	opacity: 0.9;
-	background-attachment: fixed;
-  	background-position: center;
-  	background-repeat: repeat;
-  	background-size: cover;
-}
-.photo-block {
-  	position: sticky;
-  	top: 0;
-  	height: 90vh;
-	width: 100%;
-	display: grid;
-  	overflow: hidden;
-}
-.photo-grid {
-  	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%) rotate(38deg);
-  	display: grid;
-	grid-template-columns: repeat(9, 1fr);
-}
-.photo {
-  	aspect-ratio: 3 / 4;
-  	width: 13vmax;
-}
-.collage {
-  	height: 225vh;
-  	view-timeline: --collage;
-}
-.photo img {
-  	width: 100%;
-  	height: 100%;
-  	object-fit: cover;
-}
-.photo:nth-of-type(9n + 1):nth-of-type(even),
-.photo:nth-of-type(9n + 3):nth-of-type(even),
-.photo:nth-of-type(9n + 5):nth-of-type(even),
-.photo:nth-of-type(9n + 7):nth-of-type(even),
-.photo:nth-of-type(9n + 9):nth-of-type(even) {
-  	--vertical: -100%;
-  	--horizontal: 100%;
-}
-.photo:nth-of-type(9n + 1):nth-of-type(odd),
-.photo:nth-of-type(9n + 3):nth-of-type(odd),
-.photo:nth-of-type(9n + 5):nth-of-type(odd),
-.photo:nth-of-type(9n + 7):nth-of-type(odd),
-.photo:nth-of-type(9n + 9):nth-of-type(odd) {
-  	--vertical: -100%;
-  	--horizontal: -100%;
-}
-.photo:nth-of-type(9n + 2):nth-of-type(even),
-.photo:nth-of-type(9n + 4):nth-of-type(even),
-.photo:nth-of-type(9n + 6):nth-of-type(even),
-.photo:nth-of-type(9n + 8):nth-of-type(even) {
-  	--vertical: 100%;
-  	--horizontal: -100%;
-}
-.photo:nth-of-type(9n + 2):nth-of-type(odd),
-.photo:nth-of-type(9n + 4):nth-of-type(odd),
-.photo:nth-of-type(9n + 6):nth-of-type(odd),
-.photo:nth-of-type(9n + 8):nth-of-type(odd) {
-  	--vertical: 100%;
-  	--horizontal: 100%;
-}
-.photo {
-  	animation-name: travel;
-  	animation-fill-mode: both;
-  	animation-timing-function: linear;
-  	animation-timeline: --collage;
-  	animation-range: entry 100% exit 0%;
-}
-.scroller {
-  	view-timeline: --scroller;
-	width: 100%;
-	height: auto;
-	justify-content: center;
-	display: flex;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	z-index: 200;
-	text-align: center;
-}
-.header {
-	width: 100%;
-	max-width: 100%;
-	height: 20%;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	top: 0;
-        z-index: 30;
-	position: sticky;
-	scale: 1;
-	display: flex;
-	flex-direction: column;
-	background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
-	text-decoration: none;
-	overflow: inherit;
-	justify-items: center;
-}
-.nav-logo {
-	width: 70px;
-	height: 70px;
-	display: flex;
-	text-decoration: none;
- 	position: inherit;
-	align-self: center;
-	justify-content: space-around;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	background-color: transparent; 
-	animation: logoAnim 2.5s; 
-}
-.nav-logo a {
-	width: 100%;
-	height: 100%;
-	align-self: center;
-	justify-content: space-between;
-	text-decoration: none;
-	display: flex;
-	position: inherit;
-	opacity: 1;
-	scale: 1;
-	margin-left: 1px;
-	margin-right: 1px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	background-color: transparent; 
-	animation: logoAnim 2.5s; 
-}
-.nav-logo :hover,
-.nav-logo .active {
-	transition: .3s;
-	transition-timing-function: ease;
-	background: transparent;
-	overflow: visible;
-	opacity: .3;
-}
-.navBar {
-	width: 100px;
-	height: 100px;
-	text-decoration: none;
-	background: transparent;
- 	display: flex;
- 	position: inherit;
-	align-self: center;
-	justify-content: space-between;
-	float: center;
- 	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	border-radius: 8px;
-}
-.navBar a {
-  	width: 100%;
-	height: 100%;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	background: transparent;
-	border-radius: 8px;
-	color: #03999e;
-	font-size: 2.50vw;
-	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
- 	position: inherit;
-	align-content: center;
-	justify-content: space-around;
-	display: flex;
-	opacity: 0;
-	animation: menuAnim 2.5s ease forwards;
-	animation-delay: calc(.085s * var(--i)); 
-	animation-timing-function: easy-ease;
-}
-.navBar a::before {
-	background: transparent;
-	border-radius: 8px;
-	text-decoration: none;
-	display: flex;
-	color: #ffffff;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	transition: .6s;
-	opacity: 0;
-	animation-timing-function: ease-in-out;
-}
-.navBar a:hover::before {
-	text-decoration: none;
-	color: #ffffff;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	border-radius: 8px;
-	display: flex;
-}
-.navBar a:hover,
-.navBar .active{
-	color: #ffffff;
-	text-decoration: none;
-	transition: .6s;
-	animation-timing-function: ease-in-out;
-	border-radius: 8px;
-	border-color: #ffffff;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	box-shadow: 0 2px 7px azure;
-}
-.nav-menu {
-	background-color: transparent;
-	align-content: center;
-	justify-content: space-around;
-	text-decoration: none;
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	width: 100%;
-	transition: .6s;
-	animation-timing-function: ease-in-out;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	border-radius: 8px;
-}
-.nav-menu a {
-	background-color: transparent;
-	align-content: center;
-	justify-content: space-around;
-	text-decoration: none;
-	display: flex;
-	width: auto;
-	height: auto;
-	max-height: 100%;
-	max-width: 100%;
-	transition: .6s;
-	animation-timing-function: ease-in-out;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	border-radius: 8px;
-}
-li {
-    	list-style: none;
-}
-.nav-item {
-	align-content: center;
-	justify-content: space-around;
-	text-decoration: none;
-	display: flex;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	border-radius: 8px;
-}
-.nav-link {
-	color: #03999e;
-}
-
-.nav-link:hover {
-	color: #ffffff;
-}
-.landingContent{
-	background-color: transparent;
-	width: 100%;
-	height: auto;
-	justify-content: center;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
-h1{
-	color: #03999e;
-	font-size: 2.50vw;
-	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
-	text-shadow: 1px 0px 1px #000000;
-	background-color: transparent;
-	width: 100%;
-	height: auto;
-	position: inherit;
-	justify-content: center;
-	display: flex;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	z-index: 1;
-	animation: pAnim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
-}
-h2{
-	color: #03999e;
-	font-size: 1.25vw;
-	text-decoration: none;
-	font-family: Lobster, 'Kristen ITC', Script;
-	text-shadow: 1px 0px 1px #000000;
-	background-color: transparent;
-	width: 100%;
-	height: auto;
-	position: inherit;
-	justify-content: center;
-	display: flex;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	z-index: 1;
-	animation: pAnim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
-}
-h3{
-	font-family: "sofachrome", sans-serif;
-	width: 100%;
-	height: auto;
-	position: inherit;
-	justify-content: center;
-	display: flex;
-}
-p{
-	color: #FFFFFF;
-	font-size: 1.75vw;
-	text-decoration: none;
-	font-family: open sans;
-	text-shadow: 1px 0px 1px #000000;
-	background-color: rgba(181, 181, 181, 0.3);
-	width: 100%;
-	height: auto;
-	position: inherit;
-	justify-content: center;
-	display: flex;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	z-index: 1;
-	animation: pAnim 1s ease forwards;
-	transition-timing-function: 1s ease ease-in-out; 
-}
-.cntr {
-	z-index: 100;
-	background: transparent;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	justify-content: space-between;
-	width: 100%;
-	height: auto;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-.btnBox {
-	z-index: 15;
-	position: inherit;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-radius: 12px;
-	background: transparent;
-	width: 100%;
-	height: auto;
-	justify-content: center;
-	color: #03999e;
-	text-decoration: none;
-	display: flex;
-}
-.btnBox a {
-	background: transparent;
-	display: flex;
-	font-size: 25px;
-	color: #03999e;
-	font-family: "sofachrome", sans-serif;
-	text-decoration: none;
-	width: 180px;
-	height: 60px;
-	z-index: 15;
-	justify-content: center;
-	border-radius: 12px;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	animation: h1Anim 2.5s ease forwards;
-	animation-timing-function: ease-in-out;
-}
-.btnBox a::before {
-	background: transparent;
-	border-radius: 12px;
-	color: #03999e;
-	text-decoration: none;
-	z-index: -1;
-	transition-timing-function: ease; 
-	width: 180px;
-	height: 0px;
-}
-.btnBox a:hover::before {
-	color: #ffffff;
-	border-radius: 12px;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	text-decoration: none;
-	transition: .6s;
-	width: 180px;
-	height: 0px;
-}
-.btnBox a:hover,
-.btnBox .active{
-	color: #ffffff;
-	text-decoration: none;
-	border-radius: 12px;
-	box-shadow: 0 2px 7px azure;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	transition: .3s;
-	transition-timing-function: ease-out;
-	width: 180px;
-	height: 60px;
-}
-.socLnk {
-	z-index: 1500;
-	position: inherit;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-radius: 50%;
-	background: transparent;
-	width: 100%;
-	height: 100%;
-	justify-content: center;
-	color: #03999e;
-	text-decoration: none;
-	display: flex;
-}
-.socLnk a {
-	width: 80px;
-	height: 80px;
-	align: center;
-	position: inherit;
-	background: transparent;	
-	display: flex;
-	opacity: 0;
-	color: #03999e;
-	text-decoration: none;
-	justify-content: center;
-	z-index: 1500;
-	border-radius: 50%;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	animation: h1Anim 1.975s ease forwards;
-	animation-delay: calc(.085s * var(--i)); 
-	animation-timing-function: easy-ease;
-}
-.socLnk a:nth-child(1 2 3) {
-	background: transparent;
-	border-radius: 50%;
-	text-decoration: none;
-	justify-content: center;
-	display: flex;
-}
-.socLnk a::before {
-	background: transparent;
-	border-radius: 50%;
-	color: #03999e;
-	text-decoration: none;
-	z-index: -1;
-	transition-timing-function: ease; 
-	display: flex;
-	opacity: 0;
-	align-self: center;
-	width: 80px;
-	height: 0px;
-}
-.socLnk a:hover::before {    
-	color: #ffffff;
-	border-radius: 50%;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	text-decoration: none;
-	display: flex;
-	transition: .6s;
-	width: 80px;
-	height: 0px;
-}
-.socLnk a:hover,
-.socLnk .active{
-	color: #ffffff;
-	text-decoration: none;
-	border-radius: 50%;
-	box-shadow: 0 2px 7px azure;
-	background: linear-gradient(0deg,transparent 15%,#ffffff 240%);
-	display: flex;
-	transition: .6s;
-	transition-timing-function: ease-out;
-	width: 80px;
-	height: 80px;
-	z-index: 100;
-}
-.beePic {
- 	background: transparent; 
-	opacity: 1.0;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	width: auto;
-	height: 100%;
-	object-fit: cover;
-	display: flex;
-	position: relative;
-	align-items: center;
-	z-index: 19;
-	overflow: hidden;
-	animation: pAnim 3s ease forwards;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
-}
-.beNook {
-	max-width: 100%;
-	max-height: 100%;
-	text-decoration: none;
-	background: transparent;
- 	position: inherit;
-	align-self: center;
-	justify-content: space-between;
-	display: flex;
-	opacity: 1;
-	scale: 1;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	text-decoration: none;
-	animation: pAnim 3s ease forwards;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
-}
-.beNook a {
-	width: 150px;
-	height: auto;
-	text-decoration: none;
-	background: transparent;
- 	position: inherit;
-	align-self: center;
-	justify-content: space-between;
-	display: flex;
-	opacity: 1;
-	scale: 1;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	text-decoration: none;
-	animation: pAnim 3s ease forwards;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
-}
-.bkg {
-	background-color: transparent;
-	justify-content: center;
-	width: 100%;
-	height: auto;
-	position: inherit;
-   	margin-left: 0px;
-	margin-right: 0px;  
-	margin-top: 0px;
-  	margin-bottom: 0px; 
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	z-index: 1;
-	animation: pAnim 3s ease forwards;
-	animation-timing-function: ease-in-out;
-	transition: 3s;
 }
 .obJects{
 	background-color: transparent;
