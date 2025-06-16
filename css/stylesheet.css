@@ -192,7 +192,8 @@ i {
 }
 .nav-logo {
 	display: flex;
-	background-size: 75px auto;
+	width: 75px;
+	height: auto;
 	text-decoration: none;
 	position: inherit;
 	justify-content: flex-start;
@@ -394,7 +395,7 @@ li {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	position: fixed;
-        background-image: linear-gradient(90deg, #1F3240 5%, #23172B 24%, #1F1211 41%, #3B2C15 64%, #1F3240 94%);
+        background-image: linear-gradient(90deg, #1F3240 5%, #6E552F 24%, #452926 41%, #392347 64%, #1F3240 94%);
 	z-index: 1000;
   	animation: splashscreen 5s ease-in-out forwards;
 }
@@ -958,7 +959,8 @@ p{
 }
 .nav-logo {
 	display: flex;
-	background-size: 65px auto
+	width: 75px;
+	height: auto;
 	text-decoration: none;
 	position: inherit;
 	justify-content: flex-start;
@@ -1160,7 +1162,7 @@ li {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	position: fixed;
-        background-image: linear-gradient(90deg, #1F3240 5%, #23172B 24%, #1F1211 41%, #3B2C15 64%, #1F3240 94%);
+        background-image: linear-gradient(90deg, #1F3240 5%, #6E552F 24%, #452926 41%, #392347 64%, #1F3240 94%);
 	z-index: 1000;
   	animation: splashscreen 5s ease-in-out forwards;
 }
@@ -1724,7 +1726,8 @@ p{
 }
 .nav-logo {
 	display: flex;
-	background-size: 75px 75px;
+	width: 75px;
+	height: auto;
 	text-decoration: none;
 	position: inherit;
 	justify-content: flex-start;
@@ -1926,7 +1929,7 @@ li {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	position: fixed;
-        background-image: linear-gradient(90deg, #1F3240 5%, #23172B 24%, #1F1211 41%, #3B2C15 64%, #1F3240 94%);
+        background-image: linear-gradient(90deg, #1F3240 5%, #6E552F 24%, #452926 41%, #392347 64%, #1F3240 94%);
 	z-index: 1000;
   	animation: splashscreen 5s ease-in-out forwards;
 }
