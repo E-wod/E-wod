@@ -734,7 +734,7 @@ p{
 }
 .btnBox {
 	z-index: 15;
-	position: sticky;
+	position: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -808,7 +808,7 @@ p{
 }
 .socLnk {
 	z-index: 15;
-	position: sticky;
+	position: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1505,7 +1505,7 @@ p{
 }
 .btnBox {
 	z-index: 15;
-	position: sticky;
+	position: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1579,7 +1579,7 @@ p{
 }
 .socLnk {
 	z-index: 15;
-	position: sticky;
+	position: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -2276,7 +2276,7 @@ p{
 }
 .btnBox {
 	z-index: 15;
-	position: sticky;
+	position: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -2350,7 +2350,7 @@ p{
 }
 .socLnk {
 	z-index: 15;
-	position: sticky;
+	position: inherit;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
