@@ -192,12 +192,11 @@ i {
 }
 .nav-logo {
 	max-width: 100px;
-	height: auto;
+	height: 100px;
 	object-fit: cover;
 	display: flex;
 	text-decoration: none;
 	position: inherit;
-	justify-content: flex-start;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -963,12 +962,11 @@ p{
 }
 .nav-logo {
 	max-width: 100px;
-	height: auto;
+	height: 100px;
 	object-fit: cover;
 	display: flex;
 	text-decoration: none;
 	position: inherit;
-	justify-content: flex-start;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -1734,12 +1732,11 @@ p{
 }
 .nav-logo {
 	max-width: 100px;
-	height: auto;
+	height: 100px;
 	object-fit: cover;
 	display: flex;
 	text-decoration: none;
 	position: inherit;
-	justify-content: flex-start;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
