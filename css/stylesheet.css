@@ -191,9 +191,8 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	max-width: 100px;
+	width: 100px;
 	height: 100px;
-	object-fit: cover;
 	display: flex;
 	text-decoration: none;
 	position: inherit;
@@ -211,7 +210,6 @@ i {
 .nav-logo a {
 	width: 100px;
 	height: 100px;
-	object-fit: cover;
 	display: flex;
 	text-decoration: none;
 	align-self: center;
@@ -961,9 +959,8 @@ p{
 	justify-items: center;
 }
 .nav-logo {
-	max-width: 100px;
+	width: 100px;
 	height: 100px;
-	object-fit: cover;
 	display: flex;
 	text-decoration: none;
 	position: inherit;
@@ -981,7 +978,6 @@ p{
 .nav-logo a {
 	width: 100px;
 	height: 100px;
-	object-fit: cover;
 	display: flex;
 	text-decoration: none;
 	align-self: center;
@@ -1731,9 +1727,8 @@ p{
 	justify-items: center;
 }
 .nav-logo {
-	max-width: 100px;
+	width: 100px;
 	height: 100px;
-	object-fit: cover;
 	display: flex;
 	text-decoration: none;
 	position: inherit;
@@ -1751,7 +1746,6 @@ p{
 .nav-logo a {
 	width: 100px;
 	height: 100px;
-	object-fit: cover;
 	display: flex;
 	text-decoration: none;
 	align-self: center;
