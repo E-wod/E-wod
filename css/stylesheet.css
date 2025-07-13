@@ -429,7 +429,7 @@ li {
 }
 .wallPaper {
 	position: fixed;
-	background-image: url("https://imagizer.imageshack.com/img923/6092/wkWOS8.jpg");
+/* 	background-image: url("https://imagizer.imageshack.com/img923/6092/wkWOS8.jpg"); */
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
@@ -437,6 +437,14 @@ li {
 	height: 100vh;
 	z-index: 0;
 	opacity: 0.9;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	background-attachment: fixed;
   	background-position: center;
   	background-repeat: repeat;
@@ -1197,7 +1205,7 @@ li {
 }
 .wallPaper {
 	position: fixed;
-	background-image: url("https://imagizer.imageshack.com/img923/6092/wkWOS8.jpg");
+/* 	background-image: url("https://imagizer.imageshack.com/img923/6092/wkWOS8.jpg"); */
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
@@ -1205,6 +1213,14 @@ li {
 	height: 100vh;
 	z-index: 0;
 	opacity: 0.9;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	background-attachment: fixed;
   	background-position: center;
   	background-repeat: repeat;
@@ -1965,7 +1981,7 @@ li {
 }
 .wallPaper {
 	position: fixed;
-	background-image: url("https://imagizer.imageshack.com/img923/6092/wkWOS8.jpg");
+/* 	background-image: url("https://imagizer.imageshack.com/img923/6092/wkWOS8.jpg"); */
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
@@ -1973,6 +1989,14 @@ li {
 	height: 100vh;
 	z-index: 0;
 	opacity: 0.9;
+   	margin-left: 0px;
+	margin-right: 0px;  
+	margin-top: 0px;
+  	margin-bottom: 0px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	background-attachment: fixed;
   	background-position: center;
   	background-repeat: repeat;
