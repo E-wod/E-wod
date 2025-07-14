@@ -191,8 +191,8 @@ i {
 	justify-items: center;
 }
 .nav-logo {
-	width: auto;
-	height: 100%;
+	width: 90px;
+	height: 90px;
 	display: flex;
 	text-decoration: none;
 	position: inherit;
@@ -208,9 +208,7 @@ i {
 	animation: logoAnim 2.5s; 
 }
 .nav-logo a {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
+	object-fit: cover;
 	text-decoration: none;
 	align-self: center;
 	margin-left: 0px;
@@ -967,8 +965,8 @@ p{
 	justify-items: center;
 }
 .nav-logo {
-	width: auto;
-	height: 100%;
+	width: 90px;
+	height: 90px;
 	display: flex;
 	text-decoration: none;
 	position: inherit;
@@ -984,9 +982,7 @@ p{
 	animation: logoAnim 2.5s; 
 }
 .nav-logo a {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
+	object-fit: cover;
 	text-decoration: none;
 	align-self: center;
 	margin-left: 0px;
@@ -1743,8 +1739,8 @@ p{
 	justify-items: center;
 }
 .nav-logo {
-	width: auto;
-	height: 100%;
+	width: 90px;
+	height: 90px;
 	display: flex;
 	text-decoration: none;
 	position: inherit;
@@ -1760,9 +1756,7 @@ p{
 	animation: logoAnim 2.5s; 
 }
 .nav-logo a {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
+	object-fit: cover;
 	text-decoration: none;
 	align-self: center;
 	margin-left: 0px;
