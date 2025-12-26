@@ -464,7 +464,6 @@ li {
   	background-position: center;
   	background-repeat: repeat;
   	background-size: cover;
-	object-fit: cover;
 }
 .landingContent{
 	background-color: transparent;
@@ -2503,6 +2502,7 @@ p{
 	transition: 3s;
 }
 }
+
 
 
 
