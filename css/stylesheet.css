@@ -180,7 +180,7 @@ i {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	top: 0;
-        z-index: 30;
+    z-index: 30;
 	position: sticky;
 	scale: 1;
 	display: flex;
@@ -189,6 +189,23 @@ i {
 	text-decoration: none;
 	overflow: inherit;
 	justify-items: center;
+}
+.navLogo {
+	width: 90px;
+	height: 90px;
+	display: flex;
+	text-decoration: none;
+	position: inherit;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: transparent; 
+	animation: logoAnim 2.5s; 
 }
 .nav-logo {
 	width: 90px;
@@ -2485,3 +2502,4 @@ p{
 	transition: 3s;
 }
 }
+
