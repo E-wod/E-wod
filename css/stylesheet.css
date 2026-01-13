@@ -971,7 +971,7 @@ p{
 	padding-top: 0px;
 	padding-bottom: 0px;
 	top: 0;
-        z-index: 30;
+    z-index: 30;
 	position: sticky;
 	scale: 1;
 	display: flex;
@@ -980,6 +980,23 @@ p{
 	text-decoration: none;
 	overflow: inherit;
 	justify-items: center;
+}
+.navLogo {
+	width: 90px;
+	height: 90px;
+	display: flex;
+	text-decoration: none;
+	position: inherit;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: transparent; 
+	animation: logoAnim 2.5s; 
 }
 .nav-logo {
 	width: 90px;
@@ -1218,7 +1235,7 @@ li {
 }
 .wallPaper {
 	position: fixed;
-	background-image: url("https://imagizer.imageshack.com/img923/6092/wkWOS8.jpg");
+	background-image: url("https://imagizer.imageshack.com/img922/3329/JkFa5u.jpg");
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
@@ -1256,7 +1273,7 @@ li {
 }
 h1{
 	color: #03999e;
-	font-size: 1.50vw;
+	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1280,7 +1297,7 @@ h1{
 }
 h2{
 	color: #03999e;
-	font-size: 1.00vw;
+	font-size: 1.25vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -1312,7 +1329,7 @@ h3{
 }
 p{
 	color: #FFFFFF;
-	font-size: .75vw;
+	font-size: 1.00vw;
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
@@ -1345,11 +1362,11 @@ p{
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	width: auto;
-	height: 100%;
 	object-fit: cover;
 	display: flex;
 	position: relative;
+	width: 100%;
+	height: 100%;
 	align-items: center;
 	z-index: 19;
 	overflow: hidden;
@@ -1382,7 +1399,7 @@ p{
 	transition: 3s;
 }
 .beNook a {
-	width: 80px;
+	width: 100px;
 	height: auto;
 	text-decoration: none;
 	background: transparent;
@@ -1745,7 +1762,7 @@ p{
 	padding-top: 0px;
 	padding-bottom: 0px;
 	top: 0;
-        z-index: 30;
+    z-index: 30;
 	position: sticky;
 	scale: 1;
 	display: flex;
@@ -1754,6 +1771,23 @@ p{
 	text-decoration: none;
 	overflow: inherit;
 	justify-items: center;
+}
+.navLogo {
+	width: 90px;
+	height: 90px;
+	display: flex;
+	text-decoration: none;
+	position: inherit;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: transparent; 
+	animation: logoAnim 2.5s; 
 }
 .nav-logo {
 	width: 90px;
@@ -1980,7 +2014,7 @@ li {
 	padding-top: 0px;
 	padding-bottom: 0px;
   	background-image: linear-gradient(119deg, #1E85D4 4%, #621C94 21%, #802A1F 34%, #FF9D00 64%, #1E85D4 94%);
-  	background-size: auto auto;
+	background-size: auto auto;
   	background-clip: border-box;
   	background-size: 200% auto;
 	z-index: 200;
@@ -1992,7 +2026,7 @@ li {
 }
 .wallPaper {
 	position: fixed;
-	background-image: url("https://imagizer.imageshack.com/img923/6092/wkWOS8.jpg");
+	background-image: url("https://imagizer.imageshack.com/img922/3329/JkFa5u.jpg");
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
@@ -2030,7 +2064,7 @@ li {
 }
 h1{
 	color: #03999e;
-	font-size: 1.00vw;
+	font-size: 1.75vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -2054,7 +2088,7 @@ h1{
 }
 h2{
 	color: #03999e;
-	font-size: .75vw;
+	font-size: 1.25vw;
 	text-decoration: none;
 	font-family: Lobster, 'Kristen ITC', Script;
 	text-shadow: 1px 0px 1px #000000;
@@ -2086,7 +2120,7 @@ h3{
 }
 p{
 	color: #FFFFFF;
-	font-size: .50vw;
+	font-size: 1.00vw;
 	text-decoration: none;
 	font-family: open sans;
 	text-shadow: 1px 0px 1px #000000;
@@ -2119,11 +2153,11 @@ p{
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	width: auto;
-	height: 100%;
 	object-fit: cover;
 	display: flex;
 	position: relative;
+	width: 100%;
+	height: 100%;
 	align-items: center;
 	z-index: 19;
 	overflow: hidden;
@@ -2156,7 +2190,7 @@ p{
 	transition: 3s;
 }
 .beNook a {
-	width: 50px;
+	width: 100px;
 	height: auto;
 	text-decoration: none;
 	background: transparent;
@@ -2502,10 +2536,3 @@ p{
 	transition: 3s;
 }
 }
-
-
-
-
-
-
-
