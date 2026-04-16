@@ -191,6 +191,53 @@ i {
 	justify-items: center;
 }
 .navLogo {
+    width: 90px;
+	height: 90px;
+	text-decoration: none;
+	background: transparent;
+ 	display: flex-end;
+ 	position: inherit;
+	align-self: center;
+	justify-content: space-between;
+	overflow: inherit;
+ 	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-radius: 8px;
+}
+.navLogo a {
+    width: 100%;
+	height: auto;
+	float: center;
+	display: flex;
+	object-fit: cover;
+	text-decoration: none;
+	align-self: center;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: transparent;
+	animation: logoAnim 2.5s; 
+}
+.navLogo :hover,
+.navLogo .active {
+	transition: .3s;
+	transition-timing-function: ease;
+	background: transparent;
+	overflow: visible;
+	filter: brightness(150%);
+}
+.navBar {
     width: 100%;
 	height: auto;
 	text-decoration: none;
@@ -210,53 +257,8 @@ i {
 	padding-bottom: 2px;
 	border-radius: 8px;
 }
-.navLogo a {
-    width: 90px;
-	height: 90px;
-	object-fit: cover;
-	text-decoration: none;
-	align-self: center;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	background-color: transparent;
-	animation: logoAnim 2.5s; 
-}
-.nav-logo :hover,
-.nav-logo .active {
-	transition: .3s;
-	transition-timing-function: ease;
-	background: transparent;
-	overflow: visible;
-	filter: brightness(150%);
-}
-.navBar {
-    	width: 100%;
-	height: auto;
-	text-decoration: none;
-	background: transparent;
- 	display: flex-end;
- 	position: inherit;
-	align-self: center;
-	justify-content: space-between;
-	overflow: inherit;
- 	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	border-radius: 8px;
-}
 .navBar a {
-    	width: 150px;
+    width: 150px;
 	height: auto;
 	margin-left: 0px;
 	margin-right: 0px;
