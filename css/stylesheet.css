@@ -191,8 +191,8 @@ i {
 	justify-items: center;
 }
 .navLogo {
-    width: 90px;
-	height: 90px;
+    width: auto;
+	height: auto;
 	text-decoration: none;
 	background: transparent;
  	display: flex-end;
@@ -211,8 +211,8 @@ i {
 	border-radius: 8px;
 }
 .navLogo a {
-    width: 100%;
-	height: auto;
+    width: 100px;
+	height: 100px;
 	float: center;
 	display: flex;
 	object-fit: cover;
