@@ -191,40 +191,28 @@ i {
 	justify-items: center;
 }
 .navLogo {
-	width: 90px;
-	height: 90px;
-	display: flex;
+    width: 100%;
+	height: auto;
 	text-decoration: none;
-	position: inherit;
-	margin-left: 0px;
+	background: transparent;
+ 	display: flex-end;
+ 	position: inherit;
+	align-self: center;
+	justify-content: space-between;
+	overflow: inherit;
+ 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	background-color: transparent; 
-	animation: logoAnim 2.5s; 
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-radius: 8px;
 }
-.nav-logo {
-	width: 90px;
+.navLogo a {
+    width: 90px;
 	height: 90px;
-	display: flex;
-	text-decoration: none;
-	position: inherit;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	background-color: transparent; 
-	animation: logoAnim 2.5s; 
-}
-.nav-logo a {
 	object-fit: cover;
 	text-decoration: none;
 	align-self: center;
