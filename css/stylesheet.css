@@ -90,7 +90,8 @@ i {
 } */
 @keyframes splashscreen {
 	0% {opacity: 1; background-color: #FFFFFF; center; transform: scale(1);}
-	90% {opacity: 1; background-color: #000000;}
+	50% {opacity: 1; background-color: #000000;}
+	90% {opacity: 1;}
 	99% {opacity: .5; center; transform: scale(1);} 
     100% {opacity: 0; visibility: hidden; transform: scale(0);}
 }
