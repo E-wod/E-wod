@@ -401,7 +401,8 @@ li {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	position: fixed;
-  	background-image: linear-gradient(119deg, #12466E 4%, #7A4D04 21%, #33110D 34%, #2E0E45 64%, #12466E 94%);
+	background-image: linear-gradient(119deg, #000000 4%, #FFFFFF 94%);
+  	/* background-image: linear-gradient(119deg, #12466E 4%, #7A4D04 21%, #33110D 34%, #2E0E45 64%, #12466E 94%); */
 	z-index: 1000;
   	animation: splashscreen 5s ease-in-out forwards;
 }
