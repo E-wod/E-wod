@@ -86,6 +86,7 @@ li {
   }
   90% {
     opacity: 1;
+    background-color: #000000;
   }
   99% {
     opacity: 0.5;
