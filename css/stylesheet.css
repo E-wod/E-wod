@@ -17,6 +17,7 @@
   --nav-font-desktop: clamp(0.9rem, 1.2vw, 1.35rem);
   --nav-font-tablet: 1rem;
   --nav-font-mobile: 0.95rem;
+  --collage-scroll-height: 160vh;
 }
 
 * {
@@ -86,7 +87,6 @@ li {
   }
   90% {
     opacity: 1;
-    background-color: #000000;
   }
   99% {
     opacity: 0.5;
@@ -557,7 +557,7 @@ p {
 .photo-block {
   position: sticky;
   top: 0;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: grid;
   overflow: hidden;
@@ -580,12 +580,13 @@ p {
   animation-fill-mode: both;
   animation-timing-function: linear;
   animation-timeline: --collage;
-  animation-range: entry 100% exit 0%;
+  animation-range: entry 0% exit 100%;
 }
 
 .collage {
-  height: 225vh;
+  height: var(--collage-scroll-height);
   view-timeline: --collage;
+  position: relative;
 }
 
 .photo img {
@@ -631,19 +632,24 @@ p {
 .scroller {
   view-timeline: --scroller;
   width: 100%;
-  height: auto;
+  min-height: 100vh;
   justify-content: center;
+  align-items: center;
   display: flex;
   margin: 0;
   padding: 2px;
-  z-index: 200;
+  z-index: 300;
   text-align: center;
   position: relative;
 }
 
 .scroller img {
   position: relative;
-  z-index: 300;
+  z-index: 400;
+  max-height: 100vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .cntr {
@@ -825,6 +831,11 @@ p {
   transition: 3s;
 }
 
+/* index scroll sync helper */
+.scroll-stop {
+  min-height: auto;
+}
+
 /*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
 @media (min-width: 769px) {
   .navLogo a,
@@ -889,6 +900,10 @@ p {
 
   p {
     font-size: 1.9vw;
+  }
+
+  .collage {
+    height: 145vh;
   }
 }
 
@@ -958,6 +973,10 @@ p {
 
   .btnBox a {
     font-size: 20px;
+  }
+
+  .collage {
+    height: 135vh;
   }
 }
 
