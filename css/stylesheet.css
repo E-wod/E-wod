@@ -1,107 +1,100 @@
 @charset "utf-8";
 
 :root {
-  --bg: #000;
-  --text: #fff;
   --accent: #03999e;
+  --text: #ffffff;
+  --bg: #000000;
   --panel: rgba(181, 181, 181, 0.3);
   --hover-gradient: linear-gradient(0deg, transparent 15%, #ffffff 240%);
   --header-gradient: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  --splash-gradient: #ffffff;
-  --text-gradient: linear-gradient(119deg, #1e85d4 4%, #621c94 21%, #802a1f 34%, #ff9d00 64%, #1e85d4 94%);
+  --text-gradient: linear-gradient(119deg, #1E85D4 4%, #621C94 21%, #802A1F 34%, #FF9D00 64%, #1E85D4 94%);
+  --wallpaper-default: url("https://imagizer.imageshack.com/img922/3329/JkFa5u.jpg");
   --glow: 0 2px 7px azure;
-  --script-font: Lobster, "Kristen ITC", Script;
-  --display-font: "sofachrome", sans-serif;
-  --body-font: "Open Sans", sans-serif;
   --radius-sm: 8px;
   --radius-md: 12px;
-  --nav-link-width: 150px;
-  --btn-width: 180px;
-  --btn-height: 60px;
-  --icon-size: 80px;
-  --logo-size: 100px;
-  --section-pad: 15px;
-  --wallpaper: url("https://imagizer.imageshack.com/img922/3329/JkFa5u.jpg");
+  --logo-size-desktop: 100px;
+  --logo-size-mobile: 90px;
+  --nav-font-desktop: clamp(0.9rem, 1.2vw, 1.35rem);
+  --nav-font-tablet: 1rem;
+  --nav-font-mobile: 0.95rem;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
-  background: var(--bg);
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--bg);
 }
 
-html,
 body {
   width: 100%;
   min-height: 100%;
-}
-
-body {
-  background: var(--bg);
-  color: var(--text);
+  background-color: var(--bg);
   overflow-x: hidden;
-}
-
-img,
-video {
-  display: block;
-  width: 100%;
-  max-width: 100%;
+  position: relative;
 }
 
 img {
+  width: 100%;
   height: auto;
+  display: block;
 }
 
 video {
-  height: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
   background: transparent;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  z-index: 0;
+  display: flex;
 }
 
 i {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: inherit;
+  display: flex;
 }
 
 li {
   list-style: none;
 }
 
+/*------------------------------------------------------------ANIMATIONS-------------------------------------------------------------------*/
+
 @keyframes splashscreen {
   0% {
     opacity: 1;
-    background-color: #fff;
+    background-color: #ffffff;
     transform: scale(1);
   }
-  55% {
+  50% {
     opacity: 1;
-    background-color: #000;
+    background-color: #000000;
   }
-  92% {
+  90% {
     opacity: 1;
-    background-color: #000;
   }
   99% {
-    opacity: 0.35;
+    opacity: 0.5;
     transform: scale(1);
   }
   100% {
     opacity: 0;
     visibility: hidden;
-    transform: scale(1);
+    transform: scale(0);
   }
 }
 
@@ -120,330 +113,385 @@ li {
   }
 }
 
+@keyframes bkGnd {
+  0%,
+  50%,
+  90% {
+    transform: scale(.6);
+    opacity: .5;
+  }
+  25%,
+  75%,
+  100% {
+    transform: scale(.1);
+    opacity: .1;
+  }
+}
+
 @keyframes logoAnim {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  45% {
-    transform: scale(0.25);
-    filter: brightness(60%);
-  }
-  50% {
-    transform: scale(0.45);
-    filter: brightness(40%);
-  }
-  55% {
-    transform: scale(0.35);
-    filter: brightness(70%);
-  }
-  60% {
-    transform: scale(0.655);
-    filter: brightness(50%);
-  }
-  65% {
-    transform: scale(0.55);
-    filter: brightness(80%);
-  }
-  70% {
-    transform: scale(0.75);
-    filter: brightness(60%);
-  }
-  75% {
-    transform: scale(0.65);
-    filter: brightness(90%);
-  }
-  80% {
-    transform: scale(0.95);
-    filter: brightness(70%);
-  }
-  85% {
-    transform: scale(0.85);
-    filter: brightness(100%);
-  }
-  90% {
-    transform: scale(1.0175);
-    filter: brightness(80%);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-    filter: brightness(100%);
-  }
+  0% { opacity: 0; transform: scale(0); }
+  45% { transform: scale(0.25); filter: brightness(60%); }
+  50% { transform: scale(0.45); filter: brightness(40%); }
+  55% { transform: scale(0.35); filter: brightness(70%); }
+  60% { transform: scale(0.655); filter: brightness(50%); }
+  65% { transform: scale(0.55); filter: brightness(80%); }
+  70% { transform: scale(0.75); filter: brightness(60%); }
+  75% { transform: scale(0.65); filter: brightness(90%); }
+  80% { transform: scale(0.95); filter: brightness(70%); }
+  85% { transform: scale(0.85); filter: brightness(100%); }
+  90% { transform: scale(1.0175); filter: brightness(80%); }
+  100% { opacity: 1; transform: scale(1); filter: brightness(100%); }
 }
 
-@keyframes dropInY {
-  0% {
-    transform: translateY(-200px);
-    opacity: 0;
-  }
-  90% {
-    transform: translateY(10px);
-  }
-  92% {
-    transform: translateY(8px) scale(1.175);
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+@keyframes menuAnim {
+  0% { transform: translateY(-200px); opacity: 0 scale(1); }
+  90% { transform: translateY(10px) scale(1); }
+  92% { transform: translateY(8px) scale(1.175); }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+@keyframes h1Anim {
+  0% { transform: translateY(-200px) scale(1); opacity: 0; }
+  90% { transform: translateY(10px) scale(1); }
+  92% { transform: translateY(8px) scale(1.175); }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
 }
+
+@keyframes h3Anim {
+  0% { transform: translateX(-200px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes pAnim {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes choiceAnim {
+  0% { transform: translateY(80px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/*------------------------------------------------------------BASE LAYOUT-------------------------------------------------------------------*/
 
 .header {
-  position: sticky;
+  width: 100%;
+  max-width: 100%;
+  min-height: 12svh;
   top: 0;
   z-index: 30;
+  position: sticky;
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-columns: auto minmax(220px, 1fr) auto;
   align-items: center;
-  gap: 0.75rem;
-  width: 100%;
-  min-height: 12svh;
-  padding: 0.5rem 0.75rem;
+  gap: 0.5rem;
+  padding: 0.35rem 0.6rem;
   background: var(--header-gradient);
+  text-decoration: none;
+  overflow: visible;
 }
 
-.navLogo,
-.nav-logo {
+.navLogo {
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: auto;
-  height: auto;
+  position: relative;
   padding: 2px;
   border-radius: var(--radius-sm);
-  background: transparent;
   flex-shrink: 0;
 }
 
 .navLogo a,
-.nav-logo a {
+.nav-logo {
+  width: var(--logo-size-desktop);
+  height: var(--logo-size-desktop);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--logo-size);
-  height: var(--logo-size);
-  background: transparent;
+  object-fit: cover;
+  text-decoration: none;
+  background-color: transparent;
   animation: logoAnim 2.5s;
 }
 
-.navLogo a img,
-.nav-logo a img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.navLogo:hover,
+.navLogo :hover,
 .navLogo .active,
-.nav-logo:hover,
+.nav-logo :hover,
 .nav-logo .active {
+  transition: .3s ease;
+  background: transparent;
+  overflow: visible;
   filter: brightness(150%);
-  transition: filter 0.3s ease;
 }
 
 .navBar {
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 100%;
-  min-width: 0;
+  position: relative;
+  overflow: visible;
   padding: 2px;
   border-radius: var(--radius-sm);
-  background: transparent;
-}
-
-.navBar a,
-.nav-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;
-  width: var(--nav-link-width);
-  padding: 5px;
-  border-radius: var(--radius-sm);
-  color: var(--accent);
-  font-family: var(--script-font);
-  text-align: center;
-}
-
-.navBar a {
-  position: relative;
-  opacity: 0;
-  animation: dropInY 2.5s ease forwards;
-  animation-delay: calc(0.085s * var(--i, 1));
-  transition: color 0.6s ease, background 0.6s ease, box-shadow 0.6s ease;
-}
-
-.navBar a::before,
-.btnBox a::before,
-.socLnk a::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: transparent;
-  opacity: 0;
-  transition: opacity 0.6s ease, background 0.6s ease;
-  z-index: -1;
-}
-
-.navBar a:hover::before,
-.btnBox a:hover::before,
-.socLnk a:hover::before {
-  opacity: 1;
-  background: var(--hover-gradient);
-}
-
-.navBar a:hover,
-.navBar .active,
-.btnBox a:hover,
-.btnBox .active,
-.socLnk a:hover,
-.socLnk .active {
-  color: var(--text);
-  background: var(--hover-gradient);
-  box-shadow: var(--glow);
+  min-width: 0;
 }
 
 .nav-menu {
+  background-color: transparent;
+  text-decoration: none;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 0.5rem;
+  align-items: center;
+  overflow: visible;
   width: auto;
   max-width: 100%;
+  transition: .6s;
+  gap: 0.25rem;
   padding: 5px;
   border-radius: var(--radius-sm);
-  transition: 0.6s ease;
 }
 
 .nav-menu a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: visible;
   height: 100%;
+  width: 100%;
+  transition: .6s;
   padding: 5px;
   border-radius: var(--radius-sm);
 }
 
+.navBar a {
+  width: auto;
+  min-width: 0;
+  height: auto;
+  padding: 0.35rem 0.55rem;
+  background: transparent;
+  border-radius: var(--radius-sm);
+  color: var(--accent);
+  font-size: var(--nav-font-desktop);
+  text-decoration: none;
+  font-family: Lobster, 'Kristen ITC', Script;
+  align-content: center;
+  line-height: 1.1;
+  white-space: nowrap;
+  display: flex;
+  opacity: 0;
+  overflow: visible;
+  animation: menuAnim 2.5s ease forwards;
+  animation-delay: calc(.085s * var(--i));
+}
+
+.navBar a::before {
+  content: "";
+  background: transparent;
+  border-radius: var(--radius-sm);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: var(--text);
+  background: var(--hover-gradient);
+  transition: .6s;
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.navBar a:hover::before {
+  opacity: 1;
+}
+
+.navBar a:hover,
+.navBar .active {
+  color: var(--text);
+  text-decoration: none;
+  transition: .6s;
+  border-radius: var(--radius-sm);
+  border-color: var(--text);
+  background: var(--hover-gradient);
+  box-shadow: var(--glow);
+}
+
+.nav-item {
+  color: var(--accent);
+  font-size: var(--nav-font-desktop);
+  text-decoration: none;
+  font-family: Lobster, 'Kristen ITC', Script;
+  overflow: visible;
+  padding: 5px;
+  border-radius: var(--radius-sm);
+}
+
+.nav-link {
+  color: var(--accent);
+}
+
+.nav-link:hover {
+  color: var(--text);
+}
+
 .splash-screen {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
   position: fixed;
   inset: 0;
   z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: #fff;
+  background: #ffffff;
   animation: splashscreen 5s ease-in-out forwards;
-  pointer-events: none;
-}
-
-.splash-title {
-  max-width: 80vw;
 }
 
 .animate-text {
-  display: inline-block;
-  width: 100%;
-  font-family: var(--display-font);
   text-transform: uppercase;
+  font-size: clamp(1.4rem, 2.5vw, 3rem);
+  font-family: "sofachrome", sans-serif;
+  width: 100%;
+  height: auto;
+  position: inherit;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   background-image: var(--text-gradient);
   background-size: 200% auto;
+  z-index: 200;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite reverse;
-  z-index: 200;
+  animation: textclip 2s infinite reverse linear;
+  display: inline-block;
 }
 
 .wallPaper {
   position: fixed;
   inset: 0;
+  width: 100%;
+  height: 100vh;
   z-index: 0;
   opacity: 0.9;
-  background-image: var(--wallpaper);
+  margin: 0;
+  padding: 0;
+  background-image: var(--wallpaper-default);
+  background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
-  background-attachment: fixed;
+  overflow: hidden;
 }
 
-.landingContent,
-.bkg,
-.obJects {
+.wallPaper img {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  background: transparent;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
 }
 
 .landingContent {
+  background-color: transparent;
+  width: 100%;
   min-height: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   position: relative;
   z-index: 1;
 }
 
-h1,
-h2,
-h3,
-p {
-  display: flex;
-  justify-content: center;
+h1 {
+  color: var(--accent);
+  font-size: clamp(1rem, 1.75vw, 2rem);
+  text-decoration: none;
+  font-family: Lobster, 'Kristen ITC', Script;
+  text-shadow: 1px 0 1px #000000;
+  background-color: transparent;
   width: 100%;
   height: auto;
+  position: inherit;
+  justify-content: center;
+  display: flex;
+  padding: 1px;
   z-index: 1;
+  animation: pAnim 1s ease forwards;
 }
 
-h1,
 h2 {
   color: var(--accent);
-  font-family: var(--script-font);
-  text-shadow: 1px 0 1px #000;
-  animation: fadeIn 1s ease forwards;
+  font-size: clamp(0.9rem, 1.25vw, 1.5rem);
+  text-decoration: none;
+  font-family: Lobster, 'Kristen ITC', Script;
+  text-shadow: 1px 0 1px #000000;
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  position: inherit;
+  justify-content: center;
+  display: flex;
+  padding: 1px;
+  z-index: 1;
+  animation: pAnim 1s ease forwards;
 }
 
 h3 {
-  font-family: var(--display-font);
+  font-family: "sofachrome", sans-serif;
+  width: 100%;
+  height: auto;
+  position: inherit;
+  justify-content: center;
+  display: flex;
 }
 
 p {
-  padding: 10px 2px;
   color: var(--text);
-  font-family: var(--body-font);
-  text-shadow: 1px 0 1px #000;
+  font-size: clamp(0.9rem, 1vw, 1.15rem);
+  text-decoration: none;
+  font-family: open sans, sans-serif;
+  text-shadow: 1px 0 1px #000000;
   background-color: var(--panel);
-  animation: fadeIn 1s ease forwards;
-}
-
-.beePic,
-.beNook,
-.beNook a,
-.bkg,
-.picFrame {
-  animation: fadeIn 3s ease forwards;
-  transition: 3s ease;
+  width: 100%;
+  height: auto;
+  position: inherit;
+  justify-content: center;
+  display: flex;
+  padding: 10px 2px;
+  z-index: 1;
+  animation: pAnim 1s ease forwards;
 }
 
 .beePic {
-  position: relative;
+  background: transparent;
+  opacity: 1;
+  object-fit: cover;
   display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 40vh;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  min-height: 40vh;
-  max-height: 90vh;
-  overflow: hidden;
   z-index: 19;
+  overflow: hidden;
+  animation: pAnim 3s ease forwards;
+  transition: 3s;
 }
 
 .beePic img {
@@ -452,20 +500,21 @@ p {
   object-fit: cover;
 }
 
-.beNook,
-.beNook a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-}
-
 .beNook {
   width: 100%;
-  min-width: 0;
-  max-width: 100%;
   height: 100%;
-  flex: 1 1 auto;
+  text-decoration: none;
+  background: transparent;
+  position: relative;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  animation: pAnim 3s ease forwards;
+  transition: 3s;
+  min-width: 0;
 }
 
 .beNook img {
@@ -477,35 +526,54 @@ p {
 .beNook a {
   width: 100px;
   height: auto;
+  text-decoration: none;
+  background: transparent;
+  position: inherit;
+  align-self: center;
+  justify-content: space-between;
+  display: flex;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  animation: pAnim 3s ease forwards;
+  transition: 3s;
 }
 
 .bkg {
+  background-color: transparent;
+  justify-content: center;
+  width: 100%;
   height: auto;
+  position: inherit;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  animation: pAnim 3s ease forwards;
+  transition: 3s;
 }
 
 .photo-block {
   position: sticky;
   top: 0;
-  display: grid;
-  width: 100%;
   height: 90vh;
+  width: 100%;
+  display: grid;
   overflow: hidden;
-  z-index: 100;
 }
 
 .photo-grid {
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 100;
+  transform: translate(-50%, -50%) rotate(38deg);
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  transform: translate(-50%, -50%) rotate(38deg);
+  z-index: 2;
 }
 
 .photo {
-  width: 13vmax;
   aspect-ratio: 3 / 4;
+  width: 13vmax;
   animation-name: travel;
   animation-fill-mode: both;
   animation-timing-function: linear;
@@ -514,7 +582,6 @@ p {
 }
 
 .collage {
-  position: relative;
   height: 225vh;
   view-timeline: --collage;
 }
@@ -560,143 +627,233 @@ p {
 }
 
 .scroller {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 2px;
-  text-align: center;
-  z-index: 200;
   view-timeline: --scroller;
-}
-
-.collage-foreground {
-  z-index: 300;
-  pointer-events: none;
-}
-
-.foreground-art {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  padding: 2px;
+  z-index: 200;
+  text-align: center;
   position: relative;
-  z-index: 301;
+}
+
+.scroller img {
+  position: relative;
+  z-index: 300;
 }
 
 .cntr {
-  position: relative;
   z-index: 100;
+  background: transparent;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position: relative;
   justify-content: space-between;
   width: 100%;
   height: auto;
-  padding: var(--section-pad);
-  background: transparent;
-}
-
-.btnBox,
-.socLnk {
-  position: relative;
-  z-index: 15;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 5px;
-  color: var(--accent);
-  background: transparent;
+  margin: 0;
+  padding: 15px;
 }
 
 .btnBox {
+  z-index: 15;
+  position: inherit;
+  margin: 0;
+  padding: 5px;
   border-radius: var(--radius-md);
+  background: transparent;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  color: var(--accent);
+  text-decoration: none;
+  display: flex;
 }
 
 .btnBox a {
-  position: relative;
-  z-index: 1;
+  background: transparent;
   display: flex;
-  align-items: center;
+  font-size: 25px;
+  color: var(--accent);
+  font-family: "sofachrome", sans-serif;
+  text-decoration: none;
+  width: 180px;
+  height: 60px;
+  z-index: 15;
   justify-content: center;
-  width: var(--btn-width);
-  height: var(--btn-height);
+  align-items: center;
+  border-radius: var(--radius-md);
+  margin: 0;
   padding: 10px;
+  animation: h1Anim 2.5s ease forwards;
+}
+
+.btnBox a::before {
+  content: "";
+  background: transparent;
   border-radius: var(--radius-md);
   color: var(--accent);
-  font-family: var(--display-font);
-  font-size: 25px;
-  background: transparent;
-  animation: dropInY 2.5s ease forwards;
+  text-decoration: none;
+  z-index: -1;
+  transition-timing-function: ease;
+  width: 180px;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.btnBox a:hover::before {
+  color: var(--text);
+  border-radius: var(--radius-md);
+  background: var(--hover-gradient);
+  text-decoration: none;
+  transition: .6s;
+}
+
+.btnBox a:hover,
+.btnBox .active {
+  color: var(--text);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  box-shadow: var(--glow);
+  background: var(--hover-gradient);
+  transition: .3s;
 }
 
 .socLnk {
+  z-index: 15;
+  position: inherit;
+  margin: 0;
+  padding: 5px;
   border-radius: 50%;
+  background: transparent;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  color: var(--accent);
+  text-decoration: none;
+  display: flex;
 }
 
 .socLnk a {
-  position: relative;
-  z-index: 1;
+  width: 80px;
+  height: 80px;
+  position: inherit;
+  background: transparent;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: var(--icon-size);
-  height: var(--icon-size);
-  padding: 10px;
-  border-radius: 50%;
   opacity: 0;
   color: var(--accent);
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 15;
+  border-radius: 50%;
+  margin: 0;
+  padding: 10px;
+  animation: h1Anim 1.975s ease forwards;
+  animation-delay: calc(.085s * var(--i));
+}
+
+.socLnk a::before {
+  content: "";
   background: transparent;
-  animation: dropInY 1.975s ease forwards;
-  animation-delay: calc(0.085s * var(--i, 1));
-  transition: 0.6s ease;
+  border-radius: 50%;
+  color: var(--accent);
+  text-decoration: none;
+  z-index: -1;
+  transition-timing-function: ease;
+  display: flex;
+  opacity: 0;
+  align-self: center;
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.socLnk a:hover::before {
+  color: var(--text);
+  border-radius: 50%;
+  background: var(--hover-gradient);
+  text-decoration: none;
+  display: flex;
+  transition: .6s;
+  opacity: 1;
+}
+
+.socLnk a:hover,
+.socLnk .active {
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: var(--glow);
+  background: var(--hover-gradient);
+  display: flex;
+  transition: .6s;
 }
 
 .obJects {
-  display: flex;
+  background-color: transparent;
   justify-content: center;
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: inherit;
+  margin: 0;
+  padding: 0;
   z-index: 999;
 }
 
 .picFrame {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: 0;
+  padding: 0 0 2px;
   width: 50%;
   height: 50%;
-  padding-bottom: 2px;
-  background: transparent;
+  text-decoration: none;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  position: inherit;
+  background-color: transparent;
+  animation: pAnim 3s ease forwards;
+  transition: 3s;
 }
 
-h1 {
-  font-size: 1.75vw;
-  padding: 1px;
-}
+/*------------------------------------------------------------Larger Windows-------------------------------------------------------------------*/
+@media (min-width: 769px) {
+  .navLogo a,
+  .nav-logo {
+    width: var(--logo-size-desktop);
+    height: var(--logo-size-desktop);
+  }
 
-h2 {
-  font-size: 1.25vw;
-  padding: 1px;
-}
-
-p {
-  font-size: 1vw;
-}
-
-.animate-text {
-  font-size: 2.5vw;
-}
-
-.navBar a,
-.nav-item {
-  font-size: 1.5vw;
-}
-
-@media (max-width: 768px) {
-  :root {
-    --logo-size: 90px;
+  .navBar a,
+  .nav-item {
+    font-size: var(--nav-font-desktop);
+    white-space: nowrap;
   }
 }
 
+/*------------------------------------------------------------Medium Windows-------------------------------------------------------------------*/
 @media (min-width: 601px) and (max-width: 768px) {
+  .header {
+    grid-template-columns: auto minmax(180px, 1fr) auto;
+    min-height: 90px;
+  }
+
+  .navLogo a,
+  .nav-logo {
+    width: var(--logo-size-mobile);
+    height: var(--logo-size-mobile);
+  }
+
   .navBar a,
   .nav-item {
-    font-size: 2.25vw;
+    font-size: var(--nav-font-tablet);
+    white-space: normal;
   }
 
   .animate-text {
@@ -716,12 +873,20 @@ p {
   }
 }
 
+/*------------------------------------------------------------Smaller Windows-------------------------------------------------------------------*/
 @media (max-width: 600px) {
   .header {
     grid-template-columns: 1fr;
     justify-items: center;
     min-height: 90px;
     padding: 0.75rem 0.5rem;
+  }
+
+  .navLogo,
+  .nav-logo,
+  .navLogo a {
+    width: var(--logo-size-mobile);
+    height: var(--logo-size-mobile);
   }
 
   .beNook {
@@ -733,15 +898,15 @@ p {
   }
 
   .nav-menu {
-    flex-wrap: wrap;
     justify-content: center;
   }
 
   .navBar a,
   .nav-item {
     width: auto;
-    min-width: 120px;
-    font-size: 4vw;
+    min-width: 0;
+    font-size: var(--nav-font-mobile);
+    white-space: normal;
   }
 
   .animate-text {
@@ -772,16 +937,6 @@ p {
   .btnBox a {
     font-size: 20px;
   }
-}
-
-.navBar a,
-.btnBox a,
-.socLnk a,
-.navLogo a,
-.nav-logo a,
-.photo,
-.beePic {
-  will-change: transform, opacity;
 }
 
 @media (prefers-reduced-motion: reduce) {
