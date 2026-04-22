@@ -26,14 +26,15 @@
   <link rel="preload" href="img/ESDLogo.png" as="image">
   <link rel="preload" href="img/ESDBanner.png" as="image">
   <link rel="preload" href="img/Batmanrender4.jpg" as="image">
-  <link rel="preload" href="scripts/main.js" as="script">
+  <link rel="preload" href="img/gorillaAxe.png" as="image">
+  <link rel="preload" href="main.js" as="script">
 
   <script defer src="main.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 </head>
 <body>
-  <div class="splash-screen">
-    <h3 class="animate-text">ES Design Works</h3>
+  <div class="splash-screen" aria-hidden="true">
+    <h3 class="animate-text splash-title">ES Design Works</h3>
   </div>
 
   <div class="wallPaper" aria-hidden="true"></div>
@@ -119,8 +120,8 @@
         </div>
       </div>
 
-      <div class="scroller">
-        <img src="img/gorillaAxe.png" alt="Gorilla Axe" width="900" height="900" loading="lazy" decoding="async">
+      <div class="scroller collage-foreground">
+        <img class="foreground-art" src="img/gorillaAxe.png" alt="Gorilla Axe" width="900" height="900" loading="lazy" decoding="async">
       </div>
     </section>
   </main>
