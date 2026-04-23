@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let resizeTimer = null;
   let lastTime = performance.now();
   let lastWindowWidth = window.innerWidth;
+  let scrollBoost = 1;
 
   const buildWheelTrack = (row) => {
     const track = row.querySelector(".wheel-track");
@@ -45,12 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
     track.innerHTML = track.dataset.originalHtml;
 
     const originals = Array.from(track.children).map((card) => card.cloneNode(true));
-    const rowWidth = row.offsetWidth;
-    const targetWidth = rowWidth * 2.25;
+    const targetWidth = row.offsetWidth * 3.5;
 
     let loops = 0;
 
-    while (track.scrollWidth < targetWidth && loops < 16) {
+    while (track.scrollWidth < targetWidth && loops < 24) {
       originals.forEach((card) => track.appendChild(card.cloneNode(true)));
       loops++;
     }
@@ -61,11 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     applyImageReady(track);
 
-    return {
-      row,
-      track,
-      cycleWidth
-    };
+    return { row, track, cycleWidth };
   };
 
   const initializeWheels = () => {
@@ -75,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const built = buildWheelTrack(row);
       if (!built) return;
 
-      const speed = parseFloat(built.track.dataset.speed || "0.025");
+      const speed = parseFloat(built.track.dataset.speed || "0.04");
       const direction = built.track.dataset.direction === "right" ? 1 : -1;
       const startOffset = direction === 1 ? -built.cycleWidth : 0;
 
@@ -87,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cycleWidth: built.cycleWidth,
         speed,
         direction,
-        offset: startOffset
+        offset: startOffset,
       });
     });
   };
@@ -96,9 +92,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const delta = Math.min(now - lastTime, 32);
     lastTime = now;
 
+    scrollBoost += (1 - scrollBoost) * 0.035;
+
     wheelState.forEach((item) => {
       const paused = item.row.matches(":hover");
-      const movement = item.direction * (paused ? 0 : item.speed) * delta;
+      const speed = paused ? 0 : item.speed * scrollBoost;
+      const movement = item.direction * speed * delta;
 
       item.offset += movement;
 
@@ -127,20 +126,26 @@ document.addEventListener("DOMContentLoaded", () => {
     animationId = requestAnimationFrame(animateWheels);
   };
 
-  const rebuildAfterResize = () => {
-    const currentWidth = window.innerWidth;
-
-    if (Math.abs(currentWidth - lastWindowWidth) < 40) return;
-
-    lastWindowWidth = currentWidth;
-    startWheels();
-  };
+  window.addEventListener(
+    "wheel",
+    () => {
+      scrollBoost = 2.2;
+    },
+    { passive: true }
+  );
 
   window.addEventListener(
     "resize",
     () => {
       clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(rebuildAfterResize, 450);
+
+      resizeTimer = setTimeout(() => {
+        const currentWidth = window.innerWidth;
+        if (Math.abs(currentWidth - lastWindowWidth) < 40) return;
+
+        lastWindowWidth = currentWidth;
+        startWheels();
+      }, 450);
     },
     { passive: true }
   );
