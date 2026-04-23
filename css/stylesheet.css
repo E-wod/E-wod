@@ -60,6 +60,7 @@ li {
   list-style: none;
 }
 
+/* IMAGE LOADING */
 .fade-img {
   opacity: 0;
   transition: opacity 0.8s ease;
@@ -78,6 +79,7 @@ li {
   mix-blend-mode: normal !important;
 }
 
+/* ANIMATIONS */
 @keyframes splashscreen {
   0% { opacity: 1; background-color: #fff; transform: scale(1); }
   50%, 90% { opacity: 1; background-color: #000; }
@@ -123,6 +125,7 @@ li {
   to { opacity: 1; }
 }
 
+/* HEADER */
 .header {
   width: 100%;
   min-height: 12svh;
@@ -238,6 +241,7 @@ body.index-page .header {
   box-shadow: var(--glow);
 }
 
+/* SPLASH */
 .splash-screen {
   position: fixed;
   inset: 0;
@@ -266,6 +270,7 @@ body.index-page .header {
   animation: textclip 2s infinite reverse linear;
 }
 
+/* WALLPAPER */
 .wallPaper {
   position: fixed;
   inset: 0;
@@ -302,6 +307,11 @@ body.services-page .wallPaper img {
   object-position: 82% center;
 }
 
+body.contact-page .wallPaper img {
+  object-position: 82% 78%;
+}
+
+/* SHARED CONTENT */
 .landingContent {
   width: 100%;
   min-height: 100%;
@@ -444,7 +454,7 @@ p {
   border: 0;
 }
 
-/* INDEX CAROUSEL ONLY */
+/* INDEX CAROUSEL */
 .wheels-section {
   position: relative;
   z-index: 20;
@@ -467,7 +477,7 @@ p {
   display: grid;
   grid-template-rows: repeat(3, minmax(0, 1fr));
   gap: clamp(10px, 1.65svh, 22px);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .wheel-row {
@@ -476,6 +486,10 @@ p {
   width: 100%;
   min-height: 0;
   overflow: visible;
+}
+
+.wheel-row:hover {
+  z-index: 800;
 }
 
 .wheel-track {
@@ -521,7 +535,7 @@ p {
 }
 
 .wheel-card:hover {
-  z-index: 500;
+  z-index: 1000;
   transform: rotate(var(--card-rotate)) scale(1.14);
   box-shadow: 0 24px 60px rgba(0,0,0,0.8);
   filter: brightness(1.08) saturate(1.06) !important;
@@ -544,16 +558,18 @@ p {
   display: none !important;
 }
 
+/* RESPONSIVE */
 @media (max-width: 768px) {
   body.index-page {
     height: 100svh;
     overflow: hidden;
   }
 
+  /* wallpaper stays visible on smaller screens */
   .wallPaper,
   .wallPaper::after,
   .wallPaper img {
-    display: none !important;
+    display: block !important;
   }
 
   body {
@@ -590,15 +606,6 @@ p {
     min-width: 0;
     justify-content: center;
     text-align: center;
-  }
-
-  body.contact-page .wallPaper,
-  body.services-page .wallPaper,
-  body.contact-page .wallPaper img,
-  body.services-page .wallPaper img,
-  body.contact-page .wallPaper::after,
-  body.services-page .wallPaper::after {
-    display: block !important;
   }
 
   body.contact-page .wallPaper img {
