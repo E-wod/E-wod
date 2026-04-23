@@ -1020,7 +1020,14 @@ p {
   body.contact-page .wallPaper::after,
   body.services-page .wallPaper::after {
     display: block !important;
+  }
+
+  body.contact-page .wallPaper::after {
     background: rgba(0, 0, 0, 0.25);
+  }
+
+  body.services-page .wallPaper::after {
+    background: rgba(0, 0, 0, 0.35);
   }
 
   body.contact-page .wallPaper img {
@@ -1028,7 +1035,8 @@ p {
   }
 
   body.services-page .wallPaper img {
-    object-position: 82% center;
+    object-fit: cover;
+    object-position: 50% 35%;
   }
 }
 
