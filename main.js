@@ -1,25 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const markImageLoaded = (img) => {
+    if (
+      img.closest(".wallPaper") ||
+      img.closest(".navLogo") ||
+      img.closest(".beNook") ||
+      img.closest(".wheel-card")
+    ) {
+      img.classList.remove("fade-img");
+      img.classList.add("loaded");
+      img.style.opacity = "1";
+      return;
+    }
+
+    img.classList.add("fade-img");
+
+    if (img.complete) {
+      img.classList.add("loaded");
+    } else {
+      img.addEventListener("load", () => img.classList.add("loaded"), { once: true });
+      img.addEventListener("error", () => img.classList.add("loaded"), { once: true });
+    }
+  };
+
   const applyImageReady = (scope = document) => {
-    scope.querySelectorAll("img").forEach((img) => {
-      if (
-        img.closest(".wallPaper") ||
-        img.closest(".navLogo") ||
-        img.closest(".beNook") ||
-        img.closest(".wheel-card")
-      ) {
-        img.classList.add("loaded");
-        return;
-      }
-
-      img.classList.add("fade-img");
-
-      if (img.complete) {
-        img.classList.add("loaded");
-      } else {
-        img.addEventListener("load", () => img.classList.add("loaded"), { once: true });
-        img.addEventListener("error", () => img.classList.add("loaded"), { once: true });
-      }
-    });
+    scope.querySelectorAll("img").forEach(markImageLoaded);
   };
 
   applyImageReady();
@@ -28,23 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const lazyImages = document.querySelectorAll('img[loading="lazy"]');
     if (lazyImages.length) window.lazyload(lazyImages);
   }
-
-  const preview = document.createElement("div");
-  preview.className = "wheel-preview";
-  preview.innerHTML = `<img alt="">`;
-  document.body.appendChild(preview);
-
-  const previewImg = preview.querySelector("img");
-
-  const showPreview = (img) => {
-    previewImg.src = img.currentSrc || img.src;
-    previewImg.alt = img.alt || "";
-    preview.classList.add("active");
-  };
-
-  const hidePreview = () => {
-    preview.classList.remove("active");
-  };
 
   const wheelRows = document.querySelectorAll(".wheel-row");
   const wheelState = [];
@@ -71,14 +58,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const cycleWidth = track.scrollWidth;
 
     track.insertAdjacentHTML("beforeend", track.innerHTML);
+
     applyImageReady(track);
 
-    track.querySelectorAll(".wheel-card img").forEach((img) => {
-      img.addEventListener("pointerenter", () => showPreview(img));
-      img.addEventListener("pointerleave", hidePreview);
-    });
-
-    return { row, track, cycleWidth };
+    return {
+      row,
+      track,
+      cycleWidth
+    };
   };
 
   const initializeWheels = () => {
