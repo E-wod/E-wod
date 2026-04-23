@@ -26,40 +26,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
   applyImageReady();
 
-  const wheelRows = document.querySelectorAll(".wheel-row");
+  const wheelRows = Array.from(document.querySelectorAll(".wheel-row"));
   const wheelState = [];
 
   let animationId = null;
   let resizeTimer = null;
   let lastTime = performance.now();
+  let lastWindowWidth = window.innerWidth;
 
   const buildWheelTrack = (row) => {
     const track = row.querySelector(".wheel-track");
     if (!track) return null;
 
+    if (!track.dataset.originalHtml) {
+      track.dataset.originalHtml = track.innerHTML;
+    }
+
+    track.innerHTML = track.dataset.originalHtml;
+
     const originals = Array.from(track.children).map((card) => card.cloneNode(true));
+    const rowWidth = row.offsetWidth;
+    const targetWidth = rowWidth * 2.25;
 
-    track.innerHTML = "";
+    let loops = 0;
 
-    let safety = 0;
-
-    while (track.scrollWidth < row.offsetWidth * 3 && safety < 60) {
-      originals.forEach((card) => {
-        track.appendChild(card.cloneNode(true));
-      });
-      safety++;
+    while (track.scrollWidth < targetWidth && loops < 16) {
+      originals.forEach((card) => track.appendChild(card.cloneNode(true)));
+      loops++;
     }
 
     const cycleWidth = track.scrollWidth;
 
-    track.insertAdjacentHTML("beforeend", track.innerHTML);
+    originals.forEach((card) => track.appendChild(card.cloneNode(true)));
 
     applyImageReady(track);
 
     return {
       row,
       track,
-      cycleWidth,
+      cycleWidth
     };
   };
 
@@ -82,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cycleWidth: built.cycleWidth,
         speed,
         direction,
-        offset: startOffset,
+        offset: startOffset
       });
     });
   };
@@ -122,10 +127,23 @@ document.addEventListener("DOMContentLoaded", () => {
     animationId = requestAnimationFrame(animateWheels);
   };
 
-  window.addEventListener("resize", () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(startWheels, 180);
-  });
+  const rebuildAfterResize = () => {
+    const currentWidth = window.innerWidth;
+
+    if (Math.abs(currentWidth - lastWindowWidth) < 40) return;
+
+    lastWindowWidth = currentWidth;
+    startWheels();
+  };
+
+  window.addEventListener(
+    "resize",
+    () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(rebuildAfterResize, 450);
+    },
+    { passive: true }
+  );
 
   startWheels();
 });
