@@ -78,7 +78,6 @@ li {
 
 /* =========================================================
    IMAGE FADE-IN
-   Add class via main.js to content images only
    ========================================================= */
 
 .fade-img {
@@ -91,7 +90,6 @@ li {
   opacity: 1;
 }
 
-/* do not fade structural images */
 .wallPaper img,
 .navLogo img,
 .beNook img {
@@ -115,6 +113,7 @@ li {
   }
   90% {
     opacity: 1;
+    background-color: #000000;
   }
   99% {
     opacity: 0.5;
@@ -388,9 +387,8 @@ li {
   overflow: visible;
   width: auto;
   max-width: 100%;
-  transition: .6s;
-  gap: 0.25rem;
-  padding: 5px;
+  gap: 0.2rem;
+  padding: 4px;
   border-radius: var(--radius-sm);
 }
 
@@ -403,7 +401,7 @@ li {
   height: 100%;
   width: 100%;
   transition: .6s;
-  padding: 5px;
+  padding: 4px;
   border-radius: var(--radius-sm);
 }
 
@@ -411,11 +409,11 @@ li {
   width: auto;
   min-width: 0;
   height: auto;
-  padding: 0.3rem 0.55rem;
+  padding: 0.28rem 0.5rem;
   background: transparent;
   border-radius: var(--radius-sm);
   color: var(--accent);
-  font-size: clamp(0.9rem, 1.35vw, 1.45rem);
+  font-size: clamp(0.9rem, 1.15vw, 1.3rem);
   font-family: Lobster, "Kristen ITC", Script;
   line-height: 1.05;
   white-space: nowrap;
@@ -453,10 +451,10 @@ li {
 
 .nav-item {
   color: var(--accent);
-  font-size: clamp(0.9rem, 1.35vw, 1.45rem);
+  font-size: clamp(0.9rem, 1.15vw, 1.3rem);
   font-family: Lobster, "Kristen ITC", Script;
   overflow: visible;
-  padding: 5px;
+  padding: 4px;
   border-radius: var(--radius-sm);
 }
 
@@ -602,6 +600,7 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
   z-index: 19;
@@ -629,13 +628,23 @@ p {
 
 .scroller {
   width: 100%;
-  height: auto;
+  min-height: 100vh;
   justify-content: center;
+  align-items: center;
   display: flex;
   padding: 2px;
-  z-index: 200;
+  z-index: 260;
   text-align: center;
   position: relative;
+}
+
+.scroller img {
+  position: relative;
+  z-index: 320;
+  max-height: 100vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .cntr {
@@ -801,7 +810,7 @@ p {
 .photo-block {
   position: sticky;
   top: 0;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: grid;
   overflow: hidden;
@@ -825,12 +834,12 @@ p {
   animation-fill-mode: both;
   animation-timing-function: linear;
   animation-timeline: --collage;
-  animation-range: entry 100% exit 0%;
+  animation-range: entry 0% exit 100%;
   will-change: transform;
 }
 
 .collage {
-  height: 225vh;
+  height: 175vh;
   view-timeline: --collage;
 }
 
@@ -887,7 +896,7 @@ p {
 
   .navBar a,
   .nav-item {
-    font-size: clamp(0.9rem, 1.35vw, 1.45rem);
+    font-size: clamp(0.9rem, 1.15vw, 1.3rem);
     white-space: nowrap;
   }
 
@@ -896,20 +905,22 @@ p {
   }
 }
 
-@media (min-width: 601px) and (max-width: 768px) {
-  .header {
-    grid-template-columns: auto 1fr;
-    min-height: 90px;
+@media (max-width: 768px) {
+  .wallPaper {
+    display: none !important;
   }
 
-  .navLogo a,
-  .nav-logo {
-    width: var(--logo-size-tablet);
-    height: var(--logo-size-tablet);
+  body {
+    background-color: #000000 !important;
   }
 
   .beNook {
-    display: none;
+    display: none !important;
+  }
+
+  .header {
+    grid-template-columns: auto 1fr;
+    min-height: 90px;
   }
 
   .navBar {
@@ -919,14 +930,22 @@ p {
   .nav-menu {
     justify-content: flex-end;
   }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .navLogo a,
+  .nav-logo {
+    width: var(--logo-size-tablet);
+    height: var(--logo-size-tablet);
+  }
 
   .navBar a,
   .nav-item {
-    font-size: clamp(0.8rem, 1.55vw, 1rem);
+    font-size: clamp(0.78rem, 1.4vw, 0.98rem);
     white-space: normal;
     text-align: center;
-    padding-left: 0.35rem;
-    padding-right: 0.35rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
   }
 
   .animate-text {
@@ -949,15 +968,18 @@ p {
     width: 72%;
     height: auto;
   }
+
+  .collage {
+    height: 155vh;
+  }
 }
 
 @media (max-width: 600px) {
   .header {
-    grid-template-columns: auto 1fr;
     align-items: center;
-    min-height: 90px;
-    padding: 0.5rem;
-    gap: 0.35rem;
+    min-height: 84px;
+    padding: 0.45rem;
+    gap: 0.3rem;
   }
 
   .navLogo,
@@ -967,27 +989,18 @@ p {
     height: var(--logo-size-mobile);
   }
 
-  .beNook {
-    display: none;
-  }
-
-  .navBar {
-    justify-content: flex-end;
-  }
-
   .nav-menu {
-    justify-content: flex-end;
-    gap: 0.2rem;
+    gap: 0.12rem;
   }
 
   .navBar a,
   .nav-item {
     width: auto;
     min-width: 0;
-    font-size: clamp(0.72rem, 2.2vw, 0.92rem);
+    font-size: clamp(0.68rem, 2vw, 0.88rem);
     white-space: normal;
     text-align: center;
-    padding: 0.25rem 0.4rem;
+    padding: 0.2rem 0.32rem;
   }
 
   .animate-text {
@@ -1026,6 +1039,10 @@ p {
   .socLnk a {
     width: 72px;
     height: 72px;
+  }
+
+  .collage {
+    height: 145vh;
   }
 }
 
