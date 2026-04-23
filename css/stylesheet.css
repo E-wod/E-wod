@@ -756,7 +756,13 @@ p {
 .wheels-section {
   position: relative;
   z-index: 6;
-  background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.85) 18%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.08) 0%,
+    rgba(0, 0, 0, 0.72) 10%,
+    rgba(0, 0, 0, 0.95) 35%,
+    rgba(0, 0, 0, 1) 100%
+  );
   padding: 2rem 0 3rem;
   overflow: hidden;
 }
@@ -796,7 +802,7 @@ p {
   overflow: hidden;
   border-radius: 14px;
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
-  background: #000;
+  background: #111;
 }
 
 .wheel-card img {
