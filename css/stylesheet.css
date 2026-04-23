@@ -16,7 +16,7 @@
   --logo-size-tablet: 90px;
   --logo-size-mobile: 82px;
   --wheel-gap: clamp(10px, 1.25vw, 20px);
-  --wheel-card-width: clamp(240px, 30vw, 560px);
+  --wheel-card-width: clamp(260px, 31vw, 560px);
 }
 
 /* RESET / BASE */
@@ -78,10 +78,15 @@ li {
 .navLogo img,
 .beNook img,
 .wheel-card img,
-.wheel-track img {
+.wheel-track img,
+.wheel-card .fade-img,
+.wheel-track .fade-img,
+.wheel-card .loaded,
+.wheel-track .loaded {
   opacity: 1 !important;
-  filter: none;
-  transition: none;
+  visibility: visible !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
 }
 
 /* ANIMATIONS */
@@ -135,7 +140,7 @@ li {
   width: 100%;
   min-height: 12svh;
   top: 0;
-  z-index: 40;
+  z-index: 80;
   position: sticky;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
@@ -308,7 +313,7 @@ li {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.22);
+  background: rgba(0, 0, 0, 0.12);
   pointer-events: none;
   z-index: 1;
 }
@@ -500,13 +505,23 @@ p {
 /* FULL-WINDOW 3 ROW IMAGE WHEEL */
 .wheels-section {
   position: relative;
-  z-index: 6;
+  z-index: 10;
   min-height: 100svh;
   height: 100svh;
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
   padding: clamp(95px, 12svh, 135px) 0 clamp(20px, 3svh, 40px);
-  background: rgba(0, 0, 0, 0.04);
+  background: transparent;
+  isolation: isolate;
+}
+
+.wheels-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.02);
+  z-index: -1;
+  pointer-events: none;
 }
 
 .wheel-stack {
@@ -515,6 +530,8 @@ p {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: clamp(8px, 1.5svh, 18px);
+  position: relative;
+  z-index: 12;
 }
 
 .wheel-row {
@@ -522,8 +539,9 @@ p {
   overflow: visible;
   width: 100%;
   min-height: 0;
-  mask-image: linear-gradient(to right, transparent 0%, #000 7%, #000 93%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 7%, #000 93%, transparent 100%);
+  z-index: 13;
+  mask-image: none;
+  -webkit-mask-image: none;
 }
 
 .wheel-track {
@@ -533,6 +551,8 @@ p {
   width: max-content;
   will-change: transform;
   align-items: center;
+  position: relative;
+  z-index: 14;
 }
 
 .wheel-card {
@@ -540,7 +560,6 @@ p {
   flex: 0 0 auto;
   width: var(--wheel-card-width);
   height: 100%;
-  overflow: hidden;
   border-radius: 14px;
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
   background: #111;
@@ -548,21 +567,38 @@ p {
   transform-origin: center center;
   transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
   position: relative;
-  z-index: 1;
+  z-index: 15;
   cursor: pointer;
+  overflow: visible;
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
 }
 
 .wheel-card:hover {
   transform: rotate(var(--card-rotate)) scale(1.12);
-  z-index: 8;
+  z-index: 200;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
-  filter: brightness(1.1);
+  filter: brightness(1.1) !important;
 }
 
 .wheel-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  background: #000;
+  border-radius: 14px;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  transition: none !important;
+}
+
+.wheel-card:hover img {
+  object-fit: contain;
   opacity: 1 !important;
 }
 
@@ -578,14 +614,27 @@ p {
   --card-rotate: -1deg;
 }
 
+/* BOTTOM IMAGE SLIPS OVER WHEEL */
 .index-hero {
   position: relative;
   width: 100%;
   min-height: 100vh;
   height: 100vh;
   overflow: hidden;
-  z-index: 10;
-  margin-top: clamp(-140px, -10vw, -70px);
+  z-index: 60;
+  margin-top: -42vh;
+  background: #000;
+  box-shadow: 0 -45px 90px rgba(0, 0, 0, 0.8);
+}
+
+.index-hero::before {
+  content: "";
+  position: absolute;
+  inset: -70px 0 auto 0;
+  height: 120px;
+  background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.75) 75%, rgba(0,0,0,1) 100%);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .index-hero .hero-image {
@@ -593,7 +642,8 @@ p {
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  box-shadow: 0 -30px 70px rgba(0, 0, 0, 0.55);
+  opacity: 1 !important;
+  filter: none !important;
 }
 
 /* RESPONSIVE */
@@ -673,6 +723,7 @@ p {
 
   .wheels-section {
     padding: clamp(155px, 28svh, 230px) 0 24px;
+    overflow: visible;
   }
 
   .wheel-card {
@@ -682,7 +733,7 @@ p {
   .index-hero {
     min-height: calc(100svh - 120px);
     height: calc(100svh - 120px);
-    margin-top: clamp(-110px, -12vw, -50px);
+    margin-top: -34vh;
   }
 }
 
@@ -745,7 +796,7 @@ p {
 @media (prefers-reduced-motion: reduce) {
   .fade-img,
   .loaded {
-    opacity: 1;
+    opacity: 1 !important;
     transition: none;
   }
 
