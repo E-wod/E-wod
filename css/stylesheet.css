@@ -15,6 +15,9 @@
   --logo-size-desktop: 100px;
   --logo-size-tablet: 90px;
   --logo-size-mobile: 82px;
+  --wheel-gap: clamp(10px, 1.6vw, 22px);
+  --wheel-card-width: clamp(160px, 22vw, 320px);
+  --wheel-card-height: clamp(120px, 16vw, 240px);
 }
 
 /* =========================================================
@@ -132,30 +135,6 @@ li {
   }
 }
 
-@keyframes travel {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(var(--horizontal), var(--vertical));
-  }
-}
-
-@keyframes bkGnd {
-  0%,
-  50%,
-  90% {
-    transform: scale(.6);
-    opacity: .5;
-  }
-  25%,
-  75%,
-  100% {
-    transform: scale(.1);
-    opacity: .1;
-  }
-}
-
 @keyframes logoAnim {
   0% {
     opacity: 0;
@@ -242,33 +221,11 @@ li {
   }
 }
 
-@keyframes h3Anim {
-  0% {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 @keyframes pAnim {
   0% {
     opacity: 0;
   }
   100% {
-    opacity: 1;
-  }
-}
-
-@keyframes choiceAnim {
-  0% {
-    transform: translateY(80px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -327,7 +284,7 @@ li {
 .navLogo .active,
 .nav-logo:hover,
 .nav-logo .active {
-  transition: .3s ease;
+  transition: 0.3s ease;
   filter: brightness(150%);
 }
 
@@ -349,19 +306,6 @@ li {
   width: 100%;
   max-height: clamp(54px, 8vw, 100px);
   object-fit: contain;
-}
-
-.beNook a {
-  width: 100px;
-  height: auto;
-  background: transparent;
-  position: inherit;
-  align-self: center;
-  justify-content: space-between;
-  display: flex;
-  opacity: 1;
-  animation: pAnim 3s ease forwards;
-  transition: 3s;
 }
 
 .navBar {
@@ -400,7 +344,7 @@ li {
   overflow: visible;
   height: 100%;
   width: 100%;
-  transition: .6s;
+  transition: 0.6s;
   padding: 4px;
   border-radius: var(--radius-sm);
 }
@@ -422,7 +366,7 @@ li {
   overflow: visible;
   position: relative;
   animation: menuAnim 2.5s ease forwards;
-  animation-delay: calc(.085s * var(--i));
+  animation-delay: calc(0.085s * var(--i));
 }
 
 .navBar a::before {
@@ -432,7 +376,7 @@ li {
   background: var(--hover-gradient);
   border-radius: var(--radius-sm);
   opacity: 0;
-  transition: .6s;
+  transition: 0.6s;
   z-index: -1;
 }
 
@@ -443,7 +387,7 @@ li {
 .navBar a:hover,
 .navBar .active {
   color: var(--text);
-  transition: .6s;
+  transition: 0.6s;
   border-radius: var(--radius-sm);
   background: var(--hover-gradient);
   box-shadow: var(--glow);
@@ -456,14 +400,6 @@ li {
   overflow: visible;
   padding: 4px;
   border-radius: var(--radius-sm);
-}
-
-.nav-link {
-  color: var(--accent);
-}
-
-.nav-link:hover {
-  color: var(--text);
 }
 
 .splash-screen {
@@ -486,7 +422,6 @@ li {
   font-family: "sofachrome", sans-serif;
   width: 100%;
   height: auto;
-  position: inherit;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -506,7 +441,7 @@ li {
   width: 100%;
   height: 100vh;
   z-index: 0;
-  opacity: 0.9;
+  opacity: 0.95;
   background-image: var(--wallpaper-default);
   background-attachment: fixed;
   background-position: center;
@@ -519,7 +454,7 @@ li {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.18);
+  background: rgba(0, 0, 0, 0.22);
   pointer-events: none;
   z-index: 1;
 }
@@ -532,6 +467,10 @@ li {
   object-fit: cover;
   object-position: center;
   z-index: 0;
+}
+
+body.services-page .wallPaper img {
+  object-position: 82% center;
 }
 
 .landingContent {
@@ -551,7 +490,6 @@ h1 {
   background-color: transparent;
   width: 100%;
   height: auto;
-  position: inherit;
   justify-content: center;
   display: flex;
   padding: 1px;
@@ -568,7 +506,6 @@ h2 {
   background-color: transparent;
   width: 100%;
   height: auto;
-  position: inherit;
   justify-content: center;
   display: flex;
   padding: 1px;
@@ -581,7 +518,6 @@ h3 {
   font-family: "sofachrome", sans-serif;
   width: 100%;
   height: auto;
-  position: inherit;
   justify-content: center;
   display: flex;
 }
@@ -594,7 +530,6 @@ p {
   background-color: var(--panel);
   width: 100%;
   height: auto;
-  position: inherit;
   justify-content: center;
   display: flex;
   padding: 10px 2px;
@@ -630,13 +565,11 @@ p {
   justify-content: center;
   width: 100%;
   height: auto;
-  position: inherit;
   z-index: 1;
   animation: pAnim 3s ease forwards;
   transition: 3s;
 }
 
-/* default page titles */
 .scroller {
   width: 100%;
   min-height: auto;
@@ -647,23 +580,6 @@ p {
   z-index: 260;
   text-align: center;
   position: relative;
-}
-
-/* homepage final image section only */
-.collage + .scroller {
-  min-height: 100vh;
-  padding: 0;
-}
-
-.scroller img {
-  position: relative;
-  z-index: 320;
-  width: 100%;
-  max-width: none;
-  height: 100vh;
-  max-height: none;
-  object-fit: cover;
-  object-position: 30% center;
 }
 
 .cntr {
@@ -681,7 +597,6 @@ p {
 
 .btnBox {
   z-index: 15;
-  position: inherit;
   padding: 5px;
   border-radius: var(--radius-md);
   background: transparent;
@@ -716,7 +631,7 @@ p {
   background: transparent;
   border-radius: var(--radius-md);
   z-index: -1;
-  transition: .6s;
+  transition: 0.6s;
 }
 
 .btnBox a:hover::before {
@@ -729,12 +644,11 @@ p {
   border-radius: var(--radius-md);
   box-shadow: var(--glow);
   background: var(--hover-gradient);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .socLnk {
   z-index: 15;
-  position: inherit;
   padding: 5px;
   border-radius: 50%;
   background: transparent;
@@ -748,7 +662,6 @@ p {
 .socLnk a {
   width: 80px;
   height: 80px;
-  position: inherit;
   background: transparent;
   display: flex;
   opacity: 0;
@@ -759,7 +672,7 @@ p {
   border-radius: 50%;
   padding: 10px;
   animation: h1Anim 1.975s ease forwards;
-  animation-delay: calc(.085s * var(--i));
+  animation-delay: calc(0.085s * var(--i));
 }
 
 .socLnk a::before {
@@ -770,7 +683,7 @@ p {
   border-radius: 50%;
   z-index: -1;
   opacity: 0;
-  transition: .6s;
+  transition: 0.6s;
 }
 
 .socLnk a:hover::before {
@@ -784,7 +697,7 @@ p {
   border-radius: 50%;
   box-shadow: var(--glow);
   background: var(--hover-gradient);
-  transition: .6s;
+  transition: 0.6s;
 }
 
 .obJects {
@@ -793,7 +706,6 @@ p {
   display: flex;
   width: 100%;
   height: auto;
-  position: inherit;
   z-index: 999;
 }
 
@@ -803,7 +715,6 @@ p {
   flex-direction: column;
   justify-content: center;
   display: flex;
-  position: inherit;
   background-color: transparent;
   padding-bottom: 2px;
   animation: pAnim 3s ease forwards;
@@ -823,108 +734,105 @@ p {
 }
 
 /* =========================================================
-   HOMEPAGE COLLAGE
+   INDEX HERO + CASCADING WHEELS
    ========================================================= */
 
-.photo-block {
-  position: sticky;
-  top: 0;
-  height: 100vh;
+.index-hero {
+  position: relative;
   width: 100%;
-  display: grid;
+  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.index-hero .hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.wheels-section {
+  position: relative;
+  z-index: 6;
+  background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.85) 18%, rgba(0,0,0,1) 100%);
+  padding: 2rem 0 3rem;
   overflow: hidden;
 }
 
-.photo-grid {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(38deg);
+.wheel-stack {
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  z-index: 2;
+  gap: 1.15rem;
+}
+
+.wheel-row {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+}
+
+.wheel-row.offset-left {
+  padding-left: clamp(0.5rem, 3vw, 2rem);
+}
+
+.wheel-row.offset-right {
+  padding-right: clamp(0.5rem, 3vw, 2rem);
+}
+
+.wheel-track {
+  display: flex;
+  gap: var(--wheel-gap);
+  width: max-content;
   will-change: transform;
 }
 
-.photo {
-  aspect-ratio: 3 / 4;
-  width: 13vmax;
-  animation-name: travel;
-  animation-fill-mode: both;
-  animation-timing-function: linear;
-  animation-timeline: --collage;
-  animation-range: entry 0% exit 100%;
-  will-change: transform;
+.wheel-card {
+  flex: 0 0 auto;
+  width: var(--wheel-card-width);
+  height: var(--wheel-card-height);
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+  background: #000;
 }
 
-.collage {
-  height: 220vh;
-  view-timeline: --collage;
-}
-
-.photo img {
+.wheel-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.photo:nth-of-type(9n + 1):nth-of-type(even),
-.photo:nth-of-type(9n + 3):nth-of-type(even),
-.photo:nth-of-type(9n + 5):nth-of-type(even),
-.photo:nth-of-type(9n + 7):nth-of-type(even),
-.photo:nth-of-type(9n + 9):nth-of-type(even) {
-  --vertical: -100%;
-  --horizontal: 100%;
+.wheel-card.tall {
+  height: clamp(180px, 26vw, 340px);
 }
 
-.photo:nth-of-type(9n + 1):nth-of-type(odd),
-.photo:nth-of-type(9n + 3):nth-of-type(odd),
-.photo:nth-of-type(9n + 5):nth-of-type(odd),
-.photo:nth-of-type(9n + 7):nth-of-type(odd),
-.photo:nth-of-type(9n + 9):nth-of-type(odd) {
-  --vertical: -100%;
-  --horizontal: -100%;
+.wheel-card.wide {
+  width: clamp(220px, 30vw, 420px);
 }
 
-.photo:nth-of-type(9n + 2):nth-of-type(even),
-.photo:nth-of-type(9n + 4):nth-of-type(even),
-.photo:nth-of-type(9n + 6):nth-of-type(even),
-.photo:nth-of-type(9n + 8):nth-of-type(even) {
-  --vertical: 100%;
-  --horizontal: -100%;
+.wheel-row:nth-child(1) .wheel-card {
+  transform: rotate(-2deg);
 }
 
-.photo:nth-of-type(9n + 2):nth-of-type(odd),
-.photo:nth-of-type(9n + 4):nth-of-type(odd),
-.photo:nth-of-type(9n + 6):nth-of-type(odd),
-.photo:nth-of-type(9n + 8):nth-of-type(odd) {
-  --vertical: 100%;
-  --horizontal: 100%;
+.wheel-row:nth-child(2) .wheel-card {
+  transform: rotate(1.5deg);
+}
+
+.wheel-row:nth-child(3) .wheel-card {
+  transform: rotate(-1deg);
+}
+
+.wheel-row:nth-child(4) .wheel-card {
+  transform: rotate(2deg);
 }
 
 /* =========================================================
    RESPONSIVE
    ========================================================= */
 
-@media (min-width: 769px) {
-  .navLogo a,
-  .nav-logo {
-    width: var(--logo-size-desktop);
-    height: var(--logo-size-desktop);
-  }
-
-  .navBar a,
-  .nav-item {
-    font-size: clamp(0.9rem, 1.15vw, 1.3rem);
-    white-space: nowrap;
-  }
-
-  .beNook {
-    display: flex;
-  }
-}
-
-/* smaller windows base */
 @media (max-width: 768px) {
   .wallPaper {
     display: none !important;
@@ -981,31 +889,6 @@ p {
     text-align: center;
   }
 
-  .beePic {
-    min-height: calc(100svh - 180px);
-    height: calc(100svh - 180px);
-  }
-
-  .beePic img {
-    object-position: center center;
-  }
-
-  .photo-block {
-    height: 100svh;
-  }
-
-  .photo-grid {
-    top: 48%;
-  }
-
-  .collage + .scroller img {
-    width: 100%;
-    height: 100svh;
-    object-fit: cover;
-    object-position: 28% center;
-  }
-
-  /* add wallpaper back only for contact and services */
   body.contact-page .wallPaper,
   body.services-page .wallPaper {
     display: block !important;
@@ -1027,7 +910,7 @@ p {
   }
 
   body.services-page .wallPaper::after {
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.22);
   }
 
   body.contact-page .wallPaper img {
@@ -1035,8 +918,33 @@ p {
   }
 
   body.services-page .wallPaper img {
-    object-fit: cover;
-    object-position: center;
+    object-position: 82% center;
+  }
+
+  .index-hero {
+    min-height: calc(100svh - 165px);
+    height: calc(100svh - 165px);
+  }
+
+  .index-hero .hero-image {
+    object-position: center center;
+  }
+
+  .wheel-stack {
+    gap: 0.85rem;
+  }
+
+  .wheel-card {
+    width: clamp(160px, 52vw, 260px);
+    height: clamp(120px, 34vw, 180px);
+  }
+
+  .wheel-card.tall {
+    height: clamp(190px, 52vw, 280px);
+  }
+
+  .wheel-card.wide {
+    width: clamp(220px, 68vw, 360px);
   }
 }
 
@@ -1074,14 +982,6 @@ p {
   .picFrame {
     width: 72%;
     height: auto;
-  }
-
-  .photo {
-    width: 28vmax;
-  }
-
-  .collage {
-    height: 195vh;
   }
 }
 
@@ -1121,10 +1021,6 @@ p {
     font-size: clamp(0.9rem, 3.4vw, 1rem);
   }
 
-  .photo {
-    width: 34vmax;
-  }
-
   .picFrame {
     width: 88%;
     height: auto;
@@ -1143,10 +1039,6 @@ p {
     width: 72px;
     height: 72px;
   }
-
-  .collage {
-    height: 182vh;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1155,11 +1047,12 @@ p {
     transition: none;
   }
 
-  .photo-grid,
-  .photo,
   .navBar a,
   .btnBox a,
-  .socLnk a {
+  .socLnk a,
+  .navLogo a,
+  .nav-logo,
+  .wheel-track {
     animation: none !important;
     transition: none !important;
   }
