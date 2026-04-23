@@ -76,18 +76,10 @@ html, body {
 .wheels-section {
   position: relative;
   z-index: 20;
-
-  /* 🔥 THIS IS THE FIX */
   background: #000;
-
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   overflow: hidden;
-}
-
-/* remove overlay entirely */
-.wheels-section::before {
-  display: none;
 }
 
 /* =========================
