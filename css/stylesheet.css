@@ -515,6 +515,15 @@ li {
   overflow: hidden;
 }
 
+.wallPaper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+  z-index: 1;
+}
+
 .wallPaper img {
   position: absolute;
   inset: 0;
@@ -915,8 +924,18 @@ p {
   }
 }
 
+/* smaller windows base */
 @media (max-width: 768px) {
   .wallPaper {
+    display: none !important;
+    background-image: none !important;
+  }
+
+  .wallPaper::after {
+    display: none !important;
+  }
+
+  .wallPaper img {
     display: none !important;
   }
 
@@ -984,6 +1003,32 @@ p {
     height: 100svh;
     object-fit: cover;
     object-position: 28% center;
+  }
+
+  /* add wallpaper back only for contact and services */
+  body.contact-page .wallPaper,
+  body.services-page .wallPaper {
+    display: block !important;
+    background-image: none !important;
+  }
+
+  body.contact-page .wallPaper img,
+  body.services-page .wallPaper img {
+    display: block !important;
+  }
+
+  body.contact-page .wallPaper::after,
+  body.services-page .wallPaper::after {
+    display: block !important;
+    background: rgba(0, 0, 0, 0.25);
+  }
+
+  body.contact-page .wallPaper img {
+    object-position: 82% 78%;
+  }
+
+  body.services-page .wallPaper img {
+    object-position: 82% center;
   }
 }
 
