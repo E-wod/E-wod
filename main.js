@@ -1,43 +1,50 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const markImageLoaded = (img) => {
-    if (
-      img.closest(".wallPaper") ||
-      img.closest(".navLogo") ||
-      img.closest(".beNook")
-    ) {
-      return;
-    }
+  const applyImageReady = (scope = document) => {
+    scope.querySelectorAll("img").forEach((img) => {
+      if (
+        img.closest(".wallPaper") ||
+        img.closest(".navLogo") ||
+        img.closest(".beNook") ||
+        img.closest(".wheel-card")
+      ) {
+        img.classList.add("loaded");
+        return;
+      }
 
-    img.classList.add("fade-img");
+      img.classList.add("fade-img");
 
-    if (img.complete) {
-      img.classList.add("loaded");
-    } else {
-      img.addEventListener(
-        "load",
-        () => img.classList.add("loaded"),
-        { once: true }
-      );
-      img.addEventListener(
-        "error",
-        () => img.classList.add("loaded"),
-        { once: true }
-      );
-    }
+      if (img.complete) {
+        img.classList.add("loaded");
+      } else {
+        img.addEventListener("load", () => img.classList.add("loaded"), { once: true });
+        img.addEventListener("error", () => img.classList.add("loaded"), { once: true });
+      }
+    });
   };
 
-  const applyFadeHandling = (scope = document) => {
-    scope.querySelectorAll("img").forEach(markImageLoaded);
-  };
-
-  applyFadeHandling();
+  applyImageReady();
 
   if (typeof window.lazyload === "function") {
     const lazyImages = document.querySelectorAll('img[loading="lazy"]');
-    if (lazyImages.length) {
-      window.lazyload(lazyImages);
-    }
+    if (lazyImages.length) window.lazyload(lazyImages);
   }
+
+  const preview = document.createElement("div");
+  preview.className = "wheel-preview";
+  preview.innerHTML = `<img alt="">`;
+  document.body.appendChild(preview);
+
+  const previewImg = preview.querySelector("img");
+
+  const showPreview = (img) => {
+    previewImg.src = img.currentSrc || img.src;
+    previewImg.alt = img.alt || "";
+    preview.classList.add("active");
+  };
+
+  const hidePreview = () => {
+    preview.classList.remove("active");
+  };
 
   const wheelRows = document.querySelectorAll(".wheel-row");
   const wheelState = [];
@@ -49,28 +56,29 @@ document.addEventListener("DOMContentLoaded", () => {
     const track = row.querySelector(".wheel-track");
     if (!track) return null;
 
-    const originalItems = Array.from(track.children).map((node) =>
+    const originalCards = Array.from(track.children).map((node) =>
       node.cloneNode(true)
     );
 
     track.innerHTML = "";
 
     let safety = 0;
-    while (track.scrollWidth < row.offsetWidth * 2 && safety < 30) {
-      originalItems.forEach((item) => track.appendChild(item.cloneNode(true)));
-      safety += 1;
+    while (track.scrollWidth < row.offsetWidth * 2.5 && safety < 40) {
+      originalCards.forEach((card) => track.appendChild(card.cloneNode(true)));
+      safety++;
     }
 
-    const sequenceWidth = track.scrollWidth;
+    const cycleWidth = track.scrollWidth;
+
     track.insertAdjacentHTML("beforeend", track.innerHTML);
+    applyImageReady(track);
 
-    applyFadeHandling(track);
+    track.querySelectorAll(".wheel-card img").forEach((img) => {
+      img.addEventListener("pointerenter", () => showPreview(img));
+      img.addEventListener("pointerleave", hidePreview);
+    });
 
-    return {
-      row,
-      track,
-      cycleWidth: sequenceWidth,
-    };
+    return { row, track, cycleWidth };
   };
 
   const initializeWheels = () => {
@@ -80,15 +88,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const built = buildWheelTrack(row);
       if (!built) return;
 
-      const speed = parseFloat(
-        built.track.getAttribute("data-speed") || "0.04"
-      );
-
-      const direction =
-        (built.track.getAttribute("data-direction") || "left").toLowerCase() ===
-        "right"
-          ? 1
-          : -1;
+      const speed = parseFloat(built.track.dataset.speed || "0.025");
+      const direction = built.track.dataset.direction === "right" ? 1 : -1;
 
       wheelState.push({
         row: built.row,
@@ -96,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cycleWidth: built.cycleWidth,
         speed,
         direction,
-        offset: 0,
+        offset: 0
       });
     });
   };
@@ -107,9 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     wheelState.forEach((item) => {
       const paused = item.row.matches(":hover");
-      const effectiveSpeed = paused ? 0 : item.speed;
-
-      item.offset += item.direction * effectiveSpeed * delta;
+      item.offset += item.direction * (paused ? 0 : item.speed) * delta;
 
       if (item.direction < 0 && Math.abs(item.offset) >= item.cycleWidth) {
         item.offset += item.cycleWidth;
@@ -122,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
       item.track.style.transform = `translate3d(${item.offset}px, 0, 0)`;
     });
 
-    animationId = window.requestAnimationFrame(animateWheels);
+    animationId = requestAnimationFrame(animateWheels);
   };
 
   const startWheels = () => {
@@ -130,17 +129,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     initializeWheels();
 
-    if (animationId) {
-      window.cancelAnimationFrame(animationId);
-    }
+    if (animationId) cancelAnimationFrame(animationId);
 
     lastTime = performance.now();
-    animationId = window.requestAnimationFrame(animateWheels);
+    animationId = requestAnimationFrame(animateWheels);
   };
 
   window.addEventListener("resize", () => {
-    window.clearTimeout(resizeTimer);
-    resizeTimer = window.setTimeout(startWheels, 180);
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(startWheels, 180);
   });
 
   startWheels();
