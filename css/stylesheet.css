@@ -19,6 +19,7 @@
   --wheel-card-width: clamp(240px, 30vw, 560px);
 }
 
+/* RESET / BASE */
 * {
   margin: 0;
   padding: 0;
@@ -62,6 +63,7 @@ li {
   list-style: none;
 }
 
+/* IMAGE FADE-IN */
 .fade-img {
   opacity: 0;
   transition: opacity 1.2s ease;
@@ -69,17 +71,20 @@ li {
 
 .fade-img.loaded,
 .loaded {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .wallPaper img,
 .navLogo img,
 .beNook img,
-.wheel-card img {
+.wheel-card img,
+.wheel-track img {
   opacity: 1 !important;
-  transition: none !important;
+  filter: none;
+  transition: none;
 }
 
+/* ANIMATIONS */
 @keyframes splashscreen {
   0% { opacity: 1; background-color: #fff; transform: scale(1); }
   50%, 90% { opacity: 1; background-color: #000; }
@@ -125,6 +130,7 @@ li {
   to { opacity: 1; }
 }
 
+/* HEADER */
 .header {
   width: 100%;
   min-height: 12svh;
@@ -252,6 +258,7 @@ li {
   border-radius: var(--radius-sm);
 }
 
+/* SPLASH */
 .splash-screen {
   width: 100%;
   height: 100vh;
@@ -281,6 +288,7 @@ li {
   display: inline-block;
 }
 
+/* WALLPAPER */
 .wallPaper {
   position: fixed;
   inset: 0;
@@ -318,6 +326,7 @@ body.services-page .wallPaper img {
   object-position: 82% center;
 }
 
+/* SHARED CONTENT */
 .landingContent {
   width: 100%;
   min-height: 100%;
@@ -488,10 +497,7 @@ p {
   border: 0;
 }
 
-/* =========================================================
-   FULL-WINDOW 3 ROW IMAGE WHEEL
-========================================================= */
-
+/* FULL-WINDOW 3 ROW IMAGE WHEEL */
 .wheels-section {
   position: relative;
   z-index: 6;
@@ -500,7 +506,7 @@ p {
   width: 100%;
   overflow: hidden;
   padding: clamp(95px, 12svh, 135px) 0 clamp(20px, 3svh, 40px);
-  background: rgba(0, 0, 0, 0.18);
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .wheel-stack {
@@ -557,6 +563,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 1 !important;
 }
 
 .wheel-row:nth-child(1) .wheel-card {
@@ -569,30 +576,6 @@ p {
 
 .wheel-row:nth-child(3) .wheel-card {
   --card-rotate: -1deg;
-}
-
-.wheel-preview {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  display: grid;
-  place-items: center;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.wheel-preview.active {
-  opacity: 1;
-}
-
-.wheel-preview img {
-  width: 40vw;
-  height: 40vh;
-  object-fit: contain;
-  border-radius: 18px;
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.8);
-  background: rgba(0, 0, 0, 0.8);
 }
 
 .index-hero {
@@ -613,10 +596,7 @@ p {
   box-shadow: 0 -30px 70px rgba(0, 0, 0, 0.55);
 }
 
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .wallPaper,
   .wallPaper::after,
@@ -697,11 +677,6 @@ p {
 
   .wheel-card {
     width: clamp(170px, 58vw, 270px);
-  }
-
-  .wheel-preview img {
-    width: 70vw;
-    height: 42vh;
   }
 
   .index-hero {
