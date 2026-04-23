@@ -49,26 +49,27 @@ document.addEventListener("DOMContentLoaded", () => {
     const track = row.querySelector(".wheel-track");
     if (!track) return null;
 
-    const originals = Array.from(track.children).map((node) =>
+    const originalItems = Array.from(track.children).map((node) =>
       node.cloneNode(true)
     );
 
     track.innerHTML = "";
-    originals.forEach((item) => track.appendChild(item));
 
-    const minWidth = row.offsetWidth * 2.5;
     let safety = 0;
-
-    while (track.scrollWidth < minWidth && safety < 20) {
-      originals.forEach((item) => track.appendChild(item.cloneNode(true)));
+    while (track.scrollWidth < row.offsetWidth * 2 && safety < 30) {
+      originalItems.forEach((item) => track.appendChild(item.cloneNode(true)));
       safety += 1;
     }
+
+    const sequenceWidth = track.scrollWidth;
+    track.insertAdjacentHTML("beforeend", track.innerHTML);
 
     applyFadeHandling(track);
 
     return {
+      row,
       track,
-      cycleWidth: track.scrollWidth / 2 || track.scrollWidth,
+      cycleWidth: sequenceWidth,
     };
   };
 
@@ -80,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!built) return;
 
       const speed = parseFloat(
-        built.track.getAttribute("data-speed") || "0.3"
+        built.track.getAttribute("data-speed") || "0.04"
       );
 
       const direction =
@@ -90,6 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
           : -1;
 
       wheelState.push({
+        row: built.row,
         track: built.track,
         cycleWidth: built.cycleWidth,
         speed,
@@ -104,7 +106,10 @@ document.addEventListener("DOMContentLoaded", () => {
     lastTime = now;
 
     wheelState.forEach((item) => {
-      item.offset += item.direction * item.speed * delta;
+      const paused = item.row.matches(":hover");
+      const effectiveSpeed = paused ? 0 : item.speed;
+
+      item.offset += item.direction * effectiveSpeed * delta;
 
       if (item.direction < 0 && Math.abs(item.offset) >= item.cycleWidth) {
         item.offset += item.cycleWidth;
