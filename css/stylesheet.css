@@ -42,7 +42,6 @@ img,
 video,
 iframe {
   display: block;
-  max-width: 100%;
 }
 
 img {
@@ -425,7 +424,7 @@ p {
   animation-delay: calc(0.085s * var(--i));
 }
 
-/* ABOUT PAGE OBJECTS */
+/* ABOUT PAGE */
 .bkg {
   width: 100%;
   position: relative;
@@ -464,14 +463,18 @@ p {
   border-radius: 8px;
 }
 
-/* PDF VIEWER */
+/* RESUME PDF */
 .resumeFrame {
-  width: min(94vw, 900px);
+  width: min(96vw, 900px);
+  max-width: 900px;
+  height: auto;
+  align-items: center;
 }
 
 .pdfBox {
   width: 100%;
-  height: min(92vh, 1165px);
+  aspect-ratio: 8.5 / 11;
+  max-height: 92vh;
   overflow: auto;
   display: flex;
   justify-content: center;
@@ -484,10 +487,10 @@ p {
 .pdfBox iframe {
   width: 100%;
   height: 100%;
-  min-height: 1050px;
+  min-height: unset;
+  max-width: none;
   border: none;
   background: #303030;
-  display: block;
 }
 
 /* INDEX CAROUSEL */
@@ -672,15 +675,13 @@ p {
   }
 
   .resumeFrame {
-    width: 94vw;
+    width: 96vw;
   }
 
   .pdfBox {
-    height: 92vh;
-  }
-
-  .pdfBox iframe {
-    min-height: 900px;
+    width: 100%;
+    aspect-ratio: 8.5 / 11;
+    max-height: 88vh;
   }
 }
 
@@ -722,11 +723,7 @@ p {
   }
 
   .pdfBox {
-    height: 88vh;
-  }
-
-  .pdfBox iframe {
-    min-height: 820px;
+    max-height: 86vh;
   }
 
   .btnBox a {
