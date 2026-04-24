@@ -425,37 +425,69 @@ p {
   animation-delay: calc(0.085s * var(--i));
 }
 
+/* ABOUT PAGE OBJECTS */
+.bkg {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
 .obJects {
   width: 100%;
-  z-index: 999;
+  z-index: 20;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 0 0 18px;
 }
 
 .picFrame {
-  width: 50%;
-  height: 50%;
+  width: min(92vw, 900px);
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-bottom: 2px;
   animation: pAnim 3s ease forwards;
+}
+
+.picFrame figcaption {
+  width: 100%;
 }
 
 .picFrame img,
 .picFrame video {
   width: 100%;
+  height: auto;
   display: block;
+  border-radius: 8px;
 }
 
-.picFrame iframe {
+/* PDF VIEWER */
+.resumeFrame {
+  width: min(94vw, 900px);
+}
+
+.pdfBox {
   width: 100%;
-  height: min(100vh, 1100px); /* fits roughly 1 PDF page */
-  border: none;
+  height: min(92vh, 1165px);
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #303030;
   border-radius: 10px;
-  background: #000;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.65);
+}
+
+.pdfBox iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 1050px;
+  border: none;
+  background: #303030;
   display: block;
-  overflow: auto; /* scrollbar only appears when needed */
 }
 
 /* INDEX CAROUSEL */
@@ -569,7 +601,6 @@ p {
     overflow: hidden;
   }
 
-  /* wallpaper stays visible on smaller screens */
   .wallPaper,
   .wallPaper::after,
   .wallPaper img {
@@ -636,8 +667,20 @@ p {
     transform: rotate(var(--card-rotate)) scale(1.08);
   }
 
-  .picFrame iframe {
-    height: 70vh;
+  .picFrame {
+    width: 92vw;
+  }
+
+  .resumeFrame {
+    width: 94vw;
+  }
+
+  .pdfBox {
+    height: 92vh;
+  }
+
+  .pdfBox iframe {
+    min-height: 900px;
   }
 }
 
@@ -653,11 +696,6 @@ p {
     font-size: 1rem;
     white-space: normal;
     padding: 0.38rem 0.7rem;
-  }
-
-  .picFrame {
-    width: 72%;
-    height: auto;
   }
 }
 
@@ -676,8 +714,19 @@ p {
   }
 
   .picFrame {
-    width: 88%;
-    height: auto;
+    width: 94vw;
+  }
+
+  .resumeFrame {
+    width: 96vw;
+  }
+
+  .pdfBox {
+    height: 88vh;
+  }
+
+  .pdfBox iframe {
+    min-height: 820px;
   }
 
   .btnBox a {
