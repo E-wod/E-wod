@@ -443,7 +443,11 @@ p {
 }
 
 .picFrame img,
-.picFrame video,
+.picFrame video {
+  width: 100%;
+  display: block;
+}
+
 .picFrame iframe {
   width: 100%;
   height: 80vh;
@@ -451,6 +455,7 @@ p {
   border-radius: 10px;
   background: #000;
   display: block;
+  overflow: hidden;
 }
 
 /* INDEX CAROUSEL */
@@ -629,6 +634,10 @@ p {
 
   .wheel-card:hover {
     transform: rotate(var(--card-rotate)) scale(1.08);
+  }
+
+  .picFrame iframe {
+    height: 70vh;
   }
 }
 
