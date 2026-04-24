@@ -446,12 +446,11 @@ p {
 .picFrame video,
 .picFrame iframe {
   width: 100%;
+  height: 80vh;
+  border: none;
+  border-radius: 10px;
+  background: #000;
   display: block;
-}
-
-.picFrame iframe {
-  aspect-ratio: 16 / 9;
-  border: 0;
 }
 
 /* INDEX CAROUSEL */
