@@ -10,8 +10,14 @@
   --text-gradient: linear-gradient(119deg, #1E85D4 4%, #621C94 21%, #802A1F 34%, #FF9D00 64%, #1E85D4 94%);
   --wallpaper-default: url("https://imagizer.imageshack.com/img922/3329/JkFa5u.jpg");
   --glow: 0 2px 7px azure;
-  --radius-sm: 8px;
-  --radius-md: 14px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --glass-bg: rgba(255, 255, 255, 0.07);
+  --glass-bg-hover: rgba(255, 255, 255, 0.16);
+  --glass-border: rgba(255, 255, 255, 0.22);
+  --glass-shadow: 0 8px 28px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.18);
+  --glass-glow: 0 0 14px rgba(3,153,158,0.35), 0 0 28px rgba(255,255,255,0.12);
   --logo-size-desktop: 100px;
   --logo-size-tablet: 90px;
   --logo-size-mobile: 82px;
@@ -162,6 +168,7 @@ body.index-page .header {
   align-items: center;
   justify-content: center;
   animation: logoAnim 2.5s;
+  border-radius: var(--radius-md);
 }
 
 .navLogo img,
@@ -197,8 +204,9 @@ body.index-page .header {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 0.2rem;
+  gap: 0.3rem;
   padding: 4px;
+  overflow: visible;
 }
 
 .nav-item {
@@ -206,10 +214,12 @@ body.index-page .header {
   font-size: clamp(0.9rem, 1.15vw, 1.3rem);
   font-family: Lobster, "Kristen ITC", Script;
   padding: 4px;
+  overflow: visible;
 }
 
+/* GLASS NAV BUTTONS */
 .navBar a {
-  padding: 0.28rem 0.5rem;
+  padding: 0.42rem 0.68rem;
   color: var(--accent);
   font-size: clamp(0.9rem, 1.15vw, 1.3rem);
   font-family: Lobster, "Kristen ITC", Script;
@@ -217,28 +227,41 @@ body.index-page .header {
   white-space: nowrap;
   opacity: 0;
   position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  background: transparent;
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
   animation: menuAnim 2.5s ease forwards;
   animation-delay: calc(0.085s * var(--i));
+  transition: color 0.35s ease, background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
 }
 
 .navBar a::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--hover-gradient);
-  border-radius: var(--radius-sm);
+  border-radius: inherit;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.03) 45%, rgba(3,153,158,0.14));
   opacity: 0;
-  transition: 0.5s;
+  transition: opacity 0.45s ease;
   z-index: -1;
-}
-
-.navBar a:hover::before {
-  opacity: 1;
 }
 
 .navBar a:hover {
   color: var(--text);
-  box-shadow: var(--glow);
+  background: var(--glass-bg-hover);
+  border-color: var(--glass-border);
+  box-shadow: var(--glass-shadow), var(--glass-glow);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transform: translateY(-1px);
+}
+
+.navBar a:hover::before {
+  opacity: 1;
 }
 
 /* SPLASH */
@@ -362,6 +385,7 @@ p {
   text-shadow: 1px 0 1px #000;
   background-color: var(--panel);
   animation: pAnim 1s ease forwards;
+  border-radius: var(--radius-md);
 }
 
 .scroller {
@@ -392,8 +416,10 @@ p {
   justify-content: center;
   color: var(--accent);
   padding: 5px;
+  overflow: visible;
 }
 
+/* GLASS CTA BUTTON */
 .btnBox a {
   width: 180px;
   height: 60px;
@@ -402,17 +428,37 @@ p {
   color: var(--accent);
   font-size: 25px;
   font-family: "sofachrome", sans-serif;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   padding: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   animation: h1Anim 2.5s ease forwards;
+  transition: color 0.35s ease, background 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.btnBox a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255,255,255,0.24), transparent 48%, rgba(3,153,158,0.18));
+  opacity: 0.65;
+  pointer-events: none;
 }
 
 .btnBox a:hover {
   color: var(--text);
-  box-shadow: var(--glow);
-  background: var(--hover-gradient);
+  background: var(--glass-bg-hover);
+  box-shadow: var(--glass-shadow), var(--glass-glow);
+  transform: translateY(-2px) scale(1.02);
 }
 
+/* GLASS SOCIAL BUTTONS */
 .socLnk a {
   width: 80px;
   height: 80px;
@@ -421,8 +467,37 @@ p {
   align-items: center;
   border-radius: 50%;
   padding: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   animation: h1Anim 1.975s ease forwards;
   animation-delay: calc(0.085s * var(--i));
+  transition: background 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.socLnk a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255,255,255,0.22), transparent 50%, rgba(3,153,158,0.18));
+  pointer-events: none;
+}
+
+.socLnk a:hover {
+  box-shadow: var(--glass-shadow), var(--glass-glow);
+  background: var(--glass-bg-hover);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.socLnk img {
+  position: relative;
+  z-index: 2;
+  border-radius: 50%;
 }
 
 .obJects {
@@ -440,19 +515,21 @@ p {
   justify-content: center;
   padding-bottom: 2px;
   animation: pAnim 3s ease forwards;
+  border-radius: var(--radius-lg);
 }
 
 .picFrame img,
 .picFrame video {
   width: 100%;
   display: block;
+  border-radius: var(--radius-md);
 }
 
 .picFrame iframe {
   width: 100%;
   height: 80vh;
   border: none;
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   background: #000;
   display: block;
   overflow: hidden;
@@ -516,7 +593,7 @@ p {
   height: 100%;
   overflow: visible;
   cursor: pointer;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   background: transparent;
   transform: rotate(var(--card-rotate)) scale(1);
   transform-origin: center center;
@@ -534,14 +611,14 @@ p {
   opacity: 1 !important;
   filter: none !important;
   mix-blend-mode: normal !important;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   background: transparent;
 }
 
 .wheel-card:hover {
   z-index: 1000;
   transform: rotate(var(--card-rotate)) scale(1.14);
-  box-shadow: 0 24px 60px rgba(0,0,0,0.8);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.8), var(--glass-glow);
   filter: brightness(1.08) saturate(1.06) !important;
 }
 
@@ -569,7 +646,6 @@ p {
     overflow: hidden;
   }
 
-  /* wallpaper stays visible on smaller screens */
   .wallPaper,
   .wallPaper::after,
   .wallPaper img {
@@ -601,7 +677,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.35rem;
+    gap: 0.45rem;
   }
 
   .navBar a,
@@ -610,6 +686,11 @@ p {
     min-width: 0;
     justify-content: center;
     text-align: center;
+  }
+
+  .navBar a {
+    padding: 0.42rem 0.72rem;
+    border-radius: var(--radius-md);
   }
 
   body.contact-page .wallPaper img {
@@ -686,7 +767,8 @@ p {
     height: auto;
     min-height: 0;
     font-size: 18px;
-    padding: 0.45rem 0.8rem;
+    padding: 0.5rem 0.85rem;
+    border-radius: var(--radius-md);
   }
 
   .socLnk a {
