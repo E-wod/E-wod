@@ -218,7 +218,7 @@ body.index-page .header {
   overflow: visible;
 }
 
-/* GLASS NAV BUTTONS — GLASS ONLY SHOWS ON HOVER */
+/* NAV BUTTONS */
 .navBar a {
   padding: 0.42rem 0.68rem;
   color: var(--accent);
@@ -659,6 +659,325 @@ p {
   display: none !important;
 }
 
+/* SERVICES SCROLL ANIMATION - SCOPED */
+.services-page {
+  overflow-y: auto;
+}
+
+.services-scroll {
+  position: relative;
+  z-index: 2;
+}
+
+.services-scroll .service-hero-panel {
+  min-height: 100vh;
+  position: relative;
+}
+
+.services-scroll .service-animation-panels {
+  position: relative;
+}
+
+.services-scroll article {
+  min-height: 100vh;
+  position: relative;
+}
+
+.services-scroll .service-fixed {
+  position: relative;
+  inset: 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.services-scroll .service-fixed img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 82% center;
+  filter: brightness(0.48) saturate(0.95);
+  z-index: -1;
+}
+
+.services-scroll .service-content {
+  width: min(950px, 92%);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: clamp(7rem, 12vh, 11rem) 1rem 4rem;
+  position: relative;
+  z-index: 3;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.services-scroll .service-content p {
+  width: auto;
+  max-width: 42ch;
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md);
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.services-scroll h1,
+.services-scroll h2 {
+  font-family: "sofachrome", sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 5vw, 5.5rem);
+  line-height: 1.05;
+}
+
+.services-scroll .service-static {
+  position: relative;
+  z-index: 6;
+}
+
+.services-scroll .service-dark-panel {
+  background:
+    radial-gradient(circle at center, rgba(3,153,158,0.18), transparent 45%),
+    #000;
+}
+
+.services-scroll .service-text-wrap {
+  position: sticky;
+  bottom: 4rem;
+  transform-origin: 50% 0;
+}
+
+.services-scroll .service-loud-wrap {
+  clip-path: inset(0 0 0 0);
+  mask: linear-gradient(white 50%, transparent) 0 100% / 100% 200% no-repeat;
+}
+
+.services-scroll .service-chat-container {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.services-scroll .service-text-blocks {
+  width: min(42ch, 92vw);
+  display: grid;
+  gap: 1.25rem;
+}
+
+.services-scroll .service-text-blocks p {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  font-family: Lobster, "Kristen ITC", Script;
+  font-size: clamp(1.35rem, 2.4vw, 3rem);
+  background: rgba(0,0,0,0.42);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: var(--radius-md);
+  box-shadow: var(--glass-shadow);
+}
+
+.services-scroll .service-text-blocks p:nth-of-type(even) {
+  justify-self: end;
+  color: var(--accent-bright);
+  text-align: right;
+}
+
+.services-scroll .service-filler {
+  position: absolute;
+  bottom: 30vh;
+  width: 100%;
+  padding: 1rem;
+}
+
+.services-scroll .service-final {
+  gap: 1.5rem;
+}
+
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .services-scroll article {
+      view-timeline: --service-article;
+    }
+
+    .services-scroll .service-fixed {
+      position: fixed;
+      inset: 0;
+    }
+
+    .services-scroll .service-static {
+      position: absolute;
+      inset: 0;
+      z-index: 6;
+    }
+
+    .services-scroll .service-hero-panel {
+      view-timeline: --service-hero;
+    }
+
+    .services-scroll .service-hero-panel .service-fixed {
+      animation:
+        service-scale-and-move both linear,
+        service-fade-out both linear;
+      animation-timeline: --service-hero;
+      animation-range:
+        exit 0% exit 50%,
+        exit 0% exit 25%;
+      transform-origin: 50% 0;
+      z-index: 5;
+    }
+
+    .services-scroll article:first-of-type .service-fixed {
+      clip-path: ellipse(220% 200% at 50% 300%);
+      animation: service-unclip both linear;
+      animation-timeline: --service-article;
+      animation-range: entry 0 entry 100%;
+      z-index: 3;
+    }
+
+    .services-scroll article:first-of-type img {
+      animation: service-scale-down both linear;
+      animation-timeline: --service-article;
+      animation-range: entry;
+    }
+
+    .services-scroll article:first-of-type h2 {
+      animation: service-slide-up both linear;
+      animation-timeline: --service-article;
+      animation-range: entry 20% entry 80%;
+    }
+
+    .services-scroll article:nth-of-type(2) .service-fixed {
+      animation: service-fade-in both linear;
+      animation-timeline: --service-article;
+      animation-range: entry 60% exit 30%;
+      z-index: 3;
+    }
+
+    .services-scroll article:nth-of-type(2) h2 {
+      animation:
+        service-slide-in both linear,
+        service-fade-in both linear,
+        service-fade-away both linear,
+        service-fade-out both linear;
+      animation-timeline:
+        view(),
+        view(),
+        --service-article,
+        --service-article;
+      animation-range:
+        entry 100% cover 25%,
+        entry 100% cover 35%,
+        exit 20% exit 40%,
+        exit 40% exit 50%;
+    }
+
+    .services-scroll article:nth-of-type(3) {
+      height: 400vh;
+    }
+
+    .services-scroll article:nth-of-type(3) .service-fixed {
+      animation:
+        service-fade-in both linear,
+        service-fade-out both linear;
+      animation-timeline:
+        --service-article,
+        --service-article;
+      animation-range:
+        entry 45% exit-crossing 0%,
+        exit 0% exit 15%;
+      z-index: 3;
+    }
+
+    .services-scroll article:nth-of-type(3) h2 {
+      margin-top: 80vh;
+    }
+
+    .services-scroll .service-text-blocks p {
+      animation:
+        service-slide-in both linear,
+        service-fade-in both linear;
+      animation-timeline: --service-article;
+    }
+
+    .services-scroll .service-text-blocks p:nth-of-type(1) { animation-range: entry-crossing 45% entry-crossing 50%; }
+    .services-scroll .service-text-blocks p:nth-of-type(2) { animation-range: entry-crossing 50% entry-crossing 55%; }
+    .services-scroll .service-text-blocks p:nth-of-type(3) { animation-range: entry-crossing 55% entry-crossing 60%; }
+    .services-scroll .service-text-blocks p:nth-of-type(4) { animation-range: entry-crossing 60% entry-crossing 65%; }
+    .services-scroll .service-text-blocks p:nth-of-type(5) { animation-range: entry-crossing 65% entry-crossing 70%; }
+    .services-scroll .service-text-blocks p:nth-of-type(6) { animation-range: entry-crossing 70% entry-crossing 75%; }
+
+    .services-scroll .service-text-blocks {
+      animation: service-fade-out both linear;
+      animation-timeline: --service-article;
+      animation-range: entry-crossing 75% entry-crossing 100%;
+    }
+
+    .services-scroll .service-filler h2 {
+      animation:
+        service-fade-away both linear,
+        service-fade-out both linear;
+      animation-timeline:
+        --service-article,
+        --service-article;
+      animation-range:
+        exit 40% exit 75%,
+        exit 70% exit 90%;
+    }
+
+    .services-scroll article:last-of-type {
+      z-index: 5;
+    }
+
+    .services-scroll article:last-of-type .service-fixed {
+      clip-path: ellipse(220% 200% at 50% 300%);
+      animation: service-unclip both linear;
+      animation-timeline: --service-article;
+      animation-range: entry 20% entry 80%;
+      z-index: 5;
+    }
+  }
+}
+
+@keyframes service-slide-in {
+  0% { translate: 0 100%; opacity: 0; }
+}
+
+@keyframes service-slide-up {
+  0% { translate: 0 100%; }
+}
+
+@keyframes service-fade-in {
+  0% { opacity: 0; }
+}
+
+@keyframes service-fade-out {
+  to { opacity: 0; }
+}
+
+@keyframes service-fade-away {
+  to { filter: blur(4rem); }
+}
+
+@keyframes service-scale-down {
+  0% { scale: 5; }
+}
+
+@keyframes service-unclip {
+  to { clip-path: ellipse(220% 200% at 50% 175%); }
+}
+
+@keyframes service-scale-and-move {
+  to {
+    translate: 0 -10%;
+    scale: 0.35 0.5;
+  }
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   body.index-page {
@@ -697,10 +1016,6 @@ p {
     min-height: auto;
     padding: 0.6rem 0.5rem 0.8rem;
     gap: 0.35rem;
-    background: rgba(0, 0, 0, 0.72);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255,255,255,0.12);
   }
 
   .navBar {
@@ -712,7 +1027,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.45rem;
+    gap: 0.35rem;
   }
 
   .navBar a,
@@ -726,17 +1041,6 @@ p {
   .navBar a {
     padding: 0.42rem 0.72rem;
     border-radius: var(--radius-md);
-    color: var(--accent-bright);
-    background: rgba(0, 0, 0, 0.55);
-    border: 1px solid rgba(3,153,158,0.45);
-    box-shadow: 0 0 12px rgba(3,153,158,0.22);
-  }
-
-  .navBar a:hover {
-    color: var(--text);
-    background: var(--glass-bg-hover);
-    border-color: var(--glass-border);
-    box-shadow: var(--glass-shadow), var(--glass-glow);
   }
 
   body.contact-page .wallPaper img {
@@ -765,6 +1069,19 @@ p {
 
   .picFrame iframe {
     height: 70vh;
+  }
+
+  .services-scroll .service-content {
+    padding-top: clamp(10rem, 32vh, 15rem);
+  }
+
+  .services-scroll h1,
+  .services-scroll h2 {
+    font-size: clamp(1.75rem, 9vw, 3.5rem);
+  }
+
+  .services-scroll .service-fixed img {
+    object-position: 82% center;
   }
 }
 
