@@ -693,7 +693,7 @@ p {
     min-height: auto;
     padding: 0.6rem 0.5rem 0.8rem;
     gap: 0.35rem;
-    background: rgba(0, 0, 0, 0.72);
+    background: rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.12);
@@ -723,7 +723,7 @@ p {
     padding: 0.42rem 0.72rem;
     border-radius: var(--radius-md);
     color: var(--accent-bright);
-    background: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.15);
     border: 1px solid rgba(3,153,158,0.45);
     box-shadow: 0 0 12px rgba(3,153,158,0.22);
   }
