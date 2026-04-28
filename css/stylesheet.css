@@ -327,11 +327,6 @@ body.index-page .header {
   object-position: center right;
 }
 
-/* SERVICES PAGE: REMOVE EXTRA IMAGE BACKGROUND LAYER ONLY */
-body.services-page .wallPaper img {
-  display: none !important;
-}
-
 body.contact-page .wallPaper img {
   object-position: 82% 78%;
 }
@@ -421,7 +416,7 @@ p {
   overflow: visible;
 }
 
-/* CONTACT BUTTON — SAME DEFAULT STYLE AS NAV, GLASS ONLY ON HOVER */
+/* CONTACT BUTTON — GLASS ONLY ON HOVER */
 .btnBox a {
   width: auto;
   min-width: 120px;
@@ -470,7 +465,7 @@ p {
   opacity: 1;
 }
 
-/* SOCIAL BUTTONS — NO GLASS WINDOW UNTIL HOVER */
+/* SOCIAL BUTTONS — NO GLASS UNTIL HOVER */
 .socLnk a {
   width: 80px;
   height: 80px;
@@ -671,10 +666,6 @@ p {
   .wallPaper::after,
   .wallPaper img {
     display: block !important;
-  }
-
-  body.services-page .wallPaper img {
-    display: none !important;
   }
 
   .wallPaper {
