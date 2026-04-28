@@ -1,32 +1,42 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const applyImageReady = (scope = document) => {
-    scope.querySelectorAll("img").forEach((img) => {
-      if (
-        img.closest(".wallPaper") ||
-        img.closest(".navLogo") ||
-        img.closest(".beNook") ||
-        img.closest(".wheel-card")
-      ) {
-        img.classList.remove("fade-img");
-        img.classList.add("loaded");
-        img.style.opacity = "1";
-        return;
-      }
-
-      img.classList.add("fade-img");
-
-      if (img.complete) {
-        img.classList.add("loaded");
-      } else {
-        img.addEventListener("load", () => img.classList.add("loaded"), { once: true });
-        img.addEventListener("error", () => img.classList.add("loaded"), { once: true });
-      }
-    });
-  };
-
   applyImageReady();
+  startImageWheels();
+  initExternalScrollAnimation();
+});
 
+/* IMAGE READY / FADE-IN HANDLING */
+function applyImageReady(scope = document) {
+  scope.querySelectorAll("img").forEach((img) => {
+    if (
+      img.closest(".wallPaper") ||
+      img.closest(".navLogo") ||
+      img.closest(".beNook") ||
+      img.closest(".wheel-card") ||
+      img.closest(".external-scroll-animation")
+    ) {
+      img.classList.remove("fade-img");
+      img.classList.add("loaded");
+      img.style.opacity = "1";
+      return;
+    }
+
+    img.classList.add("fade-img");
+
+    if (img.complete) {
+      img.classList.add("loaded");
+    } else {
+      img.addEventListener("load", () => img.classList.add("loaded"), { once: true });
+      img.addEventListener("error", () => img.classList.add("loaded"), { once: true });
+    }
+  });
+}
+
+/* HOMEPAGE IMAGE WHEEL */
+function startImageWheels() {
   const wheelRows = Array.from(document.querySelectorAll(".wheel-row"));
+
+  if (!wheelRows.length) return;
+
   const wheelState = [];
 
   let animationId = null;
@@ -83,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cycleWidth: built.cycleWidth,
         speed,
         direction,
-        offset: startOffset,
+        offset: startOffset
       });
     });
   };
@@ -115,12 +125,12 @@ document.addEventListener("DOMContentLoaded", () => {
     animationId = requestAnimationFrame(animateWheels);
   };
 
-  const startWheels = () => {
-    if (!wheelRows.length) return;
-
+  const restartWheels = () => {
     initializeWheels();
 
-    if (animationId) cancelAnimationFrame(animationId);
+    if (animationId) {
+      cancelAnimationFrame(animationId);
+    }
 
     lastTime = performance.now();
     animationId = requestAnimationFrame(animateWheels);
@@ -141,14 +151,305 @@ document.addEventListener("DOMContentLoaded", () => {
 
       resizeTimer = setTimeout(() => {
         const currentWidth = window.innerWidth;
+
         if (Math.abs(currentWidth - lastWindowWidth) < 40) return;
 
         lastWindowWidth = currentWidth;
-        startWheels();
+        restartWheels();
       }, 450);
     },
     { passive: true }
   );
 
-  startWheels();
-});
+  restartWheels();
+}
+
+/* EXTERNAL SCROLL ANIMATION FALLBACK */
+function initExternalScrollAnimation() {
+  const root = document.querySelector(".external-scroll-animation");
+
+  if (!root) return;
+  if (CSS.supports("animation-timeline: view()")) return;
+  if (!window.matchMedia("(prefers-reduced-motion: no-preference)").matches) return;
+
+  loadExternalScript("https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js")
+    .then(() => loadExternalScript("https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"))
+    .then(() => runExternalScrollFallback(root))
+    .catch(() => {
+      console.warn("External scroll animation fallback failed to load.");
+    });
+}
+
+function loadExternalScript(src) {
+  return new Promise((resolve, reject) => {
+    const existing = document.querySelector(`script[src="${src}"]`);
+
+    if (existing) {
+      if (existing.dataset.loaded === "true") {
+        resolve();
+      } else {
+        existing.addEventListener("load", resolve, { once: true });
+        existing.addEventListener("error", reject, { once: true });
+      }
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.src = src;
+    script.defer = true;
+    script.dataset.loaded = "false";
+
+    script.onload = () => {
+      script.dataset.loaded = "true";
+      resolve();
+    };
+
+    script.onerror = reject;
+
+    document.head.appendChild(script);
+  });
+}
+
+function runExternalScrollFallback(root) {
+  if (!window.gsap || !window.ScrollTrigger) return;
+
+  const gsap = window.gsap;
+  const ScrollTrigger = window.ScrollTrigger;
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const firstSection =
+    root.querySelector(".external-panel-start") ||
+    root.querySelector(":scope > section:first-of-type");
+
+  const secondSection = root.querySelector(":scope > section:nth-of-type(2)");
+  const articles = secondSection
+    ? Array.from(secondSection.querySelectorAll(":scope > article"))
+    : Array.from(root.querySelectorAll("article"));
+
+  gsap.set(root.querySelectorAll(".fixed"), {
+    position: "fixed",
+    inset: 0
+  });
+
+  gsap.set(root.querySelectorAll(".static"), {
+    position: "absolute",
+    inset: 0,
+    zIndex: 6
+  });
+
+  animateExternalStartPanel(gsap, firstSection);
+  animateExternalArticles(gsap, articles);
+
+  ScrollTrigger.refresh();
+}
+
+function animateExternalStartPanel(gsap, section) {
+  if (!section) return;
+
+  const fixed = section.querySelector(".fixed");
+
+  if (!fixed) return;
+
+  gsap.set(fixed, {
+    transformOrigin: "50% 0%"
+  });
+
+  gsap.to(fixed, {
+    scaleX: 0.35,
+    scaleY: 0.5,
+    yPercent: -10,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: section,
+      start: "top top",
+      end: "bottom 50%",
+      scrub: 0.5
+    }
+  });
+}
+
+function animateExternalArticles(gsap, articles) {
+  if (!articles.length) return;
+
+  articles.forEach((article, index) => {
+    animateArticleFixedLayer(gsap, article, index);
+    animateArticleImage(gsap, article);
+    animateArticleTitle(gsap, article);
+  });
+
+  animateTextBlocks(gsap, articles[2]);
+  animateFinalArticle(gsap, articles[articles.length - 1]);
+}
+
+function animateArticleFixedLayer(gsap, article, index) {
+  const fixed = article.querySelector(".fixed");
+
+  if (!fixed) return;
+
+  if (index === 0) {
+    gsap.set(fixed, {
+      clipPath: "ellipse(220% 200% at 50% 300%)",
+      zIndex: 3
+    });
+
+    gsap.to(fixed, {
+      clipPath: "ellipse(220% 200% at 50% 175%)",
+      scrollTrigger: {
+        trigger: article,
+        start: "top bottom",
+        end: "top top",
+        scrub: 0.5
+      }
+    });
+
+    return;
+  }
+
+  gsap.set(fixed, {
+    zIndex: 3
+  });
+
+  gsap.fromTo(
+    fixed,
+    { opacity: 0 },
+    {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: article,
+        start: "top 80%",
+        end: "top top",
+        scrub: 0.5
+      }
+    }
+  );
+}
+
+function animateArticleImage(gsap, article) {
+  const img = article.querySelector("img");
+
+  if (!img) return;
+
+  gsap.from(img, {
+    scale: 1.3,
+    scrollTrigger: {
+      trigger: article,
+      start: "top bottom",
+      end: "top top",
+      scrub: 0.5
+    }
+  });
+}
+
+function animateArticleTitle(gsap, article) {
+  const title = article.querySelector("h2");
+
+  if (!title) return;
+
+  gsap.from(title, {
+    yPercent: 80,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: article,
+      start: "top 70%",
+      end: "top 30%",
+      scrub: 0.5
+    }
+  });
+
+  gsap.to(title, {
+    opacity: 0,
+    filter: "blur(4rem)",
+    scrollTrigger: {
+      trigger: article,
+      start: "bottom 70%",
+      end: "bottom 45%",
+      scrub: 0.5
+    }
+  });
+}
+
+function animateTextBlocks(gsap, article) {
+  if (!article) return;
+
+  const lines = article.querySelectorAll(".text-blocks p");
+  const textBlocks = article.querySelector(".text-blocks");
+  const filler = article.querySelector(".filler");
+  const fillerTitle = article.querySelector(".filler h2");
+
+  if (lines.length) {
+    gsap.set(article, {
+      height: "400vh"
+    });
+
+    lines.forEach((line, index) => {
+      gsap.from(line, {
+        yPercent: 100,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: article,
+          start: `top -=${90 + index * 10}%`,
+          end: `top -=${100 + index * 10}%`,
+          scrub: 0.5
+        }
+      });
+    });
+  }
+
+  if (textBlocks) {
+    gsap.to(textBlocks, {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: article,
+        start: "bottom 130%",
+        end: "bottom 110%",
+        scrub: 0.5
+      }
+    });
+  }
+
+  if (filler) {
+    gsap.set(filler, {
+      display: "block",
+      position: "absolute",
+      bottom: "30vh",
+      padding: "1rem"
+    });
+  }
+
+  if (fillerTitle) {
+    gsap.to(fillerTitle, {
+      opacity: 0,
+      filter: "blur(4rem)",
+      scrollTrigger: {
+        trigger: article,
+        start: "bottom 55%",
+        end: "bottom 30%",
+        scrub: 0.5
+      }
+    });
+  }
+}
+
+function animateFinalArticle(gsap, article) {
+  if (!article) return;
+
+  const fixed = article.querySelector(".fixed");
+
+  if (!fixed) return;
+
+  gsap.set(fixed, {
+    clipPath: "ellipse(220% 200% at 50% 300%)",
+    zIndex: 5
+  });
+
+  gsap.to(fixed, {
+    clipPath: "ellipse(220% 200% at 50% 175%)",
+    scrollTrigger: {
+      trigger: article,
+      start: "top 80%",
+      end: "top 20%",
+      scrub: 0.5
+    }
+  });
+}
