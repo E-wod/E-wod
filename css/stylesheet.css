@@ -1,5 +1,5 @@
 @charset "utf-8";
- 
+
 :root {
   --accent: #03999e;
   --accent-bright: #1fdde4;
@@ -327,7 +327,7 @@ body.index-page .header {
   object-position: center right;
 }
 
-/* Services page: remove extra image background layer only */
+/* SERVICES PAGE: REMOVE EXTRA IMAGE BACKGROUND LAYER ONLY */
 body.services-page .wallPaper img {
   display: none !important;
 }
