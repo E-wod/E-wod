@@ -655,7 +655,7 @@ p {
   display: none !important;
 }
 
-/* EXTERNAL SCROLL ANIMATION - JS ONLY / CLEAN GLASS UI */
+/* EXTERNAL SCROLL ANIMATION - JS ONLY / BLUR RESTORED */
 .external-scroll-animation {
   position: relative;
   z-index: 20;
@@ -696,10 +696,6 @@ p {
   position: relative;
   overflow: hidden;
 }
-
-/* .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
-  height: 360vh !important;
-} */
 
 .external-scroll-animation .fixed {
   position: absolute;
@@ -787,10 +783,9 @@ p {
   text-shadow:
     0 0 14px rgba(3,153,158,0.42),
     1px 0 1px #000;
-  filter: none !important;
   backface-visibility: hidden;
   transform: translateZ(0);
-  will-change: transform, opacity;
+  will-change: transform, opacity, filter;
 }
 
 .external-scroll-animation h1 {
@@ -871,12 +866,13 @@ p {
   position: sticky;
   bottom: 4rem;
   transform-origin: 50% 0;
-  filter: none !important;
+  will-change: transform, opacity, filter;
 }
 
 .external-scroll-animation .loud-wrap {
   clip-path: inset(0 0 0 0);
-  mask: linear-gradient(white 50%, transparent) 0 100% / 100% 200% no-repeat;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 17%, #000 68%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 17%, #000 68%, transparent 100%);
 }
 
 .external-scroll-animation .chat-container {
@@ -888,6 +884,8 @@ p {
   place-items: center;
   padding: 16vh 0 20vh;
   overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 15%, #000 72%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 15%, #000 72%, transparent 100%);
 }
 
 .external-scroll-animation .text-blocks {
@@ -906,10 +904,10 @@ p {
   font-size: clamp(1.2rem, 2vw, 2.65rem);
   font-weight: 120;
   min-width: min(260px, 72vw);
-  filter: none !important;
   backface-visibility: hidden;
   transform: translateZ(0);
-  will-change: transform, opacity;
+  will-change: transform, opacity, filter;
+  transition: filter 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
 }
 
 .external-scroll-animation .text-blocks p:nth-of-type(odd) {
@@ -943,8 +941,8 @@ p {
   box-shadow: none !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
-  filter: none !important;
   padding: 0 !important;
+  will-change: transform, opacity, filter;
 }
 
 /* RESPONSIVE */
