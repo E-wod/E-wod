@@ -697,9 +697,9 @@ p {
   overflow: hidden;
 }
 
-.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
-  height: 560vh !important;
-}
+/* .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
+  height: 360vh !important;
+} */
 
 .external-scroll-animation .fixed {
   position: absolute;
