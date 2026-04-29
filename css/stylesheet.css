@@ -694,7 +694,7 @@ p {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
 }
-/* 
+
 .external-scroll-animation h1 {
   background-image: var(--text-gradient);
   background-size: 200% auto;
@@ -702,7 +702,7 @@ p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s infinite reverse linear;
-} */
+}
 
 .external-scroll-animation .content > p,
 .external-scroll-animation .text-blocks p,
@@ -710,14 +710,14 @@ p {
   width: fit-content;
   max-width: min(52ch, 92vw);
   padding: 0.85rem 1rem;
-  /* color: var(--text); */
+  color: var(--text);
   background: rgba(0,0,0,0.36);
   border: 1px solid rgba(255,255,255,0.16);
   border-radius: var(--radius-md);
   box-shadow: var(--glass-shadow);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  /* filter: none !important; */
+  filter: none !important;
 }
 
 .external-scroll-animation .content > p {
