@@ -655,26 +655,14 @@ p {
   display: none !important;
 }
 
-/* EXTERNAL SCROLL ANIMATION - TEXT BLUR FIX */
+/* EXTERNAL SCROLL ANIMATION - JS ONLY / GLASS UI */
 .external-scroll-animation {
   position: relative;
-  z-index: 20;
+  z-index: 2;
   min-height: 100vh;
   color: var(--text);
   overflow-x: hidden;
   isolation: isolate;
-  background: #000;
-}
-
-.external-scroll-animation::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background:
-    radial-gradient(circle at 50% 42%, rgba(3,153,158,0.16), transparent 35%),
-    radial-gradient(circle at 72% 68%, rgba(98,28,148,0.14), transparent 42%),
-    #000;
 }
 
 .external-scroll-animation p {
@@ -687,7 +675,6 @@ p {
 
 .external-scroll-animation > section:nth-of-type(1) {
   height: 100vh;
-  overflow: hidden;
 }
 
 .external-scroll-animation > section:nth-of-type(2) {
@@ -697,28 +684,20 @@ p {
 .external-scroll-animation article {
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
-}
-
-.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
-  min-height: 180vh !important;
 }
 
 .external-scroll-animation .fixed {
   position: absolute;
   inset: 0;
-  height: 100vh;
   min-height: 100vh;
   overflow: hidden;
   border-radius: 0;
-  background: #000;
 }
 
 .external-scroll-animation .static {
   position: absolute;
   inset: 0;
   z-index: 6;
-  overflow: hidden;
 }
 
 .external-scroll-animation .fixed::before {
@@ -727,9 +706,9 @@ p {
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(circle at 20% 15%, rgba(3,153,158,0.22), transparent 32%),
-    radial-gradient(circle at 75% 78%, rgba(98,28,148,0.2), transparent 38%),
-    linear-gradient(180deg, rgba(0,0,0,0.38), rgba(0,0,0,0.82));
+    radial-gradient(circle at 20% 15%, rgba(3,153,158,0.25), transparent 34%),
+    radial-gradient(circle at 75% 78%, rgba(98,28,148,0.22), transparent 38%),
+    linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.78));
   pointer-events: none;
 }
 
@@ -738,22 +717,20 @@ p {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.18);
   pointer-events: none;
 }
 
 .external-scroll-animation .fixed img {
   height: 100%;
-  width: 100%;
+  width: 150%;
   object-fit: cover;
-  object-position: center;
   z-index: -1;
   position: absolute;
   inset: 0;
-  left: 0;
-  translate: 0 0;
-  opacity: 1;
-  filter: brightness(0.5) saturate(0.92);
+  left: 50%;
+  translate: -50% 0;
+  filter: brightness(0.48) saturate(0.9);
 }
 
 .external-scroll-animation .content {
@@ -765,36 +742,28 @@ p {
   z-index: 4;
   position: absolute;
   inset: 0;
-  padding: clamp(100px, 14vh, 165px) 1rem 4rem;
+  padding: clamp(7rem, 13vh, 11rem) 1rem 4rem;
   display: grid;
   align-content: center;
   justify-items: center;
   text-align: center;
-  overflow: visible;
-  filter: none !important;
 }
 
 .external-scroll-animation h1,
 .external-scroll-animation h2 {
   width: auto;
-  max-width: min(900px, 92vw);
   display: block;
   color: var(--accent-bright);
   font-family: "sofachrome", sans-serif;
   font-weight: 70;
-  font-size: clamp(1.85rem, 4.2vw, 4.85rem);
-  letter-spacing: -0.025ch;
-  line-height: 1.14;
+  font-size: clamp(2.25rem, 5vw, 6rem);
+  letter-spacing: -0.04ch;
+  line-height: 1.05;
   margin: 0;
-  opacity: 1;
   text-transform: uppercase;
   text-shadow:
     0 0 14px rgba(3,153,158,0.42),
     1px 0 1px #000;
-  filter: none !important;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  will-change: transform, opacity;
 }
 
 .external-scroll-animation h1 {
@@ -807,25 +776,24 @@ p {
 }
 
 .external-scroll-animation .content > p,
-.external-scroll-animation .text-blocks p {
+.external-scroll-animation .text-blocks p,
+.external-scroll-animation .filler h2 {
   width: fit-content;
-  max-width: min(460px, 84vw);
+  max-width: min(42ch, 92vw);
   padding: 0.85rem 1rem;
   color: var(--text);
-  background: rgba(0,0,0,0.42);
+  background: rgba(0,0,0,0.36);
   border: 1px solid rgba(255,255,255,0.16);
   border-radius: var(--radius-md);
   box-shadow: var(--glass-shadow);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  line-height: 1.22;
 }
 
 .external-scroll-animation .content > p {
   margin-top: 1rem;
-  font-size: clamp(1rem, 0.45vw + 1rem, 1.55rem);
+  font-size: clamp(1rem, 0.45vw + 1rem, 1.65rem);
   line-height: 1.5;
-  filter: none !important;
 }
 
 .external-scroll-animation > section:first-of-type {
@@ -841,17 +809,17 @@ p {
 }
 
 .external-scroll-animation > section:first-of-type img {
-  left: 0;
-  translate: 0 0;
+  left: 50%;
+  translate: -50% 0;
 }
 
 .external-scroll-animation > section:first-of-type .fixed .content {
-  justify-items: center;
-  text-align: center;
+  justify-items: start;
+  text-align: left;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:first-of-type .content {
-  align-content: center;
+  align-content: end;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:first-of-type h2 {
@@ -864,100 +832,50 @@ p {
     #000;
 }
 
-.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .fixed {
-  background:
-    radial-gradient(circle at center, rgba(3,153,158,0.24), transparent 42%),
-    radial-gradient(circle at 70% 70%, rgba(98,28,148,0.2), transparent 44%),
-    #000;
-}
-
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content {
-  align-content: center !important;
-  padding-top: clamp(90px, 12vh, 140px);
-  filter: none !important;
+  align-content: start;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) img {
-  filter: saturate(0.55) brightness(0.5);
+  filter: saturate(0.55) brightness(0.48);
 }
 
 .external-scroll-animation .text-wrap {
   position: sticky;
-  bottom: 3.25rem;
+  bottom: 4rem;
   transform-origin: 50% 0;
-  filter: none !important;
-  will-change: transform, opacity;
 }
 
 .external-scroll-animation .loud-wrap {
   clip-path: inset(0 0 0 0);
-  -webkit-mask-image: none !important;
-  mask-image: none !important;
-  filter: none !important;
+  mask: linear-gradient(white 50%, transparent) 0 100% / 100% 200% no-repeat;
 }
 
 .external-scroll-animation .chat-container {
-  min-height: 118vh;
+  min-height: 100vh;
   width: 100%;
   position: sticky;
   top: 0;
   display: grid;
   place-items: center;
-  padding: 9vh 0 12vh;
-  overflow: hidden;
-  -webkit-mask-image: none !important;
-  mask-image: none !important;
-  filter: none !important;
 }
 
 .external-scroll-animation .text-blocks {
   max-width: 100%;
-  width: min(44ch, 92vw);
-  justify-self: center;
+  width: min(42ch, 92vw);
+  justify-self: end;
   display: grid;
-  align-content: center;
-  gap: clamp(1.8rem, 5.25vh, 4.2rem);
-  filter: none !important;
+  place-items: center;
+  gap: 1.25rem 0;
 }
 
 .external-scroll-animation .text-blocks p {
   display: inline-block;
   margin: 0;
   font-family: Lobster, "Kristen ITC", Script;
-  font-size: clamp(1.2rem, 2vw, 2.65rem);
+  font-size: clamp(1.35rem, 2.5vw, 3.5rem);
   font-weight: 120;
-  min-width: min(260px, 72vw);
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  filter: none !important;
-  will-change: transform, opacity;
-  transition:
-    opacity 0.2s ease,
-    transform 0.2s ease;
-}
-
-/* TEXT-ONLY BLUR SIMULATION — container stays sharp */
-.external-scroll-animation .text-blocks p {
-  text-shadow:
-    0 0 0 currentColor,
-    0 0 0 rgba(255,255,255,0);
-}
-
-.external-scroll-animation .text-blocks p.is-blurring,
-.external-scroll-animation .text-blocks p.blur,
-.external-scroll-animation .text-blocks p.blurred,
-.external-scroll-animation .text-blocks p[style*="blur"] {
-  filter: none !important;
-  color: transparent !important;
-  text-shadow:
-    0 0 10px currentColor,
-    0 0 18px currentColor,
-    0 0 26px rgba(255,255,255,0.55);
-}
-
-.external-scroll-animation .text-blocks p:nth-of-type(odd) {
-  justify-self: start;
-  text-align: left;
+  line-height: 1.15;
 }
 
 .external-scroll-animation .text-blocks p:nth-of-type(even) {
@@ -968,6 +886,10 @@ p {
   box-shadow: var(--glass-shadow), 0 0 18px rgba(3,153,158,0.18);
 }
 
+.external-scroll-animation .text-blocks p:nth-of-type(odd) {
+  justify-self: start;
+}
+
 .external-scroll-animation .filler {
   display: none;
 }
@@ -976,24 +898,8 @@ p {
   display: block;
   width: 100%;
   position: absolute;
-  bottom: 52vh;
+  bottom: 30vh;
   padding: 1rem;
-  background:
-    radial-gradient(circle at center, rgba(3,153,158,0.22), transparent 42%),
-    radial-gradient(circle at 62% 55%, rgba(98,28,148,0.18), transparent 44%);
-  filter: none !important;
-}
-
-.external-scroll-animation .filler h2 {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  filter: none !important;
-  opacity: 1;
-  padding: 0 !important;
-  will-change: transform, opacity;
 }
 
 /* RESPONSIVE */
@@ -1102,7 +1008,7 @@ p {
 
   .external-scroll-animation h1,
   .external-scroll-animation h2 {
-    font-size: clamp(1.45rem, 7vw, 3rem);
+    font-size: clamp(1.65rem, 8vw, 3.4rem);
   }
 
   .external-scroll-animation .content {
@@ -1110,31 +1016,16 @@ p {
     padding-top: clamp(8rem, 28vh, 14rem);
   }
 
-  .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content {
-    padding-top: clamp(7rem, 22vh, 12rem);
-  }
-
   .external-scroll-animation .fixed img {
-    width: 100%;
-  }
-
-  .external-scroll-animation .chat-container {
-    min-height: 112vh;
-    padding: 8vh 0 10vh;
+    width: 125%;
   }
 
   .external-scroll-animation .text-blocks {
     width: min(36ch, 90vw);
-    gap: clamp(1.6rem, 4.8vh, 3.6rem);
   }
 
   .external-scroll-animation .text-blocks p {
-    font-size: clamp(1.05rem, 4.6vw, 2rem);
-    min-width: min(220px, 76vw);
-  }
-
-  .external-scroll-animation .filler.is-active {
-    bottom: 50vh;
+    font-size: clamp(1.15rem, 5vw, 2.25rem);
   }
 }
 
