@@ -909,17 +909,17 @@ p {
 }
 
 /* SCROLL TIMELINE ANIMATION */
-@supports (animation-timeline: scroll()) {
+/* @supports (animation-timeline: scroll()) {
   @media (prefers-reduced-motion: no-preference) {
     .external-scroll-animation article {
       view-timeline: --article;
-    }
+    } */
 
     .external-scroll-animation .fixed {
-      position: sticky;
-      top: 0;
-      height: 100vh;
+      position: absolute;
+      inset: 0;
       min-height: 100vh;
+      overflow: hidden;
     }
 
     .external-scroll-animation .static {
