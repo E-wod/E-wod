@@ -169,7 +169,8 @@ function initExternalScrollAnimation() {
   const root = document.querySelector(".external-scroll-animation");
 
   if (!root) return;
-  if (CSS.supports("animation-timeline: view()")) return;
+  /* force GSAP fallback for now */
+  /* if (CSS.supports("animation-timeline: view()")) return; */
   if (!window.matchMedia("(prefers-reduced-motion: no-preference)").matches) return;
 
   loadExternalScript("https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js")
