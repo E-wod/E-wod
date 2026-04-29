@@ -655,7 +655,7 @@ p {
   display: none !important;
 }
 
-/* EXTERNAL SCROLL ANIMATION - REPAIRED TIMING + SAFE BLUR */
+/* EXTERNAL SCROLL ANIMATION - FIXED */
 .external-scroll-animation {
   position: relative;
   z-index: 20;
@@ -700,9 +700,8 @@ p {
   overflow: hidden;
 }
 
-/* Tighten the bad How can I do this? / Got it area */
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
-  min-height: 180vh !important;
+  min-height: 155vh !important;
 }
 
 .external-scroll-animation .fixed {
@@ -874,7 +873,7 @@ p {
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content {
   align-content: center !important;
-  padding-top: clamp(90px, 12vh, 140px);
+  padding-top: clamp(70px, 10vh, 120px);
   filter: none !important;
 }
 
@@ -886,26 +885,29 @@ p {
   position: sticky;
   bottom: 3.25rem;
   transform-origin: 50% 0;
-  will-change: transform, opacity, filter;
+  filter: none !important;
+  will-change: transform, opacity;
 }
 
 .external-scroll-animation .loud-wrap {
   clip-path: inset(0 0 0 0);
   -webkit-mask-image: none !important;
   mask-image: none !important;
+  filter: none !important;
 }
 
 .external-scroll-animation .chat-container {
-  min-height: 118vh;
+  min-height: 112vh;
   width: 100%;
   position: sticky;
   top: 0;
   display: grid;
   place-items: center;
-  padding: 9vh 0 12vh;
+  padding: 8vh 0 10vh;
   overflow: hidden;
   -webkit-mask-image: none !important;
   mask-image: none !important;
+  filter: none !important;
 }
 
 .external-scroll-animation .text-blocks {
@@ -914,7 +916,8 @@ p {
   justify-self: center;
   display: grid;
   align-content: center;
-  gap: clamp(1.8rem, 5.25vh, 4.2rem);
+  gap: clamp(1.55rem, 4.7vh, 3.8rem);
+  filter: none !important;
 }
 
 .external-scroll-animation .text-blocks p {
@@ -926,11 +929,11 @@ p {
   min-width: min(260px, 72vw);
   backface-visibility: hidden;
   transform: translateZ(0);
-  will-change: transform, opacity, filter;
+  filter: none !important;
+  will-change: transform, opacity;
   transition:
-    opacity 0.2s ease,
-    transform 0.2s ease,
-    filter 0.2s ease;
+    opacity 0.16s ease,
+    transform 0.16s ease;
 }
 
 .external-scroll-animation .text-blocks p:nth-of-type(odd) {
@@ -954,11 +957,12 @@ p {
   display: block;
   width: 100%;
   position: absolute;
-  bottom: 52vh;
+  bottom: 58vh;
   padding: 1rem;
   background:
     radial-gradient(circle at center, rgba(3,153,158,0.22), transparent 42%),
     radial-gradient(circle at 62% 55%, rgba(98,28,148,0.18), transparent 44%);
+  filter: none !important;
 }
 
 .external-scroll-animation .filler h2 {
@@ -973,7 +977,18 @@ p {
   will-change: transform, opacity;
 }
 
-/* HARD SAFETY: PREVENT TITLE SECTIONS FROM BEING PERMA-BLURRED */
+/* HARD SAFETY: NO CONTAINER BLUR */
+.external-scroll-animation,
+.external-scroll-animation section,
+.external-scroll-animation article,
+.external-scroll-animation .fixed,
+.external-scroll-animation .static,
+.external-scroll-animation .content,
+.external-scroll-animation .text-wrap,
+.external-scroll-animation .loud-wrap,
+.external-scroll-animation .chat-container,
+.external-scroll-animation .text-blocks,
+.external-scroll-animation .filler,
 .external-scroll-animation h1,
 .external-scroll-animation h2,
 .external-scroll-animation .content h1,
@@ -1100,7 +1115,7 @@ p {
   }
 
   .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content {
-    padding-top: clamp(7rem, 22vh, 12rem);
+    padding-top: clamp(6rem, 18vh, 10rem);
   }
 
   .external-scroll-animation .fixed img {
@@ -1108,13 +1123,13 @@ p {
   }
 
   .external-scroll-animation .chat-container {
-    min-height: 112vh;
-    padding: 8vh 0 10vh;
+    min-height: 106vh;
+    padding: 7vh 0 9vh;
   }
 
   .external-scroll-animation .text-blocks {
     width: min(36ch, 90vw);
-    gap: clamp(1.6rem, 4.8vh, 3.6rem);
+    gap: clamp(1.35rem, 4vh, 3rem);
   }
 
   .external-scroll-animation .text-blocks p {
@@ -1123,7 +1138,7 @@ p {
   }
 
   .external-scroll-animation .filler.is-active {
-    bottom: 50vh;
+    bottom: 55vh;
   }
 }
 
