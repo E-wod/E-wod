@@ -658,20 +658,11 @@ p {
 /* EXTERNAL SCROLL ANIMATION - JS ONLY / GLASS UI */
 .external-scroll-animation {
   position: relative;
-  z-index: 20;
+  z-index: 2;
   min-height: 100vh;
   color: var(--text);
   overflow-x: hidden;
   isolation: isolate;
-  background: #000;
-}
-
-.external-scroll-animation::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background: #000;
 }
 
 .external-scroll-animation p {
@@ -698,11 +689,9 @@ p {
 .external-scroll-animation .fixed {
   position: absolute;
   inset: 0;
-  height: 100vh;
   min-height: 100vh;
   overflow: hidden;
   border-radius: 0;
-  background: #000;
 }
 
 .external-scroll-animation .static {
@@ -734,16 +723,14 @@ p {
 
 .external-scroll-animation .fixed img {
   height: 100%;
-  width: 100%;
+  width: 150%;
   object-fit: cover;
-  object-position: center;
   z-index: -1;
   position: absolute;
   inset: 0;
-  left: 0;
-  translate: 0 0;
-  opacity: 1;
-  filter: brightness(0.75 saturate(0.9);
+  left: 50%;
+  translate: -50% 0;
+  filter: brightness(0.48) saturate(0.9);
 }
 
 .external-scroll-animation .content {
@@ -755,7 +742,7 @@ p {
   z-index: 4;
   position: absolute;
   inset: 0;
-  padding: clamp(120px, 16vh, 180px) 1rem 4rem;
+  padding: clamp(7rem, 13vh, 11rem) 1rem 4rem;
   display: grid;
   align-content: center;
   justify-items: center;
@@ -765,16 +752,14 @@ p {
 .external-scroll-animation h1,
 .external-scroll-animation h2 {
   width: auto;
-  max-width: min(900px, 92vw);
   display: block;
   color: var(--accent-bright);
   font-family: "sofachrome", sans-serif;
-  font-weight: 40;
-  font-size: clamp(1.25rem, 4vw, 5rem);
+  font-weight: 70;
+  font-size: clamp(2.25rem, 5vw, 6rem);
   letter-spacing: -0.04ch;
   line-height: 1.05;
   margin: 0;
-  opacity: 1;
   text-transform: uppercase;
   text-shadow:
     0 0 14px rgba(3,153,158,0.42),
@@ -794,7 +779,7 @@ p {
 .external-scroll-animation .text-blocks p,
 .external-scroll-animation .filler h2 {
   width: fit-content;
-  max-width: min(440px, 82vw);
+  max-width: min(42ch, 92vw);
   padding: 0.85rem 1rem;
   color: var(--text);
   background: rgba(0,0,0,0.36);
@@ -803,7 +788,6 @@ p {
   box-shadow: var(--glass-shadow);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  line-height: 1.2;
 }
 
 .external-scroll-animation .content > p {
@@ -825,13 +809,13 @@ p {
 }
 
 .external-scroll-animation > section:first-of-type img {
-  left: 0;
-  translate: 0 0;
+  left: 50%;
+  translate: -50% 0;
 }
 
 .external-scroll-animation > section:first-of-type .fixed .content {
-  justify-items: center;
-  text-align: center;
+  justify-items: start;
+  text-align: left;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:first-of-type .content {
@@ -868,13 +852,12 @@ p {
 }
 
 .external-scroll-animation .chat-container {
-  min-height: 120vh;
+  min-height: 100vh;
   width: 100%;
   position: sticky;
   top: 0;
   display: grid;
   place-items: center;
-  padding-top: 8vh;
 }
 
 .external-scroll-animation .text-blocks {
@@ -883,8 +866,7 @@ p {
   justify-self: end;
   display: grid;
   place-items: center;
-  align-content: center;
-  gap: clamp(1.8rem, 5vh, 4rem);
+  gap: 1.25rem 0;
 }
 
 .external-scroll-animation .text-blocks p {
@@ -893,6 +875,7 @@ p {
   font-family: Lobster, "Kristen ITC", Script;
   font-size: clamp(1.35rem, 2.5vw, 3.5rem);
   font-weight: 120;
+  line-height: 1.15;
 }
 
 .external-scroll-animation .text-blocks p:nth-of-type(even) {
@@ -1034,7 +1017,7 @@ p {
   }
 
   .external-scroll-animation .fixed img {
-    width: 100%;
+    width: 125%;
   }
 
   .external-scroll-animation .text-blocks {
