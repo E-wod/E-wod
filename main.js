@@ -228,19 +228,28 @@ function runExternalScrollFallback(root) {
 
   if (!firstSection || !articles.length) return;
 
+  clearScopedFilters(root);
+
   root.querySelectorAll(".filler").forEach((el) => el.classList.add("is-active"));
 
   gsap.set(root.querySelectorAll(".fixed"), {
     position: "fixed",
     inset: 0,
     opacity: 0,
-    zIndex: 1
+    zIndex: 1,
+    filter: "none"
   });
 
   gsap.set(root.querySelectorAll(".static"), {
     position: "absolute",
     inset: 0,
-    zIndex: 6
+    zIndex: 6,
+    filter: "none"
+  });
+
+  gsap.set(root.querySelectorAll("h1, h2, .text-blocks p, .filler h2"), {
+    filter: "none",
+    textShadow: "none"
   });
 
   animateExternalStartPanel(gsap, firstSection);
@@ -249,16 +258,34 @@ function runExternalScrollFallback(root) {
   ScrollTrigger.refresh();
 }
 
+function clearScopedFilters(root) {
+  root.querySelectorAll(
+    ".fixed, .static, .content, .text-wrap, .loud-wrap, .chat-container, .text-blocks, .text-blocks p, .filler, .filler h2, h1, h2"
+  ).forEach((el) => {
+    el.style.filter = "none";
+  });
+}
+
 function animateExternalStartPanel(gsap, section) {
   const fixed = section.querySelector(".fixed");
+  const title = section.querySelector("h1, h2");
 
   if (!fixed) return;
 
   gsap.set(fixed, {
     opacity: 1,
     zIndex: 5,
-    transformOrigin: "50% 0%"
+    transformOrigin: "50% 0%",
+    filter: "none"
   });
+
+  if (title) {
+    gsap.set(title, {
+      opacity: 1,
+      scale: 1,
+      filter: "none"
+    });
+  }
 
   gsap.to(fixed, {
     scaleX: 0.35,
@@ -269,7 +296,11 @@ function animateExternalStartPanel(gsap, section) {
       trigger: section,
       start: "top top",
       end: "bottom 50%",
-      scrub: 0.5
+      scrub: 0.5,
+      onUpdate: () => {
+        fixed.style.filter = "none";
+        if (title) title.style.filter = "none";
+      }
     }
   });
 }
@@ -294,7 +325,8 @@ function animateArticleFixedLayer(gsap, article, index) {
     gsap.set(fixed, {
       opacity: 0,
       clipPath: "ellipse(220% 200% at 50% 300%)",
-      zIndex: 3
+      zIndex: 3,
+      filter: "none"
     });
 
     gsap.to(fixed, {
@@ -304,7 +336,8 @@ function animateArticleFixedLayer(gsap, article, index) {
         trigger: article,
         start: "top bottom",
         end: "top top",
-        scrub: 0.5
+        scrub: 0.5,
+        onUpdate: () => fixed.style.filter = "none"
       }
     });
 
@@ -314,7 +347,8 @@ function animateArticleFixedLayer(gsap, article, index) {
         trigger: article,
         start: "bottom 80%",
         end: "bottom 45%",
-        scrub: 0.5
+        scrub: 0.5,
+        onUpdate: () => fixed.style.filter = "none"
       }
     });
 
@@ -323,7 +357,8 @@ function animateArticleFixedLayer(gsap, article, index) {
 
   gsap.set(fixed, {
     opacity: 0,
-    zIndex: 3
+    zIndex: 3,
+    filter: "none"
   });
 
   gsap.to(fixed, {
@@ -332,7 +367,8 @@ function animateArticleFixedLayer(gsap, article, index) {
       trigger: article,
       start: "top 80%",
       end: "top top",
-      scrub: 0.5
+      scrub: 0.5,
+      onUpdate: () => fixed.style.filter = "none"
     }
   });
 
@@ -342,7 +378,8 @@ function animateArticleFixedLayer(gsap, article, index) {
       trigger: article,
       start: "bottom 80%",
       end: "bottom 45%",
-      scrub: 0.5
+      scrub: 0.5,
+      onUpdate: () => fixed.style.filter = "none"
     }
   });
 }
@@ -368,6 +405,11 @@ function animateArticleTitle(gsap, article) {
 
   if (!title) return;
 
+  gsap.set(title, {
+    filter: "none",
+    textShadow: "none"
+  });
+
   gsap.from(title, {
     yPercent: 80,
     opacity: 0,
@@ -375,18 +417,24 @@ function animateArticleTitle(gsap, article) {
       trigger: article,
       start: "top 70%",
       end: "top 30%",
-      scrub: 0.5
+      scrub: 0.5,
+      onUpdate: () => {
+        title.style.filter = "none";
+      }
     }
   });
 
   gsap.to(title, {
     opacity: 0,
-    filter: "blur(4rem)",
+    yPercent: -40,
     scrollTrigger: {
       trigger: article,
       start: "bottom 70%",
       end: "bottom 45%",
-      scrub: 0.5
+      scrub: 0.5,
+      onUpdate: () => {
+        title.style.filter = "none";
+      }
     }
   });
 }
@@ -403,6 +451,11 @@ function animateTextBlocks(gsap, article) {
       height: "400vh"
     });
 
+    gsap.set(lines, {
+      filter: "none",
+      textShadow: "none"
+    });
+
     lines.forEach((line, index) => {
       gsap.from(line, {
         yPercent: 100,
@@ -411,7 +464,10 @@ function animateTextBlocks(gsap, article) {
           trigger: article,
           start: `top -=${90 + index * 10}%`,
           end: `top -=${100 + index * 10}%`,
-          scrub: 0.5
+          scrub: 0.5,
+          onUpdate: () => {
+            line.style.filter = "none";
+          }
         }
       });
     });
@@ -424,20 +480,31 @@ function animateTextBlocks(gsap, article) {
         trigger: article,
         start: "bottom 130%",
         end: "bottom 110%",
-        scrub: 0.5
+        scrub: 0.5,
+        onUpdate: () => {
+          textBlocks.style.filter = "none";
+        }
       }
     });
   }
 
   if (fillerTitle) {
+    gsap.set(fillerTitle, {
+      filter: "none",
+      textShadow: "none"
+    });
+
     gsap.to(fillerTitle, {
       opacity: 0,
-      filter: "blur(4rem)",
+      yPercent: -40,
       scrollTrigger: {
         trigger: article,
         start: "bottom 55%",
         end: "bottom 30%",
-        scrub: 0.5
+        scrub: 0.5,
+        onUpdate: () => {
+          fillerTitle.style.filter = "none";
+        }
       }
     });
   }
@@ -453,7 +520,8 @@ function animateFinalArticle(gsap, article) {
   gsap.set(fixed, {
     opacity: 0,
     clipPath: "ellipse(220% 200% at 50% 300%)",
-    zIndex: 5
+    zIndex: 5,
+    filter: "none"
   });
 
   gsap.to(fixed, {
@@ -463,7 +531,10 @@ function animateFinalArticle(gsap, article) {
       trigger: article,
       start: "top 80%",
       end: "top 20%",
-      scrub: 0.5
+      scrub: 0.5,
+      onUpdate: () => {
+        fixed.style.filter = "none";
+      }
     }
   });
 }
