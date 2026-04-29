@@ -164,13 +164,11 @@ function startImageWheels() {
   restartWheels();
 }
 
-/* EXTERNAL SCROLL ANIMATION FALLBACK */
+/* EXTERNAL SCROLL ANIMATION - JS ONLY */
 function initExternalScrollAnimation() {
   const root = document.querySelector(".external-scroll-animation");
 
   if (!root) return;
-  /* force GSAP fallback for now */
-  /* if (CSS.supports("animation-timeline: view()")) return; */
   if (!window.matchMedia("(prefers-reduced-motion: no-preference)").matches) return;
 
   loadExternalScript("https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js")
@@ -186,7 +184,7 @@ function loadExternalScript(src) {
     const existing = document.querySelector(`script[src="${src}"]`);
 
     if (existing) {
-      if (existing.dataset.loaded === "true") {
+      if (existing.dataset.loaded === "true" || existing.readyState === "complete") {
         resolve();
       } else {
         existing.addEventListener("load", resolve, { once: true });
@@ -228,9 +226,15 @@ function runExternalScrollFallback(root) {
     ? Array.from(secondSection.querySelectorAll(":scope > article"))
     : Array.from(root.querySelectorAll("article"));
 
+  if (!firstSection || !articles.length) return;
+
+  root.querySelectorAll(".filler").forEach((el) => el.classList.add("is-active"));
+
   gsap.set(root.querySelectorAll(".fixed"), {
     position: "fixed",
-    inset: 0
+    inset: 0,
+    opacity: 0,
+    zIndex: 1
   });
 
   gsap.set(root.querySelectorAll(".static"), {
@@ -246,13 +250,13 @@ function runExternalScrollFallback(root) {
 }
 
 function animateExternalStartPanel(gsap, section) {
-  if (!section) return;
-
   const fixed = section.querySelector(".fixed");
 
   if (!fixed) return;
 
   gsap.set(fixed, {
+    opacity: 1,
+    zIndex: 5,
     transformOrigin: "50% 0%"
   });
 
@@ -271,12 +275,10 @@ function animateExternalStartPanel(gsap, section) {
 }
 
 function animateExternalArticles(gsap, articles) {
-  if (!articles.length) return;
-
   articles.forEach((article, index) => {
     animateArticleFixedLayer(gsap, article, index);
-    animateArticleImage(gsap, article);
-    animateArticleTitle(gsap, article);
+    animateArticleImage(gsap, article, index);
+    animateArticleTitle(gsap, article, index);
   });
 
   animateTextBlocks(gsap, articles[2]);
@@ -290,11 +292,13 @@ function animateArticleFixedLayer(gsap, article, index) {
 
   if (index === 0) {
     gsap.set(fixed, {
+      opacity: 0,
       clipPath: "ellipse(220% 200% at 50% 300%)",
       zIndex: 3
     });
 
     gsap.to(fixed, {
+      opacity: 1,
       clipPath: "ellipse(220% 200% at 50% 175%)",
       scrollTrigger: {
         trigger: article,
@@ -304,35 +308,52 @@ function animateArticleFixedLayer(gsap, article, index) {
       }
     });
 
+    gsap.to(fixed, {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: article,
+        start: "bottom 80%",
+        end: "bottom 45%",
+        scrub: 0.5
+      }
+    });
+
     return;
   }
 
   gsap.set(fixed, {
+    opacity: 0,
     zIndex: 3
   });
 
-  gsap.fromTo(
-    fixed,
-    { opacity: 0 },
-    {
-      opacity: 1,
-      scrollTrigger: {
-        trigger: article,
-        start: "top 80%",
-        end: "top top",
-        scrub: 0.5
-      }
+  gsap.to(fixed, {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: article,
+      start: "top 80%",
+      end: "top top",
+      scrub: 0.5
     }
-  );
+  });
+
+  gsap.to(fixed, {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: article,
+      start: "bottom 80%",
+      end: "bottom 45%",
+      scrub: 0.5
+    }
+  });
 }
 
-function animateArticleImage(gsap, article) {
+function animateArticleImage(gsap, article, index) {
   const img = article.querySelector("img");
 
   if (!img) return;
 
   gsap.from(img, {
-    scale: 1.3,
+    scale: index === 0 ? 5 : 1.3,
     scrollTrigger: {
       trigger: article,
       start: "top bottom",
@@ -375,7 +396,6 @@ function animateTextBlocks(gsap, article) {
 
   const lines = article.querySelectorAll(".text-blocks p");
   const textBlocks = article.querySelector(".text-blocks");
-  const filler = article.querySelector(".filler");
   const fillerTitle = article.querySelector(".filler h2");
 
   if (lines.length) {
@@ -409,15 +429,6 @@ function animateTextBlocks(gsap, article) {
     });
   }
 
-  if (filler) {
-    gsap.set(filler, {
-      display: "block",
-      position: "absolute",
-      bottom: "30vh",
-      padding: "1rem"
-    });
-  }
-
   if (fillerTitle) {
     gsap.to(fillerTitle, {
       opacity: 0,
@@ -440,11 +451,13 @@ function animateFinalArticle(gsap, article) {
   if (!fixed) return;
 
   gsap.set(fixed, {
+    opacity: 0,
     clipPath: "ellipse(220% 200% at 50% 300%)",
     zIndex: 5
   });
 
   gsap.to(fixed, {
+    opacity: 1,
     clipPath: "ellipse(220% 200% at 50% 175%)",
     scrollTrigger: {
       trigger: article,
