@@ -1,517 +1,369 @@
 document.addEventListener("DOMContentLoaded", () => {
-  applyImageReady();
-  startImageWheels();
-  initExternalScrollAnimation();
-});
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-/* IMAGE READY / FADE-IN HANDLING */
-function applyImageReady(scope = document) {
-  scope.querySelectorAll("img").forEach((img) => {
-    if (
-      img.closest(".wallPaper") ||
-      img.closest(".navLogo") ||
-      img.closest(".beNook") ||
-      img.closest(".wheel-card") ||
-      img.closest(".external-scroll-animation")
-    ) {
-      img.classList.remove("fade-img");
-      img.classList.add("loaded");
-      img.style.opacity = "1";
-      return;
-    }
+  const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
-    img.classList.add("fade-img");
+  const lerp = (start, end, amount) => start + (end - start) * amount;
 
-    if (img.complete) {
-      img.classList.add("loaded");
-    } else {
-      img.addEventListener("load", () => img.classList.add("loaded"), { once: true });
-      img.addEventListener("error", () => img.classList.add("loaded"), { once: true });
-    }
-  });
-}
+  const getProgress = (element) => {
+    const rect = element.getBoundingClientRect();
+    const viewH = window.innerHeight || document.documentElement.clientHeight;
+    const total = rect.height + viewH;
 
-/* HOMEPAGE IMAGE WHEEL */
-function startImageWheels() {
-  const wheelRows = Array.from(document.querySelectorAll(".wheel-row"));
+    if (total <= 0) return 0;
 
-  if (!wheelRows.length) return;
-
-  const wheelState = [];
-
-  let animationId = null;
-  let resizeTimer = null;
-  let lastTime = performance.now();
-  let lastWindowWidth = window.innerWidth;
-  let scrollBoost = 1;
-
-  const buildWheelTrack = (row) => {
-    const track = row.querySelector(".wheel-track");
-    if (!track) return null;
-
-    if (!track.dataset.originalHtml) {
-      track.dataset.originalHtml = track.innerHTML;
-    }
-
-    track.innerHTML = track.dataset.originalHtml;
-
-    const originals = Array.from(track.children).map((card) => card.cloneNode(true));
-    const targetWidth = row.offsetWidth * 3.5;
-
-    let loops = 0;
-
-    while (track.scrollWidth < targetWidth && loops < 24) {
-      originals.forEach((card) => track.appendChild(card.cloneNode(true)));
-      loops++;
-    }
-
-    const cycleWidth = track.scrollWidth;
-
-    originals.forEach((card) => track.appendChild(card.cloneNode(true)));
-
-    applyImageReady(track);
-
-    return { row, track, cycleWidth };
+    return clamp((viewH - rect.top) / total, 0, 1);
   };
 
-  const initializeWheels = () => {
-    wheelState.length = 0;
+  const smoothstep = (edge0, edge1, x) => {
+    const t = clamp((x - edge0) / (edge1 - edge0), 0, 1);
+    return t * t * (3 - 2 * t);
+  };
 
-    wheelRows.forEach((row) => {
-      const built = buildWheelTrack(row);
-      if (!built) return;
+  const loadImages = () => {
+    const images = document.querySelectorAll("img");
 
-      const speed = parseFloat(built.track.dataset.speed || "0.04");
-      const direction = built.track.dataset.direction === "right" ? 1 : -1;
-      const startOffset = direction === 1 ? -built.cycleWidth : 0;
+    images.forEach((img) => {
+      img.decoding = "async";
 
-      built.track.style.transform = `translate3d(${startOffset}px, 0, 0)`;
+      if (!img.hasAttribute("loading")) {
+        img.loading = "lazy";
+      }
 
-      wheelState.push({
-        row: built.row,
-        track: built.track,
-        cycleWidth: built.cycleWidth,
-        speed,
-        direction,
-        offset: startOffset
+      if (img.complete) {
+        img.classList.add("loaded");
+        return;
+      }
+
+      img.addEventListener(
+        "load",
+        () => {
+          img.classList.add("loaded");
+        },
+        { once: true }
+      );
+
+      img.addEventListener(
+        "error",
+        () => {
+          img.classList.add("loaded");
+        },
+        { once: true }
+      );
+    });
+  };
+
+  const setupNavIndexes = () => {
+    const navLinks = document.querySelectorAll(".navBar a, .socLnk a");
+
+    navLinks.forEach((link, index) => {
+      if (!link.style.getPropertyValue("--i")) {
+        link.style.setProperty("--i", index + 1);
+      }
+    });
+  };
+
+  const setupImageWheel = () => {
+    const rows = document.querySelectorAll(".wheel-row");
+
+    rows.forEach((row, rowIndex) => {
+      const track = row.querySelector(".wheel-track");
+      if (!track || track.dataset.ready === "true") return;
+
+      const cards = Array.from(track.children);
+      if (!cards.length) return;
+
+      const desiredCopies = 4;
+
+      for (let copy = 0; copy < desiredCopies; copy++) {
+        cards.forEach((card) => {
+          const clone = card.cloneNode(true);
+          clone.setAttribute("aria-hidden", "true");
+          track.appendChild(clone);
+        });
+      }
+
+      track.dataset.ready = "true";
+
+      let x = 0;
+      let last = performance.now();
+      let paused = false;
+
+      const direction = rowIndex % 2 === 0 ? -1 : 1;
+      const speed = rowIndex === 1 ? 0.42 : 0.36;
+
+      row.addEventListener("mouseenter", () => {
+        paused = true;
       });
+
+      row.addEventListener("mouseleave", () => {
+        paused = false;
+      });
+
+      const animate = (now) => {
+        const delta = Math.min(now - last, 32);
+        last = now;
+
+        if (!paused && !prefersReducedMotion) {
+          x += direction * speed * delta;
+
+          const halfWidth = track.scrollWidth / 2;
+
+          if (Math.abs(x) >= halfWidth) {
+            x = 0;
+          }
+
+          track.style.transform = `translate3d(${x}px, 0, 0)`;
+        }
+
+        requestAnimationFrame(animate);
+      };
+
+      requestAnimationFrame(animate);
     });
   };
 
-  const animateWheels = (now) => {
-    const delta = Math.min(now - lastTime, 32);
-    lastTime = now;
+  const setupExternalScrollAnimation = () => {
+    const root = document.querySelector(".external-scroll-animation");
+    if (!root) return;
 
-    scrollBoost += (1 - scrollBoost) * 0.035;
+    const articles = Array.from(root.querySelectorAll("article"));
+    const firstSection = root.querySelector("section:first-of-type");
+    const secondSection = root.querySelector("section:nth-of-type(2)");
+    const chatContainer = root.querySelector(".chat-container");
+    const textBlocks = Array.from(root.querySelectorAll(".text-blocks p"));
+    const filler = root.querySelector(".filler");
+    const fillerTitle = filler ? filler.querySelector("h2") : null;
 
-    wheelState.forEach((item) => {
-      const paused = item.row.matches(":hover");
-      const speed = paused ? 0 : item.speed * scrollBoost;
-      const movement = item.direction * speed * delta;
+    const allBlurTargets = root.querySelectorAll(
+      ".external-scroll-animation, section, article, .fixed, .static, .content, .text-wrap, .loud-wrap, .chat-container, .text-blocks, .filler, h1, h2, p"
+    );
 
-      item.offset += movement;
-
-      if (item.direction < 0 && item.offset <= -item.cycleWidth) {
-        item.offset += item.cycleWidth;
-      }
-
-      if (item.direction > 0 && item.offset >= 0) {
-        item.offset -= item.cycleWidth;
-      }
-
-      item.track.style.transform = `translate3d(${item.offset}px, 0, 0)`;
-    });
-
-    animationId = requestAnimationFrame(animateWheels);
-  };
-
-  const restartWheels = () => {
-    initializeWheels();
-
-    if (animationId) {
-      cancelAnimationFrame(animationId);
-    }
-
-    lastTime = performance.now();
-    animationId = requestAnimationFrame(animateWheels);
-  };
-
-  window.addEventListener(
-    "wheel",
-    () => {
-      scrollBoost = 2.2;
-    },
-    { passive: true }
-  );
-
-  window.addEventListener(
-    "resize",
-    () => {
-      clearTimeout(resizeTimer);
-
-      resizeTimer = setTimeout(() => {
-        const currentWidth = window.innerWidth;
-
-        if (Math.abs(currentWidth - lastWindowWidth) < 40) return;
-
-        lastWindowWidth = currentWidth;
-        restartWheels();
-      }, 450);
-    },
-    { passive: true }
-  );
-
-  restartWheels();
-}
-
-/* EXTERNAL SCROLL ANIMATION - JS ONLY */
-function initExternalScrollAnimation() {
-  const root = document.querySelector(".external-scroll-animation");
-
-  if (!root) return;
-  if (!window.matchMedia("(prefers-reduced-motion: no-preference)").matches) return;
-
-  loadExternalScript("https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js")
-    .then(() => loadExternalScript("https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"))
-    .then(() => runExternalScrollFallback(root))
-    .catch(() => {
-      console.warn("External scroll animation fallback failed to load.");
-    });
-}
-
-function loadExternalScript(src) {
-  return new Promise((resolve, reject) => {
-    const existing = document.querySelector(`script[src="${src}"]`);
-
-    if (existing) {
-      if (existing.dataset.loaded === "true" || existing.readyState === "complete") {
-        resolve();
-      } else {
-        existing.addEventListener("load", resolve, { once: true });
-        existing.addEventListener("error", reject, { once: true });
-      }
-      return;
-    }
-
-    const script = document.createElement("script");
-    script.src = src;
-    script.defer = true;
-    script.dataset.loaded = "false";
-
-    script.onload = () => {
-      script.dataset.loaded = "true";
-      resolve();
+    const clearAllFilters = () => {
+      allBlurTargets.forEach((el) => {
+        el.style.filter = "none";
+      });
     };
 
-    script.onerror = reject;
+    const resetReadableTitles = () => {
+      root.querySelectorAll("h1, h2, .content, .filler, .text-wrap, .loud-wrap, .chat-container, .text-blocks").forEach((el) => {
+        el.style.filter = "none";
+      });
+    };
 
-    document.head.appendChild(script);
-  });
-}
+    const animateHero = () => {
+      if (!firstSection) return;
 
-function runExternalScrollFallback(root) {
-  if (!window.gsap || !window.ScrollTrigger) return;
+      const progress = getProgress(firstSection);
+      const content = firstSection.querySelector(".content");
+      const heading = firstSection.querySelector("h1, h2");
+      const paragraph = firstSection.querySelector("p");
+      const img = firstSection.querySelector(".fixed img");
 
-  const gsap = window.gsap;
-  const ScrollTrigger = window.ScrollTrigger;
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  const firstSection =
-    root.querySelector(".external-panel-start") ||
-    root.querySelector(":scope > section:first-of-type");
-
-  const secondSection = root.querySelector(":scope > section:nth-of-type(2)");
-  const articles = secondSection
-    ? Array.from(secondSection.querySelectorAll(":scope > article"))
-    : Array.from(root.querySelectorAll("article"));
-
-  if (!firstSection || !articles.length) return;
-
-  root.querySelectorAll(".filler").forEach((el) => el.classList.add("is-active"));
-
-  gsap.set(root.querySelectorAll(".fixed"), {
-    position: "fixed",
-    inset: 0,
-    opacity: 0,
-    zIndex: 1
-  });
-
-  gsap.set(root.querySelectorAll(".static"), {
-    position: "absolute",
-    inset: 0,
-    zIndex: 6
-  });
-
-  animateExternalStartPanel(gsap, firstSection);
-  animateExternalArticles(gsap, articles);
-
-  ScrollTrigger.refresh();
-}
-
-function animateExternalStartPanel(gsap, section) {
-  const fixed = section.querySelector(".fixed");
-
-  if (!fixed) return;
-
-  gsap.set(fixed, {
-    opacity: 1,
-    zIndex: 5,
-    transformOrigin: "50% 0%"
-  });
-
-  gsap.to(fixed, {
-    scaleX: 0.35,
-    scaleY: 0.5,
-    yPercent: -10,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: section,
-      start: "top top",
-      end: "bottom 50%",
-      scrub: 0.5
-    }
-  });
-}
-
-function animateExternalArticles(gsap, articles) {
-  articles.forEach((article, index) => {
-    animateArticleFixedLayer(gsap, article, index);
-    animateArticleImage(gsap, article, index);
-    animateArticleTitle(gsap, article, index);
-  });
-
-  animateTextBlocks(gsap, articles[2]);
-  animateFinalArticle(gsap, articles[articles.length - 1]);
-}
-
-function animateArticleFixedLayer(gsap, article, index) {
-  const fixed = article.querySelector(".fixed");
-
-  if (!fixed) return;
-
-  if (index === 0) {
-    gsap.set(fixed, {
-      opacity: 0,
-      clipPath: "ellipse(220% 200% at 50% 300%)",
-      zIndex: 3
-    });
-
-    gsap.to(fixed, {
-      opacity: 1,
-      clipPath: "ellipse(220% 200% at 50% 175%)",
-      scrollTrigger: {
-        trigger: article,
-        start: "top bottom",
-        end: "top top",
-        scrub: 0.5
+      if (content) {
+        const y = lerp(18, -24, progress);
+        content.style.transform = `translate3d(0, ${y}px, 0)`;
+        content.style.opacity = `${clamp(1 - smoothstep(0.72, 0.96, progress), 0, 1)}`;
+        content.style.filter = "none";
       }
-    });
 
-    gsap.to(fixed, {
-      opacity: 0,
-      scrollTrigger: {
-        trigger: article,
-        start: "bottom 80%",
-        end: "bottom 45%",
-        scrub: 0.5
+      if (heading) {
+        heading.style.filter = "none";
       }
-    });
 
-    return;
-  }
+      if (paragraph) {
+        paragraph.style.filter = "none";
+      }
 
-  gsap.set(fixed, {
-    opacity: 0,
-    zIndex: 3
-  });
+      if (img) {
+        const scale = lerp(1.04, 1.12, progress);
+        img.style.transform = `scale(${scale})`;
+      }
+    };
 
-  gsap.to(fixed, {
-    opacity: 1,
-    scrollTrigger: {
-      trigger: article,
-      start: "top 80%",
-      end: "top top",
-      scrub: 0.5
-    }
-  });
+    const animateArticles = () => {
+      articles.forEach((article, index) => {
+        const progress = getProgress(article);
+        const fixed = article.querySelector(".fixed");
+        const content = article.querySelector(".content");
+        const heading = article.querySelector("h1, h2");
+        const paragraph = article.querySelector(".content > p");
+        const img = article.querySelector(".fixed img");
 
-  gsap.to(fixed, {
-    opacity: 0,
-    scrollTrigger: {
-      trigger: article,
-      start: "bottom 80%",
-      end: "bottom 45%",
-      scrub: 0.5
-    }
-  });
-}
-
-function animateArticleImage(gsap, article, index) {
-  const img = article.querySelector("img");
-
-  if (!img) return;
-
-  gsap.from(img, {
-    scale: index === 0 ? 5 : 1.3,
-    scrollTrigger: {
-      trigger: article,
-      start: "top bottom",
-      end: "top top",
-      scrub: 0.5
-    }
-  });
-}
-
-function animateArticleTitle(gsap, article, index) {
-  const title = article.querySelector("h2");
-  if (!title) return;
-
-  const fadeStart = index === 0 ? "top 35%" : "bottom 95%";
-  const fadeEnd = index === 0 ? "top 5%" : "bottom 75%";
-
-  gsap.from(title, {
-    yPercent: 65,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: article,
-      start: "top 75%",
-      end: "top 38%",
-      scrub: 0.45
-    }
-  });
-
-  gsap.to(title, {
-    opacity: 0,
-    filter: "blur(2.5rem)",
-    yPercent: -18,
-    scrollTrigger: {
-      trigger: article,
-      start: fadeStart,
-      end: fadeEnd,
-      scrub: 0.45
-    }
-  });
-}
-
-function animateTextBlocks(gsap, article) {
-  if (!article) return;
-
-  const lines = article.querySelectorAll(".text-blocks p");
-  const textBlocks = article.querySelector(".text-blocks");
-  const fillerTitle = article.querySelector(".filler h2");
-
-  gsap.set(article, { height: "360vh" });
-
-  lines.forEach((line, index) => {
-    gsap.fromTo(
-      line,
-      { yPercent: 120, opacity: 0, filter: "blur(1rem)" },
-      {
-        yPercent: 0,
-        opacity: 1,
-        filter: "blur(0)",
-        scrollTrigger: {
-          trigger: article,
-          start: `top -=${45 + index * 26}%`,
-          end: `top -=${62 + index * 26}%`,
-          scrub: 0.45
+        if (fixed) {
+          fixed.style.filter = "none";
         }
-      }
-    );
 
-    gsap.to(line, {
-      opacity: 0,
-      yPercent: -70,
-      filter: "blur(2rem)",
-      scrollTrigger: {
-        trigger: article,
-        start: `top -=${70 + index * 26}%`,
-        end: `top -=${84 + index * 26}%`,
-        scrub: 0.45
-      }
-    });
-  });
+        if (content) {
+          let enter = smoothstep(0.02, 0.18, progress);
+          let exit = 1 - smoothstep(0.72, 0.94, progress);
 
-  if (textBlocks) {
-    gsap.to(textBlocks, {
-      opacity: 0,
-      filter: "blur(2rem)",
-      scrollTrigger: {
-        trigger: article,
-        start: "bottom 145%",
-        end: "bottom 125%",
-        scrub: 0.45
-      }
-    });
-  }
+          if (index === 2) {
+            enter = smoothstep(0.02, 0.11, progress);
+            exit = 1 - smoothstep(0.66, 0.86, progress);
+          }
 
-  if (fillerTitle) {
-    gsap.fromTo(
-      fillerTitle,
-      { opacity: 0, yPercent: 90, filter: "blur(1rem)" },
-      {
-        opacity: 1,
-        yPercent: 0,
-        filter: "blur(0)",
-        scrollTrigger: {
-          trigger: article,
-          start: "bottom 145%",
-          end: "bottom 125%",
-          scrub: 0.45
+          const opacity = clamp(enter * exit, 0, 1);
+          const y = lerp(36, -28, progress);
+
+          content.style.opacity = `${opacity}`;
+          content.style.transform = `translate3d(0, ${y}px, 0)`;
+          content.style.filter = "none";
         }
+
+        if (heading) {
+          heading.style.filter = "none";
+        }
+
+        if (paragraph) {
+          paragraph.style.filter = "none";
+        }
+
+        if (img) {
+          const scale = lerp(1.03, 1.11, progress);
+          img.style.transform = `scale(${scale})`;
+        }
+      });
+    };
+
+    const animateChatText = () => {
+      if (!chatContainer || !textBlocks.length) return;
+
+      const rect = chatContainer.getBoundingClientRect();
+      const viewH = window.innerHeight || document.documentElement.clientHeight;
+      const centerY = viewH * 0.5;
+
+      textBlocks.forEach((text, index) => {
+        const box = text.getBoundingClientRect();
+        const textCenter = box.top + box.height * 0.5;
+        const distance = Math.abs(textCenter - centerY);
+        const normalized = clamp(distance / (viewH * 0.38), 0, 1);
+
+        const visibility = 1 - smoothstep(0.48, 1, normalized);
+        const yNudge = lerp(0, -18, normalized);
+        const scale = lerp(1, 0.94, normalized);
+
+        text.style.opacity = `${clamp(visibility, 0, 1)}`;
+        text.style.transform = `translate3d(0, ${yNudge}px, 0) scale(${scale})`;
+
+        /*
+          IMPORTANT:
+          No filter blur here.
+          The previous problem was that blur was being applied to the whole <p>,
+          which blurs the glass container too.
+        */
+        text.style.filter = "none";
+
+        if (index < textBlocks.length - 1 && visibility < 0.12) {
+          text.style.pointerEvents = "none";
+        } else {
+          text.style.pointerEvents = "auto";
+        }
+      });
+
+      if (rect.bottom < viewH * 0.72) {
+        chatContainer.style.opacity = "0";
+      } else {
+        chatContainer.style.opacity = "1";
       }
-    );
 
-    gsap.to(fillerTitle, {
-      opacity: 0,
-      yPercent: -60,
-      filter: "blur(2.5rem)",
-      scrollTrigger: {
-        trigger: article,
-        start: "bottom 118%",
-        end: "bottom 102%",
-        scrub: 0.45
+      chatContainer.style.filter = "none";
+    };
+
+    const animatePrettyCool = () => {
+      if (!filler) return;
+
+      const target = articles[2] || secondSection || root;
+      const progress = getProgress(target);
+
+      /*
+        Pretty Cool timing:
+        - starts sooner
+        - holds in the middle
+        - exits before the final title arc / FIN area
+      */
+      const enter = smoothstep(0.2, 0.34, progress);
+      const exit = 1 - smoothstep(0.56, 0.72, progress);
+      const visible = clamp(enter * exit, 0, 1);
+
+      if (visible > 0.02) {
+        filler.classList.add("is-active");
+      } else {
+        filler.classList.remove("is-active");
       }
-    });
-  }
-}
 
-function animateFinalArticle(gsap, article) {
-  if (!article) return;
+      filler.style.opacity = `${visible}`;
+      filler.style.transform = `translate3d(0, ${lerp(28, -34, progress)}px, 0) scale(${lerp(0.98, 1.04, visible)})`;
+      filler.style.filter = "none";
 
-  const fixed = article.querySelector(".fixed");
-  const title = article.querySelector("h2");
-
-  if (!fixed) return;
-
-  gsap.set(fixed, {
-    opacity: 0,
-    clipPath: "ellipse(180% 120% at 50% 155%)",
-    zIndex: 5
-  });
-
-  gsap.to(fixed, {
-    opacity: 1,
-    clipPath: "ellipse(180% 120% at 50% 75%)",
-    scrollTrigger: {
-      trigger: article,
-      start: "top 88%",
-      end: "top 32%",
-      scrub: 0.45
-    }
-  });
-
-  if (title) {
-    gsap.from(title, {
-      yPercent: 80,
-      opacity: 0,
-      scrollTrigger: {
-        trigger: article,
-        start: "top 72%",
-        end: "top 38%",
-        scrub: 0.45
+      if (fillerTitle) {
+        fillerTitle.style.opacity = `${visible}`;
+        fillerTitle.style.transform = `translate3d(0, ${lerp(18, -18, progress)}px, 0)`;
+        fillerTitle.style.filter = "none";
       }
-    });
-  }
-}
+    };
+
+    const animateHowToGotIt = () => {
+      const article = articles[2];
+      if (!article) return;
+
+      const progress = getProgress(article);
+      const headings = Array.from(article.querySelectorAll("h1, h2"));
+      const content = article.querySelector(".content");
+
+      if (content) {
+        content.style.filter = "none";
+      }
+
+      headings.forEach((heading, index) => {
+        heading.style.filter = "none";
+
+        const start = index === 0 ? 0.05 : 0.36;
+        const end = index === 0 ? 0.42 : 0.74;
+
+        const enter = smoothstep(start, start + 0.08, progress);
+        const exit = 1 - smoothstep(end, end + 0.08, progress);
+        const opacity = clamp(enter * exit, 0, 1);
+
+        heading.style.opacity = `${opacity}`;
+        heading.style.transform = `translate3d(0, ${lerp(30, -24, progress)}px, 0)`;
+      });
+    };
+
+    let ticking = false;
+
+    const update = () => {
+      ticking = false;
+
+      if (prefersReducedMotion) {
+        clearAllFilters();
+        return;
+      }
+
+      clearAllFilters();
+      animateHero();
+      animateArticles();
+      animateChatText();
+      animatePrettyCool();
+      animateHowToGotIt();
+      resetReadableTitles();
+    };
+
+    const requestUpdate = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(update);
+    };
+
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate, { passive: true });
+    window.addEventListener("orientationchange", requestUpdate, { passive: true });
+
+    update();
+  };
+
+  loadImages();
+  setupNavIndexes();
+  setupImageWheel();
+  setupExternalScrollAnimation();
+});
