@@ -655,7 +655,7 @@ p {
   display: none !important;
 }
 
-/* EXTERNAL SCROLL ANIMATION - JS ONLY / GLASS UI */
+/* EXTERNAL SCROLL ANIMATION - REPAIRED TIMING + SAFE BLUR */
 .external-scroll-animation {
   position: relative;
   z-index: 20;
@@ -671,7 +671,10 @@ p {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background: #000;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(3,153,158,0.16), transparent 35%),
+    radial-gradient(circle at 72% 68%, rgba(98,28,148,0.14), transparent 42%),
+    #000;
 }
 
 .external-scroll-animation p {
@@ -684,6 +687,7 @@ p {
 
 .external-scroll-animation > section:nth-of-type(1) {
   height: 100vh;
+  overflow: hidden;
 }
 
 .external-scroll-animation > section:nth-of-type(2) {
@@ -693,6 +697,12 @@ p {
 .external-scroll-animation article {
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
+}
+
+/* Tighten the bad How can I do this? / Got it area */
+.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
+  min-height: 180vh !important;
 }
 
 .external-scroll-animation .fixed {
@@ -709,6 +719,7 @@ p {
   position: absolute;
   inset: 0;
   z-index: 6;
+  overflow: hidden;
 }
 
 .external-scroll-animation .fixed::before {
@@ -717,9 +728,9 @@ p {
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(circle at 20% 15%, rgba(3,153,158,0.25), transparent 34%),
-    radial-gradient(circle at 75% 78%, rgba(98,28,148,0.22), transparent 38%),
-    linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.78));
+    radial-gradient(circle at 20% 15%, rgba(3,153,158,0.22), transparent 32%),
+    radial-gradient(circle at 75% 78%, rgba(98,28,148,0.2), transparent 38%),
+    linear-gradient(180deg, rgba(0,0,0,0.38), rgba(0,0,0,0.82));
   pointer-events: none;
 }
 
@@ -728,7 +739,7 @@ p {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: rgba(0,0,0,0.18);
+  background: rgba(0,0,0,0.2);
   pointer-events: none;
 }
 
@@ -743,7 +754,7 @@ p {
   left: 0;
   translate: 0 0;
   opacity: 1;
-  filter: brightness(0.48) saturate(0.9);
+  filter: brightness(0.5) saturate(0.92);
 }
 
 .external-scroll-animation .content {
@@ -755,11 +766,13 @@ p {
   z-index: 4;
   position: absolute;
   inset: 0;
-  padding: clamp(120px, 16vh, 180px) 1rem 4rem;
+  padding: clamp(100px, 14vh, 165px) 1rem 4rem;
   display: grid;
   align-content: center;
   justify-items: center;
   text-align: center;
+  overflow: visible;
+  filter: none !important;
 }
 
 .external-scroll-animation h1,
@@ -770,15 +783,19 @@ p {
   color: var(--accent-bright);
   font-family: "sofachrome", sans-serif;
   font-weight: 70;
-  font-size: clamp(2.25rem, 5vw, 6rem);
-  letter-spacing: -0.04ch;
-  line-height: 1.05;
+  font-size: clamp(1.85rem, 4.2vw, 4.85rem);
+  letter-spacing: -0.025ch;
+  line-height: 1.14;
   margin: 0;
   opacity: 1;
   text-transform: uppercase;
   text-shadow:
     0 0 14px rgba(3,153,158,0.42),
     1px 0 1px #000;
+  filter: none !important;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform, opacity;
 }
 
 .external-scroll-animation h1 {
@@ -791,25 +808,25 @@ p {
 }
 
 .external-scroll-animation .content > p,
-.external-scroll-animation .text-blocks p,
-.external-scroll-animation .filler h2 {
+.external-scroll-animation .text-blocks p {
   width: fit-content;
-  max-width: min(440px, 82vw);
+  max-width: min(460px, 84vw);
   padding: 0.85rem 1rem;
   color: var(--text);
-  background: rgba(0,0,0,0.36);
+  background: rgba(0,0,0,0.42);
   border: 1px solid rgba(255,255,255,0.16);
   border-radius: var(--radius-md);
   box-shadow: var(--glass-shadow);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  line-height: 1.2;
+  line-height: 1.22;
 }
 
 .external-scroll-animation .content > p {
   margin-top: 1rem;
-  font-size: clamp(1rem, 0.45vw + 1rem, 1.65rem);
+  font-size: clamp(1rem, 0.45vw + 1rem, 1.55rem);
   line-height: 1.5;
+  filter: none !important;
 }
 
 .external-scroll-animation > section:first-of-type {
@@ -835,7 +852,7 @@ p {
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:first-of-type .content {
-  align-content: end;
+  align-content: center;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:first-of-type h2 {
@@ -848,51 +865,77 @@ p {
     #000;
 }
 
+.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .fixed {
+  background:
+    radial-gradient(circle at center, rgba(3,153,158,0.24), transparent 42%),
+    radial-gradient(circle at 70% 70%, rgba(98,28,148,0.2), transparent 44%),
+    #000;
+}
+
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content {
-  align-content: start;
+  align-content: center !important;
+  padding-top: clamp(90px, 12vh, 140px);
+  filter: none !important;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) img {
-  filter: saturate(0.55) brightness(0.48);
+  filter: saturate(0.55) brightness(0.5);
 }
 
 .external-scroll-animation .text-wrap {
   position: sticky;
-  bottom: 4rem;
+  bottom: 3.25rem;
   transform-origin: 50% 0;
+  will-change: transform, opacity, filter;
 }
 
 .external-scroll-animation .loud-wrap {
   clip-path: inset(0 0 0 0);
-  mask: linear-gradient(white 50%, transparent) 0 100% / 100% 200% no-repeat;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
 }
 
 .external-scroll-animation .chat-container {
-  min-height: 120vh;
+  min-height: 118vh;
   width: 100%;
   position: sticky;
   top: 0;
   display: grid;
   place-items: center;
-  padding-top: 8vh;
+  padding: 9vh 0 12vh;
+  overflow: hidden;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
 }
 
 .external-scroll-animation .text-blocks {
   max-width: 100%;
-  width: min(42ch, 92vw);
-  justify-self: end;
+  width: min(44ch, 92vw);
+  justify-self: center;
   display: grid;
-  place-items: center;
   align-content: center;
-  gap: clamp(1.8rem, 5vh, 4rem);
+  gap: clamp(1.8rem, 5.25vh, 4.2rem);
 }
 
 .external-scroll-animation .text-blocks p {
   display: inline-block;
   margin: 0;
   font-family: Lobster, "Kristen ITC", Script;
-  font-size: clamp(1.35rem, 2.5vw, 3.5rem);
+  font-size: clamp(1.2rem, 2vw, 2.65rem);
   font-weight: 120;
+  min-width: min(260px, 72vw);
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform, opacity, filter;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+.external-scroll-animation .text-blocks p:nth-of-type(odd) {
+  justify-self: start;
+  text-align: left;
 }
 
 .external-scroll-animation .text-blocks p:nth-of-type(even) {
@@ -903,10 +946,6 @@ p {
   box-shadow: var(--glass-shadow), 0 0 18px rgba(3,153,158,0.18);
 }
 
-.external-scroll-animation .text-blocks p:nth-of-type(odd) {
-  justify-self: start;
-}
-
 .external-scroll-animation .filler {
   display: none;
 }
@@ -915,8 +954,35 @@ p {
   display: block;
   width: 100%;
   position: absolute;
-  bottom: 30vh;
+  bottom: 52vh;
   padding: 1rem;
+  background:
+    radial-gradient(circle at center, rgba(3,153,158,0.22), transparent 42%),
+    radial-gradient(circle at 62% 55%, rgba(98,28,148,0.18), transparent 44%);
+}
+
+.external-scroll-animation .filler h2 {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  filter: none !important;
+  opacity: 1;
+  padding: 0 !important;
+  will-change: transform, opacity;
+}
+
+/* HARD SAFETY: PREVENT TITLE SECTIONS FROM BEING PERMA-BLURRED */
+.external-scroll-animation h1,
+.external-scroll-animation h2,
+.external-scroll-animation .content h1,
+.external-scroll-animation .content h2,
+.external-scroll-animation .filler h2,
+.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) h1,
+.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) h2,
+.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content {
+  filter: none !important;
 }
 
 /* RESPONSIVE */
@@ -1025,7 +1091,7 @@ p {
 
   .external-scroll-animation h1,
   .external-scroll-animation h2 {
-    font-size: clamp(1.65rem, 8vw, 3.4rem);
+    font-size: clamp(1.45rem, 7vw, 3rem);
   }
 
   .external-scroll-animation .content {
@@ -1033,16 +1099,31 @@ p {
     padding-top: clamp(8rem, 28vh, 14rem);
   }
 
+  .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content {
+    padding-top: clamp(7rem, 22vh, 12rem);
+  }
+
   .external-scroll-animation .fixed img {
     width: 100%;
   }
 
+  .external-scroll-animation .chat-container {
+    min-height: 112vh;
+    padding: 8vh 0 10vh;
+  }
+
   .external-scroll-animation .text-blocks {
     width: min(36ch, 90vw);
+    gap: clamp(1.6rem, 4.8vh, 3.6rem);
   }
 
   .external-scroll-animation .text-blocks p {
-    font-size: clamp(1.15rem, 5vw, 2.25rem);
+    font-size: clamp(1.05rem, 4.6vw, 2rem);
+    min-width: min(220px, 76vw);
+  }
+
+  .external-scroll-animation .filler.is-active {
+    bottom: 50vh;
   }
 }
 
