@@ -400,7 +400,7 @@ function animateTextBlocks(gsap, article) {
 
   if (lines.length) {
     gsap.set(article, {
-      height: "400vh"
+      height: "300vh"
     });
 
     lines.forEach((line, index) => {
@@ -410,7 +410,7 @@ function animateTextBlocks(gsap, article) {
         scrollTrigger: {
           trigger: article,
           start: `top -=${90 + index * 10}%`,
-          end: `top -=${100 + index * 10}%`,
+          end: `bottom -=${100 + index * 10}%`,
           scrub: 0.5
         }
       });
@@ -422,7 +422,7 @@ function animateTextBlocks(gsap, article) {
       opacity: 0,
       scrollTrigger: {
         trigger: article,
-        start: "bottom 130%",
+        start: "top 130%",
         end: "bottom 110%",
         scrub: 0.5
       }
@@ -435,7 +435,7 @@ function animateTextBlocks(gsap, article) {
       filter: "blur(4rem)",
       scrollTrigger: {
         trigger: article,
-        start: "bottom 55%",
+        start: "top 55%",
         end: "bottom 30%",
         scrub: 0.5
       }
