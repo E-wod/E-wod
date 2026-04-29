@@ -2,6 +2,7 @@
 
 :root {
   --accent: #03999e;
+  --accent-bright: #1fdde4;
   --text: #ffffff;
   --bg: #000000;
   --panel: rgba(181, 181, 181, 0.3);
@@ -217,7 +218,7 @@ body.index-page .header {
   overflow: visible;
 }
 
-/* GLASS NAV BUTTONS */
+/* NAV BUTTONS */
 .navBar a {
   padding: 0.42rem 0.68rem;
   color: var(--accent);
@@ -243,8 +244,7 @@ body.index-page .header {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background:
-    linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.03) 45%, rgba(3,153,158,0.14));
+  background: linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.03) 45%, rgba(3,153,158,0.14));
   opacity: 0;
   transition: opacity 0.45s ease;
   z-index: -1;
@@ -299,14 +299,14 @@ body.index-page .header {
   inset: 0;
   z-index: 0;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   opacity: 0.95;
   background-image: var(--wallpaper-default);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: repeat;
+  background-position: center right;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: scroll;
 }
 
 .wallPaper::after {
@@ -324,6 +324,7 @@ body.index-page .header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center right;
 }
 
 body.services-page .wallPaper img {
@@ -419,26 +420,28 @@ p {
   overflow: visible;
 }
 
-/* GLASS CTA BUTTON */
+/* CONTACT BUTTON — SAME DEFAULT STYLE AS NAV, GLASS ONLY ON HOVER */
 .btnBox a {
-  width: 180px;
-  height: 60px;
+  width: auto;
+  min-width: 120px;
+  height: auto;
+  min-height: 44px;
   align-items: center;
   justify-content: center;
   color: var(--accent);
-  font-size: 25px;
+  font-size: clamp(1rem, 1.4vw, 1.45rem);
   font-family: "sofachrome", sans-serif;
-  border-radius: var(--radius-lg);
-  padding: 10px;
+  border-radius: var(--radius-md);
+  padding: 0.45rem 0.85rem;
   position: relative;
   overflow: hidden;
-  border: 1px solid var(--glass-border);
-  background: var(--glass-bg);
-  box-shadow: var(--glass-shadow);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid transparent;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
   animation: h1Anim 2.5s ease forwards;
-  transition: color 0.35s ease, background 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+  transition: color 0.35s ease, background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
 }
 
 .btnBox a::before {
@@ -447,18 +450,26 @@ p {
   inset: 0;
   border-radius: inherit;
   background: linear-gradient(135deg, rgba(255,255,255,0.24), transparent 48%, rgba(3,153,158,0.18));
-  opacity: 0.65;
+  opacity: 0;
   pointer-events: none;
+  transition: opacity 0.35s ease;
 }
 
 .btnBox a:hover {
   color: var(--text);
   background: var(--glass-bg-hover);
+  border-color: var(--glass-border);
   box-shadow: var(--glass-shadow), var(--glass-glow);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   transform: translateY(-2px) scale(1.02);
 }
 
-/* GLASS SOCIAL BUTTONS */
+.btnBox a:hover::before {
+  opacity: 1;
+}
+
+/* SOCIAL BUTTONS — NO GLASS WINDOW UNTIL HOVER */
 .socLnk a {
   width: 80px;
   height: 80px;
@@ -469,14 +480,14 @@ p {
   padding: 10px;
   position: relative;
   overflow: hidden;
-  border: 1px solid var(--glass-border);
-  background: var(--glass-bg);
-  box-shadow: var(--glass-shadow);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid transparent;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
   animation: h1Anim 1.975s ease forwards;
   animation-delay: calc(0.085s * var(--i));
-  transition: background 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+  transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
 }
 
 .socLnk a::before {
@@ -485,13 +496,22 @@ p {
   inset: 0;
   border-radius: inherit;
   background: linear-gradient(135deg, rgba(255,255,255,0.22), transparent 50%, rgba(3,153,158,0.18));
+  opacity: 0;
   pointer-events: none;
+  transition: opacity 0.35s ease;
 }
 
 .socLnk a:hover {
+  border-color: var(--glass-border);
   box-shadow: var(--glass-shadow), var(--glass-glow);
   background: var(--glass-bg-hover);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   transform: translateY(-2px) scale(1.04);
+}
+
+.socLnk a:hover::before {
+  opacity: 1;
 }
 
 .socLnk img {
@@ -639,6 +659,325 @@ p {
   display: none !important;
 }
 
+/* SERVICES SCROLL ANIMATION - SCOPED */
+.services-page {
+  overflow-y: auto;
+}
+
+.services-scroll {
+  position: relative;
+  z-index: 2;
+}
+
+.services-scroll .service-hero-panel {
+  min-height: 100vh;
+  position: relative;
+}
+
+.services-scroll .service-animation-panels {
+  position: relative;
+}
+
+.services-scroll article {
+  min-height: 100vh;
+  position: relative;
+}
+
+.services-scroll .service-fixed {
+  position: relative;
+  inset: 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.services-scroll .service-fixed img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 82% center;
+  filter: brightness(0.48) saturate(0.95);
+  z-index: -1;
+}
+
+.services-scroll .service-content {
+  width: min(950px, 92%);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: clamp(7rem, 12vh, 11rem) 1rem 4rem;
+  position: relative;
+  z-index: 3;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.services-scroll .service-content p {
+  width: auto;
+  max-width: 42ch;
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md);
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.services-scroll h1,
+.services-scroll h2 {
+  font-family: "sofachrome", sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 5vw, 5.5rem);
+  line-height: 1.05;
+}
+
+.services-scroll .service-static {
+  position: relative;
+  z-index: 6;
+}
+
+.services-scroll .service-dark-panel {
+  background:
+    radial-gradient(circle at center, rgba(3,153,158,0.18), transparent 45%),
+    #000;
+}
+
+.services-scroll .service-text-wrap {
+  position: sticky;
+  bottom: 4rem;
+  transform-origin: 50% 0;
+}
+
+.services-scroll .service-loud-wrap {
+  clip-path: inset(0 0 0 0);
+  mask: linear-gradient(white 50%, transparent) 0 100% / 100% 200% no-repeat;
+}
+
+.services-scroll .service-chat-container {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.services-scroll .service-text-blocks {
+  width: min(42ch, 92vw);
+  display: grid;
+  gap: 1.25rem;
+}
+
+.services-scroll .service-text-blocks p {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  font-family: Lobster, "Kristen ITC", Script;
+  font-size: clamp(1.35rem, 2.4vw, 3rem);
+  background: rgba(0,0,0,0.42);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: var(--radius-md);
+  box-shadow: var(--glass-shadow);
+}
+
+.services-scroll .service-text-blocks p:nth-of-type(even) {
+  justify-self: end;
+  color: var(--accent-bright);
+  text-align: right;
+}
+
+.services-scroll .service-filler {
+  position: absolute;
+  bottom: 30vh;
+  width: 100%;
+  padding: 1rem;
+}
+
+.services-scroll .service-final {
+  gap: 1.5rem;
+}
+
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .services-scroll article {
+      view-timeline: --service-article;
+    }
+
+    .services-scroll .service-fixed {
+      position: fixed;
+      inset: 0;
+    }
+
+    .services-scroll .service-static {
+      position: absolute;
+      inset: 0;
+      z-index: 6;
+    }
+
+    .services-scroll .service-hero-panel {
+      view-timeline: --service-hero;
+    }
+
+    .services-scroll .service-hero-panel .service-fixed {
+      animation:
+        service-scale-and-move both linear,
+        service-fade-out both linear;
+      animation-timeline: --service-hero;
+      animation-range:
+        exit 0% exit 50%,
+        exit 0% exit 25%;
+      transform-origin: 50% 0;
+      z-index: 5;
+    }
+
+    .services-scroll article:first-of-type .service-fixed {
+      clip-path: ellipse(220% 200% at 50% 300%);
+      animation: service-unclip both linear;
+      animation-timeline: --service-article;
+      animation-range: entry 0 entry 100%;
+      z-index: 3;
+    }
+
+    .services-scroll article:first-of-type img {
+      animation: service-scale-down both linear;
+      animation-timeline: --service-article;
+      animation-range: entry;
+    }
+
+    .services-scroll article:first-of-type h2 {
+      animation: service-slide-up both linear;
+      animation-timeline: --service-article;
+      animation-range: entry 20% entry 80%;
+    }
+
+    .services-scroll article:nth-of-type(2) .service-fixed {
+      animation: service-fade-in both linear;
+      animation-timeline: --service-article;
+      animation-range: entry 60% exit 30%;
+      z-index: 3;
+    }
+
+    .services-scroll article:nth-of-type(2) h2 {
+      animation:
+        service-slide-in both linear,
+        service-fade-in both linear,
+        service-fade-away both linear,
+        service-fade-out both linear;
+      animation-timeline:
+        view(),
+        view(),
+        --service-article,
+        --service-article;
+      animation-range:
+        entry 100% cover 25%,
+        entry 100% cover 35%,
+        exit 20% exit 40%,
+        exit 40% exit 50%;
+    }
+
+    .services-scroll article:nth-of-type(3) {
+      height: 400vh;
+    }
+
+    .services-scroll article:nth-of-type(3) .service-fixed {
+      animation:
+        service-fade-in both linear,
+        service-fade-out both linear;
+      animation-timeline:
+        --service-article,
+        --service-article;
+      animation-range:
+        entry 45% exit-crossing 0%,
+        exit 0% exit 15%;
+      z-index: 3;
+    }
+
+    .services-scroll article:nth-of-type(3) h2 {
+      margin-top: 80vh;
+    }
+
+    .services-scroll .service-text-blocks p {
+      animation:
+        service-slide-in both linear,
+        service-fade-in both linear;
+      animation-timeline: --service-article;
+    }
+
+    .services-scroll .service-text-blocks p:nth-of-type(1) { animation-range: entry-crossing 45% entry-crossing 50%; }
+    .services-scroll .service-text-blocks p:nth-of-type(2) { animation-range: entry-crossing 50% entry-crossing 55%; }
+    .services-scroll .service-text-blocks p:nth-of-type(3) { animation-range: entry-crossing 55% entry-crossing 60%; }
+    .services-scroll .service-text-blocks p:nth-of-type(4) { animation-range: entry-crossing 60% entry-crossing 65%; }
+    .services-scroll .service-text-blocks p:nth-of-type(5) { animation-range: entry-crossing 65% entry-crossing 70%; }
+    .services-scroll .service-text-blocks p:nth-of-type(6) { animation-range: entry-crossing 70% entry-crossing 75%; }
+
+    .services-scroll .service-text-blocks {
+      animation: service-fade-out both linear;
+      animation-timeline: --service-article;
+      animation-range: entry-crossing 75% entry-crossing 100%;
+    }
+
+    .services-scroll .service-filler h2 {
+      animation:
+        service-fade-away both linear,
+        service-fade-out both linear;
+      animation-timeline:
+        --service-article,
+        --service-article;
+      animation-range:
+        exit 40% exit 75%,
+        exit 70% exit 90%;
+    }
+
+    .services-scroll article:last-of-type {
+      z-index: 5;
+    }
+
+    .services-scroll article:last-of-type .service-fixed {
+      clip-path: ellipse(220% 200% at 50% 300%);
+      animation: service-unclip both linear;
+      animation-timeline: --service-article;
+      animation-range: entry 20% entry 80%;
+      z-index: 5;
+    }
+  }
+}
+
+@keyframes service-slide-in {
+  0% { translate: 0 100%; opacity: 0; }
+}
+
+@keyframes service-slide-up {
+  0% { translate: 0 100%; }
+}
+
+@keyframes service-fade-in {
+  0% { opacity: 0; }
+}
+
+@keyframes service-fade-out {
+  to { opacity: 0; }
+}
+
+@keyframes service-fade-away {
+  to { filter: blur(4rem); }
+}
+
+@keyframes service-scale-down {
+  0% { scale: 5; }
+}
+
+@keyframes service-unclip {
+  to { clip-path: ellipse(220% 200% at 50% 175%); }
+}
+
+@keyframes service-scale-and-move {
+  to {
+    translate: 0 -10%;
+    scale: 0.35 0.5;
+  }
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   body.index-page {
@@ -650,6 +989,17 @@ p {
   .wallPaper::after,
   .wallPaper img {
     display: block !important;
+  }
+
+  .wallPaper {
+    height: 100dvh;
+    background-position: center right;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .wallPaper img {
+    object-position: center right;
   }
 
   body {
@@ -677,7 +1027,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.45rem;
+    gap: 0.35rem;
   }
 
   .navBar a,
@@ -719,6 +1069,19 @@ p {
 
   .picFrame iframe {
     height: 70vh;
+  }
+
+  .services-scroll .service-content {
+    padding-top: clamp(10rem, 32vh, 15rem);
+  }
+
+  .services-scroll h1,
+  .services-scroll h2 {
+    font-size: clamp(1.75rem, 9vw, 3.5rem);
+  }
+
+  .services-scroll .service-fixed img {
+    object-position: 82% center;
   }
 }
 
@@ -762,9 +1125,7 @@ p {
   }
 
   .btnBox a {
-    width: auto;
     min-width: 0;
-    height: auto;
     min-height: 0;
     font-size: 18px;
     padding: 0.5rem 0.85rem;
