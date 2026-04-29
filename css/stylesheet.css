@@ -587,7 +587,7 @@ p {
   display: none !important;
 }
 
-/* EXTERNAL SCROLL ANIMATION */
+/* SCOPED EXTERNAL SCROLL ANIMATION ONLY */
 .external-scroll-animation {
   position: relative;
   z-index: 2;
@@ -677,38 +677,47 @@ p {
   filter: none !important;
 }
 
+/* SCOPED TEXT STYLE — SAME LOOK AS "DEVOTED TO DESIGN" */
 .external-scroll-animation h1,
-.external-scroll-animation h2 {
-  width: auto;
+.external-scroll-animation h2,
+.external-scroll-animation .text-blocks p,
+.external-scroll-animation .filler h2 {
+  width: fit-content;
   max-width: min(920px, 92vw);
   display: block;
+  margin: 0 auto;
+  padding: 0;
   color: var(--accent-bright);
-  font-family: "sofachrome", sans-serif;
+  font-family: "sofachrome", sans-serif !important;
   font-weight: 40;
-  font-size: clamp(1.2rem, 3.00vw, 2.55rem);
+  font-size: clamp(1.2rem, 3vw, 2.55rem);
   letter-spacing: -0.03ch;
   line-height: 1.08;
-  margin: 0;
+  text-align: center;
   text-transform: uppercase;
-  filter: none !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-}
-
-.external-scroll-animation h1 {
   background-image: var(--text-gradient);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   animation: textclip 2s infinite reverse linear;
 }
 
-.external-scroll-animation .content > p,
-.external-scroll-animation .text-blocks p,
-.external-scroll-animation .filler h2 {
+/* Keep scoped H1/H2 out of site-wide h1/h2 flex styling */
+.external-scroll-animation h1,
+.external-scroll-animation h2 {
+  justify-content: initial;
+}
+
+/* Glass paragraph/text boxes only */
+.external-scroll-animation .content > p {
   width: fit-content;
   max-width: min(52ch, 92vw);
+  margin: 1rem auto 0;
   padding: 0.85rem 1rem;
   color: var(--text);
   background: rgba(0,0,0,0.36);
@@ -718,12 +727,13 @@ p {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   filter: none !important;
-}
-
-.external-scroll-animation .content > p {
-  margin-top: 1rem;
+  font-family: open sans, sans-serif;
   font-size: clamp(1rem, 0.45vw + 1rem, 1.55rem);
   line-height: 1.5;
+  text-transform: none;
+  -webkit-text-fill-color: var(--text);
+  background-image: none;
+  animation: none;
 }
 
 /* FIRST SCREEN FIXES */
@@ -750,11 +760,6 @@ p {
   justify-items: center;
   text-align: center;
   align-content: center;
-}
-
-.external-scroll-animation > section:first-of-type .content > p {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* ARTICLE PANELS */
@@ -818,27 +823,18 @@ p {
 }
 
 .external-scroll-animation .text-blocks p {
-  display: inline-block;
-  margin: 0;
-  font-family: Lobster, "Kristen ITC", Script;
-  font-size: clamp(1.2rem, 2.25vw, 3rem);
-  font-weight: 120;
-  line-height: 1.14;
   will-change: transform, opacity;
-  filter: none !important;
 }
 
-.external-scroll-animation .text-blocks p:nth-of-type(even) {
-  justify-self: end;
-  text-align: right;
-  color: var(--accent-bright);
-  border-color: rgba(3,153,158,0.34);
-  box-shadow: var(--glass-shadow), 0 0 18px rgba(3,153,158,0.18);
-}
-
+.external-scroll-animation .text-blocks p:nth-of-type(even),
 .external-scroll-animation .text-blocks p:nth-of-type(odd) {
-  justify-self: start;
-  text-align: left;
+  justify-self: center;
+  text-align: center;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 .external-scroll-animation .filler {
@@ -857,15 +853,20 @@ p {
     radial-gradient(circle at 60% 55%, rgba(98,28,148,0.18), transparent 44%);
 }
 
+/* HARD SAFETY: NO INNER BLUR IN SCOPED ANIMATION */
+.external-scroll-animation h1,
+.external-scroll-animation h2,
+.external-scroll-animation .content,
+.external-scroll-animation .fixed,
+.external-scroll-animation .static,
+.external-scroll-animation .text-wrap,
+.external-scroll-animation .loud-wrap,
+.external-scroll-animation .chat-container,
+.external-scroll-animation .text-blocks,
+.external-scroll-animation .text-blocks p,
+.external-scroll-animation .filler,
 .external-scroll-animation .filler h2 {
-  font-size: clamp(1.65rem, 2.35vw, 4.25rem);
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
   filter: none !important;
-  padding: 0 !important;
 }
 
 /* RESPONSIVE */
@@ -969,8 +970,10 @@ p {
   }
 
   .external-scroll-animation h1,
-  .external-scroll-animation h2 {
-    font-size: clamp(1.45rem, 6.7vw, 3rem);
+  .external-scroll-animation h2,
+  .external-scroll-animation .text-blocks p,
+  .external-scroll-animation .filler h2 {
+    font-size: clamp(1.15rem, 5.5vw, 2.4rem);
   }
 
   .external-scroll-animation .content {
@@ -984,10 +987,6 @@ p {
 
   .external-scroll-animation .text-blocks {
     width: min(36ch, 90vw);
-  }
-
-  .external-scroll-animation .text-blocks p {
-    font-size: clamp(1.15rem, 5vw, 2.25rem);
   }
 }
 
