@@ -786,6 +786,7 @@ p {
 }
 
 .external-scroll-animation .text-wrap {
+  align-content: center;
   position: sticky;
   bottom: 6rem;
   transform-origin: 50% 0;
