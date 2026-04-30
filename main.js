@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   applyImageReady();
   startImageWheels();
   initExternalScrollAnimation();
-  initExternalEllipseFade();
 });
 
 /* IMAGE READY / FADE-IN HANDLING */
@@ -163,49 +162,6 @@ function startImageWheels() {
   );
 
   restartWheels();
-}
-
-/* SCOPED BACKGROUND ELLIPSE FADE */
-function initExternalEllipseFade() {
-  const root = document.querySelector(".external-scroll-animation");
-  if (!root) return;
-
-  let lastScrollY = window.scrollY;
-  let ticking = false;
-  let fadeTimer = null;
-
-  root.style.setProperty("--ellipse-alpha", "0");
-
-  const updateEllipse = () => {
-    const currentScrollY = window.scrollY;
-    const isScrollingDown = currentScrollY > lastScrollY;
-
-    root.classList.add("ellipse-is-scrolling");
-    root.classList.toggle("ellipse-scroll-down", isScrollingDown);
-    root.classList.toggle("ellipse-scroll-up", !isScrollingDown);
-
-    root.style.setProperty("--ellipse-alpha", isScrollingDown ? "0.72" : "0");
-
-    clearTimeout(fadeTimer);
-    fadeTimer = setTimeout(() => {
-      root.classList.remove("ellipse-is-scrolling", "ellipse-scroll-down", "ellipse-scroll-up");
-      root.style.setProperty("--ellipse-alpha", "0");
-    }, 420);
-
-    lastScrollY = currentScrollY;
-    ticking = false;
-  };
-
-  window.addEventListener(
-    "scroll",
-    () => {
-      if (!ticking) {
-        requestAnimationFrame(updateEllipse);
-        ticking = true;
-      }
-    },
-    { passive: true }
-  );
 }
 
 /* EXTERNAL SCROLL ANIMATION - JS ONLY */
