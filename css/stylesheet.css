@@ -640,26 +640,13 @@ p {
   pointer-events: none;
 }
 
-.external-scroll-animation {
-  --ellipse-alpha: 0;
-}
-
 .external-scroll-animation .fixed::after {
   content: "";
   position: absolute;
   inset: 0;
   z-index: 1;
+  background: rgba(0,0,0,0.14);
   pointer-events: none;
-  background:
-    radial-gradient(
-      ellipse 90% 68% at 50% 50%,
-      rgba(0,0,0,var(--ellipse-alpha)) 0%,
-      rgba(0,0,0,calc(var(--ellipse-alpha) * 0.82)) 38%,
-      rgba(0,0,0,calc(var(--ellipse-alpha) * 0.42)) 62%,
-      rgba(0,0,0,0) 78%
-    ),
-    rgba(0,0,0,0.14);
-  transition: background 0.42s ease;
 }
 
 .external-scroll-animation .fixed img {
