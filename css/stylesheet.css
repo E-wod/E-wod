@@ -617,7 +617,6 @@ p {
   position: absolute;
   inset: 0;
   min-height: 100vh;
-  max-width: 90%;
   overflow: hidden;
   border-radius: 0;
   background: #000;
@@ -665,12 +664,13 @@ p {
 .external-scroll-animation .content {
   margin: 0 auto;
   width: min(950px, 92%);
+  width: 90%;
   min-height: 100vh;
   height: 100%;
   z-index: 4;
   position: absolute;
   inset: 0;
-  padding: clamp(7rem, 13vh, 11rem) 1rem 4rem;
+  padding: clamp(7rem, 5vh, 11rem) 1rem 4rem;
   display: grid;
   align-content: center;
   justify-items: center;
