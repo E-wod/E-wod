@@ -680,7 +680,7 @@ p {
 
 .external-scroll-animation h1,
 .external-scroll-animation h2 {
-  width: auto;
+  width: 80%;
   max-width: min(920px, 92vw);
   display: block;
   color: var(--accent-bright);
