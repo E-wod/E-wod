@@ -677,16 +677,15 @@ p {
   filter: none !important;
 }
 
-/* LEAVE FIRST TEXT PAGE ALONE */
-.external-scroll-animation > section:first-of-type h1,
-.external-scroll-animation > section:first-of-type h2 {
+.external-scroll-animation h1,
+.external-scroll-animation h2 {
   width: auto;
   max-width: min(920px, 92vw);
   display: block;
   color: var(--accent-bright);
   font-family: "sofachrome", sans-serif;
   font-weight: 40;
-  font-size: clamp(1.2rem, 3vw, 2.55rem);
+  font-size: clamp(1.2rem, 3.00vw, 2.55rem);
   letter-spacing: -0.03ch;
   line-height: 1.08;
   margin: 0;
@@ -696,7 +695,7 @@ p {
   -webkit-backdrop-filter: none !important;
 }
 
-.external-scroll-animation > section:first-of-type h1 {
+.external-scroll-animation h1 {
   background-image: var(--text-gradient);
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -705,45 +704,12 @@ p {
   animation: textclip 2s infinite reverse linear;
 }
 
-/* ALL OTHER LARGE TEXT: BLACK FILL WITH ANIMATED GRADIENT BORDER */
-.external-scroll-animation > section:nth-of-type(2) h1,
-.external-scroll-animation > section:nth-of-type(2) h2,
+.external-scroll-animation .content > p,
+.external-scroll-animation .text-blocks p,
 .external-scroll-animation .filler h2 {
-  width: fit-content;
-  max-width: min(920px, 92vw);
-  display: block;
-  margin: 0 auto;
-  padding: 0.85rem 1.15rem;
-  position: relative;
-  color: #000 !important;
-  font-family: "sofachrome", sans-serif !important;
-  font-weight: 40;
-  font-size: clamp(1.2rem, 3vw, 2.55rem);
-  letter-spacing: -0.03ch;
-  line-height: 1.08;
-  text-align: center;
-  text-transform: uppercase;
-  background:
-    linear-gradient(#000, #000) padding-box,
-    var(--text-gradient) border-box;
-  background-size: 100% 100%, 200% auto;
-  border: 2px solid transparent;
-  border-radius: var(--radius-md);
-  -webkit-text-fill-color: #000 !important;
-  text-shadow: none !important;
-  box-shadow: var(--glass-shadow), 0 0 18px rgba(3,153,158,0.18);
-  filter: none !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  animation: textclip 2s infinite reverse linear;
-}
-
-/* PARAGRAPH BOXES */
-.external-scroll-animation .content > p {
   width: fit-content;
   max-width: min(52ch, 92vw);
   padding: 0.85rem 1rem;
-  margin-top: 1rem;
   color: var(--text);
   background: rgba(0,0,0,0.36);
   border: 1px solid rgba(255,255,255,0.16);
@@ -752,13 +718,12 @@ p {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   filter: none !important;
-  font-family: open sans, sans-serif;
+}
+
+.external-scroll-animation .content > p {
+  margin-top: 1rem;
   font-size: clamp(1rem, 0.45vw + 1rem, 1.55rem);
   line-height: 1.5;
-  text-transform: none;
-  -webkit-text-fill-color: var(--text);
-  background-image: none;
-  animation: none;
 }
 
 /* FIRST SCREEN FIXES */
@@ -798,7 +763,7 @@ p {
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:first-of-type h2 {
-  padding: 0.85rem 1.15rem;
+  padding: 0.95rem 0;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) .fixed {
@@ -844,50 +809,36 @@ p {
 
 .external-scroll-animation .text-blocks {
   max-width: 100%;
-  width: min(38ch, 90vw);
+  width: min(42ch, 92vw);
   justify-self: center;
   display: grid;
   place-items: center;
-  gap: clamp(0.75rem, 3.5vh, 1.25rem);
+  gap: clamp(1rem, 5vh, 1.65rem);
   filter: none !important;
 }
 
-/* CHAT TEXT BLOCKS: SMALLER, SOLID WHITE, BLURRED GLASS WINDOW BACK */
 .external-scroll-animation .text-blocks p {
-  width: fit-content;
-  max-width: min(34ch, 86vw);
   display: inline-block;
   margin: 0;
-  padding: 0.7rem 0.9rem;
-  color: #fff !important;
-  font-family: "sofachrome", sans-serif !important;
-  font-size: clamp(0.82rem, 1.35vw, 1.45rem);
-  font-weight: 40;
-  letter-spacing: 0.02ch;
-  line-height: 1.2;
-  text-align: center;
-  text-transform: uppercase;
-  background: rgba(0,0,0,0.42) !important;
-  border: 1px solid rgba(255,255,255,0.18) !important;
-  border-radius: var(--radius-md);
-  box-shadow: var(--glass-shadow), 0 0 18px rgba(3,153,158,0.16);
-  backdrop-filter: blur(10px) saturate(1.1) !important;
-  -webkit-backdrop-filter: blur(10px) saturate(1.1) !important;
-  -webkit-text-fill-color: #fff !important;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.75);
+  font-family: Lobster, "Kristen ITC", Script;
+  font-size: clamp(1.2rem, 2.25vw, 3rem);
+  font-weight: 120;
+  line-height: 1.14;
   will-change: transform, opacity;
   filter: none !important;
-  animation: none !important;
 }
 
-.external-scroll-animation .text-blocks p:nth-of-type(even),
+.external-scroll-animation .text-blocks p:nth-of-type(even) {
+  justify-self: end;
+  text-align: right;
+  color: var(--accent-bright);
+  border-color: rgba(3,153,158,0.34);
+  box-shadow: var(--glass-shadow), 0 0 18px rgba(3,153,158,0.18);
+}
+
 .external-scroll-animation .text-blocks p:nth-of-type(odd) {
-  justify-self: center;
-  text-align: center;
-  color: #fff !important;
-  background: rgba(0,0,0,0.42) !important;
-  background-image: none !important;
-  -webkit-text-fill-color: #fff !important;
+  justify-self: start;
+  text-align: left;
 }
 
 .external-scroll-animation .filler {
@@ -904,6 +855,17 @@ p {
   background:
     radial-gradient(circle at center, rgba(3,153,158,0.2), transparent 42%),
     radial-gradient(circle at 60% 55%, rgba(98,28,148,0.18), transparent 44%);
+}
+
+.external-scroll-animation .filler h2 {
+  font-size: clamp(1.65rem, 2.35vw, 4.25rem);
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  filter: none !important;
+  padding: 0 !important;
 }
 
 /* RESPONSIVE */
@@ -1006,16 +968,9 @@ p {
     height: 70vh;
   }
 
-  .external-scroll-animation > section:first-of-type h1,
-  .external-scroll-animation > section:first-of-type h2,
-  .external-scroll-animation > section:nth-of-type(2) h1,
-  .external-scroll-animation > section:nth-of-type(2) h2,
-  .external-scroll-animation .filler h2 {
-    font-size: clamp(1.15rem, 5.5vw, 2.4rem);
-  }
-
-  .external-scroll-animation .text-blocks p {
-    font-size: clamp(0.78rem, 3.7vw, 1.35rem);
+  .external-scroll-animation h1,
+  .external-scroll-animation h2 {
+    font-size: clamp(1.45rem, 6.7vw, 3rem);
   }
 
   .external-scroll-animation .content {
@@ -1028,7 +983,11 @@ p {
   }
 
   .external-scroll-animation .text-blocks {
-    width: min(34ch, 90vw);
+    width: min(36ch, 90vw);
+  }
+
+  .external-scroll-animation .text-blocks p {
+    font-size: clamp(1.15rem, 5vw, 2.25rem);
   }
 }
 
