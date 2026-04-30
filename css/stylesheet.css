@@ -786,7 +786,6 @@ p {
 }
 
 .external-scroll-animation .text-wrap {
-  align-content: center;
   text-align: center;
   width: 100%;
   position: sticky;
@@ -851,6 +850,9 @@ p {
 }
 
 .external-scroll-animation .filler.is-active {
+  align-content: center;
+  justify-items: center;
+  text-align: center;
   display: block;
   width: 100%;
   position: absolute;
