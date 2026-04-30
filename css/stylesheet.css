@@ -787,15 +787,17 @@ p {
 
 .external-scroll-animation .text-wrap {
   align-content: center;
+  text-align: center;
+  width: 100%;
   position: sticky;
   bottom: 6rem;
   transform-origin: 50% 0;
-  filter: none !important;
+  /* filter: none !important; */
 }
 
 .external-scroll-animation .loud-wrap {
   clip-path: inset(0 0 0 0);
-  filter: none !important;
+  /* filter: none !important; */
 }
 
 .external-scroll-animation .chat-container {
@@ -806,7 +808,7 @@ p {
   display: grid;
   place-items: center;
   overflow: hidden;
-  filter: none !important;
+  /* filter: none !important; */
 }
 
 .external-scroll-animation .text-blocks {
