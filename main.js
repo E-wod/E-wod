@@ -250,27 +250,39 @@ function runExternalScrollFallback(root) {
 
 function animateExternalStartPanel(gsap, section) {
   const fixed = section.querySelector(".fixed");
-
   if (!fixed) return;
 
   gsap.set(fixed, {
     opacity: 1,
     zIndex: 5,
-    transformOrigin: "50% 0%"
+    transformOrigin: "50% 0%",
+    scaleX: 1,
+    scaleY: 1,
+    yPercent: 0
   });
 
-  gsap.to(fixed, {
-    scaleX: 0.35,
-    scaleY: 0.5,
-    yPercent: -10,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: section,
-      start: "top top",
-      end: "bottom 50%",
-      scrub: 0.5
+  gsap.fromTo(
+    fixed,
+    {
+      scaleX: 1,
+      scaleY: 1,
+      yPercent: 0,
+      opacity: 1
+    },
+    {
+      scaleX: 0.35,
+      scaleY: 0.5,
+      yPercent: -10,
+      opacity: 0,
+      overwrite: "auto",
+      scrollTrigger: {
+        trigger: section,
+        start: "top top",
+        end: "bottom 50%",
+        scrub: 0.5
+      }
     }
-  });
+  );
 }
 
 function animateExternalArticles(gsap, articles) {
@@ -286,7 +298,6 @@ function animateExternalArticles(gsap, articles) {
 
 function animateArticleFixedLayer(gsap, article, index) {
   const fixed = article.querySelector(".fixed");
-
   if (!fixed) return;
 
   if (index === 0) {
@@ -296,26 +307,39 @@ function animateArticleFixedLayer(gsap, article, index) {
       zIndex: 3
     });
 
-    gsap.to(fixed, {
-      opacity: 1,
-      clipPath: "ellipse(220% 200% at 50% 175%)",
-      scrollTrigger: {
-        trigger: article,
-        start: "top bottom",
-        end: "top top",
-        scrub: 0.5
+    gsap.fromTo(
+      fixed,
+      {
+        opacity: 0,
+        clipPath: "ellipse(220% 200% at 50% 300%)"
+      },
+      {
+        opacity: 1,
+        clipPath: "ellipse(220% 200% at 50% 175%)",
+        overwrite: "auto",
+        scrollTrigger: {
+          trigger: article,
+          start: "top bottom",
+          end: "top top",
+          scrub: 0.5
+        }
       }
-    });
+    );
 
-    gsap.to(fixed, {
-      opacity: 0,
-      scrollTrigger: {
-        trigger: article,
-        start: "bottom 80%",
-        end: "bottom 45%",
-        scrub: 0.5
+    gsap.fromTo(
+      fixed,
+      { opacity: 1 },
+      {
+        opacity: 0,
+        overwrite: "auto",
+        scrollTrigger: {
+          trigger: article,
+          start: "bottom 80%",
+          end: "bottom 45%",
+          scrub: 0.5
+        }
       }
-    });
+    );
 
     return;
   }
@@ -325,69 +349,108 @@ function animateArticleFixedLayer(gsap, article, index) {
     zIndex: 3
   });
 
-  gsap.to(fixed, {
-    opacity: 1,
-    scrollTrigger: {
-      trigger: article,
-      start: "top 80%",
-      end: "top top",
-      scrub: 0.5
+  gsap.fromTo(
+    fixed,
+    { opacity: 0 },
+    {
+      opacity: 1,
+      overwrite: "auto",
+      scrollTrigger: {
+        trigger: article,
+        start: "top 80%",
+        end: "top top",
+        scrub: 0.5
+      }
     }
-  });
+  );
 
-  gsap.to(fixed, {
-    opacity: 0,
-    scrollTrigger: {
-      trigger: article,
-      start: "bottom 80%",
-      end: "bottom 45%",
-      scrub: 0.5
+  gsap.fromTo(
+    fixed,
+    { opacity: 1 },
+    {
+      opacity: 0,
+      overwrite: "auto",
+      scrollTrigger: {
+        trigger: article,
+        start: "bottom 80%",
+        end: "bottom 45%",
+        scrub: 0.5
+      }
     }
-  });
+  );
 }
 
 function animateArticleImage(gsap, article, index) {
   const img = article.querySelector("img");
-
   if (!img) return;
 
-  gsap.from(img, {
-    scale: index === 0 ? 5 : 1.3,
-    scrollTrigger: {
-      trigger: article,
-      start: "top bottom",
-      end: "top top",
-      scrub: 0.5
+  gsap.fromTo(
+    img,
+    {
+      scale: index === 0 ? 5 : 1.3
+    },
+    {
+      scale: 1,
+      overwrite: "auto",
+      scrollTrigger: {
+        trigger: article,
+        start: "top bottom",
+        end: "top top",
+        scrub: 0.5
+      }
     }
-  });
+  );
 }
 
 function animateArticleTitle(gsap, article) {
   const title = article.querySelector("h2, h3");
-
   if (!title) return;
 
-  gsap.from(title, {
-    yPercent: 80,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: article,
-      start: "top 70%",
-      end: "top 30%",
-      scrub: 0.5
-    }
+  gsap.set(title, {
+    opacity: 1,
+    yPercent: 0,
+    filter: "blur(0rem)"
   });
 
-  gsap.to(title, {
-    opacity: 0,
-    filter: "blur(4rem)",
-    scrollTrigger: {
-      trigger: article,
-      start: "bottom 70%",
-      end: "bottom 45%",
-      scrub: 0.5
+  gsap.fromTo(
+    title,
+    {
+      yPercent: 80,
+      opacity: 0,
+      filter: "blur(0rem)"
+    },
+    {
+      yPercent: 0,
+      opacity: 1,
+      filter: "blur(0rem)",
+      overwrite: "auto",
+      scrollTrigger: {
+        trigger: article,
+        start: "top 70%",
+        end: "top 30%",
+        scrub: 0.5
+      }
     }
-  });
+  );
+
+  gsap.fromTo(
+    title,
+    {
+      opacity: 1,
+      filter: "blur(0rem)"
+    },
+    {
+      opacity: 0,
+      filter: "blur(4rem)",
+      overwrite: "auto",
+      scrollTrigger: {
+        trigger: article,
+        start: "bottom 70%",
+        end: "bottom 45%",
+        scrub: 0.5
+      }
+    }
+  );
 }
 
 function animateTextBlocks(gsap, article) {
@@ -403,42 +466,63 @@ function animateTextBlocks(gsap, article) {
     });
 
     lines.forEach((line, index) => {
-      gsap.from(line, {
-        yPercent: 100,
-        opacity: 0,
-        scrollTrigger: {
-          trigger: article,
-          start: `top -=${90 + index * 10}%`,
-          end: `top -=${100 + index * 10}%`,
-          scrub: 0.5
+      gsap.fromTo(
+        line,
+        {
+          yPercent: 100,
+          opacity: 0
+        },
+        {
+          yPercent: 0,
+          opacity: 1,
+          overwrite: "auto",
+          scrollTrigger: {
+            trigger: article,
+            start: `top -=${90 + index * 10}%`,
+            end: `top -=${100 + index * 10}%`,
+            scrub: 0.5
+          }
         }
-      });
+      );
     });
   }
 
   if (textBlocks) {
-    gsap.to(textBlocks, {
-      opacity: 0,
-      scrollTrigger: {
-        trigger: article,
-        start: "bottom 130%",
-        end: "bottom 110%",
-        scrub: 0.5
+    gsap.fromTo(
+      textBlocks,
+      { opacity: 1 },
+      {
+        opacity: 0,
+        overwrite: "auto",
+        scrollTrigger: {
+          trigger: article,
+          start: "bottom 130%",
+          end: "bottom 110%",
+          scrub: 0.5
+        }
       }
-    });
+    );
   }
 
   if (fillerTitle) {
-    gsap.to(fillerTitle, {
-      opacity: 0,
-      filter: "blur(4rem)",
-      scrollTrigger: {
-        trigger: article,
-        start: "bottom 55%",
-        end: "bottom 30%",
-        scrub: 0.5
+    gsap.fromTo(
+      fillerTitle,
+      {
+        opacity: 1,
+        filter: "blur(0rem)"
+      },
+      {
+        opacity: 0,
+        filter: "blur(4rem)",
+        overwrite: "auto",
+        scrollTrigger: {
+          trigger: article,
+          start: "bottom 55%",
+          end: "bottom 30%",
+          scrub: 0.5
+        }
       }
-    });
+    );
   }
 }
 
@@ -446,7 +530,6 @@ function animateFinalArticle(gsap, article) {
   if (!article) return;
 
   const fixed = article.querySelector(".fixed");
-
   if (!fixed) return;
 
   gsap.set(fixed, {
@@ -455,14 +538,22 @@ function animateFinalArticle(gsap, article) {
     zIndex: 5
   });
 
-  gsap.to(fixed, {
-    opacity: 1,
-    clipPath: "ellipse(220% 200% at 50% 175%)",
-    scrollTrigger: {
-      trigger: article,
-      start: "top 80%",
-      end: "top 20%",
-      scrub: 0.5
+  gsap.fromTo(
+    fixed,
+    {
+      opacity: 0,
+      clipPath: "ellipse(220% 200% at 50% 300%)"
+    },
+    {
+      opacity: 1,
+      clipPath: "ellipse(220% 200% at 50% 175%)",
+      overwrite: "auto",
+      scrollTrigger: {
+        trigger: article,
+        start: "top 80%",
+        end: "top 20%",
+        scrub: 0.5
+      }
     }
-  });
+  );
 }
