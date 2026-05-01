@@ -657,7 +657,7 @@ p {
   z-index: -1;
   position: absolute;
   inset: 0;
-  filter: brightness(0.8) saturate(0.9);
+  filter: brightness(1.0) saturate(1.0);
   transform-origin: center center;
 }
 
@@ -769,7 +769,7 @@ p {
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) .fixed {
   background:
-    radial-gradient(circle at center, rgba(3,153,158,0.18), transparent 45%),
+    radial-gradient(circle at center, transparent 100%, rgba(3,153,158,0.18), transparent 100%),
     #000;
 }
 
@@ -782,7 +782,7 @@ p {
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) img {
-  filter: saturate(0.75) brightness(0.75);
+  filter: saturate(1.0) brightness(1.0);
 }
 
 .external-scroll-animation .text-wrap {
@@ -825,8 +825,8 @@ p {
 .external-scroll-animation .text-blocks p {
   display: inline-block;
   margin: 0;
-  font-family: Lobster, "Kristen ITC", Script;
-  font-size: clamp(1.2rem, 2.25vw, 3rem);
+  font-family: Sofachrome, Sans Serif;
+  font-size: clamp(1.2rem, 2.0vw, 3rem);
   font-weight: 120;
   line-height: 1.14;
   will-change: transform, opacity;
@@ -861,8 +861,8 @@ p {
   bottom: 46vh;
   padding: 1rem;
   background:
-    radial-gradient(circle at center, rgba(3,153,158,0.2), transparent 42%),
-    radial-gradient(circle at 60% 55%, rgba(98,28,148,0.18), transparent 44%);
+    radial-gradient(circle at center, rgba(3,153,158,0.2), transparent 100%),
+    radial-gradient(circle at 60% 55%, rgba(98,28,148,0.18), transparent 100%);
 }
 
 .external-scroll-animation .filler h2 {
