@@ -213,11 +213,22 @@ function runExternalScrollFallback(root) {
 
   root.querySelectorAll(".filler").forEach((el) => el.classList.add("is-active"));
 
+  gsap.set(root, {
+    opacity: 1,
+    backgroundColor: "#000"
+  });
+
   gsap.set(root.querySelectorAll(".fixed"), {
     position: "fixed",
     inset: 0,
     opacity: 0,
     zIndex: 1
+  });
+
+  gsap.set(root.querySelectorAll(".fixed img"), {
+    opacity: 1,
+    visibility: "visible",
+    zIndex: 2
   });
 
   gsap.set(root.querySelectorAll(".static"), {
@@ -268,6 +279,13 @@ function animateExternalStartPanel(gsap, section) {
       }
     }
   );
+
+  animateTextGroup(gsap, section, {
+    enterStart: "top 80%",
+    enterEnd: "top 35%",
+    exitStart: "bottom 82%",
+    exitEnd: "bottom 52%"
+  });
 }
 
 function animateExternalArticles(gsap, articles) {
@@ -289,7 +307,7 @@ function animateArticleFixedLayer(gsap, article, index) {
     gsap.set(fixed, {
       opacity: 0,
       clipPath: "ellipse(220% 200% at 50% 300%)",
-      zIndex: 3
+      zIndex: 4
     });
 
     gsap.fromTo(
@@ -302,6 +320,7 @@ function animateArticleFixedLayer(gsap, article, index) {
         opacity: 1,
         clipPath: "ellipse(220% 200% at 50% 175%)",
         overwrite: "auto",
+        immediateRender: false,
         scrollTrigger: {
           trigger: article,
           start: "top bottom",
@@ -317,6 +336,7 @@ function animateArticleFixedLayer(gsap, article, index) {
       {
         opacity: 0,
         overwrite: "auto",
+        immediateRender: false,
         scrollTrigger: {
           trigger: article,
           start: "bottom 80%",
@@ -331,7 +351,7 @@ function animateArticleFixedLayer(gsap, article, index) {
 
   gsap.set(fixed, {
     opacity: 0,
-    zIndex: 3
+    zIndex: 4
   });
 
   gsap.fromTo(
@@ -340,6 +360,7 @@ function animateArticleFixedLayer(gsap, article, index) {
     {
       opacity: 1,
       overwrite: "auto",
+      immediateRender: false,
       scrollTrigger: {
         trigger: article,
         start: "top 80%",
@@ -355,6 +376,7 @@ function animateArticleFixedLayer(gsap, article, index) {
     {
       opacity: 0,
       overwrite: "auto",
+      immediateRender: false,
       scrollTrigger: {
         trigger: article,
         start: "bottom 80%",
@@ -366,17 +388,28 @@ function animateArticleFixedLayer(gsap, article, index) {
 }
 
 function animateArticleImage(gsap, article, index) {
-  const img = article.querySelector("img");
+  const img = article.querySelector(".fixed img");
   if (!img) return;
+
+  gsap.set(img, {
+    opacity: 1,
+    visibility: "visible",
+    zIndex: 2,
+    scale: index === 0 ? 1.35 : 1.2,
+    transformOrigin: "50% 50%"
+  });
 
   gsap.fromTo(
     img,
     {
-      scale: index === 0 ? 5 : 1.3
+      scale: index === 0 ? 1.35 : 1.2,
+      opacity: 1
     },
     {
       scale: 1,
+      opacity: 1,
       overwrite: "auto",
+      immediateRender: false,
       scrollTrigger: {
         trigger: article,
         start: "top bottom",
@@ -388,10 +421,22 @@ function animateArticleImage(gsap, article, index) {
 }
 
 function animateArticleTitle(gsap, article) {
-  const textItems = article.querySelectorAll("h1, h2, h3, p");
+  animateTextGroup(gsap, article, {
+    enterStart: "top 72%",
+    enterEnd: "top 34%",
+    exitStart: "bottom 76%",
+    exitEnd: "bottom 42%"
+  });
+}
+
+function animateTextGroup(gsap, scope, timing) {
+  const textItems = Array.from(scope.querySelectorAll("h1, h2, h3, .content > p")).filter(
+    (item) => !item.closest(".text-blocks")
+  );
+
   if (!textItems.length) return;
 
-  textItems.forEach((textItem) => {
+  textItems.forEach((textItem, index) => {
     gsap.set(textItem, {
       opacity: 1,
       yPercent: 0,
@@ -403,17 +448,18 @@ function animateArticleTitle(gsap, article) {
       {
         yPercent: 80,
         opacity: 0,
-        filter: "blur(1.5rem)"
+        filter: "blur(1.75rem)"
       },
       {
         yPercent: 0,
         opacity: 1,
         filter: "blur(0rem)",
         overwrite: "auto",
+        immediateRender: false,
         scrollTrigger: {
-          trigger: article,
-          start: "top 70%",
-          end: "top 30%",
+          trigger: scope,
+          start: timing.enterStart,
+          end: timing.enterEnd,
           scrub: 0.5
         }
       }
@@ -423,16 +469,19 @@ function animateArticleTitle(gsap, article) {
       textItem,
       {
         opacity: 1,
-        filter: "blur(0rem)"
+        filter: "blur(0rem)",
+        yPercent: 0
       },
       {
         opacity: 0,
         filter: "blur(4rem)",
+        yPercent: -18 - index * 4,
         overwrite: "auto",
+        immediateRender: false,
         scrollTrigger: {
-          trigger: article,
-          start: "bottom 72%",
-          end: "bottom 42%",
+          trigger: scope,
+          start: timing.exitStart,
+          end: timing.exitEnd,
           scrub: 0.5
         }
       }
@@ -453,6 +502,12 @@ function animateTextBlocks(gsap, article) {
     });
 
     lines.forEach((line, index) => {
+      gsap.set(line, {
+        opacity: 0,
+        yPercent: 100,
+        filter: "blur(1.5rem)"
+      });
+
       gsap.fromTo(
         line,
         {
@@ -465,10 +520,11 @@ function animateTextBlocks(gsap, article) {
           opacity: 1,
           filter: "blur(0rem)",
           overwrite: "auto",
+          immediateRender: false,
           scrollTrigger: {
             trigger: article,
-            start: `top -=${90 + index * 10}%`,
-            end: `top -=${100 + index * 10}%`,
+            start: `top -=${86 + index * 10}%`,
+            end: `top -=${98 + index * 10}%`,
             scrub: 0.5
           }
         }
@@ -478,16 +534,19 @@ function animateTextBlocks(gsap, article) {
         line,
         {
           opacity: 1,
-          filter: "blur(0rem)"
+          filter: "blur(0rem)",
+          yPercent: 0
         },
         {
           opacity: 0,
           filter: "blur(4rem)",
+          yPercent: -65,
           overwrite: "auto",
+          immediateRender: false,
           scrollTrigger: {
             trigger: article,
-            start: `top -=${125 + index * 10}%`,
-            end: `top -=${145 + index * 10}%`,
+            start: `top -=${118 + index * 10}%`,
+            end: `top -=${138 + index * 10}%`,
             scrub: 0.5
           }
         }
@@ -506,6 +565,7 @@ function animateTextBlocks(gsap, article) {
         opacity: 0,
         filter: "blur(4rem)",
         overwrite: "auto",
+        immediateRender: false,
         scrollTrigger: {
           trigger: article,
           start: "bottom 130%",
@@ -517,20 +577,29 @@ function animateTextBlocks(gsap, article) {
   }
 
   if (fillerTitle) {
+    gsap.set(fillerTitle, {
+      opacity: 1,
+      yPercent: 0,
+      filter: "blur(0rem)"
+    });
+
     gsap.fromTo(
       fillerTitle,
       {
         opacity: 1,
+        yPercent: 0,
         filter: "blur(0rem)"
       },
       {
         opacity: 0,
+        yPercent: -22,
         filter: "blur(4rem)",
         overwrite: "auto",
+        immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "bottom 55%",
-          end: "bottom 30%",
+          start: "bottom 56%",
+          end: "bottom 31%",
           scrub: 0.5
         }
       }
@@ -547,7 +616,7 @@ function animateFinalArticle(gsap, article) {
   gsap.set(fixed, {
     opacity: 0,
     clipPath: "ellipse(220% 200% at 50% 300%)",
-    zIndex: 5
+    zIndex: 6
   });
 
   gsap.fromTo(
@@ -560,6 +629,7 @@ function animateFinalArticle(gsap, article) {
       opacity: 1,
       clipPath: "ellipse(220% 200% at 50% 175%)",
       overwrite: "auto",
+      immediateRender: false,
       scrollTrigger: {
         trigger: article,
         start: "top 80%",
@@ -589,16 +659,19 @@ function initLoopToTopOnBottom() {
         document.documentElement.scrollHeight
       );
 
-      const bottomReached = scrollTop + viewportHeight >= pageHeight - 8;
+      const bottomReached = scrollTop + viewportHeight >= pageHeight - 10;
       if (!bottomReached) return;
 
       isLooping = true;
 
-      root.style.transition = "opacity 0.35s ease";
-      root.style.opacity = "0";
+      root.classList.add("is-looping-out");
 
       setTimeout(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "auto"
+        });
 
         if (window.ScrollTrigger) {
           window.ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
@@ -614,13 +687,15 @@ function initLoopToTopOnBottom() {
             window.ScrollTrigger.update();
           }
 
-          root.style.opacity = "1";
+          root.classList.remove("is-looping-out");
+          root.classList.add("is-looping-in");
 
           setTimeout(() => {
+            root.classList.remove("is-looping-in");
             isLooping = false;
-          }, 450);
-        }, 80);
-      }, 350);
+          }, 520);
+        }, 100);
+      }, 420);
     },
     { passive: true }
   );
@@ -632,6 +707,11 @@ function resetExternalAnimationState(root) {
 
   const gsap = window.gsap;
 
+  gsap.set(root, {
+    opacity: 1,
+    backgroundColor: "#000"
+  });
+
   gsap.set(root.querySelectorAll(".fixed"), {
     opacity: 0,
     zIndex: 1
@@ -639,7 +719,9 @@ function resetExternalAnimationState(root) {
 
   gsap.set(root.querySelectorAll(".fixed img"), {
     opacity: 1,
-    scale: 1
+    visibility: "visible",
+    scale: 1,
+    zIndex: 2
   });
 
   gsap.set(
@@ -660,7 +742,10 @@ function resetExternalAnimationState(root) {
   if (firstFixed) {
     gsap.set(firstFixed, {
       opacity: 1,
-      zIndex: 5
+      zIndex: 5,
+      scaleX: 1,
+      scaleY: 1,
+      yPercent: 0
     });
   }
 }
