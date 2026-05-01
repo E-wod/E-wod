@@ -874,8 +874,8 @@ p {
 .external-scroll-animation .text-blocks p {
   display: inline-block;
   margin: 0;
-  font-family: "verdana", sans-serif;
-  font-size: clamp(2rem, 3.25vw, 3rem);
+  font-family: "sofachrome", sans-serif;
+  font-size: clamp(1rem, 1.25vw, 1rem);
   font-weight: 120;
   line-height: 1.14;
   will-change: transform, opacity;
