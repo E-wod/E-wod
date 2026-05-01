@@ -625,7 +625,7 @@ p {
   color: var(--text);
   overflow-x: hidden;
   isolation: isolate;
-  background: #000;
+  background: transparent;
 }
 
 .external-scroll-animation > section {
@@ -649,7 +649,7 @@ p {
   min-height: 100vh;
   overflow: hidden;
   border-radius: 0;
-  background: transparent;
+  background: #000;
 }
 
 .external-scroll-animation .static {
@@ -677,6 +677,7 @@ p {
   z-index: 1;
   background: transparent;
   pointer-events: none;
+  opacity: 0;
 }
 
 .external-scroll-animation .fixed img {
@@ -717,10 +718,8 @@ p {
   height: 25vh;
   pointer-events: none;
   z-index: 10;
-
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-
   opacity: 0;
 }
 
@@ -837,14 +836,12 @@ p {
   position: sticky;
   bottom: 6rem;
   transform-origin: 50% 0;
-  /* filter: none !important; */
 }
 
 .external-scroll-animation .loud-wrap {
   text-align: center;
   width: 100%;
   clip-path: inset(0 0 0 0);
-  /* filter: none !important; */
 }
 
 .external-scroll-animation .chat-container {
@@ -855,7 +852,6 @@ p {
   display: grid;
   place-items: center;
   overflow: hidden;
-  /* filter: none !important; */
 }
 
 .external-scroll-animation .text-blocks {
@@ -871,8 +867,8 @@ p {
 .external-scroll-animation .text-blocks p {
   display: inline-block;
   margin: 0;
-  font-family: "sofachrome", sans-serif;
-  font-size: clamp(1rem, 1.25vw, 2rem);
+  font-family: "verdana", sans-serif;
+  font-size: clamp(2rem, 3.25vw, 3rem);
   font-weight: 120;
   line-height: 1.14;
   will-change: transform, opacity;
@@ -907,8 +903,8 @@ p {
   bottom: 46vh;
   padding: 1rem;
   background:
-    radial-gradient(circle at 20% 15%, rgba(3,153,158,0) 0%, rgba(3,153,158,0.22) 40%, rgba(3,153,158,0) 100%),
-    radial-gradient(circle at 75% 78%, rgba(98,28,148,0) 0%, rgba(98,28,148,0.2) 40%, rgba(98,28,148,0) 100%)
+    radial-gradient(circle at 20% 15%, rgba(3,153,158,0.22), transparent 34%),
+    radial-gradient(circle at 75% 78%, rgba(98,28,148,0.2), transparent 38%),
 }
 
 .external-scroll-animation .filler h2 {
