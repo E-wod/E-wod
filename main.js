@@ -414,7 +414,7 @@ function animateArticleImage(gsap, article, index) {
 
   if (!img) return;
 
-  const startScale = index === 0 ? 1.35 : 1.2;
+  const startScale = index === 0 ? 1.65 : 1.45;
 
   gsap.set(img, {
     opacity: 1,
