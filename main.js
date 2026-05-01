@@ -471,16 +471,37 @@ function animateTextBlocks(gsap, article) {
         line,
         {
           yPercent: 100,
-          opacity: 0
+          opacity: 0,
+          filter: "blur(0rem)"
         },
         {
           yPercent: 0,
           opacity: 1,
+          filter: "blur(0rem)",
           overwrite: "auto",
           scrollTrigger: {
             trigger: article,
             start: `top -=${90 + index * 10}%`,
             end: `top -=${100 + index * 10}%`,
+            scrub: 0.5
+          }
+        }
+      );
+
+      gsap.fromTo(
+        line,
+        {
+          opacity: 1,
+          filter: "blur(0rem)"
+        },
+        {
+          opacity: 0,
+          filter: "blur(3rem)",
+          overwrite: "auto",
+          scrollTrigger: {
+            trigger: article,
+            start: `top -=${125 + index * 10}%`,
+            end: `top -=${145 + index * 10}%`,
             scrub: 0.5
           }
         }
@@ -491,9 +512,13 @@ function animateTextBlocks(gsap, article) {
   if (textBlocks) {
     gsap.fromTo(
       textBlocks,
-      { opacity: 1 },
+      {
+        opacity: 1,
+        filter: "blur(0rem)"
+      },
       {
         opacity: 0,
+        filter: "blur(3rem)",
         overwrite: "auto",
         scrollTrigger: {
           trigger: article,
@@ -583,6 +608,7 @@ function initLoopToTopOnBottom() {
       if (!bottomReached) return;
 
       isLooping = true;
+      resetExternalAnimationState(root);
 
       requestAnimationFrame(() => {
         window.scrollTo({
@@ -591,15 +617,61 @@ function initLoopToTopOnBottom() {
           behavior: "auto"
         });
 
-        setTimeout(() => {
+        requestAnimationFrame(() => {
+          resetExternalAnimationState(root);
+
           if (window.ScrollTrigger) {
-            window.ScrollTrigger.refresh();
+            window.ScrollTrigger.refresh(true);
+            window.ScrollTrigger.update();
           }
 
-          isLooping = false;
-        }, 150);
+          setTimeout(() => {
+            isLooping = false;
+          }, 200);
+        });
       });
     },
     { passive: true }
   );
+}
+
+/* RESET GSAP STATE AFTER LOOP */
+function resetExternalAnimationState(root) {
+  if (!window.gsap) return;
+
+  const gsap = window.gsap;
+
+  gsap.set(root.querySelectorAll(".fixed"), {
+    opacity: 0,
+    clearProps: "transform,clipPath,filter"
+  });
+
+  gsap.set(root.querySelectorAll(".fixed img"), {
+    opacity: 1,
+    scale: 1,
+    clearProps: "transform,filter"
+  });
+
+  gsap.set(
+    root.querySelectorAll(
+      "h1, h2, h3, p, .text-blocks, .text-blocks p, .filler, .filler h2, .filler h3"
+    ),
+    {
+      opacity: 1,
+      yPercent: 0,
+      filter: "blur(0rem)",
+      clearProps: "transform"
+    }
+  );
+
+  const firstFixed =
+    root.querySelector(".external-panel-start .fixed") ||
+    root.querySelector(":scope > section:first-of-type .fixed");
+
+  if (firstFixed) {
+    gsap.set(firstFixed, {
+      opacity: 1,
+      zIndex: 5
+    });
+  }
 }
