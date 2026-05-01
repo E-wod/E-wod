@@ -634,8 +634,8 @@ p {
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(circle at 20% 15%, rgba(3,153,158,0.22), transparent 34%),
-    radial-gradient(circle at 75% 78%, rgba(98,28,148,0.2), transparent 38%),
+    radial-gradient(circle at 20% 15%, rgba(3,153,158,0) 0%, rgba(3,153,158,0.22) 40%, rgba(3,153,158,0) 100%),
+    radial-gradient(circle at 75% 78%, rgba(98,28,148,0) 0%, rgba(98,28,148,0.2) 40%, rgba(98,28,148,0) 100%),
     linear-gradient(180deg, rgba(0,0,0,0.34), rgba(0,0,0,0.78));
   pointer-events: none;
 }
@@ -676,6 +676,29 @@ p {
   justify-items: center;
   text-align: center;
   filter: none !important;
+}
+
+.external-scroll-animation .content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+  pointer-events: none;
+  z-index: 10;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.9),
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0)
+  );
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  opacity: 0;
 }
 
 .external-scroll-animation h1,
@@ -825,8 +848,8 @@ p {
 .external-scroll-animation .text-blocks p {
   display: inline-block;
   margin: 0;
-  font-family: Lobster, "Kristen ITC", Script;
-  font-size: clamp(1.2rem, 2.25vw, 3rem);
+  font-family: "sofachrome", sans-serif;
+  font-size: clamp(1.0rem, 1.25vw, 2rem);
   font-weight: 120;
   line-height: 1.14;
   will-change: transform, opacity;
@@ -876,6 +899,22 @@ p {
   padding: 0 !important;
 }
 
+@supports (animation-timeline: scroll()) {
+  .external-scroll-animation .content::after {
+  animation: topFadeBlur both linear;
+  animation-timeline: --article;
+  animation-range: exit 0% exit 40%;
+}
+
+@keyframes topFadeBlur {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  
 /* RESPONSIVE */
 @media (max-width: 768px) {
   body.index-page {
@@ -997,6 +1036,10 @@ p {
   .external-scroll-animation .text-blocks p {
     font-size: clamp(1.15rem, 5vw, 2.25rem);
   }
+
+  .external-scroll-animation .content::after {
+  height: 30vh;
+}
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
