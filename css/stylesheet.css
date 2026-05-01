@@ -625,7 +625,26 @@ p {
   color: var(--text);
   overflow-x: hidden;
   isolation: isolate;
-  background: transparent;
+  background: #000 !important;
+}
+
+.external-scroll-animation::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: #000;
+  pointer-events: none;
+}
+
+.external-scroll-animation.is-looping-out {
+  opacity: 0;
+  transition: opacity 0.42s ease;
+}
+
+.external-scroll-animation.is-looping-in {
+  opacity: 1;
+  transition: opacity 0.52s ease;
 }
 
 .external-scroll-animation > section {
@@ -650,6 +669,7 @@ p {
   overflow: hidden;
   border-radius: 0;
   background: #000;
+  will-change: opacity, clip-path, transform;
 }
 
 .external-scroll-animation .static {
@@ -662,10 +682,10 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 0;
+  z-index: 3 !important;
   background:
     radial-gradient(circle at 20% 15%, rgba(3,153,158,0) 0%, rgba(3,153,158,0.22) 40%, rgba(3,153,158,0) 100%),
-    radial-gradient(circle at 75% 78%, rgba(98,28,148,0) 0%, rgba(98,28,148,0.2) 40%, rgba(98,28,148,0) 100%)
+    radial-gradient(circle at 75% 78%, rgba(98,28,148,0) 0%, rgba(98,28,148,0.2) 40%, rgba(98,28,148,0) 100%),
     linear-gradient(180deg, rgba(0,0,0,0.34), rgba(0,0,0,0.78));
   pointer-events: none;
 }
@@ -674,7 +694,7 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 4 !important;
   background: transparent;
   pointer-events: none;
   opacity: 0;
@@ -687,16 +707,12 @@ p {
   object-position: center;
   position: absolute;
   inset: 0;
+  z-index: 2 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
   filter: brightness(1) saturate(1);
   transform-origin: center center;
-}
-.external-scroll-animation .fixed img {
-  z-index: 0;
-}
-
-.external-scroll-animation .fixed::before,
-.external-scroll-animation .fixed::after {
-  z-index: 1;
+  will-change: transform, opacity;
 }
 
 .external-scroll-animation .content {
@@ -705,7 +721,7 @@ p {
   width: 90%;
   min-height: 100vh;
   height: 100%;
-  z-index: 4;
+  z-index: 7;
   position: absolute;
   inset: 0;
   padding: clamp(7rem, 5vh, 11rem) 1rem 4rem;
@@ -713,7 +729,7 @@ p {
   align-content: center;
   justify-items: center;
   text-align: center;
-  filter: none !important;
+  filter: blur(0rem);
 }
 
 .external-scroll-animation .content::after {
@@ -731,7 +747,8 @@ p {
 }
 
 .external-scroll-animation h1,
-.external-scroll-animation h2 {
+.external-scroll-animation h2,
+.external-scroll-animation h3 {
   width: 80%;
   max-width: min(920px, 92vw);
   display: block;
@@ -743,12 +760,14 @@ p {
   line-height: 1.08;
   margin: 0;
   text-transform: uppercase;
-  filter: none !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
+  filter: blur(0rem);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  will-change: opacity, transform, filter;
 }
 
-.external-scroll-animation h1 {
+.external-scroll-animation h1,
+.external-scroll-animation h3.animate-text {
   background-image: var(--text-gradient);
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -759,7 +778,8 @@ p {
 
 .external-scroll-animation .content > p,
 .external-scroll-animation .text-blocks p,
-.external-scroll-animation .filler h2 {
+.external-scroll-animation .filler h2,
+.external-scroll-animation .filler h3 {
   width: fit-content;
   max-width: min(52ch, 92vw);
   padding: 0.85rem 1rem;
@@ -770,7 +790,8 @@ p {
   box-shadow: var(--glass-shadow);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  filter: none !important;
+  filter: blur(0rem);
+  will-change: opacity, transform, filter;
 }
 
 .external-scroll-animation .content > p {
@@ -783,7 +804,7 @@ p {
 .external-scroll-animation > section:first-of-type {
   padding: 0;
   display: block;
-  background: transparent;
+  background: #000;
   overflow: hidden;
 }
 
@@ -815,7 +836,8 @@ p {
   align-content: center;
 }
 
-.external-scroll-animation > section:nth-of-type(2) article:first-of-type h2 {
+.external-scroll-animation > section:nth-of-type(2) article:first-of-type h2,
+.external-scroll-animation > section:nth-of-type(2) article:first-of-type h3 {
   padding: 0.95rem 0;
 }
 
@@ -868,7 +890,8 @@ p {
   display: grid;
   place-items: center;
   gap: clamp(1rem, 7vh, 1.65rem);
-  filter: none !important;
+  filter: blur(0rem);
+  will-change: opacity, transform, filter;
 }
 
 .external-scroll-animation .text-blocks p {
@@ -878,8 +901,8 @@ p {
   font-size: clamp(1rem, 1.25vw, 1rem);
   font-weight: 120;
   line-height: 1.14;
-  will-change: transform, opacity;
-  filter: none !important;
+  will-change: transform, opacity, filter;
+  filter: blur(0rem);
 }
 
 .external-scroll-animation .text-blocks p:nth-of-type(even) {
@@ -897,7 +920,8 @@ p {
 
 .external-scroll-animation .filler {
   display: none;
-  filter: none !important;
+  filter: blur(0rem);
+  will-change: opacity, transform, filter;
 }
 
 .external-scroll-animation .filler.is-active {
@@ -911,18 +935,19 @@ p {
   padding: 1rem;
   background:
     radial-gradient(circle at 20% 15%, rgba(3,153,158,0.22), transparent 34%),
-    radial-gradient(circle at 75% 78%, rgba(98,28,148,0.2), transparent 38%),
+    radial-gradient(circle at 75% 78%, rgba(98,28,148,0.2), transparent 38%);
 }
 
-.external-scroll-animation .filler h2 {
+.external-scroll-animation .filler h2,
+.external-scroll-animation .filler h3 {
   font-size: clamp(1.65rem, 2.35vw, 4.25rem);
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  filter: none !important;
-  padding: 0 !important;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  filter: blur(0rem);
+  padding: 0;
 }
 
 /* RESPONSIVE */
@@ -1026,7 +1051,8 @@ p {
   }
 
   .external-scroll-animation h1,
-  .external-scroll-animation h2 {
+  .external-scroll-animation h2,
+  .external-scroll-animation h3 {
     font-size: clamp(1.45rem, 6.7vw, 3rem);
   }
 
