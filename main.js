@@ -38,7 +38,6 @@ function startImageWheels() {
   if (!wheelRows.length) return;
 
   const wheelState = [];
-
   let animationId = null;
   let resizeTimer = null;
   let lastTime = performance.now();
@@ -57,7 +56,6 @@ function startImageWheels() {
 
     const originals = Array.from(track.children).map((card) => card.cloneNode(true));
     const targetWidth = row.offsetWidth * 3.5;
-
     let loops = 0;
 
     while (track.scrollWidth < targetWidth && loops < 24) {
@@ -67,7 +65,6 @@ function startImageWheels() {
 
     const cycleWidth = track.scrollWidth;
     originals.forEach((card) => track.appendChild(card.cloneNode(true)));
-
     applyImageReady(track);
 
     return { row, track, cycleWidth };
@@ -126,39 +123,26 @@ function startImageWheels() {
 
   const restartWheels = () => {
     initializeWheels();
-
-    if (animationId) {
-      cancelAnimationFrame(animationId);
-    }
-
+    if (animationId) cancelAnimationFrame(animationId);
     lastTime = performance.now();
     animationId = requestAnimationFrame(animateWheels);
   };
 
-  window.addEventListener(
-    "wheel",
-    () => {
-      scrollBoost = 2.2;
-    },
-    { passive: true }
-  );
+  window.addEventListener("wheel", () => {
+    scrollBoost = 2.2;
+  }, { passive: true });
 
-  window.addEventListener(
-    "resize",
-    () => {
-      clearTimeout(resizeTimer);
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
 
-      resizeTimer = setTimeout(() => {
-        const currentWidth = window.innerWidth;
+    resizeTimer = setTimeout(() => {
+      const currentWidth = window.innerWidth;
+      if (Math.abs(currentWidth - lastWindowWidth) < 40) return;
 
-        if (Math.abs(currentWidth - lastWindowWidth) < 40) return;
-
-        lastWindowWidth = currentWidth;
-        restartWheels();
-      }, 450);
-    },
-    { passive: true }
-  );
+      lastWindowWidth = currentWidth;
+      restartWheels();
+    }, 450);
+  }, { passive: true });
 
   restartWheels();
 }
@@ -203,7 +187,6 @@ function loadExternalScript(src) {
     };
 
     script.onerror = reject;
-
     document.head.appendChild(script);
   });
 }
@@ -246,7 +229,8 @@ function runExternalScrollFallback(root) {
   animateExternalStartPanel(gsap, firstSection);
   animateExternalArticles(gsap, articles);
 
-  ScrollTrigger.refresh();
+  ScrollTrigger.clearScrollMemory();
+  ScrollTrigger.refresh(true);
 }
 
 function animateExternalStartPanel(gsap, section) {
@@ -404,54 +388,56 @@ function animateArticleImage(gsap, article, index) {
 }
 
 function animateArticleTitle(gsap, article) {
-  const title = article.querySelector("h2, h3");
-  if (!title) return;
+  const textItems = article.querySelectorAll("h1, h2, h3, p");
+  if (!textItems.length) return;
 
-  gsap.set(title, {
-    opacity: 1,
-    yPercent: 0,
-    filter: "blur(0rem)"
-  });
-
-  gsap.fromTo(
-    title,
-    {
-      yPercent: 80,
-      opacity: 0,
-      filter: "blur(0rem)"
-    },
-    {
+  textItems.forEach((textItem) => {
+    gsap.set(textItem, {
+      opacity: 1,
       yPercent: 0,
-      opacity: 1,
-      filter: "blur(0rem)",
-      overwrite: "auto",
-      scrollTrigger: {
-        trigger: article,
-        start: "top 70%",
-        end: "top 30%",
-        scrub: 0.5
-      }
-    }
-  );
-
-  gsap.fromTo(
-    title,
-    {
-      opacity: 1,
       filter: "blur(0rem)"
-    },
-    {
-      opacity: 0,
-      filter: "blur(4rem)",
-      overwrite: "auto",
-      scrollTrigger: {
-        trigger: article,
-        start: "bottom 70%",
-        end: "bottom 45%",
-        scrub: 0.5
+    });
+
+    gsap.fromTo(
+      textItem,
+      {
+        yPercent: 80,
+        opacity: 0,
+        filter: "blur(1.5rem)"
+      },
+      {
+        yPercent: 0,
+        opacity: 1,
+        filter: "blur(0rem)",
+        overwrite: "auto",
+        scrollTrigger: {
+          trigger: article,
+          start: "top 70%",
+          end: "top 30%",
+          scrub: 0.5
+        }
       }
-    }
-  );
+    );
+
+    gsap.fromTo(
+      textItem,
+      {
+        opacity: 1,
+        filter: "blur(0rem)"
+      },
+      {
+        opacity: 0,
+        filter: "blur(4rem)",
+        overwrite: "auto",
+        scrollTrigger: {
+          trigger: article,
+          start: "bottom 72%",
+          end: "bottom 42%",
+          scrub: 0.5
+        }
+      }
+    );
+  });
 }
 
 function animateTextBlocks(gsap, article) {
@@ -472,7 +458,7 @@ function animateTextBlocks(gsap, article) {
         {
           yPercent: 100,
           opacity: 0,
-          filter: "blur(0rem)"
+          filter: "blur(1.5rem)"
         },
         {
           yPercent: 0,
@@ -496,7 +482,7 @@ function animateTextBlocks(gsap, article) {
         },
         {
           opacity: 0,
-          filter: "blur(3rem)",
+          filter: "blur(4rem)",
           overwrite: "auto",
           scrollTrigger: {
             trigger: article,
@@ -518,7 +504,7 @@ function animateTextBlocks(gsap, article) {
       },
       {
         opacity: 0,
-        filter: "blur(3rem)",
+        filter: "blur(4rem)",
         overwrite: "auto",
         scrollTrigger: {
           trigger: article,
@@ -604,32 +590,37 @@ function initLoopToTopOnBottom() {
       );
 
       const bottomReached = scrollTop + viewportHeight >= pageHeight - 8;
-
       if (!bottomReached) return;
 
       isLooping = true;
-      resetExternalAnimationState(root);
 
-      requestAnimationFrame(() => {
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: "auto"
-        });
+      root.style.transition = "opacity 0.35s ease";
+      root.style.opacity = "0";
 
-        requestAnimationFrame(() => {
-          resetExternalAnimationState(root);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+
+        if (window.ScrollTrigger) {
+          window.ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+        }
+
+        resetExternalAnimationState(root);
+
+        setTimeout(() => {
+          runExternalScrollFallback(root);
 
           if (window.ScrollTrigger) {
             window.ScrollTrigger.refresh(true);
             window.ScrollTrigger.update();
           }
 
+          root.style.opacity = "1";
+
           setTimeout(() => {
             isLooping = false;
-          }, 200);
-        });
-      });
+          }, 450);
+        }, 80);
+      }, 350);
     },
     { passive: true }
   );
@@ -643,13 +634,12 @@ function resetExternalAnimationState(root) {
 
   gsap.set(root.querySelectorAll(".fixed"), {
     opacity: 0,
-    clearProps: "transform,clipPath,filter"
+    zIndex: 1
   });
 
   gsap.set(root.querySelectorAll(".fixed img"), {
     opacity: 1,
-    scale: 1,
-    clearProps: "transform,filter"
+    scale: 1
   });
 
   gsap.set(
@@ -659,8 +649,7 @@ function resetExternalAnimationState(root) {
     {
       opacity: 1,
       yPercent: 0,
-      filter: "blur(0rem)",
-      clearProps: "transform"
+      filter: "blur(0rem)"
     }
   );
 
