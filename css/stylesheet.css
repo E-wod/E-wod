@@ -857,7 +857,8 @@ p {
 }
 
 .external-scroll-animation .text-wrap {
-  text-align: center;
+  text-align: left;
+  overflow: visible;
   width: 100%;
   position: sticky;
   bottom: 6rem;
@@ -897,7 +898,7 @@ p {
   display: inline-block;
   margin: 0;
   font-family: "sofachrome", sans-serif;
-  font-size: clamp(1rem, 1.25vw, 1rem);
+  font-size: clamp(1.5rem, 1.75vw, 1.5rem);
   font-weight: 120;
   line-height: 1.14;
   will-change: transform, opacity, filter;
