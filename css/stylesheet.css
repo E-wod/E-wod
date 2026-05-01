@@ -685,11 +685,18 @@ p {
   width: 100%;
   object-fit: cover;
   object-position: center;
-  z-index: -1;
   position: absolute;
   inset: 0;
   filter: brightness(1) saturate(1);
   transform-origin: center center;
+}
+.external-scroll-animation .fixed img {
+  z-index: 0;
+}
+
+.external-scroll-animation .fixed::before,
+.external-scroll-animation .fixed::after {
+  z-index: 1;
 }
 
 .external-scroll-animation .content {
