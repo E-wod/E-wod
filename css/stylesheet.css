@@ -84,8 +84,8 @@ li {
 /* ANIMATIONS */
 @keyframes splashscreen {
   0% { opacity: 1; background-color: #fff; transform: scale(1); }
-  50%, 90% { opacity: 1; background-color: #000; }
-  99% { opacity: 0.5; transform: scale(1); }
+  50%, 90% { opacity: 1; background-color: #fff; }
+  99% { transform: scale(1); }
   100% { opacity: 0; visibility: hidden; transform: scale(0); }
 }
 
@@ -448,8 +448,6 @@ p {
   padding: 10px;
   animation: h1Anim 1.975s ease forwards;
   animation-delay: calc(0.085s * var(--i));
-/* }
-.socLnk a { */
   position: relative;
   overflow: hidden;
   border: 1px solid transparent;
@@ -627,7 +625,7 @@ p {
   color: var(--text);
   overflow-x: hidden;
   isolation: isolate;
-  background: transparent;
+  background: #000;
 }
 
 .external-scroll-animation > section {
