@@ -596,8 +596,6 @@ p {
   overflow-x: hidden;
   isolation: isolate;
   background: #000;
-  --scope-img-brightness: 1;
-  --scope-img-saturation: 1;
 }
 
 .external-scroll-animation > section {
@@ -636,9 +634,9 @@ p {
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(circle at 20% 15%, transparent 0%, rgba(3,153,158,0.2) 42%, transparent 72%),
-    radial-gradient(circle at 75% 78%, transparent 0%, rgba(98,28,148,0.18) 44%, transparent 74%),
-    linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0,0,0,0.28), rgba(0,0,0,0.12));
+    radial-gradient(circle at 20% 15%, transparent 0%, rgba(3,153,158,0.2) 46%, transparent 72%),
+    radial-gradient(circle at 75% 78%, transparent 0%, rgba(98,28,148,0.18) 48%, transparent 74%),
+    linear-gradient(180deg, rgba(0,0,0,0.16), rgba(0,0,0,0.34) 48%, rgba(0,0,0,0.16));
   pointer-events: none;
 }
 
@@ -647,7 +645,7 @@ p {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: rgba(0,0,0,0.08);
+  background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.12) 56%, transparent 100%);
   pointer-events: none;
 }
 
@@ -659,7 +657,7 @@ p {
   z-index: -1;
   position: absolute;
   inset: 0;
-  filter: brightness(var(--scope-img-brightness)) saturate(var(--scope-img-saturation)) !important;
+  filter: brightness(1) saturate(1) !important;
   transform-origin: center center;
 }
 
@@ -678,13 +676,6 @@ p {
   justify-items: center;
   text-align: center;
   filter: none !important;
-}
-
-.external-scroll-animation h1,
-.external-scroll-animation h2,
-.external-scroll-animation h3,
-.external-scroll-animation p {
-  will-change: transform, opacity, filter;
 }
 
 .external-scroll-animation h1,
@@ -781,12 +772,11 @@ p {
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) .fixed::before {
-  background:
-    radial-gradient(circle at center, transparent 0%, rgba(3,153,158,0.18) 48%, transparent 76%);
+  background: radial-gradient(circle at center, transparent 0%, rgba(3,153,158,0.18) 48%, transparent 76%);
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) .fixed::after {
-  background: #000;
+  background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.88) 48%, transparent 100%);
   opacity: 0;
 }
 
@@ -843,10 +833,9 @@ p {
   display: inline-block;
   margin: 0;
   font-family: "sofachrome", sans-serif;
-  font-size: clamp(1rem, 1.65vw, 2.15rem);
+  font-size: clamp(1.05rem, 1.75vw, 2.4rem);
   font-weight: 120;
-  line-height: 1.14;
-  letter-spacing: -0.02ch;
+  line-height: 1.18;
   will-change: transform, opacity, filter;
   filter: none !important;
 }
@@ -879,7 +868,7 @@ p {
   bottom: 46vh;
   padding: 1rem;
   background:
-    radial-gradient(circle at center, transparent 0%, rgba(3,153,158,0.2) 48%, transparent 76%),
+    radial-gradient(circle at center, transparent 0%, rgba(3,153,158,0.2) 46%, transparent 74%),
     radial-gradient(circle at 60% 55%, transparent 0%, rgba(98,28,148,0.18) 48%, transparent 76%);
 }
 
@@ -923,13 +912,6 @@ p {
       transform-origin: 50% 0;
     }
 
-    .external-scroll-animation > section:first-of-type :is(h1, h2, h3, p),
-    .external-scroll-animation > section:nth-of-type(2) article :is(h1, h2, h3, p) {
-      animation: scoped-top-blur both linear;
-      animation-timeline: view();
-      animation-range: exit 0% exit 34%;
-    }
-
     .external-scroll-animation > section:nth-of-type(2) article:first-of-type .fixed {
       z-index: 2;
       clip-path: ellipse(220% 200% at 50% 300%);
@@ -939,18 +921,15 @@ p {
     }
 
     .external-scroll-animation > section:nth-of-type(2) article:first-of-type .fixed::after {
-      content: "";
-      position: absolute;
-      inset: 0;
+      background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.22) 50%, transparent 100%);
+      opacity: 1;
       z-index: 3;
-      background: rgba(0,0,0,0.18);
-      pointer-events: none;
     }
 
     .external-scroll-animation > section:nth-of-type(2) article:first-of-type h2 {
-      animation: slide-up both linear, scoped-top-blur both linear;
-      animation-timeline: --article, view();
-      animation-range: entry 20% entry 80%, exit 0% exit 34%;
+      animation: slide-up both linear, top-blur-out both linear;
+      animation-timeline: --article, --article;
+      animation-range: entry 20% entry 80%, exit 14% exit 42%;
     }
 
     .external-scroll-animation > section:nth-of-type(2) article:first-of-type img {
@@ -961,25 +940,32 @@ p {
 
     .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) .fixed {
       z-index: 2;
-      background: #000;
+      animation: panel-fade-in both linear, panel-fade-out both linear;
+      animation-timeline: --article, --article;
+      animation-range: entry 30% entry 85%, exit 5% exit 28%;
+    }
+
+    .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) .fixed::before {
+      animation: radial-blend-in both linear, radial-blend-out both linear;
+      animation-timeline: --article, --article;
+      animation-range: entry 25% entry 80%, exit 0% exit 26%;
     }
 
     .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) .fixed::after {
-      animation: black-fade-in both linear;
-      animation-timeline: --article;
-      animation-range: entry 20% entry 85%;
+      animation: article-black-blend both linear, article-black-blend-out both linear;
+      animation-timeline: --article, --article;
+      animation-range: entry 20% entry 82%, exit 0% exit 28%;
     }
 
-    .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) h2 {
-      animation: slide-in, fade-in, fade-away, fade-out;
+    .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) h1,
+    .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) h2,
+    .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) h3,
+    .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) p {
+      animation-name: slide-in, fade-in, top-blur-out;
       animation-fill-mode: both;
       animation-timing-function: linear;
-      animation-timeline: view(), view(), --article, --article;
-      animation-range:
-        entry 100% cover 25%,
-        entry 100% cover 35%,
-        exit 20% exit 40%,
-        exit 40% exit 50%;
+      animation-timeline: view(), view(), --article;
+      animation-range: entry 100% cover 25%, entry 100% cover 35%, exit 10% exit 38%;
     }
 
     .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
@@ -992,9 +978,20 @@ p {
 
     .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .fixed {
       z-index: 2;
-      animation: fade-in both linear, fade-out both linear;
+      animation: panel-fade-in both linear, panel-fade-out both linear;
       animation-timeline: --article, --article;
-      animation-range: entry 45% exit-crossing 0%, exit 0% exit 15%;
+      animation-range: entry 35% exit-crossing 0%, exit 0% exit 15%;
+    }
+
+    .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) h1,
+    .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) h2,
+    .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) h3,
+    .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) p {
+      animation-name: top-blur-out;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+      animation-timeline: --article;
+      animation-range: exit 8% exit 34%;
     }
 
     .external-scroll-animation > section:nth-of-type(2) article:last-of-type {
@@ -1044,21 +1041,21 @@ p {
     .external-scroll-animation .text-blocks {
       animation: fade-out both linear;
       animation-timeline: --article;
-      animation-range: entry-crossing 75% entry-crossing 100%;
+      animation-range: entry-crossing 82% entry-crossing 100%;
     }
 
     .external-scroll-animation .text-blocks p {
-      animation: slide-in, fade-in, scoped-top-blur;
+      animation-name: slide-in, fade-in, top-blur-out;
       animation-fill-mode: both;
       animation-timing-function: linear;
-      animation-timeline: --article, --article, view();
+      animation-timeline: --article, --article, --article;
     }
 
-    .external-scroll-animation .text-blocks p:nth-of-type(1) { animation-range: entry-crossing 50% entry-crossing 55%, entry-crossing 50% entry-crossing 55%, exit 0% exit 34%; }
-    .external-scroll-animation .text-blocks p:nth-of-type(2) { animation-range: entry-crossing 55% entry-crossing 60%, entry-crossing 55% entry-crossing 60%, exit 0% exit 34%; }
-    .external-scroll-animation .text-blocks p:nth-of-type(3) { animation-range: entry-crossing 60% entry-crossing 65%, entry-crossing 60% entry-crossing 65%, exit 0% exit 34%; }
-    .external-scroll-animation .text-blocks p:nth-of-type(4) { animation-range: entry-crossing 65% entry-crossing 70%, entry-crossing 65% entry-crossing 70%, exit 0% exit 34%; }
-    .external-scroll-animation .text-blocks p:nth-of-type(5) { animation-range: entry-crossing 70% entry-crossing 75%, entry-crossing 70% entry-crossing 75%, exit 0% exit 34%; }
+    .external-scroll-animation .text-blocks p:nth-of-type(1) { animation-range: entry-crossing 50% entry-crossing 55%, entry-crossing 50% entry-crossing 55%, entry-crossing 62% entry-crossing 68%; }
+    .external-scroll-animation .text-blocks p:nth-of-type(2) { animation-range: entry-crossing 55% entry-crossing 60%, entry-crossing 55% entry-crossing 60%, entry-crossing 67% entry-crossing 73%; }
+    .external-scroll-animation .text-blocks p:nth-of-type(3) { animation-range: entry-crossing 60% entry-crossing 65%, entry-crossing 60% entry-crossing 65%, entry-crossing 72% entry-crossing 78%; }
+    .external-scroll-animation .text-blocks p:nth-of-type(4) { animation-range: entry-crossing 65% entry-crossing 70%, entry-crossing 65% entry-crossing 70%, entry-crossing 77% entry-crossing 83%; }
+    .external-scroll-animation .text-blocks p:nth-of-type(5) { animation-range: entry-crossing 70% entry-crossing 75%, entry-crossing 70% entry-crossing 75%, entry-crossing 82% entry-crossing 88%; }
   }
 }
 
@@ -1075,16 +1072,38 @@ p {
   0% { opacity: 0; }
 }
 
-@keyframes black-fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+@keyframes panel-fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-@keyframes scoped-top-blur {
+@keyframes panel-fade-out {
+  100% { opacity: 0; }
+}
+
+@keyframes radial-blend-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes radial-blend-out {
+  100% { opacity: 0; }
+}
+
+@keyframes article-black-blend {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes article-black-blend-out {
+  100% { opacity: 0; }
+}
+
+@keyframes top-blur-out {
   to {
     opacity: 0;
-    filter: blur(3rem);
-    transform: translateY(-8vh) scale(0.96);
+    filter: blur(3.2rem);
+    translate: 0 -12vh;
   }
 }
 
@@ -1217,30 +1236,24 @@ p {
 
   .external-scroll-animation h1,
   .external-scroll-animation h2 {
-    font-size: clamp(1.15rem, 6vw, 2.7rem);
+    font-size: clamp(1.45rem, 6.7vw, 3rem);
   }
 
   .external-scroll-animation .content {
     width: 92%;
-    padding: clamp(5.5rem, 18vh, 10rem) 0.8rem 3rem;
-    align-content: center;
+    padding-top: clamp(8rem, 28vh, 14rem);
   }
 
   .external-scroll-animation .fixed img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(1) saturate(1) !important;
   }
 
   .external-scroll-animation .text-blocks {
-    width: min(34ch, 90vw);
-    gap: clamp(0.75rem, 3.5vh, 1.25rem);
+    width: min(36ch, 90vw);
   }
 
   .external-scroll-animation .text-blocks p {
-    font-size: clamp(0.9rem, 4.35vw, 1.85rem);
-    font-family: "sofachrome", sans-serif;
+    font-size: clamp(1.15rem, 5vw, 2.25rem);
   }
 }
 
@@ -1298,36 +1311,6 @@ p {
   .wheel-card {
     width: clamp(165px, 66vw, 275px);
   }
-
-  .external-scroll-animation {
-    --scope-img-brightness: 1;
-    --scope-img-saturation: 1;
-  }
-
-  .external-scroll-animation .content {
-    width: 94%;
-    padding: clamp(4.75rem, 16vh, 8rem) 0.65rem 2.5rem;
-  }
-
-  .external-scroll-animation h1,
-  .external-scroll-animation h2 {
-    width: 92%;
-    font-size: clamp(1rem, 5.25vw, 2rem);
-    line-height: 1.12;
-  }
-
-  .external-scroll-animation .text-blocks {
-    width: min(31ch, 90vw);
-    gap: clamp(0.65rem, 3vh, 1rem);
-  }
-
-  .external-scroll-animation .text-blocks p {
-    font-family: "sofachrome", sans-serif;
-    font-size: clamp(0.78rem, 3.75vw, 1.35rem);
-    line-height: 1.2;
-    padding: 0.7rem 0.78rem;
-  }
-
 }
 
 @media (prefers-reduced-motion: reduce) {
