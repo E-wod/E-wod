@@ -65,6 +65,7 @@ function startImageWheels() {
 
     const cycleWidth = track.scrollWidth;
     originals.forEach((card) => track.appendChild(card.cloneNode(true)));
+
     applyImageReady(track);
 
     return { row, track, cycleWidth };
@@ -123,26 +124,39 @@ function startImageWheels() {
 
   const restartWheels = () => {
     initializeWheels();
-    if (animationId) cancelAnimationFrame(animationId);
+
+    if (animationId) {
+      cancelAnimationFrame(animationId);
+    }
+
     lastTime = performance.now();
     animationId = requestAnimationFrame(animateWheels);
   };
 
-  window.addEventListener("wheel", () => {
-    scrollBoost = 2.2;
-  }, { passive: true });
+  window.addEventListener(
+    "wheel",
+    () => {
+      scrollBoost = 2.2;
+    },
+    { passive: true }
+  );
 
-  window.addEventListener("resize", () => {
-    clearTimeout(resizeTimer);
+  window.addEventListener(
+    "resize",
+    () => {
+      clearTimeout(resizeTimer);
 
-    resizeTimer = setTimeout(() => {
-      const currentWidth = window.innerWidth;
-      if (Math.abs(currentWidth - lastWindowWidth) < 40) return;
+      resizeTimer = setTimeout(() => {
+        const currentWidth = window.innerWidth;
 
-      lastWindowWidth = currentWidth;
-      restartWheels();
-    }, 450);
-  }, { passive: true });
+        if (Math.abs(currentWidth - lastWindowWidth) < 40) return;
+
+        lastWindowWidth = currentWidth;
+        restartWheels();
+      }, 450);
+    },
+    { passive: true }
+  );
 
   restartWheels();
 }
@@ -156,7 +170,7 @@ function initExternalScrollAnimation() {
 
   loadExternalScript("https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js")
     .then(() => loadExternalScript("https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"))
-    .then(() => runExternalScrollFallback(root))
+    .then(() => runExternalScrollAnimation(root))
     .catch(() => {
       console.warn("External scroll animation failed.");
     });
@@ -187,18 +201,12 @@ function loadExternalScript(src) {
     };
 
     script.onerror = reject;
+
     document.head.appendChild(script);
   });
 }
 
-function runExternalScrollFallback(root) {
-  if (!window.gsap || !window.ScrollTrigger) return;
-
-  const gsap = window.gsap;
-  const ScrollTrigger = window.ScrollTrigger;
-
-  gsap.registerPlugin(ScrollTrigger);
-
+function getExternalAnimationParts(root) {
   const firstSection =
     root.querySelector(".external-panel-start") ||
     root.querySelector(":scope > section:first-of-type");
@@ -208,6 +216,19 @@ function runExternalScrollFallback(root) {
   const articles = secondSection
     ? Array.from(secondSection.querySelectorAll(":scope > article"))
     : Array.from(root.querySelectorAll("article"));
+
+  return { firstSection, secondSection, articles };
+}
+
+function runExternalScrollAnimation(root) {
+  if (!window.gsap || !window.ScrollTrigger) return;
+
+  const gsap = window.gsap;
+  const ScrollTrigger = window.ScrollTrigger;
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const { firstSection, articles } = getExternalAnimationParts(root);
 
   if (!firstSection || !articles.length) return;
 
@@ -228,7 +249,8 @@ function runExternalScrollFallback(root) {
   gsap.set(root.querySelectorAll(".fixed img"), {
     opacity: 1,
     visibility: "visible",
-    zIndex: 2
+    zIndex: 2,
+    transformOrigin: "50% 50%"
   });
 
   gsap.set(root.querySelectorAll(".static"), {
@@ -246,6 +268,7 @@ function runExternalScrollFallback(root) {
 
 function animateExternalStartPanel(gsap, section) {
   const fixed = section.querySelector(".fixed");
+
   if (!fixed) return;
 
   gsap.set(fixed, {
@@ -292,15 +315,16 @@ function animateExternalArticles(gsap, articles) {
   articles.forEach((article, index) => {
     animateArticleFixedLayer(gsap, article, index);
     animateArticleImage(gsap, article, index);
-    animateArticleTitle(gsap, article);
+    animateArticleTitle(gsap, article, index);
   });
 
-  animateTextBlocks(gsap, articles[2]);
+  animateArticleThreeTextBlocks(gsap, articles[2]);
   animateFinalArticle(gsap, articles[articles.length - 1]);
 }
 
 function animateArticleFixedLayer(gsap, article, index) {
   const fixed = article.querySelector(".fixed");
+
   if (!fixed) return;
 
   if (index === 0) {
@@ -332,7 +356,9 @@ function animateArticleFixedLayer(gsap, article, index) {
 
     gsap.fromTo(
       fixed,
-      { opacity: 1 },
+      {
+        opacity: 1
+      },
       {
         opacity: 0,
         overwrite: "auto",
@@ -356,7 +382,9 @@ function animateArticleFixedLayer(gsap, article, index) {
 
   gsap.fromTo(
     fixed,
-    { opacity: 0 },
+    {
+      opacity: 0
+    },
     {
       opacity: 1,
       overwrite: "auto",
@@ -372,7 +400,9 @@ function animateArticleFixedLayer(gsap, article, index) {
 
   gsap.fromTo(
     fixed,
-    { opacity: 1 },
+    {
+      opacity: 1
+    },
     {
       opacity: 0,
       overwrite: "auto",
@@ -389,20 +419,23 @@ function animateArticleFixedLayer(gsap, article, index) {
 
 function animateArticleImage(gsap, article, index) {
   const img = article.querySelector(".fixed img");
+
   if (!img) return;
+
+  const startScale = index === 0 ? 1.35 : 1.2;
 
   gsap.set(img, {
     opacity: 1,
     visibility: "visible",
     zIndex: 2,
-    scale: index === 0 ? 1.35 : 1.2,
+    scale: startScale,
     transformOrigin: "50% 50%"
   });
 
   gsap.fromTo(
     img,
     {
-      scale: index === 0 ? 1.35 : 1.2,
+      scale: startScale,
       opacity: 1
     },
     {
@@ -420,11 +453,8 @@ function animateArticleImage(gsap, article, index) {
   );
 }
 
-/* ARTICLE 3 TITLE IS CONTROLLED INSIDE animateTextBlocks() */
-function animateArticleTitle(gsap, article) {
-  const isArticleThree = article.matches(":nth-of-type(3)");
-
-  if (isArticleThree) return;
+function animateArticleTitle(gsap, article, index) {
+  if (index === 2) return;
 
   animateTextGroup(gsap, article, {
     enterStart: "top 72%",
@@ -434,11 +464,10 @@ function animateArticleTitle(gsap, article) {
   });
 }
 
-/* INCLUDE ALL CONTENT P ELEMENTS, BUT NOT TEXT-BLOCK CHAT P */
 function animateTextGroup(gsap, scope, timing) {
   const textItems = Array.from(
     scope.querySelectorAll("h1, h2, h3, .content > p, .content p")
-  ).filter((item) => !item.closest(".text-blocks"));
+  ).filter((item) => !item.closest(".text-blocks") && !item.closest(".filler"));
 
   if (!textItems.length) return;
 
@@ -495,14 +524,13 @@ function animateTextGroup(gsap, scope, timing) {
   });
 }
 
-/* ARTICLE 3 CUSTOM TITLE / CHAT / FILLER TIMING */
-function animateTextBlocks(gsap, article) {
+function animateArticleThreeTextBlocks(gsap, article) {
   if (!article) return;
 
   const mainTitle = article.querySelector(".content > h3, .content > h2");
-  const lines = article.querySelectorAll(".text-blocks p");
+  const lines = Array.from(article.querySelectorAll(".text-blocks p"));
   const textBlocks = article.querySelector(".text-blocks");
-  const fillerTitle = article.querySelector(".filler h2, .filler h3");
+  const filler = article.querySelector(".filler");
 
   if (mainTitle) {
     gsap.set(mainTitle, {
@@ -571,13 +599,13 @@ function animateTextBlocks(gsap, article) {
       gsap.fromTo(
         line,
         {
-          yPercent: 100,
           opacity: 0,
+          yPercent: 100,
           filter: "blur(1.5rem)"
         },
         {
-          yPercent: 0,
           opacity: 1,
+          yPercent: 0,
           filter: "blur(0rem)",
           overwrite: "auto",
           immediateRender: false,
@@ -594,13 +622,13 @@ function animateTextBlocks(gsap, article) {
         line,
         {
           opacity: 1,
-          filter: "blur(0rem)",
-          yPercent: 0
+          yPercent: 0,
+          filter: "blur(0rem)"
         },
         {
           opacity: 0,
-          filter: "blur(4rem)",
           yPercent: -65,
+          filter: "blur(4rem)",
           overwrite: "auto",
           immediateRender: false,
           scrollTrigger: {
@@ -628,54 +656,54 @@ function animateTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "bottom 130%",
-          end: "bottom 110%",
+          start: "bottom 135%",
+          end: "bottom 112%",
           scrub: 0.5
         }
       }
     );
   }
 
-  if (fillerTitle) {
-    gsap.set(fillerTitle, {
+  if (filler) {
+    gsap.set(filler, {
       opacity: 0,
-      yPercent: 30,
-      filter: "blur(2rem)"
+      yPercent: 24,
+      filter: "none"
     });
 
     gsap.fromTo(
-      fillerTitle,
+      filler,
       {
         opacity: 0,
-        yPercent: 30,
-        filter: "blur(2rem)"
+        yPercent: 24,
+        filter: "none"
       },
       {
         opacity: 1,
         yPercent: 0,
-        filter: "blur(0rem)",
+        filter: "none",
         overwrite: "auto",
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "bottom 110%",
-          end: "bottom 82%",
+          start: "bottom 100%",
+          end: "bottom 78%",
           scrub: 0.5
         }
       }
     );
 
     gsap.fromTo(
-      fillerTitle,
+      filler,
       {
         opacity: 1,
         yPercent: 0,
-        filter: "blur(0rem)"
+        filter: "none"
       },
       {
         opacity: 0,
-        yPercent: -22,
-        filter: "blur(4rem)",
+        yPercent: -20,
+        filter: "none",
         overwrite: "auto",
         immediateRender: false,
         scrollTrigger: {
@@ -693,6 +721,7 @@ function animateFinalArticle(gsap, article) {
   if (!article) return;
 
   const fixed = article.querySelector(".fixed");
+
   if (!fixed) return;
 
   gsap.set(fixed, {
@@ -742,10 +771,10 @@ function initLoopToTopOnBottom() {
       );
 
       const bottomReached = scrollTop + viewportHeight >= pageHeight - 10;
+
       if (!bottomReached) return;
 
       isLooping = true;
-
       root.classList.add("is-looping-out");
 
       setTimeout(() => {
@@ -762,7 +791,7 @@ function initLoopToTopOnBottom() {
         resetExternalAnimationState(root);
 
         setTimeout(() => {
-          runExternalScrollFallback(root);
+          runExternalScrollAnimation(root);
 
           if (window.ScrollTrigger) {
             window.ScrollTrigger.refresh(true);
@@ -783,7 +812,6 @@ function initLoopToTopOnBottom() {
   );
 }
 
-/* RESET GSAP STATE AFTER LOOP */
 function resetExternalAnimationState(root) {
   if (!window.gsap) return;
 
@@ -816,6 +844,10 @@ function resetExternalAnimationState(root) {
       filter: "blur(0rem)"
     }
   );
+
+  gsap.set(root.querySelectorAll(".filler, .filler h2, .filler h3"), {
+    filter: "none"
+  });
 
   const firstFixed =
     root.querySelector(".external-panel-start .fixed") ||
