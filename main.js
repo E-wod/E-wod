@@ -637,39 +637,21 @@ function animateTextBlocks(gsap, article) {
     );
   }
 
-  if (filler) {
+    if (filler && fillerTitle) {
     gsap.set(filler, {
-      autoAlpha: 0
-    });
-  }
-
-  if (fillerTitle) {
-    gsap.set(fillerTitle, {
       autoAlpha: 0,
       yPercent: 36,
       filter: "blur(4rem)"
     });
 
-    gsap.fromTo(
-      filler,
-      {
-        autoAlpha: 0
-      },
-      {
-        autoAlpha: 1,
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          start: "bottom 96%",
-          end: "bottom 84%",
-          scrub: 0.5
-        }
-      }
-    );
+    gsap.set(fillerTitle, {
+      autoAlpha: 1,
+      yPercent: 0,
+      filter: "blur(0rem)"
+    });
 
     gsap.fromTo(
-      fillerTitle,
+      filler,
       {
         autoAlpha: 0,
         yPercent: 36,
@@ -691,7 +673,7 @@ function animateTextBlocks(gsap, article) {
     );
 
     gsap.fromTo(
-      fillerTitle,
+      filler,
       {
         autoAlpha: 1,
         yPercent: 0,
@@ -712,7 +694,6 @@ function animateTextBlocks(gsap, article) {
       }
     );
   }
-}
 
 function animateFinalArticle(gsap, article) {
   if (!article) return;
