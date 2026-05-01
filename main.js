@@ -65,7 +65,6 @@ function startImageWheels() {
     }
 
     const cycleWidth = track.scrollWidth;
-
     originals.forEach((card) => track.appendChild(card.cloneNode(true)));
 
     applyImageReady(track);
@@ -127,27 +126,38 @@ function startImageWheels() {
   const restartWheels = () => {
     initializeWheels();
 
-    if (animationId) cancelAnimationFrame(animationId);
+    if (animationId) {
+      cancelAnimationFrame(animationId);
+    }
 
     lastTime = performance.now();
     animationId = requestAnimationFrame(animateWheels);
   };
 
-  window.addEventListener("wheel", () => {
-    scrollBoost = 2.2;
-  }, { passive: true });
+  window.addEventListener(
+    "wheel",
+    () => {
+      scrollBoost = 2.2;
+    },
+    { passive: true }
+  );
 
-  window.addEventListener("resize", () => {
-    clearTimeout(resizeTimer);
+  window.addEventListener(
+    "resize",
+    () => {
+      clearTimeout(resizeTimer);
 
-    resizeTimer = setTimeout(() => {
-      const currentWidth = window.innerWidth;
-      if (Math.abs(currentWidth - lastWindowWidth) < 40) return;
+      resizeTimer = setTimeout(() => {
+        const currentWidth = window.innerWidth;
 
-      lastWindowWidth = currentWidth;
-      restartWheels();
-    }, 450);
-  }, { passive: true });
+        if (Math.abs(currentWidth - lastWindowWidth) < 40) return;
+
+        lastWindowWidth = currentWidth;
+        restartWheels();
+      }, 450);
+    },
+    { passive: true }
+  );
 
   restartWheels();
 }
@@ -172,8 +182,9 @@ function loadExternalScript(src) {
     const existing = document.querySelector(`script[src="${src}"]`);
 
     if (existing) {
-      if (existing.dataset.loaded === "true") resolve();
-      else {
+      if (existing.dataset.loaded === "true" || existing.readyState === "complete") {
+        resolve();
+      } else {
         existing.addEventListener("load", resolve, { once: true });
         existing.addEventListener("error", reject, { once: true });
       }
@@ -183,8 +194,13 @@ function loadExternalScript(src) {
     const script = document.createElement("script");
     script.src = src;
     script.defer = true;
+    script.dataset.loaded = "false";
 
-    script.onload = resolve;
+    script.onload = () => {
+      script.dataset.loaded = "true";
+      resolve();
+    };
+
     script.onerror = reject;
 
     document.head.appendChild(script);
@@ -199,23 +215,151 @@ function runExternalScrollFallback(root) {
 
   gsap.registerPlugin(ScrollTrigger);
 
-  const articles = Array.from(root.querySelectorAll("article"));
+  const firstSection =
+    root.querySelector(".external-panel-start") ||
+    root.querySelector(":scope > section:first-of-type");
 
-  if (!articles.length) return;
+  const secondSection = root.querySelector(":scope > section:nth-of-type(2)");
+
+  const articles = secondSection
+    ? Array.from(secondSection.querySelectorAll(":scope > article"))
+    : Array.from(root.querySelectorAll("article"));
+
+  if (!firstSection || !articles.length) return;
 
   root.querySelectorAll(".filler").forEach((el) => el.classList.add("is-active"));
 
+  gsap.set(root.querySelectorAll(".fixed"), {
+    position: "fixed",
+    inset: 0,
+    opacity: 0,
+    zIndex: 1
+  });
+
+  gsap.set(root.querySelectorAll(".static"), {
+    position: "absolute",
+    inset: 0,
+    zIndex: 6
+  });
+
+  animateExternalStartPanel(gsap, firstSection);
   animateExternalArticles(gsap, articles);
 
   ScrollTrigger.refresh();
 }
 
+function animateExternalStartPanel(gsap, section) {
+  const fixed = section.querySelector(".fixed");
+
+  if (!fixed) return;
+
+  gsap.set(fixed, {
+    opacity: 1,
+    zIndex: 5,
+    transformOrigin: "50% 0%"
+  });
+
+  gsap.to(fixed, {
+    scaleX: 0.35,
+    scaleY: 0.5,
+    yPercent: -10,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: section,
+      start: "top top",
+      end: "bottom 50%",
+      scrub: 0.5
+    }
+  });
+}
+
 function animateExternalArticles(gsap, articles) {
   articles.forEach((article, index) => {
+    animateArticleFixedLayer(gsap, article, index);
+    animateArticleImage(gsap, article, index);
     animateArticleTitle(gsap, article);
   });
 
   animateTextBlocks(gsap, articles[2]);
+  animateFinalArticle(gsap, articles[articles.length - 1]);
+}
+
+function animateArticleFixedLayer(gsap, article, index) {
+  const fixed = article.querySelector(".fixed");
+
+  if (!fixed) return;
+
+  if (index === 0) {
+    gsap.set(fixed, {
+      opacity: 0,
+      clipPath: "ellipse(220% 200% at 50% 300%)",
+      zIndex: 3
+    });
+
+    gsap.to(fixed, {
+      opacity: 1,
+      clipPath: "ellipse(220% 200% at 50% 175%)",
+      scrollTrigger: {
+        trigger: article,
+        start: "top bottom",
+        end: "top top",
+        scrub: 0.5
+      }
+    });
+
+    gsap.to(fixed, {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: article,
+        start: "bottom 80%",
+        end: "bottom 45%",
+        scrub: 0.5
+      }
+    });
+
+    return;
+  }
+
+  gsap.set(fixed, {
+    opacity: 0,
+    zIndex: 3
+  });
+
+  gsap.to(fixed, {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: article,
+      start: "top 80%",
+      end: "top top",
+      scrub: 0.5
+    }
+  });
+
+  gsap.to(fixed, {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: article,
+      start: "bottom 80%",
+      end: "bottom 45%",
+      scrub: 0.5
+    }
+  });
+}
+
+function animateArticleImage(gsap, article, index) {
+  const img = article.querySelector("img");
+
+  if (!img) return;
+
+  gsap.from(img, {
+    scale: index === 0 ? 5 : 1.3,
+    scrollTrigger: {
+      trigger: article,
+      start: "top bottom",
+      end: "top top",
+      scrub: 0.5
+    }
+  });
 }
 
 function animateArticleTitle(gsap, article) {
@@ -254,7 +398,9 @@ function animateTextBlocks(gsap, article) {
   const fillerTitle = article.querySelector(".filler h2, .filler h3");
 
   if (lines.length) {
-    gsap.set(article, { height: "400vh" });
+    gsap.set(article, {
+      height: "400vh"
+    });
 
     lines.forEach((line, index) => {
       gsap.from(line, {
@@ -294,4 +440,29 @@ function animateTextBlocks(gsap, article) {
       }
     });
   }
+}
+
+function animateFinalArticle(gsap, article) {
+  if (!article) return;
+
+  const fixed = article.querySelector(".fixed");
+
+  if (!fixed) return;
+
+  gsap.set(fixed, {
+    opacity: 0,
+    clipPath: "ellipse(220% 200% at 50% 300%)",
+    zIndex: 5
+  });
+
+  gsap.to(fixed, {
+    opacity: 1,
+    clipPath: "ellipse(220% 200% at 50% 175%)",
+    scrollTrigger: {
+      trigger: article,
+      start: "top 80%",
+      end: "top 20%",
+      scrub: 0.5
+    }
+  });
 }
