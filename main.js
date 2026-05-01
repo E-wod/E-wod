@@ -219,7 +219,7 @@ function animateExternalArticles(gsap, articles) {
 }
 
 function animateArticleTitle(gsap, article) {
-  const title = article.querySelector("h2, h3"); // ✅ FIX
+  const title = article.querySelector("h2, h3");
 
   if (!title) return;
 
@@ -251,7 +251,7 @@ function animateTextBlocks(gsap, article) {
 
   const lines = article.querySelectorAll(".text-blocks p");
   const textBlocks = article.querySelector(".text-blocks");
-  const fillerTitle = article.querySelector(".filler h2, .filler h3"); // ✅ FIX
+  const fillerTitle = article.querySelector(".filler h2, .filler h3");
 
   if (lines.length) {
     gsap.set(article, { height: "400vh" });
