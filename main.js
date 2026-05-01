@@ -280,28 +280,20 @@ function animateExternalStartPanel(gsap, section) {
     yPercent: 0
   });
 
-  gsap.fromTo(
-    fixed,
-    {
-      scaleX: 1,
-      scaleY: 1,
-      yPercent: 0,
-      opacity: 1
-    },
-    {
-      scaleX: 0.35,
-      scaleY: 0.5,
-      yPercent: -10,
-      opacity: 0,
-      overwrite: "auto",
-      scrollTrigger: {
-        trigger: section,
-        start: "top top",
-        end: "bottom 50%",
-        scrub: 0.5
-      }
+gsap.fromTo(
+  fixed,
+  { opacity: 1 },
+  {
+    opacity: 0,
+    overwrite: "auto",
+    scrollTrigger: {
+      trigger: section,
+      start: "top top",
+      end: "bottom 50%",
+      scrub: 0.5
     }
-  );
+  }
+);
 
   animateTextGroup(gsap, section, {
     enterStart: "top 80%",
