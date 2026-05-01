@@ -595,7 +595,7 @@ p {
   color: var(--text);
   overflow-x: hidden;
   isolation: isolate;
-  background: #000;
+  /* background: #000; */
 }
 
 .external-scroll-animation > section {
