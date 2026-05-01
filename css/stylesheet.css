@@ -682,7 +682,7 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 3 !important;
+  z-index: 3;
   background:
     radial-gradient(circle at 20% 15%, rgba(3,153,158,0) 0%, rgba(3,153,158,0.22) 40%, rgba(3,153,158,0) 100%),
     radial-gradient(circle at 75% 78%, rgba(98,28,148,0) 0%, rgba(98,28,148,0.2) 40%, rgba(98,28,148,0) 100%),
@@ -694,7 +694,7 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 4 !important;
+  z-index: 4;
   background: transparent;
   pointer-events: none;
   opacity: 0;
@@ -707,9 +707,9 @@ p {
   object-position: center;
   position: absolute;
   inset: 0;
-  z-index: 2 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
   filter: brightness(1) saturate(1);
   transform-origin: center center;
   will-change: transform, opacity;
@@ -718,7 +718,6 @@ p {
 .external-scroll-animation .content {
   margin: 0 auto;
   width: min(950px, 92%);
-  width: 90%;
   min-height: 100vh;
   height: 100%;
   z-index: 7;
@@ -755,7 +754,7 @@ p {
   color: var(--accent-bright);
   font-family: "sofachrome", sans-serif;
   font-weight: 40;
-  font-size: clamp(1.2rem, 3.00vw, 2.55rem);
+  font-size: clamp(1.2rem, 3vw, 2.55rem);
   letter-spacing: -0.03ch;
   line-height: 1.08;
   margin: 0;
@@ -777,9 +776,7 @@ p {
 }
 
 .external-scroll-animation .content > p,
-.external-scroll-animation .text-blocks p,
-.external-scroll-animation .filler h2,
-.external-scroll-animation .filler h3 {
+.external-scroll-animation .text-blocks p {
   width: fit-content;
   max-width: min(52ch, 92vw);
   padding: 0.85rem 1rem;
@@ -902,7 +899,6 @@ p {
   font-weight: 120;
   line-height: 1.14;
   will-change: transform, opacity, filter;
-  filter: blur(0rem);
 }
 
 .external-scroll-animation .text-blocks p:nth-of-type(even) {
@@ -920,8 +916,8 @@ p {
 
 .external-scroll-animation .filler {
   display: none;
-  filter: blur(0rem);
-  will-change: opacity, transform, filter;
+  filter: none;
+  will-change: opacity, transform;
 }
 
 .external-scroll-animation .filler.is-active {
@@ -940,14 +936,17 @@ p {
 
 .external-scroll-animation .filler h2,
 .external-scroll-animation .filler h3 {
+  width: 80%;
+  max-width: min(920px, 92vw);
   font-size: clamp(1.65rem, 2.35vw, 4.25rem);
   background: transparent;
   border: none;
   box-shadow: none;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
-  filter: blur(0rem);
+  filter: none;
   padding: 0;
+  will-change: opacity, transform;
 }
 
 /* RESPONSIVE */
