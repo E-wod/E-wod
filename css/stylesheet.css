@@ -865,9 +865,11 @@ p {
 }
 
 .external-scroll-animation .loud-wrap {
-  text-align: center;
+  text-align: left;
   width: 100%;
-  clip-path: inset(0 0 0 0);
+  overflow: visible;
+  clip-path: none;
+  padding: 2rem;
 }
 
 .external-scroll-animation .chat-container {
