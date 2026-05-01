@@ -420,19 +420,21 @@ function animateArticleImage(gsap, article, index) {
   );
 }
 
-/* SMALL FIX: ARTICLE 3 H3 ENTERS EARLIER AND EXITS CLEANER */
+/* ARTICLE 3 TITLE IS CONTROLLED INSIDE animateTextBlocks() */
 function animateArticleTitle(gsap, article) {
   const isArticleThree = article.matches(":nth-of-type(3)");
 
+  if (isArticleThree) return;
+
   animateTextGroup(gsap, article, {
-    enterStart: isArticleThree ? "top 92%" : "top 72%",
-    enterEnd: isArticleThree ? "top 55%" : "top 34%",
-    exitStart: isArticleThree ? "bottom 72%" : "bottom 76%",
+    enterStart: "top 72%",
+    enterEnd: "top 34%",
+    exitStart: "bottom 76%",
     exitEnd: "bottom 42%"
   });
 }
 
-/* SMALL FIX: INCLUDE ALL CONTENT P ELEMENTS, BUT NOT TEXT-BLOCK CHAT P */
+/* INCLUDE ALL CONTENT P ELEMENTS, BUT NOT TEXT-BLOCK CHAT P */
 function animateTextGroup(gsap, scope, timing) {
   const textItems = Array.from(
     scope.querySelectorAll("h1, h2, h3, .content > p, .content p")
@@ -493,13 +495,66 @@ function animateTextGroup(gsap, scope, timing) {
   });
 }
 
-/* SMALL FIX: DELAY ARTICLE 3 TEXT-BLOCK P EXIT */
+/* ARTICLE 3 CUSTOM TITLE / CHAT / FILLER TIMING */
 function animateTextBlocks(gsap, article) {
   if (!article) return;
 
+  const mainTitle = article.querySelector(".content > h3, .content > h2");
   const lines = article.querySelectorAll(".text-blocks p");
   const textBlocks = article.querySelector(".text-blocks");
   const fillerTitle = article.querySelector(".filler h2, .filler h3");
+
+  if (mainTitle) {
+    gsap.set(mainTitle, {
+      opacity: 0,
+      yPercent: -45,
+      filter: "blur(1.5rem)"
+    });
+
+    gsap.fromTo(
+      mainTitle,
+      {
+        opacity: 0,
+        yPercent: -45,
+        filter: "blur(1.5rem)"
+      },
+      {
+        opacity: 1,
+        yPercent: -28,
+        filter: "blur(0rem)",
+        overwrite: "auto",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: article,
+          start: "top 95%",
+          end: "top 58%",
+          scrub: 0.5
+        }
+      }
+    );
+
+    gsap.fromTo(
+      mainTitle,
+      {
+        opacity: 1,
+        yPercent: -28,
+        filter: "blur(0rem)"
+      },
+      {
+        opacity: 0,
+        yPercent: -62,
+        filter: "blur(4rem)",
+        overwrite: "auto",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: article,
+          start: "top -=105%",
+          end: "top -=135%",
+          scrub: 0.5
+        }
+      }
+    );
+  }
 
   if (lines.length) {
     gsap.set(article, {
@@ -583,10 +638,32 @@ function animateTextBlocks(gsap, article) {
 
   if (fillerTitle) {
     gsap.set(fillerTitle, {
-      opacity: 1,
-      yPercent: 0,
-      filter: "blur(0rem)"
+      opacity: 0,
+      yPercent: 30,
+      filter: "blur(2rem)"
     });
+
+    gsap.fromTo(
+      fillerTitle,
+      {
+        opacity: 0,
+        yPercent: 30,
+        filter: "blur(2rem)"
+      },
+      {
+        opacity: 1,
+        yPercent: 0,
+        filter: "blur(0rem)",
+        overwrite: "auto",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: article,
+          start: "bottom 110%",
+          end: "bottom 82%",
+          scrub: 0.5
+        }
+      }
+    );
 
     gsap.fromTo(
       fillerTitle,
@@ -603,8 +680,8 @@ function animateTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "bottom 56%",
-          end: "bottom 31%",
+          start: "bottom 58%",
+          end: "bottom 32%",
           scrub: 0.5
         }
       }
