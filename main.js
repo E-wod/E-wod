@@ -502,12 +502,11 @@ function animateTextBlocks(gsap, article) {
   const mainTitle = article.querySelector(".content > h3, .content > h2");
   const lines = article.querySelectorAll(".text-blocks p");
   const textBlocks = article.querySelector(".text-blocks");
-  const filler = article.querySelector(".filler");
   const fillerTitle = article.querySelector(".filler h2, .filler h3");
 
   if (mainTitle) {
     gsap.set(mainTitle, {
-      autoAlpha: 0,
+      opacity: 0,
       yPercent: -45,
       filter: "blur(1.5rem)"
     });
@@ -515,12 +514,12 @@ function animateTextBlocks(gsap, article) {
     gsap.fromTo(
       mainTitle,
       {
-        autoAlpha: 0,
+        opacity: 0,
         yPercent: -45,
         filter: "blur(1.5rem)"
       },
       {
-        autoAlpha: 1,
+        opacity: 1,
         yPercent: -28,
         filter: "blur(0rem)",
         overwrite: "auto",
@@ -537,12 +536,12 @@ function animateTextBlocks(gsap, article) {
     gsap.fromTo(
       mainTitle,
       {
-        autoAlpha: 1,
+        opacity: 1,
         yPercent: -28,
         filter: "blur(0rem)"
       },
       {
-        autoAlpha: 0,
+        opacity: 0,
         yPercent: -62,
         filter: "blur(4rem)",
         overwrite: "auto",
@@ -564,7 +563,7 @@ function animateTextBlocks(gsap, article) {
 
     lines.forEach((line, index) => {
       gsap.set(line, {
-        autoAlpha: 0,
+        opacity: 0,
         yPercent: 100,
         filter: "blur(1.5rem)"
       });
@@ -572,13 +571,13 @@ function animateTextBlocks(gsap, article) {
       gsap.fromTo(
         line,
         {
-          autoAlpha: 0,
           yPercent: 100,
+          opacity: 0,
           filter: "blur(1.5rem)"
         },
         {
-          autoAlpha: 1,
           yPercent: 0,
+          opacity: 1,
           filter: "blur(0rem)",
           overwrite: "auto",
           immediateRender: false,
@@ -594,14 +593,14 @@ function animateTextBlocks(gsap, article) {
       gsap.fromTo(
         line,
         {
-          autoAlpha: 1,
-          yPercent: 0,
-          filter: "blur(0rem)"
+          opacity: 1,
+          filter: "blur(0rem)",
+          yPercent: 0
         },
         {
-          autoAlpha: 0,
-          yPercent: -65,
+          opacity: 0,
           filter: "blur(4rem)",
+          yPercent: -65,
           overwrite: "auto",
           immediateRender: false,
           scrollTrigger: {
@@ -619,69 +618,63 @@ function animateTextBlocks(gsap, article) {
     gsap.fromTo(
       textBlocks,
       {
-        autoAlpha: 1,
+        opacity: 1,
         filter: "blur(0rem)"
       },
       {
-        autoAlpha: 0,
+        opacity: 0,
         filter: "blur(4rem)",
         overwrite: "auto",
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "bottom 135%",
-          end: "bottom 112%",
+          start: "bottom 130%",
+          end: "bottom 110%",
           scrub: 0.5
         }
       }
     );
   }
 
-    if (filler && fillerTitle) {
-    gsap.set(filler, {
-      autoAlpha: 0,
-      yPercent: 36,
-      filter: "blur(4rem)"
-    });
-
+  if (fillerTitle) {
     gsap.set(fillerTitle, {
-      autoAlpha: 1,
-      yPercent: 0,
-      filter: "blur(0rem)"
+      opacity: 0,
+      yPercent: 30,
+      filter: "blur(2rem)"
     });
 
     gsap.fromTo(
-      filler,
+      fillerTitle,
       {
-        autoAlpha: 0,
-        yPercent: 36,
-        filter: "blur(4rem)"
+        opacity: 0,
+        yPercent: 30,
+        filter: "blur(2rem)"
       },
       {
-        autoAlpha: 1,
+        opacity: 1,
         yPercent: 0,
         filter: "blur(0rem)",
         overwrite: "auto",
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "bottom 96%",
-          end: "bottom 76%",
+          start: "bottom 110%",
+          end: "bottom 82%",
           scrub: 0.5
         }
       }
     );
 
     gsap.fromTo(
-      filler,
+      fillerTitle,
       {
-        autoAlpha: 1,
+        opacity: 1,
         yPercent: 0,
         filter: "blur(0rem)"
       },
       {
-        autoAlpha: 0,
-        yPercent: -26,
+        opacity: 0,
+        yPercent: -22,
         filter: "blur(4rem)",
         overwrite: "auto",
         immediateRender: false,
@@ -694,6 +687,7 @@ function animateTextBlocks(gsap, article) {
       }
     );
   }
+}
 
 function animateFinalArticle(gsap, article) {
   if (!article) return;
@@ -817,7 +811,7 @@ function resetExternalAnimationState(root) {
       "h1, h2, h3, p, .text-blocks, .text-blocks p, .filler, .filler h2, .filler h3"
     ),
     {
-      autoAlpha: 1,
+      opacity: 1,
       yPercent: 0,
       filter: "blur(0rem)"
     }
