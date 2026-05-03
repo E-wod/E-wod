@@ -663,27 +663,27 @@ function animateArticleThreeTextBlocks(gsap, article) {
       filter: "none"
     });
 
-    gsap.fromTo(
-      filler,
-      {
-        opacity: 0,
-        yPercent: 24,
-        filter: "none"
-      },
-      {
-        opacity: 1,
-        yPercent: 0,
-        filter: "none",
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          start: "bottom 100%",
-          end: "bottom 78%",
-          scrub: 0.5
-        }
-      }
-    );
+    // gsap.fromTo(
+    //   filler,
+    //   {
+    //     opacity: 0,
+    //     yPercent: 24,
+    //     filter: "none"
+    //   },
+    //   {
+    //     opacity: 1,
+    //     yPercent: 0,
+    //     filter: "none",
+    //     overwrite: "auto",
+    //     immediateRender: false,
+    //     scrollTrigger: {
+    //       trigger: article,
+    //       start: "bottom 100%",
+    //       end: "bottom 78%",
+    //       scrub: 0.5
+    //     }
+    //   }
+    // );
 
     gsap.fromTo(
       filler,
