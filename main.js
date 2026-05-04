@@ -656,35 +656,58 @@ function animateArticleThreeTextBlocks(gsap, article) {
   );
 }
 
-  if (filler) {
-    gsap.set(filler, {
-      opacity: 0,
-      yPercent: 24,
-      filter: "none"
-    });
+if (filler) {
+  gsap.set(filler, {
+    opacity: 0,
+    yPercent: 40,
+    filter: "blur(2rem)"
+  });
 
-    gsap.fromTo(
-      filler,
-      {
-        opacity: 1,
-        yPercent: 0,
-        filter: "none"
-      },
-      {
-        opacity: 0,
-        yPercent: -20,
-        filter: "none",
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          start: "bottom 58%",
-          end: "bottom 32%",
-          scrub: 0.5
-        }
+  // ENTER (like other text)
+  gsap.fromTo(
+    filler,
+    {
+      opacity: 0,
+      yPercent: 40,
+      filter: "blur(2rem)"
+    },
+    {
+      opacity: 1,
+      yPercent: 0,
+      filter: "blur(0rem)",
+      overwrite: "auto",
+      immediateRender: false,
+      scrollTrigger: {
+        trigger: article,
+        start: "top -140%",
+        end: "top -165%",
+        scrub: 0.5
       }
-    );
-  }
+    }
+  );
+
+  // EXIT (same behavior as others)
+  gsap.fromTo(
+    filler,
+    {
+      opacity: 1,
+      yPercent: 0,
+      filter: "blur(0rem)"
+    },
+    {
+      opacity: 0,
+      yPercent: -30,
+      filter: "blur(4rem)",
+      overwrite: "auto",
+      immediateRender: false,
+      scrollTrigger: {
+        trigger: article,
+        start: "top -190%",
+        end: "top -220%",
+        scrub: 0.5
+      }
+    }
+  );
 }
 
 function animateFinalArticle(gsap, article) {
