@@ -868,11 +868,12 @@ p {
     #000;
 }
 
-/* ARTICLE 3 - ORIGINAL FLOW RESTORED */
+/* ARTICLE 3 - CSS CONTROLLED LIKE ORIGINAL */
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
   height: 400vh;
   min-height: 400vh;
   overflow: visible;
+  view-timeline: --article-three;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .fixed {
@@ -957,12 +958,6 @@ p {
 
 /* ARTICLE 3 FILLER */
 .external-scroll-animation .filler {
-  display: none;
-  filter: none;
-  will-change: opacity, transform, filter;
-}
-
-.external-scroll-animation .filler.is-active {
   display: block;
   width: 100%;
   position: absolute;
@@ -971,6 +966,8 @@ p {
   z-index: 13;
   text-align: center;
   pointer-events: none;
+  filter: none;
+  will-change: opacity, transform, filter;
 }
 
 .external-scroll-animation .filler h2,
@@ -986,6 +983,107 @@ p {
   padding: 0;
   margin: 0 auto;
   will-change: opacity, transform, filter;
+}
+
+/* CSS SCROLL ANIMATION FOR ARTICLE 3 */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .fixed {
+      animation: article-three-fixed-in both linear, article-three-fixed-out both linear;
+      animation-timeline: --article-three, --article-three;
+      animation-range: entry 45% exit-crossing 0%, exit 0% exit 15%;
+    }
+
+    .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .article-three-title {
+      animation: slide-in both linear, fade-in both linear, fade-away both linear, fade-out both linear;
+      animation-timeline: --article-three, --article-three, --article-three, --article-three;
+      animation-range:
+        entry-crossing 18% entry-crossing 28%,
+        entry-crossing 18% entry-crossing 30%,
+        entry-crossing 42% entry-crossing 54%,
+        entry-crossing 52% entry-crossing 62%;
+    }
+
+    .external-scroll-animation .text-blocks p {
+      animation: slide-in both linear, fade-in both linear;
+      animation-timeline: --article-three, --article-three;
+    }
+
+    .external-scroll-animation .text-blocks p:nth-of-type(1) {
+      animation-range: entry-crossing 50% entry-crossing 56%, entry-crossing 50% entry-crossing 56%;
+    }
+
+    .external-scroll-animation .text-blocks p:nth-of-type(2) {
+      animation-range: entry-crossing 56% entry-crossing 62%, entry-crossing 56% entry-crossing 62%;
+    }
+
+    .external-scroll-animation .text-blocks p:nth-of-type(3) {
+      animation-range: entry-crossing 62% entry-crossing 68%, entry-crossing 62% entry-crossing 68%;
+    }
+
+    .external-scroll-animation .text-blocks p:nth-of-type(4) {
+      animation-range: entry-crossing 68% entry-crossing 74%, entry-crossing 68% entry-crossing 74%;
+    }
+
+    .external-scroll-animation .text-blocks p:nth-of-type(5) {
+      animation-range: entry-crossing 74% entry-crossing 80%, entry-crossing 74% entry-crossing 80%;
+    }
+
+    .external-scroll-animation .text-blocks {
+      animation: fade-out both linear;
+      animation-timeline: --article-three;
+      animation-range: entry-crossing 80% entry-crossing 96%;
+    }
+
+    .external-scroll-animation .filler h3 {
+      animation: fade-away both linear, fade-out both linear;
+      animation-timeline: --article-three, --article-three;
+      animation-range: exit 40% exit 75%, exit 70% exit 90%;
+    }
+  }
+}
+
+/* ARTICLE 3 KEYFRAMES */
+@keyframes article-three-fixed-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes article-three-fixed-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes slide-in {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    filter: blur(1.75rem);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0rem);
+  }
+}
+
+@keyframes fade-away {
+  from {
+    transform: translateY(0);
+    filter: blur(0rem);
+  }
+  to {
+    transform: translateY(-80%);
+    filter: blur(4rem);
+  }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
 
 /* RESPONSIVE */
