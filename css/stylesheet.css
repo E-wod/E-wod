@@ -652,7 +652,7 @@ p {
 }
 
 .external-scroll-animation > section:nth-of-type(1) {
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden;
 }
 
@@ -930,7 +930,7 @@ p {
   display: grid;
   place-items: center;
   gap: clamp(1rem, 7vh, 1.65rem);
-  filter: blur(0rem);
+  filter: none;
   will-change: opacity, transform, filter;
 }
 
@@ -958,7 +958,7 @@ p {
 }
 
 .external-scroll-animation .filler {
-  display: none;
+  /* display: none; */
   filter: none;
   will-change: opacity, transform;
 }
