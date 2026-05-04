@@ -676,6 +676,7 @@ p {
   position: absolute;
   inset: 0;
   z-index: 6;
+  overflow: visible;
 }
 
 .external-scroll-animation .fixed::before {
@@ -832,11 +833,35 @@ p {
 /* ARTICLE PANELS */
 .external-scroll-animation > section:nth-of-type(2) article:first-of-type .content {
   align-content: center;
+  justify-items: start;
+  text-align: left;
 }
 
-.external-scroll-animation > section:nth-of-type(2) article:first-of-type h2,
-.external-scroll-animation > section:nth-of-type(2) article:first-of-type h3 {
+.external-scroll-animation > section:nth-of-type(2) article:first-of-type .text-wrap {
+  width: min(720px, 88vw);
+  position: relative;
+  left: clamp(1rem, 5vw, 5rem);
+  bottom: auto;
+  text-align: left;
+  overflow: visible;
+  transform-origin: 0 50%;
+}
+
+.external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap {
+  width: 100%;
+  padding: 2rem 0;
+  text-align: left;
+  overflow: visible;
+  clip-path: none;
+}
+
+.external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap h2 {
+  width: 100%;
+  max-width: 720px;
+  justify-content: flex-start;
+  text-align: left;
   padding: 0.95rem 0;
+  margin: 0;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) .fixed {
@@ -846,28 +871,11 @@ p {
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
-  min-height: 250vh;
+  min-height: 420vh;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content {
   align-content: center;
-}
-
-/* ARTICLE 1 - LEFT SIDE OVERRIDE */
-.external-scroll-animation > section:nth-of-type(2) article:first-of-type .content {
-  justify-items: start;
-  text-align: left;
-}
-
-.external-scroll-animation > section:nth-of-type(2) article:first-of-type .text-wrap {
-  position: relative;
-  left: 5vw;
-  width: min(720px, 88vw);
-}
-
-.external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap h2 {
-  justify-content: flex-start;
-  text-align: left;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) img {
@@ -889,10 +897,6 @@ p {
   overflow: visible;
   clip-path: none;
   padding: 2rem;
-}
-
-.external-scroll-animation .static {
-  overflow: visible;
 }
 
 .external-scroll-animation .chat-container {
@@ -941,18 +945,19 @@ p {
 
 .external-scroll-animation .filler {
   display: none;
-  filter: none;
-  will-change: opacity, transform;
+  filter: blur(0rem);
+  will-change: opacity, transform, filter;
 }
 
 .external-scroll-animation .filler.is-active {
   align-content: center;
   justify-items: center;
   text-align: center;
-  display: block;
+  display: grid;
   width: 100%;
   position: absolute;
-  bottom: 46vh;
+  inset: 0;
+  pointer-events: none;
   padding: 1rem;
   background:
     radial-gradient(circle at 20% 15%, rgba(3,153,158,0.22), transparent 34%),
@@ -969,9 +974,9 @@ p {
   box-shadow: none;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
-  filter: none;
+  filter: blur(0rem);
   padding: 0;
-  will-change: opacity, transform;
+  will-change: opacity, transform, filter;
 }
 
 /* RESPONSIVE */
@@ -1087,6 +1092,22 @@ p {
 
   .external-scroll-animation .fixed img {
     width: 100%;
+  }
+
+  .external-scroll-animation > section:nth-of-type(2) article:first-of-type .content {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .external-scroll-animation > section:nth-of-type(2) article:first-of-type .text-wrap {
+    width: min(88vw, 720px);
+    left: 0;
+    text-align: center;
+  }
+
+  .external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap,
+  .external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap h2 {
+    text-align: center;
   }
 
   .external-scroll-animation .text-blocks {
