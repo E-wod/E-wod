@@ -676,6 +676,7 @@ p {
   position: absolute;
   inset: 0;
   z-index: 6;
+  overflow: visible;
 }
 
 .external-scroll-animation .fixed::before {
@@ -798,7 +799,7 @@ p {
   line-height: 1.5;
 }
 
-/* FIRST SCREEN FIXES */
+/* FIRST SCREEN */
 .external-scroll-animation > section:first-of-type {
   padding: 0;
   display: block;
@@ -829,7 +830,7 @@ p {
   margin-right: auto;
 }
 
-/* ARTICLE PANELS */
+/* ARTICLE 1 */
 .external-scroll-animation > section:nth-of-type(2) article:first-of-type .content {
   width: 100%;
   max-width: none;
@@ -874,24 +875,42 @@ p {
   padding: 0.95rem 0;
 }
 
+/* ARTICLE 2 */
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) .fixed {
   background:
     radial-gradient(circle at center, rgba(3,153,158,0.18), transparent 45%),
     #000;
 }
 
+/* ARTICLE 3 */
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
-  min-height: 250vh;
+  min-height: 400vh;
+  height: 400vh;
+  overflow: visible;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content {
+  width: min(950px, 92%);
+  min-height: 100vh;
+  height: 100vh;
   align-content: center;
+  justify-items: center;
+  overflow: visible;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) img {
   filter: brightness(1.08) contrast(1.05) saturate(1.03);
 }
 
+/* ARTICLE 3 MAIN H3 */
+.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content > h3 {
+  position: sticky;
+  top: 22vh;
+  z-index: 12;
+  margin: 0 auto;
+}
+
+/* TEXT WRAPS */
 .external-scroll-animation .text-wrap {
   text-align: left;
   overflow: visible;
@@ -909,10 +928,7 @@ p {
   padding: 2rem;
 }
 
-.external-scroll-animation .static {
-  overflow: visible;
-}
-
+/* ARTICLE 3 TEXT BLOCKS */
 .external-scroll-animation .chat-container {
   min-height: 100vh;
   width: 100%;
@@ -920,7 +936,8 @@ p {
   top: 0;
   display: grid;
   place-items: center;
-  overflow: hidden;
+  overflow: visible;
+  z-index: 11;
 }
 
 .external-scroll-animation .text-blocks {
@@ -957,24 +974,26 @@ p {
   text-align: left;
 }
 
+/* ARTICLE 3 FILLER - CORRECTED */
 .external-scroll-animation .filler {
   display: none;
   filter: none;
-  will-change: opacity, transform;
+  will-change: opacity, transform, filter;
 }
 
 .external-scroll-animation .filler.is-active {
-  align-content: center;
-  justify-items: center;
-  text-align: center;
-  display: block;
+  display: grid;
+  place-items: center;
   width: 100%;
-  position: absolute;
-  bottom: 46vh;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  bottom: auto;
   padding: 1rem;
-  background:
-    radial-gradient(circle at 20% 15%, rgba(3,153,158,0.22), transparent 34%),
-    radial-gradient(circle at 75% 78%, rgba(98,28,148,0.2), transparent 38%);
+  background: transparent;
+  text-align: center;
+  z-index: 13;
+  overflow: visible;
 }
 
 .external-scroll-animation .filler h2,
@@ -987,9 +1006,17 @@ p {
   box-shadow: none;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
-  filter: none;
   padding: 0;
-  will-change: opacity, transform;
+  margin: 0 auto;
+  will-change: opacity, transform, filter;
+}
+
+.external-scroll-animation .filler h3.animate-text {
+  display: block;
+  text-align: center;
+  opacity: 0;
+  filter: blur(1.75rem);
+  transform: translateY(80%);
 }
 
 /* RESPONSIVE */
@@ -1132,6 +1159,20 @@ p {
   .external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap h2,
   .external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap h3 {
     text-align: left;
+  }
+
+  .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
+    min-height: 420vh;
+    height: 420vh;
+  }
+
+  .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content > h3 {
+    top: 20vh;
+  }
+
+  .external-scroll-animation .filler h2,
+  .external-scroll-animation .filler h3 {
+    width: 92%;
   }
 }
 
