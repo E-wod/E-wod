@@ -232,6 +232,8 @@ function runExternalScrollAnimation(root) {
 
   if (!firstSection || !articles.length) return;
 
+  root.querySelectorAll(".filler").forEach((el) => el.classList.add("is-active"));
+
   gsap.set(root, {
     opacity: 1,
     backgroundColor: "#000"
@@ -278,20 +280,20 @@ function animateExternalStartPanel(gsap, section) {
     yPercent: 0
   });
 
-  gsap.fromTo(
-    fixed,
-    { opacity: 1 },
-    {
-      opacity: 0,
-      overwrite: "auto",
-      scrollTrigger: {
-        trigger: section,
-        start: "top top",
-        end: "bottom 50%",
-        scrub: 0.5
-      }
+gsap.fromTo(
+  fixed,
+  { opacity: 1 },
+  {
+    opacity: 0,
+    overwrite: "auto",
+    scrollTrigger: {
+      trigger: section,
+      start: "top top",
+      end: "bottom 50%",
+      scrub: 0.5
     }
-  );
+  }
+);
 
   animateTextGroup(gsap, section, {
     enterStart: "top 80%",
@@ -303,13 +305,12 @@ function animateExternalStartPanel(gsap, section) {
 
 function animateExternalArticles(gsap, articles) {
   articles.forEach((article, index) => {
-    if (index === 2) return;
-
     animateArticleFixedLayer(gsap, article, index);
     animateArticleImage(gsap, article, index);
     animateArticleTitle(gsap, article, index);
   });
 
+  animateArticleThreeTextBlocks(gsap, articles[2]);
   animateFinalArticle(gsap, articles[articles.length - 1]);
 }
 
@@ -347,7 +348,9 @@ function animateArticleFixedLayer(gsap, article, index) {
 
     gsap.fromTo(
       fixed,
-      { opacity: 1 },
+      {
+        opacity: 1
+      },
       {
         opacity: 0,
         overwrite: "auto",
@@ -371,7 +374,9 @@ function animateArticleFixedLayer(gsap, article, index) {
 
   gsap.fromTo(
     fixed,
-    { opacity: 0 },
+    {
+      opacity: 0
+    },
     {
       opacity: 1,
       overwrite: "auto",
@@ -387,7 +392,9 @@ function animateArticleFixedLayer(gsap, article, index) {
 
   gsap.fromTo(
     fixed,
-    { opacity: 1 },
+    {
+      opacity: 1
+    },
     {
       opacity: 0,
       overwrite: "auto",
@@ -509,6 +516,199 @@ function animateTextGroup(gsap, scope, timing) {
   });
 }
 
+function animateArticleThreeTextBlocks(gsap, article) {
+  if (!article) return;
+
+  const mainTitle = article.querySelector(".content > h3, .content > h2");
+  const lines = Array.from(article.querySelectorAll(".text-blocks p"));
+  const textBlocks = article.querySelector(".text-blocks");
+  const filler = article.querySelector(".filler");
+
+  if (mainTitle) {
+    gsap.set(mainTitle, {
+      opacity: 0,
+      yPercent: -45,
+      filter: "blur(1.5rem)"
+    });
+
+    gsap.fromTo(
+      mainTitle,
+      {
+        opacity: 0,
+        yPercent: -45,
+        filter: "blur(1.5rem)"
+      },
+      {
+        opacity: 1,
+        yPercent: -28,
+        filter: "blur(0rem)",
+        overwrite: "auto",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: article,
+          start: "top 95%",
+          end: "top 58%",
+          scrub: 0.5
+        }
+      }
+    );
+
+    gsap.fromTo(
+      mainTitle,
+      {
+        opacity: 1,
+        yPercent: -28,
+        filter: "blur(0rem)"
+      },
+      {
+        opacity: 0,
+        yPercent: -62,
+        filter: "blur(4rem)",
+        overwrite: "auto",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: article,
+          start: "top -=105%",
+          end: "top -=135%",
+          scrub: 0.5
+        }
+      }
+    );
+  }
+
+  if (lines.length) {
+    gsap.set(article, {
+      height: "400vh"
+    });
+
+    lines.forEach((line, index) => {
+      gsap.set(line, {
+        opacity: 0,
+        yPercent: 100,
+        filter: "blur(1.5rem)"
+      });
+
+      gsap.fromTo(
+        line,
+        {
+          opacity: 0,
+          yPercent: 100,
+          filter: "blur(1.5rem)"
+        },
+        {
+          opacity: 1,
+          yPercent: 0,
+          filter: "blur(0rem)",
+          overwrite: "auto",
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: article,
+            start: `top -=${86 + index * 10}%`,
+            end: `top -=${98 + index * 10}%`,
+            scrub: 0.5
+          }
+        }
+      );
+
+      gsap.fromTo(
+        line,
+        {
+          opacity: 1,
+          yPercent: 0,
+          filter: "blur(0rem)"
+        },
+        {
+          opacity: 0,
+          yPercent: -65,
+          filter: "blur(4rem)",
+          overwrite: "auto",
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: article,
+            start: `top -=${135 + index * 10}%`,
+            end: `top -=${160 + index * 10}%`,
+            scrub: 0.5
+          }
+        }
+      );
+    });
+  }
+
+  if (textBlocks) {
+    gsap.fromTo(
+      textBlocks,
+      {
+        opacity: 1,
+        filter: "blur(0rem)"
+      },
+      {
+        opacity: 0,
+        filter: "blur(4rem)",
+        overwrite: "auto",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: article,
+          start: "bottom 135%",
+          end: "bottom 112%",
+          scrub: 0.5
+        }
+      }
+    );
+  }
+
+  if (filler) {
+    gsap.set(filler, {
+      opacity: 0,
+      yPercent: 24,
+      filter: "none"
+    });
+
+    gsap.fromTo(
+      filler,
+      {
+        opacity: 0,
+        yPercent: 24,
+        filter: "none"
+      },
+      {
+        opacity: 1,
+        yPercent: 0,
+        filter: "none",
+        overwrite: "auto",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: article,
+          start: "bottom 100%",
+          end: "bottom 78%",
+          scrub: 0.5
+        }
+      }
+    );
+
+    gsap.fromTo(
+      filler,
+      {
+        opacity: 1,
+        yPercent: 0,
+        filter: "none"
+      },
+      {
+        opacity: 0,
+        yPercent: -20,
+        filter: "none",
+        overwrite: "auto",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: article,
+          start: "bottom 58%",
+          end: "bottom 32%",
+          scrub: 0.5
+        }
+      }
+    );
+  }
+}
+
 function animateFinalArticle(gsap, article) {
   if (!article) return;
 
@@ -627,7 +827,9 @@ function resetExternalAnimationState(root) {
   });
 
   gsap.set(
-    root.querySelectorAll("h1, h2, h3, p, .text-blocks, .text-blocks p, .filler, .filler h2, .filler h3"),
+    root.querySelectorAll(
+      "h1, h2, h3, p, .text-blocks, .text-blocks p, .filler, .filler h2, .filler h3"
+    ),
     {
       opacity: 1,
       yPercent: 0,
