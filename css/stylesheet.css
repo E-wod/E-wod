@@ -831,11 +831,46 @@ p {
 
 /* ARTICLE PANELS */
 .external-scroll-animation > section:nth-of-type(2) article:first-of-type .content {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  inset: 0;
+  padding: clamp(7rem, 12vh, 11rem) clamp(1.25rem, 7vw, 9rem) 4rem;
+  display: grid;
   align-content: center;
+  justify-items: start;
+  text-align: left;
 }
 
-.external-scroll-animation > section:nth-of-type(2) article:first-of-type h2,
-.external-scroll-animation > section:nth-of-type(2) article:first-of-type h3 {
+.external-scroll-animation > section:nth-of-type(2) article:first-of-type .text-wrap {
+  width: min(760px, 78vw);
+  max-width: 760px;
+  position: relative;
+  bottom: auto;
+  justify-self: start;
+  align-self: center;
+  text-align: left;
+  overflow: visible;
+  transform-origin: left center;
+}
+
+.external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  overflow: visible;
+  clip-path: none;
+}
+
+.external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap h2,
+.external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap h3 {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  justify-content: flex-start;
+  text-align: left;
+  margin: 0;
   padding: 0.95rem 0;
 }
 
@@ -1078,6 +1113,25 @@ p {
 
   .external-scroll-animation .text-blocks p {
     font-size: clamp(1.15rem, 5vw, 2.25rem);
+  }
+
+  .external-scroll-animation > section:nth-of-type(2) article:first-of-type .content {
+    width: 100%;
+    padding: clamp(8rem, 26vh, 14rem) 1.25rem 4rem;
+    justify-items: start;
+    text-align: left;
+  }
+
+  .external-scroll-animation > section:nth-of-type(2) article:first-of-type .text-wrap {
+    width: min(92vw, 620px);
+    max-width: 92vw;
+    justify-self: start;
+    text-align: left;
+  }
+
+  .external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap h2,
+  .external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap h3 {
+    text-align: left;
   }
 }
 
