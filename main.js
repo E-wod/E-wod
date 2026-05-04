@@ -280,20 +280,20 @@ function animateExternalStartPanel(gsap, section) {
     yPercent: 0
   });
 
-gsap.fromTo(
-  fixed,
-  { opacity: 1 },
-  {
-    opacity: 0,
-    overwrite: "auto",
-    scrollTrigger: {
-      trigger: section,
-      start: "top top",
-      end: "bottom 50%",
-      scrub: 0.5
+  gsap.fromTo(
+    fixed,
+    { opacity: 1 },
+    {
+      opacity: 0,
+      overwrite: "auto",
+      scrollTrigger: {
+        trigger: section,
+        start: "top top",
+        end: "bottom 50%",
+        scrub: 0.5
+      }
     }
-  }
-);
+  );
 
   animateTextGroup(gsap, section, {
     enterStart: "top 80%",
@@ -348,9 +348,7 @@ function animateArticleFixedLayer(gsap, article, index) {
 
     gsap.fromTo(
       fixed,
-      {
-        opacity: 1
-      },
+      { opacity: 1 },
       {
         opacity: 0,
         overwrite: "auto",
@@ -374,9 +372,7 @@ function animateArticleFixedLayer(gsap, article, index) {
 
   gsap.fromTo(
     fixed,
-    {
-      opacity: 0
-    },
+    { opacity: 0 },
     {
       opacity: 1,
       overwrite: "auto",
@@ -392,9 +388,7 @@ function animateArticleFixedLayer(gsap, article, index) {
 
   gsap.fromTo(
     fixed,
-    {
-      opacity: 1
-    },
+    { opacity: 1 },
     {
       opacity: 0,
       overwrite: "auto",
@@ -448,7 +442,6 @@ function animateArticleImage(gsap, article, index) {
 function animateArticleTitle(gsap, article, index) {
   if (index === 2) return;
 
-  // 👉 ARTICLE 1 CUSTOM LEFT SLIDE
   if (index === 0) {
     const title = article.querySelector(".loud-wrap h2");
 
@@ -461,7 +454,6 @@ function animateArticleTitle(gsap, article, index) {
       filter: "blur(2rem)"
     });
 
-    // ENTER (slide in from left)
     gsap.fromTo(
       title,
       {
@@ -485,7 +477,6 @@ function animateArticleTitle(gsap, article, index) {
       }
     );
 
-    // EXIT (fade/slide up-left)
     gsap.fromTo(
       title,
       {
@@ -513,7 +504,6 @@ function animateArticleTitle(gsap, article, index) {
     return;
   }
 
-  // 👉 ALL OTHER ARTICLES (unchanged behavior)
   animateTextGroup(gsap, article, {
     enterStart: "top 72%",
     enterEnd: "top 34%",
@@ -590,6 +580,10 @@ function animateArticleThreeTextBlocks(gsap, article) {
   const textBlocks = article.querySelector(".text-blocks");
   const filler = article.querySelector(".filler");
 
+  gsap.set(article, {
+    minHeight: "420vh"
+  });
+
   if (mainTitle) {
     gsap.set(mainTitle, {
       opacity: 0,
@@ -634,73 +628,77 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=105%",
-          end: "top -=135%",
+          start: "top -=118%",
+          end: "top -=148%",
           scrub: 0.5
         }
       }
     );
   }
 
-  if (lines.length) {
-    gsap.set(article, {
-      height: "400vh"
+  lines.forEach((line, index) => {
+    const enterStart = 86 + index * 10;
+    const enterEnd = 98 + index * 10;
+    const exitStart = 148 + index * 10;
+    const exitEnd = 175 + index * 10;
+
+    gsap.set(line, {
+      opacity: 0,
+      yPercent: 100,
+      filter: "blur(1.5rem)"
     });
 
-    lines.forEach((line, index) => {
-      gsap.set(line, {
+    gsap.fromTo(
+      line,
+      {
         opacity: 0,
         yPercent: 100,
         filter: "blur(1.5rem)"
-      });
-
-      gsap.fromTo(
-        line,
-        {
-          opacity: 0,
-          yPercent: 100,
-          filter: "blur(1.5rem)"
-        },
-        {
-          opacity: 1,
-          yPercent: 0,
-          filter: "blur(0rem)",
-          overwrite: "auto",
-          immediateRender: false,
-          scrollTrigger: {
-            trigger: article,
-            start: `top -=${86 + index * 10}%`,
-            end: `top -=${98 + index * 10}%`,
-            scrub: 0.5
-          }
+      },
+      {
+        opacity: 1,
+        yPercent: 0,
+        filter: "blur(0rem)",
+        overwrite: "auto",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: article,
+          start: `top -=${enterStart}%`,
+          end: `top -=${enterEnd}%`,
+          scrub: 0.5
         }
-      );
+      }
+    );
 
-      gsap.fromTo(
-        line,
-        {
-          opacity: 1,
-          yPercent: 0,
-          filter: "blur(0rem)"
-        },
-        {
-          opacity: 0,
-          yPercent: -65,
-          filter: "blur(4rem)",
-          overwrite: "auto",
-          immediateRender: false,
-          scrollTrigger: {
-            trigger: article,
-            start: `top -=${135 + index * 10}%`,
-            end: `top -=${160 + index * 10}%`,
-            scrub: 0.5
-          }
+    gsap.fromTo(
+      line,
+      {
+        opacity: 1,
+        yPercent: 0,
+        filter: "blur(0rem)"
+      },
+      {
+        opacity: 0,
+        yPercent: -65,
+        filter: "blur(4rem)",
+        overwrite: "auto",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: article,
+          start: `top -=${exitStart}%`,
+          end: `top -=${exitEnd}%`,
+          scrub: 0.5
         }
-      );
-    });
-  }
+      }
+    );
+  });
 
   if (textBlocks) {
+    gsap.set(textBlocks, {
+      opacity: 1,
+      filter: "blur(0rem)"
+    });
+
     gsap.fromTo(
       textBlocks,
       {
@@ -712,68 +710,67 @@ function animateArticleThreeTextBlocks(gsap, article) {
         filter: "blur(4rem)",
         overwrite: "auto",
         immediateRender: false,
-      scrollTrigger: {
-        trigger: article,
-        start: "top 5%",     // 🔥 waits until near top
-        end: "top -25%",     // 🔥 finishes after passing top
-        scrub: 0.5
+        scrollTrigger: {
+          trigger: article,
+          start: "top -=205%",
+          end: "top -=235%",
+          scrub: 0.5
+        }
       }
-    }
-  );
-}
+    );
+  }
 
-if (filler) {
-  gsap.set(filler, {
-    opacity: 0,
-    yPercent: 40,
-    filter: "blur(2rem)"
-  });
-
-  // ENTER (like other text)
-  gsap.fromTo(
-    filler,
-    {
+  if (filler) {
+    gsap.set(filler, {
       opacity: 0,
       yPercent: 40,
       filter: "blur(2rem)"
-    },
-    {
-      opacity: 1,
-      yPercent: 0,
-      filter: "blur(0rem)",
-      overwrite: "auto",
-      immediateRender: false,
-      scrollTrigger: {
-        trigger: article,
-        start: "top -140%",
-        end: "top -165%",
-        scrub: 0.5
-      }
-    }
-  );
+    });
 
-  // EXIT (same behavior as others)
-  gsap.fromTo(
-    filler,
-    {
-      opacity: 1,
-      yPercent: 0,
-      filter: "blur(0rem)"
-    },
-    {
-      opacity: 0,
-      yPercent: -30,
-      filter: "blur(4rem)",
-      overwrite: "auto",
-      immediateRender: false,
-      scrollTrigger: {
-        trigger: article,
-        start: "top -190%",
-        end: "top -220%",
-        scrub: 0.5
+    gsap.fromTo(
+      filler,
+      {
+        opacity: 0,
+        yPercent: 40,
+        filter: "blur(2rem)"
+      },
+      {
+        opacity: 1,
+        yPercent: 0,
+        filter: "blur(0rem)",
+        overwrite: "auto",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: article,
+          start: "top -=245%",
+          end: "top -=275%",
+          scrub: 0.5
+        }
       }
-    }
-  );
+    );
+
+    gsap.fromTo(
+      filler,
+      {
+        opacity: 1,
+        yPercent: 0,
+        filter: "blur(0rem)"
+      },
+      {
+        opacity: 0,
+        yPercent: -30,
+        filter: "blur(4rem)",
+        overwrite: "auto",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: article,
+          start: "top -=305%",
+          end: "top -=335%",
+          scrub: 0.5
+        }
+      }
+    );
+  }
 }
 
 function animateFinalArticle(gsap, article) {
@@ -899,14 +896,11 @@ function resetExternalAnimationState(root) {
     ),
     {
       opacity: 1,
+      xPercent: 0,
       yPercent: 0,
       filter: "blur(0rem)"
     }
   );
-
-  gsap.set(root.querySelectorAll(".filler, .filler h2, .filler h3"), {
-    filter: "none"
-  });
 
   const firstFixed =
     root.querySelector(".external-panel-start .fixed") ||
