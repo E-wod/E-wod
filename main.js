@@ -446,22 +446,81 @@ function animateArticleImage(gsap, article, index) {
 }
 
 function animateArticleTitle(gsap, article, index) {
+  if (index === 2) return;
+
+  // 👉 ARTICLE 1 CUSTOM LEFT SLIDE
   if (index === 0) {
-    animateTextGroup(gsap, article, {
-      enterStart: "top 82%",
-      enterEnd: "top 38%",
-      exitStart: "bottom 68%",
-      exitEnd: "bottom 34%"
+    const title = article.querySelector(".loud-wrap h2");
+
+    if (!title) return;
+
+    gsap.set(title, {
+      opacity: 0,
+      xPercent: -35,
+      yPercent: 0,
+      filter: "blur(2rem)"
     });
+
+    // ENTER (slide in from left)
+    gsap.fromTo(
+      title,
+      {
+        opacity: 0,
+        xPercent: -35,
+        filter: "blur(2rem)"
+      },
+      {
+        opacity: 1,
+        xPercent: 0,
+        filter: "blur(0rem)",
+        ease: "power3.out",
+        overwrite: "auto",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: article,
+          start: "top 82%",
+          end: "top 36%",
+          scrub: 0.65
+        }
+      }
+    );
+
+    // EXIT (fade/slide up-left)
+    gsap.fromTo(
+      title,
+      {
+        opacity: 1,
+        xPercent: 0,
+        filter: "blur(0rem)"
+      },
+      {
+        opacity: 0,
+        xPercent: -18,
+        yPercent: -16,
+        filter: "blur(4rem)",
+        ease: "power2.inOut",
+        overwrite: "auto",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: article,
+          start: "bottom 72%",
+          end: "bottom 38%",
+          scrub: 0.65
+        }
+      }
+    );
+
     return;
   }
 
-animateTextGroup(gsap, article, {
-  enterStart: "top 72%",
-  enterEnd: "top 34%",
-  exitStart: "bottom 76%",
-  exitEnd: "bottom 42%"
-});
+  // 👉 ALL OTHER ARTICLES (unchanged behavior)
+  animateTextGroup(gsap, article, {
+    enterStart: "top 72%",
+    enterEnd: "top 34%",
+    exitStart: "bottom 76%",
+    exitEnd: "bottom 42%"
+  });
+}
 
 function animateTextGroup(gsap, scope, timing) {
   const textItems = Array.from(
