@@ -909,7 +909,7 @@ p {
 /* ARTICLE 3 MAIN H3 */
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content > h3 {
   position: absolute;
-  top: 32vh;
+  top: 12vh;
   z-index: 12;
   margin: 0 auto;
   pointer-events: none;
@@ -953,7 +953,7 @@ p {
   display: grid;
   place-items: center;
   gap: clamp(1rem, 7vh, 1.65rem);
-  filter: blur(0rem);
+  filter: none;
   will-change: opacity, transform, filter;
 }
 
