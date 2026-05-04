@@ -232,8 +232,6 @@ function runExternalScrollAnimation(root) {
 
   if (!firstSection || !articles.length) return;
 
-  root.querySelectorAll(".filler").forEach((el) => el.classList.add("is-active"));
-
   gsap.set(root, {
     opacity: 1,
     backgroundColor: "#000"
@@ -305,12 +303,13 @@ function animateExternalStartPanel(gsap, section) {
 
 function animateExternalArticles(gsap, articles) {
   articles.forEach((article, index) => {
+    if (index === 2) return;
+
     animateArticleFixedLayer(gsap, article, index);
     animateArticleImage(gsap, article, index);
     animateArticleTitle(gsap, article, index);
   });
 
-  animateArticleThreeTextBlocks(gsap, articles[2]);
   animateFinalArticle(gsap, articles[articles.length - 1]);
 }
 
@@ -510,254 +509,6 @@ function animateTextGroup(gsap, scope, timing) {
   });
 }
 
-/* ARTICLE 3 - ORIGINAL STYLE GSAP FALLBACK */
-function animateArticleThreeTextBlocks(gsap, article) {
-  if (!article) return;
-
-  const mainTitle = article.querySelector(".article-three-title, .content > h3, .content > h2");
-  const fixed = article.querySelector(".fixed");
-  const img = article.querySelector(".fixed img");
-  const lines = Array.from(article.querySelectorAll(".text-blocks p"));
-  const textBlocks = article.querySelector(".text-blocks");
-  const filler = article.querySelector(".filler");
-  const fillerTitle = filler ? filler.querySelector("h1, h2, h3") : null;
-
-  gsap.set(article, {
-    height: "400vh",
-    minHeight: "400vh"
-  });
-
-  if (fixed) {
-    gsap.set(fixed, {
-      opacity: 0,
-      zIndex: 4
-    });
-
-    gsap.fromTo(
-      fixed,
-      { opacity: 0 },
-      {
-        opacity: 1,
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          scrub: 0.5,
-          start: "top 80%",
-          end: "top top"
-        }
-      }
-    );
-
-    gsap.fromTo(
-      fixed,
-      { opacity: 1 },
-      {
-        opacity: 0,
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          scrub: 0.5,
-          start: "bottom 100%",
-          end: "bottom 85%"
-        }
-      }
-    );
-  }
-
-  if (img) {
-    gsap.set(img, {
-      opacity: 1,
-      visibility: "visible",
-      scale: 1.45,
-      transformOrigin: "50% 50%"
-    });
-
-    gsap.fromTo(
-      img,
-      { scale: 1.45 },
-      {
-        scale: 1,
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          scrub: 0.5,
-          start: "top 80%",
-          end: "top top"
-        }
-      }
-    );
-  }
-
-  if (mainTitle) {
-    gsap.set(mainTitle, {
-      opacity: 1,
-      yPercent: 0,
-      filter: "blur(0rem)"
-    });
-
-    gsap.fromTo(
-      mainTitle,
-      {
-        opacity: 0,
-        yPercent: 100,
-        filter: "blur(1.75rem)"
-      },
-      {
-        opacity: 1,
-        yPercent: 0,
-        filter: "blur(0rem)",
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          scrub: 0.5,
-          start: "top 55%",
-          end: "top 20%"
-        }
-      }
-    );
-
-    gsap.fromTo(
-      mainTitle,
-      {
-        opacity: 1,
-        yPercent: 0,
-        filter: "blur(0rem)"
-      },
-      {
-        opacity: 0,
-        yPercent: -80,
-        filter: "blur(4rem)",
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          scrub: 0.5,
-          start: "top -=115%",
-          end: "top -=145%"
-        }
-      }
-    );
-  }
-
-  if (lines.length) {
-    lines.forEach((line, index) => {
-      gsap.set(line, {
-        opacity: 0,
-        yPercent: 100,
-        filter: "blur(1.5rem)"
-      });
-
-      gsap.fromTo(
-        line,
-        {
-          opacity: 0,
-          yPercent: 100,
-          filter: "blur(1.5rem)"
-        },
-        {
-          opacity: 1,
-          yPercent: 0,
-          filter: "blur(0rem)",
-          overwrite: "auto",
-          immediateRender: false,
-          scrollTrigger: {
-            trigger: article,
-            scrub: 0.5,
-            start: `top -=${90 + index * 10}%`,
-            end: `top -=${100 + index * 10}%`
-          }
-        }
-      );
-    });
-  }
-
-  if (textBlocks) {
-    gsap.fromTo(
-      textBlocks,
-      {
-        opacity: 1,
-        filter: "blur(0rem)"
-      },
-      {
-        opacity: 0,
-        filter: "blur(4rem)",
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          scrub: 0.5,
-          start: "bottom 130%",
-          end: "bottom 110%"
-        }
-      }
-    );
-  }
-
-  if (filler) {
-    gsap.set(filler, {
-      opacity: 1,
-      display: "block",
-      filter: "none"
-    });
-  }
-
-  if (fillerTitle) {
-    gsap.set(fillerTitle, {
-      opacity: 1,
-      yPercent: 0,
-      filter: "blur(0rem)"
-    });
-
-    gsap.fromTo(
-      fillerTitle,
-      {
-        opacity: 0,
-        yPercent: 60,
-        filter: "blur(1.75rem)"
-      },
-      {
-        opacity: 1,
-        yPercent: 0,
-        filter: "blur(0rem)",
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          scrub: 0.5,
-          start: "bottom 95%",
-          end: "bottom 75%"
-        }
-      }
-    );
-
-    gsap.fromTo(
-      fillerTitle,
-      {
-        opacity: 1,
-        yPercent: 0,
-        filter: "blur(0rem)"
-      },
-      {
-        opacity: 0,
-        yPercent: -70,
-        filter: "blur(4rem)",
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          scrub: 0.5,
-          start: "bottom 55%",
-          end: "bottom 30%"
-        }
-      }
-    );
-  }
-}
-
 function animateFinalArticle(gsap, article) {
   if (!article) return;
 
@@ -876,9 +627,7 @@ function resetExternalAnimationState(root) {
   });
 
   gsap.set(
-    root.querySelectorAll(
-      "h1, h2, h3, p, .text-blocks, .text-blocks p, .filler, .filler h2, .filler h3"
-    ),
+    root.querySelectorAll("h1, h2, h3, p, .text-blocks, .text-blocks p, .filler, .filler h2, .filler h3"),
     {
       opacity: 1,
       yPercent: 0,
