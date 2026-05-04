@@ -678,8 +678,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "bottom 100%",
-          end: "bottom 78%",
+          start: "bottom 80%",
+          end: "top top",
           scrub: 0.5
         }
       }
@@ -701,7 +701,7 @@ function animateArticleThreeTextBlocks(gsap, article) {
         scrollTrigger: {
           trigger: article,
           start: "bottom 58%",
-          end: "bottom 32%",
+          end: "top top",
           scrub: 0.5
         }
       }
