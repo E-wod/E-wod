@@ -853,6 +853,23 @@ p {
   align-content: center;
 }
 
+/* ARTICLE 1 - LEFT SIDE OVERRIDE */
+.external-scroll-animation > section:nth-of-type(2) article:first-of-type .content {
+  justify-items: start;
+  text-align: left;
+}
+
+.external-scroll-animation > section:nth-of-type(2) article:first-of-type .text-wrap {
+  position: relative;
+  left: 5vw;
+  width: min(720px, 88vw);
+}
+
+.external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap h2 {
+  justify-content: flex-start;
+  text-align: left;
+}
+
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) img {
   filter: brightness(1.08) contrast(1.05) saturate(1.03);
 }
