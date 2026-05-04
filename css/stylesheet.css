@@ -970,7 +970,7 @@ p {
   display: block;
   width: 100%;
   position: absolute;
-  bottom: 20vh;
+  bottom: 46vh;
   padding: 1rem;
   background:
     radial-gradient(circle at 20% 15%, rgba(3,153,158,0.22), transparent 34%),
