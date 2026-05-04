@@ -676,7 +676,6 @@ p {
   position: absolute;
   inset: 0;
   z-index: 6;
-  overflow: visible;
 }
 
 .external-scroll-animation .fixed::before {
@@ -733,6 +732,20 @@ p {
   filter: blur(0rem);
 }
 
+.external-scroll-animation .content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+  pointer-events: none;
+  z-index: 10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  opacity: 0;
+}
+
 .external-scroll-animation h1,
 .external-scroll-animation h2,
 .external-scroll-animation h3 {
@@ -785,7 +798,7 @@ p {
   line-height: 1.5;
 }
 
-/* FIRST PANEL */
+/* FIRST SCREEN FIXES */
 .external-scroll-animation > section:first-of-type {
   padding: 0;
   display: block;
@@ -816,7 +829,7 @@ p {
   margin-right: auto;
 }
 
-/* ARTICLE 1 */
+/* ARTICLE PANELS */
 .external-scroll-animation > section:nth-of-type(2) article:first-of-type .content {
   width: 100%;
   max-width: none;
@@ -832,10 +845,10 @@ p {
 .external-scroll-animation > section:nth-of-type(2) article:first-of-type .text-wrap {
   width: min(760px, 78vw);
   max-width: 760px;
-  position: sticky;
-  bottom: 6rem;
+  position: relative;
+  bottom: auto;
   justify-self: start;
-  align-self: end;
+  align-self: center;
   text-align: left;
   overflow: visible;
   transform-origin: left center;
@@ -861,66 +874,53 @@ p {
   padding: 0.95rem 0;
 }
 
-/* ARTICLE 2 */
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) .fixed {
   background:
     radial-gradient(circle at center, rgba(3,153,158,0.18), transparent 45%),
     #000;
 }
 
-/* ARTICLE 3 - CSS CONTROLLED LIKE ORIGINAL */
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
-  height: 400vh;
-  min-height: 400vh;
-  overflow: visible;
-  view-timeline: --article-three;
-}
-
-.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .fixed {
-  z-index: 4;
-}
-
-.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .fixed img {
-  filter: brightness(1.08) contrast(1.05) saturate(1.03);
-}
-
-.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .static {
-  position: absolute;
-  inset: 0;
-  z-index: 6;
-  overflow: visible;
+  min-height: 250vh;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content {
-  width: min(950px, 92%);
-  height: 100%;
-  min-height: 400vh;
-  position: absolute;
-  inset: 0;
-  display: grid;
-  align-content: start;
-  justify-items: center;
-  text-align: center;
-  padding: 0 1rem;
+  align-content: center;
+}
+
+.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) img {
+  filter: brightness(1.08) contrast(1.05) saturate(1.03);
+}
+
+.external-scroll-animation .text-wrap {
+  text-align: left;
+  overflow: visible;
+  width: 100%;
+  position: sticky;
+  bottom: 6rem;
+  transform-origin: 50% 0;
+}
+
+.external-scroll-animation .loud-wrap {
+  text-align: left;
+  width: 100%;
+  overflow: visible;
+  clip-path: none;
+  padding: 2rem;
+}
+
+.external-scroll-animation .static {
   overflow: visible;
 }
 
-.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .article-three-title {
-  margin-top: 80vh;
-  z-index: 12;
-}
-
-/* ARTICLE 3 CHAT */
 .external-scroll-animation .chat-container {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   position: sticky;
   top: 0;
   display: grid;
   place-items: center;
-  overflow: visible;
-  z-index: 11;
-  pointer-events: none;
+  overflow: hidden;
 }
 
 .external-scroll-animation .text-blocks {
@@ -930,6 +930,7 @@ p {
   display: grid;
   place-items: center;
   gap: clamp(1rem, 7vh, 1.65rem);
+  filter: blur(0rem);
   will-change: opacity, transform, filter;
 }
 
@@ -937,7 +938,7 @@ p {
   display: inline-block;
   margin: 0;
   font-family: "sofachrome", sans-serif;
-  font-size: clamp(1.15rem, 2vw, 1.65rem);
+  font-size: clamp(1.5rem, 1.75vw, 1.5rem);
   font-weight: 120;
   line-height: 1.14;
   will-change: transform, opacity, filter;
@@ -956,18 +957,24 @@ p {
   text-align: left;
 }
 
-/* ARTICLE 3 FILLER */
 .external-scroll-animation .filler {
+  display: none;
+  filter: none;
+  will-change: opacity, transform;
+}
+
+.external-scroll-animation .filler.is-active {
+  align-content: center;
+  justify-items: center;
+  text-align: center;
   display: block;
   width: 100%;
   position: absolute;
-  bottom: 30vh;
+  bottom: 46vh;
   padding: 1rem;
-  z-index: 13;
-  text-align: center;
-  pointer-events: none;
-  filter: none;
-  will-change: opacity, transform, filter;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(3,153,158,0.22), transparent 34%),
+    radial-gradient(circle at 75% 78%, rgba(98,28,148,0.2), transparent 38%);
 }
 
 .external-scroll-animation .filler h2,
@@ -980,110 +987,9 @@ p {
   box-shadow: none;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
+  filter: none;
   padding: 0;
-  margin: 0 auto;
-  will-change: opacity, transform, filter;
-}
-
-/* CSS SCROLL ANIMATION FOR ARTICLE 3 */
-@supports (animation-timeline: scroll()) {
-  @media (prefers-reduced-motion: no-preference) {
-    .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .fixed {
-      animation: article-three-fixed-in both linear, article-three-fixed-out both linear;
-      animation-timeline: --article-three, --article-three;
-      animation-range: entry 45% exit-crossing 0%, exit 0% exit 15%;
-    }
-
-    .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .article-three-title {
-      animation: slide-in both linear, fade-in both linear, fade-away both linear, fade-out both linear;
-      animation-timeline: --article-three, --article-three, --article-three, --article-three;
-      animation-range:
-        entry-crossing 18% entry-crossing 28%,
-        entry-crossing 18% entry-crossing 30%,
-        entry-crossing 42% entry-crossing 54%,
-        entry-crossing 52% entry-crossing 62%;
-    }
-
-    .external-scroll-animation .text-blocks p {
-      animation: slide-in both linear, fade-in both linear;
-      animation-timeline: --article-three, --article-three;
-    }
-
-    .external-scroll-animation .text-blocks p:nth-of-type(1) {
-      animation-range: entry-crossing 50% entry-crossing 56%, entry-crossing 50% entry-crossing 56%;
-    }
-
-    .external-scroll-animation .text-blocks p:nth-of-type(2) {
-      animation-range: entry-crossing 56% entry-crossing 62%, entry-crossing 56% entry-crossing 62%;
-    }
-
-    .external-scroll-animation .text-blocks p:nth-of-type(3) {
-      animation-range: entry-crossing 62% entry-crossing 68%, entry-crossing 62% entry-crossing 68%;
-    }
-
-    .external-scroll-animation .text-blocks p:nth-of-type(4) {
-      animation-range: entry-crossing 68% entry-crossing 74%, entry-crossing 68% entry-crossing 74%;
-    }
-
-    .external-scroll-animation .text-blocks p:nth-of-type(5) {
-      animation-range: entry-crossing 74% entry-crossing 80%, entry-crossing 74% entry-crossing 80%;
-    }
-
-    .external-scroll-animation .text-blocks {
-      animation: fade-out both linear;
-      animation-timeline: --article-three;
-      animation-range: entry-crossing 80% entry-crossing 96%;
-    }
-
-    .external-scroll-animation .filler h3 {
-      animation: fade-away both linear, fade-out both linear;
-      animation-timeline: --article-three, --article-three;
-      animation-range: exit 40% exit 75%, exit 70% exit 90%;
-    }
-  }
-}
-
-/* ARTICLE 3 KEYFRAMES */
-@keyframes article-three-fixed-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes article-three-fixed-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
-@keyframes slide-in {
-  from { transform: translateY(100%); }
-  to { transform: translateY(0); }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    filter: blur(1.75rem);
-  }
-  to {
-    opacity: 1;
-    filter: blur(0rem);
-  }
-}
-
-@keyframes fade-away {
-  from {
-    transform: translateY(0);
-    filter: blur(0rem);
-  }
-  to {
-    transform: translateY(-80%);
-    filter: blur(4rem);
-  }
-}
-
-@keyframes fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
+  will-change: opacity, transform;
 }
 
 /* RESPONSIVE */
@@ -1201,6 +1107,14 @@ p {
     width: 100%;
   }
 
+  .external-scroll-animation .text-blocks {
+    width: min(36ch, 90vw);
+  }
+
+  .external-scroll-animation .text-blocks p {
+    font-size: clamp(1.15rem, 5vw, 2.25rem);
+  }
+
   .external-scroll-animation > section:nth-of-type(2) article:first-of-type .content {
     width: 100%;
     padding: clamp(8rem, 26vh, 14rem) 1.25rem 4rem;
@@ -1218,32 +1132,6 @@ p {
   .external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap h2,
   .external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap h3 {
     text-align: left;
-  }
-
-  .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
-    height: 420vh;
-    min-height: 420vh;
-  }
-
-  .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content {
-    min-height: 420vh;
-  }
-
-  .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .article-three-title {
-    margin-top: 82vh;
-  }
-
-  .external-scroll-animation .text-blocks {
-    width: min(36ch, 90vw);
-  }
-
-  .external-scroll-animation .text-blocks p {
-    font-size: clamp(1.05rem, 4.4vw, 2.1rem);
-  }
-
-  .external-scroll-animation .filler h2,
-  .external-scroll-animation .filler h3 {
-    width: 92%;
   }
 }
 
