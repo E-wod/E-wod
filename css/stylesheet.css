@@ -884,15 +884,19 @@ p {
 
 /* ARTICLE 3 */
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
-  min-height: 400vh;
-  height: 400vh;
-  overflow: visible;
+  min-height: 440vh;
+  height: 440vh;
+  overflow: hidden;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content {
   width: min(950px, 92%);
   min-height: 100vh;
   height: 100vh;
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
   align-content: center;
   justify-items: center;
   overflow: visible;
@@ -904,10 +908,11 @@ p {
 
 /* ARTICLE 3 MAIN H3 */
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content > h3 {
-  position: sticky;
-  top: 22vh;
+  position: absolute;
+  top: 32vh;
   z-index: 12;
   margin: 0 auto;
+  pointer-events: none;
 }
 
 /* TEXT WRAPS */
@@ -932,12 +937,13 @@ p {
 .external-scroll-animation .chat-container {
   min-height: 100vh;
   width: 100%;
-  position: sticky;
-  top: 0;
+  position: absolute;
+  inset: 0;
   display: grid;
   place-items: center;
   overflow: visible;
   z-index: 11;
+  pointer-events: none;
 }
 
 .external-scroll-animation .text-blocks {
@@ -974,7 +980,7 @@ p {
   text-align: left;
 }
 
-/* ARTICLE 3 FILLER - CORRECTED */
+/* ARTICLE 3 FILLER */
 .external-scroll-animation .filler {
   display: none;
   filter: none;
@@ -986,14 +992,14 @@ p {
   place-items: center;
   width: 100%;
   min-height: 100vh;
-  position: sticky;
-  top: 0;
-  bottom: auto;
+  position: absolute;
+  inset: 0;
   padding: 1rem;
   background: transparent;
   text-align: center;
   z-index: 13;
   overflow: visible;
+  pointer-events: none;
 }
 
 .external-scroll-animation .filler h2,
@@ -1014,9 +1020,6 @@ p {
 .external-scroll-animation .filler h3.animate-text {
   display: block;
   text-align: center;
-  opacity: 0;
-  filter: blur(1.75rem);
-  transform: translateY(80%);
 }
 
 /* RESPONSIVE */
@@ -1162,12 +1165,12 @@ p {
   }
 
   .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
-    min-height: 420vh;
-    height: 420vh;
+    min-height: 460vh;
+    height: 460vh;
   }
 
   .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) .content > h3 {
-    top: 20vh;
+    top: 28vh;
   }
 
   .external-scroll-animation .filler h2,
