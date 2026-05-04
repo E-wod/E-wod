@@ -446,15 +446,22 @@ function animateArticleImage(gsap, article, index) {
 }
 
 function animateArticleTitle(gsap, article, index) {
-  if (index === 2) return;
+  if (index === 0) {
+    animateTextGroup(gsap, article, {
+      enterStart: "top 82%",
+      enterEnd: "top 38%",
+      exitStart: "bottom 68%",
+      exitEnd: "bottom 34%"
+    });
+    return;
+  }
 
-  animateTextGroup(gsap, article, {
-    enterStart: "top 72%",
-    enterEnd: "top 34%",
-    exitStart: "bottom 76%",
-    exitEnd: "bottom 42%"
-  });
-}
+animateTextGroup(gsap, article, {
+  enterStart: "top 72%",
+  enterEnd: "top 34%",
+  exitStart: "bottom 76%",
+  exitEnd: "bottom 42%"
+});
 
 function animateTextGroup(gsap, scope, timing) {
   const textItems = Array.from(
