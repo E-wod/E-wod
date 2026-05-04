@@ -646,15 +646,15 @@ function animateArticleThreeTextBlocks(gsap, article) {
         filter: "blur(4rem)",
         overwrite: "auto",
         immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          start: "bottom 135%",
-          end: "bottom 112%",
-          scrub: 0.5
-        }
+      scrollTrigger: {
+        trigger: article,
+        start: "top 5%",     // 🔥 waits until near top
+        end: "top -25%",     // 🔥 finishes after passing top
+        scrub: 0.5
       }
-    );
-  }
+    }
+  );
+}
 
   if (filler) {
     gsap.set(filler, {
@@ -662,28 +662,6 @@ function animateArticleThreeTextBlocks(gsap, article) {
       yPercent: 24,
       filter: "none"
     });
-
-    // gsap.fromTo(
-    //   filler,
-    //   {
-    //     opacity: 0,
-    //     yPercent: 24,
-    //     filter: "none"
-    //   },
-    //   {
-    //     opacity: 1,
-    //     yPercent: 0,
-    //     filter: "none",
-    //     overwrite: "auto",
-    //     immediateRender: false,
-    //     scrollTrigger: {
-    //       trigger: article,
-    //       start: "bottom 100%",
-    //       end: "bottom 78%",
-    //       scrub: 0.5
-    //     }
-    //   }
-    // );
 
     gsap.fromTo(
       filler,
