@@ -269,9 +269,8 @@ function runExternalScrollAnimation(root) {
 function animateExternalStartPanel(gsap, section) {
   const fixed = section.querySelector(".fixed");
   const content = section.querySelector(".content");
-  const textItems = content
-    ? Array.from(content.querySelectorAll("h1, h2, h3, p"))
-    : [];
+  const h3 = content ? content.querySelector("h3") : null;
+  const p = content ? content.querySelector("p") : null;
 
   if (!fixed) return;
 
@@ -284,16 +283,15 @@ function animateExternalStartPanel(gsap, section) {
     yPercent: 0
   });
 
-  gsap.set(textItems, {
-    opacity: 1,
-    y: 0,
-    yPercent: 0,
-    filter: "blur(0rem)"
-  });
+  if (h3) {
+    gsap.set(h3, {
+      opacity: 1,
+      y: 0,
+      filter: "blur(0rem)"
+    });
 
-  textItems.forEach((item, index) => {
     gsap.fromTo(
-      item,
+      h3,
       {
         opacity: 1,
         y: 0,
@@ -301,19 +299,49 @@ function animateExternalStartPanel(gsap, section) {
       },
       {
         opacity: 0,
-        y: -260 - index * 46,
+        y: -390,
         filter: "blur(4rem)",
         overwrite: "auto",
         immediateRender: false,
         scrollTrigger: {
           trigger: section,
           start: "top top",
-          end: "bottom top",
+          end: "bottom -18%",
           scrub: 0.5
         }
       }
     );
-  });
+  }
+
+  if (p) {
+    gsap.set(p, {
+      opacity: 1,
+      y: 0,
+      filter: "blur(0rem)"
+    });
+
+    gsap.fromTo(
+      p,
+      {
+        opacity: 1,
+        y: 0,
+        filter: "blur(0rem)"
+      },
+      {
+        opacity: 0,
+        y: -230,
+        filter: "blur(4rem)",
+        overwrite: "auto",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: section,
+          start: "top top",
+          end: "bottom 4%",
+          scrub: 0.5
+        }
+      }
+    );
+  }
 
   gsap.fromTo(
     fixed,
@@ -324,7 +352,7 @@ function animateExternalStartPanel(gsap, section) {
       immediateRender: false,
       scrollTrigger: {
         trigger: section,
-        start: "bottom 82%",
+        start: "bottom 88%",
         end: "bottom 34%",
         scrub: 0.5
       }
@@ -368,8 +396,8 @@ function animateArticleFixedLayer(gsap, article, index) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top bottom",
-          end: "top top",
+          start: "top 125%",
+          end: "top 8%",
           scrub: 0.5
         }
       }
@@ -471,6 +499,16 @@ function animateArticleImage(gsap, article, index) {
 function animateArticleTitle(gsap, article, index) {
   if (index === 2) return;
 
+  if (index === 3) {
+    animateTextGroup(gsap, article, {
+      enterStart: "top 108%",
+      enterEnd: "top 52%",
+      exitStart: "top 18%",
+      exitEnd: "top -28%"
+    });
+    return;
+  }
+
   animateTextGroup(gsap, article, {
     enterStart: "top 72%",
     enterEnd: "top 34%",
@@ -555,27 +593,27 @@ function animateArticleThreeTextBlocks(gsap, article) {
   if (mainTitle) {
     gsap.set(mainTitle, {
       opacity: 0,
-      yPercent: -22,
-      filter: "blur(1.5rem)"
+      yPercent: 22,
+      filter: "blur(2rem)"
     });
 
     gsap.fromTo(
       mainTitle,
       {
         opacity: 0,
-        yPercent: -22,
-        filter: "blur(1.5rem)"
+        yPercent: 22,
+        filter: "blur(2rem)"
       },
       {
         opacity: 1,
-        yPercent: -8,
+        yPercent: -16,
         filter: "blur(0rem)",
         overwrite: "auto",
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top 120%",
-          end: "top 76%",
+          start: "top 132%",
+          end: "top 68%",
           scrub: 0.5
         }
       }
@@ -585,19 +623,19 @@ function animateArticleThreeTextBlocks(gsap, article) {
       mainTitle,
       {
         opacity: 1,
-        yPercent: -8,
+        yPercent: -16,
         filter: "blur(0rem)"
       },
       {
         opacity: 0,
-        yPercent: -72,
+        yPercent: -86,
         filter: "blur(4rem)",
         overwrite: "auto",
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=110%",
-          end: "top -=158%",
+          start: "top -=90%",
+          end: "top -=138%",
           scrub: 0.5
         }
       }
@@ -627,8 +665,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
           immediateRender: false,
           scrollTrigger: {
             trigger: article,
-            start: `top -=${22 + index * 8}%`,
-            end: `top -=${38 + index * 8}%`,
+            start: `top -=${14 + index * 8}%`,
+            end: `top -=${32 + index * 8}%`,
             scrub: 0.5
           }
         }
@@ -649,8 +687,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
           immediateRender: false,
           scrollTrigger: {
             trigger: article,
-            start: `top -=${192 + index * 9}%`,
-            end: `top -=${232 + index * 9}%`,
+            start: `top -=${210 + index * 9}%`,
+            end: `top -=${252 + index * 9}%`,
             scrub: 0.5
           }
         }
@@ -680,8 +718,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=248%",
-          end: "top -=292%",
+          start: "top -=268%",
+          end: "top -=312%",
           scrub: 0.5
         }
       }
@@ -718,8 +756,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=164%",
-          end: "top -=204%",
+          start: "top -=148%",
+          end: "top -=188%",
           scrub: 0.5
         }
       }
@@ -740,8 +778,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=348%",
-          end: "top -=398%",
+          start: "top -=338%",
+          end: "top -=388%",
           scrub: 0.5
         }
       }
