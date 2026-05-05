@@ -545,14 +545,14 @@ function animateArticleThreeTextBlocks(gsap, article) {
   const fillerText = filler ? filler.querySelector(".animate-text, h1, h2, h3, p") : null;
 
   gsap.set(article, {
-    height: "300vh"
+    height: "200vh"
   });
 
   if (mainTitle) {
     gsap.set(mainTitle, {
       opacity: 0,
       yPercent: -22,
-      filter: "blur(1.5rem)"
+      filter: "blur(4rem)"
     });
 
     gsap.fromTo(
@@ -560,7 +560,7 @@ function animateArticleThreeTextBlocks(gsap, article) {
       {
         opacity: 0,
         yPercent: -22,
-        filter: "blur(1.5rem)"
+        filter: "blur(4rem)"
       },
       {
         opacity: 1,
@@ -570,7 +570,7 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top 120%",
+          start: "top 150%",
           end: "top 76%",
           scrub: 0.5
         }
