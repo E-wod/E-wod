@@ -364,7 +364,7 @@ function animateArticleFixedLayer(gsap, article, index) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top bottom",
+          start: "top 115%",
           end: "top top",
           scrub: 0.5
         }
