@@ -609,7 +609,7 @@ function animateArticleThreeTextBlocks(gsap, article) {
         {
           opacity: 0,
           yPercent: 72,
-          filter: "blur(1.5rem)"
+          filter: "blur(4rem)"
         },
         {
           opacity: 1,
@@ -619,8 +619,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
           immediateRender: false,
           scrollTrigger: {
             trigger: article,
-            start: `top -=${38 + index * 8}%`,
-            end: `top -=${52 + index * 8}%`,
+            start: `top -=${2 + index * 8}%`,
+            end: `top -=${35 + index * 10}%`,
             scrub: 0.5
           }
         }
@@ -635,14 +635,14 @@ function animateArticleThreeTextBlocks(gsap, article) {
         },
         {
           opacity: 0,
-          yPercent: -76,
-          filter: "blur(4rem)",
+          yPercent: -5,
+          filter: "blur(1.5rem)",
           overwrite: "auto",
           immediateRender: false,
           scrollTrigger: {
             trigger: article,
-            start: `top -=${154 + index * 9}%`,
-            end: `top -=${188 + index * 9}%`,
+            start: `top -=${103 + index * 10}%`,
+            end: `top -=${90 + index * 19}%`,
             scrub: 0.5
           }
         }
@@ -666,15 +666,15 @@ function animateArticleThreeTextBlocks(gsap, article) {
       },
       {
         opacity: 0,
-        yPercent: -28,
-        filter: "blur(4rem)",
+        yPercent: -45,
+        filter: "blur(1.5rem)",
         overwrite: "auto",
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=205%",
-          end: "top -=245%",
-          scrub: 0.5
+          start: "top -=200%",
+          end: "top -=180%",
+          scrub: 2.0
         }
       }
     );
