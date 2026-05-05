@@ -542,111 +542,24 @@ function animateArticleThreeTextBlocks(gsap, article) {
   const lines = Array.from(article.querySelectorAll(".text-blocks p"));
   const textBlocks = article.querySelector(".text-blocks");
   const filler = article.querySelector(".filler");
-  const fillerText = filler ? filler.querySelector(".animate-text, h1, h2, h3, p") : null;
+
+  gsap.set(article, {
+    minHeight: "350vh"
+  });
 
   if (mainTitle) {
     gsap.set(mainTitle, {
       opacity: 0,
-      yPercent: -25,
-      filter: "blur(1.5rem)"
+      yPercent: 35,
+      filter: "blur(2rem)"
     });
-
-    gsap.fromTo(
-      mainTitle,
-      {
-        opacity: 0,
-        yPercent: -25,
-        filter: "blur(4rem)"
-      },
-      {
-        opacity: 1,
-        yPercent: -8,
-        filter: "blur(0rem)",
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          start: "top 24%",
-          end: "top 5%",
-          scrub: 0.5
-        }
-      }
-    );
-
-    gsap.fromTo(
-      mainTitle,
-      {
-        opacity: 1,
-        yPercent: -8,
-        filter: "blur(0rem)"
-      },
-      {
-        opacity: 0,
-        yPercent: -72,
-        filter: "blur(4rem)",
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          start: "top -=52%",
-          end: "top -=114%",
-          scrub: 0.5
-        }
-      }
-    );
   }
 
   if (lines.length) {
-    lines.forEach((line, index) => {
-      gsap.set(line, {
-        opacity: 0,
-        yPercent: 72,
-        filter: "blur(1.5rem)"
-      });
-
-      gsap.fromTo(
-        line,
-        {
-          opacity: 0,
-          yPercent: 72,
-          filter: "blur(4rem)"
-        },
-        {
-          opacity: 1,
-          yPercent: 0,
-          filter: "blur(0rem)",
-          overwrite: "auto",
-          immediateRender: false,
-          scrollTrigger: {
-            trigger: article,
-            start: `top -=${2 + index * 8}%`,
-            end: `top -=${35 + index * 10}%`,
-            scrub: 0.5
-          }
-        }
-      );
-
-      gsap.fromTo(
-        line,
-        {
-          opacity: 1,
-          yPercent: 0,
-          filter: "blur(0rem)"
-        },
-        {
-          opacity: 0,
-          yPercent: -28,
-          filter: "blur(2.25rem)",
-          overwrite: "auto",
-          immediateRender: false,
-          scrollTrigger: {
-            trigger: article,
-            start: `top -=${105 + index * 14}%`,
-            end: `top -=${135 + index * 14}%`,
-            scrub: 0.5
-          }
-        }
-      );
+    gsap.set(lines, {
+      opacity: 0,
+      yPercent: 70,
+      filter: "blur(2rem)"
     });
   }
 
@@ -656,87 +569,132 @@ function animateArticleThreeTextBlocks(gsap, article) {
       yPercent: 0,
       filter: "blur(0rem)"
     });
-
-    gsap.fromTo(
-      textBlocks,
-      {
-        opacity: 1,
-        yPercent: 0,
-        filter: "blur(0rem)"
-      },
-      {
-        opacity: 0,
-        yPercent: -45,
-        filter: "blur(2.25rem)",
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          start: "top -=170%",
-          end: "top -=215%",
-          scrub: 0.75
-        }
-      }
-    );
   }
 
   if (filler) {
     gsap.set(filler, {
       opacity: 0,
-      yPercent: 22,
-      filter: "blur(1.5rem)"
+      yPercent: 35,
+      filter: "blur(2rem)"
     });
+  }
 
-    if (fillerText) {
-      gsap.set(fillerText, {
-        opacity: 1,
-        yPercent: 0,
-        filter: "blur(0rem)"
-      });
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: article,
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 0.5
     }
+  });
 
-    gsap.fromTo(
-      filler,
+  if (mainTitle) {
+    tl.fromTo(
+      mainTitle,
       {
         opacity: 0,
-        yPercent: 22,
-        filter: "blur(1.5rem)"
+        yPercent: 35,
+        filter: "blur(2rem)"
+      },
+      {
+        opacity: 1,
+        yPercent: -8,
+        filter: "blur(0rem)",
+        duration: 0.14,
+        overwrite: "auto"
+      },
+      0.02
+    );
+
+    tl.to(
+      mainTitle,
+      {
+        opacity: 0,
+        yPercent: -70,
+        filter: "blur(4rem)",
+        duration: 0.16,
+        overwrite: "auto"
+      },
+      0.25
+    );
+  }
+
+  lines.forEach((line, index) => {
+    const enterAt = 0.18 + index * 0.045;
+    const exitAt = 0.52 + index * 0.045;
+
+    tl.fromTo(
+      line,
+      {
+        opacity: 0,
+        yPercent: 70,
+        filter: "blur(2rem)"
       },
       {
         opacity: 1,
         yPercent: 0,
         filter: "blur(0rem)",
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          start: "top -=205%",
-          end: "top -=235%",
-          scrub: 0.5
-        }
-      }
+        duration: 0.08,
+        overwrite: "auto"
+      },
+      enterAt
     );
 
-    gsap.fromTo(
+    tl.to(
+      line,
+      {
+        opacity: 0,
+        yPercent: -45,
+        filter: "blur(3rem)",
+        duration: 0.1,
+        overwrite: "auto"
+      },
+      exitAt
+    );
+  });
+
+  if (textBlocks) {
+    tl.to(
+      textBlocks,
+      {
+        opacity: 0,
+        yPercent: -30,
+        filter: "blur(3rem)",
+        duration: 0.12,
+        overwrite: "auto"
+      },
+      0.72
+    );
+  }
+
+  if (filler) {
+    tl.fromTo(
       filler,
+      {
+        opacity: 0,
+        yPercent: 35,
+        filter: "blur(2rem)"
+      },
       {
         opacity: 1,
         yPercent: 0,
-        filter: "blur(0rem)"
+        filter: "blur(0rem)",
+        duration: 0.12,
+        overwrite: "auto"
       },
+      0.68
+    );
+
+    tl.to(
+      filler,
       {
         opacity: 0,
         yPercent: -45,
         filter: "blur(4rem)",
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: article,
-          start: "top -=260%",
-          end: "top -=310%",
-          scrub: 0.5
-        }
-      }
+        duration: 0.14,
+        overwrite: "auto"
+      },
+      0.86
     );
   }
 }
