@@ -552,7 +552,7 @@ function animateArticleThreeTextBlocks(gsap, article) {
     gsap.set(mainTitle, {
       opacity: 0,
       yPercent: -22,
-      filter: "blur(4rem)"
+      filter: "blur(0rem)"
     });
 
     gsap.fromTo(
@@ -570,8 +570,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top 150%",
-          end: "top 76%",
+          start: "top 180%",
+          end: "top 45%",
           scrub: 0.5
         }
       }
@@ -592,8 +592,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=82%",
-          end: "top -=124%",
+          start: "top 100%",
+          end: "top 124%",
           scrub: 0.5
         }
       }
