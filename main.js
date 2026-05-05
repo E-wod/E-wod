@@ -304,7 +304,7 @@ function animateExternalStartPanel(gsap, section) {
         scrollTrigger: {
           trigger: section,
           start: "top top",
-          end: "bottom 60%",
+          end: "bottom 110%",
           scrub: 0.5
         }
       }
@@ -433,7 +433,7 @@ function animateArticleImage(gsap, article, index) {
 
   if (!img) return;
 
-  const startScale = index === 0 ? 1.65 : 1.45;
+  const startScale = index === 0 ? 1.95 : 1.25;
 
   gsap.set(img, {
     opacity: 1,
