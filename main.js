@@ -303,7 +303,7 @@ function animateExternalStartPanel(gsap, section) {
         immediateRender: false,
         scrollTrigger: {
           trigger: section,
-          start: "top top",
+          start: "top 75%",
           end: "bottom 54%",
           scrub: 0.5
         }
