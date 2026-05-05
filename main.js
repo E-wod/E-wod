@@ -268,7 +268,10 @@ function runExternalScrollAnimation(root) {
 
 function animateExternalStartPanel(gsap, section) {
   const fixed = section.querySelector(".fixed");
-  const textItems = Array.from(section.querySelectorAll(".content h1, .content h2, .content h3, .content > p"));
+  const content = section.querySelector(".content");
+  const textItems = content
+    ? Array.from(content.querySelectorAll("h1, h2, h3, p"))
+    : [];
 
   if (!fixed) return;
 
@@ -283,6 +286,7 @@ function animateExternalStartPanel(gsap, section) {
 
   gsap.set(textItems, {
     opacity: 1,
+    y: 0,
     yPercent: 0,
     filter: "blur(0rem)"
   });
@@ -292,19 +296,19 @@ function animateExternalStartPanel(gsap, section) {
       item,
       {
         opacity: 1,
-        yPercent: 0,
+        y: 0,
         filter: "blur(0rem)"
       },
       {
         opacity: 0,
-        yPercent: -95 - index * 10,
+        y: -260 - index * 46,
         filter: "blur(4rem)",
         overwrite: "auto",
         immediateRender: false,
         scrollTrigger: {
           trigger: section,
           start: "top top",
-          end: "bottom 54%",
+          end: "bottom top",
           scrub: 0.5
         }
       }
@@ -320,8 +324,8 @@ function animateExternalStartPanel(gsap, section) {
       immediateRender: false,
       scrollTrigger: {
         trigger: section,
-        start: "bottom 78%",
-        end: "bottom 42%",
+        start: "bottom 82%",
+        end: "bottom 34%",
         scrub: 0.5
       }
     }
@@ -592,8 +596,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=82%",
-          end: "top -=124%",
+          start: "top -=110%",
+          end: "top -=158%",
           scrub: 0.5
         }
       }
@@ -623,8 +627,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
           immediateRender: false,
           scrollTrigger: {
             trigger: article,
-            start: `top -=${38 + index * 8}%`,
-            end: `top -=${52 + index * 8}%`,
+            start: `top -=${22 + index * 8}%`,
+            end: `top -=${38 + index * 8}%`,
             scrub: 0.5
           }
         }
@@ -645,8 +649,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
           immediateRender: false,
           scrollTrigger: {
             trigger: article,
-            start: `top -=${154 + index * 9}%`,
-            end: `top -=${188 + index * 9}%`,
+            start: `top -=${192 + index * 9}%`,
+            end: `top -=${232 + index * 9}%`,
             scrub: 0.5
           }
         }
@@ -676,8 +680,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=205%",
-          end: "top -=245%",
+          start: "top -=248%",
+          end: "top -=292%",
           scrub: 0.5
         }
       }
@@ -714,8 +718,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=218%",
-          end: "top -=248%",
+          start: "top -=164%",
+          end: "top -=204%",
           scrub: 0.5
         }
       }
@@ -736,8 +740,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=278%",
-          end: "top -=318%",
+          start: "top -=348%",
+          end: "top -=398%",
           scrub: 0.5
         }
       }
@@ -868,6 +872,7 @@ function resetExternalAnimationState(root) {
     ),
     {
       opacity: 1,
+      y: 0,
       yPercent: 0,
       filter: "blur(0rem)"
     }
