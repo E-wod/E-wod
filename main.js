@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   startImageWheels();
   initExternalScrollAnimation();
   initLoopToTopOnBottom();
-}); 
+});
 
 /* IMAGE READY / FADE-IN HANDLING */
 function applyImageReady(scope = document) {
@@ -303,7 +303,7 @@ function animateExternalStartPanel(gsap, section) {
         immediateRender: false,
         scrollTrigger: {
           trigger: section,
-          start: "top 75%",
+          start: "top top",
           end: "bottom 54%",
           scrub: 0.5
         }
