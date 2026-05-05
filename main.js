@@ -291,13 +291,13 @@ function animateExternalStartPanel(gsap, section) {
     gsap.fromTo(
       item,
       {
-      //   opacity: 1,
-      //   yPercent: 0,
-      //   filter: "blur(0rem)"
-      // },
-      // {
+        opacity: 1,
+        yPercent: 0,
+        filter: "blur(0rem)"
+      },
+      {
         opacity: 0,
-        yPercent: -35 - index * 10,
+        yPercent: -95 - index * 10,
         filter: "blur(4rem)",
         overwrite: "auto",
         immediateRender: false,
@@ -433,7 +433,7 @@ function animateArticleImage(gsap, article, index) {
 
   if (!img) return;
 
-  const startScale = index === 0 ? 1.85 : 1.45;
+  const startScale = index === 0 ? 1.65 : 1.45;
 
   gsap.set(img, {
     opacity: 1,
