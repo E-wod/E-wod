@@ -268,9 +268,7 @@ function runExternalScrollAnimation(root) {
 
 function animateExternalStartPanel(gsap, section) {
   const fixed = section.querySelector(".fixed");
-  const content = section.querySelector(".content");
-  const h3 = content ? content.querySelector("h3") : null;
-  const p = content ? content.querySelector("p") : null;
+  const textItems = Array.from(section.querySelectorAll(".content h1, .content h2, .content h3, .content > p"));
 
   if (!fixed) return;
 
@@ -283,65 +281,35 @@ function animateExternalStartPanel(gsap, section) {
     yPercent: 0
   });
 
-  if (h3) {
-    gsap.set(h3, {
-      opacity: 1,
-      y: 0,
-      filter: "blur(0rem)"
-    });
+  gsap.set(textItems, {
+    opacity: 1,
+    yPercent: 0,
+    filter: "blur(0rem)"
+  });
 
+  textItems.forEach((item, index) => {
     gsap.fromTo(
-      h3,
+      item,
       {
         opacity: 1,
-        y: 0,
+        yPercent: 0,
         filter: "blur(0rem)"
       },
       {
         opacity: 0,
-        y: -390,
+        yPercent: -95 - index * 10,
         filter: "blur(4rem)",
         overwrite: "auto",
         immediateRender: false,
         scrollTrigger: {
           trigger: section,
           start: "top top",
-          end: "bottom -18%",
+          end: "bottom 54%",
           scrub: 0.5
         }
       }
     );
-  }
-
-  if (p) {
-    gsap.set(p, {
-      opacity: 1,
-      y: 0,
-      filter: "blur(0rem)"
-    });
-
-    gsap.fromTo(
-      p,
-      {
-        opacity: 1,
-        y: 0,
-        filter: "blur(0rem)"
-      },
-      {
-        opacity: 0,
-        y: -230,
-        filter: "blur(4rem)",
-        overwrite: "auto",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: section,
-          start: "top top",
-          end: "bottom 4%",
-          scrub: 0.5
-        }
-      }
-    );
-  }
+  });
 
   gsap.fromTo(
     fixed,
@@ -352,8 +320,8 @@ function animateExternalStartPanel(gsap, section) {
       immediateRender: false,
       scrollTrigger: {
         trigger: section,
-        start: "bottom 88%",
-        end: "bottom 34%",
+        start: "bottom 78%",
+        end: "bottom 42%",
         scrub: 0.5
       }
     }
@@ -396,8 +364,8 @@ function animateArticleFixedLayer(gsap, article, index) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top 125%",
-          end: "top 8%",
+          start: "top bottom",
+          end: "top top",
           scrub: 0.5
         }
       }
@@ -499,16 +467,6 @@ function animateArticleImage(gsap, article, index) {
 function animateArticleTitle(gsap, article, index) {
   if (index === 2) return;
 
-  if (index === 3) {
-    animateTextGroup(gsap, article, {
-      enterStart: "top 108%",
-      enterEnd: "top 52%",
-      exitStart: "top 18%",
-      exitEnd: "top -28%"
-    });
-    return;
-  }
-
   animateTextGroup(gsap, article, {
     enterStart: "top 72%",
     enterEnd: "top 34%",
@@ -593,27 +551,27 @@ function animateArticleThreeTextBlocks(gsap, article) {
   if (mainTitle) {
     gsap.set(mainTitle, {
       opacity: 0,
-      yPercent: 22,
-      filter: "blur(2rem)"
+      yPercent: -22,
+      filter: "blur(1.5rem)"
     });
 
     gsap.fromTo(
       mainTitle,
       {
         opacity: 0,
-        yPercent: 22,
-        filter: "blur(2rem)"
+        yPercent: -22,
+        filter: "blur(1.5rem)"
       },
       {
         opacity: 1,
-        yPercent: -16,
+        yPercent: -8,
         filter: "blur(0rem)",
         overwrite: "auto",
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top 132%",
-          end: "top 68%",
+          start: "top 120%",
+          end: "top 76%",
           scrub: 0.5
         }
       }
@@ -623,19 +581,19 @@ function animateArticleThreeTextBlocks(gsap, article) {
       mainTitle,
       {
         opacity: 1,
-        yPercent: -16,
+        yPercent: -8,
         filter: "blur(0rem)"
       },
       {
         opacity: 0,
-        yPercent: -86,
+        yPercent: -72,
         filter: "blur(4rem)",
         overwrite: "auto",
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=90%",
-          end: "top -=138%",
+          start: "top -=82%",
+          end: "top -=124%",
           scrub: 0.5
         }
       }
@@ -665,8 +623,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
           immediateRender: false,
           scrollTrigger: {
             trigger: article,
-            start: `top -=${14 + index * 8}%`,
-            end: `top -=${32 + index * 8}%`,
+            start: `top -=${38 + index * 8}%`,
+            end: `top -=${52 + index * 8}%`,
             scrub: 0.5
           }
         }
@@ -687,8 +645,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
           immediateRender: false,
           scrollTrigger: {
             trigger: article,
-            start: `top -=${210 + index * 9}%`,
-            end: `top -=${252 + index * 9}%`,
+            start: `top -=${154 + index * 9}%`,
+            end: `top -=${188 + index * 9}%`,
             scrub: 0.5
           }
         }
@@ -718,8 +676,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=268%",
-          end: "top -=312%",
+          start: "top -=205%",
+          end: "top -=245%",
           scrub: 0.5
         }
       }
@@ -756,8 +714,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=148%",
-          end: "top -=188%",
+          start: "top -=218%",
+          end: "top -=248%",
           scrub: 0.5
         }
       }
@@ -778,8 +736,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=338%",
-          end: "top -=388%",
+          start: "top -=278%",
+          end: "top -=318%",
           scrub: 0.5
         }
       }
@@ -910,7 +868,6 @@ function resetExternalAnimationState(root) {
     ),
     {
       opacity: 1,
-      y: 0,
       yPercent: 0,
       filter: "blur(0rem)"
     }
