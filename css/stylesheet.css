@@ -978,7 +978,8 @@ p {
 }
 
 .external-scroll-animation .filler h2,
-.external-scroll-animation .filler h3 {
+.external-scroll-animation .filler h3,
+.external-scroll-animation .filler p {
   width: 80%;
   max-width: min(920px, 92vw);
   font-size: clamp(1.65rem, 2.35vw, 4.25rem);
