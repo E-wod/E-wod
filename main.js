@@ -635,14 +635,14 @@ function animateArticleThreeTextBlocks(gsap, article) {
         },
         {
           opacity: 0,
-          yPercent: -5,
-          filter: "blur(1.5rem)",
+          yPercent: -28,
+          filter: "blur(2.25rem)",
           overwrite: "auto",
           immediateRender: false,
           scrollTrigger: {
             trigger: article,
-            start: `top -=${103 + index * 10}%`,
-            end: `top -=${90 + index * 19}%`,
+            start: `top -=${105 + index * 14}%`,
+            end: `top -=${135 + index * 14}%`,
             scrub: 0.5
           }
         }
@@ -667,14 +667,14 @@ function animateArticleThreeTextBlocks(gsap, article) {
       {
         opacity: 0,
         yPercent: -45,
-        filter: "blur(1.5rem)",
+        filter: "blur(2.25rem)",
         overwrite: "auto",
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=200%",
-          end: "top -=180%",
-          scrub: 2.0
+          start: "top -=170%",
+          end: "top -=215%",
+          scrub: 0.75
         }
       }
     );
@@ -684,7 +684,7 @@ function animateArticleThreeTextBlocks(gsap, article) {
     gsap.set(filler, {
       opacity: 0,
       yPercent: 22,
-      filter: "blur(1.25rem)"
+      filter: "blur(1.5rem)"
     });
 
     if (fillerText) {
@@ -700,7 +700,7 @@ function animateArticleThreeTextBlocks(gsap, article) {
       {
         opacity: 0,
         yPercent: 22,
-        filter: "blur(1.25rem)"
+        filter: "blur(1.5rem)"
       },
       {
         opacity: 1,
@@ -710,8 +710,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=218%",
-          end: "top -=248%",
+          start: "top -=205%",
+          end: "top -=235%",
           scrub: 0.5
         }
       }
@@ -726,14 +726,14 @@ function animateArticleThreeTextBlocks(gsap, article) {
       },
       {
         opacity: 0,
-        yPercent: -48,
+        yPercent: -45,
         filter: "blur(4rem)",
         overwrite: "auto",
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top -=278%",
-          end: "top -=318%",
+          start: "top -=260%",
+          end: "top -=310%",
           scrub: 0.5
         }
       }
