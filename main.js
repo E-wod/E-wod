@@ -433,7 +433,7 @@ function animateArticleImage(gsap, article, index) {
 
   if (!img) return;
 
-  const startScale = index === 0 ? 1.95 : 1.25;
+  const startScale = index === 0 ? 5.75 : 5.25;
 
   gsap.set(img, {
     opacity: 1,
@@ -468,9 +468,9 @@ function animateArticleTitle(gsap, article, index) {
   if (index === 2) return;
 
   animateTextGroup(gsap, article, {
-    enterStart: "top 72%",
-    enterEnd: "top 34%",
-    exitStart: "bottom 76%",
+    enterStart: "top 40%",
+    enterEnd: "top 25%",
+    exitStart: "bottom 70%",
     exitEnd: "bottom 42%"
   });
 }
@@ -544,22 +544,18 @@ function animateArticleThreeTextBlocks(gsap, article) {
   const filler = article.querySelector(".filler");
   const fillerText = filler ? filler.querySelector(".animate-text, h1, h2, h3, p") : null;
 
-  gsap.set(article, {
-    height: "200vh"
-  });
-
   if (mainTitle) {
     gsap.set(mainTitle, {
       opacity: 0,
-      yPercent: -22,
-      filter: "blur(0rem)"
+      yPercent: -25,
+      filter: "blur(1.5rem)"
     });
 
     gsap.fromTo(
       mainTitle,
       {
         opacity: 0,
-        yPercent: -22,
+        yPercent: -25,
         filter: "blur(4rem)"
       },
       {
@@ -570,8 +566,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top 180%",
-          end: "top 45%",
+          start: "top 24%",
+          end: "top 5%",
           scrub: 0.5
         }
       }
@@ -592,8 +588,8 @@ function animateArticleThreeTextBlocks(gsap, article) {
         immediateRender: false,
         scrollTrigger: {
           trigger: article,
-          start: "top 100%",
-          end: "top 124%",
+          start: "top -=52%",
+          end: "top -=114%",
           scrub: 0.5
         }
       }
