@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   startImageWheels();
   initExternalScrollAnimation();
   initLoopToTopOnBottom();
-});
+}); 
 
 /* IMAGE READY / FADE-IN HANDLING */
 function applyImageReady(scope = document) {
