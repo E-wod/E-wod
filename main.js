@@ -545,7 +545,7 @@ function animateArticleThreeTextBlocks(gsap, article) {
   const fillerText = filler ? filler.querySelector(".animate-text, h1, h2, h3, p") : null;
 
   gsap.set(article, {
-    height: "400vh"
+    height: "300vh"
   });
 
   if (mainTitle) {
