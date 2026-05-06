@@ -284,6 +284,7 @@ body.index-page .header {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
   animation: textclip 2s infinite reverse linear;
 }
 
@@ -637,6 +638,21 @@ p {
   pointer-events: none;
 }
 
+.external-scroll-animation::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.42s ease;
+}
+
+.external-scroll-animation.is-reset-cover::after {
+  opacity: 1;
+}
+
 .external-scroll-animation.is-looping-out {
   opacity: 0;
   transition: opacity 0.42s ease;
@@ -684,9 +700,9 @@ p {
   inset: 0;
   z-index: 3;
   background:
-    radial-gradient(circle at 20% 15%, rgba(3,153,158,0.10), transparent 45%),
-    radial-gradient(circle at 75% 78%, rgba(98,28,148,0.10), transparent 50%),
-    linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.30));
+    radial-gradient(circle at 20% 15%, rgba(3,153,158,0.08), transparent 48%),
+    radial-gradient(circle at 75% 78%, rgba(98,28,148,0.08), transparent 54%),
+    linear-gradient(180deg, rgba(0,0,0,0.03), rgba(0,0,0,0.12));
   pointer-events: none;
 }
 
@@ -773,7 +789,35 @@ p {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
   animation: textclip 2s infinite reverse linear;
+}
+
+.external-scroll-animation article .content h1,
+.external-scroll-animation article .content h2,
+.external-scroll-animation article .content h3,
+.external-scroll-animation article .content > p,
+.external-scroll-animation .text-blocks,
+.external-scroll-animation .text-blocks p {
+  opacity: 0;
+  filter: blur(2rem);
+}
+
+.external-scroll-animation .external-panel-start .content h1,
+.external-scroll-animation .external-panel-start .content h2,
+.external-scroll-animation .external-panel-start .content h3,
+.external-scroll-animation .external-panel-start .content > p {
+  opacity: 1;
+  filter: blur(0rem);
+}
+
+.external-scroll-animation article:last-of-type .content h1,
+.external-scroll-animation article:last-of-type .content h2,
+.external-scroll-animation article:last-of-type .content h3,
+.external-scroll-animation article:last-of-type .content > p {
+  opacity: 0;
+  filter: blur(2rem);
+  transform: translateY(35%);
 }
 
 .external-scroll-animation .content > p,
@@ -788,7 +832,6 @@ p {
   box-shadow: var(--glass-shadow);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  filter: blur(0rem);
   will-change: opacity, transform, filter;
 }
 
@@ -959,42 +1002,155 @@ p {
 
 .external-scroll-animation .filler {
   display: none;
-  filter: none;
-  will-change: opacity, transform, filter;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  will-change: opacity, transform;
 }
 
 .external-scroll-animation .filler.is-active {
-  align-content: center;
-  justify-items: center;
-  text-align: center;
   display: block;
   width: 100%;
   position: absolute;
   bottom: 46vh;
   padding: 1rem;
-  background:
-    radial-gradient(circle at 20% 15%, rgba(3,153,158,0.22), transparent 34%),
-    radial-gradient(circle at 75% 78%, rgba(98,28,148,0.2), transparent 38%);
+  z-index: 15;
+  isolation: isolate;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.external-scroll-animation .filler.is-active::before {
+  display: none !important;
+  content: none !important;
 }
 
 .external-scroll-animation .filler h2,
 .external-scroll-animation .filler h3,
 .external-scroll-animation .filler p {
-  width: 80%;
-  max-width: min(920px, 92vw);
-  font-size: clamp(1.65rem, 2.35vw, 4.25rem);
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  filter: none;
-  padding: 0;
-  margin: 0 auto;
-  will-change: opacity, transform, filter;
+  position: relative;
+  z-index: 2;
+  background: transparent !important;
+  color: transparent !important;
+  background-image: var(--text-gradient) !important;
+  background-size: 200% auto !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  animation: textclip 2s infinite reverse linear !important;
 }
 
 /* RESPONSIVE */
+@media (max-width: 1024px) {
+  .external-scroll-animation {
+    min-height: 100dvh;
+    overflow: hidden;
+    background: #000 !important;
+  }
+
+  .external-scroll-animation > section:nth-of-type(1),
+  .external-scroll-animation article {
+    min-height: 100dvh;
+    height: auto;
+  }
+
+  .external-scroll-animation > section:nth-of-type(1) {
+    height: 100dvh;
+  }
+
+  .external-scroll-animation .fixed {
+    position: fixed !important;
+    inset: 0;
+    width: 100%;
+    min-height: 100dvh;
+    height: 100dvh;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .external-scroll-animation .fixed img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .external-scroll-animation .static {
+    position: absolute !important;
+    inset: 0;
+    min-height: 100dvh;
+  }
+
+  .external-scroll-animation .content {
+    width: min(94vw, 760px);
+    min-height: 100dvh;
+    height: 100dvh;
+    padding: clamp(7rem, 18dvh, 12rem) 1rem 3rem;
+    align-content: center;
+  }
+
+  .external-scroll-animation h1,
+  .external-scroll-animation h2,
+  .external-scroll-animation h3 {
+    width: 94%;
+    max-width: 94vw;
+    font-size: clamp(1.15rem, 5.6vw, 2.7rem);
+    line-height: 1.12;
+  }
+
+  .external-scroll-animation .content > p {
+    max-width: 90vw;
+    font-size: clamp(0.95rem, 3.6vw, 1.25rem);
+  }
+
+  .external-scroll-animation > section:nth-of-type(2) article:first-of-type .content {
+    padding: clamp(7rem, 18dvh, 12rem) 1rem 3rem;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .external-scroll-animation > section:nth-of-type(2) article:first-of-type .text-wrap,
+  .external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap,
+  .external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap h2 {
+    width: 94vw;
+    max-width: 94vw;
+    text-align: center;
+  }
+
+  .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
+    min-height: 460dvh !important;
+  }
+
+  .external-scroll-animation .chat-container {
+    min-height: 100dvh;
+    height: 100dvh;
+    position: sticky;
+    top: 0;
+  }
+
+  .external-scroll-animation .text-blocks {
+    width: min(34ch, 88vw);
+    gap: clamp(0.75rem, 4dvh, 1.35rem);
+  }
+
+  .external-scroll-animation .text-blocks p {
+    font-size: clamp(1rem, 4.8vw, 1.75rem);
+    padding: 0.72rem 0.82rem;
+  }
+
+  .external-scroll-animation .filler.is-active {
+    bottom: 43dvh;
+  }
+
+  .external-scroll-animation .filler p,
+  .external-scroll-animation .filler h2,
+  .external-scroll-animation .filler h3 {
+    width: 94vw;
+    font-size: clamp(1.2rem, 6vw, 2.35rem);
+  }
+}
+
 @media (max-width: 768px) {
   body.index-page {
     height: 100svh;
@@ -1190,6 +1346,23 @@ p {
 
   .wheel-card {
     width: clamp(165px, 66vw, 275px);
+  }
+
+  .external-scroll-animation .fixed img {
+    object-position: center;
+    transform-origin: center center;
+  }
+
+  .external-scroll-animation .content {
+    padding-top: clamp(8.5rem, 24dvh, 13rem);
+  }
+
+  .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
+    min-height: 500dvh !important;
+  }
+
+  .external-scroll-animation .text-blocks {
+    gap: clamp(0.65rem, 3.3dvh, 1.1rem);
   }
 }
 
