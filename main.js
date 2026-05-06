@@ -702,7 +702,7 @@ function animateArticleThreeTextBlocks(gsap, article) {
 
   lines.forEach((line, index) => {
     const enterAt = isTabletOrPhone ? 0.16 + index * 0.05 : 0.25 + index * 0.038;
-    const exitAt = isTabletOrPhone ? 0.60 + index * 0.048 : 0.61 + index * 0.048;
+    const exitAt = isTabletOrPhone ? 0.60 + index * 0.048 : 0.61 + index * 0.045;
 
     tl.fromTo(
       line,
