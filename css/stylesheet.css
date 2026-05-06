@@ -311,8 +311,10 @@ body.index-page .header {
   height: var(--logo-size-desktop);
   align-items: center;
   justify-content: center;
-  animation: logoAnim 2.5s;
+  animation: logoAnim 2.7s cubic-bezier(.17,.84,.44,1) forwards;
   border-radius: var(--radius-md);
+  transform-origin: center center;
+  will-change: transform, opacity, filter;
 }
 
 .navLogo img,
