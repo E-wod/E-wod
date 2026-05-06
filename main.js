@@ -5,6 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
   initLoopToTopOnBottom();
 });
 
+document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+document.addEventListener("keydown", (event) => {
+  if ([123, 17, 18].some((key) => event.ctrlKey && event.shiftKey && key === event.which)) {
+    event.preventDefault();
+  }
+});
+
 /* IMAGE READY / FADE-IN HANDLING */
 function applyImageReady(scope = document) {
   scope.querySelectorAll("img").forEach((img) => {
@@ -153,6 +161,10 @@ function startImageWheels() {
 
         lastWindowWidth = currentWidth;
         restartWheels();
+
+        if (window.ScrollTrigger) {
+          window.ScrollTrigger.refresh(true);
+        }
       }, 450);
     },
     { passive: true }
@@ -228,6 +240,10 @@ function runExternalScrollAnimation(root) {
 
   gsap.registerPlugin(ScrollTrigger);
 
+  ScrollTrigger.config({
+    ignoreMobileResize: true
+  });
+
   const { firstSection, articles } = getExternalAnimationParts(root);
 
   if (!firstSection || !articles.length) return;
@@ -242,7 +258,11 @@ function runExternalScrollAnimation(root) {
   gsap.set(root.querySelectorAll(".fixed"), {
     position: "fixed",
     inset: 0,
+    x: 0,
+    y: 0,
+    yPercent: 0,
     opacity: 0,
+    filter: "blur(0rem)",
     zIndex: 1
   });
 
@@ -250,6 +270,9 @@ function runExternalScrollAnimation(root) {
     opacity: 1,
     visibility: "visible",
     zIndex: 2,
+    x: 0,
+    y: 0,
+    yPercent: 0,
     transformOrigin: "50% 50%"
   });
 
@@ -259,11 +282,37 @@ function runExternalScrollAnimation(root) {
     zIndex: 6
   });
 
+  hideAllAnimatedText(gsap, root);
   animateExternalStartPanel(gsap, firstSection);
   animateExternalArticles(gsap, articles);
 
   ScrollTrigger.clearScrollMemory();
   ScrollTrigger.refresh(true);
+}
+
+function hideAllAnimatedText(gsap, root) {
+  gsap.set(
+    root.querySelectorAll(
+      "article .content h1, article .content h2, article .content h3, article .content > p, .text-blocks, .text-blocks p"
+    ),
+    {
+      opacity: 0,
+      yPercent: 35,
+      filter: "blur(2rem)"
+    }
+  );
+
+  gsap.set(root.querySelectorAll(".filler"), {
+    opacity: 1,
+    yPercent: 0,
+    filter: "none"
+  });
+
+  gsap.set(root.querySelectorAll(".filler h1, .filler h2, .filler h3, .filler p"), {
+    opacity: 0,
+    yPercent: 35,
+    filter: "blur(2rem)"
+  });
 }
 
 function animateExternalStartPanel(gsap, section) {
@@ -274,10 +323,10 @@ function animateExternalStartPanel(gsap, section) {
 
   gsap.set(fixed, {
     opacity: 1,
+    filter: "blur(0rem)",
     zIndex: 5,
-    transformOrigin: "50% 0%",
-    scaleX: 1,
-    scaleY: 1,
+    x: 0,
+    y: 0,
     yPercent: 0
   });
 
@@ -343,6 +392,13 @@ function animateArticleFixedLayer(gsap, article, index) {
   const fixed = article.querySelector(".fixed");
 
   if (!fixed) return;
+
+  gsap.set(fixed, {
+    x: 0,
+    y: 0,
+    yPercent: 0,
+    filter: "blur(0rem)"
+  });
 
   if (index === 0) {
     gsap.set(fixed, {
@@ -433,12 +489,17 @@ function animateArticleImage(gsap, article, index) {
 
   if (!img) return;
 
-  const startScale = index === 0 ? 5.75 : 5.25;
+  const isTabletOrPhone = window.matchMedia("(max-width: 1024px)").matches;
+  const isPhone = window.matchMedia("(max-width: 600px)").matches;
+  const startScale = isPhone ? 2.65 : isTabletOrPhone ? 3.35 : index === 0 ? 5.75 : 5.25;
 
   gsap.set(img, {
     opacity: 1,
     visibility: "visible",
     zIndex: 2,
+    x: 0,
+    y: 0,
+    yPercent: 0,
     scale: startScale,
     transformOrigin: "50% 50%"
   });
@@ -447,10 +508,16 @@ function animateArticleImage(gsap, article, index) {
     img,
     {
       scale: startScale,
+      x: 0,
+      y: 0,
+      yPercent: 0,
       opacity: 1
     },
     {
       scale: 1,
+      x: 0,
+      y: 0,
+      yPercent: 0,
       opacity: 1,
       overwrite: "auto",
       immediateRender: false,
@@ -467,11 +534,13 @@ function animateArticleImage(gsap, article, index) {
 function animateArticleTitle(gsap, article, index) {
   if (index === 2) return;
 
+  const isTabletOrPhone = window.matchMedia("(max-width: 1024px)").matches;
+
   animateTextGroup(gsap, article, {
-    enterStart: "top 40%",
-    enterEnd: "top 25%",
-    exitStart: "bottom 70%",
-    exitEnd: "bottom 42%"
+    enterStart: isTabletOrPhone ? "top 55%" : "top 40%",
+    enterEnd: isTabletOrPhone ? "top 35%" : "top 25%",
+    exitStart: isTabletOrPhone ? "bottom 78%" : "bottom 70%",
+    exitEnd: isTabletOrPhone ? "bottom 50%" : "bottom 42%"
   });
 }
 
@@ -484,9 +553,9 @@ function animateTextGroup(gsap, scope, timing) {
 
   textItems.forEach((textItem, index) => {
     gsap.set(textItem, {
-      opacity: 1,
-      yPercent: 0,
-      filter: "blur(0rem)"
+      opacity: 0,
+      yPercent: 80,
+      filter: "blur(1.75rem)"
     });
 
     gsap.fromTo(
@@ -538,13 +607,17 @@ function animateTextGroup(gsap, scope, timing) {
 function animateArticleThreeTextBlocks(gsap, article) {
   if (!article) return;
 
+  const isTabletOrPhone = window.matchMedia("(max-width: 1024px)").matches;
+  const isPhone = window.matchMedia("(max-width: 600px)").matches;
+
   const mainTitle = article.querySelector(".article-three-title");
   const lines = Array.from(article.querySelectorAll(".text-blocks p"));
   const textBlocks = article.querySelector(".text-blocks");
   const filler = article.querySelector(".filler");
+  const fillerText = filler ? Array.from(filler.querySelectorAll("h1, h2, h3, p")) : [];
 
   gsap.set(article, {
-    minHeight: "350vh"
+    minHeight: isPhone ? "500dvh" : isTabletOrPhone ? "460dvh" : "350vh"
   });
 
   if (mainTitle) {
@@ -573,6 +646,14 @@ function animateArticleThreeTextBlocks(gsap, article) {
 
   if (filler) {
     gsap.set(filler, {
+      opacity: 1,
+      yPercent: 0,
+      filter: "none"
+    });
+  }
+
+  if (fillerText.length) {
+    gsap.set(fillerText, {
       opacity: 0,
       yPercent: 35,
       filter: "blur(2rem)"
@@ -594,34 +675,34 @@ function animateArticleThreeTextBlocks(gsap, article) {
       {
         opacity: 0,
         yPercent: 35,
-        filter: "blur(2rem)"
+        filter: "blur(4rem)"
       },
       {
         opacity: 1,
-        yPercent: -8,
+        yPercent: isTabletOrPhone ? -16 : -8,
         filter: "blur(0rem)",
         duration: 0.14,
         overwrite: "auto"
       },
-      0.02
+      0.07
     );
 
     tl.to(
       mainTitle,
       {
         opacity: 0,
-        yPercent: -70,
+        yPercent: isTabletOrPhone ? -95 : -70,
         filter: "blur(4rem)",
         duration: 0.16,
         overwrite: "auto"
       },
-      0.25
+      0.45
     );
   }
 
   lines.forEach((line, index) => {
-    const enterAt = 0.18 + index * 0.045;
-    const exitAt = 0.52 + index * 0.045;
+    const enterAt = isTabletOrPhone ? 0.16 + index * 0.05 : 0.25 + index * 0.038;
+    const exitAt = isTabletOrPhone ? 0.60 + index * 0.048 : 0.61 + index * 0.048;
 
     tl.fromTo(
       line,
@@ -644,9 +725,9 @@ function animateArticleThreeTextBlocks(gsap, article) {
       line,
       {
         opacity: 0,
-        yPercent: -45,
+        yPercent: isTabletOrPhone ? -58 : -45,
         filter: "blur(3rem)",
-        duration: 0.1,
+        duration: 0.06,
         overwrite: "auto"
       },
       exitAt
@@ -658,43 +739,43 @@ function animateArticleThreeTextBlocks(gsap, article) {
       textBlocks,
       {
         opacity: 0,
-        yPercent: -30,
+        yPercent: isTabletOrPhone ? -42 : -30,
         filter: "blur(3rem)",
-        duration: 0.12,
+        duration: 0.08,
         overwrite: "auto"
       },
-      0.72
+      0.92
     );
   }
 
-  if (filler) {
+  if (filler && fillerText.length) {
     tl.fromTo(
-      filler,
+      fillerText,
       {
         opacity: 0,
         yPercent: 35,
-        filter: "blur(2rem)"
+        filter: "blur(4rem)"
       },
       {
         opacity: 1,
         yPercent: 0,
         filter: "blur(0rem)",
-        duration: 0.12,
+        duration: 0.10,
         overwrite: "auto"
       },
-      0.68
+      0.76
     );
 
     tl.to(
-      filler,
+      fillerText,
       {
         opacity: 0,
-        yPercent: -45,
+        yPercent: isTabletOrPhone ? -62 : -45,
         filter: "blur(4rem)",
-        duration: 0.14,
+        duration: 0.38,
         overwrite: "auto"
       },
-      0.86
+      0.001
     );
   }
 }
@@ -703,11 +784,22 @@ function animateFinalArticle(gsap, article) {
   if (!article) return;
 
   const fixed = article.querySelector(".fixed");
+  const finalText = article.querySelectorAll(".content h1, .content h2, .content h3, .content > p");
 
   if (!fixed) return;
 
+  gsap.set(finalText, {
+    opacity: 0,
+    filter: "blur(2rem)",
+    yPercent: 35
+  });
+
   gsap.set(fixed, {
     opacity: 0,
+    filter: "blur(0rem)",
+    x: 0,
+    y: 0,
+    yPercent: 0,
     clipPath: "ellipse(220% 200% at 50% 300%)",
     zIndex: 6
   });
@@ -716,10 +808,12 @@ function animateFinalArticle(gsap, article) {
     fixed,
     {
       opacity: 0,
+      filter: "blur(0rem)",
       clipPath: "ellipse(220% 200% at 50% 300%)"
     },
     {
       opacity: 1,
+      filter: "blur(0rem)",
       clipPath: "ellipse(220% 200% at 50% 175%)",
       overwrite: "auto",
       immediateRender: false,
@@ -757,7 +851,7 @@ function initLoopToTopOnBottom() {
       if (!bottomReached) return;
 
       isLooping = true;
-      root.classList.add("is-looping-out");
+      root.classList.add("is-reset-cover");
 
       setTimeout(() => {
         window.scrollTo({
@@ -780,15 +874,20 @@ function initLoopToTopOnBottom() {
             window.ScrollTrigger.update();
           }
 
-          root.classList.remove("is-looping-out");
           root.classList.add("is-looping-in");
+
+          requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+              root.classList.remove("is-reset-cover");
+            });
+          });
 
           setTimeout(() => {
             root.classList.remove("is-looping-in");
             isLooping = false;
-          }, 520);
-        }, 100);
-      }, 420);
+          }, 620);
+        }, 120);
+      }, 460);
     },
     { passive: true }
   );
@@ -805,7 +904,13 @@ function resetExternalAnimationState(root) {
   });
 
   gsap.set(root.querySelectorAll(".fixed"), {
+    position: "fixed",
+    inset: 0,
+    x: 0,
+    y: 0,
+    yPercent: 0,
     opacity: 0,
+    filter: "blur(0rem)",
     zIndex: 1
   });
 
@@ -813,30 +918,61 @@ function resetExternalAnimationState(root) {
     opacity: 1,
     visibility: "visible",
     scale: 1,
+    x: 0,
+    y: 0,
+    yPercent: 0,
     zIndex: 2
   });
 
   gsap.set(
     root.querySelectorAll(
-      "h1, h2, h3, p, .text-blocks, .text-blocks p, .filler, .filler h2, .filler h3, .filler p"
+      "article .content h1, article .content h2, article .content h3, article .content > p, .text-blocks, .text-blocks p"
     ),
     {
-      opacity: 1,
-      yPercent: 0,
-      filter: "blur(0rem)"
+      opacity: 0,
+      yPercent: 35,
+      filter: "blur(2rem)"
     }
   );
+
+  gsap.set(root.querySelectorAll(".filler"), {
+    opacity: 1,
+    yPercent: 0,
+    filter: "none"
+  });
+
+  gsap.set(root.querySelectorAll(".filler h1, .filler h2, .filler h3, .filler p"), {
+    opacity: 0,
+    yPercent: 35,
+    filter: "blur(2rem)"
+  });
 
   const firstFixed =
     root.querySelector(".external-panel-start .fixed") ||
     root.querySelector(":scope > section:first-of-type .fixed");
 
+  const firstText = root.querySelectorAll(
+    ".external-panel-start .content h1, .external-panel-start .content h2, .external-panel-start .content h3, .external-panel-start .content > p"
+  );
+
   if (firstFixed) {
     gsap.set(firstFixed, {
+      position: "fixed",
       opacity: 1,
+      filter: "blur(0rem)",
       zIndex: 5,
+      x: 0,
+      y: 0,
+      yPercent: 0,
       scaleX: 1,
-      scaleY: 1,
+      scaleY: 1
+    });
+  }
+
+  if (firstText.length) {
+    gsap.set(firstText, {
+      opacity: 1,
+      filter: "blur(0rem)",
       yPercent: 0
     });
   }
