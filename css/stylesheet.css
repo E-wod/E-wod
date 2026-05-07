@@ -92,94 +92,18 @@ li {
 }
 
 @keyframes logoAnim {
-  0% {
-    opacity: 0;
-    transform: scale(0.88);
-    filter:
-      brightness(0%)
-      contrast(140%)
-      saturate(0%)
-      blur(10px)
-      drop-shadow(0 0 0 rgba(31,221,228,0));
-    clip-path: inset(0 100% 0 0);
-  }
-
-  18% {
-    opacity: 1;
-    clip-path: inset(0 78% 0 0);
-    filter:
-      brightness(180%)
-      contrast(180%)
-      saturate(180%)
-      blur(5px)
-      drop-shadow(0 0 18px rgba(31,221,228,0.75));
-  }
-
-  42% {
-    clip-path: inset(0 38% 0 0);
-    transform: scale(0.94);
-    filter:
-      brightness(240%)
-      contrast(160%)
-      saturate(220%)
-      blur(2px)
-      drop-shadow(0 0 30px rgba(31,221,228,0.9));
-  }
-
-  68% {
-    clip-path: inset(0 0 0 0);
-    transform: scale(1.035);
-    filter:
-      brightness(210%)
-      contrast(135%)
-      saturate(190%)
-      blur(0)
-      drop-shadow(0 0 26px rgba(31,221,228,0.8))
-      drop-shadow(0 0 44px rgba(3,153,158,0.35));
-  }
-
-  84% {
-    transform: scale(0.985);
-    filter:
-      brightness(125%)
-      contrast(115%)
-      saturate(150%)
-      blur(0)
-      drop-shadow(0 0 14px rgba(31,221,228,0.42));
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-    clip-path: inset(0 0 0 0);
-    filter:
-      brightness(112%)
-      contrast(108%)
-      saturate(135%)
-      blur(0)
-      drop-shadow(0 0 10px rgba(3,153,158,0.38));
-  }
-}
-
-@keyframes logoPulse {
-  0%, 100% {
-    transform: translateY(0) scale(1);
-    filter:
-      brightness(108%)
-      contrast(108%)
-      saturate(135%)
-      drop-shadow(0 0 8px rgba(3,153,158,0.32));
-  }
-
-  50% {
-    transform: translateY(-1px) scale(1.018);
-    filter:
-      brightness(132%)
-      contrast(112%)
-      saturate(160%)
-      drop-shadow(0 0 14px rgba(31,221,228,0.58))
-      drop-shadow(0 0 28px rgba(3,153,158,0.22));
-  }
+  0% { opacity: 0; transform: scale(0); }
+  45% { transform: scale(0.25); filter: brightness(60%); }
+  50% { transform: scale(0.45); filter: brightness(40%); }
+  55% { transform: scale(0.35); filter: brightness(70%); }
+  60% { transform: scale(0.655); filter: brightness(50%); }
+  65% { transform: scale(0.55); filter: brightness(80%); }
+  70% { transform: scale(0.75); filter: brightness(60%); }
+  75% { transform: scale(0.65); filter: brightness(90%); }
+  80% { transform: scale(0.95); filter: brightness(70%); }
+  85% { transform: scale(0.85); filter: brightness(100%); }
+  90% { transform: scale(1.0175); filter: brightness(80%); }
+  100% { opacity: 1; transform: scale(1); filter: brightness(100%); }
 }
 
 @keyframes menuAnim {
@@ -236,8 +160,8 @@ body.index-page .header {
   height: var(--logo-size-desktop);
   align-items: center;
   justify-content: center;
+  animation: logoAnim 2.5s;
   border-radius: var(--radius-md);
-  transform-origin: center center;
 }
 
 .navLogo img,
@@ -245,11 +169,6 @@ body.index-page .header {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  animation:
-    logoAnim 2.25s cubic-bezier(.16, .84, .28, 1) forwards,
-    logoPulse 5.75s ease-in-out 2.25s infinite;
-  transform-origin: center center;
-  will-change: transform, opacity, filter, clip-path;
 }
 
 .beNook {
@@ -1447,9 +1366,7 @@ p {
   .btnBox a,
   .socLnk a,
   .navLogo a,
-  .navLogo img,
   .nav-logo,
-  .nav-logo img,
   .wheel-track,
   .wheel-card,
   .external-scroll-animation *,
