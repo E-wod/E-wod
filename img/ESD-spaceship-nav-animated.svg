@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="esd-spaceship-nav" xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc">
+  <title id="title">ESD animated spaceship navigation frame</title>
+  <desc id="desc">Transparent multilayer SVG navigation frame with editable spaceship hull, glowing cyan trims, scan lines, radar spinner, energy cores, and animated engine pulses. No text is included.</desc>
+
+  <defs>
+    <linearGradient id="hullGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07121b" stop-opacity=".92"/>
+      <stop offset=".42" stop-color="#02070d" stop-opacity=".88"/>
+      <stop offset="1" stop-color="#0b1f2c" stop-opacity=".94"/>
+    </linearGradient>
+
+    <linearGradient id="edgeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0af7ff" stop-opacity=".15"/>
+      <stop offset=".18" stop-color="#28f7ff"/>
+      <stop offset=".5" stop-color="#00a8ff"/>
+      <stop offset=".82" stop-color="#28f7ff"/>
+      <stop offset="1" stop-color="#0af7ff" stop-opacity=".18"/>
+    </linearGradient>
+
+    <linearGradient id="slotGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#06101a" stop-opacity=".78"/>
+      <stop offset=".5" stop-color="#00040a" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#06101a" stop-opacity=".78"/>
+    </linearGradient>
+
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset=".18" stop-color="#58fbff" stop-opacity=".95"/>
+      <stop offset=".48" stop-color="#00b7ff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#00b7ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="cyanGlow" x="-80%" y="-180%" width="260%" height="460%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 .02  0 0 0 0 .85  0 0 0 0 1  0 0 0 .9 0" result="blue"/>
+      <feMerge>
+        <feMergeNode in="blue"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-160%" y="-160%" width="420%" height="420%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 .02  0 0 0 0 .75  0 0 0 0 1  0 0 0 .75 0" result="blue"/>
+      <feMerge>
+        <feMergeNode in="blue"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow" x="-20%" y="-80%" width="140%" height="260%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#00131d" flood-opacity=".8"/>
+    </filter>
+
+    <clipPath id="navSlotClip">
+      <path d="M205 76 H887 L906 94 H996 Q1019 94 1029 110 Q1019 126 996 126 H906 L887 144 H205 L187 126 H130 Q103 126 91 110 Q103 94 130 94 H187 Z"/>
+    </clipPath>
+
+    <style><![CDATA[
+      #esd-spaceship-nav { overflow: visible; background: transparent; }
+      .hull { fill: url(#hullGrad); stroke: #07131d; stroke-width: 2; filter: url(#shadow); }
+      .dark-slot { fill: url(#slotGrad); stroke: rgba(0,247,255,.22); stroke-width: 1; }
+      .edge { fill: none; stroke: url(#edgeGrad); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; filter: url(#cyanGlow); }
+      .micro-edge { fill: none; stroke: #10eaff; stroke-opacity: .55; stroke-width: 1; stroke-linecap: round; filter: url(#cyanGlow); }
+      .panel-line { fill: none; stroke: #0af7ff; stroke-opacity: .28; stroke-width: 1; }
+      .glow-core { fill: url(#coreGlow); filter: url(#softGlow); transform-origin: center; animation: corePulse 2.7s ease-in-out infinite; }
+      .star-chip { fill: #39f8ff; filter: url(#cyanGlow); animation: chipBlink 4.2s ease-in-out infinite; }
+      .scan-line { stroke: #74fbff; stroke-width: 2; stroke-linecap: round; filter: url(#cyanGlow); animation: scanMove 3.8s linear infinite; }
+      .scan-line.two { animation-duration: 5.8s; animation-delay: -1.8s; opacity:.65; }
+      .dash-runner { stroke-dasharray: 115 760; animation: dashRun 5.5s linear infinite; }
+      .dash-runner.reverse { animation-direction: reverse; animation-duration: 6.7s; }
+      .radar-ring { fill: none; stroke: #20f5ff; stroke-opacity: .82; stroke-width: 2; filter: url(#cyanGlow); }
+      .radar-faint { fill: none; stroke: #20f5ff; stroke-opacity: .28; stroke-width: 1; }
+      .radar-sweep { fill: rgba(0,210,255,.18); stroke: #69fbff; stroke-opacity: .65; transform-origin: 1033px 110px; animation: radarSpin 3.6s linear infinite; filter: url(#cyanGlow); }
+      .right-engine { transform-origin: 1092px 110px; animation: engineBreath 2.4s ease-in-out infinite; }
+      .left-emblem { transform-origin: 109px 110px; animation: emblemHover 4.5s ease-in-out infinite; }
+      .fin { fill: #06121d; stroke: #0af7ff; stroke-width: 2; stroke-opacity:.9; filter: url(#cyanGlow); }
+      .button-boundary { fill: rgba(0,0,0,.01); stroke: #16eaff; stroke-width: 1; stroke-opacity: .18; stroke-dasharray: 6 8; }
+      @keyframes corePulse { 0%,100%{opacity:.72; transform:scale(.88)} 50%{opacity:1; transform:scale(1.16)} }
+      @keyframes chipBlink { 0%,76%,100%{opacity:.28} 80%,88%{opacity:1} }
+      @keyframes scanMove { from{transform:translateX(-760px); opacity:0} 10%{opacity:.9} 70%{opacity:.9} to{transform:translateX(920px); opacity:0} }
+      @keyframes dashRun { to{stroke-dashoffset:-875} }
+      @keyframes radarSpin { to{transform:rotate(360deg)} }
+      @keyframes engineBreath { 0%,100%{opacity:.74; transform:scale(.96)} 50%{opacity:1; transform:scale(1.04)} }
+      @keyframes emblemHover { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-3px)} }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    ]]></style>
+  </defs>
+
+  <!-- LAYER 01: transparent canvas / click-safe nav bounds -->
+  <g id="layer-01-click-button-boundaries" opacity="1">
+    <rect id="nav-click-area" x="286" y="82" width="610" height="56" rx="14" class="button-boundary"/>
+    <g id="suggested-button-slots">
+      <rect x="302" y="90" width="86" height="40" rx="10" class="button-boundary"/>
+      <rect x="398" y="90" width="86" height="40" rx="10" class="button-boundary"/>
+      <rect x="494" y="90" width="86" height="40" rx="10" class="button-boundary"/>
+      <rect x="590" y="90" width="86" height="40" rx="10" class="button-boundary"/>
+      <rect x="686" y="90" width="86" height="40" rx="10" class="button-boundary"/>
+      <rect x="782" y="90" width="86" height="40" rx="10" class="button-boundary"/>
+    </g>
+  </g>
+
+  <!-- LAYER 02: soft external glows -->
+  <g id="layer-02-soft-glows">
+    <ellipse cx="108" cy="110" rx="103" ry="62" fill="#00d9ff" opacity=".14" filter="url(#softGlow)"/>
+    <ellipse cx="1033" cy="110" rx="84" ry="56" fill="#00d9ff" opacity=".14" filter="url(#softGlow)"/>
+    <rect x="135" y="83" width="860" height="54" rx="22" fill="#00d9ff" opacity=".06" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- LAYER 03: main spaceship hull silhouette -->
+  <g id="layer-03-main-hull">
+    <path class="hull" d="M26 58 H184 L205 73 H872 L897 88 H994 Q1014 88 1028 70 H1168 L1136 103 L1169 110 L1136 117 L1168 162 H1028 Q1014 132 994 132 H897 L872 147 H205 L184 162 H26 L57 119 L37 110 L57 101 Z"/>
+    <path class="dark-slot" d="M209 82 H870 L891 98 H998 Q1010 98 1017 110 Q1010 122 998 122 H891 L870 138 H209 L191 122 H132 Q112 122 102 110 Q112 98 132 98 H191 Z"/>
+  </g>
+
+  <!-- LAYER 04: left ESD-inspired spaceship emblem -->
+  <g id="layer-04-left-emblem" class="left-emblem">
+    <circle cx="109" cy="110" r="57" fill="#02070d" stroke="#0af7ff" stroke-width="3" filter="url(#cyanGlow)"/>
+    <circle cx="109" cy="110" r="45" fill="none" stroke="#67fbff" stroke-width="1.5" opacity=".55"/>
+    <path class="fin" d="M109 52 L139 139 L109 123 L79 139 Z"/>
+    <path class="fin" d="M109 52 L109 123 L93 97 Z" opacity=".72"/>
+    <path class="fin" d="M109 52 L125 97 L109 123 Z" opacity=".9"/>
+    <path class="edge" d="M56 91 L92 91 L73 106 L109 110 L145 106 L126 91 L163 91" opacity=".95"/>
+    <circle cx="109" cy="110" r="8" class="glow-core"/>
+  </g>
+
+  <!-- LAYER 05: editable nav button deck / empty text zone -->
+  <g id="layer-05-empty-button-deck" clip-path="url(#navSlotClip)">
+    <rect x="292" y="88" width="610" height="44" rx="12" fill="#02070d" opacity=".62"/>
+    <path class="panel-line" d="M300 90 V130 M396 90 V130 M492 90 V130 M588 90 V130 M684 90 V130 M780 90 V130 M876 90 V130"/>
+    <path class="scan-line" d="M302 103 H878"/>
+    <path class="scan-line two" d="M302 119 H878"/>
+  </g>
+
+  <!-- LAYER 06: armor plates and trim details -->
+  <g id="layer-06-trim-and-armor">
+    <path class="edge dash-runner" d="M33 63 H179 L203 78 H867 L892 93 H992 Q1016 93 1031 74 H1152"/>
+    <path class="edge dash-runner reverse" d="M33 157 H179 L203 142 H867 L892 127 H992 Q1016 127 1031 146 H1152"/>
+    <path class="edge" d="M131 86 H337 L354 99 H750 L768 86 H928" opacity=".82"/>
+    <path class="edge" d="M131 134 H337 L354 121 H750 L768 134 H928" opacity=".82"/>
+    <path class="micro-edge" d="M260 67 H456 L466 76 M483 67 H675 M717 67 H852 L866 76"/>
+    <path class="micro-edge" d="M260 153 H456 L466 144 M483 153 H675 M717 153 H852 L866 144"/>
+    <path class="micro-edge" d="M1035 75 L1080 75 L1097 93 M1035 145 L1080 145 L1097 127"/>
+    <path class="micro-edge" d="M1107 74 L1134 97 M1107 146 L1134 123"/>
+    <circle cx="620" cy="78" r="2.5" class="star-chip"/>
+    <circle cx="748" cy="137" r="2" class="star-chip" style="animation-delay:-1.3s"/>
+    <circle cx="536" cy="111" r="1.8" class="star-chip" style="animation-delay:-2.1s"/>
+    <circle cx="931" cy="86" r="2.3" class="star-chip" style="animation-delay:-.7s"/>
+  </g>
+
+  <!-- LAYER 07: right radar / engine pod -->
+  <g id="layer-07-right-radar-engine" class="right-engine">
+    <circle cx="1033" cy="110" r="50" fill="#02070d" stroke="#0af7ff" stroke-width="3" filter="url(#cyanGlow)"/>
+    <circle cx="1033" cy="110" r="39" class="radar-ring"/>
+    <circle cx="1033" cy="110" r="26" class="radar-faint"/>
+    <circle cx="1033" cy="110" r="12" class="radar-faint"/>
+    <path class="radar-sweep" d="M1033 110 L1033 72 A38 38 0 0 1 1066 91 Z"/>
+    <path class="micro-edge" d="M1033 72 V148 M995 110 H1071" opacity=".75"/>
+    <circle cx="1033" cy="110" r="6" class="glow-core"/>
+  </g>
+
+  <!-- LAYER 08: side fins / spaceship exhaust accents -->
+  <g id="layer-08-fins-and-exhaust">
+    <path class="fin" d="M19 57 L62 57 L43 83 Z"/>
+    <path class="fin" d="M19 163 L62 163 L43 137 Z"/>
+    <path class="fin" d="M1159 57 L1182 57 L1151 91 L1120 91 Z"/>
+    <path class="fin" d="M1159 163 L1182 163 L1151 129 L1120 129 Z"/>
+    <path class="edge" d="M1109 93 H1160 M1109 127 H1160" opacity=".8"/>
+    <ellipse cx="1124" cy="110" rx="22" ry="7" fill="url(#coreGlow)" opacity=".55" filter="url(#softGlow)">
+      <animate attributeName="rx" values="14;26;14" dur="1.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".25;.75;.25" dur="1.9s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+</svg>
