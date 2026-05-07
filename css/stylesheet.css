@@ -15,9 +15,9 @@
   --glass-border: rgba(255,255,255,0.22);
   --glass-shadow: 0 8px 28px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.18);
   --glass-glow: 0 0 14px rgba(3,153,158,0.35), 0 0 28px rgba(255,255,255,0.12);
-  --logo-size-desktop: 100px;
-  --logo-size-tablet: 90px;
-  --logo-size-mobile: 82px;
+  --logo-size-desktop: 145px;
+  --logo-size-tablet: 125px;
+  --logo-size-mobile: 105px;
   --wheel-gap: clamp(10px, 1.25vw, 20px);
   --wheel-card-width: clamp(230px, 28vw, 500px);
 }
