@@ -94,101 +94,91 @@ li {
 @keyframes logoAnim {
   0% {
     opacity: 0;
-    transform: scale(0.08) rotate(-18deg) skewX(-8deg);
-    filter: brightness(20%) contrast(90%) saturate(60%) blur(10px) drop-shadow(0 0 0 rgba(3,153,158,0));
-  }
-
-  6% {
-    transform: scale(0.14) rotate(12deg) skewX(7deg) translateX(-8px);
-    filter: brightness(300%) contrast(180%) saturate(260%) blur(6px) drop-shadow(0 0 28px rgba(31,221,228,0.95));
-  }
-
-  11% {
-    transform: scale(0.22) rotate(-10deg) skewX(-10deg) translateX(10px);
-    filter: brightness(65%) contrast(220%) saturate(200%) blur(1px) drop-shadow(0 0 16px rgba(255,0,100,0.7));
+    transform: scale(0.88);
+    filter:
+      brightness(0%)
+      contrast(140%)
+      saturate(0%)
+      blur(10px)
+      drop-shadow(0 0 0 rgba(31,221,228,0));
+    clip-path: inset(0 100% 0 0);
   }
 
   18% {
-    transform: scale(0.38) rotate(8deg) skewX(5deg) translateX(-6px);
-    filter: brightness(340%) contrast(170%) saturate(320%) blur(3px) drop-shadow(0 0 34px rgba(31,221,228,1)) drop-shadow(0 0 52px rgba(255,0,100,0.42));
+    opacity: 1;
+    clip-path: inset(0 78% 0 0);
+    filter:
+      brightness(180%)
+      contrast(180%)
+      saturate(180%)
+      blur(5px)
+      drop-shadow(0 0 18px rgba(31,221,228,0.75));
   }
 
-  26% {
-    transform: scale(0.55) rotate(-7deg) skewX(-6deg) translateX(5px);
-    filter: brightness(85%) contrast(135%) saturate(160%) blur(0.5px) drop-shadow(0 0 12px rgba(3,153,158,0.55));
+  42% {
+    clip-path: inset(0 38% 0 0);
+    transform: scale(0.94);
+    filter:
+      brightness(240%)
+      contrast(160%)
+      saturate(220%)
+      blur(2px)
+      drop-shadow(0 0 30px rgba(31,221,228,0.9));
   }
 
-  38% {
-    transform: scale(1.22) rotate(5deg) skewX(4deg) translateX(-3px);
-    filter: brightness(260%) contrast(150%) saturate(240%) blur(0) drop-shadow(0 0 28px rgba(31,221,228,0.92)) drop-shadow(0 0 46px rgba(255,0,100,0.36));
+  68% {
+    clip-path: inset(0 0 0 0);
+    transform: scale(1.035);
+    filter:
+      brightness(210%)
+      contrast(135%)
+      saturate(190%)
+      blur(0)
+      drop-shadow(0 0 26px rgba(31,221,228,0.8))
+      drop-shadow(0 0 44px rgba(3,153,158,0.35));
   }
 
-  50% {
-    transform: scale(0.82) rotate(-4deg) skewX(-3deg) translateX(3px);
-    filter: brightness(95%) contrast(120%) saturate(170%) blur(0) drop-shadow(0 0 14px rgba(3,153,158,0.48));
-  }
-
-  62% {
-    transform: scale(1.12) rotate(2deg) skewX(1deg);
-    filter: brightness(210%) contrast(135%) saturate(210%) blur(0) drop-shadow(0 0 24px rgba(31,221,228,0.82));
-  }
-
-  74% {
-    transform: scale(0.94) rotate(-1deg);
-    filter: brightness(105%) contrast(115%) saturate(150%) blur(0) drop-shadow(0 0 12px rgba(255,0,100,0.3));
-  }
-
-  86% {
-    transform: scale(1.04) rotate(0.5deg);
-    filter: brightness(170%) contrast(120%) saturate(190%) blur(0) drop-shadow(0 0 18px rgba(3,153,158,0.62));
+  84% {
+    transform: scale(0.985);
+    filter:
+      brightness(125%)
+      contrast(115%)
+      saturate(150%)
+      blur(0)
+      drop-shadow(0 0 14px rgba(31,221,228,0.42));
   }
 
   100% {
     opacity: 1;
-    transform: scale(1) rotate(0deg) skewX(0deg) translateX(0);
-    filter: brightness(115%) contrast(110%) saturate(150%) blur(0) drop-shadow(0 0 10px rgba(3,153,158,0.45));
+    transform: scale(1);
+    clip-path: inset(0 0 0 0);
+    filter:
+      brightness(112%)
+      contrast(108%)
+      saturate(135%)
+      blur(0)
+      drop-shadow(0 0 10px rgba(3,153,158,0.38));
   }
 }
 
 @keyframes logoPulse {
-  0% {
-    transform: scale(1) translateY(0);
-    filter: brightness(110%) saturate(145%) drop-shadow(0 0 8px rgba(3,153,158,0.35));
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    filter:
+      brightness(108%)
+      contrast(108%)
+      saturate(135%)
+      drop-shadow(0 0 8px rgba(3,153,158,0.32));
   }
 
-  12% {
-    transform: scale(1.025) translateY(-2px);
-    filter: brightness(150%) saturate(180%) drop-shadow(0 0 14px rgba(31,221,228,0.75)) drop-shadow(0 0 24px rgba(255,0,100,0.28));
-  }
-
-  24% {
-    transform: scale(0.992) translateY(1px);
-    filter: brightness(105%) saturate(135%) drop-shadow(0 0 10px rgba(255,0,100,0.22));
-  }
-
-  38% {
-    transform: scale(1.04) translateY(-3px);
-    filter: brightness(185%) saturate(220%) drop-shadow(0 0 20px rgba(31,221,228,0.9)) drop-shadow(0 0 34px rgba(3,153,158,0.38));
-  }
-
-  52% {
-    transform: scale(0.985) translateY(2px);
-    filter: brightness(95%) saturate(120%) drop-shadow(0 0 8px rgba(255,0,100,0.18));
-  }
-
-  68% {
-    transform: scale(1.03) translateY(-1px);
-    filter: brightness(160%) saturate(190%) drop-shadow(0 0 18px rgba(31,221,228,0.7));
-  }
-
-  82% {
-    transform: scale(0.995) translateY(1px);
-    filter: brightness(108%) saturate(145%) drop-shadow(0 0 10px rgba(3,153,158,0.32));
-  }
-
-  100% {
-    transform: scale(1) translateY(0);
-    filter: brightness(110%) saturate(145%) drop-shadow(0 0 8px rgba(3,153,158,0.35));
+  50% {
+    transform: translateY(-1px) scale(1.018);
+    filter:
+      brightness(132%)
+      contrast(112%)
+      saturate(160%)
+      drop-shadow(0 0 14px rgba(31,221,228,0.58))
+      drop-shadow(0 0 28px rgba(3,153,158,0.22));
   }
 }
 
@@ -256,10 +246,10 @@ body.index-page .header {
   height: 100%;
   object-fit: contain;
   animation:
-    logoAnim 2.7s cubic-bezier(.17,.84,.44,1) forwards,
-    logoPulse 4.5s ease-in-out 2.7s infinite;
+    logoAnim 2.25s cubic-bezier(.16, .84, .28, 1) forwards,
+    logoPulse 5.75s ease-in-out 2.25s infinite;
   transform-origin: center center;
-  will-change: transform, opacity, filter;
+  will-change: transform, opacity, filter, clip-path;
 }
 
 .beNook {
