@@ -174,7 +174,7 @@ body.index-page .header {
 .navLogo {
   position: relative;
   z-index: 50;
-  transform: translateY(-5px);
+  transform: translateY(-7px);
   width: clamp(160px, 15vw, var(--logo-size-desktop));
   height: var(--header-height-desktop);
   display: flex;
@@ -255,9 +255,9 @@ body.index-page .header {
   content: "";
   position: absolute;
   top: 50%;
-  left: 35%;
+  left: 40%;
   z-index: 1;
-  width: 175%;
+  width: 150%;
   height: clamp(105px, 9.5vw, 155px);
   pointer-events: none;
   background-image: url("../img/ESD-spaceship-nav-animated.svg");
@@ -295,7 +295,7 @@ body.index-page .header {
   min-width: 0;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   pointer-events: auto;
 }
@@ -305,11 +305,12 @@ body.index-page .header {
 .nav-menu {
   position: relative;
   z-index: 60;
-  width: 60%;
+  margin-left: 9%;
+  width: 62%;
   min-width: max-content;
-  max-width: 64%;
+  max-width: 62%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row !important;
   flex-wrap: nowrap;
