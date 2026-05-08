@@ -139,10 +139,10 @@ li {
   top: 0;
   z-index: 100;
   display: grid;
-  grid-template-columns: clamp(170px, 13vw, 235px) minmax(0, 1fr);
+  grid-template-columns: clamp(150px, 10vw, 215px) minmax(0, 1fr);
   align-items: center;
   gap: 0;
-  padding: 0;
+  padding: 0 clamp(0.35rem, 1.25vw, 1.35rem);
   background: var(--header-gradient);
   overflow: visible;
 }
@@ -155,11 +155,11 @@ body.index-page .header {
 
 .navLogo {
   position: relative;
-  z-index: 20;
+  z-index: 40;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: clamp(170px, 13vw, 235px);
+  width: clamp(150px, 10vw, 215px);
   height: 170px;
   flex-shrink: 0;
   padding: 0;
@@ -187,13 +187,12 @@ body.index-page .header {
 
 .beNook,
 .navBannerFrame {
-  object-fit: fill;
   position: relative;
   z-index: 10;
-  width: max-content;
-  height: 170px;
-  min-width: 100%;
+  width: 100%;
+  min-width: 0;
   max-width: none;
+  height: 170px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,20 +201,25 @@ body.index-page .header {
   animation: pAnim 3s ease forwards;
   background: none;
   overflow: visible;
+  isolation: isolate;
 }
 
 .beNook::before,
 .navBannerFrame::before {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 50%;
+  left: 50%;
   z-index: 1;
+  width: min(100%, 1620px);
+  min-width: 100%;
+  height: clamp(112px, 9vw, 150px);
   pointer-events: none;
   background-image: url("../img/ESD-spaceship-nav-animated.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;
-  transform: scaleX(1.65);
+  transform: translate(-50%, -50%) scaleX(clamp(1.04, 4.5vw, 1.32));
   transform-origin: center center;
   filter:
     drop-shadow(0 0 10px rgba(31,221,228,0.45))
@@ -230,8 +234,8 @@ body.index-page .header {
 .navBannerFrame .navBar {
   position: relative;
   z-index: 50;
-  width: max-content;
-  min-width: 100%;
+  width: min(96%, 1480px);
+  min-width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,20 +245,23 @@ body.index-page .header {
 .navBannerFrame .nav-menu {
   position: relative;
   z-index: 60;
-  width: max-content;
+  width: auto;
   min-width: max-content;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row !important;
   flex-wrap: nowrap;
-  gap: clamp(0.45rem, 1.2vw, 1.65rem);
-  padding: 0;
+  gap: clamp(0.42rem, 1.15vw, 1.65rem);
+  padding: 0 clamp(0.35rem, 1vw, 1rem);
   overflow: visible;
   white-space: nowrap;
 }
 
 .navBannerFrame .nav-item {
+  position: relative;
+  z-index: 65;
   padding: 0;
   color: var(--accent);
   font-size: clamp(0.9rem, 1.15vw, 1.3rem);
@@ -268,7 +275,7 @@ body.index-page .header {
   align-items: center;
   text-align: center;
   white-space: nowrap;
-  padding: 0.38rem clamp(0.38rem, 0.8vw, 0.95rem);
+  padding: 0.38rem clamp(0.46rem, 0.85vw, 1.05rem);
   color: var(--accent-bright);
   font-size: clamp(0.58rem, 0.9vw, 1.05rem);
   letter-spacing: 0.01em;
@@ -1268,12 +1275,14 @@ p {
     max-width: 100%;
     height: auto;
     min-height: 120px;
-    background-size: 100% 100%;
   }
 
   .beNook::before,
   .navBannerFrame::before {
-    transform: scaleX(1.05);
+    width: 100%;
+    min-width: 100%;
+    height: 116px;
+    transform: translate(-50%, -50%) scaleX(1.04);
   }
   
   .beNook img,
@@ -1326,11 +1335,15 @@ p {
   }
 
   .navBannerFrame .navBar {
-    width: 88%;
+    width: min(96%, 100%);
+    min-width: 0;
     justify-content: center;
   }
 
   .navBannerFrame .nav-menu {
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
     flex-direction: row !important;
     flex-wrap: nowrap;
     justify-content: center;
@@ -1451,13 +1464,18 @@ p {
   }
 
   .navBannerFrame .navBar {
-    width: 90%;
+    width: 96%;
+    min-width: 0;
   }
 
   .navBannerFrame .nav-menu {
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
     flex-direction: row !important;
     flex-wrap: nowrap;
     gap: clamp(0.08rem, 0.4vw, 0.3rem);
+    padding: 0 0.25rem;
   }
 
   .navBannerFrame .navBar a {
