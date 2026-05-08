@@ -144,12 +144,13 @@ li {
   z-index: 100;
   display: grid;
   grid-template-columns:
-    clamp(460px, 36vw, 760px)
-    minmax(920px, 1fr);
+    clamp(390px, 33vw, 620px)
+    minmax(620px, 1fr);
   align-items: center;
-  gap: clamp(0.25rem, 1vw, 1.25rem);
-  padding: 0 clamp(0.5rem, 1.5vw, 1.75rem);
-  background: var(--header-gradient);
+  gap: clamp(0.35rem, 0.75vw, 1rem);
+  padding: 0 clamp(0.75rem, 1.5vw, 1.75rem);
+  background:
+    linear-gradient(180deg, rgba(0,0,0,0.92), rgba(0,0,0,0.42) 65%, transparent);
   overflow: visible;
 }
 
@@ -167,22 +168,26 @@ body.index-page .header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: clamp(0.15rem, 0.8vw, 0.75rem);
+  gap: clamp(0rem, 0.35vw, 0.35rem);
+  padding: 0.25rem 0.75rem;
+  border-radius: 26px;
+  background: linear-gradient(90deg, rgba(0,0,0,0.46), rgba(0,0,0,0.12), transparent);
+  filter: drop-shadow(0 0 14px rgba(31,221,228,0.22));
   overflow: visible;
 }
 
 .navLogo {
   position: relative;
   z-index: 50;
-  transform: translateY(-7px);
-  width: clamp(160px, 15vw, var(--logo-size-desktop));
+  width: clamp(145px, 12vw, 185px);
   height: var(--header-height-desktop);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   padding: 0;
-  margin: 0 -0.35rem 0 0;
+  margin: 0 -0.55rem 0 0;
+  transform: translateY(-4px);
 }
 
 .navLogo a,
@@ -219,16 +224,16 @@ body.index-page .header {
 }
 
 .designWorksHeader img {
-  width: clamp(210px, 18vw, 345px);
-  transform: translateY(20px) scale(1.02);
+  width: clamp(190px, 16vw, 310px);
   max-width: none;
   height: auto;
   object-fit: contain;
   object-position: center;
+  transform: translateY(10px) scale(1.02);
   transform-origin: center center;
   filter:
-    drop-shadow(0 0 10px rgba(31,221,228,0.45))
-    drop-shadow(0 0 24px rgba(255,0,255,0.25));
+    drop-shadow(0 0 8px rgba(31,221,228,0.38))
+    drop-shadow(0 0 18px rgba(255,0,255,0.18));
 }
 
 .beNook,
@@ -255,10 +260,10 @@ body.index-page .header {
   content: "";
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 50%;
   z-index: 1;
-  width: 150%;
-  height: clamp(105px, 9.5vw, 155px);
+  width: 112%;
+  height: clamp(100px, 8.5vw, 140px);
   pointer-events: none;
   background-image: url("../img/ESD-spaceship-nav-animated.svg");
   background-repeat: no-repeat;
@@ -267,8 +272,8 @@ body.index-page .header {
   transform: translate(-50%, -50%);
   transform-origin: center center;
   filter:
-    drop-shadow(0 0 10px rgba(31,221,228,0.45))
-    drop-shadow(0 0 28px rgba(3,153,158,0.28));
+    drop-shadow(0 0 10px rgba(31,221,228,0.42))
+    drop-shadow(0 0 24px rgba(3,153,158,0.25));
 }
 
 .navBannerFrame > img,
@@ -305,17 +310,17 @@ body.index-page .header {
 .nav-menu {
   position: relative;
   z-index: 60;
-  margin-left: 9%;
-  width: 62%;
+  margin-left: 0;
+  width: 72%;
   min-width: max-content;
-  max-width: 62%;
+  max-width: 76%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: row !important;
   flex-wrap: nowrap;
-  gap: clamp(0.35rem, 0.9vw, 1.25rem);
-  padding: 0 clamp(0.25rem, 0.8vw, 1rem);
+  gap: clamp(0.25rem, 0.65vw, 0.85rem);
+  padding: 0;
   overflow: visible;
   white-space: nowrap;
 }
