@@ -134,12 +134,12 @@ li {
 
 .header {
   width: 100%;
-  min-height: 12svh;
+  min-height: 170px;
   position: sticky;
   top: 0;
   z-index: 100;
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-columns: auto 1fr;
   align-items: center;
   gap: 0.2rem;
   padding: 0rem 0.4rem;
@@ -159,9 +159,10 @@ body.index-page .header {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: center;
   flex-shrink: 0;
   padding: 0;
-  margin-top: -10px;
+  margin-top: 0;
 }
 
 .navLogo a,
@@ -190,9 +191,10 @@ body.index-page .header {
   z-index: 1;
   width: 100%;
   min-width: 0;
-  max-width: min(1200px, calc(100vw - var(--logo-size-desktop) - 2rem));
+  max-width: none;
+  height: 170px;
   display: flex;
-  justify-content: center;
+  justify-content: stretch;
   align-items: center;
   animation: pAnim 3s ease forwards;
   pointer-events: auto;
@@ -201,9 +203,10 @@ body.index-page .header {
 .beNook img,
 .navBannerFrame > img {
   width: 100%;
-  max-width: 1200px;
-  max-height: clamp(95px, 10vw, 175px);
-  object-fit: contain;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  object-fit: fill;
   pointer-events: none;
   filter:
     drop-shadow(0 0 10px rgba(31,221,228,0.45))
@@ -589,7 +592,7 @@ p {
   min-height: 100svh;
   max-height: 100svh;
   overflow: hidden;
-  padding: clamp(92px, 12svh, 135px) 0 clamp(18px, 3svh, 38px);
+  padding: clamp(170px, 20svh, 230px) 0 clamp(18px, 3svh, 38px);
   background: transparent;
   isolation: isolate;
 }
@@ -1240,6 +1243,14 @@ p {
   .beNook {
     width: 100%;
     max-width: 100%;
+    height: auto;
+  }
+
+  .beNook img,
+  .navBannerFrame > img {
+    height: auto;
+    max-height: clamp(95px, 20vw, 170px);
+    object-fit: contain;
   }
 
   .header {
@@ -1321,7 +1332,7 @@ p {
     height: 100svh;
     min-height: 100svh;
     max-height: 100svh;
-    padding: clamp(155px, 28svh, 230px) 0 24px;
+    padding: clamp(190px, 34svh, 260px) 0 24px;
   }
 
   .wheel-card {
