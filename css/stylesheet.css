@@ -236,10 +236,9 @@ body.index-page .header {
 
 .beNook,
 .navBannerFrame {
-  --banner-width: 100%;
+  --banner-width: 108%;
   --banner-nav-width: 68%;
-  --banner-height: clamp(100px, 8.5vw, 140px);
-
+  --banner-height: clamp(112px, 9.2vw, 158px);
   position: relative;
   z-index: 10;
   width: 100%;
