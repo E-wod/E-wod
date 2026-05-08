@@ -215,7 +215,7 @@ body.index-page .header {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;
-  transform: scaleX(1.35);
+  transform: scaleX(clamp(1.08, 8vw, 1.45));
   transform-origin: center center;
   filter:
     drop-shadow(0 0 10px rgba(31,221,228,0.45))
@@ -1269,6 +1269,11 @@ p {
     background-size: 100% 100%;
   }
 
+  .beNook::before,
+  .navBannerFrame::before {
+    transform: scaleX(1.05);
+  }
+  
   .beNook img,
   .navBannerFrame > img {
     display: none !important;
