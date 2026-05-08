@@ -15,9 +15,12 @@
   --glass-border: rgba(255,255,255,0.22);
   --glass-shadow: 0 8px 28px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.18);
   --glass-glow: 0 0 14px rgba(3,153,158,0.35), 0 0 28px rgba(255,255,255,0.12);
-  --logo-size-desktop: 165px;
-  --logo-size-tablet: 145px;
-  --logo-size-mobile: 125px;
+  --logo-size-desktop: 145px;
+  --logo-size-tablet: 125px;
+  --logo-size-mobile: 105px;
+  --header-height-desktop: 155px;
+  --header-height-tablet: 132px;
+  --header-height-mobile: 112px;
   --wheel-gap: clamp(10px, 1.25vw, 20px);
   --wheel-card-width: clamp(230px, 28vw, 500px);
 }
@@ -132,17 +135,19 @@ li {
   to { opacity: 1; }
 }
 
+/* HEADER / NAV */
+
 .header {
   width: 100%;
-  min-height: 170px;
+  min-height: var(--header-height-desktop);
   position: sticky;
   top: 0;
   z-index: 100;
   display: grid;
-  grid-template-columns: clamp(150px, 10vw, 215px) minmax(0, 1fr);
+  grid-template-columns: clamp(145px, 12vw, 210px) minmax(0, 1fr);
   align-items: center;
-  gap: 0;
-  padding: 0 clamp(0.35rem, 1.25vw, 1.35rem);
+  gap: clamp(0.25rem, 1vw, 1.25rem);
+  padding: 0 clamp(0.5rem, 1.5vw, 1.75rem);
   background: var(--header-gradient);
   overflow: visible;
 }
@@ -156,11 +161,12 @@ body.index-page .header {
 .navLogo {
   position: relative;
   z-index: 40;
+  width: clamp(125px, 10vw, var(--logo-size-desktop));
+  height: var(--header-height-desktop);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: clamp(150px, 10vw, 215px);
-  height: 170px;
+  justify-self: center;
   flex-shrink: 0;
   padding: 0;
   margin: 0;
@@ -180,6 +186,7 @@ body.index-page .header {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: center;
   transform-origin: center center;
   will-change: transform, opacity, filter;
   animation: logoReload 1.6s cubic-bezier(.16,.84,.28,1) forwards;
@@ -192,14 +199,14 @@ body.index-page .header {
   width: 100%;
   min-width: 0;
   max-width: none;
-  height: 170px;
+  height: var(--header-height-desktop);
   display: flex;
   align-items: center;
   justify-content: center;
   justify-self: stretch;
   pointer-events: auto;
   animation: pAnim 3s ease forwards;
-  background: none;
+  background: transparent;
   overflow: visible;
   isolation: isolate;
 }
@@ -211,15 +218,14 @@ body.index-page .header {
   top: 50%;
   left: 50%;
   z-index: 1;
-  width: min(100%, 1620px);
-  min-width: 100%;
-  height: clamp(112px, 9vw, 150px);
+  width: 100%;
+  height: clamp(82px, 7.8vw, 126px);
   pointer-events: none;
   background-image: url("../img/ESD-spaceship-nav-animated.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;
-  transform: translate(-50%, -50%) scaleX(clamp(1.04, 4.5vw, 1.32));
+  transform: translate(-50%, -50%);
   transform-origin: center center;
   filter:
     drop-shadow(0 0 10px rgba(31,221,228,0.45))
@@ -228,38 +234,55 @@ body.index-page .header {
 
 .navBannerFrame > img,
 .beNook > img {
-  display: none !important;
+  position: absolute;
+  inset: 50% auto auto 50%;
+  z-index: 1;
+  width: 100%;
+  height: clamp(82px, 7.8vw, 126px);
+  object-fit: fill;
+  object-position: center;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
-.navBannerFrame .navBar {
+.navBannerFrame .navBar,
+.beNook .navBar,
+.navBar {
   position: relative;
   z-index: 50;
-  width: min(96%, 1480px);
-  min-width: max-content;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   pointer-events: auto;
 }
 
-.navBannerFrame .nav-menu {
+.navBannerFrame .nav-menu,
+.beNook .nav-menu,
+.nav-menu {
   position: relative;
   z-index: 60;
-  width: auto;
+  width: 65%;
   min-width: max-content;
-  max-width: 100%;
+  max-width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row !important;
   flex-wrap: nowrap;
-  gap: clamp(0.42rem, 1.15vw, 1.65rem);
-  padding: 0 clamp(0.35rem, 1vw, 1rem);
+  gap: clamp(0.35rem, 0.9vw, 1.25rem);
+  padding: 0 clamp(0.25rem, 0.8vw, 1rem);
   overflow: visible;
   white-space: nowrap;
 }
 
-.navBannerFrame .nav-item {
+.navBannerFrame .nav-item,
+.beNook .nav-item,
+.nav-item {
   position: relative;
   z-index: 65;
   padding: 0;
@@ -268,7 +291,9 @@ body.index-page .header {
   font-family: Lobster, "Kristen ITC", Script;
 }
 
-.navBannerFrame .navBar a {
+.navBannerFrame .navBar a,
+.beNook .navBar a,
+.navBar a {
   position: relative;
   z-index: 70;
   justify-content: center;
@@ -277,7 +302,7 @@ body.index-page .header {
   white-space: nowrap;
   padding: 0.38rem clamp(0.46rem, 0.85vw, 1.05rem);
   color: var(--accent-bright);
-  font-size: clamp(0.58rem, 0.9vw, 1.05rem);
+  font-size: clamp(0.58rem, 0.82vw, 1rem);
   letter-spacing: 0.01em;
   font-family: Lobster, "Kristen ITC", Script;
   line-height: 1.05;
@@ -304,7 +329,9 @@ body.index-page .header {
     transform 0.35s ease;
 }
 
-.navBannerFrame .navBar a::before {
+.navBannerFrame .navBar a::before,
+.beNook .navBar a::before,
+.navBar a::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -321,7 +348,9 @@ body.index-page .header {
   z-index: -1;
 }
 
-.navBannerFrame .navBar a:hover {
+.navBannerFrame .navBar a:hover,
+.beNook .navBar a:hover,
+.navBar a:hover {
   color: var(--text);
   background: var(--glass-bg-hover);
   border-color: var(--glass-border);
@@ -333,24 +362,10 @@ body.index-page .header {
   transform: translateY(-1px);
 }
 
-.navBannerFrame .navBar a:hover::before {
+.navBannerFrame .navBar a:hover::before,
+.beNook .navBar a:hover::before,
+.navBar a:hover::before {
   opacity: 1;
-}
-
-.nav-menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 0.3rem;
-  padding: 4px;
-  overflow: visible;
-}
-
-.nav-item {
-  color: var(--accent);
-  font-size: clamp(0.9rem, 1.15vw, 1.3rem);
-  font-family: Lobster, "Kristen ITC", Script;
-  padding: 4px;
 }
 
 .splash-screen {
@@ -622,7 +637,7 @@ p {
   min-height: 100svh;
   max-height: 100svh;
   overflow: hidden;
-  padding: clamp(170px, 20svh, 230px) 0 clamp(18px, 3svh, 38px);
+  padding: clamp(155px, 18svh, 210px) 0 clamp(18px, 3svh, 38px);
   background: transparent;
   isolation: isolate;
 }
@@ -710,6 +725,7 @@ p {
 }
 
 /* EXTERNAL SCROLL ANIMATION */
+
 .external-scroll-animation {
   position: relative;
   z-index: 2;
@@ -1130,7 +1146,49 @@ p {
   animation: textclip 2s infinite reverse linear !important;
 }
 
+/* TABLET */
+
 @media (max-width: 1024px) {
+  .header {
+    min-height: var(--header-height-tablet);
+    grid-template-columns: clamp(120px, 15vw, 160px) minmax(0, 1fr);
+  }
+
+  .navLogo {
+    width: var(--logo-size-tablet);
+    height: var(--header-height-tablet);
+  }
+
+  .beNook,
+  .navBannerFrame {
+    height: var(--header-height-tablet);
+  }
+
+  .beNook::before,
+  .navBannerFrame::before {
+    height: clamp(72px, 9vw, 104px);
+  }
+
+  .navBannerFrame > img,
+  .beNook > img {
+    height: clamp(72px, 9vw, 104px);
+  }
+
+  .navBannerFrame .nav-menu,
+  .beNook .nav-menu,
+  .nav-menu {
+    width: 70%;
+    max-width: 76%;
+    gap: clamp(0.2rem, 0.7vw, 0.8rem);
+  }
+
+  .navBannerFrame .navBar a,
+  .beNook .navBar a,
+  .navBar a {
+    font-size: clamp(0.5rem, 1vw, 0.86rem);
+    padding: 0.32rem clamp(0.32rem, 0.65vw, 0.75rem);
+  }
+
   .external-scroll-animation {
     min-height: 100dvh;
     overflow: hidden;
@@ -1239,6 +1297,8 @@ p {
   }
 }
 
+/* MOBILE */
+
 @media (max-width: 768px) {
   body.index-page {
     height: 100svh;
@@ -1265,47 +1325,23 @@ p {
     background-color: #000 !important;
   }
 
-  .beNook {
-    display: flex !important;
-  }
-
-  .navBannerFrame,
-  .beNook {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    min-height: 120px;
-  }
-
-  .beNook::before,
-  .navBannerFrame::before {
-    width: 100%;
-    min-width: 100%;
-    height: 116px;
-    transform: translate(-50%, -50%) scaleX(1.04);
-  }
-  
-  .beNook img,
-  .navBannerFrame > img {
-    display: none !important;
-  }
-
   .header {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    min-height: auto;
-    padding: 0.6rem 0.5rem 0.8rem;
-    gap: 0.35rem;
-    background: rgba(0,0,0,0.15);
+    grid-template-columns: clamp(92px, 23vw, 125px) minmax(0, 1fr);
+    min-height: var(--header-height-mobile);
+    justify-items: stretch;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.35rem 0.45rem;
+    background: rgba(0,0,0,0.16);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.12);
   }
 
   .navLogo {
-    margin-top: 0;
-    width: var(--logo-size-tablet);
-    height: var(--logo-size-tablet);
+    width: var(--logo-size-mobile);
+    height: var(--header-height-mobile);
+    justify-self: center;
   }
 
   .navLogo a,
@@ -1314,47 +1350,60 @@ p {
     height: 100%;
   }
 
-  .navBar {
-    justify-content: center;
-  }
-
-  .nav-menu {
+  .beNook,
+  .navBannerFrame {
+    display: flex !important;
     width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.45rem;
-  }
-
-  .navBar a,
-  .nav-item {
-    width: auto !important;
-    min-width: 0;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .navBannerFrame .navBar {
-    width: min(96%, 100%);
-    min-width: 0;
-    justify-content: center;
-  }
-
-  .navBannerFrame .nav-menu {
-    width: auto;
-    min-width: 0;
     max-width: 100%;
+    height: var(--header-height-mobile);
+    min-height: var(--header-height-mobile);
+  }
+
+  .beNook::before,
+  .navBannerFrame::before {
+    width: 100%;
+    min-width: 100%;
+    height: clamp(58px, 13vw, 82px);
+    background-size: 100% 100%;
+  }
+
+  .beNook img,
+  .navBannerFrame > img {
+    height: clamp(58px, 13vw, 82px);
+  }
+
+  .navBannerFrame .navBar,
+  .beNook .navBar,
+  .navBar {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+  }
+
+  .navBannerFrame .nav-menu,
+  .beNook .nav-menu,
+  .nav-menu {
+    width: 68%;
+    min-width: 0;
+    max-width: 72%;
     flex-direction: row !important;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: clamp(0.12rem, 0.55vw, 0.45rem);
+    gap: clamp(0.08rem, 0.55vw, 0.35rem);
+    padding: 0;
     white-space: nowrap;
   }
 
-  .navBannerFrame .navBar a {
-    font-size: clamp(0.46rem, 1.9vw, 0.82rem);
-    padding: 0.24rem clamp(0.12rem, 0.4vw, 0.42rem);
+  .navBannerFrame .navBar a,
+  .beNook .navBar a,
+  .navBar a {
+    width: auto !important;
+    min-width: 0;
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(0.38rem, 1.45vw, 0.72rem);
+    padding: 0.22rem clamp(0.12rem, 0.35vw, 0.32rem);
     white-space: nowrap;
   }
 
@@ -1366,7 +1415,7 @@ p {
     height: 100svh;
     min-height: 100svh;
     max-height: 100svh;
-    padding: clamp(190px, 34svh, 260px) 0 24px;
+    padding: clamp(130px, 23svh, 185px) 0 24px;
   }
 
   .wheel-card {
@@ -1430,17 +1479,18 @@ p {
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
-  .navLogo a,
-  .nav-logo {
-    width: 100%;
-    height: 100%;
+  .navBannerFrame .nav-menu,
+  .beNook .nav-menu,
+  .nav-menu {
+    width: 66%;
+    max-width: 72%;
   }
 
-  .navBar a,
-  .nav-item {
-    font-size: 1rem;
-    white-space: normal;
-    padding: 0.38rem 0.7rem;
+  .navBannerFrame .navBar a,
+  .beNook .navBar a,
+  .navBar a {
+    font-size: clamp(0.46rem, 1.35vw, 0.8rem);
+    padding: 0.26rem 0.34rem;
   }
 
   .picFrame {
@@ -1450,38 +1500,48 @@ p {
 }
 
 @media (max-width: 600px) {
+  .header {
+    grid-template-columns: clamp(82px, 25vw, 110px) minmax(0, 1fr);
+    min-height: 104px;
+    padding: 0.25rem 0.35rem;
+  }
+
   .navLogo,
   .nav-logo,
   .navLogo a {
-    width: var(--logo-size-mobile);
-    height: var(--logo-size-mobile);
+    width: clamp(82px, 24vw, var(--logo-size-mobile));
+    height: 104px;
   }
 
-  .navBar a,
-  .nav-item {
-    font-size: 0.96rem;
-    padding: 0.34rem 0.65rem;
+  .beNook,
+  .navBannerFrame {
+    height: 104px;
+    min-height: 104px;
   }
 
-  .navBannerFrame .navBar {
-    width: 96%;
-    min-width: 0;
+  .beNook::before,
+  .navBannerFrame::before {
+    height: clamp(52px, 14vw, 72px);
   }
 
-  .navBannerFrame .nav-menu {
-    width: auto;
-    min-width: 0;
-    max-width: 100%;
-    flex-direction: row !important;
-    flex-wrap: nowrap;
-    gap: clamp(0.08rem, 0.4vw, 0.3rem);
-    padding: 0 0.25rem;
+  .beNook img,
+  .navBannerFrame > img {
+    height: clamp(52px, 14vw, 72px);
   }
 
-  .navBannerFrame .navBar a {
-    font-size: clamp(0.42rem, 1.8vw, 0.68rem);
-    padding: 0.22rem 0.26rem;
-    white-space: nowrap;
+  .navBannerFrame .nav-menu,
+  .beNook .nav-menu,
+  .nav-menu {
+    width: 66%;
+    max-width: 70%;
+    gap: clamp(0.04rem, 0.32vw, 0.2rem);
+  }
+
+  .navBannerFrame .navBar a,
+  .beNook .navBar a,
+  .navBar a {
+    font-size: clamp(0.34rem, 1.55vw, 0.62rem);
+    padding: 0.2rem clamp(0.08rem, 0.26vw, 0.24rem);
   }
 
   .btnBox a {
@@ -1520,6 +1580,49 @@ p {
 
   .external-scroll-animation .text-blocks {
     gap: clamp(0.65rem, 3.3dvh, 1.1rem);
+  }
+}
+
+@media (max-width: 430px) {
+  .header {
+    grid-template-columns: 82px minmax(0, 1fr);
+    min-height: 94px;
+  }
+
+  .navLogo,
+  .nav-logo,
+  .navLogo a {
+    width: 82px;
+    height: 94px;
+  }
+
+  .beNook,
+  .navBannerFrame {
+    height: 94px;
+    min-height: 94px;
+  }
+
+  .beNook::before,
+  .navBannerFrame::before {
+    height: 58px;
+  }
+
+  .navBannerFrame .nav-menu,
+  .beNook .nav-menu,
+  .nav-menu {
+    width: 64%;
+    max-width: 68%;
+  }
+
+  .navBannerFrame .navBar a,
+  .beNook .navBar a,
+  .navBar a {
+    font-size: clamp(0.31rem, 1.65vw, 0.54rem);
+    padding: 0.17rem 0.1rem;
+  }
+
+  .wheels-section {
+    padding-top: clamp(112px, 21svh, 150px);
   }
 }
 
