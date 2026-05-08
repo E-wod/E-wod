@@ -141,8 +141,8 @@ li {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.25rem 0.5rem;
+  gap: 0.2rem;
+  padding: 0rem 0.4rem;
   background: var(--header-gradient);
   overflow: visible;
 }
@@ -155,18 +155,19 @@ body.index-page .header {
 
 .navLogo {
   position: relative;
-  z-index: 5;
+  z-index: 12;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2px;
   flex-shrink: 0;
+  padding: 0;
+  margin-top: -6px;
 }
 
 .navLogo a,
 .nav-logo {
-  width: var(--logo-size-desktop);
-  height: var(--logo-size-desktop);
+  width: clamp(170px, 12vw, 235px);
+  height: clamp(170px, 12vw, 235px);
   align-items: center;
   justify-content: center;
   animation: logoAnim 2.5s;
@@ -201,7 +202,7 @@ body.index-page .header {
 .navBannerFrame img {
   width: 100%;
   max-width: 1200px;
-  max-height: clamp(70px, 12vw, 220px);
+  max-height: clamp(95px, 10vw, 175px);
   object-fit: contain;
   filter:
     drop-shadow(0 0 10px rgba(31,221,228,0.45))
