@@ -187,6 +187,7 @@ body.index-page .header {
 
 .beNook,
 .navBannerFrame {
+  object-fit: fill;
   position: relative;
   z-index: 10;
   width: 100%;
@@ -199,12 +200,10 @@ body.index-page .header {
   justify-self: stretch;
   pointer-events: auto;
   animation: pAnim 3s ease forwards;
-
   background-image: url("../img/ESD-spaceship-nav-animated.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;
-
   filter:
     drop-shadow(0 0 10px rgba(31,221,228,0.45))
     drop-shadow(0 0 28px rgba(3,153,158,0.28));
