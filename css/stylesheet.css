@@ -196,6 +196,7 @@ body.index-page .header {
   display: flex;
   justify-content: stretch;
   align-items: center;
+  justify-self: stretch;
   animation: pAnim 3s ease forwards;
   pointer-events: auto;
 }
@@ -217,15 +218,18 @@ body.index-page .header {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: clamp(260px, 62%, 680px);
+  width: clamp(360px, 70%, 900px);
   transform: translate(-50%, -50%);
-  z-index: 8;
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
+  pointer-events: auto;
 }
 
 .navBannerFrame .nav-menu {
+  position: relative;
+  z-index: 1000;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -258,6 +262,7 @@ body.index-page .header {
   line-height: 1.05;
   opacity: 0;
   position: relative;
+  z-index: 1001;
   overflow: hidden;
   border-radius: var(--radius-md);
   border: 1px solid transparent;
