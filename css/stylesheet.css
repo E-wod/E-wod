@@ -200,10 +200,23 @@ body.index-page .header {
   justify-self: stretch;
   pointer-events: auto;
   animation: pAnim 3s ease forwards;
+  background: none;
+  overflow: visible;
+}
+
+.beNook::before,
+.navBannerFrame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
   background-image: url("../img/ESD-spaceship-nav-animated.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;
+  transform: scaleX(1.35);
+  transform-origin: center center;
   filter:
     drop-shadow(0 0 10px rgba(31,221,228,0.45))
     drop-shadow(0 0 28px rgba(3,153,158,0.28));
