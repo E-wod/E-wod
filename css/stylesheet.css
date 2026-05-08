@@ -190,9 +190,9 @@ body.index-page .header {
   object-fit: fill;
   position: relative;
   z-index: 10;
-  width: 100%;
+  width: max-content;
   height: 170px;
-  min-width: 0;
+  min-width: 100%;
   max-width: none;
   display: flex;
   align-items: center;
@@ -230,7 +230,8 @@ body.index-page .header {
 .navBannerFrame .navBar {
   position: relative;
   z-index: 50;
-  width: min(96%, 1480px);
+  width: max-content;
+  min-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,7 +241,8 @@ body.index-page .header {
 .navBannerFrame .nav-menu {
   position: relative;
   z-index: 60;
-  width: 100%;
+  width: max-content;
+  min-width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
