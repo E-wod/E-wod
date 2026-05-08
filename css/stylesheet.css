@@ -144,8 +144,8 @@ li {
   z-index: 100;
   display: grid;
   grid-template-columns:
-    clamp(410px, 34vw, 700px)
-    minmax(760px, 1fr);
+    clamp(460px, 36vw, 760px)
+    minmax(920px, 1fr);
   align-items: center;
   gap: clamp(0.25rem, 1vw, 1.25rem);
   padding: 0 clamp(0.5rem, 1.5vw, 1.75rem);
