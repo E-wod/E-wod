@@ -315,16 +315,17 @@ body.index-page .header {
 .nav-menu {
   position: relative;
   z-index: 60;
-  width: 100%;
-  min-width: 0;
+  width: fit-content;
+  min-width: fit-content;
   max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row !important;
   flex-wrap: nowrap;
-  gap: clamp(0.15rem, 0.45vw, 0.65rem);
-  padding: 0 clamp(0.25rem, 0.75vw, 0.8rem);
+  gap: clamp(0.22rem, 0.55vw, 0.7rem);
+  padding: 0 1.15rem;
+  margin: 0 auto;
   overflow: visible;
   white-space: nowrap;
 }
