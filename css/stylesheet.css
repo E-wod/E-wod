@@ -77,7 +77,6 @@ li {
 .wheel-track img,
 .wallPaper img,
 .navLogo img,
-.beNook img,
 .external-scroll-animation img {
   opacity: 1 !important;
   visibility: visible !important;
@@ -145,8 +144,7 @@ li {
   z-index: 100;
   display: grid;
   grid-template-columns:
-    clamp(145px, 12vw, 210px)
-    clamp(220px, 22vw, 420px)
+    clamp(320px, 32vw, 620px)
     minmax(680px, 1fr);
   align-items: center;
   gap: clamp(0.25rem, 1vw, 1.25rem);
@@ -155,36 +153,35 @@ li {
   overflow: visible;
 }
 
-.designWorksHeader {
-  align-items: center;
-  transform: translateY(-2px);
-}
-
-.designWorksHeader img {
-  width: clamp(170px, 15vw, 285px);
-  max-width: none;
-  transform: translateY(6px) scale(1.12);
-  transform-origin: center center;
-}
-
 body.index-page .header {
   position: fixed;
   left: 0;
   right: 0;
 }
 
+.brandCluster {
+  position: relative;
+  z-index: 45;
+  width: 100%;
+  height: var(--header-height-desktop);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: clamp(0.15rem, 0.8vw, 0.75rem);
+  overflow: visible;
+}
+
 .navLogo {
   position: relative;
-  z-index: 40;
+  z-index: 50;
   width: clamp(125px, 10vw, var(--logo-size-desktop));
   height: var(--header-height-desktop);
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-self: center;
   flex-shrink: 0;
   padding: 0;
-  margin: 0;
+  margin: 0 -0.35rem 0 0;
 }
 
 .navLogo a,
@@ -209,23 +206,25 @@ body.index-page .header {
 
 .designWorksHeader {
   position: relative;
-  z-index: 35;
-  width: 100%;
+  z-index: 45;
+  width: auto;
   height: var(--header-height-desktop);
   display: flex;
   align-items: center;
-  justify-content: center;
-  justify-self: stretch;
+  justify-content: flex-start;
+  flex-shrink: 0;
   pointer-events: none;
   overflow: visible;
 }
 
 .designWorksHeader img {
-  width: 100%;
-  max-width: clamp(180px, 18vw, 330px);
+  width: clamp(170px, 15vw, 285px);
+  max-width: none;
   height: auto;
   object-fit: contain;
   object-position: center;
+  transform: translateY(4px) scale(1.08);
+  transform-origin: center center;
   filter:
     drop-shadow(0 0 10px rgba(31,221,228,0.45))
     drop-shadow(0 0 24px rgba(255,0,255,0.25));
@@ -305,9 +304,9 @@ body.index-page .header {
 .nav-menu {
   position: relative;
   z-index: 60;
-  width: 65%;
+  width: 60%;
   min-width: max-content;
-  max-width: 70%;
+  max-width: 64%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,7 +338,7 @@ body.index-page .header {
   align-items: center;
   text-align: center;
   white-space: nowrap;
-  padding: 0.38rem clamp(0.46rem, 0.85vw, 1.05rem);
+  padding: 0.32rem clamp(0.32rem, 0.65vw, 0.82rem);
   color: var(--accent-bright);
   font-size: clamp(0.58rem, 0.82vw, 1rem);
   letter-spacing: 0.01em;
@@ -1191,9 +1190,12 @@ p {
   .header {
     min-height: var(--header-height-tablet);
     grid-template-columns:
-      clamp(120px, 15vw, 160px)
-      clamp(135px, 18vw, 230px)
+      clamp(255px, 34vw, 390px)
       minmax(0, 1fr);
+  }
+
+  .brandCluster {
+    height: var(--header-height-tablet);
   }
 
   .navLogo {
@@ -1206,7 +1208,8 @@ p {
   }
 
   .designWorksHeader img {
-    max-width: clamp(135px, 18vw, 230px);
+    width: clamp(130px, 17vw, 220px);
+    transform: translateY(3px) scale(1.05);
   }
 
   .beNook,
@@ -1216,6 +1219,7 @@ p {
 
   .beNook::before,
   .navBannerFrame::before {
+    width: 112%;
     height: clamp(72px, 9vw, 104px);
   }
 
@@ -1227,8 +1231,8 @@ p {
   .navBannerFrame .nav-menu,
   .beNook .nav-menu,
   .nav-menu {
-    width: 70%;
-    max-width: 76%;
+    width: 62%;
+    max-width: 68%;
     gap: clamp(0.2rem, 0.7vw, 0.8rem);
   }
 
@@ -1377,8 +1381,7 @@ p {
 
   .header {
     grid-template-columns:
-      clamp(92px, 23vw, 125px)
-      clamp(95px, 22vw, 150px)
+      clamp(185px, 43vw, 270px)
       minmax(0, 1fr);
     min-height: var(--header-height-mobile);
     justify-items: stretch;
@@ -1391,10 +1394,16 @@ p {
     border-bottom: 1px solid rgba(255,255,255,0.12);
   }
 
+  .brandCluster {
+    height: var(--header-height-mobile);
+    gap: 0.1rem;
+  }
+
   .navLogo {
     width: var(--logo-size-mobile);
     height: var(--header-height-mobile);
     justify-self: center;
+    margin-right: -0.45rem;
   }
 
   .navLogo a,
@@ -1408,7 +1417,8 @@ p {
   }
 
   .designWorksHeader img {
-    max-width: clamp(95px, 22vw, 150px);
+    width: clamp(82px, 20vw, 145px);
+    transform: translateY(2px) scale(1.04);
   }
 
   .beNook,
@@ -1422,8 +1432,8 @@ p {
 
   .beNook::before,
   .navBannerFrame::before {
-    width: 100%;
-    min-width: 100%;
+    width: 106%;
+    min-width: 106%;
     height: clamp(58px, 13vw, 82px);
     background-size: 100% 100%;
   }
@@ -1563,11 +1573,15 @@ p {
 @media (max-width: 600px) {
   .header {
     grid-template-columns:
-      clamp(82px, 25vw, 110px)
-      clamp(82px, 23vw, 125px)
+      clamp(165px, 48vw, 235px)
       minmax(0, 1fr);
     min-height: 104px;
     padding: 0.25rem 0.35rem;
+  }
+
+  .brandCluster {
+    height: 104px;
+    gap: 0.05rem;
   }
 
   .navLogo,
@@ -1577,12 +1591,17 @@ p {
     height: 104px;
   }
 
+  .navLogo {
+    margin-right: -0.5rem;
+  }
+
   .designWorksHeader {
     height: 104px;
   }
 
   .designWorksHeader img {
-    max-width: clamp(82px, 23vw, 125px);
+    width: clamp(78px, 22vw, 125px);
+    transform: translateY(2px) scale(1.02);
   }
 
   .beNook,
@@ -1657,8 +1676,12 @@ p {
 
 @media (max-width: 430px) {
   .header {
-    grid-template-columns: 82px 82px minmax(0, 1fr);
+    grid-template-columns: 148px minmax(0, 1fr);
     min-height: 94px;
+  }
+
+  .brandCluster {
+    height: 94px;
   }
 
   .navLogo,
@@ -1668,12 +1691,18 @@ p {
     height: 94px;
   }
 
+  .navLogo {
+    margin-right: -0.55rem;
+  }
+
   .designWorksHeader {
     height: 94px;
   }
 
   .designWorksHeader img {
-    max-width: 82px;
+    width: 76px;
+    max-width: none;
+    transform: translateY(2px) scale(1);
   }
 
   .beNook,
