@@ -15,9 +15,9 @@
   --glass-border: rgba(255,255,255,0.22);
   --glass-shadow: 0 8px 28px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.18);
   --glass-glow: 0 0 14px rgba(3,153,158,0.35), 0 0 28px rgba(255,255,255,0.12);
-  --logo-size-desktop: 175px;
-  --logo-size-tablet: 132px;
-  --logo-size-mobile: 115px;
+  --logo-size-desktop: 185px;
+  --logo-size-tablet: 142px;
+  --logo-size-mobile: 125px;
   --header-height-desktop: 175px;
   --header-height-tablet: 132px;
   --header-height-mobile: 115px;
@@ -174,7 +174,8 @@ body.index-page .header {
 .navLogo {
   position: relative;
   z-index: 50;
-  width: clamp(155px, 12vw, var(--logo-size-desktop));
+  transform: translateY(-10px);
+  width: clamp(160px, 15vw, var(--logo-size-desktop));
   height: var(--header-height-desktop);
   display: flex;
   align-items: center;
@@ -219,7 +220,7 @@ body.index-page .header {
 
 .designWorksHeader img {
   width: clamp(210px, 18vw, 345px);
-  transform: translateY(14px) scale(1.08);
+  transform: translateY(20px) scale(1.02);
   max-width: none;
   height: auto;
   object-fit: contain;
@@ -256,7 +257,7 @@ body.index-page .header {
   top: 50%;
   left: 50%;
   z-index: 1;
-  width: 125%;
+  width: 150%;
   height: clamp(105px, 9.5vw, 155px);
   pointer-events: none;
   background-image: url("../img/ESD-spaceship-nav-animated.svg");
