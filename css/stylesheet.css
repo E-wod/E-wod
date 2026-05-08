@@ -161,7 +161,7 @@ body.index-page .header {
   justify-content: center;
   flex-shrink: 0;
   padding: 0;
-  margin-top: -6px;
+  margin-top: -10px;
 }
 
 .navLogo a,
@@ -199,35 +199,12 @@ body.index-page .header {
 }
 
 .beNook img,
-.navBannerFrame img {
+.navBannerFrame > img {
   width: 100%;
   max-width: 1200px;
   max-height: clamp(95px, 10vw, 175px);
   object-fit: contain;
-  filter:
-    drop-shadow(0 0 10px rgba(31,221,228,0.45))
-    drop-shadow(0 0 28px rgba(3,153,158,0.28));
-}
-
-.navBannerFrame {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  min-width: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: pAnim 3s ease forwards;
-  pointer-events: auto;
-}
-
-.navBannerFrame > img {
-  width: 100%;
-  max-width: 1200px;
-  max-height: clamp(70px, 12vw, 220px);
-  object-fit: contain;
   pointer-events: none;
-
   filter:
     drop-shadow(0 0 10px rgba(31,221,228,0.45))
     drop-shadow(0 0 28px rgba(3,153,158,0.28));
@@ -240,7 +217,6 @@ body.index-page .header {
   width: clamp(260px, 62%, 680px);
   transform: translate(-50%, -50%);
   z-index: 8;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,39 +247,22 @@ body.index-page .header {
   align-items: center;
   text-align: center;
   white-space: nowrap;
-
   padding: 0.32rem clamp(0.22rem, 0.55vw, 0.58rem);
-
   color: var(--accent);
-
   font-size: clamp(0.52rem, 0.85vw, 1rem);
-
   letter-spacing: 0.01em;
-
   font-family: Lobster, "Kristen ITC", Script;
-
   line-height: 1.05;
-
   opacity: 0;
-
   position: relative;
-
   overflow: hidden;
-
   border-radius: var(--radius-md);
-
   border: 1px solid transparent;
-
   background: transparent;
-
   backdrop-filter: blur(0);
-
   -webkit-backdrop-filter: blur(0);
-
   animation: menuAnim 2.5s ease forwards;
-
   animation-delay: calc(0.085s * var(--i));
-
   transition:
     color 0.35s ease,
     background 0.35s ease,
@@ -314,13 +273,9 @@ body.index-page .header {
 
 .navBannerFrame .navBar a::before {
   content: "";
-
   position: absolute;
-
   inset: 0;
-
   border-radius: inherit;
-
   background:
     linear-gradient(
       135deg,
@@ -328,29 +283,20 @@ body.index-page .header {
       rgba(255,255,255,0.03) 45%,
       rgba(3,153,158,0.14)
     );
-
   opacity: 0;
-
   transition: opacity 0.45s ease;
-
   z-index: -1;
 }
 
 .navBannerFrame .navBar a:hover {
   color: var(--text);
-
   background: var(--glass-bg-hover);
-
   border-color: var(--glass-border);
-
   box-shadow:
     var(--glass-shadow),
     var(--glass-glow);
-
   backdrop-filter: blur(8px);
-
   -webkit-backdrop-filter: blur(8px);
-
   transform: translateY(-1px);
 }
 
@@ -1306,6 +1252,16 @@ p {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .navLogo {
+    margin-top: 0;
+  }
+
+  .navLogo a,
+  .nav-logo {
+    width: var(--logo-size-tablet);
+    height: var(--logo-size-tablet);
   }
 
   .navBar {
