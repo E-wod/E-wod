@@ -18,9 +18,9 @@
   --logo-size-desktop: 145px;
   --logo-size-tablet: 125px;
   --logo-size-mobile: 105px;
-  --header-height-desktop: 155px;
+  --header-height-desktop: 175px;
   --header-height-tablet: 132px;
-  --header-height-mobile: 112px;
+  --header-height-mobile: 120px;
   --wheel-gap: clamp(10px, 1.25vw, 20px);
   --wheel-card-width: clamp(230px, 28vw, 500px);
 }
@@ -219,7 +219,7 @@ body.index-page .header {
   left: 50%;
   z-index: 1;
   width: 100%;
-  height: clamp(82px, 7.8vw, 126px);
+  height: clamp(105px, 9.5vw, 155px);
   pointer-events: none;
   background-image: url("../img/ESD-spaceship-nav-animated.svg");
   background-repeat: no-repeat;
