@@ -139,7 +139,7 @@ li {
   top: 0;
   z-index: 100;
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-columns: clamp(170px, 13vw, 235px) minmax(0, 1fr);
   align-items: center;
   gap: 0;
   padding: 0;
@@ -217,7 +217,7 @@ body.index-page .header {
 .navBannerFrame .navBar {
   position: relative;
   z-index: 50;
-  width: min(88%, 1120px);
+  width: min(96%, 1480px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,7 +233,7 @@ body.index-page .header {
   align-items: center;
   flex-direction: row !important;
   flex-wrap: nowrap;
-  gap: clamp(0.22rem, 0.75vw, 1rem);
+  gap: clamp(0.45rem, 1.2vw, 1.65rem);
   padding: 0;
   overflow: visible;
   white-space: nowrap;
