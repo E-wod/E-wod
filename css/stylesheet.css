@@ -144,8 +144,8 @@ li {
   z-index: 100;
   display: grid;
   grid-template-columns:
-    clamp(320px, 32vw, 620px)
-    minmax(680px, 1fr);
+    clamp(410px, 34vw, 700px)
+    minmax(760px, 1fr);
   align-items: center;
   gap: clamp(0.25rem, 1vw, 1.25rem);
   padding: 0 clamp(0.5rem, 1.5vw, 1.75rem);
@@ -174,7 +174,7 @@ body.index-page .header {
 .navLogo {
   position: relative;
   z-index: 50;
-  width: clamp(125px, 10vw, var(--logo-size-desktop));
+  width: clamp(155px, 12vw, var(--logo-size-desktop));
   height: var(--header-height-desktop);
   display: flex;
   align-items: center;
@@ -218,12 +218,12 @@ body.index-page .header {
 }
 
 .designWorksHeader img {
-  width: clamp(170px, 15vw, 285px);
+  width: clamp(210px, 18vw, 345px);
+  transform: translateY(14px) scale(1.08);
   max-width: none;
   height: auto;
   object-fit: contain;
   object-position: center;
-  transform: translateY(4px) scale(1.08);
   transform-origin: center center;
   filter:
     drop-shadow(0 0 10px rgba(31,221,228,0.45))
@@ -256,7 +256,7 @@ body.index-page .header {
   top: 50%;
   left: 50%;
   z-index: 1;
-  width: 112%;
+  width: 125%;
   height: clamp(105px, 9.5vw, 155px);
   pointer-events: none;
   background-image: url("../img/ESD-spaceship-nav-animated.svg");
