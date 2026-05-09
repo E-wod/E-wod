@@ -8,7 +8,7 @@
   --panel: rgba(181, 181, 181, 0.3);
   --header-gradient: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
   --text-gradient: linear-gradient(119deg, #1E85D4 4%, #621C94 21%, #802A1F 34%, #FF9D00 64%, #1E85D4 94%);
-  --wallpaper-default: url("https://imagizer.imageshack.com/img922/3329/JkFa5u.jpg");
+  --wallpaper-default: url("../img/flow-background.svg");
   --radius-md: 16px;
   --radius-lg: 22px;
   --glass-bg-hover: rgba(255,255,255,0.16);
@@ -499,11 +499,6 @@ body.index-page .header {
   opacity: 1;
 }
 
-/* 
-  Keeps the old splash HTML from showing without requiring you
-  to delete it from index.html immediately.
-*/
-
 .splash-content,
 .splash-logo,
 .splash-title,
@@ -537,29 +532,34 @@ body.index-page .header {
   width: 100%;
   height: 100dvh;
   overflow: hidden;
-  opacity: 0.95;
+  opacity: 1;
   background-image: var(--wallpaper-default);
-  background-position: center right;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: brightness(1.05) saturate(1.15) contrast(1.05);
+}
+
+.wallPaper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: radial-gradient(circle at center, rgba(3,153,158,0.06), rgba(0,0,0,0.18) 58%, rgba(0,0,0,0.42) 100%);
+  pointer-events: none;
 }
 
 .wallPaper::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.22);
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.08) 18%, rgba(0,0,0,0.08) 82%, rgba(0,0,0,0.32) 100%);
   pointer-events: none;
-  z-index: 1;
 }
 
 .wallPaper img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center right;
+  display: none !important;
 }
 
 body.contact-page .wallPaper img {
