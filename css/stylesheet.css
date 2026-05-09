@@ -23,6 +23,18 @@
   --header-height-mobile: 115px;
   --wheel-gap: clamp(10px, 1.25vw, 20px);
   --wheel-card-width: clamp(230px, 28vw, 500px);
+  --services-img-filter: none;
+  --services-blur-hidden: 0.75rem;
+  --services-glass-blur: 0px;
+  --services-panel-shadow: none;
+  --services-bg-display: none;
+  --external-hidden-blur: 0rem;
+  --external-visible-blur: 0rem;
+  --external-img-filter: none;
+  --external-panel-bg: rgba(0,0,0,0.42);
+  --external-panel-border: rgba(255,255,255,0.14);
+  --external-panel-shadow: none;
+  --external-glass-blur: 0px;
 }
 
 * {
@@ -526,7 +538,7 @@ body.index-page .header {
   background-image: var(--wallpaper-default);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   filter: none;
 }
 
@@ -538,6 +550,22 @@ body.index-page .header {
 
 .wallPaper img {
   display: none !important;
+}
+
+body.contact-page .wallPaper {
+  background-image: none;
+}
+
+body.contact-page .wallPaper img {
+  display: block !important;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  opacity: 1;
+  visibility: visible;
 }
 
 .landingContent {
@@ -851,8 +879,6 @@ p {
   display: none !important;
 }
 
-/* EXTERNAL SCROLL ANIMATION */
-
 .external-scroll-animation {
   position: relative;
   z-index: 2;
@@ -860,16 +886,21 @@ p {
   color: var(--text);
   overflow-x: hidden;
   isolation: isolate;
-  background: #000 !important;
+  background: #000;
 }
 
-.external-scroll-animation::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background: #000;
-  pointer-events: none;
+.external-scroll-animation.is-looping-out {
+  opacity: 0;
+  transition: opacity 0.42s ease;
+}
+
+.external-scroll-animation.is-looping-in {
+  opacity: 1;
+  transition: opacity 0.52s ease;
+}
+
+.external-scroll-animation.is-reset-cover::after {
+  opacity: 1;
 }
 
 .external-scroll-animation::after {
@@ -883,20 +914,6 @@ p {
   transition: opacity 0.42s ease;
 }
 
-.external-scroll-animation.is-reset-cover::after {
-  opacity: 1;
-}
-
-.external-scroll-animation.is-looping-out {
-  opacity: 0;
-  transition: opacity 0.42s ease;
-}
-
-.external-scroll-animation.is-looping-in {
-  opacity: 1;
-  transition: opacity 0.52s ease;
-}
-
 .external-scroll-animation > section {
   position: relative;
 }
@@ -907,8 +924,8 @@ p {
 }
 
 .external-scroll-animation article {
-  min-height: 100vh;
   position: relative;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -919,81 +936,46 @@ p {
   overflow: hidden;
   border-radius: 0;
   background: #000;
-  will-change: opacity, clip-path, transform;
+  will-change: transform, opacity, clip-path;
+}
+
+.external-scroll-animation .fixed img {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 1;
+  visibility: visible;
+  filter: var(--external-img-filter);
+  transform-origin: center center;
+  will-change: transform, opacity;
 }
 
 .external-scroll-animation .static {
   position: absolute;
   inset: 0;
   z-index: 6;
-}
-
-.external-scroll-animation .fixed::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  background:
-    radial-gradient(circle at 20% 15%, rgba(3,153,158,0.08), transparent 48%),
-    radial-gradient(circle at 75% 78%, rgba(98,28,148,0.08), transparent 54%),
-    linear-gradient(180deg, rgba(0,0,0,0.03), rgba(0,0,0,0.12));
-  pointer-events: none;
-}
-
-.external-scroll-animation .fixed::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 4;
-  background: transparent;
-  pointer-events: none;
-  opacity: 0;
-}
-
-.external-scroll-animation .fixed img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  opacity: 1;
-  visibility: visible;
-  filter: brightness(1.08) contrast(1.05) saturate(1.03);
-  transform-origin: center center;
-  will-change: transform, opacity;
+  overflow: visible;
 }
 
 .external-scroll-animation .content {
-  margin: 0 auto;
+  position: absolute;
+  inset: 0;
+  z-index: 7;
   width: min(950px, 92%);
   min-height: 100vh;
   height: 100%;
-  z-index: 7;
-  position: absolute;
-  inset: 0;
+  margin: 0 auto;
   padding: clamp(7rem, 5vh, 11rem) 1rem 4rem;
   display: grid;
   align-content: center;
   justify-items: center;
   text-align: center;
   overflow: visible;
-  filter: blur(0rem);
-}
-
-.external-scroll-animation .content::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 25vh;
-  pointer-events: none;
-  z-index: 10;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  opacity: 0;
+  filter: blur(var(--external-visible-blur));
 }
 
 .external-scroll-animation h1,
@@ -1002,22 +984,23 @@ p {
   width: 80%;
   max-width: min(920px, 92vw);
   display: block;
+  margin: 0;
   color: var(--accent-bright);
   font-family: "sofachrome", sans-serif;
   font-weight: 40;
   font-size: clamp(1.2rem, 3vw, 2.55rem);
   letter-spacing: -0.03ch;
   line-height: 1.08;
-  margin: 0;
   text-transform: uppercase;
-  filter: blur(0rem);
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
+  filter: blur(var(--external-visible-blur));
   will-change: opacity, transform, filter;
 }
 
 .external-scroll-animation h1,
-.external-scroll-animation h3.animate-text {
+.external-scroll-animation h3.animate-text,
+.external-scroll-animation .filler h2,
+.external-scroll-animation .filler h3,
+.external-scroll-animation .filler p {
   background-image: var(--text-gradient);
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -1034,7 +1017,7 @@ p {
 .external-scroll-animation .text-blocks,
 .external-scroll-animation .text-blocks p {
   opacity: 0;
-  filter: blur(2rem);
+  filter: blur(var(--external-hidden-blur));
 }
 
 .external-scroll-animation .external-panel-start .content h1,
@@ -1042,7 +1025,7 @@ p {
 .external-scroll-animation .external-panel-start .content h3,
 .external-scroll-animation .external-panel-start .content > p {
   opacity: 1;
-  filter: blur(0rem);
+  filter: blur(var(--external-visible-blur));
 }
 
 .external-scroll-animation article:last-of-type .content h1,
@@ -1050,7 +1033,7 @@ p {
 .external-scroll-animation article:last-of-type .content h3,
 .external-scroll-animation article:last-of-type .content > p {
   opacity: 0;
-  filter: blur(2rem);
+  filter: blur(var(--external-hidden-blur));
   transform: translateY(35%);
 }
 
@@ -1060,12 +1043,12 @@ p {
   max-width: min(52ch, 92vw);
   padding: 0.85rem 1rem;
   color: var(--text);
-  background: rgba(0,0,0,0.36);
-  border: 1px solid rgba(255,255,255,0.16);
+  background: var(--external-panel-bg);
+  border: 1px solid var(--external-panel-border);
   border-radius: var(--radius-md);
-  box-shadow: var(--glass-shadow);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  box-shadow: var(--external-panel-shadow);
+  backdrop-filter: blur(var(--external-glass-blur));
+  -webkit-backdrop-filter: blur(var(--external-glass-blur));
   will-change: opacity, transform, filter;
 }
 
@@ -1086,18 +1069,10 @@ p {
   z-index: 2;
 }
 
-.external-scroll-animation > section:first-of-type .fixed img {
-  width: 100%;
-  left: 0;
-  translate: 0 0;
-  object-fit: cover;
-  object-position: center;
-}
-
 .external-scroll-animation > section:first-of-type .fixed .content {
+  align-content: center;
   justify-items: center;
   text-align: center;
-  align-content: center;
 }
 
 .external-scroll-animation > section:first-of-type .content > p {
@@ -1109,9 +1084,7 @@ p {
   width: 100%;
   max-width: none;
   margin: 0;
-  inset: 0;
   padding: clamp(7rem, 12vh, 11rem) clamp(1.25rem, 7vw, 9rem) 4rem;
-  display: grid;
   align-content: center;
   justify-items: start;
   text-align: left;
@@ -1121,15 +1094,15 @@ p {
   width: min(760px, 78vw);
   max-width: 760px;
   position: relative;
-  bottom: auto;
-  justify-self: start;
   align-self: center;
+  justify-self: start;
   text-align: left;
   overflow: visible;
   transform-origin: left center;
 }
 
-.external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap {
+.external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap,
+.external-scroll-animation .loud-wrap {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -1138,21 +1111,18 @@ p {
   clip-path: none;
 }
 
+.external-scroll-animation .loud-wrap {
+  padding: 2rem;
+}
+
 .external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap h2,
 .external-scroll-animation > section:nth-of-type(2) article:first-of-type .loud-wrap h3 {
   width: 100%;
   max-width: 100%;
   display: block;
-  justify-content: flex-start;
-  text-align: left;
   margin: 0;
   padding: 0.95rem 0;
-}
-
-.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(2) .fixed {
-  background:
-    radial-gradient(circle at center, rgba(3,153,158,0.18), transparent 45%),
-    #000;
+  text-align: left;
 }
 
 .external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) {
@@ -1163,49 +1133,33 @@ p {
   align-content: center;
 }
 
-.external-scroll-animation > section:nth-of-type(2) article:nth-of-type(3) img {
-  filter: brightness(1.08) contrast(1.05) saturate(1.03);
-}
-
 .external-scroll-animation .text-wrap {
-  text-align: left;
-  overflow: visible;
-  width: 100%;
   position: sticky;
   bottom: 6rem;
+  width: 100%;
+  text-align: left;
+  overflow: visible;
   transform-origin: 50% 0;
 }
 
-.external-scroll-animation .loud-wrap {
-  text-align: left;
-  width: 100%;
-  overflow: visible;
-  clip-path: none;
-  padding: 2rem;
-}
-
-.external-scroll-animation .static {
-  overflow: visible;
-}
-
 .external-scroll-animation .chat-container {
-  min-height: 100vh;
-  width: 100%;
   position: sticky;
   top: 0;
+  width: 100%;
+  min-height: 100vh;
   display: grid;
   place-items: center;
   overflow: hidden;
 }
 
 .external-scroll-animation .text-blocks {
-  max-width: 100%;
   width: min(42ch, 92vw);
+  max-width: 100%;
   justify-self: center;
   display: grid;
   place-items: center;
   gap: clamp(1rem, 7vh, 1.65rem);
-  filter: blur(0rem);
+  filter: blur(var(--external-visible-blur));
   will-change: opacity, transform, filter;
 }
 
@@ -1224,7 +1178,6 @@ p {
   text-align: right;
   color: var(--accent-bright);
   border-color: rgba(3,153,158,0.34);
-  box-shadow: var(--glass-shadow), 0 0 18px rgba(3,153,158,0.18);
 }
 
 .external-scroll-animation .text-blocks p:nth-of-type(odd) {
@@ -1234,28 +1187,28 @@ p {
 
 .external-scroll-animation .filler {
   display: none;
-  background: transparent !important;
-  box-shadow: none !important;
-  filter: none !important;
+  background: transparent;
+  box-shadow: none;
+  filter: none;
   will-change: opacity, transform;
 }
 
 .external-scroll-animation .filler.is-active {
-  display: block;
-  width: 100%;
   position: absolute;
   bottom: 46vh;
-  padding: 1rem;
   z-index: 15;
+  display: block;
+  width: 100%;
+  padding: 1rem;
   isolation: isolate;
-  background: transparent !important;
-  box-shadow: none !important;
-  filter: none !important;
+  background: transparent;
+  box-shadow: none;
+  filter: none;
 }
 
 .external-scroll-animation .filler.is-active::before {
-  display: none !important;
-  content: none !important;
+  display: none;
+  content: none;
 }
 
 .external-scroll-animation .filler h2,
@@ -1263,14 +1216,7 @@ p {
 .external-scroll-animation .filler p {
   position: relative;
   z-index: 2;
-  background: transparent !important;
-  color: transparent !important;
-  background-image: var(--text-gradient) !important;
-  background-size: 200% auto !important;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  animation: textclip 2s infinite reverse linear !important;
+  background-color: transparent;
 }
 
 /* TABLET */
@@ -1462,12 +1408,15 @@ p {
   background-size: cover;
 }
 
-.wallPaper::before,
-.wallPaper::after,
-.wallPaper img {
-  display: none !important;
-  content: none !important;
-}
+  .wallPaper::before,
+  .wallPaper::after {
+    display: none !important;
+    content: none !important;
+  }
+  
+  body:not(.contact-page) .wallPaper img {
+    display: none !important;
+  }
   
   .wallPaper img {
     display: none !important;
@@ -1486,9 +1435,9 @@ p {
     align-items: center;
     gap: 0.25rem;
     padding: 0.35rem 0.45rem;
-    background: rgba(0,0,0,0.16);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.82);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     border-bottom: 1px solid rgba(255,255,255,0.12);
   }
 
