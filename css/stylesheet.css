@@ -82,54 +82,6 @@ li {
   visibility: visible !important;
 }
 
-@keyframes splashLogoReveal {
-  0% {
-    opacity: 0;
-    transform:
-      translateY(25px)
-      scale(0.82);
-    filter:
-      blur(14px)
-      brightness(1.8);
-  }
-
-  55% {
-    opacity: 1;
-    transform:
-      translateY(0)
-      scale(1.05);
-    filter:
-      blur(0)
-      brightness(1.15)
-      drop-shadow(0 0 35px rgba(31,221,228,0.4));
-  }
-
-  100% {
-    opacity: 1;
-    transform:
-      translateY(0)
-      scale(1);
-  }
-}
-
-@keyframes splashTextReveal {
-  0% {
-    opacity: 0;
-    transform:
-      translateY(18px);
-    filter:
-      blur(12px);
-  }
-
-  100% {
-    opacity: 1;
-    transform:
-      translateY(0);
-    filter:
-      blur(0);
-  }
-}
-
 @keyframes splashscreen {
   0% {
     opacity: 1;
@@ -517,7 +469,7 @@ body.index-page .header {
 }
 
 /* ============================= */
-/* TRON SPLASH OVERLAY SYSTEM    */
+/* SVG-ONLY SPLASH OVERLAY       */
 /* ============================= */
 
 .splash-screen {
@@ -527,9 +479,7 @@ body.index-page .header {
   width: 100%;
   height: 100vh;
   height: 100svh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   overflow: hidden;
   isolation: isolate;
   background: #fff;
@@ -539,8 +489,9 @@ body.index-page .header {
 .splash-tron-overlay {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 5;
   width: 100vw;
+  height: 100vh;
   height: 100svh;
   border: 0;
   display: block;
@@ -548,59 +499,19 @@ body.index-page .header {
   opacity: 1;
 }
 
-.splash-content {
-  position: relative;
-  z-index: 5;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: clamp(0.5rem, 1vw, 1rem);
-  padding: 1rem;
-}
+/* 
+  Keeps the old splash HTML from showing without requiring you
+  to delete it from index.html immediately.
+*/
 
-.splash-logo {
-  width: clamp(140px, 16vw, 320px);
-  opacity: 0;
-  filter:
-    drop-shadow(0 0 12px rgba(31,221,228,0.35))
-    drop-shadow(0 0 28px rgba(3,153,158,0.22));
-  animation:
-    splashLogoReveal 2s ease forwards;
-}
-
-.splash-title {
-  position: relative;
-  z-index: 6;
-  width: min(92vw, 1200px);
-  font-size: clamp(1.7rem, 4vw, 5rem);
-  letter-spacing:
-    clamp(0.08em, 0.6vw, 0.22em);
-  text-align: center;
-  opacity: 0;
-  animation:
-    splashTextReveal 2.2s ease forwards;
-  animation-delay: 0.35s;
-}
-
+.splash-content,
+.splash-logo,
+.splash-title,
 .splash-tagline {
-  width: auto;
-  padding: 0;
-  background: transparent;
-  color: #03999e;
-  font-size:
-    clamp(0.65rem, 1vw, 1rem);
-  letter-spacing:
-    clamp(0.25em, 0.8vw, 0.7em);
-  text-align: center;
-  text-shadow:
-    0 0 12px rgba(31,221,228,0.28);
-  opacity: 0;
-  animation:
-    splashTextReveal 2.2s ease forwards;
-  animation-delay: 1.1s;
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 
 .animate-text {
@@ -617,16 +528,6 @@ body.index-page .header {
   -webkit-text-fill-color: transparent;
   color: transparent;
   animation: textclip 2s infinite reverse linear;
-}
-
-.splash-title.animate-text {
-  opacity: 0;
-  animation:
-    splashTextReveal 2.2s ease forwards,
-    textclip 2s infinite reverse linear;
-  animation-delay:
-    0.35s,
-    0s;
 }
 
 .wallPaper {
@@ -1580,25 +1481,6 @@ p {
     overflow: hidden;
   }
 
-  .splash-logo {
-    width: clamp(120px, 28vw, 220px);
-  }
-
-  .splash-title {
-    width: 94vw;
-    font-size:
-      clamp(1.4rem, 7vw, 3rem);
-    letter-spacing:
-      clamp(0.06em, 0.8vw, 0.18em);
-  }
-
-  .splash-tagline {
-    font-size:
-      clamp(0.52rem, 2vw, 0.8rem);
-    letter-spacing:
-      clamp(0.16em, 1vw, 0.42em);
-  }
-
   .wallPaper,
   .wallPaper::after,
   .wallPaper img {
@@ -1987,24 +1869,6 @@ p {
 
   .wheels-section {
     padding-top: clamp(112px, 21svh, 150px);
-  }
-
-  .splash-content {
-    gap: 0.45rem;
-  }
-
-  .splash-logo {
-    width: clamp(95px, 30vw, 150px);
-  }
-
-  .splash-title {
-    font-size:
-      clamp(1.1rem, 8vw, 2.2rem);
-  }
-
-  .splash-tagline {
-    font-size:
-      clamp(0.45rem, 2.2vw, 0.72rem);
   }
 }
 
