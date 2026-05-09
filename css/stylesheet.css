@@ -1075,6 +1075,14 @@ p {
   text-align: center;
 }
 
+.external-scroll-animation > section:first-of-type .fixed img,
+.external-scroll-animation .external-panel-start .fixed img {
+  opacity: 1 !important;
+  visibility: visible !important;
+  filter: none;
+  transform: translateZ(0);
+}
+
 .external-scroll-animation > section:first-of-type .content > p {
   margin-left: auto;
   margin-right: auto;
