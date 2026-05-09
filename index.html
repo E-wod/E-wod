@@ -20,122 +20,251 @@
   <link rel="icon" href="img/ESD256.ico" sizes="256x256" type="image/x-icon">
   <link rel="preload" href="img/ESD-motion-logo-clean.svg" as="image">
   <link rel="preload" href="img/ESD-spaceship-nav-animated.svg" as="image">
+  <link rel="preload" href="img/ESD-tron-splash-overlay.svg" as="image">
   <link rel="preload" href="img/Portfolio7.jpg" as="image">
   <link rel="preload" href="img/StormBW.jpg" as="image">
   <link rel="preload" href="img/facebookphotogood.jpg" as="image">
   <link rel="preload" href="main.js" as="script">
   <script defer src="main.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js">
+  </script>
 </head>
 <body class="index-page">
+  <!-- SPLASH SCREEN -->
   <div class="splash-screen" aria-hidden="true">
-    <h3 class="animate-text splash-title">ES Design Works</h3>
+    <object
+      class="splash-tron-overlay"
+      type="image/svg+xml"
+      data="img/ESD-tron-splash-overlay.svg">
+    </object>
+    <div class="splash-content">
+      <img
+        class="splash-logo"
+        src="img/ESD-motion-logo-clean.svg"
+        alt="ES Design Works Logo">
+      <h3 class="animate-text splash-title">
+        ES Design Works
+      </h3>
+      <p class="splash-tagline">
+        DESIGN • DEVELOP • DELIVER
+      </p>
+    </div>
   </div>
+  <!-- WALLPAPER -->
   <div class="wallPaper" aria-hidden="true"></div>
+  <!-- HEADER -->
   <header class="header">
-	<div class="brandCluster">
-	  <div class="navLogo">
-	    <a href="index.html" class="nav-logo">
-	      <img src="img/ESD-motion-logo-clean.svg" alt="ESD Logo">
-		</a>
-	  </div>
-	  <div class="designWorksHeader">
-	    <img src="img/designworks-graffiti-chaos.svg" alt="Design Works">
-	  </div>
-	</div>
-	<div class="beNook navBannerFrame">
-		<nav class="navBar" aria-label="Primary navigation">
-		      <ul class="nav-menu">
-		        <li class="nav-item"><a href="about.html" style="--i:1;">About</a></li>
-		        <li class="nav-item"><a href="services.html" style="--i:2;">Services</a></li>
-		        <li class="nav-item"><a href="contact.html" style="--i:3;">Contact</a></li>
-		      </ul>
-	    </nav>
-	</div>
+    <div class="brandCluster">
+      <div class="navLogo">
+        <a href="index.html" class="nav-logo">
+          <img
+            src="img/ESD-motion-logo-clean.svg"
+            alt="ESD Logo">
+        </a>
+      </div>
+      <div class="designWorksHeader">
+        <img
+          src="img/designworks-graffiti-chaos.svg"
+          alt="Design Works">
+      </div>
+    </div>
+    <div class="beNook navBannerFrame">
+      <nav class="navBar" aria-label="Primary navigation">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="about.html" style="--i:1;">
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" style="--i:2;">
+              Services
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" style="--i:3;">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
-
+  <!-- MAIN -->
   <main class="landingContent">
-    <section class="wheels-section" aria-label="Portfolio wheels">
+    <section
+      class="wheels-section"
+      aria-label="Portfolio wheels">
       <div class="wheel-stack">
-
+        <!-- ROW 1 -->
         <div class="wheel-row offset-left">
-          <div class="wheel-track" data-speed="0.035" data-direction="left">
-            <div class="wheel-card"><img src="img/AzulaWide.jpg" alt="Azula Wide" loading="eager" decoding="async" fetchpriority="high"></div>
-            <div class="wheel-card"><img src="img/Roundhill.jpg" alt="Round Hill" loading="eager" decoding="async" fetchpriority="high"></div>
-            <div class="wheel-card"><img src="img/HarpoonBanner3.png" alt="Harpoon Banner 3" loading="eager" decoding="async" fetchpriority="high"></div>
-            <div class="wheel-card"><img src="img/WerewolfRender3.jpg" alt="Werewolf Render 3" loading="eager" decoding="async"></div>
-            <div class="wheel-card"><img src="img/StormBW.jpg" alt="Storm" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/troll4.jpg" alt="Troll 4" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/carConcept5.jpg" alt="Concept Car" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/facebookphotogood.jpg" alt="Facebook Photo" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/3eyeOwl.jpg" alt="Three Eye Owl" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/Abu_Artwork.JPG" alt="Abu Artwork" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/Veluran_Elements of Infinity_ UV view.jpg" alt="Veluran UV View" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/trex.jpg" alt="T-Rex" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/mechaHawk2.jpg" alt="Mecha Hawk" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/Showcase4_.jpg" alt="Showcase Render" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/Batmanrender4.jpg" alt="Batman Render 4" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/owls.jpg" alt="Owls" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/WileECoyoteRender.jpg" alt="Wile E. Coyote Render" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/sharky.jpg" alt="Pet Shark" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/Portfolio7.jpg" alt="Whitehorse Beach" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/Batmanrender1.jpg" alt="Batman Render 1" loading="lazy" decoding="async"></div>
+          <div
+            class="wheel-track"
+            data-speed="0.035"
+            data-direction="left">
+            <div class="wheel-card">
+              <img
+                src="img/AzulaWide.jpg"
+                alt="Azula Wide"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/Roundhill.jpg"
+                alt="Round Hill"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/HarpoonBanner3.png"
+                alt="Harpoon Banner 3"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/WerewolfRender3.jpg"
+                alt="Werewolf Render 3"
+                loading="eager"
+                decoding="async">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/StormBW.jpg"
+                alt="Storm"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/troll4.jpg"
+                alt="Troll 4"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/carConcept5.jpg"
+                alt="Concept Car"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/facebookphotogood.jpg"
+                alt="Facebook Photo"
+                loading="lazy"
+                decoding="async">
+            </div>
           </div>
         </div>
-
+        <!-- ROW 2 -->
         <div class="wheel-row offset-right">
-          <div class="wheel-track" data-speed="0.06" data-direction="right">
-            <div class="wheel-card"><img src="img/RetroHarpoon.png" alt="Retro Harpoon" loading="eager" decoding="async"></div>
-            <div class="wheel-card"><img src="img/4kVel.jpg" alt="4K Veluran" loading="eager" decoding="async"></div>
-            <div class="wheel-card"><img src="img/bull.jpg" alt="Bull Design" loading="eager" decoding="async"></div>
-            <div class="wheel-card"><img src="img/jasmine1.jpg" alt="Jasmine 3D Model" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/HorrorHarpoon.png" alt="Horror Harpoon" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/Vern week 7-8.JPG" alt="Vern Week 7-8" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/prettyEye2.jpg" alt="Pretty Eye" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/TownMenuIn.jpg" alt="Town Menu" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/wolfMoose.jpg" alt="Wolf Moose" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/envirorender.png" alt="Environment Render" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/HarpoonArtCoSticker.png" alt="Harpoon Art Sticker" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/gorillaAxe.png" alt="Gorilla Axe" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/troll1.jpg" alt="Troll 1" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/Veluran Render.jpg" alt="Veluran Render" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/royal.jpg" alt="Royal Book Cover" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/Concept art Veluran.jpg" alt="Concept Art Veluran" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/roaring20.jpg" alt="Roaring 20s" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/HarpoonBanner.png" alt="Harpoon Banner" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/Batmanrender2.jpg" alt="Batman Render 2" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/AzulaAikidoPose.jpg" alt="Azula Aikido Pose" loading="lazy" decoding="async"></div>
+          <div
+            class="wheel-track"
+            data-speed="0.06"
+            data-direction="right">
+            <div class="wheel-card">
+              <img
+                src="img/RetroHarpoon.png"
+                alt="Retro Harpoon"
+                loading="eager"
+                decoding="async">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/4kVel.jpg"
+                alt="4K Veluran"
+                loading="eager"
+                decoding="async">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/bull.jpg"
+                alt="Bull Design"
+                loading="eager"
+                decoding="async">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/jasmine1.jpg"
+                alt="Jasmine 3D Model"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/HorrorHarpoon.png"
+                alt="Horror Harpoon"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/Vern week 7-8.JPG"
+                alt="Vern Week 7-8"
+                loading="lazy"
+                decoding="async">
+            </div>
           </div>
         </div>
-
+        <!-- ROW 3 -->
         <div class="wheel-row offset-left">
-          <div class="wheel-track" data-speed="0.052" data-direction="left">
-            <div class="wheel-card"><img src="img/whaleSunrise.jpg" alt="Whale Sunrise" loading="eager" decoding="async"></div>
-            <div class="wheel-card"><img src="img/carConcept2.jpg" alt="Concept Car 2" loading="eager" decoding="async"></div>
-            <div class="wheel-card"><img src="img/driftAway.jpg" alt="Drift Away" loading="eager" decoding="async"></div>
-            <div class="wheel-card"><img src="img/Dragonfly 1.jpg" alt="Dragonfly" loading="eager" decoding="async"></div>
-            <div class="wheel-card"><img src="img/mtmonroe.jpg" alt="Mount Monroe" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/Seagull Crab.jpg" alt="Seagull Crab" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/truckAdventure.jpg" alt="Truck Adventure" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/fortTaber1.jpg" alt="Fort Taber" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/misty woods.jpg" alt="Misty Woods" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/Portfolio24.jpg" alt="Sabbaday Falls" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/TimmyNo.jpg" alt="Jurassic Park Spoof" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/pierseagull.png" alt="Pier Seagull" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/oldTravelers.jpg" alt="Old Travelers" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/lillypadcolor.jpg" alt="Lilly Pad" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/Portfolio11.jpg" alt="Portfolio Gorilla Axe" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/TheSparrowandtheBeetle.jpg" alt="Sparrow and Beetle" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/Strawberrymoon.jpg" alt="Strawberry Moon" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/tradingCard.jpg" alt="Trading Card" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/RocksBeach.jpg" alt="Beach Rocks" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/lionDen.jpg" alt="Lion Den" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/harborGirl.jpg" alt="Harbor Girl" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/geese color.jpg" alt="Canadian Geese" loading="lazy" decoding="async"></div>
-            <div class="wheel-card"><img src="img/singing bird.jpg" alt="Singing Bird" loading="lazy" decoding="async"></div>
+          <div
+            class="wheel-track"
+            data-speed="0.052"
+            data-direction="left">
+            <div class="wheel-card">
+              <img
+                src="img/whaleSunrise.jpg"
+                alt="Whale Sunrise"
+                loading="eager"
+                decoding="async">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/carConcept2.jpg"
+                alt="Concept Car 2"
+                loading="eager"
+                decoding="async">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/driftAway.jpg"
+                alt="Drift Away"
+                loading="eager"
+                decoding="async">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/Dragonfly 1.jpg"
+                alt="Dragonfly"
+                loading="eager"
+                decoding="async">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/mtmonroe.jpg"
+                alt="Mount Monroe"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <div class="wheel-card">
+              <img
+                src="img/Seagull Crab.jpg"
+                alt="Seagull Crab"
+                loading="lazy"
+                decoding="async">
+            </div>
           </div>
         </div>
-
       </div>
     </section>
   </main>
