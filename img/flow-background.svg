@@ -187,6 +187,4 @@
     </g>
   </g>
 
-  <!-- Soft dark edge control -->
-  <rect width="2560" height="1600" fill="none" stroke="#000" stroke-width="120" opacity="0.62"/>
 </svg>
