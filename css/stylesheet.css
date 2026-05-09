@@ -82,23 +82,47 @@ li {
   visibility: visible !important;
 }
 
+@keyframes flowLinesDrift {
+  0% {
+    transform: translateY(0px);
+    opacity: 0.92;
+  }
+  50% {
+    transform: translateY(-24px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0.92;
+  }
+}
+
+@keyframes flowParticles {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 @keyframes splashscreen {
   0% {
     opacity: 1;
     background-color: #fff;
     transform: scale(1);
   }
-
   50%,
   90% {
     opacity: 1;
     background-color: #fff;
   }
-
   99% {
     transform: scale(1);
   }
-
   100% {
     opacity: 0;
     visibility: hidden;
@@ -139,15 +163,12 @@ li {
     transform: translateY(-200px) scale(1);
     opacity: 0;
   }
-
   90% {
     transform: translateY(10px) scale(1);
   }
-
   92% {
     transform: translateY(8px) scale(1.175);
   }
-
   100% {
     transform: translateY(0) scale(1);
     opacity: 1;
@@ -159,15 +180,12 @@ li {
     transform: translateY(-200px) scale(1);
     opacity: 0;
   }
-
   90% {
     transform: translateY(10px) scale(1);
   }
-
   92% {
     transform: translateY(8px) scale(1.175);
   }
-
   100% {
     transform: translateY(0) scale(1);
     opacity: 1;
@@ -178,7 +196,6 @@ li {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -537,7 +554,7 @@ body.index-page .header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(1.05) saturate(1.15) contrast(1.05);
+  filter: brightness(1.08) saturate(1.22) contrast(1.08);
 }
 
 .wallPaper::before {
@@ -545,8 +562,13 @@ body.index-page .header {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: radial-gradient(circle at center, rgba(3,153,158,0.06), rgba(0,0,0,0.18) 58%, rgba(0,0,0,0.42) 100%);
   pointer-events: none;
+  background:
+    radial-gradient( circle at center, rgba(3,153,158,0.08), rgba(0,0,0,0.14) 52%, rgba(0,0,0,0.34) 100%),
+    repeating-linear-gradient( 180deg, rgba(31,221,228,0.045) 0px, rgba(31,221,228,0.015) 2px, transparent 4px, transparent 72px),
+    repeating-linear-gradient( 180deg, rgba(30,133,212,0.035) 0px, rgba(30,133,212,0.012) 1px, transparent 3px, transparent 92px),
+    repeating-linear-gradient( 180deg, rgba(98,28,148,0.04) 0px, rgba(98,28,148,0.012) 2px, transparent 5px, transparent 84px);
+  animation: flowLinesDrift 32s ease-in-out infinite;
 }
 
 .wallPaper::after {
@@ -554,16 +576,23 @@ body.index-page .header {
   position: absolute;
   inset: 0;
   z-index: 2;
-  background: linear-gradient(180deg, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.08) 18%, rgba(0,0,0,0.08) 82%, rgba(0,0,0,0.32) 100%);
   pointer-events: none;
+  background:
+    linear-gradient( 180deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.04) 18%, rgba(0,0,0,0.04) 82%, rgba(0,0,0,0.22) 100%),
+    radial-gradient(circle at 12% 18%, rgba(31,221,228,0.18) 0%, transparent 0.6%),
+    radial-gradient(circle at 22% 72%, rgba(31,221,228,0.14) 0%, transparent 0.45%),
+    radial-gradient(circle at 36% 32%, rgba(30,133,212,0.16) 0%, transparent 0.5%),
+    radial-gradient(circle at 48% 88%, rgba(98,28,148,0.14) 0%, transparent 0.45%),
+    radial-gradient(circle at 62% 16%, rgba(31,221,228,0.15) 0%, transparent 0.55%),
+    radial-gradient(circle at 74% 58%, rgba(255,157,0,0.12) 0%, transparent 0.45%),
+    radial-gradient(circle at 88% 26%, rgba(31,221,228,0.16) 0%, transparent 0.55%),
+    radial-gradient(circle at 92% 82%, rgba(30,133,212,0.14) 0%, transparent 0.45%);
+  background-size: 100% 100%;
+  animation: flowParticles 28s linear infinite;
 }
 
 .wallPaper img {
   display: none !important;
-}
-
-body.contact-page .wallPaper img {
-  object-position: 82% 78%;
 }
 
 .landingContent {
@@ -1482,19 +1511,19 @@ p {
   }
 
   .wallPaper,
-  .wallPaper::after,
-  .wallPaper img {
+  .wallPaper::before,
+  .wallPaper::after {
     display: block !important;
+  }
+  
+  .wallPaper img {
+    display: none !important;
   }
 
   .wallPaper {
     height: 100dvh;
     background-position: center right;
     background-size: cover;
-  }
-
-  .wallPaper img {
-    object-position: center right;
   }
 
   body {
