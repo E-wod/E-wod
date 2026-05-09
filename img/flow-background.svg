@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 2560 1600"
+     preserveAspectRatio="xMidYMid slice">
+
+  <defs>
+    <radialGradient id="softCenterGlow" cx="50%" cy="50%" r="82%">
+      <stop offset="0%" stop-color="#1fdde4" stop-opacity="0.13" />
+      <stop offset="45%" stop-color="#621C94" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- left-to-right cyan/blue sweep -->
+    <linearGradient id="flowStrokeA" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1fdde4" stop-opacity="0" />
+      <stop offset="22%" stop-color="#1fdde4" stop-opacity="0.78" />
+      <stop offset="55%" stop-color="#1E85D4" stop-opacity="0.46" />
+      <stop offset="100%" stop-color="#1fdde4" stop-opacity="0" />
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="11s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- right-to-left violet/cyan sweep -->
+    <linearGradient id="flowStrokeB" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#621C94" stop-opacity="0" />
+      <stop offset="28%" stop-color="#621C94" stop-opacity="0.52" />
+      <stop offset="60%" stop-color="#1fdde4" stop-opacity="0.38" />
+      <stop offset="100%" stop-color="#621C94" stop-opacity="0" />
+      <animateTransform attributeName="gradientTransform" type="translate" from="1 0" to="-1 0" dur="15s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- left-to-right amber/cyan sweep -->
+    <linearGradient id="flowStrokeC" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF9D00" stop-opacity="0" />
+      <stop offset="35%" stop-color="#FF9D00" stop-opacity="0.36" />
+      <stop offset="65%" stop-color="#1fdde4" stop-opacity="0.30" />
+      <stop offset="100%" stop-color="#FF9D00" stop-opacity="0" />
+      <animateTransform attributeName="gradientTransform" type="translate" from="-0.5 0" to="1.2 0" dur="19s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- right-to-left blue/cyan sweep -->
+    <linearGradient id="flowStrokeD" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#1E85D4" stop-opacity="0" />
+      <stop offset="30%" stop-color="#1E85D4" stop-opacity="0.46" />
+      <stop offset="62%" stop-color="#1fdde4" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#1E85D4" stop-opacity="0" />
+      <animateTransform attributeName="gradientTransform" type="translate" from="1.1 0" to="-1.1 0" dur="13s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <filter id="softLineGlow">
+      <feGaussianBlur stdDeviation="1.7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="particleGlow">
+      <feGaussianBlur stdDeviation="1.35" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- LTR paths -->
+    <path id="flowA" d="M -320 920 C 260 420, 730 520, 1160 760 S 1960 1180, 2880 620"/>
+    <path id="flowB" d="M -320 260 C 320 -40, 680 60, 1120 360 S 1940 920, 2880 140"/>
+    <path id="flowC" d="M -320 1220 C 260 920, 700 1180, 1180 860 S 1900 260, 2880 940"/>
+    <path id="flowE" d="M -320 1460 C 420 1040, 900 1320, 1360 980 S 2100 360, 2880 1180"/>
+
+    <!-- RTL paths -->
+    <path id="flowR1" d="M 2880 760 C 2200 1220, 1740 1120, 1320 760 S 540 140, -320 620"/>
+    <path id="flowR2" d="M 2880 420 C 2120 120, 1680 520, 1260 390 S 520 90, -320 360"/>
+    <path id="flowR3" d="M 2880 1120 C 2200 720, 1780 980, 1300 760 S 520 260, -320 1020"/>
+    <path id="flowR4" d="M 2880 1480 C 2100 1180, 1640 1420, 1240 1060 S 500 580, -320 1340"/>
+  </defs>
+
+  <rect width="2560" height="1600" fill="#000"/>
+  <rect width="2560" height="1600" fill="url(#softCenterGlow)"/>
+
+  <!-- Subtle animated scan texture -->
+  <g opacity="0.032">
+    <path d="M0 80 H2560 M0 160 H2560 M0 240 H2560 M0 320 H2560 M0 400 H2560 M0 480 H2560 M0 560 H2560 M0 640 H2560 M0 720 H2560 M0 800 H2560 M0 880 H2560 M0 960 H2560 M0 1040 H2560 M0 1120 H2560 M0 1200 H2560 M0 1280 H2560 M0 1360 H2560 M0 1440 H2560 M0 1520 H2560"
+      stroke="#1fdde4" stroke-width="1">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="0 80" dur="18s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Dense left-to-right flow field -->
+  <g fill="none" stroke-linecap="round" filter="url(#softLineGlow)">
+    <g opacity="0.68">
+      <use href="#flowA" stroke="url(#flowStrokeA)" stroke-width="1.55"/>
+      <use href="#flowA" stroke="url(#flowStrokeA)" stroke-width="1.05" transform="translate(0 -120)" opacity="0.70"/>
+      <use href="#flowA" stroke="url(#flowStrokeA)" stroke-width="0.9" transform="translate(0 -240)" opacity="0.56"/>
+      <use href="#flowA" stroke="url(#flowStrokeA)" stroke-width="0.78" transform="translate(0 140)" opacity="0.62"/>
+      <use href="#flowA" stroke="url(#flowStrokeA)" stroke-width="0.68" transform="translate(0 280)" opacity="0.48"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 42 -22; 0 0" dur="26s" repeatCount="indefinite"/>
+    </g>
+
+    <g opacity="0.58">
+      <use href="#flowB" stroke="url(#flowStrokeC)" stroke-width="1.45"/>
+      <use href="#flowB" stroke="url(#flowStrokeC)" stroke-width="1" transform="translate(0 -155)" opacity="0.64"/>
+      <use href="#flowB" stroke="url(#flowStrokeC)" stroke-width="0.8" transform="translate(0 160)" opacity="0.58"/>
+      <use href="#flowB" stroke="url(#flowStrokeC)" stroke-width="0.68" transform="translate(0 320)" opacity="0.44"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 56 26; 0 0" dur="34s" repeatCount="indefinite"/>
+    </g>
+
+    <g opacity="0.52">
+      <use href="#flowC" stroke="url(#flowStrokeA)" stroke-width="1.3"/>
+      <use href="#flowC" stroke="url(#flowStrokeA)" stroke-width="0.95" transform="translate(0 -180)" opacity="0.62"/>
+      <use href="#flowC" stroke="url(#flowStrokeA)" stroke-width="0.78" transform="translate(0 180)" opacity="0.54"/>
+      <use href="#flowC" stroke="url(#flowStrokeA)" stroke-width="0.62" transform="translate(0 360)" opacity="0.38"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 66 32; 0 0" dur="38s" repeatCount="indefinite"/>
+    </g>
+
+    <g opacity="0.42">
+      <use href="#flowE" stroke="url(#flowStrokeC)" stroke-width="1.05"/>
+      <use href="#flowE" stroke="url(#flowStrokeA)" stroke-width="0.75" transform="translate(0 -260)" opacity="0.48"/>
+      <use href="#flowE" stroke="url(#flowStrokeC)" stroke-width="0.62" transform="translate(0 -520)" opacity="0.34"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 40 -34; 0 0" dur="44s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Dense right-to-left flow field -->
+  <g fill="none" stroke-linecap="round" filter="url(#softLineGlow)">
+    <g opacity="0.64">
+      <use href="#flowR1" stroke="url(#flowStrokeB)" stroke-width="1.5"/>
+      <use href="#flowR1" stroke="url(#flowStrokeB)" stroke-width="1.05" transform="translate(0 -130)" opacity="0.68"/>
+      <use href="#flowR1" stroke="url(#flowStrokeD)" stroke-width="0.88" transform="translate(0 135)" opacity="0.58"/>
+      <use href="#flowR1" stroke="url(#flowStrokeB)" stroke-width="0.72" transform="translate(0 270)" opacity="0.42"/>
+      <use href="#flowR1" stroke="url(#flowStrokeD)" stroke-width="0.62" transform="translate(0 -270)" opacity="0.36"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; -46 -20; 0 0" dur="29s" repeatCount="indefinite"/>
+    </g>
+
+    <g opacity="0.56">
+      <use href="#flowR2" stroke="url(#flowStrokeD)" stroke-width="1.35"/>
+      <use href="#flowR2" stroke="url(#flowStrokeD)" stroke-width="0.95" transform="translate(0 -170)" opacity="0.60"/>
+      <use href="#flowR2" stroke="url(#flowStrokeB)" stroke-width="0.78" transform="translate(0 170)" opacity="0.50"/>
+      <use href="#flowR2" stroke="url(#flowStrokeD)" stroke-width="0.64" transform="translate(0 340)" opacity="0.36"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; -58 30; 0 0" dur="33s" repeatCount="indefinite"/>
+    </g>
+
+    <g opacity="0.50">
+      <use href="#flowR3" stroke="url(#flowStrokeB)" stroke-width="1.25"/>
+      <use href="#flowR3" stroke="url(#flowStrokeB)" stroke-width="0.92" transform="translate(0 -210)" opacity="0.58"/>
+      <use href="#flowR3" stroke="url(#flowStrokeD)" stroke-width="0.74" transform="translate(0 210)" opacity="0.48"/>
+      <use href="#flowR3" stroke="url(#flowStrokeB)" stroke-width="0.62" transform="translate(0 420)" opacity="0.34"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; -62 -28; 0 0" dur="41s" repeatCount="indefinite"/>
+    </g>
+
+    <g opacity="0.38">
+      <use href="#flowR4" stroke="url(#flowStrokeD)" stroke-width="1"/>
+      <use href="#flowR4" stroke="url(#flowStrokeB)" stroke-width="0.75" transform="translate(0 -250)" opacity="0.46"/>
+      <use href="#flowR4" stroke="url(#flowStrokeD)" stroke-width="0.62" transform="translate(0 -500)" opacity="0.30"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; -34 36; 0 0" dur="48s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Particles moving left-to-right -->
+  <g filter="url(#particleGlow)">
+    <g opacity="0.78">
+      <circle r="2.1" fill="#1fdde4"><animateMotion dur="15s" repeatCount="indefinite" path="M -320 920 C 260 420, 730 520, 1160 760 S 1960 1180, 2880 620"/></circle>
+      <circle r="1.45" fill="#1E85D4"><animateMotion dur="19s" repeatCount="indefinite" path="M -320 260 C 320 -40, 680 60, 1120 360 S 1940 920, 2880 140"/></circle>
+      <circle r="1.35" fill="#FF9D00"><animateMotion dur="24s" repeatCount="indefinite" path="M -320 1220 C 260 920, 700 1180, 1180 860 S 1900 260, 2880 940"/></circle>
+      <circle r="1.1" fill="#1fdde4"><animateMotion dur="31s" repeatCount="indefinite" path="M -320 1460 C 420 1040, 900 1320, 1360 980 S 2100 360, 2880 1180"/></circle>
+    </g>
+
+    <g opacity="0.56">
+      <circle r="0.95" fill="#1fdde4"><animateMotion dur="27s" repeatCount="indefinite" path="M -320 520 C 360 180, 800 340, 1260 560 S 2060 840, 2880 360"/></circle>
+      <circle r="0.9" fill="#1E85D4"><animateMotion dur="34s" repeatCount="indefinite" path="M -320 1080 C 340 860, 780 1120, 1280 820 S 1960 250, 2880 840"/></circle>
+      <circle r="0.8" fill="#621C94"><animateMotion dur="40s" repeatCount="indefinite" path="M -320 1510 C 440 1160, 900 1450, 1440 1040 S 2180 560, 2880 1320"/></circle>
+    </g>
+  </g>
+
+  <!-- Particles moving right-to-left -->
+  <g filter="url(#particleGlow)">
+    <g opacity="0.76">
+      <circle r="2" fill="#621C94"><animateMotion dur="17s" repeatCount="indefinite" path="M 2880 760 C 2200 1220, 1740 1120, 1320 760 S 540 140, -320 620"/></circle>
+      <circle r="1.55" fill="#1E85D4"><animateMotion dur="21s" repeatCount="indefinite" path="M 2880 420 C 2120 120, 1680 520, 1260 390 S 520 90, -320 360"/></circle>
+      <circle r="1.3" fill="#1fdde4"><animateMotion dur="26s" repeatCount="indefinite" path="M 2880 1120 C 2200 720, 1780 980, 1300 760 S 520 260, -320 1020"/></circle>
+      <circle r="1.05" fill="#FF9D00"><animateMotion dur="33s" repeatCount="indefinite" path="M 2880 1480 C 2100 1180, 1640 1420, 1240 1060 S 500 580, -320 1340"/></circle>
+    </g>
+
+    <g opacity="0.52">
+      <circle r="0.95" fill="#1fdde4"><animateMotion dur="29s" repeatCount="indefinite" path="M 2880 320 C 2140 80, 1620 500, 1180 360 S 420 40, -320 300"/></circle>
+      <circle r="0.85" fill="#1E85D4"><animateMotion dur="36s" repeatCount="indefinite" path="M 2880 1380 C 2200 1160, 1660 1240, 1260 900 S 500 520, -320 1160"/></circle>
+      <circle r="0.75" fill="#621C94"><animateMotion dur="43s" repeatCount="indefinite" path="M 2880 90 C 2140 280, 1760 30, 1300 310 S 520 920, -320 680"/></circle>
+    </g>
+  </g>
+
+  <!-- Soft dark edge control -->
+  <rect width="2560" height="1600" fill="none" stroke="#000" stroke-width="120" opacity="0.62"/>
+</svg>
