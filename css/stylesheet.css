@@ -519,30 +519,21 @@ body.index-page .header {
   position: fixed;
   inset: 0;
   z-index: 0;
-  width: 100%;
+  width: 100vw;
   height: 100dvh;
   overflow: hidden;
+  opacity: 1;
   background-image: var(--wallpaper-default);
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(1.04) saturate(1.08) contrast(1.04);
+  filter: none;
 }
 
-.wallPaper::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient( circle at center, rgba(3,153,158,0.04), rgba(0,0,0,0.12) 58%, rgba(0,0,0,0.28) 100%);
-}
-
+.wallPaper::before,
 .wallPaper::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient( 180deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.02) 18%, rgba(0,0,0,0.02) 82%, rgba(0,0,0,0.20) 100%);
+  display: none !important;
+  content: none !important;
 }
 
 .wallPaper img {
@@ -1464,20 +1455,22 @@ p {
     overflow: hidden;
   }
 
-  .wallPaper,
-  .wallPaper::before,
-  .wallPaper::after {
-    display: block !important;
-  }
+.wallPaper {
+  display: block !important;
+  height: 100dvh;
+  background-position: center center;
+  background-size: cover;
+}
+
+.wallPaper::before,
+.wallPaper::after,
+.wallPaper img {
+  display: none !important;
+  content: none !important;
+}
   
   .wallPaper img {
     display: none !important;
-  }
-
-  .wallPaper {
-    height: 100dvh;
-    background-position: center right;
-    background-size: cover;
   }
 
   body {
