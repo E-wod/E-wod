@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1fdde4" stop-opacity="0"/>
+      <stop offset="18%" stop-color="#1fdde4" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#03999e" stop-opacity="0.9"/>
+      <stop offset="82%" stop-color="#1e85d4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1e85d4" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="blueLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e85d4" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#1e85d4" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#1fdde4" stop-opacity="0.95"/>
+      <stop offset="80%" stop-color="#03999e" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#03999e" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#1fdde4" stop-opacity="0.22"/>
+      <stop offset="44%" stop-color="#03999e" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="neonGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur1"/>
+      <feGaussianBlur stdDeviation="14" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="textGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="textBlur"/>
+      <feMerge>
+        <feMergeNode in="textBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#75856e"/>
+      <stop offset="42%" stop-color="#03999e"/>
+      <stop offset="100%" stop-color="#1e85d4"/>
+    </linearGradient>
+
+    <path id="circuitA" d="M80 220 H360 L430 290 H690 L750 350 H970"/>
+    <path id="circuitB" d="M1840 850 H1520 L1460 790 H1210 L1140 720 H950"/>
+    <path id="circuitC" d="M120 865 H420 L500 785 H760 L835 710 H960"/>
+    <path id="circuitD" d="M1800 210 H1530 L1455 285 H1260 L1180 365 H960"/>
+  </defs>
+
+  <!-- transparent background by design -->
+
+  <rect width="1920" height="1080" fill="url(#centerGlow)" opacity="0.8">
+    <animate attributeName="opacity" values="0.35;0.8;0.45;0.75;0.35" dur="5.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- horizon pulse behind logo -->
+  <g filter="url(#neonGlow)" opacity="0.85">
+    <line x1="320" y1="560" x2="1600" y2="560" stroke="url(#cyanLine)" stroke-width="2">
+      <animate attributeName="stroke-width" values="1.2;3.5;1.4" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.95;0.32" dur="2.6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="420" y1="592" x2="1500" y2="592" stroke="url(#blueLine)" stroke-width="1.2" opacity="0.55">
+      <animate attributeName="opacity" values="0.15;0.7;0.25" dur="3.1s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- TRON circuit traces -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#neonGlow)">
+    <use href="#circuitA" stroke="#1fdde4" stroke-width="2.4" opacity="0.5" stroke-dasharray="55 680" stroke-dashoffset="0">
+      <animate attributeName="stroke-dashoffset" from="735" to="0" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.16;0.72;0.16" dur="3.8s" repeatCount="indefinite"/>
+    </use>
+    <use href="#circuitA" stroke="#03999e" stroke-width="1.1" opacity="0.3"/>
+
+    <use href="#circuitB" stroke="#1e85d4" stroke-width="2.4" opacity="0.5" stroke-dasharray="65 720" stroke-dashoffset="0">
+      <animate attributeName="stroke-dashoffset" from="0" to="785" dur="4.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.12;0.68;0.12" dur="4.4s" repeatCount="indefinite"/>
+    </use>
+    <use href="#circuitB" stroke="#03999e" stroke-width="1.1" opacity="0.28"/>
+
+    <use href="#circuitC" stroke="#1fdde4" stroke-width="2.2" opacity="0.48" stroke-dasharray="50 660" stroke-dashoffset="0">
+      <animate attributeName="stroke-dashoffset" from="710" to="0" dur="4.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.58;0.1" dur="4.8s" repeatCount="indefinite"/>
+    </use>
+    <use href="#circuitC" stroke="#1e85d4" stroke-width="1" opacity="0.25"/>
+
+    <use href="#circuitD" stroke="#1e85d4" stroke-width="2.2" opacity="0.48" stroke-dasharray="50 650" stroke-dashoffset="0">
+      <animate attributeName="stroke-dashoffset" from="0" to="700" dur="4.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.12;0.62;0.12" dur="4.1s" repeatCount="indefinite"/>
+    </use>
+    <use href="#circuitD" stroke="#03999e" stroke-width="1" opacity="0.25"/>
+  </g>
+
+  <!-- angled neon lanes -->
+  <g filter="url(#neonGlow)" opacity="0.55">
+    <line x1="-130" y1="1080" x2="610" y2="0" stroke="#1fdde4" stroke-width="1.4" opacity="0.35">
+      <animate attributeName="opacity" values="0.08;0.55;0.08" dur="4.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="1320" y1="1080" x2="1990" y2="0" stroke="#1e85d4" stroke-width="1.4" opacity="0.35">
+      <animate attributeName="opacity" values="0.12;0.62;0.12" dur="5.1s" repeatCount="indefinite"/>
+    </line>
+    <line x1="-60" y1="120" x2="620" y2="1080" stroke="#03999e" stroke-width="1" opacity="0.18">
+      <animate attributeName="opacity" values="0.04;0.32;0.04" dur="6s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- corner HUD arcs -->
+  <g fill="none" filter="url(#neonGlow)" opacity="0.55">
+    <circle cx="150" cy="930" r="260" stroke="#1fdde4" stroke-width="1.2" stroke-dasharray="260 120 80 220" opacity="0.32">
+      <animateTransform attributeName="transform" type="rotate" from="0 150 930" to="360 150 930" dur="32s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.12;0.42;0.12" dur="5.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1780" cy="165" r="310" stroke="#1e85d4" stroke-width="1.2" stroke-dasharray="300 150 90 260" opacity="0.34">
+      <animateTransform attributeName="transform" type="rotate" from="360 1780 165" to="0 1780 165" dur="36s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.38;0.1" dur="4.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- pulsing nodes -->
+  <g filter="url(#neonGlow)">
+    <circle cx="430" cy="290" r="4" fill="#1fdde4"><animate attributeName="r" values="2;7;2" dur="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="750" cy="350" r="4" fill="#03999e"><animate attributeName="r" values="2;6;2" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="1460" cy="790" r="4" fill="#1e85d4"><animate attributeName="r" values="2;7;2" dur="2.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="500" cy="785" r="4" fill="#1fdde4"><animate attributeName="r" values="2;6;2" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.25;0.8;0.25" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="1455" cy="285" r="4" fill="#1e85d4"><animate attributeName="r" values="2;7;2" dur="2.35s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.25;0.95;0.25" dur="2.35s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- particles, more like glowing digital dust than scanlines -->
+  <g filter="url(#neonGlow)" opacity="0.65">
+    <circle cx="260" cy="710" r="2.4" fill="#1fdde4"><animate attributeName="cy" values="710;650;710" dur="5.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="5.4s" repeatCount="indefinite"/></circle>
+    <circle cx="460" cy="190" r="2" fill="#1e85d4"><animate attributeName="cy" values="190;145;190" dur="6.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.1;0.8;0.1" dur="6.2s" repeatCount="indefinite"/></circle>
+    <circle cx="690" cy="840" r="2.5" fill="#1fdde4"><animate attributeName="cy" values="840;780;840" dur="5.7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.85;0" dur="5.7s" repeatCount="indefinite"/></circle>
+    <circle cx="1180" cy="225" r="2.5" fill="#03999e"><animate attributeName="cy" values="225;180;225" dur="7.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.1;0.75;0.1" dur="7.1s" repeatCount="indefinite"/></circle>
+    <circle cx="1535" cy="675" r="2.2" fill="#1e85d4"><animate attributeName="cy" values="675;620;675" dur="6.7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.9;0" dur="6.7s" repeatCount="indefinite"/></circle>
+    <circle cx="1690" cy="910" r="2.8" fill="#1fdde4"><animate attributeName="cy" values="910;850;910" dur="5.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.05;0.9;0.05" dur="5.9s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- text matching preview -->
+  <g transform="translate(960 535)" text-anchor="middle" filter="url(#textGlow)">
+    <text x="0" y="0"
+      font-family="sofachrome, Orbitron, Arial, sans-serif"
+      font-size="72"
+      font-weight="700"
+      letter-spacing="5"
+      fill="url(#textGrad)"
+      stroke="url(#textGrad)"
+      stroke-width="1.2"
+      stroke-dasharray="1700"
+      stroke-dashoffset="1700"
+      opacity="0">
+      ES DESIGN WORKS
+      <animate attributeName="opacity" values="0;1;1" dur="1.6s" fill="freeze"/>
+      <animate attributeName="stroke-dashoffset" from="1700" to="0" dur="2.4s" fill="freeze"/>
+      <animate attributeName="fill-opacity" values="0;0;1" begin="1.25s" dur="0.9s" fill="freeze"/>
+    </text>
+
+    <text x="0" y="0"
+      font-family="sofachrome, Orbitron, Arial, sans-serif"
+      font-size="72"
+      font-weight="700"
+      letter-spacing="5"
+      fill="none"
+      stroke="#1fdde4"
+      stroke-width="2"
+      opacity="0">
+      ES DESIGN WORKS
+      <animate attributeName="opacity" values="0;0.55;0;0.38;0" begin="1.4s" dur="1.1s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 7 0; -5 0; 0 0" begin="1.4s" dur="0.24s" repeatCount="4"/>
+    </text>
+
+    <rect x="-540" y="45" width="1080" height="2" fill="url(#cyanLine)" opacity="0">
+      <animate attributeName="opacity" values="0;0.9;0.42;0.85;0.45" begin="0.8s" dur="2.2s" fill="freeze"/>
+      <animate attributeName="width" values="0;1080" begin="0.8s" dur="1.4s" fill="freeze"/>
+    </rect>
+
+    <circle cx="0" cy="46" r="4" fill="#1fdde4" opacity="0">
+      <animate attributeName="opacity" values="0;1;0.55" begin="1.5s" dur="1.3s" fill="freeze"/>
+      <animate attributeName="r" values="2;9;4" begin="1.5s" dur="1.3s" fill="freeze"/>
+    </circle>
+
+    <text x="0" y="98"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="20"
+      letter-spacing="15"
+      fill="#03999e"
+      opacity="0">
+      DESIGN • DEVELOP • DELIVER
+      <animate attributeName="opacity" values="0;0;1" begin="2.05s" dur="1.1s" fill="freeze"/>
+      <animate attributeName="letter-spacing" values="28;15" begin="2.05s" dur="1.1s" fill="freeze"/>
+    </text>
+  </g>
+</svg>
