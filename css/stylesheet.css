@@ -82,33 +82,6 @@ li {
   visibility: visible !important;
 }
 
-@keyframes flowLinesDrift {
-  0% {
-    transform: translateY(0px);
-    opacity: 0.92;
-  }
-  50% {
-    transform: translateY(-24px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 0.92;
-  }
-}
-
-@keyframes flowParticles {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-18px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
 @keyframes splashscreen {
   0% {
     opacity: 1;
@@ -549,46 +522,27 @@ body.index-page .header {
   width: 100%;
   height: 100dvh;
   overflow: hidden;
-  opacity: 1;
   background-image: var(--wallpaper-default);
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(1.08) saturate(1.22) contrast(1.08);
+  filter: brightness(1.04) saturate(1.08) contrast(1.04);
 }
 
 .wallPaper::before {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 1;
   pointer-events: none;
-  background:
-    radial-gradient( circle at center, rgba(3,153,158,0.08), rgba(0,0,0,0.14) 52%, rgba(0,0,0,0.34) 100%),
-    repeating-linear-gradient( 180deg, rgba(31,221,228,0.045) 0px, rgba(31,221,228,0.015) 2px, transparent 4px, transparent 72px),
-    repeating-linear-gradient( 180deg, rgba(30,133,212,0.035) 0px, rgba(30,133,212,0.012) 1px, transparent 3px, transparent 92px),
-    repeating-linear-gradient( 180deg, rgba(98,28,148,0.04) 0px, rgba(98,28,148,0.012) 2px, transparent 5px, transparent 84px);
-  animation: flowLinesDrift 32s ease-in-out infinite;
+  background: radial-gradient( circle at center, rgba(3,153,158,0.04), rgba(0,0,0,0.12) 58%, rgba(0,0,0,0.28) 100%);
 }
 
 .wallPaper::after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 2;
   pointer-events: none;
-  background:
-    linear-gradient( 180deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.04) 18%, rgba(0,0,0,0.04) 82%, rgba(0,0,0,0.22) 100%),
-    radial-gradient(circle at 12% 18%, rgba(31,221,228,0.18) 0%, transparent 0.6%),
-    radial-gradient(circle at 22% 72%, rgba(31,221,228,0.14) 0%, transparent 0.45%),
-    radial-gradient(circle at 36% 32%, rgba(30,133,212,0.16) 0%, transparent 0.5%),
-    radial-gradient(circle at 48% 88%, rgba(98,28,148,0.14) 0%, transparent 0.45%),
-    radial-gradient(circle at 62% 16%, rgba(31,221,228,0.15) 0%, transparent 0.55%),
-    radial-gradient(circle at 74% 58%, rgba(255,157,0,0.12) 0%, transparent 0.45%),
-    radial-gradient(circle at 88% 26%, rgba(31,221,228,0.16) 0%, transparent 0.55%),
-    radial-gradient(circle at 92% 82%, rgba(30,133,212,0.14) 0%, transparent 0.45%);
-  background-size: 100% 100%;
-  animation: flowParticles 28s linear infinite;
+  background: linear-gradient( 180deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.02) 18%, rgba(0,0,0,0.02) 82%, rgba(0,0,0,0.20) 100%);
 }
 
 .wallPaper img {
