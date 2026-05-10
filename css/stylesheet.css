@@ -499,6 +499,8 @@ body.index-page .header {
   display: block;
   pointer-events: none;
   opacity: 1;
+  object-fit: contain;
+  object-position: center center;
 }
 
 .splash-content,
@@ -1405,16 +1407,49 @@ p {
 
 @media (max-width: 768px) {
   body.index-page {
-    height: 100svh;
-    overflow: hidden;
+    height: auto;
+    min-height: 100svh;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
-.wallPaper {
-  display: block !important;
-  height: 100dvh;
-  background-position: center center;
-  background-size: cover;
-}
+  .splash-screen {
+    width: 100%;
+    height: 100dvh;
+    min-height: 100dvh;
+    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .splash-screen img,
+  .splash-screen svg,
+  .splash-screen iframe,
+  .splash-tron-overlay {
+    width: 100%;
+    max-width: 94vw;
+    height: auto;
+    max-height: 74dvh;
+    object-fit: contain !important;
+    object-position: center center !important;
+  }
+
+  .splash-tron-overlay {
+    position: relative;
+    inset: auto;
+  }
+
+  .wallPaper {
+    display: block !important;
+    height: 100dvh;
+    background-position: center center;
+    background-size: cover;
+  }
 
   .wallPaper::before,
   .wallPaper::after {
@@ -1545,18 +1580,72 @@ p {
   }
 
   .wheels-section {
-    height: 100svh;
+    height: auto;
     min-height: 100svh;
-    max-height: 100svh;
+    max-height: none;
     padding: clamp(130px, 23svh, 185px) 0 24px;
+    overflow: hidden;
+  }
+
+  .wheel-stack {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    overflow: visible;
+  }
+
+  .wheel-row {
+    width: 100%;
+    height: clamp(115px, 18vh, 175px);
+    min-height: clamp(115px, 18vh, 175px);
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    touch-action: pan-x;
+  }
+
+  .wheel-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .wheel-row:hover {
+    z-index: 26;
+  }
+
+  .wheel-track {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: var(--wheel-gap);
+    animation: none !important;
+    transform: none !important;
+    translate: none !important;
+    will-change: auto;
   }
 
   .wheel-card {
-    width: clamp(175px, 62vw, 300px);
+    width: clamp(220px, 70vw, 380px);
+    height: 100%;
+    flex: 0 0 auto;
+    border-radius: 18px;
+    overflow: hidden;
+    transform: none !important;
+    transition: none !important;
   }
 
   .wheel-card:hover {
-    transform: rotate(var(--card-rotate)) scale(1.08);
+    transform: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+  }
+
+  .wheel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .picFrame {
@@ -1701,6 +1790,39 @@ p {
     padding: 0.2rem clamp(0.08rem, 0.26vw, 0.24rem);
   }
 
+  .splash-screen {
+    padding: 0.75rem;
+  }
+
+  .splash-screen img,
+  .splash-screen svg,
+  .splash-screen iframe,
+  .splash-tron-overlay {
+    max-width: 96vw;
+    max-height: 68dvh;
+  }
+
+  .wheels-section {
+    height: auto;
+    min-height: 100svh;
+    max-height: none;
+    padding: clamp(118px, 22svh, 170px) 0 22px;
+  }
+
+  .wheel-stack {
+    gap: 12px;
+  }
+
+  .wheel-row {
+    height: clamp(105px, 17vh, 155px);
+    min-height: clamp(105px, 17vh, 155px);
+  }
+
+  .wheel-card {
+    width: clamp(210px, 74vw, 340px);
+    height: 100%;
+  }
+
   .btnBox a {
     min-width: 0;
     min-height: 0;
@@ -1712,14 +1834,6 @@ p {
   .socLnk a {
     width: 72px;
     height: 72px;
-  }
-
-  .wheel-stack {
-    gap: 10px;
-  }
-
-  .wheel-card {
-    width: clamp(165px, 66vw, 275px);
   }
 
   .external-scroll-animation .fixed img {
@@ -1801,7 +1915,16 @@ p {
   }
 
   .wheels-section {
-    padding-top: clamp(112px, 21svh, 150px);
+    padding-top: clamp(108px, 20svh, 145px);
+  }
+
+  .wheel-row {
+    height: clamp(96px, 15.5vh, 140px);
+    min-height: clamp(96px, 15.5vh, 140px);
+  }
+
+  .wheel-card {
+    width: clamp(200px, 78vw, 320px);
   }
 }
 
