@@ -94,6 +94,34 @@ li {
   visibility: visible !important;
 }
 
+/* ===================================== */
+/* PERFORMANCE BASELINE                  */
+/* ===================================== */
+
+.obJects,
+.picFrame {
+  content-visibility: auto;
+  contain-intrinsic-size: 700px 500px;
+}
+
+.wheel-card,
+.external-scroll-animation .fixed,
+.external-scroll-animation .fixed img,
+.external-scroll-animation .content,
+.external-scroll-animation .text-blocks,
+.external-scroll-animation .text-blocks p,
+.external-scroll-animation h1,
+.external-scroll-animation h2,
+.external-scroll-animation h3 {
+  will-change: auto;
+}
+
+@media (min-width: 769px) {
+  .wheel-track {
+    will-change: transform;
+  }
+}
+
 @keyframes splashscreen {
   0% {
     opacity: 1;
@@ -568,6 +596,30 @@ body.contact-page .wallPaper img {
   object-position: center right;
   opacity: 1;
   visibility: visible;
+}
+
+/* ===================================== */
+/* SERVICES PAGE PERFORMANCE OPTIMIZATION */
+/* ===================================== */
+
+body.services-page {
+  background: #000;
+}
+
+body.services-page .wallPaper {
+  background: #000 !important;
+  background-image: none !important;
+  filter: none !important;
+}
+
+body.services-page .wallPaper::before,
+body.services-page .wallPaper::after {
+  display: none !important;
+  content: none !important;
+}
+
+body.services-page .wallPaper img {
+  display: none !important;
 }
 
 .landingContent {
@@ -1925,6 +1977,113 @@ p {
 
   .wheel-card {
     width: clamp(200px, 78vw, 320px);
+  }
+}
+
+
+/* ===================================== */
+/* MOBILE PERFORMANCE REDUCTION          */
+/* ===================================== */
+
+@media (max-width: 768px) {
+  * {
+    scroll-behavior: auto !important;
+  }
+
+  .navLogo img,
+  .designWorksHeader img,
+  .beNook::before,
+  .navBannerFrame::before,
+  .wheel-card,
+  .wheel-card:hover,
+  .btnBox a:hover,
+  .socLnk a:hover {
+    filter: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  .wheel-track,
+  .wheel-card,
+  .navLogo img,
+  .designWorksHeader img {
+    animation: none !important;
+    transition: none !important;
+    will-change: auto !important;
+  }
+
+  .wheel-card:hover {
+    transform: none !important;
+  }
+
+  .wheel-track {
+    width: max-content;
+    animation: none !important;
+    transform: none !important;
+    translate: none !important;
+    will-change: auto !important;
+  }
+
+  .external-scroll-animation .fixed,
+  .external-scroll-animation .fixed img,
+  .external-scroll-animation .content,
+  .external-scroll-animation .text-blocks,
+  .external-scroll-animation .text-blocks p,
+  .external-scroll-animation h1,
+  .external-scroll-animation h2,
+  .external-scroll-animation h3 {
+    will-change: auto !important;
+  }
+
+  .external-scroll-animation .fixed img {
+    filter: none !important;
+  }
+
+  .external-scroll-animation .content > p,
+  .external-scroll-animation .text-blocks p {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
+  }
+
+  .wallPaper,
+  .wallPaper::before,
+  .wallPaper::after {
+    animation: none !important;
+    transition: none !important;
+    filter: none !important;
+  }
+
+  .animate-text {
+    animation-duration: 4s !important;
+  }
+
+  .wheel-row {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+  }
+
+  .wheel-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .splash-screen,
+  .splash-tron-overlay {
+    filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  .splash-screen img,
+  .splash-screen svg,
+  .splash-screen iframe,
+  .splash-tron-overlay {
+    max-width: 96vw !important;
+    max-height: 70dvh !important;
+    object-fit: contain !important;
   }
 }
 
